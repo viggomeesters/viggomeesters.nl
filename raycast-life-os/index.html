@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raycast Life OS — Personal Knowledge Management</title>
+  <meta name="description" content="43 Raycast commands for Obsidian vault management, task scoring, contact CRM, health tracking, and Apple ecosystem integration.">
+  <meta name="theme-color" content="#0a0a10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a10;
+      --bg-deep: #0c0c14;
+      --bg-surface: #12121c;
+      --bg-elevated: #1a1a28;
+      --border: #22223a;
+      --border-subtle: #18182a;
+      --accent: #c9a84c;
+      --accent-dim: #b89840;
+      --accent-soft: rgba(201, 168, 76, 0.10);
+      --blue: #6b8aad;
+      --blue-soft: rgba(107, 138, 173, 0.10);
+      --green: #6bad78;
+      --green-soft: rgba(107, 173, 120, 0.10);
+      --warm: #b87a5a;
+      --warm-soft: rgba(184, 122, 90, 0.08);
+      --purple: #9b7acd;
+      --purple-soft: rgba(155, 122, 205, 0.10);
+      --rose: #c47a8a;
+      --rose-soft: rgba(196, 122, 138, 0.10);
+      --text: #d4d4e0;
+      --text-secondary: #8888a0;
+      --text-muted: #50506a;
+      --font-display: 'DM Serif Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 20% 15%, rgba(201, 168, 76, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 80% 30%, rgba(107, 138, 173, 0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(196, 122, 138, 0.04) 0%, transparent 60%);
+      animation: aurora-drift 45s ease-in-out infinite;
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 65% 55%, rgba(107, 173, 120, 0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(155, 122, 205, 0.03) 0%, transparent 70%);
+      animation: aurora-drift-alt 38s ease-in-out infinite;
+    }
+    @keyframes aurora-drift {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(25px, -15px) rotate(0.5deg); }
+      66% { transform: translate(-15px, 10px) rotate(-0.5deg); }
+    }
+    @keyframes aurora-drift-alt {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 32px;
+      transition: color 0.2s;
+    }
+    .back:hover { color: var(--text-secondary); }
+
+    .header { margin-bottom: 12px; }
+
+    .title {
+      font-family: var(--font-display);
+      font-size: 2em;
+      font-weight: 400;
+      color: #f0f0f4;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 0.92em;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 28px 0;
+    }
+
+    .stat {
+      padding: 14px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #f0f0f4;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.68em;
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Tech stack chips */
+    .tech-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .tech-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.72em;
+      font-weight: 500;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 32px 0;
+    }
+
+    .section-title {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    /* Accordion */
+    details { margin-bottom: 8px; }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      cursor: pointer;
+      list-style: none;
+      transition: border-color 0.3s, background 0.2s;
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary:hover { border-color: var(--border); }
+
+    details[open] summary {
+      border-radius: 12px 12px 0 0;
+      border-bottom-color: var(--border-subtle);
+      background: var(--bg-elevated);
+    }
+
+    .summary-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .summary-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82em;
+      flex-shrink: 0;
+    }
+
+    .summary-icon.capture { background: var(--green-soft); color: var(--green); }
+    .summary-icon.save { background: var(--blue-soft); color: var(--blue); }
+    .summary-icon.prm { background: var(--rose-soft); color: var(--rose); }
+    .summary-icon.search { background: var(--purple-soft); color: var(--purple); }
+    .summary-icon.tasks { background: var(--accent-soft); color: var(--accent); }
+    .summary-icon.browse { background: var(--warm-soft); color: var(--warm); }
+    .summary-icon.cal { background: var(--blue-soft); color: var(--blue); }
+    .summary-icon.review { background: var(--purple-soft); color: var(--purple); }
+    .summary-icon.maint { background: var(--warm-soft); color: var(--warm); }
+
+    .summary-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .summary-name {
+      font-size: 0.88em;
+      font-weight: 500;
+      color: #e0e0ea;
+    }
+
+    .summary-desc {
+      font-size: 0.74em;
+      color: var(--text-muted);
+    }
+
+    .summary-count {
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      color: var(--text-muted);
+      padding: 3px 8px;
+      background: var(--bg);
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .chevron {
+      color: var(--text-muted);
+      font-size: 0.7em;
+      transition: transform 0.2s;
+      margin-left: 8px;
+      flex-shrink: 0;
+    }
+
+    details[open] .chevron { transform: rotate(90deg); }
+
+    .detail-list {
+      border: 1px solid var(--border-subtle);
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      overflow: hidden;
+    }
+
+    .detail-item {
+      padding: 10px 16px 10px 54px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .detail-item:last-child { border-bottom: none; }
+    .detail-item:hover { background: rgba(255, 255, 255, 0.01); }
+
+    .detail-name {
+      font-size: 0.82em;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .detail-desc {
+      font-size: 0.76em;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Core services */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .service-item {
+      padding: 10px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      font-size: 0.78em;
+    }
+
+    .service-name {
+      font-family: var(--font-mono);
+      font-size: 0.9em;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .service-desc {
+      font-size: 0.88em;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Note types */
+    .type-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .type-chip {
+      padding: 5px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.74em;
+      color: var(--text-secondary);
+    }
+
+    .footer {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      opacity: 0.5;
+    }
+
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 520px) {
+      .page { padding: 48px 18px 40px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .title { font-size: 1.6em; }
+      .detail-item { padding-left: 16px; }
+      .service-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+
+    <a href="/" class="back reveal">&larr; viggomeesters.nl</a>
+
+    <div class="header reveal">
+      <h1 class="title">Raycast Life OS</h1>
+      <p class="subtitle">A unified Raycast extension for personal knowledge management. Deep Obsidian vault integration, contact CRM, task scoring, health tracking, and Apple ecosystem automation — all from your keyboard.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-num">43</div>
+        <div class="stat-label">Commands</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">29</div>
+        <div class="stat-label">Services</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">12</div>
+        <div class="stat-label">Note Types</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Areas</div>
+      </div>
+    </div>
+
+    <div class="tech-chips reveal">
+      <span class="tech-chip">TypeScript</span>
+      <span class="tech-chip">React</span>
+      <span class="tech-chip">Raycast API</span>
+      <span class="tech-chip">Obsidian</span>
+      <span class="tech-chip">AppleScript</span>
+      <span class="tech-chip">Zod</span>
+      <span class="tech-chip">Fuse.js</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Commands -->
+    <div class="reveal">
+      <div class="section-title">Commands (43)</div>
+
+      <!-- Capture -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon capture">+</span>
+            <span class="summary-text">
+              <span class="summary-name">Capture</span>
+              <span class="summary-desc">Create notes, tasks, health logs, and daily entries</span>
+            </span>
+          </span>
+          <span class="summary-count">8</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Quick Capture</span><span class="detail-desc">Create a new note in your vault</span></div>
+          <div class="detail-item"><span class="detail-name">New Task</span><span class="detail-desc">Create a new task with scoring and area assignment</span></div>
+          <div class="detail-item"><span class="detail-name">Log Health</span><span class="detail-desc">Log health data — migraine, weight, blood pressure, symptoms</span></div>
+          <div class="detail-item"><span class="detail-name">Log Interaction</span><span class="detail-desc">Quick log a call, meeting, visit, or letter</span></div>
+          <div class="detail-item"><span class="detail-name">Daily Note</span><span class="detail-desc">Open today's daily note (creates if needed)</span></div>
+          <div class="detail-item"><span class="detail-name">Sync Daily Note</span><span class="detail-desc">Sync missing notes into today's daily note</span></div>
+          <div class="detail-item"><span class="detail-name">Health Dashboard</span><span class="detail-desc">View health trends and statistics</span></div>
+          <div class="detail-item"><span class="detail-name">Task from Note</span><span class="detail-desc">Create a task linked to the note in your clipboard</span></div>
+        </div>
+      </details>
+
+      <!-- Save -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon save">&#8615;</span>
+            <span class="summary-text">
+              <span class="summary-name">Save</span>
+              <span class="summary-desc">Capture emails, chats, and bookmarks from external apps</span>
+            </span>
+          </span>
+          <span class="summary-count">11</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Save Mail</span><span class="detail-desc">Save selected Apple Mail as vault note</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Task</span><span class="detail-desc">Save mail and create follow-up task</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Attachments</span><span class="detail-desc">Save mail and copy attachments to vault</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Task + Attachments</span><span class="detail-desc">Save mail, create task, and copy attachments</span></div>
+          <div class="detail-item"><span class="detail-name">Save WhatsApp</span><span class="detail-desc">Save copied WhatsApp chat messages as note</span></div>
+          <div class="detail-item"><span class="detail-name">Save WhatsApp + Task</span><span class="detail-desc">Save WhatsApp chat and create follow-up task</span></div>
+          <div class="detail-item"><span class="detail-name">Save Teams</span><span class="detail-desc">Save copied Microsoft Teams chat as note</span></div>
+          <div class="detail-item"><span class="detail-name">Save Teams + Task</span><span class="detail-desc">Save Teams chat and create follow-up task</span></div>
+          <div class="detail-item"><span class="detail-name">Save Bookmark</span><span class="detail-desc">Save URL from browser or clipboard</span></div>
+          <div class="detail-item"><span class="detail-name">Copy Mail Link</span><span class="detail-desc">Copy markdown link to selected Apple Mail message</span></div>
+          <div class="detail-item"><span class="detail-name">Path to Link</span><span class="detail-desc">Convert local folder path to Obsidian markdown link</span></div>
+        </div>
+      </details>
+
+      <!-- PRM -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon prm">&#9829;</span>
+            <span class="summary-text">
+              <span class="summary-name">PRM</span>
+              <span class="summary-desc">Contact management, decay tracking, and anniversaries</span>
+            </span>
+          </span>
+          <span class="summary-count">8</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Contacts</span><span class="detail-desc">View and search all contacts</span></div>
+          <div class="detail-item"><span class="detail-name">Contact Insights</span><span class="detail-desc">Contact decay tracker — see who you're losing touch with</span></div>
+          <div class="detail-item"><span class="detail-name">Anniversaries</span><span class="detail-desc">View upcoming birthdays, weddings, and other anniversaries</span></div>
+          <div class="detail-item"><span class="detail-name">Sync Contacts</span><span class="detail-desc">Sync Obsidian contacts to Apple Contacts and Google Contacts</span></div>
+          <div class="detail-item"><span class="detail-name">Test Notifications</span><span class="detail-desc">Preview and manually trigger iMessage anniversary alerts</span></div>
+          <div class="detail-item"><span class="detail-name">Check Anniversaries</span><span class="detail-desc">Run anniversary notification and reminder logic now</span></div>
+          <div class="detail-item"><span class="detail-name">Entity Timeline</span><span class="detail-desc">Full CRM-style timeline for any contact</span></div>
+          <div class="detail-item"><span class="detail-name">Life OS Config</span><span class="detail-desc">Configuration and maintenance tools</span></div>
+        </div>
+      </details>
+
+      <!-- Tasks -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon tasks">&#9745;</span>
+            <span class="summary-text">
+              <span class="summary-name">Tasks</span>
+              <span class="summary-desc">Prioritized tasks, chores, rituals, and habits</span>
+            </span>
+          </span>
+          <span class="summary-count">6</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Task Inbox</span><span class="detail-desc">Show your next prioritized task (focus scoring)</span></div>
+          <div class="detail-item"><span class="detail-name">Task Overview</span><span class="detail-desc">Browse and filter all tasks</span></div>
+          <div class="detail-item"><span class="detail-name">Today's Focus</span><span class="detail-desc">Overdue tasks, today's due items, contacts, and anniversaries</span></div>
+          <div class="detail-item"><span class="detail-name">Chores</span><span class="detail-desc">Recurring household tasks with fair distribution tracking</span></div>
+          <div class="detail-item"><span class="detail-name">Rituals</span><span class="detail-desc">Quality of life rituals with completion tracking</span></div>
+          <div class="detail-item"><span class="detail-name">Habits Dashboard</span><span class="detail-desc">Combined rituals and chores with streaks and fairness metrics</span></div>
+        </div>
+      </details>
+
+      <!-- Browse -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon browse">&#9776;</span>
+            <span class="summary-text">
+              <span class="summary-name">Browse</span>
+              <span class="summary-desc">References, media, projects, and purchases</span>
+            </span>
+          </span>
+          <span class="summary-count">5</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">References</span><span class="detail-desc">Browse books, movies, articles, bookmarks, and other references</span></div>
+          <div class="detail-item"><span class="detail-name">Media Browser</span><span class="detail-desc">Browse series and films — filter by platform, status, IMDB rating</span></div>
+          <div class="detail-item"><span class="detail-name">Projects</span><span class="detail-desc">Browse projects with task counts and status</span></div>
+          <div class="detail-item"><span class="detail-name">Purchases</span><span class="detail-desc">Browse purchases by category with spending overview</span></div>
+          <div class="detail-item"><span class="detail-name">Recent Items</span><span class="detail-desc">Recently modified notes sorted by date with type filtering</span></div>
+        </div>
+      </details>
+
+      <!-- Search + Calendar + Review + Maintenance -->
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon review">&#9670;</span>
+            <span class="summary-text">
+              <span class="summary-name">Search, Calendar & Review</span>
+              <span class="summary-desc">Vault search, calendar import, weekly review, and health</span>
+            </span>
+          </span>
+          <span class="summary-count">5</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Search Vault</span><span class="detail-desc">Full-text fuzzy search with type/area/status/entity filtering</span></div>
+          <div class="detail-item"><span class="detail-name">Import Calendar</span><span class="detail-desc">Import Apple Calendar events to Obsidian</span></div>
+          <div class="detail-item"><span class="detail-name">Weekly Review</span><span class="detail-desc">Dashboard of the past 7 days: tasks, interactions, notes, health</span></div>
+          <div class="detail-item"><span class="detail-name">Vault Health</span><span class="detail-desc">Check vault for schema issues, broken links, and encoding problems</span></div>
+          <div class="detail-item"><span class="detail-name">Contact Decay (menu bar)</span><span class="detail-desc">Menu bar indicator showing overdue contacts needing attention</span></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Note Types -->
+    <div class="reveal">
+      <div class="section-title">Schema — 12 Note Types</div>
+      <div class="type-chips">
+        <span class="type-chip">entity</span>
+        <span class="type-chip">interaction</span>
+        <span class="type-chip">purchase</span>
+        <span class="type-chip">anniversary</span>
+        <span class="type-chip">health</span>
+        <span class="type-chip">entry</span>
+        <span class="type-chip">task</span>
+        <span class="type-chip">project</span>
+        <span class="type-chip">reference</span>
+        <span class="type-chip">chore</span>
+        <span class="type-chip">ritual</span>
+        <span class="type-chip">context</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Core Services -->
+    <div class="reveal">
+      <div class="section-title">Core Services (17)</div>
+      <div class="service-grid">
+        <div class="service-item"><div class="service-name">VaultService</div><div class="service-desc">File I/O and frontmatter</div></div>
+        <div class="service-item"><div class="service-name">ScoringEngine</div><div class="service-desc">Task focus scoring</div></div>
+        <div class="service-item"><div class="service-name">StatusParser</div><div class="service-desc">H2 status timeline</div></div>
+        <div class="service-item"><div class="service-name">TaskLoader</div><div class="service-desc">Query and filter tasks</div></div>
+        <div class="service-item"><div class="service-name">ContactsSync</div><div class="service-desc">Apple + Google sync</div></div>
+        <div class="service-item"><div class="service-name">ContactDecay</div><div class="service-desc">Relationship tracking</div></div>
+        <div class="service-item"><div class="service-name">EntityMatcher</div><div class="service-desc">Fuzzy entity resolution</div></div>
+        <div class="service-item"><div class="service-name">ExpiryProcessor</div><div class="service-desc">Snooze and expiry</div></div>
+        <div class="service-item"><div class="service-name">ChoreParser</div><div class="service-desc">Completion tracking</div></div>
+        <div class="service-item"><div class="service-name">RitualParser</div><div class="service-desc">Ritual completion</div></div>
+        <div class="service-item"><div class="service-name">DailyLogger</div><div class="service-desc">Daily note generation</div></div>
+        <div class="service-item"><div class="service-name">DailySync</div><div class="service-desc">Note consolidation</div></div>
+        <div class="service-item"><div class="service-name">VaultHealth</div><div class="service-desc">Schema validation</div></div>
+        <div class="service-item"><div class="service-name">GoogleSync</div><div class="service-desc">Google Contacts</div></div>
+        <div class="service-item"><div class="service-name">AppleCalendar</div><div class="service-desc">Calendar events</div></div>
+        <div class="service-item"><div class="service-name">TaskUpdater</div><div class="service-desc">Status transitions</div></div>
+        <div class="service-item"><div class="service-name">SnoozeManager</div><div class="service-desc">Task snoozing</div></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>&copy; 2026</span>
+      <a href="https://github.com/viggomeesters" target="_blank" rel="noopener">github.com/viggomeesters</a>
+    </div>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    window.addEventListener('load', () => {
+      reveals.forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 80 + i * 100);
+      });
+    });
+  </script>
+</body>
+</html>
