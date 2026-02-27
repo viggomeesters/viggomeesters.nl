@@ -9,6 +9,10 @@
   <meta property="og:title" content="Viggo Meesters">
   <meta property="og:description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://viggomeesters.nl/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%233b82f6'/><stop offset='50%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%23f97316'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230c0c0f'/><text x='50' y='66' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='48' fill='url(%23g)'>VM</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -507,6 +511,55 @@
     }
 
     /* Mobile */
+    /* Scroll progress bar */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #a855f7, #f472b6, #eab308, #22c55e, #06b6d4, #f97316);
+      z-index: 10000;
+      transition: none;
+    }
+
+    /* View Transitions */
+    @view-transition { navigation: auto; }
+    ::view-transition-old(root) { animation: fade-out 0.2s ease; }
+    ::view-transition-new(root) { animation: fade-in 0.3s ease; }
+    @keyframes fade-out { to { opacity: 0; transform: scale(0.98); } }
+    @keyframes fade-in { from { opacity: 0; transform: scale(1.02); } }
+
+    /* 3D tilt perspective */
+    .bento { perspective: 800px; }
+
+    /* Typewriter cursor */
+    .typewriter-cursor {
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background: var(--text-secondary);
+      margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink-cursor 0.7s step-end infinite;
+    }
+    @keyframes blink-cursor { 50% { opacity: 0; } }
+
+    /* Confetti particle */
+    .confetti {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 10001;
+      animation: confetti-fall 1.5s ease-out forwards;
+    }
+    @keyframes confetti-fall {
+      0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+      100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.3); }
+    }
+
     @media (max-width: 640px) {
       .page { padding: 40px 12px 40px; }
       .bento { grid-template-columns: 1fr; }
@@ -520,7 +573,8 @@
   </style>
 </head>
 <body>
-  <div class="aurora"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="aurora" id="aurora"></div>
 
   <div class="page">
     <div class="bento">
@@ -532,7 +586,7 @@
         </div>
         <div class="profile-text">
           <h1 class="name">Viggo Meesters</h1>
-          <p class="tagline">SAP Data Management at <strong>McCoy</strong>.<br>Tinkering with code on the side.</p>
+          <p class="tagline">SAP Data Management at <strong>McCoy</strong>.<br><span id="typewriter-target">Tinkering with code on the side.</span></p>
         </div>
       </div>
 
@@ -704,6 +758,91 @@
         btn.disabled = false;
       }
     });
+
+    // 1. Scroll progress bar
+    const progressBar = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+    }, { passive: true });
+
+    // 2. Interactive aurora — follows mouse
+    const aurora = document.getElementById('aurora');
+    document.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      aurora.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // 3. 3D tilt on project cards
+    if (window.matchMedia('(hover: hover)').matches) {
+      document.querySelectorAll('a.tile.card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `perspective(800px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) scale(1.03)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+    }
+
+    // 4. Easter egg — Konami code + avatar click
+    const konamiCode = [38,38,40,40,37,39,37,39,66,65];
+    let konamiIndex = 0;
+    function spawnConfetti() {
+      const colors = ['#3b82f6','#a855f7','#f472b6','#eab308','#22c55e','#06b6d4','#f97316','#818cf8'];
+      for (let i = 0; i < 60; i++) {
+        const el = document.createElement('div');
+        el.className = 'confetti';
+        el.style.left = Math.random() * 100 + 'vw';
+        el.style.top = '-10px';
+        el.style.background = colors[Math.floor(Math.random() * colors.length)];
+        el.style.animationDuration = (1 + Math.random() * 1.5) + 's';
+        el.style.animationDelay = (Math.random() * 0.5) + 's';
+        el.style.width = (5 + Math.random() * 8) + 'px';
+        el.style.height = (5 + Math.random() * 8) + 'px';
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 3000);
+      }
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.keyCode === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) { spawnConfetti(); konamiIndex = 0; }
+      } else { konamiIndex = 0; }
+    });
+    const avatar = document.querySelector('.avatar');
+    let avatarClicks = 0;
+    avatar.addEventListener('click', () => {
+      avatarClicks++;
+      if (avatarClicks >= 3) { spawnConfetti(); avatarClicks = 0; }
+    });
+
+    // 5. Typewriter effect on tagline — first visit only
+    (function() {
+      if (sessionStorage.getItem('typed')) return;
+      const target = document.getElementById('typewriter-target');
+      const text = target.textContent;
+      target.textContent = '';
+      const cursor = document.createElement('span');
+      cursor.className = 'typewriter-cursor';
+      target.after(cursor);
+      let i = 0;
+      function type() {
+        if (i < text.length) {
+          target.textContent += text[i];
+          i++;
+          setTimeout(type, 40 + Math.random() * 30);
+        } else {
+          setTimeout(() => cursor.remove(), 1500);
+          sessionStorage.setItem('typed', '1');
+        }
+      }
+      setTimeout(type, 800);
+    })();
   </script>
 </body>
 </html>
