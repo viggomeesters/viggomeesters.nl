@@ -361,34 +361,6 @@
       line-height: 1.45;
     }
 
-    /* Core services */
-    .service-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 6px;
-    }
-
-    .service-item {
-      padding: 10px 14px;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: 10px;
-      font-size: 0.78em;
-    }
-
-    .service-name {
-      font-family: var(--font-mono);
-      font-size: 0.9em;
-      color: var(--text-secondary);
-      font-weight: 500;
-    }
-
-    .service-desc {
-      font-size: 0.88em;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
     /* Note types */
     .type-chips {
       display: flex;
@@ -428,7 +400,6 @@
       .stats { grid-template-columns: repeat(2, 1fr); }
       .title { font-size: 1.6em; }
       .detail-item { padding-left: 16px; }
-      .service-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -643,32 +614,6 @@
         <span class="type-chip">chore</span>
         <span class="type-chip">ritual</span>
         <span class="type-chip">context</span>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- Core Services -->
-    <div class="reveal">
-      <div class="section-title">Core Services (17)</div>
-      <div class="service-grid">
-        <div class="service-item"><div class="service-name">VaultService</div><div class="service-desc">File I/O and frontmatter</div></div>
-        <div class="service-item"><div class="service-name">ScoringEngine</div><div class="service-desc">Task focus scoring</div></div>
-        <div class="service-item"><div class="service-name">StatusParser</div><div class="service-desc">H2 status timeline</div></div>
-        <div class="service-item"><div class="service-name">TaskLoader</div><div class="service-desc">Query and filter tasks</div></div>
-        <div class="service-item"><div class="service-name">ContactsSync</div><div class="service-desc">Apple + Google sync</div></div>
-        <div class="service-item"><div class="service-name">ContactDecay</div><div class="service-desc">Relationship tracking</div></div>
-        <div class="service-item"><div class="service-name">EntityMatcher</div><div class="service-desc">Fuzzy entity resolution</div></div>
-        <div class="service-item"><div class="service-name">ExpiryProcessor</div><div class="service-desc">Snooze and expiry</div></div>
-        <div class="service-item"><div class="service-name">ChoreParser</div><div class="service-desc">Completion tracking</div></div>
-        <div class="service-item"><div class="service-name">RitualParser</div><div class="service-desc">Ritual completion</div></div>
-        <div class="service-item"><div class="service-name">DailyLogger</div><div class="service-desc">Daily note generation</div></div>
-        <div class="service-item"><div class="service-name">DailySync</div><div class="service-desc">Note consolidation</div></div>
-        <div class="service-item"><div class="service-name">VaultHealth</div><div class="service-desc">Schema validation</div></div>
-        <div class="service-item"><div class="service-name">GoogleSync</div><div class="service-desc">Google Contacts</div></div>
-        <div class="service-item"><div class="service-name">AppleCalendar</div><div class="service-desc">Calendar events</div></div>
-        <div class="service-item"><div class="service-name">TaskUpdater</div><div class="service-desc">Status transitions</div></div>
-        <div class="service-item"><div class="service-name">SnoozeManager</div><div class="service-desc">Task snoozing</div></div>
       </div>
     </div>
 
