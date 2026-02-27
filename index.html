@@ -523,13 +523,6 @@
       transition: none;
     }
 
-    /* View Transitions */
-    @view-transition { navigation: auto; }
-    ::view-transition-old(root) { animation: fade-out 0.2s ease; }
-    ::view-transition-new(root) { animation: fade-in 0.3s ease; }
-    @keyframes fade-out { to { opacity: 0; transform: scale(0.98); } }
-    @keyframes fade-in { from { opacity: 0; transform: scale(1.02); } }
-
     /* 3D tilt perspective */
     .bento { perspective: 800px; }
 
@@ -769,6 +762,12 @@
     // 3. 3D tilt on project cards
     if (window.matchMedia('(hover: hover)').matches) {
       document.querySelectorAll('a.tile.card').forEach(card => {
+        // Clear pop-in animation after it finishes so inline transform works
+        card.addEventListener('animationend', () => {
+          card.style.animation = 'none';
+          card.style.opacity = '1';
+          card.style.transition = 'transform 0.15s ease-out, box-shadow 0.3s ease, background 0.3s ease';
+        }, { once: true });
         card.addEventListener('mousemove', (e) => {
           const rect = card.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
