@@ -378,6 +378,99 @@
       color: var(--text-secondary);
     }
 
+    /* Starter vault card */
+    .starter-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px 22px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.3s, background 0.2s, transform 0.2s;
+    }
+
+    .starter-card:hover {
+      border-color: var(--sage-dim);
+      background: var(--bg-elevated);
+      transform: translateY(-1px);
+    }
+
+    .starter-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .starter-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      background: var(--sage-soft);
+      color: var(--sage);
+      flex-shrink: 0;
+    }
+
+    .starter-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .starter-name {
+      font-size: 0.95em;
+      font-weight: 500;
+      color: #d8e5da;
+    }
+
+    .starter-desc {
+      font-size: 0.82em;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .starter-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      color: var(--sage);
+      padding: 5px 12px;
+      background: var(--sage-soft);
+      border-radius: 8px;
+      flex-shrink: 0;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .starter-card:hover .starter-badge {
+      background: rgba(122, 171, 138, 0.2);
+    }
+
+    .starter-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .starter-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .starter-badge {
+        align-self: flex-start;
+      }
+    }
+
     .footer {
       margin-top: 48px;
       display: flex;
@@ -614,6 +707,30 @@
         <span class="type-chip">chore</span>
         <span class="type-chip">ritual</span>
         <span class="type-chip">context</span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Starter Vault -->
+    <div class="reveal">
+      <div class="section-title">Get Started</div>
+      <a href="https://github.com/viggomeesters/obsidian-life-os-starter" target="_blank" rel="noopener" class="starter-card">
+        <div class="starter-left">
+          <span class="starter-icon">&#9878;</span>
+          <div class="starter-text">
+            <span class="starter-name">Life OS Starter Vault</span>
+            <span class="starter-desc">Open-source Obsidian template with the full schema, 16 templates, and pre-configured plugins. Clone and start organizing in 5 minutes.</span>
+          </div>
+        </div>
+        <span class="starter-badge">Use template &rarr;</span>
+      </a>
+      <div class="starter-details">
+        <span class="tech-chip">16 Templates</span>
+        <span class="tech-chip">10 Plugins</span>
+        <span class="tech-chip">Minimal Theme</span>
+        <span class="tech-chip">AI Agent Ready</span>
+        <span class="tech-chip">MIT License</span>
       </div>
     </div>
 
