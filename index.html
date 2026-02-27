@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viggo Meesters</title>
   <meta name="description" content="Data Management Consultant. Building tools, shipping code.">
-  <meta name="theme-color" content="#0a0a10">
+  <meta name="theme-color" content="#0d1a12">
   <meta property="og:title" content="Viggo Meesters — Data Management Consultant">
   <meta property="og:description" content="Building tools, shipping code.">
   <meta property="og:type" content="website">
@@ -16,23 +16,26 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0a0a10;
-      --bg-deep: #0c0c14;
-      --bg-surface: #12121c;
-      --bg-elevated: #1a1a28;
-      --border: #22223a;
-      --border-subtle: #18182a;
+      --bg: #0d1a12;
+      --bg-deep: #0f1e14;
+      --bg-surface: #142119;
+      --bg-elevated: #1a2d21;
+      --border: #243a2b;
+      --border-subtle: #1b2e22;
       --accent: #c9a84c;
-      --accent-dim: #b89840;
-      --accent-soft: rgba(201, 168, 76, 0.10);
-      --accent-glow: rgba(201, 168, 76, 0.05);
-      --blue: #6b8aad;
-      --blue-soft: rgba(107, 138, 173, 0.10);
-      --warm: #b87a5a;
-      --warm-soft: rgba(184, 122, 90, 0.08);
-      --text: #d4d4e0;
-      --text-secondary: #8888a0;
-      --text-muted: #50506a;
+      --accent-dim: #b8963f;
+      --accent-soft: rgba(201, 168, 76, 0.12);
+      --accent-glow: rgba(201, 168, 76, 0.06);
+      --sage: #7aab8a;
+      --sage-soft: rgba(122, 171, 138, 0.12);
+      --sage-dim: #5e9470;
+      --warm: #c47a5a;
+      --warm-soft: rgba(196, 122, 90, 0.10);
+      --moss: #4a7a5a;
+      --moss-soft: rgba(74, 122, 90, 0.15);
+      --text: #c8d5cb;
+      --text-secondary: #8aa690;
+      --text-muted: #536b58;
       --font-display: 'DM Serif Display', Georgia, serif;
       --font-body: 'Inter', system-ui, -apple-system, sans-serif;
     }
@@ -48,8 +51,8 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--font-body);
-      font-size: 15px;
-      line-height: 1.6;
+      font-size: 16px;
+      line-height: 1.65;
       overflow-x: hidden;
       min-height: 100vh;
     }
@@ -61,7 +64,7 @@
       inset: 0;
       pointer-events: none;
       z-index: 9999;
-      opacity: 0.025;
+      opacity: 0.03;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
       background-size: 256px 256px;
     }
@@ -82,11 +85,11 @@
       top: -20%;
       left: -20%;
       background:
-        radial-gradient(ellipse 600px 400px at 25% 15%, rgba(107, 138, 173, 0.08) 0%, transparent 70%),
-        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(201, 168, 76, 0.04) 0%, transparent 60%),
-        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(107, 138, 173, 0.05) 0%, transparent 60%),
-        radial-gradient(ellipse 400px 600px at 15% 75%, rgba(184, 122, 90, 0.03) 0%, transparent 70%);
-      animation: aurora-drift 45s ease-in-out infinite;
+        radial-gradient(ellipse 600px 400px at 20% 10%, rgba(74, 122, 90, 0.10) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 80% 30%, rgba(201, 168, 76, 0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 70%, rgba(94, 148, 112, 0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(196, 122, 90, 0.04) 0%, transparent 70%);
+      animation: aurora-drift 40s ease-in-out infinite;
     }
     .aurora::after {
       content: '';
@@ -96,9 +99,9 @@
       top: -15%;
       left: -15%;
       background:
-        radial-gradient(ellipse 500px 350px at 65% 55%, rgba(107, 138, 173, 0.04) 0%, transparent 60%),
-        radial-gradient(ellipse 600px 400px at 35% 35%, rgba(201, 168, 76, 0.03) 0%, transparent 70%);
-      animation: aurora-drift-alt 38s ease-in-out infinite;
+        radial-gradient(ellipse 500px 350px at 70% 60%, rgba(74, 122, 90, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(122, 171, 138, 0.04) 0%, transparent 70%);
+      animation: aurora-drift-alt 35s ease-in-out infinite;
     }
     @keyframes aurora-drift {
       0%, 100% { transform: translate(0, 0) rotate(0deg); }
@@ -134,27 +137,27 @@
     .page {
       position: relative;
       z-index: 1;
-      max-width: 520px;
+      max-width: 640px;
       margin: 0 auto;
-      padding: 100px 24px 60px;
+      padding: 100px 28px 60px;
     }
 
     /* Profile header */
     .profile {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 24px;
     }
 
     .avatar {
-      width: 72px;
-      height: 72px;
+      width: 88px;
+      height: 88px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid var(--border);
       box-shadow:
         0 0 0 4px var(--bg),
-        0 0 20px rgba(107, 138, 173, 0.08),
+        0 0 20px rgba(74, 122, 90, 0.10),
         0 0 40px rgba(201, 168, 76, 0.04);
       flex-shrink: 0;
     }
@@ -162,22 +165,22 @@
     .profile-text {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 4px;
     }
 
     .name {
       font-family: var(--font-display);
-      font-size: 1.5em;
+      font-size: 1.75em;
       font-weight: 400;
-      color: #f0f0f4;
+      color: #d8e5da;
       letter-spacing: -0.01em;
       line-height: 1.2;
     }
 
     .tagline {
-      font-size: 0.85em;
+      font-size: 0.95em;
       color: var(--text-secondary);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .tagline strong {
@@ -189,16 +192,16 @@
     .divider {
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 36px 0;
+      margin: 40px 0;
     }
 
     /* Section title */
     .section-title {
-      font-size: 0.7em;
+      font-size: 0.75em;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--text-muted);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       font-weight: 500;
     }
 
@@ -206,15 +209,15 @@
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
     }
 
     a.card {
       display: block;
-      padding: 16px 18px;
+      padding: 20px 22px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
       color: var(--text);
       transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -223,41 +226,41 @@
     a.card:hover {
       border-color: var(--border);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     }
 
     a.card .card-icon {
-      font-size: 1.4em;
-      margin-bottom: 8px;
+      font-size: 1.5em;
+      margin-bottom: 10px;
       display: block;
     }
 
     a.card .card-name {
       font-weight: 500;
-      font-size: 0.88em;
-      color: #e0e0ea;
-      margin-bottom: 3px;
+      font-size: 0.95em;
+      color: #d8e5da;
+      margin-bottom: 4px;
     }
 
     a.card .card-desc {
-      font-size: 0.78em;
+      font-size: 0.82em;
       color: var(--text-muted);
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     a.card .card-tag {
       display: inline-block;
-      margin-top: 8px;
-      padding: 2px 8px;
-      font-size: 0.68em;
-      border-radius: 4px;
+      margin-top: 10px;
+      padding: 3px 10px;
+      font-size: 0.72em;
+      border-radius: 5px;
       font-weight: 500;
       letter-spacing: 0.02em;
     }
 
     a.card .card-tag.live {
-      background: rgba(107, 173, 120, 0.12);
-      color: #6bad78;
+      background: var(--moss-soft);
+      color: var(--sage);
     }
 
     a.card .card-tag.wip {
@@ -269,20 +272,20 @@
     .links {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
     }
 
     a.link-row {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 12px 16px;
+      gap: 14px;
+      padding: 14px 18px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
+      border-radius: 14px;
       text-decoration: none;
       color: var(--text);
-      font-size: 0.85em;
+      font-size: 0.9em;
       transition: border-color 0.3s ease, transform 0.2s ease;
     }
 
@@ -292,8 +295,8 @@
     }
 
     a.link-row .link-icon {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       flex-shrink: 0;
       opacity: 0.5;
     }
@@ -318,12 +321,12 @@
     .contact-form {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
 
     .form-row {
       display: flex;
-      gap: 10px;
+      gap: 12px;
     }
 
     .form-row input {
@@ -333,14 +336,14 @@
     .contact-form input,
     .contact-form textarea {
       width: 100%;
-      padding: 12px 16px;
+      padding: 14px 18px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 10px;
+      border-radius: 12px;
       color: var(--text);
       font-family: var(--font-body);
-      font-size: 0.85em;
-      transition: border-color 0.3s ease;
+      font-size: 0.9em;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
       outline: none;
     }
 
@@ -351,36 +354,37 @@
 
     .contact-form input:focus,
     .contact-form textarea:focus {
-      border-color: var(--accent-dim);
+      border-color: var(--sage-dim);
+      box-shadow: 0 0 0 3px rgba(122, 171, 138, 0.08);
     }
 
     .contact-form textarea {
       resize: vertical;
-      min-height: 80px;
+      min-height: 90px;
     }
 
     .contact-form button {
       align-self: flex-start;
-      padding: 10px 24px;
+      padding: 12px 28px;
       background: var(--bg-elevated);
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 12px;
       color: var(--text);
       font-family: var(--font-body);
-      font-size: 0.85em;
+      font-size: 0.9em;
       font-weight: 500;
       cursor: pointer;
       transition: border-color 0.3s ease, background 0.3s ease, transform 0.2s ease;
     }
 
     .contact-form button:hover {
-      border-color: var(--accent-dim);
-      background: var(--accent-soft);
+      border-color: var(--sage-dim);
+      background: var(--moss-soft);
       transform: translateY(-1px);
     }
 
     .form-note {
-      font-size: 0.72em;
+      font-size: 0.78em;
       color: var(--text-muted);
       margin-top: 4px;
     }
@@ -388,30 +392,30 @@
     /* Success message */
     .form-success {
       display: none;
-      padding: 14px 18px;
-      background: rgba(107, 173, 120, 0.08);
-      border: 1px solid rgba(107, 173, 120, 0.2);
-      border-radius: 10px;
-      color: #6bad78;
-      font-size: 0.85em;
+      padding: 16px 20px;
+      background: var(--sage-soft);
+      border: 1px solid rgba(122, 171, 138, 0.2);
+      border-radius: 12px;
+      color: var(--sage);
+      font-size: 0.9em;
     }
 
     /* Footer */
     .footer {
-      margin-top: 48px;
-      font-size: 0.72em;
+      margin-top: 56px;
+      font-size: 0.78em;
       color: var(--text-muted);
       opacity: 0.5;
     }
 
     /* Mobile */
-    @media (max-width: 520px) {
-      .page { padding: 64px 18px 48px; }
+    @media (max-width: 640px) {
+      .page { padding: 72px 20px 48px; }
       .grid { grid-template-columns: 1fr; }
-      .form-row { flex-direction: column; gap: 10px; }
-      .profile { gap: 16px; }
-      .avatar { width: 60px; height: 60px; }
-      .name { font-size: 1.3em; }
+      .form-row { flex-direction: column; gap: 12px; }
+      .profile { gap: 18px; }
+      .avatar { width: 72px; height: 72px; }
+      .name { font-size: 1.45em; }
     }
   </style>
 </head>
@@ -422,7 +426,7 @@
 
     <!-- Profile -->
     <div class="profile reveal">
-      <img src="profile.jpg" alt="Viggo Meesters" class="avatar" width="72" height="72">
+      <img src="profile.jpg" alt="Viggo Meesters" class="avatar" width="88" height="88">
       <div class="profile-text">
         <h1 class="name">Viggo Meesters</h1>
         <p class="tagline">Data management consultant at <strong>McCoy</strong>.<br>Building tools, shipping code.</p>
@@ -498,7 +502,7 @@
     <!-- Contact -->
     <div class="reveal">
       <div class="section-title">Get in touch</div>
-      <form class="contact-form" action="https://formspree.io/f/FORM_ID" method="POST" id="contact-form">
+      <form class="contact-form" action="https://formspree.io/f/mreadeya" method="POST" id="contact-form">
         <div class="form-row">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
