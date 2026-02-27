@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viggo Meesters</title>
   <meta name="description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
-  <meta name="theme-color" content="#0d1a12">
+  <meta name="theme-color" content="#0d121a">
   <meta property="og:title" content="Viggo Meesters">
   <meta property="og:description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
   <meta property="og:type" content="website">
@@ -16,26 +16,26 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0d1a12;
-      --bg-deep: #0f1e14;
-      --bg-surface: #142119;
-      --bg-elevated: #1a2d21;
-      --border: #243a2b;
-      --border-subtle: #1b2e22;
+      --bg: #0d121a;
+      --bg-deep: #0f141e;
+      --bg-surface: #141921;
+      --bg-elevated: #1a212d;
+      --border: #242b3a;
+      --border-subtle: #1b222e;
       --accent: #c9a84c;
       --accent-dim: #b8963f;
       --accent-soft: rgba(201, 168, 76, 0.12);
       --accent-glow: rgba(201, 168, 76, 0.06);
-      --sage: #7aab8a;
-      --sage-soft: rgba(122, 171, 138, 0.12);
-      --sage-dim: #5e9470;
+      --sage: #7a8aab;
+      --sage-soft: rgba(122, 138, 171, 0.12);
+      --sage-dim: #5e7094;
       --warm: #c47a5a;
       --warm-soft: rgba(196, 122, 90, 0.10);
-      --moss: #4a7a5a;
-      --moss-soft: rgba(74, 122, 90, 0.15);
-      --text: #c8d5cb;
-      --text-secondary: #8aa690;
-      --text-muted: #536b58;
+      --moss: #4a5a7a;
+      --moss-soft: rgba(74, 90, 122, 0.15);
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
       --font-display: 'DM Serif Display', Georgia, serif;
       --font-body: 'Inter', system-ui, -apple-system, sans-serif;
     }
@@ -85,9 +85,9 @@
       top: -20%;
       left: -20%;
       background:
-        radial-gradient(ellipse 600px 400px at 20% 10%, rgba(74, 122, 90, 0.10) 0%, transparent 70%),
+        radial-gradient(ellipse 600px 400px at 20% 10%, rgba(74, 90, 122, 0.10) 0%, transparent 70%),
         radial-gradient(ellipse 500px 500px at 80% 30%, rgba(201, 168, 76, 0.05) 0%, transparent 60%),
-        radial-gradient(ellipse 700px 300px at 50% 70%, rgba(94, 148, 112, 0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 70%, rgba(94, 112, 148, 0.07) 0%, transparent 60%),
         radial-gradient(ellipse 400px 600px at 10% 80%, rgba(196, 122, 90, 0.04) 0%, transparent 70%);
       animation: aurora-drift 40s ease-in-out infinite;
     }
@@ -99,8 +99,8 @@
       top: -15%;
       left: -15%;
       background:
-        radial-gradient(ellipse 500px 350px at 70% 60%, rgba(74, 122, 90, 0.06) 0%, transparent 60%),
-        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(122, 171, 138, 0.04) 0%, transparent 70%);
+        radial-gradient(ellipse 500px 350px at 70% 60%, rgba(74, 90, 122, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(122, 138, 171, 0.04) 0%, transparent 70%);
       animation: aurora-drift-alt 35s ease-in-out infinite;
     }
     @keyframes aurora-drift {
@@ -157,7 +157,7 @@
       border: 2px solid var(--border);
       box-shadow:
         0 0 0 4px var(--bg),
-        0 0 20px rgba(74, 122, 90, 0.10),
+        0 0 20px rgba(74, 90, 122, 0.10),
         0 0 40px rgba(201, 168, 76, 0.04);
       flex-shrink: 0;
     }
@@ -172,7 +172,7 @@
       font-family: var(--font-display);
       font-size: 1.75em;
       font-weight: 400;
-      color: #d8e5da;
+      color: #d8dae5;
       letter-spacing: -0.01em;
       line-height: 1.2;
     }
@@ -238,7 +238,7 @@
     a.card .card-name {
       font-weight: 500;
       font-size: 0.95em;
-      color: #d8e5da;
+      color: #d8dae5;
       margin-bottom: 4px;
     }
 
@@ -355,7 +355,7 @@
     .contact-form input:focus,
     .contact-form textarea:focus {
       border-color: var(--sage-dim);
-      box-shadow: 0 0 0 3px rgba(122, 171, 138, 0.08);
+      box-shadow: 0 0 0 3px rgba(122, 138, 171, 0.08);
     }
 
     .contact-form textarea {
@@ -394,7 +394,7 @@
       display: none;
       padding: 16px 20px;
       background: var(--sage-soft);
-      border: 1px solid rgba(122, 171, 138, 0.2);
+      border: 1px solid rgba(122, 138, 171, 0.2);
       border-radius: 12px;
       color: var(--sage);
       font-size: 0.9em;
