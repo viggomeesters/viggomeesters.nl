@@ -285,6 +285,8 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      flex: 1;
+      min-width: 0;
     }
 
     .summary-icon {
@@ -332,6 +334,8 @@
       background: var(--bg);
       border-radius: 6px;
       flex-shrink: 0;
+      min-width: 32px;
+      text-align: center;
     }
 
     .chevron {
@@ -460,15 +464,15 @@
       </div>
       <div class="stat">
         <div class="stat-num">3</div>
-        <div class="stat-label">Agents</div>
+        <div class="stat-label">Tools</div>
       </div>
     </div>
 
-    <!-- Agents -->
+    <!-- Tools -->
     <div class="agents reveal">
-      <div class="agent-chip claude"><span class="agent-dot"></span>Claude Opus</div>
-      <div class="agent-chip codex"><span class="agent-dot"></span>Codex o3</div>
-      <div class="agent-chip gemini"><span class="agent-dot"></span>Gemini 2.5 Pro</div>
+      <div class="agent-chip claude"><span class="agent-dot"></span>Claude Code</div>
+      <div class="agent-chip codex"><span class="agent-dot"></span>Codex</div>
+      <div class="agent-chip gemini"><span class="agent-dot"></span>Gemini CLI</div>
     </div>
 
     <div class="divider"></div>
