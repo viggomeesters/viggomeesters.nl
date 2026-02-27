@@ -429,26 +429,158 @@
       line-height: 1.45;
     }
 
-    /* Architecture */
-    .arch-diagram {
-      padding: 20px;
+    /* Architecture diagram */
+    .arch {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius);
-      font-family: var(--font-mono);
-      font-size: 0.72em;
-      line-height: 1.8;
-      color: var(--text-secondary);
-      overflow-x: auto;
-      white-space: pre;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
 
-    .arch-diagram .hl { color: var(--audit); }
-    .arch-diagram .bl { color: var(--comm); }
-    .arch-diagram .gr { color: var(--dev); }
-    .arch-diagram .pr { color: var(--doc); }
-    .arch-diagram .wm { color: var(--git); }
-    .arch-diagram .dm { color: var(--text-muted); }
+    .arch-title {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* Flow: agents → brain → outputs */
+    .arch-flow {
+      display: grid;
+      grid-template-columns: auto auto 1fr auto auto;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .arch-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .arch-node {
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 0.78em;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+    }
+
+    .arch-node .node-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    .arch-node.claude { background: var(--git-soft); color: var(--git); }
+    .arch-node.codex { background: var(--comm-soft); color: var(--comm); }
+    .arch-node.gemini { background: var(--doc-soft); color: var(--doc); }
+
+    /* Center brain box */
+    .arch-brain {
+      background: linear-gradient(135deg, rgba(234,179,8,0.06), rgba(34,197,94,0.04));
+      border: 1px solid rgba(234,179,8,0.15);
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+
+    .arch-brain-label {
+      font-size: 0.82em;
+      font-weight: 700;
+      color: var(--audit);
+      letter-spacing: -0.01em;
+      text-align: center;
+    }
+
+    .arch-brain-items {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .arch-brain-item {
+      padding: 4px 10px;
+      border-radius: 7px;
+      font-size: 0.7em;
+      font-weight: 500;
+      background: rgba(34,197,94,0.08);
+      color: var(--dev);
+      border: 1px solid rgba(34,197,94,0.12);
+    }
+
+    /* Output nodes */
+    .arch-node.output {
+      background: rgba(234,179,8,0.08);
+      color: var(--audit);
+      border: 1px solid rgba(234,179,8,0.12);
+      font-size: 0.72em;
+    }
+
+    /* Arrows between columns */
+    .arch-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 1.2em;
+      min-width: 24px;
+    }
+
+    .arch-arrow svg {
+      width: 20px;
+      height: 20px;
+      color: var(--border);
+    }
+
+    /* Pipeline strip */
+    .arch-pipeline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 10px 16px;
+      background: var(--bg-elevated);
+      border-radius: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pipe-step {
+      font-family: var(--font-mono);
+      font-size: 0.68em;
+      font-weight: 500;
+      color: var(--text-secondary);
+      padding: 3px 0;
+    }
+
+    .pipe-arrow {
+      color: var(--text-muted);
+      font-size: 0.72em;
+      padding: 0 8px;
+    }
+
+    @media (max-width: 640px) {
+      .arch-flow {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .arch-col { flex-direction: row; flex-wrap: wrap; }
+      .arch-arrow { transform: rotate(90deg); }
+      .arch-pipeline { flex-wrap: wrap; justify-content: center; }
+    }
 
     /* Footer */
     .footer {
@@ -718,15 +850,58 @@
     <!-- Architecture -->
     <div class="reveal">
       <div class="section-label" style="--dot-color: #eab308">Architecture</div>
-      <div class="arch-diagram"><span class="dm">┌─────────────────────────────────────────────┐</span>
-<span class="dm">│</span>  <span class="hl">Agent Brain</span>  <span class="dm">— deterministic autopilot</span>       <span class="dm">│</span>
-<span class="dm">│</span>                                               <span class="dm">│</span>
-<span class="dm">│</span>  <span class="wm">Claude</span>  ─┐                                   <span class="dm">│</span>
-<span class="dm">│</span>  <span class="bl">Codex</span>   ─┼─→  <span class="gr">shared skills</span>  →  <span class="hl">task ledger</span>  <span class="dm">│</span>
-<span class="dm">│</span>  <span class="pr">Gemini</span>  ─┘    <span class="gr">shared memory</span>     <span class="hl">vault sync</span>  <span class="dm">│</span>
-<span class="dm">│</span>                                               <span class="dm">│</span>
-<span class="dm">│</span>  <span class="dm">audit → ledger → next → commit → push</span>       <span class="dm">│</span>
-<span class="dm">└─────────────────────────────────────────────┘</span></div>
+      <div class="arch">
+        <div class="arch-flow">
+          <!-- Agents column -->
+          <div class="arch-col">
+            <div class="arch-node claude"><span class="node-dot"></span>Claude</div>
+            <div class="arch-node codex"><span class="node-dot"></span>Codex</div>
+            <div class="arch-node gemini"><span class="node-dot"></span>Gemini</div>
+          </div>
+
+          <!-- Arrow left -->
+          <div class="arch-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg>
+          </div>
+
+          <!-- Brain center -->
+          <div class="arch-brain">
+            <div class="arch-brain-label">Agent Brain</div>
+            <div class="arch-brain-items">
+              <span class="arch-brain-item">37 Skills</span>
+              <span class="arch-brain-item">Shared Memory</span>
+              <span class="arch-brain-item">Context Sync</span>
+            </div>
+          </div>
+
+          <!-- Arrow right -->
+          <div class="arch-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="2" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/></svg>
+          </div>
+
+          <!-- Output column -->
+          <div class="arch-col">
+            <div class="arch-node output">Task Ledger</div>
+            <div class="arch-node output">Vault Sync</div>
+            <div class="arch-node output">Observability</div>
+          </div>
+        </div>
+
+        <!-- Pipeline -->
+        <div class="arch-pipeline">
+          <span class="pipe-step">audit</span>
+          <span class="pipe-arrow">&rarr;</span>
+          <span class="pipe-step">ledger</span>
+          <span class="pipe-arrow">&rarr;</span>
+          <span class="pipe-step">next</span>
+          <span class="pipe-arrow">&rarr;</span>
+          <span class="pipe-step">implement</span>
+          <span class="pipe-arrow">&rarr;</span>
+          <span class="pipe-step">commit</span>
+          <span class="pipe-arrow">&rarr;</span>
+          <span class="pipe-step">push</span>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
