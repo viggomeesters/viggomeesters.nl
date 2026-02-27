@@ -548,16 +548,8 @@
     /* Confetti particle */
     .confetti {
       position: fixed;
-      width: 8px;
-      height: 8px;
-      border-radius: 2px;
       pointer-events: none;
       z-index: 10001;
-      animation: confetti-fall 1.5s ease-out forwards;
-    }
-    @keyframes confetti-fall {
-      0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
-      100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.3); }
     }
 
     @media (max-width: 640px) {
@@ -794,18 +786,44 @@
     let konamiIndex = 0;
     function spawnConfetti() {
       const colors = ['#3b82f6','#a855f7','#f472b6','#eab308','#22c55e','#06b6d4','#f97316','#818cf8'];
-      for (let i = 0; i < 60; i++) {
+      const shapes = ['square','rect','circle'];
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      for (let i = 0; i < 100; i++) {
         const el = document.createElement('div');
         el.className = 'confetti';
-        el.style.left = Math.random() * 100 + 'vw';
-        el.style.top = '-10px';
-        el.style.background = colors[Math.floor(Math.random() * colors.length)];
-        el.style.animationDuration = (1 + Math.random() * 1.5) + 's';
-        el.style.animationDelay = (Math.random() * 0.5) + 's';
-        el.style.width = (5 + Math.random() * 8) + 'px';
-        el.style.height = (5 + Math.random() * 8) + 'px';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const shape = shapes[Math.floor(Math.random() * shapes.length)];
+        const w = shape === 'rect' ? (8 + Math.random() * 6) : (6 + Math.random() * 8);
+        const h = shape === 'rect' ? (w * 2.5) : w;
+        el.style.width = w + 'px';
+        el.style.height = h + 'px';
+        el.style.background = color;
+        el.style.borderRadius = shape === 'circle' ? '50%' : '2px';
+        el.style.left = cx + 'px';
+        el.style.top = cy + 'px';
         document.body.appendChild(el);
-        setTimeout(() => el.remove(), 3000);
+        // Physics: random angle burst
+        const angle = Math.random() * Math.PI * 2;
+        const velocity = 300 + Math.random() * 500;
+        const vx = Math.cos(angle) * velocity;
+        const vy = Math.sin(angle) * velocity - 200;
+        const spin = (Math.random() - 0.5) * 1000;
+        const gravity = 800;
+        const start = performance.now();
+        const duration = 2000 + Math.random() * 1000;
+        function tick(now) {
+          const t = (now - start) / 1000;
+          if (t > duration / 1000) { el.remove(); return; }
+          const x = vx * t;
+          const y = vy * t + 0.5 * gravity * t * t;
+          const rot = spin * t;
+          const opacity = Math.max(0, 1 - t / (duration / 1000));
+          el.style.transform = `translate(${x}px, ${y}px) rotate(${rot}deg)`;
+          el.style.opacity = opacity;
+          requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
       }
     }
     document.addEventListener('keydown', (e) => {
