@@ -545,7 +545,153 @@
       z-index: 10001;
     }
 
+    /* Magnetic cursor blob */
+    .cursor-blob {
+      position: fixed;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(168,85,247,0.25);
+      pointer-events: none;
+      z-index: 9998;
+      mix-blend-mode: screen;
+      transition: width 0.3s var(--bounce), height 0.3s var(--bounce), background 0.25s ease;
+      transform: translate(-50%, -50%);
+      will-change: left, top;
+    }
+    .cursor-blob.active {
+      width: 52px;
+      height: 52px;
+    }
+
+    /* Cursor trail dot */
+    .trail-dot {
+      position: fixed;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9997;
+      opacity: 0.6;
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    .trail-dot.fade { opacity: 0; transform: scale(0); }
+
+    /* Holographic shimmer on cards */
+    a.tile.card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255,255,255,0.02) 40%,
+        rgba(255,255,255,0.06) 50%,
+        rgba(255,255,255,0.02) 60%,
+        transparent 70%
+      );
+      background-size: 250% 250%;
+      background-position: var(--shimmer-x, 0%) var(--shimmer-y, 0%);
+      border-radius: inherit;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    @media (hover: hover) {
+      a.tile.card:hover::after { opacity: 1; }
+    }
+
+    /* Morphing blob avatar ring */
+    @keyframes blob-morph {
+      0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+      25% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+      50% { border-radius: 50% 60% 30% 60% / 30% 50% 70% 50%; }
+      75% { border-radius: 60% 30% 50% 40% / 50% 70% 30% 60%; }
+    }
+    .avatar-wrap::before {
+      animation: blob-morph 8s ease-in-out infinite !important;
+    }
+    .avatar-wrap::after {
+      animation: blob-morph 8s ease-in-out infinite 0.5s !important;
+    }
+
+    /* Spotlight overlay */
+    .spotlight {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background: radial-gradient(
+        600px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+        rgba(255,255,255,0.015),
+        transparent 60%
+      );
+    }
+
+    /* Staggered letter animation */
+    .name .letter {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+      animation: letter-pop 0.5s var(--bounce) forwards;
+    }
+    @keyframes letter-pop {
+      to { opacity: 1; transform: none; }
+    }
+    .name .letter-space { display: inline-block; width: 0.25em; }
+
+    /* Card info overlay (tech stack) */
+    .card-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px 12px;
+      background: linear-gradient(transparent, rgba(12,12,15,0.92) 30%);
+      font-size: 0.65em;
+      color: var(--text-muted);
+      transform: translateY(100%);
+      transition: transform 0.3s var(--bounce);
+      pointer-events: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      padding-top: 24px;
+    }
+    @media (hover: hover) {
+      a.tile.card:hover .card-info { transform: translateY(0); }
+    }
+    .card-info span {
+      padding: 2px 7px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 5px;
+      font-size: 0.95em;
+    }
+
+    /* Sound toggle */
+    .sound-toggle {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: transform 0.3s var(--bounce), border-color 0.2s;
+      opacity: 0.5;
+    }
+    .sound-toggle:hover { transform: scale(1.1); border-color: var(--border); opacity: 0.8; }
+
     @media (max-width: 640px) {
+      .cursor-blob, .trail-dot { display: none !important; }
       .page { padding: 40px 12px 40px; }
       .bento { grid-template-columns: 1fr; }
       .name { font-size: 1.4em; }
@@ -560,6 +706,8 @@
 <body>
   <div class="scroll-progress" id="scroll-progress"></div>
   <div class="aurora" id="aurora"></div>
+  <div class="spotlight"></div>
+  <div class="cursor-blob"></div>
 
   <div class="page">
     <div class="bento">
@@ -587,6 +735,7 @@
         <div class="card-name">Minimal ETL Modeler</div>
         <div class="card-desc">Visual data flow editor inspired by Alteryx</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>React</span><span>TS</span><span>Zustand</span><span>Canvas</span></div>
       </a>
 
       <a href="https://money-shower.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -597,6 +746,7 @@
         <div class="card-name">Money Shower</div>
         <div class="card-desc">Real-time salary visualizer</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>React</span><span>TS</span><span>Framer Motion</span></div>
       </a>
 
       <a href="https://visual-pm-app.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -607,6 +757,7 @@
         <div class="card-name">Visual PM</div>
         <div class="card-desc">Visual project management</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>React</span><span>TS</span><span>DnD Kit</span></div>
       </a>
 
       <a href="https://kraamweek.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -617,6 +768,7 @@
         <div class="card-name">Kraamweek</div>
         <div class="card-desc">Newborn week planner</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>Next.js</span><span>TS</span><span>Vercel</span></div>
       </a>
 
       <a href="https://getdimma.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -627,6 +779,7 @@
         <div class="card-name">Dimma</div>
         <div class="card-desc">Migraine tracking app — log in 3 taps</div>
         <span class="card-tag">WIP</span>
+        <div class="card-info"><span>Flutter</span><span>Dart</span><span>Supabase</span></div>
       </a>
 
       <a href="/agent-brain/" class="tile card"
@@ -637,6 +790,7 @@
         <div class="card-name">Agent Brain</div>
         <div class="card-desc">AI coordination system — 37 skills, 3 agents</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>Python</span><span>Claude</span><span>MCP</span></div>
       </a>
 
       <a href="/raycast-life-os/" class="tile card"
@@ -647,6 +801,7 @@
         <div class="card-name">Raycast Life OS</div>
         <div class="card-desc">Personal knowledge OS — 43 commands</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>TS</span><span>React</span><span>Raycast API</span></div>
       </a>
 
       <a href="https://github.com/viggomeesters/obsidian-life-os-starter" class="tile card" target="_blank" rel="noopener"
@@ -657,6 +812,7 @@
         <div class="card-name">Life OS Starter</div>
         <div class="card-desc">Obsidian template vault — 12 types, 16 templates</div>
         <span class="card-tag">Live</span>
+        <div class="card-info"><span>Obsidian</span><span>Templater</span><span>Dataview</span></div>
       </a>
 
       <!-- Links label -->
@@ -698,28 +854,55 @@
     </div>
   </div>
 
+  <button class="sound-toggle" aria-label="Toggle sound">🔇</button>
+
   <script>
-    // Scroll reveal
+    const isDesktop = window.matchMedia('(hover: hover)').matches;
+    const aurora = document.getElementById('aurora');
+    const cards = document.querySelectorAll('a.tile.card');
+
+    // === 1. Staggered letter animation on name ===
+    (function() {
+      const nameEl = document.querySelector('.name');
+      const text = nameEl.textContent;
+      nameEl.innerHTML = '';
+      let delay = 0;
+      for (let i = 0; i < text.length; i++) {
+        if (text[i] === ' ') {
+          const sp = document.createElement('span');
+          sp.className = 'letter-space';
+          nameEl.appendChild(sp);
+        } else {
+          const span = document.createElement('span');
+          span.className = 'letter';
+          span.textContent = text[i];
+          span.style.animationDelay = (delay * 0.04) + 's';
+          nameEl.appendChild(span);
+          delay++;
+        }
+      }
+    })();
+
+    // === 2. Scroll reveal ===
     const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
+    const revealObs = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
           setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
+          revealObs.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-
+    reveals.forEach(el => revealObs.observe(el));
     window.addEventListener('load', () => {
       reveals.forEach((el, i) => {
         setTimeout(() => el.classList.add('visible'), 100 + i * 120);
       });
     });
 
-    // Form handling
+    // === 3. Form handling ===
     const form = document.getElementById('contact-form');
-    const success = document.getElementById('form-success');
+    const formSuccess = document.getElementById('form-success');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('button');
@@ -733,7 +916,7 @@
         });
         if (res.ok) {
           form.style.display = 'none';
-          success.style.display = 'block';
+          formSuccess.style.display = 'block';
         } else {
           btn.textContent = 'Error — try again';
           btn.disabled = false;
@@ -744,25 +927,113 @@
       }
     });
 
-    // 1. Scroll progress bar
+    // === 4. Scroll progress bar ===
     const progressBar = document.getElementById('scroll-progress');
     window.addEventListener('scroll', () => {
       const h = document.documentElement.scrollHeight - window.innerHeight;
       progressBar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
     }, { passive: true });
 
-    // 2. Interactive aurora — follows mouse
-    const aurora = document.getElementById('aurora');
+    // === 5. Time-aware aurora color palette ===
+    (function() {
+      const hour = new Date().getHours();
+      let hueShift = 0;
+      if (hour >= 6 && hour < 12) hueShift = -15;
+      else if (hour >= 18) hueShift = 20;
+      else if (hour < 6) hueShift = -30;
+      if (hueShift !== 0 && aurora) aurora.style.filter = `hue-rotate(${hueShift}deg)`;
+    })();
+
+    // === 6. Interactive aurora — follows mouse ===
     document.addEventListener('mousemove', (e) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 20;
       const y = (e.clientY / window.innerHeight - 0.5) * 20;
-      aurora.style.transform = `translate(${x}px, ${y}px)`;
+      if (aurora) aurora.style.transform = `translate(${x}px, ${y}px)`;
     });
 
-    // 3. 3D tilt on project cards
-    if (window.matchMedia('(hover: hover)').matches) {
-      const cards = document.querySelectorAll('a.tile.card');
-      // Clear all pop-in animations after they're done so inline transforms work
+    // === 7. Spotlight overlay ===
+    const spotlight = document.querySelector('.spotlight');
+    if (spotlight) {
+      document.addEventListener('mousemove', (e) => {
+        spotlight.style.setProperty('--spot-x', e.clientX + 'px');
+        spotlight.style.setProperty('--spot-y', e.clientY + 'px');
+      });
+    }
+
+    // === 8. Scroll velocity aurora pulse ===
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const delta = Math.abs(window.scrollY - lastScrollY);
+      const v = Math.min(delta / 15, 1);
+      lastScrollY = window.scrollY;
+      if (aurora) aurora.style.opacity = 0.7 + v * 0.3;
+    }, { passive: true });
+    setInterval(() => { if (aurora) aurora.style.opacity = ''; }, 300);
+
+    // === 9. Magnetic cursor blob + rainbow trail ===
+    if (isDesktop) {
+      const blob = document.querySelector('.cursor-blob');
+      let blobX = 0, blobY = 0, mouseX = 0, mouseY = 0;
+      const trailColors = ['#3b82f6','#a855f7','#f472b6','#eab308','#22c55e','#06b6d4','#f97316','#818cf8'];
+      let trailIdx = 0, lastTrail = 0;
+
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // Rainbow trail dots
+        const now = Date.now();
+        if (now - lastTrail > 50) {
+          lastTrail = now;
+          const dot = document.createElement('div');
+          dot.className = 'trail-dot';
+          dot.style.left = e.clientX + 'px';
+          dot.style.top = e.clientY + 'px';
+          dot.style.background = trailColors[trailIdx % trailColors.length];
+          trailIdx++;
+          document.body.appendChild(dot);
+          requestAnimationFrame(() => requestAnimationFrame(() => dot.classList.add('fade')));
+          setTimeout(() => dot.remove(), 500);
+        }
+
+        // Blob grows near interactive elements
+        const target = e.target.closest('a, button, input, textarea');
+        if (target) {
+          blob.classList.add('active');
+          const cs = getComputedStyle(target);
+          const col = (cs.getPropertyValue('--card-color') || cs.getPropertyValue('--link-color')).trim();
+          blob.style.background = col ? col + '40' : '';
+        } else {
+          blob.classList.remove('active');
+          blob.style.background = '';
+        }
+      });
+
+      // Smooth lerp follow
+      (function animateBlob() {
+        blobX += (mouseX - blobX) * 0.15;
+        blobY += (mouseY - blobY) * 0.15;
+        blob.style.left = blobX + 'px';
+        blob.style.top = blobY + 'px';
+        requestAnimationFrame(animateBlob);
+      })();
+    }
+
+    // === 10. Holographic shimmer on cards ===
+    if (isDesktop) {
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          card.style.setProperty('--shimmer-x', x + '%');
+          card.style.setProperty('--shimmer-y', y + '%');
+        });
+      });
+    }
+
+    // === 11. 3D tilt on cards + parallax avatar ===
+    if (isDesktop) {
       setTimeout(() => {
         cards.forEach(card => {
           card.style.animation = 'none';
@@ -777,20 +1048,96 @@
           const y = (e.clientY - rect.top) / rect.height - 0.5;
           card.style.transform = `perspective(800px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) scale(1.03)`;
         });
-        card.addEventListener('mouseleave', () => {
-          card.style.transform = '';
-        });
+        card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+      });
+
+      // Parallax depth on profile photo
+      const avatarWrap = document.querySelector('.avatar-wrap');
+      document.addEventListener('mousemove', (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 12;
+        const y = (e.clientY / window.innerHeight - 0.5) * 12;
+        avatarWrap.style.transform = `translate(${x}px, ${y}px)`;
       });
     }
 
-    // 4. Easter egg — Konami code + avatar click
+    // === 12. Gyroscope tilt for mobile ===
+    if (!isDesktop && window.DeviceOrientationEvent) {
+      setTimeout(() => {
+        cards.forEach(card => {
+          card.style.animation = 'none';
+          card.style.opacity = '1';
+        });
+      }, 1200);
+      function handleGyro(e) {
+        const gamma = (e.gamma || 0) / 45;
+        const beta = ((e.beta || 0) - 45) / 45;
+        cards.forEach(card => {
+          card.style.transform = `perspective(800px) rotateY(${gamma * 4}deg) rotateX(${-beta * 4}deg)`;
+        });
+        const aw = document.querySelector('.avatar-wrap');
+        if (aw) aw.style.transform = `translate(${gamma * 6}px, ${beta * 6}px)`;
+      }
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+        document.addEventListener('click', function reqGyro() {
+          DeviceOrientationEvent.requestPermission().then(p => {
+            if (p === 'granted') window.addEventListener('deviceorientation', handleGyro);
+          });
+          document.removeEventListener('click', reqGyro);
+        }, { once: true });
+      } else {
+        window.addEventListener('deviceorientation', handleGyro);
+      }
+    }
+
+    // === 13. Sound design (Web Audio API) ===
+    let audioCtx = null, soundOn = false;
+    const soundBtn = document.querySelector('.sound-toggle');
+
+    function initAudio() {
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    function playTone(freq, dur, type, vol) {
+      if (!soundOn || !audioCtx) return;
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type || 'sine';
+      osc.frequency.value = freq;
+      gain.gain.value = vol || 0.03;
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + dur);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + dur);
+    }
+
+    if (soundBtn) {
+      soundBtn.addEventListener('click', () => {
+        initAudio();
+        soundOn = !soundOn;
+        soundBtn.textContent = soundOn ? '🔊' : '🔇';
+        soundBtn.style.opacity = soundOn ? '0.8' : '0.5';
+        if (soundOn) playTone(880, 0.1, 'sine', 0.05);
+      });
+    }
+
+    // Card hover/click sounds — musical scale per project
+    const freqs = [523, 587, 659, 698, 784, 880, 988, 1047];
+    cards.forEach((card, i) => {
+      card.addEventListener('mouseenter', () => playTone(freqs[i] || 660, 0.12, 'sine', 0.02));
+      card.addEventListener('click', () => playTone(freqs[i] ? freqs[i] * 1.5 : 990, 0.18, 'triangle', 0.03));
+    });
+    document.querySelectorAll('a.tile.link').forEach(link => {
+      link.addEventListener('mouseenter', () => playTone(440, 0.08, 'sine', 0.015));
+    });
+
+    // === 14. Easter egg — Konami code + avatar click ===
     const konamiCode = [38,38,40,40,37,39,37,39,66,65];
     let konamiIndex = 0;
     function spawnConfetti() {
       const colors = ['#3b82f6','#a855f7','#f472b6','#eab308','#22c55e','#06b6d4','#f97316','#818cf8'];
       const shapes = ['square','rect','circle'];
-      const cx = window.innerWidth / 2;
-      const cy = window.innerHeight / 2;
+      const cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+      if (soundOn) { playTone(523,0.05); setTimeout(()=>playTone(659,0.05),50); setTimeout(()=>playTone(784,0.1),100); }
       for (let i = 0; i < 100; i++) {
         const el = document.createElement('div');
         el.className = 'confetti';
@@ -798,34 +1145,20 @@
         const shape = shapes[Math.floor(Math.random() * shapes.length)];
         const w = shape === 'rect' ? (8 + Math.random() * 6) : (6 + Math.random() * 8);
         const h = shape === 'rect' ? (w * 2.5) : w;
-        el.style.width = w + 'px';
-        el.style.height = h + 'px';
-        el.style.background = color;
-        el.style.borderRadius = shape === 'circle' ? '50%' : '2px';
-        el.style.left = cx + 'px';
-        el.style.top = cy + 'px';
+        el.style.cssText = `width:${w}px;height:${h}px;background:${color};border-radius:${shape==='circle'?'50%':'2px'};left:${cx}px;top:${cy}px`;
         document.body.appendChild(el);
-        // Physics: random angle burst
         const angle = Math.random() * Math.PI * 2;
-        const velocity = 300 + Math.random() * 500;
-        const vx = Math.cos(angle) * velocity;
-        const vy = Math.sin(angle) * velocity - 200;
-        const spin = (Math.random() - 0.5) * 1000;
-        const gravity = 800;
-        const start = performance.now();
-        const duration = 2000 + Math.random() * 1000;
-        function tick(now) {
+        const vel = 300 + Math.random() * 500;
+        const vx = Math.cos(angle) * vel, vy = Math.sin(angle) * vel - 200;
+        const spin = (Math.random() - 0.5) * 1000, gravity = 800;
+        const start = performance.now(), dur = 2000 + Math.random() * 1000;
+        (function tick(now) {
           const t = (now - start) / 1000;
-          if (t > duration / 1000) { el.remove(); return; }
-          const x = vx * t;
-          const y = vy * t + 0.5 * gravity * t * t;
-          const rot = spin * t;
-          const opacity = Math.max(0, 1 - t / (duration / 1000));
-          el.style.transform = `translate(${x}px, ${y}px) rotate(${rot}deg)`;
-          el.style.opacity = opacity;
+          if (t > dur / 1000) { el.remove(); return; }
+          el.style.transform = `translate(${vx*t}px, ${vy*t + 0.5*gravity*t*t}px) rotate(${spin*t}deg)`;
+          el.style.opacity = Math.max(0, 1 - t / (dur / 1000));
           requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
+        })(performance.now());
       }
     }
     document.addEventListener('keydown', (e) => {
@@ -834,14 +1167,14 @@
         if (konamiIndex === konamiCode.length) { spawnConfetti(); konamiIndex = 0; }
       } else { konamiIndex = 0; }
     });
-    const avatar = document.querySelector('.avatar');
+    const avatarEl = document.querySelector('.avatar');
     let avatarClicks = 0;
-    avatar.addEventListener('click', () => {
+    avatarEl.addEventListener('click', () => {
       avatarClicks++;
       if (avatarClicks >= 3) { spawnConfetti(); avatarClicks = 0; }
     });
 
-    // 5. Typewriter effect on tagline — first visit only
+    // === 15. Typewriter effect — first visit only ===
     (function() {
       if (sessionStorage.getItem('typed')) return;
       const target = document.getElementById('typewriter-target');
