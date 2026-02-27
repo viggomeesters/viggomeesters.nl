@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viggo Meesters</title>
+  <meta name="description" content="Data Management Consultant. Building tools, shipping code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --border: #222;
+      --text: #e0e0e0;
+      --muted: #666;
+      --accent: #00ff88;
+      --accent-dim: #00ff8820;
+      --link: #88ccff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 560px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      margin-bottom: 48px;
+    }
+
+    .header h1 {
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .header h1 .cursor {
+      color: var(--accent);
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .header .role {
+      color: var(--muted);
+      font-size: 0.85em;
+      font-weight: 400;
+    }
+
+    .header .bio {
+      margin-top: 16px;
+      font-size: 0.8em;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-label {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Link cards */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.82em;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .link-card:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .link-card .icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      opacity: 0.7;
+    }
+
+    .link-card:hover .icon {
+      opacity: 1;
+    }
+
+    .link-card .label {
+      flex: 1;
+    }
+
+    .link-card .meta {
+      color: var(--muted);
+      font-size: 0.85em;
+    }
+
+    .link-card .arrow {
+      color: var(--muted);
+      font-size: 0.9em;
+      transition: transform 0.15s, color 0.15s;
+    }
+
+    .link-card:hover .arrow {
+      transform: translateX(2px);
+      color: var(--accent);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.7em;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Temp pages badge */
+    .badge {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.8em;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid #00ff8840;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 40px 16px; }
+      .header h1 { font-size: 1.3em; }
+      .footer { flex-direction: column; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>viggo meesters<span class="cursor">_</span></h1>
+      <div class="role">data management consultant @ mccoy</div>
+      <div class="bio">building tools, shipping code, automating everything.<br>sap data migration / typescript / python / alteryx</div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <div class="section-label">projects</div>
+      <div class="links">
+        <a href="https://minimal-etl-modeler.vercel.app" class="link-card" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span class="label">Minimal ETL Modeler</span>
+          <span class="meta">visual data flows</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://visual-pm-app.vercel.app" class="link-card" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <span class="label">Visual PM</span>
+          <span class="meta">project management</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://kraamweek.vercel.app" class="link-card" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="label">Kraamweek</span>
+          <span class="meta">newborn planning app</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Profiles -->
+    <div class="section">
+      <div class="section-label">profiles</div>
+      <div class="links">
+        <a href="https://github.com/viggomeesters" class="link-card" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span class="label">GitHub</span>
+          <span class="meta">viggomeesters</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://linkedin.com/in/viggomeesters" class="link-card" target="_blank">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span class="label">LinkedIn</span>
+          <span class="meta">viggomeesters</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="mailto:viggomeesters@icloud.com" class="link-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          <span class="label">Email</span>
+          <span class="meta">viggomeesters@icloud.com</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Temp Pages -->
+    <div class="section" id="temp-section">
+      <div class="section-label">temp pages <span class="badge">live</span></div>
+      <div class="links" id="temp-links">
+        <div class="link-card" style="justify-content: center; color: var(--muted); cursor: default; border-style: dashed;">
+          loading...
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>&copy; 2026 viggo meesters</span>
+      <span>waspik, nl</span>
+    </div>
+
+  </div>
+
+  <script>
+    // Load temp pages from temp-publisher
+    async function loadTempPages() {
+      const container = document.getElementById('temp-links');
+      const section = document.getElementById('temp-section');
+      try {
+        const res = await fetch('https://temp-publisher.vercel.app/pages.json');
+        const pages = await res.json();
+
+        // Filter out expired
+        const now = new Date();
+        const active = pages.filter(p => new Date(p.expires) > now);
+
+        if (active.length === 0) {
+          section.style.display = 'none';
+          return;
+        }
+
+        container.innerHTML = active.map(p => {
+          const days = Math.ceil((new Date(p.expires) - now) / 86400000);
+          return `<a href="https://temp-publisher.vercel.app/${p.slug}/" class="link-card" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <span class="label">${p.title}</span>
+            <span class="meta">${days}d left</span>
+            <span class="arrow">&rarr;</span>
+          </a>`;
+        }).join('');
+      } catch {
+        section.style.display = 'none';
+      }
+    }
+    loadTempPages();
+  </script>
+</body>
+</html>
