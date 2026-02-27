@@ -761,13 +761,16 @@
 
     // 3. 3D tilt on project cards
     if (window.matchMedia('(hover: hover)').matches) {
-      document.querySelectorAll('a.tile.card').forEach(card => {
-        // Clear pop-in animation after it finishes so inline transform works
-        card.addEventListener('animationend', () => {
+      const cards = document.querySelectorAll('a.tile.card');
+      // Clear all pop-in animations after they're done so inline transforms work
+      setTimeout(() => {
+        cards.forEach(card => {
           card.style.animation = 'none';
           card.style.opacity = '1';
           card.style.transition = 'transform 0.15s ease-out, box-shadow 0.3s ease, background 0.3s ease';
-        }, { once: true });
+        });
+      }, 1200);
+      cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
           const rect = card.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
