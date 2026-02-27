@@ -4,43 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agent Brain — AI Coordination System</title>
-  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 37 skills, 12 commands, 45+ scripts.">
-  <meta name="theme-color" content="#0d1a12">
+  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 37 skills, 12 commands, 51 scripts.">
+  <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0d1a12;
-      --bg-deep: #0f1e14;
-      --bg-surface: #142119;
-      --bg-elevated: #1a2d21;
-      --border: #243a2b;
-      --border-subtle: #1b2e22;
-      --accent: #c9a84c;
-      --accent-dim: #b8963f;
-      --accent-soft: rgba(201, 168, 76, 0.12);
-      --sage: #7aab8a;
-      --sage-soft: rgba(122, 171, 138, 0.12);
-      --sage-dim: #5e9470;
-      --blue: #6b8aad;
-      --blue-soft: rgba(107, 138, 173, 0.10);
-      --green: #6bad78;
-      --green-soft: rgba(107, 173, 120, 0.12);
-      --warm: #c47a5a;
-      --warm-soft: rgba(196, 122, 90, 0.10);
-      --purple: #9b7acd;
-      --purple-soft: rgba(155, 122, 205, 0.10);
-      --moss: #4a7a5a;
-      --moss-soft: rgba(74, 122, 90, 0.15);
-      --text: #c8d5cb;
-      --text-secondary: #8aa690;
-      --text-muted: #536b58;
-      --font-display: 'DM Serif Display', Georgia, serif;
-      --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
       --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      /* Category colors */
+      --audit: #eab308;
+      --audit-soft: rgba(234,179,8,0.10);
+      --comm: #3b82f6;
+      --comm-soft: rgba(59,130,246,0.10);
+      --dev: #22c55e;
+      --dev-soft: rgba(34,197,94,0.10);
+      --doc: #a855f7;
+      --doc-soft: rgba(168,85,247,0.10);
+      --git: #f97316;
+      --git-soft: rgba(249,115,22,0.10);
+      --work: #06b6d4;
+      --work-soft: rgba(6,182,212,0.10);
+      --auto: #f472b6;
+      --auto-soft: rgba(244,114,182,0.10);
+      --cmd: #818cf8;
+      --cmd-soft: rgba(129,140,248,0.10);
     }
 
     html {
@@ -53,13 +55,14 @@
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: var(--font-body);
-      font-size: 16px;
-      line-height: 1.65;
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
       overflow-x: hidden;
       min-height: 100vh;
     }
 
+    /* Grain texture */
     body::after {
       content: '';
       position: fixed;
@@ -71,6 +74,7 @@
       background-size: 256px 256px;
     }
 
+    /* Multi-color aurora */
     .aurora {
       position: fixed;
       inset: 0;
@@ -86,9 +90,10 @@
       top: -20%;
       left: -20%;
       background:
-        radial-gradient(ellipse 600px 400px at 20% 10%, rgba(74, 122, 90, 0.10) 0%, transparent 70%),
-        radial-gradient(ellipse 500px 500px at 80% 30%, rgba(201, 168, 76, 0.05) 0%, transparent 60%),
-        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(94, 148, 112, 0.07) 0%, transparent 60%);
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(34,197,94,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(168,85,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(234,179,8,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(59,130,246,0.06) 0%, transparent 70%);
       animation: aurora-drift 40s ease-in-out infinite;
     }
     .aurora::after {
@@ -99,8 +104,8 @@
       top: -15%;
       left: -15%;
       background:
-        radial-gradient(ellipse 500px 350px at 70% 60%, rgba(74, 122, 90, 0.06) 0%, transparent 60%),
-        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(122, 171, 138, 0.04) 0%, transparent 70%);
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(6,182,212,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(249,115,22,0.05) 0%, transparent 70%);
       animation: aurora-drift-alt 35s ease-in-out infinite;
     }
     @keyframes aurora-drift {
@@ -118,24 +123,25 @@
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
       }
+      html { scroll-behavior: auto; }
     }
 
     .reveal {
       opacity: 0;
-      transform: translateY(16px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
     }
     .reveal.visible {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
 
     .page {
       position: relative;
       z-index: 1;
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 80px 28px 60px;
+      padding: 60px 20px 60px;
     }
 
     /* Back link */
@@ -143,61 +149,75 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.85em;
+      font-size: 0.82em;
       color: var(--text-muted);
       text-decoration: none;
-      margin-bottom: 36px;
-      transition: color 0.2s;
+      margin-bottom: 32px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
     }
-    .back:hover { color: var(--text-secondary); }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
 
     /* Header */
-    .header {
-      margin-bottom: 12px;
-    }
+    .header { margin-bottom: 8px; }
 
     .title {
-      font-family: var(--font-display);
-      font-size: 2.2em;
-      font-weight: 400;
-      color: #d8e5da;
+      font-family: var(--font);
+      font-size: 2em;
+      font-weight: 700;
+      color: #eeeff4;
       letter-spacing: -0.02em;
-      line-height: 1.2;
+      line-height: 1.1;
     }
 
     .subtitle {
-      font-size: 1em;
+      font-size: 0.95em;
       color: var(--text-secondary);
       margin-top: 8px;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
-    /* Stats row */
+    /* Stats row — bento tiles */
     .stats {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      margin: 28px 0;
+      margin: 24px 0;
     }
 
     .stat {
-      padding: 18px 14px;
+      padding: 18px 12px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
+      border-radius: var(--radius);
       text-align: center;
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s;
+    }
+
+    @media (hover: hover) {
+      .stat:hover {
+        transform: scale(1.04);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      }
     }
 
     .stat-num {
       font-family: var(--font-mono);
-      font-size: 1.6em;
+      font-size: 1.5em;
       font-weight: 500;
-      color: #d8e5da;
+      color: #eeeff4;
       line-height: 1;
     }
 
     .stat-label {
-      font-size: 0.75em;
+      font-size: 0.7em;
       color: var(--text-muted);
       margin-top: 4px;
       text-transform: uppercase;
@@ -215,18 +235,26 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 14px;
-      border-radius: 8px;
+      padding: 8px 14px;
+      border-radius: 12px;
       font-size: 0.78em;
       font-weight: 500;
       border: 1px solid var(--border-subtle);
       flex: 1;
       justify-content: center;
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s;
     }
 
-    .agent-chip.claude { background: var(--warm-soft); color: var(--warm); border-color: rgba(184, 122, 90, 0.2); }
-    .agent-chip.codex { background: var(--blue-soft); color: var(--blue); border-color: rgba(107, 138, 173, 0.2); }
-    .agent-chip.gemini { background: var(--purple-soft); color: var(--purple); border-color: rgba(155, 122, 205, 0.2); }
+    .agent-chip.claude { background: var(--git-soft); color: var(--git); border-color: rgba(249,115,22,0.15); }
+    .agent-chip.codex { background: var(--comm-soft); color: var(--comm); border-color: rgba(59,130,246,0.15); }
+    .agent-chip.gemini { background: var(--doc-soft); color: var(--doc); border-color: rgba(168,85,247,0.15); }
+
+    @media (hover: hover) {
+      .agent-chip:hover {
+        transform: scale(1.04);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      }
+    }
 
     .agent-dot {
       width: 6px;
@@ -235,19 +263,32 @@
       background: currentColor;
     }
 
+    /* Section label */
+    .section-label {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      font-weight: 500;
+      padding: 24px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--dot-color, #a855f7);
+      box-shadow: 0 0 8px var(--dot-color, rgba(168,85,247,0.4));
+      flex-shrink: 0;
+    }
+
     .divider {
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 32px 0;
-    }
-
-    .section-title {
-      font-size: 0.75em;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      margin-bottom: 14px;
-      font-weight: 500;
+      margin: 28px 0;
     }
 
     /* Accordion */
@@ -262,21 +303,24 @@
       padding: 14px 18px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 14px;
+      border-radius: var(--radius);
       cursor: pointer;
       list-style: none;
-      transition: border-color 0.3s, background 0.2s;
+      transition: border-color 0.3s, background 0.2s, transform 0.3s var(--bounce);
       user-select: none;
     }
 
     summary::-webkit-details-marker { display: none; }
 
-    summary:hover {
-      border-color: var(--border);
+    @media (hover: hover) {
+      summary:hover {
+        border-color: var(--border);
+        transform: scale(1.01);
+      }
     }
 
     details[open] summary {
-      border-radius: 14px 14px 0 0;
+      border-radius: var(--radius) var(--radius) 0 0;
       border-bottom-color: var(--border-subtle);
       background: var(--bg-elevated);
     }
@@ -290,24 +334,27 @@
     }
 
     .summary-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 7px;
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 0.82em;
       flex-shrink: 0;
+      transition: transform 0.3s var(--bounce);
     }
 
-    .summary-icon.audit { background: rgba(201, 168, 76, 0.12); color: var(--accent); }
-    .summary-icon.comm { background: rgba(107, 138, 173, 0.12); color: var(--blue); }
-    .summary-icon.dev { background: rgba(107, 173, 120, 0.12); color: var(--green); }
-    .summary-icon.doc { background: rgba(155, 122, 205, 0.12); color: var(--purple); }
-    .summary-icon.git { background: rgba(184, 122, 90, 0.12); color: var(--warm); }
-    .summary-icon.work { background: rgba(107, 138, 173, 0.12); color: var(--blue); }
-    .summary-icon.auto { background: rgba(201, 168, 76, 0.12); color: var(--accent); }
-    .summary-icon.cmd { background: var(--bg-elevated); color: var(--text-secondary); }
+    details[open] .summary-icon { transform: scale(1.1); }
+
+    .summary-icon.audit { background: var(--audit-soft); color: var(--audit); }
+    .summary-icon.comm { background: var(--comm-soft); color: var(--comm); }
+    .summary-icon.dev { background: var(--dev-soft); color: var(--dev); }
+    .summary-icon.doc { background: var(--doc-soft); color: var(--doc); }
+    .summary-icon.git { background: var(--git-soft); color: var(--git); }
+    .summary-icon.work { background: var(--work-soft); color: var(--work); }
+    .summary-icon.auto { background: var(--auto-soft); color: var(--auto); }
+    .summary-icon.cmd { background: var(--cmd-soft); color: var(--cmd); }
 
     .summary-text {
       display: flex;
@@ -316,23 +363,23 @@
     }
 
     .summary-name {
-      font-size: 0.95em;
-      font-weight: 500;
-      color: #d8e5da;
+      font-size: 0.92em;
+      font-weight: 600;
+      color: #e0e1e8;
     }
 
     .summary-desc {
-      font-size: 0.82em;
+      font-size: 0.78em;
       color: var(--text-muted);
     }
 
     .summary-count {
       font-family: var(--font-mono);
-      font-size: 0.72em;
+      font-size: 0.7em;
       color: var(--text-muted);
       padding: 3px 8px;
       background: var(--bg);
-      border-radius: 6px;
+      border-radius: 8px;
       flex-shrink: 0;
       min-width: 32px;
       text-align: center;
@@ -353,35 +400,31 @@
     .detail-list {
       border: 1px solid var(--border-subtle);
       border-top: none;
-      border-radius: 0 0 14px 14px;
+      border-radius: 0 0 var(--radius) var(--radius);
       overflow: hidden;
     }
 
     .detail-item {
-      padding: 10px 16px 10px 54px;
+      padding: 10px 16px 10px 56px;
       border-bottom: 1px solid var(--border-subtle);
       display: flex;
       flex-direction: column;
       gap: 2px;
+      transition: background 0.2s;
     }
 
-    .detail-item:last-child {
-      border-bottom: none;
-    }
-
-    .detail-item:hover {
-      background: rgba(255, 255, 255, 0.01);
-    }
+    .detail-item:last-child { border-bottom: none; }
+    .detail-item:hover { background: rgba(255, 255, 255, 0.015); }
 
     .detail-name {
       font-family: var(--font-mono);
-      font-size: 0.85em;
+      font-size: 0.82em;
       color: var(--text-secondary);
       font-weight: 500;
     }
 
     .detail-desc {
-      font-size: 0.82em;
+      font-size: 0.78em;
       color: var(--text-muted);
       line-height: 1.45;
     }
@@ -391,7 +434,7 @@
       padding: 20px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-radius: 12px;
+      border-radius: var(--radius);
       font-family: var(--font-mono);
       font-size: 0.72em;
       line-height: 1.8;
@@ -400,21 +443,19 @@
       white-space: pre;
     }
 
-    .arch-diagram .hl { color: var(--accent); }
-    .arch-diagram .bl { color: var(--blue); }
-    .arch-diagram .gr { color: var(--green); }
-    .arch-diagram .pr { color: var(--purple); }
-    .arch-diagram .wm { color: var(--warm); }
+    .arch-diagram .hl { color: var(--audit); }
+    .arch-diagram .bl { color: var(--comm); }
+    .arch-diagram .gr { color: var(--dev); }
+    .arch-diagram .pr { color: var(--doc); }
+    .arch-diagram .wm { color: var(--git); }
     .arch-diagram .dm { color: var(--text-muted); }
 
     /* Footer */
     .footer {
-      margin-top: 48px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: 40px;
       font-size: 0.72em;
       color: var(--text-muted);
+      text-align: center;
       opacity: 0.5;
     }
 
@@ -423,14 +464,13 @@
       text-decoration: none;
       transition: color 0.2s;
     }
-
     .footer a:hover { color: var(--text-secondary); }
 
-    @media (max-width: 520px) {
-      .page { padding: 48px 18px 40px; }
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 40px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
       .agents { flex-wrap: wrap; }
-      .title { font-size: 1.6em; }
+      .title { font-size: 1.5em; }
       .detail-item { padding-left: 16px; }
     }
   </style>
@@ -479,7 +519,7 @@
 
     <!-- Skills -->
     <div class="reveal">
-      <div class="section-title">Skills (37)</div>
+      <div class="section-label" style="--dot-color: #22c55e">Skills (37)</div>
 
       <!-- Audit -->
       <details>
@@ -495,70 +535,22 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">audit-01-design</span>
-            <span class="detail-desc">Verifies implementation adheres to design document, principles, and constraints</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-02-arch</span>
-            <span class="detail-desc">Architecture review: coupling, boundaries, layering, circular dependencies</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-03-security</span>
-            <span class="detail-desc">OWASP risks, auth, secrets, input validation, crypto misuse</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-04-code</span>
-            <span class="detail-desc">Code quality: DRY violations, dead code, complexity, type safety</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-05-diff</span>
-            <span class="detail-desc">Risk-focused code review for PRs with blast radius analysis</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-06-testing</span>
-            <span class="detail-desc">Coverage gaps, missing integration tests, flaky tests, edge cases</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-07-api</span>
-            <span class="detail-desc">REST/GraphQL conventions, error responses, pagination, versioning</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-08-perf</span>
-            <span class="detail-desc">N+1 queries, caching, blocking operations, memory leaks</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-09-frontend</span>
-            <span class="detail-desc">Component architecture, responsive design, state management, CSS</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-10-a11y</span>
-            <span class="detail-desc">WCAG AA compliance, semantic HTML, ARIA, keyboard navigation</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-11-perf-web</span>
-            <span class="detail-desc">Core Web Vitals (LCP, CLS, INP), bundle size, image optimization</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-12-deps</span>
-            <span class="detail-desc">Outdated packages, known CVEs, license compliance, supply chain</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-13-data</span>
-            <span class="detail-desc">GDPR compliance, PII handling, data retention, encryption</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-14-devops</span>
-            <span class="detail-desc">CI/CD pipelines, logging, monitoring, health checks, Docker</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-15-features</span>
-            <span class="detail-desc">Missing features, UX gaps, competitive positioning, quick wins</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">audit-16-mobile</span>
-            <span class="detail-desc">App size, startup time, battery usage, offline handling, guidelines</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">audit-01-design</span><span class="detail-desc">Verifies implementation adheres to design document, principles, and constraints</span></div>
+          <div class="detail-item"><span class="detail-name">audit-02-arch</span><span class="detail-desc">Architecture review: coupling, boundaries, layering, circular dependencies</span></div>
+          <div class="detail-item"><span class="detail-name">audit-03-security</span><span class="detail-desc">OWASP risks, auth, secrets, input validation, crypto misuse</span></div>
+          <div class="detail-item"><span class="detail-name">audit-04-code</span><span class="detail-desc">Code quality: DRY violations, dead code, complexity, type safety</span></div>
+          <div class="detail-item"><span class="detail-name">audit-05-diff</span><span class="detail-desc">Risk-focused code review for PRs with blast radius analysis</span></div>
+          <div class="detail-item"><span class="detail-name">audit-06-testing</span><span class="detail-desc">Coverage gaps, missing integration tests, flaky tests, edge cases</span></div>
+          <div class="detail-item"><span class="detail-name">audit-07-api</span><span class="detail-desc">REST/GraphQL conventions, error responses, pagination, versioning</span></div>
+          <div class="detail-item"><span class="detail-name">audit-08-perf</span><span class="detail-desc">N+1 queries, caching, blocking operations, memory leaks</span></div>
+          <div class="detail-item"><span class="detail-name">audit-09-frontend</span><span class="detail-desc">Component architecture, responsive design, state management, CSS</span></div>
+          <div class="detail-item"><span class="detail-name">audit-10-a11y</span><span class="detail-desc">WCAG AA compliance, semantic HTML, ARIA, keyboard navigation</span></div>
+          <div class="detail-item"><span class="detail-name">audit-11-perf-web</span><span class="detail-desc">Core Web Vitals (LCP, CLS, INP), bundle size, image optimization</span></div>
+          <div class="detail-item"><span class="detail-name">audit-12-deps</span><span class="detail-desc">Outdated packages, known CVEs, license compliance, supply chain</span></div>
+          <div class="detail-item"><span class="detail-name">audit-13-data</span><span class="detail-desc">GDPR compliance, PII handling, data retention, encryption</span></div>
+          <div class="detail-item"><span class="detail-name">audit-14-devops</span><span class="detail-desc">CI/CD pipelines, logging, monitoring, health checks, Docker</span></div>
+          <div class="detail-item"><span class="detail-name">audit-15-features</span><span class="detail-desc">Missing features, UX gaps, competitive positioning, quick wins</span></div>
+          <div class="detail-item"><span class="detail-name">audit-16-mobile</span><span class="detail-desc">App size, startup time, battery usage, offline handling, guidelines</span></div>
         </div>
       </details>
 
@@ -576,22 +568,10 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">comm-chat</span>
-            <span class="detail-desc">Draft and send messages across Teams, WhatsApp, SMS/iMessage</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">comm-mail-save</span>
-            <span class="detail-desc">Save inbox emails to vault as structured interaction notes</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">comm-mail-write</span>
-            <span class="detail-desc">Compose and reply to emails via Apple Mail with vault context</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">comm-meeting</span>
-            <span class="detail-desc">Meeting prep and debrief with context gathering and follow-up tasks</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">comm-chat</span><span class="detail-desc">Draft and send messages across Teams, WhatsApp, SMS/iMessage</span></div>
+          <div class="detail-item"><span class="detail-name">comm-mail-save</span><span class="detail-desc">Save inbox emails to vault as structured interaction notes</span></div>
+          <div class="detail-item"><span class="detail-name">comm-mail-write</span><span class="detail-desc">Compose and reply to emails via Apple Mail with vault context</span></div>
+          <div class="detail-item"><span class="detail-name">comm-meeting</span><span class="detail-desc">Meeting prep and debrief with context gathering and follow-up tasks</span></div>
         </div>
       </details>
 
@@ -609,30 +589,12 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">dev-alteryx</span>
-            <span class="detail-desc">Build, debug, and validate Alteryx .yxmd workflows and SAP methodology</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">dev-flutter</span>
-            <span class="detail-desc">Flutter/Dart mobile development with Riverpod, GoRouter, Supabase</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">dev-frontend</span>
-            <span class="detail-desc">Create production-grade frontend interfaces with high design quality</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">dev-python</span>
-            <span class="detail-desc">Modern Python project configuration with uv, ruff, type checking</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">dev-raycast</span>
-            <span class="detail-desc">Raycast extension development patterns in TypeScript and React</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">dev-react</span>
-            <span class="detail-desc">React and Next.js performance — 57 rules across 8 categories</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">dev-alteryx</span><span class="detail-desc">Build, debug, and validate Alteryx .yxmd workflows and SAP methodology</span></div>
+          <div class="detail-item"><span class="detail-name">dev-flutter</span><span class="detail-desc">Flutter/Dart mobile development with Riverpod, GoRouter, Supabase</span></div>
+          <div class="detail-item"><span class="detail-name">dev-frontend</span><span class="detail-desc">Create production-grade frontend interfaces with high design quality</span></div>
+          <div class="detail-item"><span class="detail-name">dev-python</span><span class="detail-desc">Modern Python project configuration with uv, ruff, type checking</span></div>
+          <div class="detail-item"><span class="detail-name">dev-raycast</span><span class="detail-desc">Raycast extension development patterns in TypeScript and React</span></div>
+          <div class="detail-item"><span class="detail-name">dev-react</span><span class="detail-desc">React and Next.js performance — 57 rules across 8 categories</span></div>
         </div>
       </details>
 
@@ -650,22 +612,10 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">doc-pdf</span>
-            <span class="detail-desc">PDF processing: read, merge, split, rotate, OCR, watermark, fill forms</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">doc-vault</span>
-            <span class="detail-desc">Obsidian vault CRUD — schema-aware note creation and archival</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">doc-word</span>
-            <span class="detail-desc">Word document creation with formatting, tracked changes, tables</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">doc-xlsx</span>
-            <span class="detail-desc">Excel operations: create, read, edit, clean data, formulas</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">doc-pdf</span><span class="detail-desc">PDF processing: read, merge, split, rotate, OCR, watermark, fill forms</span></div>
+          <div class="detail-item"><span class="detail-name">doc-vault</span><span class="detail-desc">Obsidian vault CRUD — schema-aware note creation and archival</span></div>
+          <div class="detail-item"><span class="detail-name">doc-word</span><span class="detail-desc">Word document creation with formatting, tracked changes, tables</span></div>
+          <div class="detail-item"><span class="detail-name">doc-xlsx</span><span class="detail-desc">Excel operations: create, read, edit, clean data, formulas</span></div>
         </div>
       </details>
 
@@ -683,14 +633,8 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">git-ship</span>
-            <span class="detail-desc">Safe Git workflow: inspect, commit, push, branch sync, release prep</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">gh-fix-ci</span>
-            <span class="detail-desc">Debug failing GitHub Actions: inspect logs, summarize, draft fixes</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">git-ship</span><span class="detail-desc">Safe Git workflow: inspect, commit, push, branch sync, release prep</span></div>
+          <div class="detail-item"><span class="detail-name">gh-fix-ci</span><span class="detail-desc">Debug failing GitHub Actions: inspect logs, summarize, draft fixes</span></div>
         </div>
       </details>
 
@@ -708,18 +652,9 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">work-calendar</span>
-            <span class="detail-desc">Apple Calendar management via AppleScript: list, create, update events</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">work-focus</span>
-            <span class="detail-desc">Daily planning and focus with Activity Box awareness</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">work-report</span>
-            <span class="detail-desc">Weekly work reports aggregating git, vault, and task activity</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">work-calendar</span><span class="detail-desc">Apple Calendar management via AppleScript: list, create, update events</span></div>
+          <div class="detail-item"><span class="detail-name">work-focus</span><span class="detail-desc">Daily planning and focus with Activity Box awareness</span></div>
+          <div class="detail-item"><span class="detail-name">work-report</span><span class="detail-desc">Weekly work reports aggregating git, vault, and task activity</span></div>
         </div>
       </details>
 
@@ -737,14 +672,8 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">ledger</span>
-            <span class="detail-desc">Convert findings into structured task ledger entries automatically</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">next</span>
-            <span class="detail-desc">Autonomous task execution: pick, implement, commit, push in a loop</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert findings into structured task ledger entries automatically</span></div>
+          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Autonomous task execution: pick, implement, commit, push in a loop</span></div>
         </div>
       </details>
     </div>
@@ -753,7 +682,7 @@
 
     <!-- Commands -->
     <div class="reveal">
-      <div class="section-title">Commands (12)</div>
+      <div class="section-label" style="--dot-color: #818cf8">Commands (12)</div>
 
       <details>
         <summary>
@@ -768,54 +697,18 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item">
-            <span class="detail-name">/data</span>
-            <span class="detail-desc">CSV & Excel analysis — structure, quality, statistics, issues</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/debug</span>
-            <span class="detail-desc">Systematic troubleshooting: reproduce, isolate, diagnose, fix, verify</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/git</span>
-            <span class="detail-desc">One-command Git workflow: stage, commit, merge, push, release</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/ledger</span>
-            <span class="detail-desc">Convert audit findings into actionable task ledger entries</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/next</span>
-            <span class="detail-desc">Autonomous ledger-driven execution: pick task, implement, ship</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/nice-docs</span>
-            <span class="detail-desc">Branded document export: HTML, PDF, DOCX, PPTX</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/pr</span>
-            <span class="detail-desc">Pull request code review and analysis</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/refactor</span>
-            <span class="detail-desc">Structured code refactoring with impact analysis and safety checks</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/report</span>
-            <span class="detail-desc">Weekly work report across projects and clients</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/research</span>
-            <span class="detail-desc">Multi-source web research with comparisons and summaries</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/task</span>
-            <span class="detail-desc">Central task control plane shared across all agents</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-name">/vault-health</span>
-            <span class="detail-desc">Complete Obsidian vault integrity, metadata, and link validation</span>
-          </div>
+          <div class="detail-item"><span class="detail-name">/data</span><span class="detail-desc">CSV & Excel analysis — structure, quality, statistics, issues</span></div>
+          <div class="detail-item"><span class="detail-name">/debug</span><span class="detail-desc">Systematic troubleshooting: reproduce, isolate, diagnose, fix, verify</span></div>
+          <div class="detail-item"><span class="detail-name">/git</span><span class="detail-desc">One-command Git workflow: stage, commit, merge, push, release</span></div>
+          <div class="detail-item"><span class="detail-name">/ledger</span><span class="detail-desc">Convert audit findings into actionable task ledger entries</span></div>
+          <div class="detail-item"><span class="detail-name">/next</span><span class="detail-desc">Autonomous ledger-driven execution: pick task, implement, ship</span></div>
+          <div class="detail-item"><span class="detail-name">/nice-docs</span><span class="detail-desc">Branded document export: HTML, PDF, DOCX, PPTX</span></div>
+          <div class="detail-item"><span class="detail-name">/pr</span><span class="detail-desc">Pull request code review and analysis</span></div>
+          <div class="detail-item"><span class="detail-name">/refactor</span><span class="detail-desc">Structured code refactoring with impact analysis and safety checks</span></div>
+          <div class="detail-item"><span class="detail-name">/report</span><span class="detail-desc">Weekly work report across projects and clients</span></div>
+          <div class="detail-item"><span class="detail-name">/research</span><span class="detail-desc">Multi-source web research with comparisons and summaries</span></div>
+          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Central task control plane shared across all agents</span></div>
+          <div class="detail-item"><span class="detail-name">/vault-health</span><span class="detail-desc">Complete Obsidian vault integrity, metadata, and link validation</span></div>
         </div>
       </details>
     </div>
@@ -824,7 +717,7 @@
 
     <!-- Architecture -->
     <div class="reveal">
-      <div class="section-title">Architecture</div>
+      <div class="section-label" style="--dot-color: #eab308">Architecture</div>
       <div class="arch-diagram"><span class="dm">┌─────────────────────────────────────────────┐</span>
 <span class="dm">│</span>  <span class="hl">Agent Brain</span>  <span class="dm">— deterministic autopilot</span>       <span class="dm">│</span>
 <span class="dm">│</span>                                               <span class="dm">│</span>
@@ -837,8 +730,7 @@
     </div>
 
     <div class="footer">
-      <span>&copy; 2026</span>
-      <a href="https://github.com/viggomeesters" target="_blank" rel="noopener">github.com/viggomeesters</a>
+      <span>&copy; 2026 &middot; <a href="https://github.com/viggomeesters" target="_blank" rel="noopener">github.com/viggomeesters</a></span>
     </div>
 
   </div>
