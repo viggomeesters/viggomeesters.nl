@@ -31,10 +31,9 @@ The homepage HTML file should stay under **30 KB** uncompressed. If it grows pas
 
 ### Allowed JavaScript
 
-JS is only permitted for these specific use cases:
+JS is only permitted for one use case:
 
 - **Form submission** — Formspree POST with loading/success/error states
-- **Scroll reveal** — IntersectionObserver to fade in `.reveal` elements
 
 That's it. No other JS is allowed on the homepage without updating this manifest first.
 
@@ -147,29 +146,14 @@ Two layers of overlapping radial gradients (`::before` and `::after` on `.aurora
 
 - Opacity range: `0.05–0.08` per gradient
 - Colors used: blue, purple, gold, pink, cyan, green, orange (from the project palette)
-- Animation: slow drift (`40s` / `35s`) with small translate + rotate
+- Static — no animation or drift. The gradients are fixed in place.
 - **Rule:** Aurora is atmosphere, not decoration. It should be barely noticeable on first glance.
-
-### Grain texture
-
-SVG `feTurbulence` noise applied via `body::after`. Fixed position, `z-index: 9999`, `opacity: 0.03`.
-
-- **Rule:** Grain adds subtle texture. At `0.03` opacity it's felt more than seen.
 
 ### Avatar ring
 
 Conic gradient using all 8 project colors, applied as `::before` (solid, `0.55` opacity, `inset: -4px`) and `::after` (blurred glow, `0.12` opacity, `14px` blur, `inset: -10px`).
 
 - **Rule:** Static only. No spinning, morphing, or animated effects on the avatar ring.
-
-### Card entrance
-
-Staggered `pop-in` animation on `.tile.card` elements:
-
-- `from: opacity 0, scale(0.9), translateY(10px)` → `to: opacity 1, transform none`
-- Duration: `0.5s` with bounce easing
-- Stagger: `60ms` per card (`nth-child` delays from `0.1s` to `0.52s`)
-- Uses `animation-fill-mode: forwards`
 
 ### Hover effects
 
@@ -240,6 +224,10 @@ These are explicit prohibitions. They exist because they were tried and removed.
 | **API dependencies** | Web Audio API for UI sounds | Unexpected, blocked by autoplay policies |
 | **Scroll-linked** | Scroll progress bar, scroll velocity effects | Adds visual clutter for no practical benefit |
 | **Scroll-linked** | Spotlight/flashlight following cursor | Performance overhead, distracting |
+| **CSS animation** | Grain/noise texture overlay | Invisible at usable opacity, unnecessary complexity |
+| **CSS animation** | Aurora drift/movement | Nobody watches a background for 40 seconds |
+| **CSS animation** | Card entrance animations (pop-in, stagger) | Delays content visibility for no benefit |
+| **JS animation** | Scroll reveal / fade-in on scroll | Same — delays content, adds JS for a decorative effect |
 
 **The test:** Before adding any visual feature, ask: "Would a visitor notice if I removed this?" If the answer is no, or if they'd only notice because something stopped being annoying, don't add it.
 
