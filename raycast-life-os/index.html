@@ -6,7 +6,6 @@
   <title>Raycast Life OS — Personal Knowledge Management</title>
   <meta name="description" content="43 Raycast commands for Obsidian vault management, task scoring, contact CRM, health tracking, and Apple ecosystem integration.">
   <meta name="theme-color" content="#0c0c0f">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%233b82f6'/><stop offset='50%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%23f97316'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230c0c0f'/><text x='50' y='66' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='48' fill='url(%23g)'>VM</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -541,17 +540,6 @@
     }
     .footer a:hover { color: var(--text-secondary); }
 
-    /* Scroll progress bar */
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background: linear-gradient(90deg, #f97316, #a855f7, #22c55e, #3b82f6, #eab308, #06b6d4);
-      z-index: 10000;
-    }
-
     @media (max-width: 640px) {
       .page { padding: 40px 14px 40px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
@@ -566,8 +554,7 @@
   </style>
 </head>
 <body>
-  <div class="scroll-progress" id="scroll-progress"></div>
-  <div class="aurora" id="aurora"></div>
+  <div class="aurora"></div>
 
   <div class="page">
 
@@ -578,21 +565,21 @@
       <p class="subtitle">A unified Raycast extension for personal knowledge management. Deep Obsidian vault integration, contact CRM, task scoring, health tracking, and Apple ecosystem automation — all from your keyboard.</p>
     </div>
 
-    <div class="stats reveal" id="stats">
+    <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num" data-count="43">0</div>
+        <div class="stat-num">43</div>
         <div class="stat-label">Commands</div>
       </div>
       <div class="stat">
-        <div class="stat-num" data-count="29">0</div>
+        <div class="stat-num">29</div>
         <div class="stat-label">Services</div>
       </div>
       <div class="stat">
-        <div class="stat-num" data-count="12">0</div>
+        <div class="stat-num">12</div>
         <div class="stat-label">Note Types</div>
       </div>
       <div class="stat">
-        <div class="stat-num" data-count="4">0</div>
+        <div class="stat-num">4</div>
         <div class="stat-label">Areas</div>
       </div>
     </div>
@@ -811,7 +798,6 @@
   </div>
 
   <script>
-    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -828,44 +814,6 @@
         setTimeout(() => el.classList.add('visible'), 80 + i * 100);
       });
     });
-
-    // Scroll progress bar
-    const progressBar = document.getElementById('scroll-progress');
-    window.addEventListener('scroll', () => {
-      const h = document.documentElement.scrollHeight - window.innerHeight;
-      progressBar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
-    }, { passive: true });
-
-    // Interactive aurora
-    const aurora = document.getElementById('aurora');
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 20;
-      const y = (e.clientY / window.innerHeight - 0.5) * 20;
-      aurora.style.transform = `translate(${x}px, ${y}px)`;
-    });
-
-    // Counter animation on stat numbers
-    const statsEl = document.getElementById('stats');
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll('[data-count]').forEach(el => {
-            const target = parseInt(el.dataset.count);
-            const duration = 1200;
-            const start = performance.now();
-            function tick(now) {
-              const progress = Math.min((now - start) / duration, 1);
-              const eased = 1 - Math.pow(1 - progress, 3);
-              el.textContent = Math.round(eased * target);
-              if (progress < 1) requestAnimationFrame(tick);
-            }
-            requestAnimationFrame(tick);
-          });
-          counterObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    counterObserver.observe(statsEl);
   </script>
 </body>
 </html>
