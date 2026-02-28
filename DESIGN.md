@@ -70,6 +70,7 @@ Each project has a unique accent color. These are applied via inline `style` att
 | Agent Brain | Emerald | `#22c55e` | `rgba(34,197,94,0.10)` |
 | Raycast Life OS | Orange | `#f97316` | `rgba(249,115,22,0.10)` |
 | Life OS Starter | Indigo/violet | `#818cf8` | `rgba(129,140,248,0.10)` |
+| Methodologies | Amber | `#f59e0b` | `rgba(245,158,11,0.10)` |
 
 **Rule:** Accent colors are only used for borders, icon tints, tag backgrounds, and glow on hover. Never for body text or large surface fills.
 
