@@ -8,9 +8,9 @@ Every change must be checked against these principles. If it conflicts, the chan
 ## Principles
 
 1. **Practical first.** Every element must serve a clear purpose. If removing it changes nothing for the visitor, it shouldn't exist.
-2. **Fast by default.** Single HTML file, no build step, no runtime dependencies. The page must load instantly on any connection.
+2. **Fast by default.** Single HTML file, no build step, minimal external dependencies. The page must load instantly on any connection. The only external resource is Google Fonts (Sora), loaded with `preconnect` + `display=swap` for non-blocking rendering. If Google Fonts is unavailable, `system-ui` takes over with zero layout shift.
 3. **Consistent everywhere.** What works in Chrome must work in Safari, Firefox, and mobile browsers. No feature detection hacks, no progressive enhancement layers that create two-tier experiences.
-4. **CSS does the work.** Visual effects live in CSS. JavaScript is reserved for things CSS genuinely cannot do (form submission, scroll observation). Decorative JS is not allowed.
+4. **CSS does the work.** Visual effects live in CSS. JavaScript is reserved for things CSS genuinely cannot do (form submission). Decorative JS is not allowed.
 5. **Quiet confidence.** The design communicates through color, typography, and spatial composition — not through motion tricks, particle effects, or interactive gimmicks. Bold but restrained.
 
 ---
@@ -111,9 +111,21 @@ Label tiles use a colored dot (`7px`, with matching `box-shadow` glow). Projects
 
 Two-column bento grid (`grid-template-columns: 1fr 1fr`, `gap: 10px`). Single column below `640px`.
 
+### Mobile breakpoint (`max-width: 640px`)
+
+| Property | Desktop | Mobile |
+|----------|---------|--------|
+| Grid | 2 columns | 1 column |
+| Page padding | `60px 16px` | `40px 12px` |
+| Name (h1) | `1.7em` | `1.4em` |
+| Avatar | `80px` | `64px` |
+| Avatar ring inset | `-4px` / `-10px` | `-3px` / `-7px` |
+| Profile tile | `gap: 20px`, `padding: 28px` | `gap: 14px`, `padding: 20px` |
+| Form row | Horizontal (flex row) | Stacked (flex column) |
+
 ### Content width
 
-`max-width: 640px`, centered with `margin: 0 auto`. Padding: `60px 16px` (mobile: `40px 12px`).
+`max-width: 640px`, centered with `margin: 0 auto` inside `<main class="page">`. Padding: `60px 16px`.
 
 ### Tile system
 
@@ -176,9 +188,45 @@ All hover effects are guarded by `@media (hover: hover)` to prevent sticky state
 **Contact button:**
 - `translateY(-2px) scale(1.02)` with shadow
 
+### Hover transition easing
+
+All hover transitions use `cubic-bezier(0.34, 1.56, 0.64, 1)` (stored as `--bounce`). This creates a slight overshoot that gives cards a physical "spring" feel without visible animation.
+
+### Focus states
+
+Form inputs on `:focus` get a purple ring: `border-color: rgba(168, 85, 247, 0.4)` with a dual glow `box-shadow` (purple + blue). This matches the contact section's purple dot accent.
+
 ### Reduced motion
 
-`@media (prefers-reduced-motion: reduce)` kills all animation and transition durations, and disables smooth scrolling.
+`@media (prefers-reduced-motion: reduce)` sets all `transition-duration` to `0.01ms` and disables `smooth` scrolling. There are no CSS animations on the page — only transitions on hover/focus.
+
+---
+
+## Accessibility
+
+### Semantic structure
+
+The page uses `<main>` as its root landmark. Section labels ("Projects", "Links") are `<h2>` elements for proper heading hierarchy.
+
+### Form labels
+
+All form inputs have visually-hidden `<label>` elements (using `.sr-only`) with `for`/`id` associations. Screen readers announce field names; sighted users see placeholders.
+
+### Color contrast
+
+All text passes WCAG AA (4.5:1 minimum). Key ratios on `--bg` (`#0c0c0f`):
+
+| Token | Hex | Ratio | Status |
+|-------|-----|-------|--------|
+| `--text` | `#c8cbd5` | 10.4:1 | AAA |
+| `--text-secondary` | `#8a90a6` | 6.1:1 | AA |
+| `--text-muted` | `#777c90` | 4.72:1 | AA |
+
+**Rule:** `--text-muted` is the lowest-contrast text allowed. Nothing below 4.5:1 on `--bg`.
+
+### Keyboard navigation
+
+All interactive elements (cards, links, form inputs, button) are natively focusable (`<a>`, `<input>`, `<textarea>`, `<button>`). No custom `tabindex` overrides. Focus order follows DOM order.
 
 ---
 
@@ -240,7 +288,7 @@ Subpages (`/agent-brain/`, `/raycast-life-os/`) follow the same visual language 
 **Shared with homepage:**
 - Same color tokens and Sora font
 - Same tile/card styling patterns
-- Same aurora background and grain overlay
+- Same aurora background
 - Same hover behavior and reduced-motion support
 
 **Subpage-specific:**
