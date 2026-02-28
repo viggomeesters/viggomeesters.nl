@@ -54,7 +54,7 @@ Near-black neutrals with no color bias. The background should feel like a dark c
 | `--border-subtle` | `#1e1e26` | Default borders |
 | `--text` | `#c8cbd5` | Body text |
 | `--text-secondary` | `#8a90a6` | Tagline, descriptions |
-| `--text-muted` | `#53586b` | Labels, meta text, placeholders |
+| `--text-muted` | `#777c90` | Labels, meta text, placeholders (4.72:1 contrast on `--bg`) |
 
 ### Per-project signature colors
 
@@ -84,7 +84,7 @@ Label tiles use a colored dot (`7px`, with matching `box-shadow` glow). Projects
 | Property | Value |
 |----------|-------|
 | Font family | `'Sora', system-ui, -apple-system, sans-serif` |
-| Loaded weights | 300, 400, 500, 600, 700 |
+| Loaded weights | 400, 500, 600, 700 |
 | Base size | `14px` |
 | Line height | `1.6` |
 | Rendering | `-webkit-font-smoothing: antialiased` |
