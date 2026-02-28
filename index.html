@@ -12,6 +12,11 @@
   <meta property="og:image" content="https://viggomeesters.nl/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://viggomeesters.nl">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Viggo Meesters">
+  <meta name="twitter:description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
+  <meta name="twitter:image" content="https://viggomeesters.nl/og-image.png">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%233b82f6'/><stop offset='50%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%23f97316'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230c0c0f'/><text x='50' y='66' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='48' fill='url(%23g)'>VM</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -610,6 +615,7 @@
             <label for="field-email" class="sr-only">Email</label>
             <input type="email" name="email" id="field-email" placeholder="Email" required>
           </div>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
           <label for="field-message" class="sr-only">Message</label>
           <textarea name="message" id="field-message" placeholder="Message" rows="3" required></textarea>
           <button type="submit">Send message</button>

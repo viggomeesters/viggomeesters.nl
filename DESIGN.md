@@ -73,9 +73,22 @@ Each project has a unique accent color. These are applied via inline `style` att
 
 **Rule:** Accent colors are only used for borders, icon tints, tag backgrounds, and glow on hover. Never for body text or large surface fills.
 
+### Link tile colors
+
+| Link | Color | Hex | Soft |
+|------|-------|-----|------|
+| GitHub | Light gray | `#e8eaf0` | `rgba(232,234,240,0.04)` |
+| LinkedIn | Sky blue | `#38bdf8` | `rgba(56,189,248,0.05)` |
+
 ### Section dots
 
-Label tiles use a colored dot (`7px`, with matching `box-shadow` glow). Projects label: `#3b82f6`. Links label: `#22c55e`.
+Label tiles use a colored dot (`7px`, with matching `box-shadow` glow):
+
+| Section | Color | Hex |
+|---------|-------|-----|
+| Projects | Blue | `#3b82f6` |
+| Links | Green | `#22c55e` |
+| Contact | Purple | `#a855f7` |
 
 ---
 
@@ -192,6 +205,13 @@ All hover effects are guarded by `@media (hover: hover)` to prevent sticky state
 
 All hover transitions use `cubic-bezier(0.34, 1.56, 0.64, 1)` (stored as `--bounce`). This creates a slight overshoot that gives cards a physical "spring" feel without visible animation.
 
+### Form states
+
+- **Success:** Form hides, green banner appears (`rgba(34,197,94,0.08)` background, `rgba(34,197,94,0.2)` border)
+- **Loading:** Button text changes to "Sending...", button disabled
+- **Error:** Button text changes to "Error — try again", button re-enabled
+- **Spam prevention:** Hidden honeypot field (`_gotcha`) — bots fill it, Formspree rejects the submission
+
 ### Focus states
 
 Form inputs on `:focus` get a purple ring: `border-color: rgba(168, 85, 247, 0.4)` with a dual glow `box-shadow` (purple + blue). This matches the contact section's purple dot accent.
@@ -250,6 +270,8 @@ All icons are **inline SVG**, sized `22x22` in a `44x44` container (`card-icon-w
 | `description` | SAP Data Management at McCoy. Tinkering with code on the side. |
 | `theme-color` | `#0c0c0f` |
 | `og:image` | `/og-image.png` (1200x630) |
+| `og:url` | `https://viggomeesters.nl` |
+| `twitter:card` | `summary_large_image` |
 | Favicon | Inline SVG data URI — "VM" monogram with blue→purple→orange gradient |
 
 ---
