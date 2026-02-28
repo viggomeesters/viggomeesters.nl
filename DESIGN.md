@@ -86,7 +86,8 @@ Label tiles use a colored dot (`7px`, with matching `box-shadow` glow):
 
 | Section | Color | Hex |
 |---------|-------|-----|
-| Projects | Blue | `#3b82f6` |
+| Try me | Blue | `#3b82f6` |
+| Systems | Green | `#22c55e` |
 | Links | Green | `#22c55e` |
 | Contact | Purple | `#a855f7` |
 
