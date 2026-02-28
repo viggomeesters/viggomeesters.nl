@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helicopter to Detail — Planning Methodology</title>
+  <meta name="description" content="A 5-layer planning framework. Each layer zooms one level deeper: from business problem to verification checklist.">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%233b82f6'/><stop offset='50%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%23f97316'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230c0c0f'/><text x='50' y='66' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='48' fill='url(%23g)'>VM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59,130,246,0.10);
+      --accent-glow: rgba(59,130,246,0.06);
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Grain texture */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    /* Aurora */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(59,130,246,0.10) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(168,85,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(59,130,246,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(6,182,212,0.06) 0%, transparent 70%);
+      animation: aurora-drift 40s ease-in-out infinite;
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(59,130,246,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(34,197,94,0.05) 0%, transparent 70%);
+      animation: aurora-drift-alt 35s ease-in-out infinite;
+    }
+    @keyframes aurora-drift {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(25px, -15px) rotate(0.5deg); }
+      66% { transform: translate(-15px, 10px) rotate(-0.5deg); }
+    }
+    @keyframes aurora-drift-alt {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 20px 60px;
+    }
+
+    /* Back link */
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 32px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
+    }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
+
+    /* Header */
+    .header { margin-bottom: 8px; }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: var(--font);
+      font-size: 2em;
+      font-weight: 700;
+      color: #eeeff4;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 0.95em;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    .cross-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .cross-link:hover { color: var(--accent); }
+
+    /* Flow strip */
+    .flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 14px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+    .flow-step {
+      font-family: var(--font-mono);
+      font-size: 0.78em;
+      font-weight: 500;
+      color: var(--accent);
+      padding: 5px 12px;
+      background: var(--accent-soft);
+      border-radius: 8px;
+    }
+    .flow-arrow {
+      color: var(--text-muted);
+      font-size: 0.8em;
+      padding: 0 6px;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 28px 0;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      font-weight: 500;
+      padding: 12px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent-glow);
+      flex-shrink: 0;
+    }
+
+    /* Overview card */
+    .overview {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .overview-title {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #e0e1e8;
+      margin-bottom: 16px;
+    }
+    .overview-row {
+      display: grid;
+      grid-template-columns: 2rem 1fr 1.2fr;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      align-items: center;
+    }
+    .overview-row:last-child { border-bottom: none; }
+    .overview-num {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.88em;
+      text-align: center;
+    }
+    .overview-name {
+      font-weight: 600;
+      font-size: 0.88em;
+      color: #e0e1e8;
+    }
+    .overview-question {
+      color: var(--text-muted);
+      font-size: 0.82em;
+      font-style: italic;
+    }
+
+    /* Layer cards */
+    .layer {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 12px;
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s;
+    }
+    @media (hover: hover) {
+      .layer:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      }
+    }
+    .layer-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .layer-num {
+      font-family: var(--font-mono);
+      font-size: 1.3em;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .layer h3 {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #e0e1e8;
+    }
+    .layer-question {
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 6px;
+      font-size: 0.88em;
+    }
+    .layer-audience {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.72em;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .layer p {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.85em;
+    }
+    th {
+      background: var(--bg-elevated);
+      font-weight: 600;
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.88em;
+    }
+    td {
+      padding: 7px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+      color: var(--text);
+    }
+    td strong { color: #e0e1e8; }
+    tr:last-child td { border-bottom: none; }
+
+    /* Rules box */
+    .rules {
+      background: var(--accent-soft);
+      border: 1px solid rgba(59,130,246,0.12);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .rules-title {
+      font-size: 0.72em;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .rules ul { margin: 0 0 0 1.2rem; }
+    .rules li {
+      font-size: 0.85em;
+      margin-bottom: 4px;
+      color: var(--text-secondary);
+    }
+    .rules li strong { color: #e0e1e8; }
+
+    /* Usage card */
+    .usage {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 8px;
+    }
+    .usage-title {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #e0e1e8;
+      margin-bottom: 16px;
+    }
+    .usage-note {
+      margin-top: 16px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      background: var(--bg-elevated);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.88em;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.5;
+    }
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 40px; }
+      .title { font-size: 1.5em; }
+      .overview-row { grid-template-columns: 2rem 1fr; }
+      .overview-question { display: none; }
+      .flow { gap: 2px; }
+      .flow-step { font-size: 0.7em; padding: 4px 8px; }
+      .flow-arrow { padding: 0 3px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+
+    <a href="/" class="back reveal">&larr; viggomeesters.nl</a>
+
+    <!-- Header -->
+    <div class="header reveal">
+      <span class="badge">Methodology 1 of 2</span>
+      <h1 class="title">Helicopter to Detail</h1>
+      <p class="subtitle">A 5-layer planning framework. Each layer zooms one level deeper: from business problem to verification checklist.</p>
+      <a href="/knowledge-pyramid/" class="cross-link">See also: Knowledge Pyramid (research method) &rarr;</a>
+    </div>
+
+    <!-- Flow -->
+    <div class="flow reveal">
+      <span class="flow-step">1. Goal</span>
+      <span class="flow-arrow">&rarr;</span>
+      <span class="flow-step">2. Approach</span>
+      <span class="flow-arrow">&rarr;</span>
+      <span class="flow-step">3. Steps</span>
+      <span class="flow-arrow">&rarr;</span>
+      <span class="flow-step">4. Blueprint</span>
+      <span class="flow-arrow">&rarr;</span>
+      <span class="flow-step">5. Verification</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Overview -->
+    <div class="reveal">
+      <div class="section-label">Overview</div>
+      <div class="overview">
+        <div class="overview-row">
+          <span class="overview-num">1</span>
+          <span class="overview-name">The Goal</span>
+          <span class="overview-question">"What is the problem?"</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">2</span>
+          <span class="overview-name">The Approach</span>
+          <span class="overview-question">"Why does our solution work?"</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">3</span>
+          <span class="overview-name">The Steps</span>
+          <span class="overview-question">"Which operations, in which order?"</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">4</span>
+          <span class="overview-name">The Blueprint</span>
+          <span class="overview-question">"Which tools, which configuration?"</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">5</span>
+          <span class="overview-name">The Verification</span>
+          <span class="overview-question">"How do we know it's correct?"</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Layers -->
+    <div class="reveal">
+      <div class="section-label">The 5 Layers</div>
+
+      <!-- Layer 1 -->
+      <div class="layer">
+        <div class="layer-header">
+          <span class="layer-num">1</span>
+          <h3>The Goal &mdash; Problem Definition &amp; Inventory</h3>
+        </div>
+        <div class="layer-question">What is the problem and what are we working with?</div>
+        <span class="layer-audience">Audience: stakeholders, everyone</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>The assignment</strong></td><td>Business context: why does this project exist?</td></tr>
+          <tr><td><strong>What we have</strong></td><td>Inventory of inputs, sources, data &mdash; with concrete examples</td></tr>
+          <tr><td><strong>What we know</strong></td><td>Available knowledge: documentation, mappings, expertise</td></tr>
+          <tr><td><strong>The constraints</strong></td><td>Hard requirements as a numbered list</td></tr>
+          <tr><td><strong>Summary</strong></td><td>Conceptual diagram (INPUT &rarr; TRANSFORMATION &rarr; OUTPUT)</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Show <strong>concrete examples</strong> of data/formats</li>
+            <li>Constraints are <strong>numbered</strong> &mdash; they'll be referenced later</li>
+            <li>The diagram is the <strong>mental anchor</strong> for the entire project</li>
+            <li>Write as if the reader knows nothing about the domain</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 2 -->
+      <div class="layer">
+        <div class="layer-header">
+          <span class="layer-num">2</span>
+          <h3>The Approach &mdash; Reasoning &amp; Strategy</h3>
+        </div>
+        <div class="layer-question">Why does our solution work and why not the obvious one?</div>
+        <span class="layer-audience">Audience: architects, decision makers</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>The core problem</strong></td><td>Why the naive approach doesn't work</td></tr>
+          <tr><td><strong>The insight</strong></td><td>The breakthrough: which principle makes the solution possible?</td></tr>
+          <tr><td><strong>The steps</strong></td><td>High-level process steps with before/after examples</td></tr>
+          <tr><td><strong>The decision logic</strong></td><td>Decision tree in plain language (no code)</td></tr>
+          <tr><td><strong>Scalability</strong></td><td>How the approach scales / repeats / automates</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Start with <strong>why alternatives fail</strong></li>
+            <li>Every design choice is <strong>justified</strong> by constraints from The Goal</li>
+            <li>Use <strong>before/after tables</strong> to visualize transformations</li>
+            <li>This document answers the "but why not just...?" questions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 3 -->
+      <div class="layer">
+        <div class="layer-header">
+          <span class="layer-num">3</span>
+          <h3>The Steps &mdash; Operational Specification</h3>
+        </div>
+        <div class="layer-question">Which concrete operations do we execute, in which order?</div>
+        <span class="layer-audience">Audience: analysts, implementers</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Phase 0: Preparation</strong></td><td>Initialization, setup, copy operations</td></tr>
+          <tr><td><strong>Phase 1-N: Core phases</strong></td><td>Per phase: substeps with operation + input + output</td></tr>
+          <tr><td><strong>Join specifications</strong></td><td>Explicit join types (inner, left outer) with explanation</td></tr>
+          <tr><td><strong>Warnings</strong></td><td>Error scenarios and how they're handled</td></tr>
+          <tr><td><strong>Pseudocode overview</strong></td><td>Readable code block with all phases + substeps</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li><strong>Consistent numbering:</strong> Phase 0, 1, 2, ... with substeps a, b, c</li>
+            <li>Per substep: <strong>what</strong> (operation), <strong>from</strong> (input), <strong>to</strong> (output)</li>
+            <li><strong>Before/after tables</strong> show data before and after each transformation</li>
+            <li>Close with a <strong>pseudocode block</strong> as Rosetta Stone for the Blueprint</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 4 -->
+      <div class="layer">
+        <div class="layer-header">
+          <span class="layer-num">4</span>
+          <h3>The Blueprint &mdash; Implementation Specification</h3>
+        </div>
+        <div class="layer-question">Which specific tools/code, with what exact configuration?</div>
+        <span class="layer-audience">Audience: developers, builders</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Per tool: config table</strong></td><td>Key-value pairs: <code>Setting | Value</code></td></tr>
+          <tr><td><strong>Formulas/code</strong></td><td>Readable formula or code blocks per decision point</td></tr>
+          <tr><td><strong>Connection diagrams</strong></td><td>ASCII flow with tool numbers and branches</td></tr>
+          <tr><td><strong>Placeholder table</strong></td><td><code>&laquo;placeholder&raquo;</code> &rarr; example &rarr; where used</td></tr>
+          <tr><td><strong>Scale analysis</strong></td><td>Components &times; N repetitions = total</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Every tool gets a <strong>configuration table</strong> (not prose)</li>
+            <li><strong>Placeholders</strong> mark what's variable &mdash; essential for automation</li>
+            <li>Reference back: "Tool 5 implements Phase 1e"</li>
+            <li>The scale analysis makes <strong>complexity visible</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 5 -->
+      <div class="layer">
+        <div class="layer-header">
+          <span class="layer-num">5</span>
+          <h3>The Verification &mdash; Validation &amp; Testing</h3>
+        </div>
+        <div class="layer-question">How do we know it works correctly?</div>
+        <span class="layer-audience">Audience: testers, QA</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>A: Paths/Configuration</strong></td><td>Checklist: are all paths correct?</td></tr>
+          <tr><td><strong>B: Tool configuration</strong></td><td>Does each tool match the Blueprint?</td></tr>
+          <tr><td><strong>C: Connections</strong></td><td>Are all couplings correctly wired?</td></tr>
+          <tr><td><strong>D: Decision logic</strong></td><td>Truth table: all scenarios with expected outcome</td></tr>
+          <tr><td><strong>E-G: Data, Code, Runtime</strong></td><td>Field names, generator output, end-to-end test</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li><strong>Everything is a checklist</strong> &mdash; numbered (A1, A2, B1, B2, ...)</li>
+            <li><strong>Truth tables</strong> for decision logic: every input combination</li>
+            <li>Test order: simple first (paths) &rarr; complex (runtime)</li>
+            <li>Add <strong>automated checks</strong> where possible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- When to use -->
+    <div class="reveal">
+      <div class="section-label">When to Use</div>
+      <div class="usage">
+        <table>
+          <tr><th>Situation</th><th>Documents</th></tr>
+          <tr><td>Pitching an idea</td><td>Goal only</td></tr>
+          <tr><td>Stakeholder alignment</td><td>Goal + Approach</td></tr>
+          <tr><td>Team briefing</td><td>Goal through Steps</td></tr>
+          <tr><td>Developer onboarding</td><td>Goal through Blueprint</td></tr>
+          <tr><td>Full implementation</td><td>All 5 layers</td></tr>
+        </table>
+        <p class="usage-note">
+          <strong>Variations:</strong> Small project (1 day) = all 5 layers in one document.
+          Medium (1-4 weeks) = 5 sections in one note.
+          Large (months) = 5 separate documents.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Helicopter to Detail &mdash; Distilled from the ATF v4.0 documentation &middot; 2026</p>
+      <p style="margin-top: 6px;"><a href="/knowledge-pyramid/">Knowledge Pyramid &rarr;</a></p>
+    </div>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    window.addEventListener('load', () => {
+      reveals.forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 80 + i * 100);
+      });
+    });
+  </script>
+</body>
+</html>

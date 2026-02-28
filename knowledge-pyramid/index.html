@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Pyramid — Research Methodology</title>
+  <meta name="description" content="A 9-layer research framework that builds knowledge from basic definitions to expert analysis. Each layer builds on all previous ones.">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%233b82f6'/><stop offset='50%25' stop-color='%23a855f7'/><stop offset='100%25' stop-color='%23f97316'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='%230c0c0f'/><text x='50' y='66' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='48' fill='url(%23g)'>VM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --accent: #a855f7;
+      --accent-soft: rgba(168,85,247,0.10);
+      --accent-glow: rgba(168,85,247,0.06);
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Grain texture */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    /* Aurora — purple-tinted */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(168,85,247,0.10) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(59,130,246,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(168,85,247,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(129,140,248,0.06) 0%, transparent 70%);
+      animation: aurora-drift 40s ease-in-out infinite;
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(168,85,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(6,182,212,0.05) 0%, transparent 70%);
+      animation: aurora-drift-alt 35s ease-in-out infinite;
+    }
+    @keyframes aurora-drift {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(25px, -15px) rotate(0.5deg); }
+      66% { transform: translate(-15px, 10px) rotate(-0.5deg); }
+    }
+    @keyframes aurora-drift-alt {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 20px 60px;
+    }
+
+    /* Back link */
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 32px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
+    }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
+
+    /* Header */
+    .header { margin-bottom: 8px; }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.7em;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-family: var(--font);
+      font-size: 2em;
+      font-weight: 700;
+      color: #eeeff4;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 0.95em;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    .cross-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .cross-link:hover { color: var(--accent); }
+
+    /* Pyramid visual */
+    .pyramid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      margin: 24px 0;
+      padding: 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+    }
+    .pyramid-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      height: 2rem;
+      font-size: 0.75em;
+      font-weight: 600;
+      color: white;
+      border-radius: 6px;
+      padding: 0 12px;
+      white-space: nowrap;
+      transition: transform 0.3s var(--bounce);
+    }
+    @media (hover: hover) {
+      .pyramid-row:hover { transform: scale(1.06); }
+    }
+    .pyramid-row .num {
+      opacity: 0.6;
+      font-family: var(--font-mono);
+      font-size: 0.85em;
+    }
+    .p0 { width: 28%; background: #a855f7; }
+    .p1 { width: 34%; background: #9333ea; }
+    .p2 { width: 40%; background: #7c3aed; }
+    .p3 { width: 46%; background: #6d28d9; }
+    .p4 { width: 52%; background: #5b21b6; }
+    .p5 { width: 58%; background: #4c1d95; }
+    .p6 { width: 64%; background: #4338ca; }
+    .p7 { width: 72%; background: #3730a3; }
+    .p8 { width: 80%; background: #1e1b4b; }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 28px 0;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      font-weight: 500;
+      padding: 12px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 8px var(--accent-glow);
+      flex-shrink: 0;
+    }
+
+    /* Overview card */
+    .overview {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .overview-row {
+      display: grid;
+      grid-template-columns: 2rem 1fr 1.2fr 5rem;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      align-items: center;
+      font-size: 0.85em;
+    }
+    .overview-row:last-child { border-bottom: none; }
+    .overview-num {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.88em;
+      text-align: center;
+    }
+    .overview-name {
+      font-weight: 600;
+      color: #e0e1e8;
+    }
+    .overview-question {
+      color: var(--text-muted);
+      font-style: italic;
+      font-size: 0.88em;
+    }
+    .overview-audience {
+      color: var(--text-muted);
+      font-size: 0.78em;
+      text-align: right;
+    }
+
+    /* Layer cards */
+    .layer {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 12px;
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s;
+    }
+    @media (hover: hover) {
+      .layer:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      }
+    }
+    .layer-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 4px;
+    }
+    .layer-num {
+      font-family: var(--font-mono);
+      font-size: 1.3em;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .layer h3 {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #e0e1e8;
+    }
+    .layer-question {
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 6px;
+      font-size: 0.88em;
+    }
+    .layer-audience {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.72em;
+      padding: 2px 8px;
+      border-radius: 6px;
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+    .layer p {
+      margin-bottom: 10px;
+      font-size: 0.9em;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.85em;
+    }
+    th {
+      background: var(--bg-elevated);
+      font-weight: 600;
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.88em;
+    }
+    td {
+      padding: 7px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+      color: var(--text);
+    }
+    td strong { color: #e0e1e8; }
+    tr:last-child td { border-bottom: none; }
+
+    /* Rules box */
+    .rules {
+      background: var(--accent-soft);
+      border: 1px solid rgba(168,85,247,0.12);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 14px;
+    }
+    .rules-title {
+      font-size: 0.72em;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .rules ul { margin: 0 0 0 1.2rem; }
+    .rules li {
+      font-size: 0.85em;
+      margin-bottom: 4px;
+      color: var(--text-secondary);
+    }
+    .rules li strong { color: #e0e1e8; }
+
+    /* Comparison card */
+    .compare {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 8px;
+    }
+    .compare-title {
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #e0e1e8;
+      margin-bottom: 16px;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      background: var(--bg-elevated);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.88em;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.5;
+    }
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 40px; }
+      .title { font-size: 1.5em; }
+      .overview-row { grid-template-columns: 2rem 1fr 1fr; }
+      .overview-audience { display: none; }
+      .pyramid-row { font-size: 0.65em; padding: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+
+    <a href="/" class="back reveal">&larr; viggomeesters.nl</a>
+
+    <!-- Header -->
+    <div class="header reveal">
+      <span class="badge">Methodology 2 of 2</span>
+      <h1 class="title">Knowledge Pyramid</h1>
+      <p class="subtitle">A 9-layer research framework that builds knowledge from basic definitions to expert analysis. Each layer builds on all previous ones.</p>
+      <a href="/helicopter-to-detail/" class="cross-link">See also: Helicopter to Detail (planning method) &rarr;</a>
+    </div>
+
+    <!-- Pyramid -->
+    <div class="pyramid reveal">
+      <div class="pyramid-row p0"><span class="num">0</span> Definitions</div>
+      <div class="pyramid-row p1"><span class="num">1</span> Biology</div>
+      <div class="pyramid-row p2"><span class="num">2</span> Science</div>
+      <div class="pyramid-row p3"><span class="num">3</span> Product Knowledge</div>
+      <div class="pyramid-row p4"><span class="num">4</span> Quality Criteria</div>
+      <div class="pyramid-row p5"><span class="num">5</span> Measurement Method</div>
+      <div class="pyramid-row p6"><span class="num">6</span> Market Analysis</div>
+      <div class="pyramid-row p7"><span class="num">7</span> Comparison</div>
+      <div class="pyramid-row p8"><span class="num">8</span> Gaps &amp; Verification</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Overview -->
+    <div class="reveal">
+      <div class="section-label">Overview</div>
+      <div class="overview">
+        <div class="overview-row">
+          <span class="overview-num">0</span>
+          <span class="overview-name">Definitions</span>
+          <span class="overview-question">"What are the words?"</span>
+          <span class="overview-audience">3-year-old</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">1</span>
+          <span class="overview-name">Biology</span>
+          <span class="overview-question">"How does the subject work?"</span>
+          <span class="overview-audience">8-year-old</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">2</span>
+          <span class="overview-name">Science</span>
+          <span class="overview-question">"Which principles apply?"</span>
+          <span class="overview-audience">Student</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">3</span>
+          <span class="overview-name">Product Knowledge</span>
+          <span class="overview-question">"What's on the label?"</span>
+          <span class="overview-audience">Consumer</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">4</span>
+          <span class="overview-name">Quality Criteria</span>
+          <span class="overview-question">"How to spot good vs bad?"</span>
+          <span class="overview-audience">Buyer</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">5</span>
+          <span class="overview-name">Measurement</span>
+          <span class="overview-question">"How to compare fairly?"</span>
+          <span class="overview-audience">Analyst</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">6</span>
+          <span class="overview-name">Market Analysis</span>
+          <span class="overview-question">"What's available?"</span>
+          <span class="overview-audience">Researcher</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">7</span>
+          <span class="overview-name">Comparison</span>
+          <span class="overview-question">"Which wins on the numbers?"</span>
+          <span class="overview-audience">Lab tech</span>
+        </div>
+        <div class="overview-row">
+          <span class="overview-num">8</span>
+          <span class="overview-name">Gaps</span>
+          <span class="overview-question">"What don't we know?"</span>
+          <span class="overview-audience">Scientist</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Layers -->
+    <div class="reveal">
+      <div class="section-label">The 9 Layers</div>
+
+      <!-- Layer 0 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">0</span><h3>Definitions</h3></div>
+        <div class="layer-question">What are the words?</div>
+        <span class="layer-audience">Audience: a 3-year-old</span>
+        <p>Define every word in the research question. No jargon, no abbreviations. If a term appears in later layers, it gets explained here.</p>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Core concepts</strong></td><td>Define each word from the research question</td></tr>
+          <tr><td><strong>Subtypes</strong></td><td>Variants within each concept</td></tr>
+          <tr><td><strong>What is "best"?</strong></td><td>The evaluation criteria in one sentence</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Write as if the reader is 3 years old</li>
+            <li>Close with: <em>"Building block: [what you now know &rarr; what you don't yet]"</em></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 1 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">1</span><h3>Biology</h3></div>
+        <div class="layer-question">How does the subject work in nature?</div>
+        <span class="layer-audience">Audience: a curious child</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Nature</strong></td><td>How does it work without human intervention?</td></tr>
+          <tr><td><strong>The crucial difference</strong></td><td>What makes this fundamentally different from related subjects?</td></tr>
+          <tr><td><strong>The reference profile</strong></td><td>The gold standard from nature, quantified</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Start with nature, not products</li>
+            <li>The <strong>reference profile</strong> is the yardstick for the entire analysis</li>
+            <li>Use concrete examples ("a mouse", not "prey animal")</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 2 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">2</span><h3>Science</h3></div>
+        <div class="layer-question">Which scientific mechanisms determine what's good and what's bad?</div>
+        <span class="layer-audience">Audience: high school student</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Macro categories</strong></td><td>The major groups (3-5 main categories)</td></tr>
+          <tr><td><strong>Per category</strong></td><td>Function + requirement + consequences of deficit/excess</td></tr>
+          <tr><td><strong>Essential components</strong></td><td>Substances that cannot be substituted</td></tr>
+          <tr><td><strong>Boundary conditions</strong></td><td>Factors outside the main categories</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Focus on WHAT and WHY, not HOW TO MEASURE (that's layer 5)</li>
+            <li>Use comparisons with everyday life</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 3 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">3</span><h3>Product Knowledge</h3></div>
+        <div class="layer-question">What's on the label and what does it really mean?</div>
+        <span class="layer-audience">Audience: informed consumer</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>The label</strong></td><td>Legally required information and how to read it</td></tr>
+          <tr><td><strong>The numbers</strong></td><td>What the analytical constituents actually mean</td></tr>
+          <tr><td><strong>Marketing vs reality</strong></td><td>Dissecting claims with real examples</td></tr>
+          <tr><td><strong>The ingredient trap</strong></td><td>When ingredients are misleading</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Show a GOOD and a BAD example side by side</li>
+            <li>Use <strong>real labels</strong>, not hypothetical ones</li>
+            <li>Calculate what the claim actually means</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 4 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">4</span><h3>Quality Criteria</h3></div>
+        <div class="layer-question">Which signals indicate quality or lack thereof?</div>
+        <span class="layer-audience">Audience: informed buyer</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Green flags</strong></td><td>Positive signals with explanation</td></tr>
+          <tr><td><strong>Red flags</strong></td><td>Negative signals with explanation</td></tr>
+          <tr><td><strong>The checklist</strong></td><td>Concrete yes/no list usable in-store</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Make it binary: green or red, no gray areas</li>
+            <li>The checklist must be usable <strong>on location</strong></li>
+            <li>Reference back to layer 2 for the WHY</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 5 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">5</span><h3>Measurement Method</h3></div>
+        <div class="layer-question">Which calculations are needed to compare objectively?</div>
+        <span class="layer-audience">Audience: analyst / domain expert</span>
+        <p>This is the core of the pyramid. Here we define the method for fair product comparison.</p>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>The problem</strong></td><td>Why direct comparison is misleading</td></tr>
+          <tr><td><strong>Step 1: Normalization</strong></td><td>First correction (e.g., dry matter basis)</td></tr>
+          <tr><td><strong>Step 2: Missing data</strong></td><td>Calculate what's not on the label</td></tr>
+          <tr><td><strong>Step 3: Energy basis</strong></td><td>The fairest comparison metric (e.g., ME basis)</td></tr>
+          <tr><td><strong>The formulas</strong></td><td>Exact calculations in code blocks</td></tr>
+          <tr><td><strong>Reference profile</strong></td><td>The gold standard on the new measurement basis</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>This is the <strong>method</strong>, not the results (layer 7)</li>
+            <li>Work through <strong>one complete example</strong> (from label to final value)</li>
+            <li>Make formulas copyable in code blocks</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 6 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">6</span><h3>Market Analysis</h3></div>
+        <div class="layer-question">What's available, in which segments, at what price?</div>
+        <span class="layer-audience">Audience: consumer researcher</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Starting point</strong></td><td>Current situation and reason for the research</td></tr>
+          <tr><td><strong>Market segments</strong></td><td>Price and quality tiers</td></tr>
+          <tr><td><strong>Selection</strong></td><td>Which products and why specifically these</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Select 3-6 products (no more)</li>
+            <li>Include the <strong>current product</strong> as reference</li>
+            <li>List prices per comparable unit</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 7 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">7</span><h3>Comparison</h3></div>
+        <div class="layer-question">Which product wins on the objective yardstick?</div>
+        <span class="layer-audience">Audience: chemist / lab technician</span>
+        <p>The heart of the analysis. All previous layers converge here into hard numbers.</p>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Step 1: Raw data</strong></td><td>Table with as-reported values per product</td></tr>
+          <tr><td><strong>Step 2: Normalization</strong></td><td>Table with normalized values</td></tr>
+          <tr><td><strong>Step 3: Energy analysis</strong></td><td>Table with definitive comparison values</td></tr>
+          <tr><td><strong>Step 4: Validation</strong></td><td>Comparison with reference profile (&check;/&#9888;/&cross;)</td></tr>
+          <tr><td><strong>Conclusion table</strong></td><td>Ranking with score + price + rationale</td></tr>
+          <tr><td><strong>Cost analysis</strong></td><td>Cost per period, difference vs current</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li><strong>Show your work</strong>: each table builds on the previous</li>
+            <li>Use &check;/&#9888;/&cross; for quick visual assessment</li>
+            <li>The conclusion table must be <strong>readable in 10 seconds</strong></li>
+            <li>Cite the source for every number</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Layer 8 -->
+      <div class="layer">
+        <div class="layer-header"><span class="layer-num">8</span><h3>Gaps &amp; Verification</h3></div>
+        <div class="layer-question">Where are the limits of this analysis?</div>
+        <span class="layer-audience">Audience: scientist</span>
+        <table>
+          <tr><th>Section</th><th>Content</th></tr>
+          <tr><td><strong>Knowledge gaps</strong></td><td>What we couldn't measure or verify</td></tr>
+          <tr><td><strong>Sources</strong></td><td>Literature, websites, databases</td></tr>
+          <tr><td><strong>Recommended next steps</strong></td><td>Concrete actions to close the gaps</td></tr>
+          <tr><td><strong>Transition protocol</strong></td><td>How to switch to the recommendation</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">Rules of Thumb</div>
+          <ul>
+            <li>Be <strong>honest</strong> about what you don't know</li>
+            <li>Distinguish sources by reliability</li>
+            <li>Close with <strong>concrete next steps</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Comparison -->
+    <div class="reveal">
+      <div class="section-label">Comparison</div>
+      <div class="compare">
+        <div class="compare-title">Helicopter to Detail vs Knowledge Pyramid</div>
+        <table>
+          <tr><th>Aspect</th><th>Helicopter to Detail</th><th>Knowledge Pyramid</th></tr>
+          <tr><td><strong>Direction</strong></td><td>Abstract &rarr; concrete</td><td>Simple &rarr; complex</td></tr>
+          <tr><td><strong>Purpose</strong></td><td>Plan &amp; build a project</td><td>Understand &amp; evaluate a subject</td></tr>
+          <tr><td><strong>Layers</strong></td><td>Same subject, more detail</td><td>New abstraction level per layer</td></tr>
+          <tr><td><strong>Reader</strong></td><td>Knows the domain</td><td>Knows nothing &mdash; we build everything</td></tr>
+          <tr><td><strong>Output</strong></td><td>Implementation spec</td><td>Substantiated recommendation</td></tr>
+          <tr><td><strong>Layer count</strong></td><td>5</td><td>9</td></tr>
+        </table>
+
+        <table style="margin-top: 16px;">
+          <tr><th>Situation</th><th>Method</th></tr>
+          <tr><td>You're building something (software, process, project)</td><td><strong>Helicopter to Detail</strong></td></tr>
+          <tr><td>You're researching something (product, service, decision)</td><td><strong>Knowledge Pyramid</strong></td></tr>
+          <tr><td>You're explaining to a non-expert</td><td><strong>Knowledge Pyramid</strong></td></tr>
+          <tr><td>You're writing an implementation spec for a team</td><td><strong>Helicopter to Detail</strong></td></tr>
+        </table>
+      </div>
+
+      <div class="compare" style="margin-top: 12px;">
+        <div class="compare-title">Documentation Levels</div>
+        <table>
+          <tr><th>Purpose</th><th>Layers</th></tr>
+          <tr><td>Explain to a child/parent</td><td>0&ndash;1</td></tr>
+          <tr><td>Consumer blog post</td><td>0&ndash;4</td></tr>
+          <tr><td>Advisory report</td><td>0&ndash;6</td></tr>
+          <tr><td>Full scientific analysis</td><td>0&ndash;8</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Knowledge Pyramid &mdash; Research Methodology &middot; 2026</p>
+      <p style="margin-top: 6px;"><a href="/helicopter-to-detail/">&larr; Helicopter to Detail</a></p>
+    </div>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    window.addEventListener('load', () => {
+      reveals.forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 80 + i * 100);
+      });
+    });
+  </script>
+</body>
+</html>
