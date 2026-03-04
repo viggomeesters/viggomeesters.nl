@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Stack — Hardware, Tools & Workflows</title>
+  <meta name="description" content="Hardware, software, dev tools, and workflows I use daily. MacBook Pro M4, WezTerm, Raycast, Obsidian, and a keyboard-driven macOS stack. Synced with my Obsidian vault.">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      /* Category colors */
+      --hardware: #64748b;
+      --hardware-soft: rgba(100,116,139,0.10);
+      --productivity: #3b82f6;
+      --productivity-soft: rgba(59,130,246,0.10);
+      --dev: #22c55e;
+      --dev-soft: rgba(34,197,94,0.10);
+      --shell: #f97316;
+      --shell-soft: rgba(249,115,22,0.10);
+      --audio: #a855f7;
+      --audio-soft: rgba(168,85,247,0.10);
+      --macos: #06b6d4;
+      --macos-soft: rgba(6,182,212,0.10);
+      --keys: #eab308;
+      --keys-soft: rgba(234,179,8,0.10);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Grain texture */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    /* Multi-color aurora */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(100,116,139,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(168,85,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(59,130,246,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(34,197,94,0.06) 0%, transparent 70%);
+      animation: aurora-drift 40s ease-in-out infinite;
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(6,182,212,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(249,115,22,0.05) 0%, transparent 70%);
+      animation: aurora-drift-alt 35s ease-in-out infinite;
+    }
+    @keyframes aurora-drift {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(25px, -15px) rotate(0.5deg); }
+      66% { transform: translate(-15px, 10px) rotate(-0.5deg); }
+    }
+    @keyframes aurora-drift-alt {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, 20px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 20px 60px;
+    }
+
+    /* Back link */
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 32px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
+    }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
+
+    .header { margin-bottom: 8px; }
+
+    .title {
+      font-family: var(--font);
+      font-size: 2em;
+      font-weight: 700;
+      color: #eeeff4;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      font-size: 0.95em;
+      color: var(--text-secondary);
+      margin-top: 8px;
+      line-height: 1.55;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 24px 0;
+    }
+
+    .stat {
+      padding: 18px 12px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      text-align: center;
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s;
+    }
+
+    @media (hover: hover) {
+      .stat:hover {
+        transform: scale(1.04);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      }
+    }
+
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: 1.1em;
+      font-weight: 500;
+      color: #eeeff4;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.65em;
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      font-weight: 500;
+      padding: 24px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--dot-color, #64748b);
+      box-shadow: 0 0 8px var(--dot-color, rgba(100,116,139,0.4));
+      flex-shrink: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 28px 0;
+    }
+
+    /* Accordion */
+    details { margin-bottom: 8px; }
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      cursor: pointer;
+      list-style: none;
+      transition: border-color 0.3s, background 0.2s, transform 0.3s var(--bounce);
+      user-select: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    @media (hover: hover) {
+      summary:hover {
+        border-color: var(--border);
+        transform: scale(1.01);
+      }
+    }
+
+    details[open] summary {
+      border-radius: var(--radius) var(--radius) 0 0;
+      border-bottom-color: var(--border-subtle);
+      background: var(--bg-elevated);
+    }
+
+    .summary-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .summary-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s var(--bounce);
+    }
+
+    .summary-icon svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    details[open] .summary-icon { transform: scale(1.1); }
+
+    .summary-icon.hardware { background: var(--hardware-soft); color: var(--hardware); }
+    .summary-icon.productivity { background: var(--productivity-soft); color: var(--productivity); }
+    .summary-icon.dev { background: var(--dev-soft); color: var(--dev); }
+    .summary-icon.shell { background: var(--shell-soft); color: var(--shell); }
+    .summary-icon.audio { background: var(--audio-soft); color: var(--audio); }
+    .summary-icon.macos { background: var(--macos-soft); color: var(--macos); }
+    .summary-icon.keys { background: var(--keys-soft); color: var(--keys); }
+
+    .summary-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .summary-name {
+      font-size: 0.92em;
+      font-weight: 600;
+      color: #e0e1e8;
+    }
+
+    .summary-desc {
+      font-size: 0.78em;
+      color: var(--text-muted);
+    }
+
+    .summary-count {
+      font-family: var(--font-mono);
+      font-size: 0.7em;
+      color: var(--text-muted);
+      padding: 3px 8px;
+      background: var(--bg);
+      border-radius: 8px;
+      flex-shrink: 0;
+      min-width: 32px;
+      text-align: center;
+    }
+
+    .chevron {
+      color: var(--text-muted);
+      font-size: 0.7em;
+      transition: transform 0.2s;
+      margin-left: 8px;
+      flex-shrink: 0;
+    }
+
+    details[open] .chevron { transform: rotate(90deg); }
+
+    .detail-list {
+      border: 1px solid var(--border-subtle);
+      border-top: none;
+      border-radius: 0 0 var(--radius) var(--radius);
+      overflow: hidden;
+    }
+
+    .detail-item {
+      padding: 10px 16px 10px 56px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      transition: background 0.2s;
+    }
+
+    .detail-item:last-child { border-bottom: none; }
+    .detail-item:hover { background: rgba(255, 255, 255, 0.015); }
+
+    .detail-name {
+      font-size: 0.82em;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .detail-desc {
+      font-size: 0.78em;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Key shortcut items */
+    .detail-item .detail-key {
+      font-family: var(--font-mono);
+      font-size: 0.78em;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .detail-item .detail-action {
+      font-size: 0.78em;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.5;
+    }
+
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 40px; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .title { font-size: 1.5em; }
+      .detail-item { padding-left: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+
+    <a href="/" class="back reveal">&larr; viggomeesters.nl</a>
+
+    <div class="header reveal">
+      <h1 class="title">Tech Stack</h1>
+      <p class="subtitle">Hardware, software, dev tools, and workflows I use daily. A keyboard-driven setup built around macOS, Raycast, and the terminal. Synced with my Obsidian vault.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="stat-num">M4</div>
+        <div class="stat-label">MacBook Pro 14"</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Raycast Commands</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">Wez</div>
+        <div class="stat-label">Terminal + Zsh</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">Safari</div>
+        <div class="stat-label">+ Extensions</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Hardware -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #64748b">Hardware</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon hardware">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Hardware</span>
+              <span class="summary-desc">Daily driver machine</span>
+            </span>
+          </span>
+          <span class="summary-count">1</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">MacBook Pro 14" M4</span><span class="detail-desc">Daily driver</span></div>
+        </div>
+      </details>
+    </div>
+
+    <!-- Productivity -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #3b82f6">Productivity</div>
+
+      <details open>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon productivity">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Productivity</span>
+              <span class="summary-desc">Apps that run all day</span>
+            </span>
+          </span>
+          <span class="summary-count">6</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Raycast</span><span class="detail-desc">Command palette, launcher, automation hub</span></div>
+          <div class="detail-item"><span class="detail-name">Obsidian</span><span class="detail-desc">Knowledge vault (Life OS v7)</span></div>
+          <div class="detail-item"><span class="detail-name">WezTerm</span><span class="detail-desc">Terminal emulator</span></div>
+          <div class="detail-item"><span class="detail-name">Safari</span><span class="detail-desc">Primary browser with extensions (Noir, Wipr, Vimari)</span></div>
+          <div class="detail-item"><span class="detail-name">Passwords</span><span class="detail-desc">Password manager (Apple)</span></div>
+          <div class="detail-item"><span class="detail-name">CleanShot</span><span class="detail-desc">Screenshots & recording</span></div>
+          <div class="detail-item"><span class="detail-name">Ice</span><span class="detail-desc">Menu bar organizer</span></div>
+        </div>
+      </details>
+    </div>
+
+    <!-- Dev Tools -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #22c55e">Dev Tools</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon dev">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Dev Tools</span>
+              <span class="summary-desc">Editor, runtime, and version control</span>
+            </span>
+          </span>
+          <span class="summary-count">7</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">VS Code</span><span class="detail-desc">Primary editor</span></div>
+          <div class="detail-item"><span class="detail-name">Claude Code</span><span class="detail-desc">AI pair programming</span></div>
+          <div class="detail-item"><span class="detail-name">Git + GitHub CLI</span><span class="detail-desc">Version control</span></div>
+          <div class="detail-item"><span class="detail-name">Bun</span><span class="detail-desc">JavaScript runtime & package manager</span></div>
+          <div class="detail-item"><span class="detail-name">uv</span><span class="detail-desc">Python package manager</span></div>
+          <div class="detail-item"><span class="detail-name">Docker</span><span class="detail-desc">Containerization</span></div>
+          <div class="detail-item"><span class="detail-name">lazygit</span><span class="detail-desc">Interactive git UI</span></div>
+        </div>
+      </details>
+    </div>
+
+    <!-- Shell Setup -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #f97316">Shell Setup</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon shell">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Shell Setup</span>
+              <span class="summary-desc">Zsh with modern CLI replacements</span>
+            </span>
+          </span>
+          <span class="summary-count">10</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Zsh + Oh My Zsh</span><span class="detail-desc">Shell</span></div>
+          <div class="detail-item"><span class="detail-name">Starship</span><span class="detail-desc">Cross-shell prompt</span></div>
+          <div class="detail-item"><span class="detail-name">fzf</span><span class="detail-desc">Fuzzy finder</span></div>
+          <div class="detail-item"><span class="detail-name">zoxide</span><span class="detail-desc">Smart cd</span></div>
+          <div class="detail-item"><span class="detail-name">eza</span><span class="detail-desc">Modern ls (aliased)</span></div>
+          <div class="detail-item"><span class="detail-name">bat</span><span class="detail-desc">Modern cat (aliased)</span></div>
+          <div class="detail-item"><span class="detail-name">fd</span><span class="detail-desc">Modern find (aliased)</span></div>
+          <div class="detail-item"><span class="detail-name">ripgrep</span><span class="detail-desc">Fast grep</span></div>
+          <div class="detail-item"><span class="detail-name">atuin</span><span class="detail-desc">Shell history</span></div>
+          <div class="detail-item"><span class="detail-name">git-delta</span><span class="detail-desc">Diff viewer</span></div>
+        </div>
+      </details>
+    </div>
+
+    <!-- Audio & Recording -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #a855f7">Audio & Recording</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon audio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Audio & Recording</span>
+              <span class="summary-desc">Transcription and media processing</span>
+            </span>
+          </span>
+          <span class="summary-count">4</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">whisper-cpp</span><span class="detail-desc">Local speech-to-text</span></div>
+          <div class="detail-item"><span class="detail-name">MacWhisper</span><span class="detail-desc">GUI transcription</span></div>
+          <div class="detail-item"><span class="detail-name">ffmpeg</span><span class="detail-desc">Media processing</span></div>
+          <div class="detail-item"><span class="detail-name">Custom meeting-process pipeline</span><span class="detail-desc">Record, transcribe, summarize, and archive meetings</span></div>
+        </div>
+      </details>
+    </div>
+
+    <!-- macOS Utilities -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #06b6d4">macOS Utilities</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon macos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">macOS Utilities</span>
+              <span class="summary-desc">System tweaks and quality of life</span>
+            </span>
+          </span>
+          <span class="summary-count">8</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Amphetamine</span><span class="detail-desc">Keep awake</span></div>
+          <div class="detail-item"><span class="detail-name">AlDente</span><span class="detail-desc">Battery management</span></div>
+          <div class="detail-item"><span class="detail-name">BetterDisplay</span><span class="detail-desc">Display management</span></div>
+          <div class="detail-item"><span class="detail-name">rcmd</span><span class="detail-desc">App switcher</span></div>
+          <div class="detail-item"><span class="detail-name">LookAway</span><span class="detail-desc">Break reminder</span></div>
+          <div class="detail-item"><span class="detail-name">Wispr Flow</span><span class="detail-desc">Voice input</span></div>
+          <div class="detail-item"><span class="detail-name">Alcove</span><span class="detail-desc">Window management</span></div>
+          <div class="detail-item"><span class="detail-name">Noir</span><span class="detail-desc">Dark mode for web</span></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Key Shortcuts -->
+    <div class="reveal">
+      <div class="section-label" style="--dot-color: #eab308">Key Shortcuts</div>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon keys">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></svg>
+            </span>
+            <span class="summary-text">
+              <span class="summary-name">Key Shortcuts</span>
+              <span class="summary-desc">Most-used keyboard shortcuts and aliases</span>
+            </span>
+          </span>
+          <span class="summary-count">5</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-key">&#8984; Space</span><span class="detail-action">Raycast launcher</span></div>
+          <div class="detail-item"><span class="detail-key">&#8963; T</span><span class="detail-action">fzf file picker</span></div>
+          <div class="detail-item"><span class="detail-key">&#8963; R</span><span class="detail-action">Atuin history search</span></div>
+          <div class="detail-item"><span class="detail-key">&#8997; C</span><span class="detail-action">fzf directory nav</span></div>
+          <div class="detail-item"><span class="detail-key">dev, vault, brain, rlo</span><span class="detail-action">Quick nav aliases</span></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="footer">
+      <span>&copy; 2026 &middot; <a href="https://github.com/viggomeesters" target="_blank" rel="noopener">github.com/viggomeesters</a></span>
+    </div>
+
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    window.addEventListener('load', () => {
+      reveals.forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), 80 + i * 100);
+      });
+    });
+  </script>
+</body>
+</html>
