@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viggomeesters.nl/sitemap.xml

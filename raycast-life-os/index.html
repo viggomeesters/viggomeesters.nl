@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life OS — Personal Knowledge System</title>
-  <meta name="description" content="A personal knowledge system built on Obsidian and Raycast. 43 commands, 12 note types, contact CRM, health tracking, and an open-source starter vault.">
+  <meta name="description" content="A personal knowledge system built on Obsidian and Raycast. 45 commands, 12 note types, contact CRM, health tracking, and an open-source starter vault.">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -562,16 +562,17 @@
 
     <div class="header reveal">
       <h1 class="title">Life OS</h1>
-      <p class="subtitle">A personal knowledge system built on Obsidian and Raycast. 43 commands for vault management, contact CRM, task scoring, health tracking, and Apple ecosystem automation — plus an open-source starter vault to get you going.</p>
+      <p class="subtitle">A personal knowledge system built on Obsidian and Raycast. 45 commands for vault management, contact CRM, task scoring, health tracking, and Apple ecosystem automation — plus an open-source starter vault to get you going.</p>
     </div>
 
+    <!-- BEGIN:stats -->
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num">43</div>
+        <div class="stat-num">45</div>
         <div class="stat-label">Commands</div>
       </div>
       <div class="stat">
-        <div class="stat-num">29</div>
+        <div class="stat-num">32</div>
         <div class="stat-label">Services</div>
       </div>
       <div class="stat">
@@ -583,6 +584,7 @@
         <div class="stat-label">Areas</div>
       </div>
     </div>
+    <!-- END:stats -->
 
     <div class="tech-chips reveal">
       <span class="tech-chip">TypeScript</span>
@@ -597,10 +599,10 @@
     <div class="divider"></div>
 
     <!-- Commands -->
+    <!-- BEGIN:commands -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #f97316">Commands (43)</div>
+      <div class="section-label" style="--dot-color: #f97316">Commands (45)</div>
 
-      <!-- Capture -->
       <details>
         <summary>
           <span class="summary-left">
@@ -610,22 +612,22 @@
               <span class="summary-desc">Create notes, tasks, health logs, and daily entries</span>
             </span>
           </span>
-          <span class="summary-count">8</span>
+          <span class="summary-count">9</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Quick Capture</span><span class="detail-desc">Create a new note in your vault</span></div>
-          <div class="detail-item"><span class="detail-name">New Task</span><span class="detail-desc">Create a new task with scoring and area assignment</span></div>
-          <div class="detail-item"><span class="detail-name">Log Health</span><span class="detail-desc">Log health data — migraine, weight, blood pressure, symptoms</span></div>
+          <div class="detail-item"><span class="detail-name">New Note</span><span class="detail-desc">Create a new note in your vault</span></div>
+          <div class="detail-item"><span class="detail-name">New Task</span><span class="detail-desc">Create a new task</span></div>
+          <div class="detail-item"><span class="detail-name">Log Health</span><span class="detail-desc">Log health data (migraine, weight, symptoms)</span></div>
           <div class="detail-item"><span class="detail-name">Log Interaction</span><span class="detail-desc">Quick log a call, meeting, visit, or letter</span></div>
           <div class="detail-item"><span class="detail-name">Daily Note</span><span class="detail-desc">Open today's daily note (creates if needed)</span></div>
           <div class="detail-item"><span class="detail-name">Sync Daily Note</span><span class="detail-desc">Sync missing notes into today's daily note</span></div>
           <div class="detail-item"><span class="detail-name">Health Dashboard</span><span class="detail-desc">View health trends and statistics</span></div>
+          <div class="detail-item"><span class="detail-name">Nutrition Dashboard</span><span class="detail-desc">Track daily calories and macros</span></div>
           <div class="detail-item"><span class="detail-name">Task from Note</span><span class="detail-desc">Create a task linked to the note in your clipboard</span></div>
         </div>
       </details>
 
-      <!-- Save -->
       <details>
         <summary>
           <span class="summary-left">
@@ -639,21 +641,20 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Save Mail</span><span class="detail-desc">Save selected Apple Mail as vault note</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Task</span><span class="detail-desc">Save mail and create follow-up task</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Attachments</span><span class="detail-desc">Save mail and copy attachments to vault</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Task + Attachments</span><span class="detail-desc">Save mail, create task, and copy attachments</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail</span><span class="detail-desc">Save selected Apple Mail as note</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Task</span><span class="detail-desc">Save selected Apple Mail as note and create follow-up task</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Attachments</span><span class="detail-desc">Save selected Apple Mail as note and copy attachments to vault</span></div>
+          <div class="detail-item"><span class="detail-name">Save Mail + Task + Attachments</span><span class="detail-desc">Save selected Apple Mail as note, create follow-up task, and copy attachments</span></div>
           <div class="detail-item"><span class="detail-name">Save WhatsApp</span><span class="detail-desc">Save copied WhatsApp chat messages as note</span></div>
-          <div class="detail-item"><span class="detail-name">Save WhatsApp + Task</span><span class="detail-desc">Save WhatsApp chat and create follow-up task</span></div>
-          <div class="detail-item"><span class="detail-name">Save Teams</span><span class="detail-desc">Save copied Microsoft Teams chat as note</span></div>
-          <div class="detail-item"><span class="detail-name">Save Teams + Task</span><span class="detail-desc">Save Teams chat and create follow-up task</span></div>
+          <div class="detail-item"><span class="detail-name">Save WhatsApp + Task</span><span class="detail-desc">Save copied WhatsApp chat as note and create task</span></div>
+          <div class="detail-item"><span class="detail-name">Save Teams</span><span class="detail-desc">Save copied Microsoft Teams chat messages as note</span></div>
+          <div class="detail-item"><span class="detail-name">Save Teams + Task</span><span class="detail-desc">Save copied Teams chat as note and create task</span></div>
           <div class="detail-item"><span class="detail-name">Save Bookmark</span><span class="detail-desc">Save URL from browser or clipboard</span></div>
           <div class="detail-item"><span class="detail-name">Copy Mail Link</span><span class="detail-desc">Copy markdown link to selected Apple Mail message</span></div>
           <div class="detail-item"><span class="detail-name">Path to Link</span><span class="detail-desc">Convert local folder path to Obsidian markdown link</span></div>
         </div>
       </details>
 
-      <!-- PRM -->
       <details>
         <summary>
           <span class="summary-left">
@@ -673,12 +674,11 @@
           <div class="detail-item"><span class="detail-name">Sync Contacts</span><span class="detail-desc">Sync Obsidian contacts to Apple Contacts and Google Contacts</span></div>
           <div class="detail-item"><span class="detail-name">Test Notifications</span><span class="detail-desc">Preview and manually trigger iMessage anniversary alerts</span></div>
           <div class="detail-item"><span class="detail-name">Check Anniversaries</span><span class="detail-desc">Run anniversary notification and reminder logic now</span></div>
-          <div class="detail-item"><span class="detail-name">Entity Timeline</span><span class="detail-desc">Full CRM-style timeline for any contact</span></div>
-          <div class="detail-item"><span class="detail-name">Life OS Config</span><span class="detail-desc">Configuration and maintenance tools</span></div>
+          <div class="detail-item"><span class="detail-name">Entity Timeline</span><span class="detail-desc">Full CRM-style timeline for any contact: interactions, tasks, purchases, and notes</span></div>
+          <div class="detail-item"><span class="detail-name">Merge Entities</span><span class="detail-desc">Merge duplicate entities: updates all entity arrays, WikiLinks, and deletes the old file</span></div>
         </div>
       </details>
 
-      <!-- Tasks -->
       <details>
         <summary>
           <span class="summary-left">
@@ -692,16 +692,15 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Task Inbox</span><span class="detail-desc">Show your next prioritized task (focus scoring)</span></div>
+          <div class="detail-item"><span class="detail-name">Task Inbox</span><span class="detail-desc">Show your next prioritized task</span></div>
           <div class="detail-item"><span class="detail-name">Task Overview</span><span class="detail-desc">Browse and filter all tasks</span></div>
-          <div class="detail-item"><span class="detail-name">Today's Focus</span><span class="detail-desc">Overdue tasks, today's due items, contacts, and anniversaries</span></div>
-          <div class="detail-item"><span class="detail-name">Chores</span><span class="detail-desc">Recurring household tasks with fair distribution tracking</span></div>
-          <div class="detail-item"><span class="detail-name">Rituals</span><span class="detail-desc">Quality of life rituals with completion tracking</span></div>
-          <div class="detail-item"><span class="detail-name">Habits Dashboard</span><span class="detail-desc">Combined rituals and chores with streaks and fairness metrics</span></div>
+          <div class="detail-item"><span class="detail-name">Today's Focus</span><span class="detail-desc">Overzicht: overdue taken, vandaag due, contacten, verjaardagen</span></div>
+          <div class="detail-item"><span class="detail-name">Chores</span><span class="detail-desc">Huishoudelijke taken met eerlijke verdeling</span></div>
+          <div class="detail-item"><span class="detail-name">Rituals</span><span class="detail-desc">Quality of life rituals met completion tracking</span></div>
+          <div class="detail-item"><span class="detail-name">Habits Dashboard</span><span class="detail-desc">Combined dashboard of rituals and chores with streaks, fairness, and completion rates</span></div>
         </div>
       </details>
 
-      <!-- Browse -->
       <details>
         <summary>
           <span class="summary-left">
@@ -716,14 +715,13 @@
         </summary>
         <div class="detail-list">
           <div class="detail-item"><span class="detail-name">References</span><span class="detail-desc">Browse books, movies, articles, bookmarks, and other references</span></div>
-          <div class="detail-item"><span class="detail-name">Media Browser</span><span class="detail-desc">Browse series and films — filter by platform, status, IMDB rating</span></div>
+          <div class="detail-item"><span class="detail-name">Media Browser</span><span class="detail-desc">Browse series en films. Filter op platform, status en IMDB-rating. Watch Next: backlog gesorteerd op IMDB.</span></div>
           <div class="detail-item"><span class="detail-name">Projects</span><span class="detail-desc">Browse projects with task counts and status</span></div>
           <div class="detail-item"><span class="detail-name">Purchases</span><span class="detail-desc">Browse purchases by category with spending overview</span></div>
           <div class="detail-item"><span class="detail-name">Recent Items</span><span class="detail-desc">Recently modified notes sorted by date with type filtering</span></div>
         </div>
       </details>
 
-      <!-- Search + Calendar + Review -->
       <details>
         <summary>
           <span class="summary-left">
@@ -733,18 +731,21 @@
               <span class="summary-desc">Vault search, calendar import, weekly review, and health</span>
             </span>
           </span>
-          <span class="summary-count">5</span>
+          <span class="summary-count">6</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Search Vault</span><span class="detail-desc">Full-text fuzzy search with type/area/status/entity filtering</span></div>
-          <div class="detail-item"><span class="detail-name">Import Calendar</span><span class="detail-desc">Import Apple Calendar events to Obsidian</span></div>
-          <div class="detail-item"><span class="detail-name">Weekly Review</span><span class="detail-desc">Dashboard of the past 7 days: tasks, interactions, notes, health</span></div>
+          <div class="detail-item"><span class="detail-name">Life OS Config</span><span class="detail-desc">Configuration and maintenance tools</span></div>
           <div class="detail-item"><span class="detail-name">Vault Health</span><span class="detail-desc">Check vault for schema issues, broken links, and encoding problems</span></div>
-          <div class="detail-item"><span class="detail-name">Contact Decay (menu bar)</span><span class="detail-desc">Menu bar indicator showing overdue contacts needing attention</span></div>
+          <div class="detail-item"><span class="detail-name">Search Vault</span><span class="detail-desc">Search all notes with type-aware filtering</span></div>
+          <div class="detail-item"><span class="detail-name">Import Calendar</span><span class="detail-desc">Import calendar events from Apple Calendar to Obsidian</span></div>
+          <div class="detail-item"><span class="detail-name">Weekly Review</span><span class="detail-desc">Dashboard of the past 7 days: tasks, interactions, notes, health, and upcoming items</span></div>
+          <div class="detail-item"><span class="detail-name">Morning Briefing</span><span class="detail-desc">Proactive daily summary: overdue tasks, calendar, anniversaries, contacts, chores</span></div>
         </div>
       </details>
+
     </div>
+    <!-- END:commands -->
 
     <div class="divider"></div>
 

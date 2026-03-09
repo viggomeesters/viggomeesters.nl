@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agent Brain — AI Coordination System</title>
-  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 37 skills, 12 commands, 51 scripts.">
+  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 40 skills, 15 commands, 46 scripts.">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -621,17 +621,18 @@
     </div>
 
     <!-- Stats -->
+    <!-- BEGIN:stats -->
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num">37</div>
+        <div class="stat-num">40</div>
         <div class="stat-label">Skills</div>
       </div>
       <div class="stat">
-        <div class="stat-num">12</div>
+        <div class="stat-num">15</div>
         <div class="stat-label">Commands</div>
       </div>
       <div class="stat">
-        <div class="stat-num">51</div>
+        <div class="stat-num">46</div>
         <div class="stat-label">Scripts</div>
       </div>
       <div class="stat">
@@ -639,6 +640,7 @@
         <div class="stat-label">Tools</div>
       </div>
     </div>
+    <!-- END:stats -->
 
     <!-- Tools -->
     <div class="agents reveal">
@@ -650,10 +652,10 @@
     <div class="divider"></div>
 
     <!-- Skills -->
+    <!-- BEGIN:skills -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #22c55e">Skills (37)</div>
+      <div class="section-label" style="--dot-color: #22c55e">Skills (40)</div>
 
-      <!-- Audit -->
       <details>
         <summary>
           <span class="summary-left">
@@ -663,30 +665,30 @@
               <span class="summary-desc">Comprehensive code quality frameworks</span>
             </span>
           </span>
-          <span class="summary-count">16</span>
+          <span class="summary-count">17</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">audit-01-design</span><span class="detail-desc">Verifies implementation adheres to design document, principles, and constraints</span></div>
-          <div class="detail-item"><span class="detail-name">audit-02-arch</span><span class="detail-desc">Architecture review: coupling, boundaries, layering, circular dependencies</span></div>
-          <div class="detail-item"><span class="detail-name">audit-03-security</span><span class="detail-desc">OWASP risks, auth, secrets, input validation, crypto misuse</span></div>
-          <div class="detail-item"><span class="detail-name">audit-04-code</span><span class="detail-desc">Code quality: DRY violations, dead code, complexity, type safety</span></div>
-          <div class="detail-item"><span class="detail-name">audit-05-diff</span><span class="detail-desc">Risk-focused code review for PRs with blast radius analysis</span></div>
-          <div class="detail-item"><span class="detail-name">audit-06-testing</span><span class="detail-desc">Coverage gaps, missing integration tests, flaky tests, edge cases</span></div>
-          <div class="detail-item"><span class="detail-name">audit-07-api</span><span class="detail-desc">REST/GraphQL conventions, error responses, pagination, versioning</span></div>
-          <div class="detail-item"><span class="detail-name">audit-08-perf</span><span class="detail-desc">N+1 queries, caching, blocking operations, memory leaks</span></div>
-          <div class="detail-item"><span class="detail-name">audit-09-frontend</span><span class="detail-desc">Component architecture, responsive design, state management, CSS</span></div>
-          <div class="detail-item"><span class="detail-name">audit-10-a11y</span><span class="detail-desc">WCAG AA compliance, semantic HTML, ARIA, keyboard navigation</span></div>
-          <div class="detail-item"><span class="detail-name">audit-11-perf-web</span><span class="detail-desc">Core Web Vitals (LCP, CLS, INP), bundle size, image optimization</span></div>
-          <div class="detail-item"><span class="detail-name">audit-12-deps</span><span class="detail-desc">Outdated packages, known CVEs, license compliance, supply chain</span></div>
-          <div class="detail-item"><span class="detail-name">audit-13-data</span><span class="detail-desc">GDPR compliance, PII handling, data retention, encryption</span></div>
-          <div class="detail-item"><span class="detail-name">audit-14-devops</span><span class="detail-desc">CI/CD pipelines, logging, monitoring, health checks, Docker</span></div>
-          <div class="detail-item"><span class="detail-name">audit-15-features</span><span class="detail-desc">Missing features, UX gaps, competitive positioning, quick wins</span></div>
-          <div class="detail-item"><span class="detail-name">audit-16-mobile</span><span class="detail-desc">App size, startup time, battery usage, offline handling, guidelines</span></div>
+          <div class="detail-item"><span class="detail-name">audit-code-api</span><span class="detail-desc">API design audit: REST/GraphQL conventions, error responses, pagination, versioning, rate…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-code-frontend</span><span class="detail-desc">Frontend audit: component architecture, responsive design, state management, CSS quality, SEO</span></div>
+          <div class="detail-item"><span class="detail-name">audit-code-quality</span><span class="detail-desc">Code quality audit: DRY violations, dead code, complexity, type safety, error handling, naming…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-code-testing</span><span class="detail-desc">Test quality audit: coverage gaps, missing integration tests, flaky tests, edge cases, test…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-concept-arch</span><span class="detail-desc">Architecture audit: coupling, boundaries, layering, circular deps, separation of concerns…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-concept-design</span><span class="detail-desc">Design compliance audit: toetst of de implementatie nog in lijn is met het oorspronkelijke…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-concept-features</span><span class="detail-desc">Feature audit: missing features, UX gaps, competitive positioning, quick wins, roadmap opportunities</span></div>
+          <div class="detail-item"><span class="detail-name">audit-concept-ux</span><span class="detail-desc">UX audit: user flows, interaction feedback, cognitive load, microcopy, error handling UX…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-diff</span><span class="detail-desc">Performs security-focused differential review of code changes (PRs, commits, diffs)</span></div>
+          <div class="detail-item"><span class="detail-name">audit-guard-data</span><span class="detail-desc">Data & privacy audit: GDPR compliance, PII handling, data retention, consent management, logging…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-guard-deps</span><span class="detail-desc">Dependency audit: outdated packages, known CVEs, license compliance, supply chain risks…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-guard-security</span><span class="detail-desc">Security audit: OWASP risks, auth, secrets, input validation, insecure defaults, API footguns…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-perf-backend</span><span class="detail-desc">Backend performance audit: N+1 queries, caching, blocking operations, memory leaks, database…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-perf-mobile</span><span class="detail-desc">Mobile app audit: app size, startup time, battery usage, offline handling, platform guidelines…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-perf-web</span><span class="detail-desc">Web performance audit: Core Web Vitals (LCP, CLS, INP), bundle size, code splitting, image…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-ship-a11y</span><span class="detail-desc">Accessibility audit: WCAG AA compliance, semantic HTML, ARIA, keyboard navigation, color…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-ship-devops</span><span class="detail-desc">DevOps audit: CI/CD pipelines, logging, monitoring, health checks, Docker configs, runtime safety</span></div>
         </div>
       </details>
 
-      <!-- Communication -->
       <details>
         <summary>
           <span class="summary-left">
@@ -700,14 +702,13 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">comm-chat</span><span class="detail-desc">Draft and send messages across Teams, WhatsApp, SMS/iMessage</span></div>
-          <div class="detail-item"><span class="detail-name">comm-mail-save</span><span class="detail-desc">Save inbox emails to vault as structured interaction notes</span></div>
-          <div class="detail-item"><span class="detail-name">comm-mail-write</span><span class="detail-desc">Compose and reply to emails via Apple Mail with vault context</span></div>
-          <div class="detail-item"><span class="detail-name">comm-meeting</span><span class="detail-desc">Meeting prep and debrief with context gathering and follow-up tasks</span></div>
+          <div class="detail-item"><span class="detail-name">comm-chat</span><span class="detail-desc">Draft and send chat messages across platforms (Teams, WhatsApp, SMS/iMessage)</span></div>
+          <div class="detail-item"><span class="detail-name">comm-mail-save</span><span class="detail-desc">Save inbox emails to vault as interaction notes</span></div>
+          <div class="detail-item"><span class="detail-name">comm-mail-write</span><span class="detail-desc">Compose and reply to emails via Apple Mail</span></div>
+          <div class="detail-item"><span class="detail-name">comm-meeting</span><span class="detail-desc">Meeting prep and debrief</span></div>
         </div>
       </details>
 
-      <!-- Development -->
       <details>
         <summary>
           <span class="summary-left">
@@ -721,16 +722,15 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">dev-alteryx</span><span class="detail-desc">Build, debug, and validate Alteryx .yxmd workflows and SAP methodology</span></div>
-          <div class="detail-item"><span class="detail-name">dev-flutter</span><span class="detail-desc">Flutter/Dart mobile development with Riverpod, GoRouter, Supabase</span></div>
-          <div class="detail-item"><span class="detail-name">dev-frontend</span><span class="detail-desc">Create production-grade frontend interfaces with high design quality</span></div>
-          <div class="detail-item"><span class="detail-name">dev-python</span><span class="detail-desc">Modern Python project configuration with uv, ruff, type checking</span></div>
-          <div class="detail-item"><span class="detail-name">dev-raycast</span><span class="detail-desc">Raycast extension development patterns in TypeScript and React</span></div>
-          <div class="detail-item"><span class="detail-name">dev-react</span><span class="detail-desc">React and Next.js performance — 57 rules across 8 categories</span></div>
+          <div class="detail-item"><span class="detail-name">dev-alteryx</span><span class="detail-desc">Build, debug, and validate Alteryx .yxmd workflows</span></div>
+          <div class="detail-item"><span class="detail-name">dev-flutter</span><span class="detail-desc">Flutter/Dart mobile development for Luminos (migraine tracking app)</span></div>
+          <div class="detail-item"><span class="detail-name">dev-frontend</span><span class="detail-desc">Create distinctive, production-grade frontend interfaces with high design quality</span></div>
+          <div class="detail-item"><span class="detail-name">dev-python</span><span class="detail-desc">Configures Python projects with modern tooling (uv, ruff, ty)</span></div>
+          <div class="detail-item"><span class="detail-name">dev-raycast</span><span class="detail-desc">Raycast extension development patterns</span></div>
+          <div class="detail-item"><span class="detail-name">dev-react</span><span class="detail-desc">React and Next.js performance optimization guidelines from Vercel Engineering</span></div>
         </div>
       </details>
 
-      <!-- Documentation -->
       <details>
         <summary>
           <span class="summary-left">
@@ -740,18 +740,18 @@
               <span class="summary-desc">Document and file handling</span>
             </span>
           </span>
-          <span class="summary-count">4</span>
+          <span class="summary-count">5</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">doc-pdf</span><span class="detail-desc">PDF processing: read, merge, split, rotate, OCR, watermark, fill forms</span></div>
-          <div class="detail-item"><span class="detail-name">doc-vault</span><span class="detail-desc">Obsidian vault CRUD — schema-aware note creation and archival</span></div>
-          <div class="detail-item"><span class="detail-name">doc-word</span><span class="detail-desc">Word document creation with formatting, tracked changes, tables</span></div>
-          <div class="detail-item"><span class="detail-name">doc-xlsx</span><span class="detail-desc">Excel operations: create, read, edit, clean data, formulas</span></div>
+          <div class="detail-item"><span class="detail-name">doc-nice</span><span class="detail-desc">Use this skill when the user wants to create, generate, or write new documents, reports, memos…</span></div>
+          <div class="detail-item"><span class="detail-name">doc-pdf</span><span class="detail-desc">Use this skill to read, edit, or manipulate EXISTING PDF files</span></div>
+          <div class="detail-item"><span class="detail-name">doc-vault</span><span class="detail-desc">Interact with an Obsidian vault safely and consistently</span></div>
+          <div class="detail-item"><span class="detail-name">doc-word</span><span class="detail-desc">Use this skill to read, edit, or manipulate EXISTING Word documents (.docx files)</span></div>
+          <div class="detail-item"><span class="detail-name">doc-xlsx</span><span class="detail-desc">Use this skill any time a spreadsheet file is the primary input or output</span></div>
         </div>
       </details>
 
-      <!-- Git & CI -->
       <details>
         <summary>
           <span class="summary-left">
@@ -765,12 +765,11 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">git-ship</span><span class="detail-desc">Safe Git workflow: inspect, commit, push, branch sync, release prep</span></div>
-          <div class="detail-item"><span class="detail-name">gh-fix-ci</span><span class="detail-desc">Debug failing GitHub Actions: inspect logs, summarize, draft fixes</span></div>
+          <div class="detail-item"><span class="detail-name">gh-fix-ci</span><span class="detail-desc">Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use…</span></div>
+          <div class="detail-item"><span class="detail-name">git-ship</span><span class="detail-desc">Safe Git workflow for inspect, commit, push, branch sync, and release preparation</span></div>
         </div>
       </details>
 
-      <!-- Work Management -->
       <details>
         <summary>
           <span class="summary-left">
@@ -784,13 +783,12 @@
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">work-calendar</span><span class="detail-desc">Apple Calendar management via AppleScript: list, create, update events</span></div>
-          <div class="detail-item"><span class="detail-name">work-focus</span><span class="detail-desc">Daily planning and focus with Activity Box awareness</span></div>
-          <div class="detail-item"><span class="detail-name">work-report</span><span class="detail-desc">Weekly work reports aggregating git, vault, and task activity</span></div>
+          <div class="detail-item"><span class="detail-name">work-calendar</span><span class="detail-desc">Manage Apple Calendar events safely through AppleScript</span></div>
+          <div class="detail-item"><span class="detail-name">focus-planning</span><span class="detail-desc">Daily planning and focus management</span></div>
+          <div class="detail-item"><span class="detail-name">work-report</span><span class="detail-desc">Weekly work report generator</span></div>
         </div>
       </details>
 
-      <!-- Automation -->
       <details>
         <summary>
           <span class="summary-left">
@@ -800,21 +798,25 @@
               <span class="summary-desc">Core autonomous task execution</span>
             </span>
           </span>
-          <span class="summary-count">2</span>
+          <span class="summary-count">3</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert findings into structured task ledger entries automatically</span></div>
-          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Autonomous task execution: pick, implement, commit, push in a loop</span></div>
+          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert conversation output (suggestions, plans, audit findings, research, proposals) into…</span></div>
+          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Pick and implement the next task from the shared task ledger for the current project</span></div>
+          <div class="detail-item"><span class="detail-name">publish-html</span><span class="detail-desc">Publish research or content as an interactive HTML page via temp-publisher</span></div>
         </div>
       </details>
+
     </div>
+    <!-- END:skills -->
 
     <div class="divider"></div>
 
     <!-- Commands -->
+    <!-- BEGIN:commands -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #818cf8">Commands (12)</div>
+      <div class="section-label" style="--dot-color: #818cf8">Commands (15)</div>
 
       <details>
         <summary>
@@ -825,25 +827,30 @@
               <span class="summary-desc">Quick-access workflows invoked via /command</span>
             </span>
           </span>
-          <span class="summary-count">12</span>
+          <span class="summary-count">15</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">/data</span><span class="detail-desc">CSV & Excel analysis — structure, quality, statistics, issues</span></div>
-          <div class="detail-item"><span class="detail-name">/debug</span><span class="detail-desc">Systematic troubleshooting: reproduce, isolate, diagnose, fix, verify</span></div>
-          <div class="detail-item"><span class="detail-name">/git</span><span class="detail-desc">One-command Git workflow: stage, commit, merge, push, release</span></div>
-          <div class="detail-item"><span class="detail-name">/ledger</span><span class="detail-desc">Convert audit findings into actionable task ledger entries</span></div>
-          <div class="detail-item"><span class="detail-name">/next</span><span class="detail-desc">Autonomous ledger-driven execution: pick task, implement, ship</span></div>
-          <div class="detail-item"><span class="detail-name">/nice-docs</span><span class="detail-desc">Branded document export: HTML, PDF, DOCX, PPTX</span></div>
-          <div class="detail-item"><span class="detail-name">/pr</span><span class="detail-desc">Pull request code review and analysis</span></div>
-          <div class="detail-item"><span class="detail-name">/refactor</span><span class="detail-desc">Structured code refactoring with impact analysis and safety checks</span></div>
-          <div class="detail-item"><span class="detail-name">/report</span><span class="detail-desc">Weekly work report across projects and clients</span></div>
-          <div class="detail-item"><span class="detail-name">/research</span><span class="detail-desc">Multi-source web research with comparisons and summaries</span></div>
-          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Central task control plane shared across all agents</span></div>
-          <div class="detail-item"><span class="detail-name">/vault-health</span><span class="detail-desc">Complete Obsidian vault integrity, metadata, and link validation</span></div>
+          <div class="detail-item"><span class="detail-name">/data</span><span class="detail-desc">Analyseer CSV en Excel bestanden: structuur, kwaliteit, statistieken en issues</span></div>
+          <div class="detail-item"><span class="detail-name">/debug</span><span class="detail-desc">Systematic debugging workflow when something is broken</span></div>
+          <div class="detail-item"><span class="detail-name">/git</span><span class="detail-desc">One-command git workflow: stage, commit, merge, push, and release</span></div>
+          <div class="detail-item"><span class="detail-name">/ledger</span><span class="detail-desc">Convert audit findings into task ledger entries</span></div>
+          <div class="detail-item"><span class="detail-name">/next</span><span class="detail-desc">Pick → worktree → implement → commit → merge → push → next</span></div>
+          <div class="detail-item"><span class="detail-name">/nice-docs</span><span class="detail-desc">Generate branded documents from markdown</span></div>
+          <div class="detail-item"><span class="detail-name">/pdf</span><span class="detail-desc">Read, edit, or manipulate existing PDF files</span></div>
+          <div class="detail-item"><span class="detail-name">/pr</span><span class="detail-desc">Review a pull request from multiple perspectives</span></div>
+          <div class="detail-item"><span class="detail-name">/refactor</span><span class="detail-desc">Systematic code refactoring with impact analysis, safety checks, and test verification</span></div>
+          <div class="detail-item"><span class="detail-name">/report</span><span class="detail-desc">Generate weekly reports: cross-project summary for team meetings, or per-project client reports</span></div>
+          <div class="detail-item"><span class="detail-name">/research</span><span class="detail-desc">Structured multi-source web research with comparison tables, source evaluation, and vault…</span></div>
+          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Use this command to manage tasks in one shared ledger for Codex, Claude Code, and Gemini CLI</span></div>
+          <div class="detail-item"><span class="detail-name">/vault-health</span><span class="detail-desc">Voert een complete health check uit op de Obsidian vault</span></div>
+          <div class="detail-item"><span class="detail-name">/word</span><span class="detail-desc">Read, edit, or manipulate existing Word documents</span></div>
+          <div class="detail-item"><span class="detail-name">/xlsx</span><span class="detail-desc">Create, read, edit, or fix spreadsheet files</span></div>
         </div>
       </details>
+
     </div>
+    <!-- END:commands -->
 
     <div class="divider"></div>
 
@@ -868,7 +875,7 @@
           <div class="arch-brain">
             <div class="arch-brain-label">Agent Brain</div>
             <div class="arch-brain-items">
-              <span class="arch-brain-item">37 Skills</span>
+              <span class="arch-brain-item">40 Skills</span>
               <span class="arch-brain-item">Shared Memory</span>
               <span class="arch-brain-item">Context Sync</span>
             </div>

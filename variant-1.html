@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viggo Meesters</title>
+  <meta name="description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="Viggo Meesters">
+  <meta property="og:description" content="SAP Data Management at McCoy. Tinkering with code on the side.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0a0a0f;
+      --bg-surface: #111116;
+      --bg-elevated: #18181e;
+      --border: #252530;
+      --border-subtle: #1a1a24;
+      --text: #d0d0da;
+      --text-secondary: #8888a0;
+      --text-muted: #505068;
+      --font-display: 'Chakra Petch', sans-serif;
+      --font-body: 'Space Mono', monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Scanline overlay */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.08) 2px,
+        rgba(0,0,0,0.08) 4px
+      );
+    }
+
+    /* Dot grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.06;
+      background-image: radial-gradient(circle, #888 0.5px, transparent 0.5px);
+      background-size: 24px 24px;
+    }
+
+    /* Ambient glow */
+    .glow-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .glow-bg::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      top: -100px; left: -100px;
+      background: radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%);
+    }
+    .glow-bg::after {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      bottom: -50px; right: -100px;
+      background: radial-gradient(circle, rgba(168,85,247,0.05) 0%, transparent 70%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 28px 60px;
+    }
+
+    /* Terminal window chrome */
+    .window-chrome {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      border-radius: 12px 12px 0 0;
+      margin-bottom: 0;
+    }
+    .chrome-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+    .chrome-dot.r { background: #ff5f57; }
+    .chrome-dot.y { background: #ffbd2e; }
+    .chrome-dot.g { background: #28ca41; }
+    .chrome-title {
+      flex: 1;
+      text-align: center;
+      font-size: 0.75em;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+    }
+
+    .main-panel {
+      background: rgba(17,17,22,0.8);
+      border: 1px solid var(--border);
+      border-radius: 0 0 12px 12px;
+      padding: 40px 36px;
+    }
+
+    /* Profile */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      box-shadow: 0 0 20px rgba(59,130,246,0.1);
+    }
+
+    .profile-text {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .name {
+      font-family: var(--font-display);
+      font-size: 2em;
+      font-weight: 700;
+      color: #eeeef2;
+      letter-spacing: 0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-size: 0.85em;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .tagline strong {
+      color: #eab308;
+      font-weight: 700;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+      position: relative;
+    }
+    .divider::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0;
+      width: 60px; height: 1px;
+      background: linear-gradient(90deg, var(--div-color, #3b82f6), transparent);
+    }
+
+    /* Section title */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--section-color, #3b82f6);
+      margin-bottom: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title::before {
+      content: '>';
+      color: var(--section-color, #3b82f6);
+      font-family: var(--font-body);
+      font-weight: 700;
+    }
+
+    /* Cards as menu items */
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    a.card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-top: 2px solid var(--card-color, var(--border-subtle));
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    a.card .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    a.card .card-icon {
+      width: 24px;
+      height: 24px;
+      color: var(--card-color, var(--text-muted));
+      flex-shrink: 0;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    a.card .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    a.card .card-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.95em;
+      color: #dddde5;
+    }
+
+    a.card .card-desc {
+      font-size: 0.78em;
+      color: var(--text-muted);
+      line-height: 1.4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    a.card .card-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      font-size: 0.7em;
+      font-family: var(--font-body);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--card-color, var(--text-secondary));
+      border: 1px solid var(--card-color, var(--border));
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    @media (hover: hover) {
+      a.card:hover {
+        border-color: var(--card-color, var(--border));
+        border-top-color: var(--card-color, var(--border));
+        background: rgba(255,255,255,0.03);
+        box-shadow:
+          0 0 15px var(--card-soft, rgba(0,0,0,0.2)),
+          inset 0 0 30px var(--card-soft, transparent);
+        transform: translateX(4px);
+      }
+      a.card:hover .card-icon {
+        filter: drop-shadow(0 0 8px var(--card-color, transparent));
+      }
+      a.card:hover .card-name {
+        color: var(--card-color, #eee);
+      }
+    }
+
+    @media (hover: none) {
+      a.card:active {
+        background: var(--card-soft, var(--bg-surface));
+      }
+    }
+
+    /* Stagger */
+    .grid a.card { opacity: 0; animation: slide-in 0.4s ease forwards; }
+    .grid a.card:nth-child(1) { animation-delay: 0.1s; }
+    .grid a.card:nth-child(2) { animation-delay: 0.15s; }
+    .grid a.card:nth-child(3) { animation-delay: 0.2s; }
+    .grid a.card:nth-child(4) { animation-delay: 0.25s; }
+    .grid a.card:nth-child(5) { animation-delay: 0.3s; }
+    .grid a.card:nth-child(6) { animation-delay: 0.35s; }
+    .grid a.card:nth-child(7) { animation-delay: 0.4s; }
+    .grid a.card:nth-child(8) { animation-delay: 0.45s; }
+    @keyframes slide-in {
+      from { opacity: 0; transform: translateX(-12px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Links */
+    .links { display: flex; flex-direction: column; gap: 6px; }
+
+    a.link-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.85em;
+      transition: all 0.2s ease;
+    }
+
+    a.link-row .link-icon { width: 20px; height: 20px; flex-shrink: 0; opacity: 0.5; }
+    a.link-row .link-label { flex: 1; font-weight: 700; font-family: var(--font-display); }
+    a.link-row .arrow { color: var(--text-muted); transition: transform 0.2s ease; }
+
+    @media (hover: hover) {
+      a.link-row:hover {
+        border-color: var(--link-color, var(--border));
+        background: rgba(255,255,255,0.02);
+        box-shadow: 0 0 12px var(--link-soft, transparent);
+        transform: translateX(4px);
+      }
+      a.link-row:hover .link-icon { opacity: 1; }
+      a.link-row:hover .arrow { transform: translateX(4px); color: var(--link-color, var(--text)); }
+    }
+
+    /* Contact */
+    .contact-form { display: flex; flex-direction: column; gap: 10px; }
+    .form-row { display: flex; gap: 10px; }
+    .form-row input { flex: 1; }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: var(--bg);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.85em;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: var(--text-muted); }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59,130,246,0.15), 0 0 12px rgba(59,130,246,0.08);
+    }
+    .contact-form textarea { resize: vertical; min-height: 80px; }
+
+    .contact-form button {
+      align-self: flex-start;
+      padding: 10px 24px;
+      background: transparent;
+      border: 1px solid #3b82f6;
+      border-radius: 6px;
+      color: #3b82f6;
+      font-family: var(--font-display);
+      font-size: 0.85em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .contact-form button:hover {
+      background: rgba(59,130,246,0.1);
+      box-shadow: 0 0 16px rgba(59,130,246,0.15);
+    }
+
+    .form-note { font-size: 0.75em; color: var(--text-muted); margin-top: 4px; }
+
+    .form-success {
+      display: none;
+      padding: 14px 18px;
+      background: rgba(59,130,246,0.08);
+      border: 1px solid rgba(59,130,246,0.2);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-size: 0.85em;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.75em;
+      color: var(--text-muted);
+      text-align: center;
+      font-family: var(--font-body);
+    }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s, transform 0.5s; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    @media (max-width: 640px) {
+      .page { padding: 60px 16px 40px; }
+      .main-panel { padding: 28px 20px; }
+      .name { font-size: 1.5em; }
+      .avatar { width: 64px; height: 64px; }
+      .profile { gap: 16px; }
+      .form-row { flex-direction: column; gap: 10px; }
+      a.card .card-desc { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <div class="page">
+    <div class="window-chrome">
+      <div class="chrome-dot r"></div>
+      <div class="chrome-dot y"></div>
+      <div class="chrome-dot g"></div>
+      <div class="chrome-title">viggo@meesters ~ /portfolio</div>
+    </div>
+    <div class="main-panel">
+
+    <!-- Profile -->
+    <div class="profile reveal">
+      <img src="profile.jpg" alt="Viggo Meesters" class="avatar" width="80" height="80">
+      <div class="profile-text">
+        <h1 class="name">Viggo Meesters</h1>
+        <p class="tagline">SAP Data Management at <strong>McCoy</strong>.<br>Tinkering with code on the side.</p>
+      </div>
+    </div>
+
+    <div class="divider" style="--div-color: #3b82f6"></div>
+
+    <!-- Projects -->
+    <div class="reveal">
+      <div class="section-title" style="--section-color: #3b82f6">Projects</div>
+      <div class="grid">
+
+        <a href="https://minimal-etl-modeler.vercel.app" class="card" target="_blank" rel="noopener"
+           style="--card-color: #3b82f6; --card-soft: rgba(59,130,246,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><line x1="7.2" y1="7" x2="10.5" y2="16"/><line x1="16.8" y1="7" x2="13.5" y2="16"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Minimal ETL Modeler</div>
+            <div class="card-desc">Visual data flow editor inspired by Alteryx</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="https://money-shower.vercel.app" class="card" target="_blank" rel="noopener"
+           style="--card-color: #eab308; --card-soft: rgba(234,179,8,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.66 0-3 1-3 2.25s1.34 2.25 3 2.25c1.66 0 3 1 3 2.25S13.66 17 12 17c-1 0-2-.5-2.5-1.5"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Money Shower</div>
+            <div class="card-desc">Real-time salary visualizer</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="https://visual-pm-app.vercel.app" class="card" target="_blank" rel="noopener"
+           style="--card-color: #a855f7; --card-soft: rgba(168,85,247,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="6" height="18" rx="1.5"/><rect x="9" y="6" width="6" height="12" rx="1.5"/><rect x="16" y="9" width="6" height="6" rx="1.5"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Visual PM</div>
+            <div class="card-desc">Visual project management</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="https://kraamweek.vercel.app" class="card" target="_blank" rel="noopener"
+           style="--card-color: #f472b6; --card-soft: rgba(244,114,182,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Kraamweek</div>
+            <div class="card-desc">Newborn week planner</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="https://getdimma.vercel.app" class="card" target="_blank" rel="noopener"
+           style="--card-color: #06b6d4; --card-soft: rgba(6,182,212,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9 2 6.5 4 6 7c-.7 4 1.5 5 1.5 8h9c0-3 2.2-4 1.5-8-.5-3-3-5-6-5z"/><path d="M9 15v2c0 1.66 1.34 3 3 3s3-1.34 3-3v-2"/><path d="M1 12h3"/><path d="M20 12h3"/><path d="M12 1v2"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Dimma</div>
+            <div class="card-desc">Migraine tracking app — log in 3 taps</div>
+          </div>
+          <span class="card-tag">WIP</span>
+        </a>
+
+        <a href="/agent-brain/" class="card"
+           style="--card-color: #22c55e; --card-soft: rgba(34,197,94,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><line x1="12" y1="7" x2="12" y2="17"/><line x1="12" y1="7" x2="5" y2="10"/><line x1="12" y1="7" x2="19" y2="10"/><line x1="5" y1="14" x2="5" y2="17"/><line x1="19" y1="14" x2="19" y2="17"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Agent Brain</div>
+            <div class="card-desc">AI coordination system — 37 skills, 3 agents</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="/raycast-life-os/" class="card"
+           style="--card-color: #f97316; --card-soft: rgba(249,115,22,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 18.5L2 22l2.5.5L5 20l-1.5-1.5h2zm2-2L4 20l1.5 1.5 3.5-3.5-1.5-1.5zm4.5-4.5l-2 2 1.5 1.5 2-2L12 12zm3-3l-2 2 1.5 1.5 2-2L15 9zm3-3l-2 2 1.5 1.5L22 5l-1-3-3-1z"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Raycast Life OS</div>
+            <div class="card-desc">Personal knowledge OS — 43 commands</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+        <a href="https://github.com/viggomeesters/obsidian-life-os-starter" class="card" target="_blank" rel="noopener"
+           style="--card-color: #818cf8; --card-soft: rgba(129,140,248,0.10)">
+          <div class="card-header">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 9l1.5 1.5L12 4l7.5 6.5L21 9l-9-7zM12 6L5.5 11.5 12 17l6.5-5.5L12 6zM12 10l-2.5 2L12 14l2.5-2L12 10z"/></svg>
+          </div>
+          <div class="card-body">
+            <div class="card-name">Life OS Starter</div>
+            <div class="card-desc">Obsidian template vault — 12 types, 16 templates</div>
+          </div>
+          <span class="card-tag">LIVE</span>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="divider" style="--div-color: #22c55e"></div>
+
+    <!-- Links -->
+    <div class="reveal">
+      <div class="section-title" style="--section-color: #22c55e">Links</div>
+      <div class="links">
+        <a href="https://github.com/viggomeesters" class="link-row" target="_blank" rel="noopener"
+           style="--link-color: #e8eaf0; --link-soft: rgba(232,234,240,0.05)">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span class="link-label">GitHub</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+        <a href="https://linkedin.com/in/viggomeesters" class="link-row" target="_blank" rel="noopener"
+           style="--link-color: #38bdf8; --link-soft: rgba(56,189,248,0.06)">
+          <svg class="link-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span class="link-label">LinkedIn</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="divider" style="--div-color: #a855f7"></div>
+
+    <!-- Contact -->
+    <div class="reveal">
+      <div class="section-title" style="--section-color: #a855f7">Get in touch</div>
+      <form class="contact-form" action="https://formspree.io/f/mreadeya" method="POST" id="contact-form">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <textarea name="message" placeholder="Message" rows="3" required></textarea>
+        <button type="submit">Send message</button>
+        <p class="form-note">Powered by Formspree. Your email stays private.</p>
+      </form>
+      <div class="form-success" id="form-success">Thanks for reaching out. I'll get back to you soon.</div>
+    </div>
+
+    <div class="footer">&copy; 2026 Viggo Meesters</div>
+
+    </div><!-- .main-panel -->
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+    window.addEventListener('load', () => {
+      reveals.forEach((el, i) => setTimeout(() => el.classList.add('visible'), 100 + i * 120));
+    });
+
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+        else { btn.textContent = 'Error — try again'; btn.disabled = false; }
+      } catch { btn.textContent = 'Error — try again'; btn.disabled = false; }
+    });
+  </script>
+</body>
+</html>
