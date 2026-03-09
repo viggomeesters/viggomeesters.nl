@@ -1,5 +1,5 @@
 # viggomeesters.nl
 
-[![Latest Release](https://img.shields.io/github/v/release/viggomeesters/viggomeesters.nl?label=latest%20release&color=%2331addd)](https://github.com/viggomeesters/viggomeesters.nl/releases/latest)
+![version](https://img.shields.io/badge/version-v1.0.0-31addd)
 
 Personal landing page hosted on Vercel.
