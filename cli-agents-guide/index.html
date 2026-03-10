@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLI Agents + Obsidian: A Practical Guide</title>
+  <meta name="description" content="How to use Claude Code, Gemini CLI, and Codex as autonomous agents with Obsidian as your knowledge database. A practical guide from daily use.">
+  <meta name="theme-color" content="#0c0c0f">
+  <meta property="og:title" content="CLI Agents + Obsidian: A Practical Guide">
+  <meta property="og:description" content="How to use Claude Code, Gemini CLI, and Codex as autonomous agents with Obsidian as your knowledge database.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.nl/cli-agents-guide/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --text-bright: #eeeff4;
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      --claude: #f97316;
+      --claude-soft: rgba(249,115,22,0.10);
+      --gemini: #a855f7;
+      --gemini-soft: rgba(168,85,247,0.10);
+      --codex: #3b82f6;
+      --codex-soft: rgba(59,130,246,0.10);
+      --green: #22c55e;
+      --green-soft: rgba(34,197,94,0.10);
+      --amber: #eab308;
+      --amber-soft: rgba(234,179,8,0.10);
+      --cyan: #06b6d4;
+      --cyan-soft: rgba(6,182,212,0.10);
+      --pink: #f472b6;
+      --pink-soft: rgba(244,114,182,0.10);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(249,115,22,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(168,85,247,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(59,130,246,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(34,197,94,0.05) 0%, transparent 70%);
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(6,182,212,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(234,179,8,0.04) 0%, transparent 70%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 40px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
+    }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
+
+    .hero {
+      margin-bottom: 48px;
+    }
+
+    .hero h1 {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .hero .subtitle {
+      font-size: 1em;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .hero .meta {
+      margin-top: 16px;
+      font-size: 0.78em;
+      color: var(--text-muted);
+    }
+
+    .tools-row {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0 0;
+      flex-wrap: wrap;
+    }
+
+    .tool-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 10px;
+      font-size: 0.78em;
+      font-weight: 500;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .tool-chip.claude { background: var(--claude-soft); color: var(--claude); border-color: rgba(249,115,22,0.15); }
+    .tool-chip.gemini { background: var(--gemini-soft); color: var(--gemini); border-color: rgba(168,85,247,0.15); }
+    .tool-chip.codex { background: var(--codex-soft); color: var(--codex); border-color: rgba(59,130,246,0.15); }
+    .tool-chip.obsidian { background: var(--gemini-soft); color: var(--gemini); border-color: rgba(168,85,247,0.15); }
+
+    .tool-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .article h2 {
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.02em;
+      margin: 48px 0 16px;
+      padding-top: 8px;
+    }
+
+    .article h3 {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #e0e1e8;
+      margin: 32px 0 12px;
+    }
+
+    .article p {
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    .article a {
+      color: var(--claude);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(249,115,22,0.3);
+      transition: border-color 0.2s;
+    }
+    .article a:hover {
+      border-color: var(--claude);
+    }
+
+    .article ul, .article ol {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+      line-height: 1.65;
+    }
+
+    .article strong {
+      color: #e0e1e8;
+      font-weight: 600;
+    }
+
+    .article em {
+      color: var(--text-secondary);
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.88em;
+      background: var(--bg-elevated);
+      padding: 2px 7px;
+      border-radius: 6px;
+      color: #e0e1e8;
+    }
+
+    pre {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      line-height: 1.55;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.82em;
+      color: var(--text);
+    }
+
+    .code-label {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      padding: 6px 14px;
+      margin-bottom: -1px;
+      position: relative;
+      z-index: 1;
+    }
+    .code-label + pre {
+      border-radius: 0 var(--radius) var(--radius) var(--radius);
+    }
+
+    .callout {
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      border: 1px solid;
+    }
+
+    .callout.tip {
+      background: var(--green-soft);
+      border-color: rgba(34,197,94,0.15);
+    }
+    .callout.tip .callout-title { color: var(--green); }
+
+    .callout.warn {
+      background: var(--amber-soft);
+      border-color: rgba(234,179,8,0.15);
+    }
+    .callout.warn .callout-title { color: var(--amber); }
+
+    .callout.info {
+      background: var(--cyan-soft);
+      border-color: rgba(6,182,212,0.15);
+    }
+    .callout.info .callout-title { color: var(--cyan); }
+
+    .callout-title {
+      font-size: 0.82em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      font-size: 0.92em;
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 24px;
+      font-size: 0.88em;
+    }
+
+    .comparison th {
+      text-align: left;
+      padding: 12px 16px;
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.82em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison th:first-child { border-radius: var(--radius) 0 0 0; }
+    .comparison th:last-child { border-radius: 0 var(--radius) 0 0; }
+
+    .comparison td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+    }
+
+    .comparison tr:last-child td { border-bottom: none; }
+    .comparison tr:last-child td:first-child { border-radius: 0 0 0 var(--radius); }
+    .comparison tr:last-child td:last-child { border-radius: 0 0 var(--radius) 0; }
+
+    .comparison td:first-child {
+      font-weight: 500;
+      color: #e0e1e8;
+      white-space: nowrap;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      font-size: 0.72em;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .section-num.orange { background: var(--claude-soft); color: var(--claude); }
+    .section-num.purple { background: var(--gemini-soft); color: var(--gemini); }
+    .section-num.blue { background: var(--codex-soft); color: var(--codex); }
+    .section-num.green { background: var(--green-soft); color: var(--green); }
+    .section-num.amber { background: var(--amber-soft); color: var(--amber); }
+    .section-num.cyan { background: var(--cyan-soft); color: var(--cyan); }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 48px 0;
+    }
+
+    .workflow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 20px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .wf-step {
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 0.78em;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .wf-arrow {
+      color: var(--text-muted);
+      font-size: 0.82em;
+      padding: 0 6px;
+    }
+
+    .toc {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .toc ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      margin-bottom: 6px;
+    }
+
+    .toc li::before {
+      content: counter(toc) ".";
+      font-family: var(--font-mono);
+      font-size: 0.78em;
+      color: var(--text-muted);
+      margin-right: 10px;
+      display: inline-block;
+      width: 22px;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92em;
+      transition: color 0.2s;
+    }
+    .toc a:hover { color: var(--text-bright); }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.5;
+    }
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 60px; }
+      .hero h1 { font-size: 1.6em; }
+      .article h2 { font-size: 1.2em; }
+      .tools-row { gap: 6px; }
+      .comparison { font-size: 0.82em; }
+      .comparison th, .comparison td { padding: 10px 12px; }
+      pre { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+
+    <a href="/" class="back">&larr; viggomeesters.nl</a>
+
+    <div class="hero">
+      <h1>CLI Agents + Obsidian:<br>A Practical Guide</h1>
+      <p class="subtitle">How to turn a terminal AI agent and a folder of markdown files into an autonomous personal operating system. No frameworks, no SaaS &mdash; just a CLI, a schema, and plain text.</p>
+      <div class="tools-row">
+        <span class="tool-chip claude"><span class="tool-dot"></span>Claude Code</span>
+        <span class="tool-chip gemini"><span class="tool-dot"></span>Gemini CLI</span>
+        <span class="tool-chip codex"><span class="tool-dot"></span>Codex</span>
+        <span class="tool-chip obsidian"><span class="tool-dot"></span>Obsidian</span>
+      </div>
+      <p class="meta">By Viggo Meesters &middot; March 2026</p>
+    </div>
+
+    <nav class="toc">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#idea">The idea</a></li>
+        <li><a href="#tools">The tools</a></li>
+        <li><a href="#obsidian-as-db">Obsidian as your database</a></li>
+        <li><a href="#agent-instructions">Teaching the agent your world</a></li>
+        <li><a href="#skills">Agent skills</a></li>
+        <li><a href="#workflows">Real workflows</a></li>
+        <li><a href="#getting-started">Getting started</a></li>
+      </ol>
+    </nav>
+
+    <div class="article">
+
+      <!-- 1. The Idea -->
+      <h2 id="idea"><span class="section-num orange">1</span>The idea</h2>
+
+      <p>Most people use AI through a chat window. You type a question, get an answer, copy-paste it somewhere. That works, but it&rsquo;s a fraction of what&rsquo;s possible.</p>
+
+      <p>CLI agents are different. They run in your terminal, have access to your filesystem, and can read and write files autonomously. Give them a well-structured knowledge base &mdash; like an Obsidian vault &mdash; and they become something closer to a personal operating system than a chatbot.</p>
+
+      <p>Here&rsquo;s the core loop:</p>
+
+      <div class="workflow">
+        <span class="wf-step" style="background: var(--claude-soft); color: var(--claude);">You speak</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--green-soft); color: var(--green);">Agent reads vault</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--cyan-soft); color: var(--cyan);">Agent acts</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--amber-soft); color: var(--amber);">Vault updates</span>
+      </div>
+
+      <p>The agent knows your contacts, projects, tasks, and writing style. It drafts emails in your voice, logs meetings, creates tasks from conversations, and commits results to git. All from the terminal.</p>
+
+      <div class="divider"></div>
+
+      <!-- 2. The Tools -->
+      <h2 id="tools"><span class="section-num purple">2</span>The tools</h2>
+
+      <p>Three CLI agents exist today that can work with local files. Each has different strengths:</p>
+
+      <table class="comparison">
+        <tr>
+          <th>Tool</th>
+          <th>Strengths</th>
+          <th>Best for</th>
+        </tr>
+        <tr>
+          <td style="color: var(--claude);">Claude Code</td>
+          <td>Strongest reasoning, custom skills system (CLAUDE.md), tool use, MCP server support, subagent spawning</td>
+          <td>Complex multi-step workflows, writing, vault management</td>
+        </tr>
+        <tr>
+          <td style="color: var(--gemini);">Gemini CLI</td>
+          <td>1M token context window, fast, Google ecosystem integration, GEMINI.md instructions</td>
+          <td>Large file analysis, long conversations, research</td>
+        </tr>
+        <tr>
+          <td style="color: var(--codex);">Codex</td>
+          <td>OpenAI models, sandboxed execution, AGENTS.md instructions</td>
+          <td>Code generation, refactoring, testing</td>
+        </tr>
+      </table>
+
+      <div class="callout tip">
+        <div class="callout-title">You don&rsquo;t have to pick one</div>
+        <p>These tools can share the same instruction files and vault. I use Claude Code as my primary agent and Gemini CLI for tasks that benefit from a huge context window. The vault is the shared brain &mdash; the agent is just the interface.</p>
+      </div>
+
+      <h3>Installation</h3>
+
+      <div class="code-label">Claude Code</div>
+<pre><code>npm install -g @anthropic-ai/claude-code
+cd ~/my-vault
+claude</code></pre>
+
+      <div class="code-label">Gemini CLI</div>
+<pre><code>npm install -g @anthropic-ai/gemini-cli
+cd ~/my-vault && gemini</code></pre>
+
+      <div class="code-label">Codex</div>
+<pre><code>npm install -g @openai/codex
+cd ~/my-vault && codex</code></pre>
+
+      <p>When you launch from your vault directory, the agent automatically picks up your instruction files. That&rsquo;s where the magic starts.</p>
+
+      <div class="divider"></div>
+
+      <!-- 3. Obsidian as DB -->
+      <h2 id="obsidian-as-db"><span class="section-num blue">3</span>Obsidian as your database</h2>
+
+      <p>Obsidian is a markdown editor, but if you structure your vault with a consistent schema, it becomes a queryable knowledge base. No API, no database server &mdash; just folders and frontmatter.</p>
+
+      <h3>Why markdown?</h3>
+
+      <ul>
+        <li><strong>Agents can read and write it natively</strong> &mdash; no SDK, no API calls</li>
+        <li><strong>Git-trackable</strong> &mdash; every change has a commit history</li>
+        <li><strong>Human-readable</strong> &mdash; you can always open it in any text editor</li>
+        <li><strong>Frontmatter = structured data</strong> &mdash; YAML metadata makes notes queryable</li>
+        <li><strong>WikiLinks = relations</strong> &mdash; <code>[[john-doe]]</code> is a foreign key</li>
+      </ul>
+
+      <h3>A minimal schema</h3>
+
+      <p>The power comes from consistency. Define note types, give each a frontmatter template, and stick to it. Here&rsquo;s a minimal example:</p>
+
+<pre><code># Folder structure
+vault/
+  notes/          # timestamped notes (flat)
+  entities/       # people, companies
+  projects/       # active projects</code></pre>
+
+      <p>Each note has typed frontmatter:</p>
+
+      <div class="code-label">entities/john-doe.md</div>
+<pre><code>---
+type: entity
+category: person
+slug: john-doe
+title: "John Doe"
+company: "Acme Corp"
+role: "Engineering Lead"
+email: "john@acme.com"
+phone: "+31 6 12345678"
+contact_frequency: 30  # days
+last_contact: 2026-02-15
+---
+
+# John Doe
+
+Engineering Lead at Acme Corp. Met at ReactConf 2025.
+
+## Notes
+
+- Interested in Rust migration
+- Prefers async communication</code></pre>
+
+      <div class="code-label">notes/20260310-0900-call-john.md</div>
+<pre><code>---
+type: interaction
+category: call
+slug: 20260310-0900-call-john
+entity: [john-doe]
+area: work
+project: api-redesign
+---
+
+# Call with John
+
+Discussed the API migration timeline.
+Agreed to start Phase 2 next sprint.</code></pre>
+
+      <p>The agent can now find all interactions with John, check when you last spoke, see which project it relates to, and update the contact tracking &mdash; all by reading markdown files.</p>
+
+      <div class="callout info">
+        <div class="callout-title">Scale</div>
+        <p>My vault has 12,000+ notes across 11 note types. The agent navigates it in seconds using glob patterns and grep. No database needed.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 4. Agent Instructions -->
+      <h2 id="agent-instructions"><span class="section-num green">4</span>Teaching the agent your world</h2>
+
+      <p>Every CLI agent supports a project-level instruction file that it reads on startup:</p>
+
+      <table class="comparison">
+        <tr>
+          <th>Agent</th>
+          <th>File</th>
+          <th>Loaded when</th>
+        </tr>
+        <tr>
+          <td style="color: var(--claude);">Claude Code</td>
+          <td><code>CLAUDE.md</code></td>
+          <td>Auto-loaded from working directory + parents</td>
+        </tr>
+        <tr>
+          <td style="color: var(--gemini);">Gemini CLI</td>
+          <td><code>GEMINI.md</code></td>
+          <td>Auto-loaded from working directory</td>
+        </tr>
+        <tr>
+          <td style="color: var(--codex);">Codex</td>
+          <td><code>AGENTS.md</code></td>
+          <td>Auto-loaded from working directory</td>
+        </tr>
+      </table>
+
+      <p>This file is your agent&rsquo;s constitution. It defines:</p>
+
+      <ul>
+        <li><strong>Vault structure</strong> &mdash; where things live, naming conventions</li>
+        <li><strong>Schema rules</strong> &mdash; what types exist, required fields, valid categories</li>
+        <li><strong>Behavioral rules</strong> &mdash; language, formatting, link conventions</li>
+        <li><strong>Common mistakes</strong> &mdash; explicit &ldquo;don&rsquo;t do this&rdquo; examples</li>
+      </ul>
+
+      <div class="code-label">CLAUDE.md (simplified example)</div>
+<pre><code># Vault Instructions
+
+## Structure
+- `notes/` &rarr; timestamped notes (YYYYMMDD-HHmm-slug.md)
+- `entities/` &rarr; people, companies (slug.md)
+- `projects/` &rarr; active projects
+
+## Rules
+- WikiLinks only: [[slug]], never markdown links
+- Entity field always as array: entity: [john-doe]
+- Frontmatter timestamp format: YYYYMMDD-HHmm
+- Language: English
+- Commit after completing tasks
+
+## Note Types
+- entity (person, company)
+- interaction (call, meeting, email, chat)
+- task (screen, people, money, hands)
+- project (personal, client)
+- reference (bookmark, article, book)
+
+## Don't
+- Never create subfolders in notes/
+- Never put type in filename (it's in frontmatter)
+- Never use placeholder WikiLinks</code></pre>
+
+      <p>The more precise your instructions, the fewer mistakes the agent makes. This investment compounds across every conversation.</p>
+
+      <div class="callout warn">
+        <div class="callout-title">Anti-pattern</div>
+        <p>Don&rsquo;t dump your entire schema into CLAUDE.md. Keep the main file concise and reference separate docs: <code>@docs/schema.md</code> for the full data model. Claude Code follows <code>@</code>-references automatically.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 5. Skills -->
+      <h2 id="skills"><span class="section-num amber">5</span>Agent skills</h2>
+
+      <p>Skills are reusable instruction sets that the agent loads on demand. Think of them as specialized modes &mdash; each one teaches the agent a specific workflow.</p>
+
+      <p>Claude Code supports custom slash commands. You place a <code>SKILL.md</code> file in <code>.claude/skills/your-skill/</code>, and it becomes available as <code>/your-skill</code> in the conversation.</p>
+
+      <div class="code-label">.claude/skills/save-email/SKILL.md</div>
+<pre><code># Save Email Skill
+
+Save incoming emails from Apple Mail to the vault.
+
+## Steps
+1. Fetch the selected email via AppleScript
+2. Find or create the sender entity
+3. Create an interaction note (type: interaction, category: mail)
+4. Update entity last_contact
+5. Link to project if applicable
+6. Commit with conventional commit message
+
+## Template
+(frontmatter template here...)
+
+## Rules
+- Direction: received (inbox) or sent (sent items)
+- Always include mail_link for deep linking back to Mail.app
+- Entity matching: fuzzy match on email address</code></pre>
+
+      <p>Now typing <code>/save-email</code> triggers this entire workflow. The agent reads the skill, follows the steps, and handles the full pipeline autonomously.</p>
+
+      <h3>Skill examples from daily use</h3>
+
+      <table class="comparison">
+        <tr>
+          <th>Skill</th>
+          <th>What it does</th>
+        </tr>
+        <tr>
+          <td><code>/save-email</code></td>
+          <td>Fetches inbox, saves emails as vault interaction notes, updates contacts</td>
+        </tr>
+        <tr>
+          <td><code>/meeting</code></td>
+          <td>Pre-meeting: gathers entity context, recent interactions, open tasks. Post-meeting: creates notes with follow-ups</td>
+        </tr>
+        <tr>
+          <td><code>/focus</code></td>
+          <td>Morning planning: calendar + overdue tasks + priorities for the day</td>
+        </tr>
+        <tr>
+          <td><code>/research</code></td>
+          <td>Multi-source web research with comparison tables, saves to vault</td>
+        </tr>
+        <tr>
+          <td><code>/ledger</code></td>
+          <td>Scans conversation for actionable items, creates task notes in vault</td>
+        </tr>
+        <tr>
+          <td><code>/next</code></td>
+          <td>Picks the highest-priority task and implements it</td>
+        </tr>
+      </table>
+
+      <p>The pipeline becomes: have a conversation &rarr; <code>/ledger</code> captures tasks &rarr; <code>/next</code> executes them. The vault is always the source of truth.</p>
+
+      <div class="divider"></div>
+
+      <!-- 6. Real Workflows -->
+      <h2 id="workflows"><span class="section-num cyan">6</span>Real workflows</h2>
+
+      <h3>Morning routine</h3>
+<pre><code>$ claude
+> /focus
+
+# Agent reads:
+# - Today's calendar (via AppleScript)
+# - Overdue tasks from vault
+# - Contacts due for follow-up
+# - Active project statuses
+#
+# Outputs a prioritized daily plan</code></pre>
+
+      <h3>Processing email</h3>
+<pre><code>> /save-email
+
+# Agent fetches inbox via AppleScript, shows each email:
+# "From: John Doe - API timeline update"
+#
+# → Matches sender to [[john-doe]] entity
+# → Creates interaction note with mail_link
+# → Updates last_contact on entity
+# → Asks: "Create follow-up task?" → creates linked task
+# → Commits everything, moves to next email</code></pre>
+
+      <h3>After a meeting</h3>
+<pre><code>> I just had a call with Sarah about the Q2 roadmap.
+> She wants to prioritize mobile. Budget approved for contractor.
+> Follow up next week with timeline.
+
+# → Interaction note linked to [[sarah-chen]] + [[q2-roadmap]]
+# → Task: "Send Q2 timeline to Sarah" (due: next week)
+# → Entity last_contact updated, everything committed</code></pre>
+
+      <h3>Research with vault storage</h3>
+<pre><code>> /research best standing desks under 800 EUR
+
+# → Web search across multiple sources
+# → Comparison table with specs and prices
+# → Reference note saved to vault, committed</code></pre>
+
+      <div class="divider"></div>
+
+      <!-- 7. Getting Started -->
+      <h2 id="getting-started"><span class="section-num pink">7</span>Getting started</h2>
+
+      <p>You don&rsquo;t need thousands of notes. Here&rsquo;s a minimal setup:</p>
+
+      <h3>Step 1: Structure your vault</h3>
+
+<pre><code>mkdir -p vault/{notes,entities,projects}
+cd vault
+git init</code></pre>
+
+      <h3>Step 2: Create your instruction file</h3>
+
+<pre><code># Create CLAUDE.md (or GEMINI.md, AGENTS.md)
+# Start simple. Add rules as you discover what the agent gets wrong.</code></pre>
+
+      <p>Start with:</p>
+      <ul>
+        <li>Folder structure and naming conventions</li>
+        <li>2&ndash;3 note types with frontmatter templates</li>
+        <li>Basic rules (link format, language, commit style)</li>
+      </ul>
+
+      <h3>Step 3: Create a few seed notes</h3>
+
+      <p>Add a few entities (people you work with), a project, and a couple of interaction notes. The agent needs examples to learn patterns.</p>
+
+      <h3>Step 4: Start using it</h3>
+
+<pre><code>cd vault
+claude  # or gemini, codex
+
+> Create a task to review the API docs by Friday
+
+# The agent reads your CLAUDE.md, understands the schema,
+# and creates a properly formatted task note.</code></pre>
+
+      <h3>Step 5: Iterate</h3>
+
+      <p>When the agent makes a mistake, add a rule. When you repeat a workflow, extract it into a skill. The system gets smarter through use.</p>
+
+      <div class="callout tip">
+        <div class="callout-title">The compound effect</div>
+        <p>After a few weeks, the agent knows your contacts, understands your projects, follows your conventions, and can autonomously handle workflows that used to take 15 minutes of manual work. The investment in schema and instructions pays back every single day.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2>Where to go from here</h2>
+
+      <ul>
+        <li><strong>Claude Code docs</strong> &mdash; Skills, hooks, MCP servers, subagents</li>
+        <li><strong>Obsidian</strong> &mdash; Dataview plugin for querying frontmatter, Templater for note creation</li>
+        <li><strong>MCP servers</strong> &mdash; Connect your agent to external tools (GitHub, Slack, calendars, databases)</li>
+        <li><strong>Git hooks</strong> &mdash; Auto-validate vault schema on commit</li>
+      </ul>
+
+      <p><strong>The vault is the platform.</strong> The AI agent is just the most powerful interface to it. Your data stays in plain text, version-controlled, and yours forever.</p>
+
+    </div>
+
+    <div class="footer">
+      <span>&copy; 2026 &middot; <a href="https://github.com/viggomeesters" target="_blank" rel="noopener">github.com/viggomeesters</a></span>
+    </div>
+
+  </div>
+
+</body>
+</html>
