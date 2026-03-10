@@ -423,9 +423,12 @@
       font-family: var(--font-mono);
       font-size: 0.78em;
       font-weight: 600;
-      color: #0c0c0f;
-      transition: width 0.8s ease;
+      color: #eeeff4;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+      transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+      width: 0;
     }
+    .funnel-fill.animate { /* width set via inline style */ }
     .funnel-label {
       font-size: 0.78em;
       color: var(--text-secondary);
@@ -528,6 +531,16 @@
       </div>
     </div>
 
+    <!-- Origin callout -->
+    <div class="rules reveal" style="margin: 20px 0 0; background: rgba(245,158,11,0.05); border-color: rgba(245,158,11,0.08);">
+      <div class="rules-title">Born from Real Work</div>
+      <ul>
+        <li>Distilled from an SAP data migration gap analysis for <strong>Universiteit Utrecht</strong></li>
+        <li>329 migration objects compared against 112 client scope items &mdash; reduced to ~25 actionable gaps</li>
+        <li>The analysis document became the methodology: <strong>what worked was turned into a repeatable pattern</strong></li>
+      </ul>
+    </div>
+
     <!-- Flow -->
     <div class="flow reveal">
       <span class="flow-step">1. Question</span>
@@ -597,22 +610,22 @@
       <div class="funnel-visual">
         <div class="funnel-visual-title">Example: SAP Migration Objects</div>
         <div class="funnel-bar">
-          <div class="funnel-fill" style="width: 100%; background: var(--accent);">329</div>
+          <div class="funnel-fill" data-width="100%" style="background: var(--accent);">329</div>
           <span class="funnel-label">Total objects</span>
         </div>
         <div class="funnel-arrow">&darr; remove already covered (&minus;31)</div>
         <div class="funnel-bar">
-          <div class="funnel-fill" style="width: 90.6%; background: rgba(245,158,11,0.7);">298</div>
+          <div class="funnel-fill" data-width="90.6%" style="background: rgba(245,158,11,0.7);">298</div>
           <span class="funnel-label">Not in scope</span>
         </div>
         <div class="funnel-arrow">&darr; remove wrong system (&minus;12)</div>
         <div class="funnel-bar">
-          <div class="funnel-fill" style="width: 86.9%; background: rgba(245,158,11,0.5);">286</div>
+          <div class="funnel-fill" data-width="86.9%" style="background: rgba(245,158,11,0.5);">286</div>
           <span class="funnel-label">Correct system</span>
         </div>
         <div class="funnel-arrow">&darr; remove irrelevant sectors (&minus;261)</div>
         <div class="funnel-bar">
-          <div class="funnel-fill" style="width: 7.6%; min-width: 44px; background: rgba(245,158,11,0.9);">~25</div>
+          <div class="funnel-fill" data-width="7.6%" style="min-width: 44px; background: rgba(245,158,11,0.9);">~25</div>
           <span class="funnel-label">Relevant gaps to review</span>
         </div>
       </div>
@@ -801,6 +814,31 @@
 
     <div class="divider"></div>
 
+    <!-- Philosophy -->
+    <div class="reveal">
+      <div class="section-label">Why This Order Works</div>
+      <div class="layer" style="border-left-color: rgba(245,158,11,0.4);">
+        <p>The 7 steps follow a deliberate <strong>psychological arc</strong>:</p>
+        <table>
+          <tr><th>Phase</th><th>Steps</th><th>Effect on reader</th></tr>
+          <tr><td><strong>Orient</strong></td><td>1&ndash;3</td><td>"I understand what we're looking at"</td></tr>
+          <tr><td><strong>Reassure</strong></td><td>4&ndash;5</td><td>"It's not as bad as 298 gaps sounds"</td></tr>
+          <tr><td><strong>Focus</strong></td><td>6</td><td>"These specific items need attention"</td></tr>
+          <tr><td><strong>Activate</strong></td><td>7</td><td>"I know exactly what to do next"</td></tr>
+        </table>
+        <div class="rules">
+          <div class="rules-title">The Key Insight</div>
+          <ul>
+            <li>Present findings <strong>after</strong> building trust, never before</li>
+            <li>The funnel reduces anxiety: 329 &rarr; ~25 is a <strong>relief</strong>, not a threat</li>
+            <li>By step 6, the reader is <strong>ready</strong> to hear about gaps &mdash; they already know most is covered</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
     <!-- Comparison -->
     <div class="reveal">
       <div class="section-label">When to Use Which Method</div>
@@ -812,11 +850,11 @@
           </tr>
           <tr>
             <td>Building something (software, process)</td>
-            <td><span class="method-tag tag-blue">Helicopter to Detail</span></td>
+            <td><a href="/helicopter-to-detail/" class="method-tag tag-blue" style="text-decoration:none;">Helicopter to Detail</a></td>
           </tr>
           <tr>
             <td>Researching a topic (product, decision)</td>
-            <td><span class="method-tag tag-purple">Knowledge Pyramid</span></td>
+            <td><a href="/knowledge-pyramid/" class="method-tag tag-purple" style="text-decoration:none;">Knowledge Pyramid</a></td>
           </tr>
           <tr>
             <td>Comparing two datasets for gaps</td>
@@ -862,6 +900,7 @@
   </div>
 
   <script>
+    // Reveal animations
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -878,6 +917,22 @@
         setTimeout(() => el.classList.add('visible'), 80 + i * 100);
       });
     });
+
+    // Funnel bar animation on scroll
+    const funnelBars = document.querySelectorAll('.funnel-fill[data-width]');
+    const funnelObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const delay = Array.from(funnelBars).indexOf(bar) * 300;
+          setTimeout(() => {
+            bar.style.width = bar.dataset.width;
+          }, delay);
+          funnelObserver.unobserve(bar);
+        }
+      });
+    }, { threshold: 0.3 });
+    funnelBars.forEach(bar => funnelObserver.observe(bar));
   </script>
 </body>
 </html>
