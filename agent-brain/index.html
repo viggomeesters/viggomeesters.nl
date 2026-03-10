@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agent Brain — AI Coordination System</title>
-  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 40 skills, 15 commands, 46 scripts.">
+  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 49 skills, 12 commands, 60 scripts.">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -624,15 +624,15 @@
     <!-- BEGIN:stats -->
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num">40</div>
+        <div class="stat-num">49</div>
         <div class="stat-label">Skills</div>
       </div>
       <div class="stat">
-        <div class="stat-num">15</div>
+        <div class="stat-num">12</div>
         <div class="stat-label">Commands</div>
       </div>
       <div class="stat">
-        <div class="stat-num">46</div>
+        <div class="stat-num">60</div>
         <div class="stat-label">Scripts</div>
       </div>
       <div class="stat">
@@ -654,7 +654,7 @@
     <!-- Skills -->
     <!-- BEGIN:skills -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #22c55e">Skills (40)</div>
+      <div class="section-label" style="--dot-color: #22c55e">Skills (49)</div>
 
       <details>
         <summary>
@@ -665,7 +665,7 @@
               <span class="summary-desc">Comprehensive code quality frameworks</span>
             </span>
           </span>
-          <span class="summary-count">17</span>
+          <span class="summary-count">19</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
@@ -678,9 +678,11 @@
           <div class="detail-item"><span class="detail-name">audit-concept-features</span><span class="detail-desc">Feature audit: missing features, UX gaps, competitive positioning, quick wins, roadmap opportunities</span></div>
           <div class="detail-item"><span class="detail-name">audit-concept-ux</span><span class="detail-desc">UX audit: user flows, interaction feedback, cognitive load, microcopy, error handling UX…</span></div>
           <div class="detail-item"><span class="detail-name">audit-diff</span><span class="detail-desc">Performs security-focused differential review of code changes (PRs, commits, diffs)</span></div>
+          <div class="detail-item"><span class="detail-name">audit-full</span><span class="detail-desc">Full parallel audit: runs all 17 audit skills across 5 phases (concept, code, guard, perf, ship)…</span></div>
           <div class="detail-item"><span class="detail-name">audit-guard-data</span><span class="detail-desc">Data & privacy audit: GDPR compliance, PII handling, data retention, consent management, logging…</span></div>
           <div class="detail-item"><span class="detail-name">audit-guard-deps</span><span class="detail-desc">Dependency audit: outdated packages, known CVEs, license compliance, supply chain risks…</span></div>
           <div class="detail-item"><span class="detail-name">audit-guard-security</span><span class="detail-desc">Security audit: OWASP risks, auth, secrets, input validation, insecure defaults, API footguns…</span></div>
+          <div class="detail-item"><span class="detail-name">audit-perf-automation</span><span class="detail-desc">Automation maturity audit: AI-token waste, manual-work-that-could-be-scripted, repeated prompts…</span></div>
           <div class="detail-item"><span class="detail-name">audit-perf-backend</span><span class="detail-desc">Backend performance audit: N+1 queries, caching, blocking operations, memory leaks, database…</span></div>
           <div class="detail-item"><span class="detail-name">audit-perf-mobile</span><span class="detail-desc">Mobile app audit: app size, startup time, battery usage, offline handling, platform guidelines…</span></div>
           <div class="detail-item"><span class="detail-name">audit-perf-web</span><span class="detail-desc">Web performance audit: Core Web Vitals (LCP, CLS, INP), bundle size, code splitting, image…</span></div>
@@ -779,13 +781,14 @@
               <span class="summary-desc">Calendar, focus, and reporting</span>
             </span>
           </span>
-          <span class="summary-count">3</span>
+          <span class="summary-count">4</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
           <div class="detail-item"><span class="detail-name">work-calendar</span><span class="detail-desc">Manage Apple Calendar events safely through AppleScript</span></div>
           <div class="detail-item"><span class="detail-name">focus-planning</span><span class="detail-desc">Daily planning and focus management</span></div>
           <div class="detail-item"><span class="detail-name">work-report</span><span class="detail-desc">Weekly work report generator</span></div>
+          <div class="detail-item"><span class="detail-name">work-sweep</span><span class="detail-desc">Interactive sweep processing</span></div>
         </div>
       </details>
 
@@ -798,13 +801,19 @@
               <span class="summary-desc">Core autonomous task execution</span>
             </span>
           </span>
-          <span class="summary-count">3</span>
+          <span class="summary-count">9</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert conversation output (suggestions, plans, audit findings, research, proposals) into…</span></div>
-          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Pick and implement the next task from the shared task ledger for the current project</span></div>
+          <div class="detail-item"><span class="detail-name">atf-transform</span><span class="detail-desc">Release workflow for ATF Transform Template</span></div>
+          <div class="detail-item"><span class="detail-name">frysk</span><span class="detail-desc">Vertaal tekst naar Fries met Nederlandse ondertiteling</span></div>
+          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert conversation output (suggestions, plans, audit findings, research, proposals) into vault…</span></div>
+          <div class="detail-item"><span class="detail-name">meeting-process</span><span class="detail-desc">Verwerk opgenomen meetings uit de meeting pipeline (`~/Documents/meetings/`) naar…</span></div>
+          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Pick and implement the next task from the vault for the current project</span></div>
           <div class="detail-item"><span class="detail-name">publish-html</span><span class="detail-desc">Publish research or content as an interactive HTML page via temp-publisher</span></div>
+          <div class="detail-item"><span class="detail-name">sdp-extract-fields</span><span class="detail-desc">Extract filled fields from client SAP migration templates and write to SDP analytics</span></div>
+          <div class="detail-item"><span class="detail-name">sdp-objects</span><span class="detail-desc">Release workflow for SDP Migration Objects</span></div>
+          <div class="detail-item"><span class="detail-name">vernederlands</span><span class="detail-desc">Herschrijf tekst naar zuiver Nederlands — vervangt anglicismen door Nederlandse alternatieven en…</span></div>
         </div>
       </details>
 
@@ -816,7 +825,7 @@
     <!-- Commands -->
     <!-- BEGIN:commands -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #818cf8">Commands (15)</div>
+      <div class="section-label" style="--dot-color: #818cf8">Commands (12)</div>
 
       <details>
         <summary>
@@ -827,25 +836,22 @@
               <span class="summary-desc">Quick-access workflows invoked via /command</span>
             </span>
           </span>
-          <span class="summary-count">15</span>
+          <span class="summary-count">12</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">/briefing</span><span class="detail-desc">Unified morning briefing: calendar, tasks, stale work, contacts in one view</span></div>
+          <div class="detail-item"><span class="detail-name">/contacts</span><span class="detail-desc">Show overdue and upcoming contact follow-ups from entity directory</span></div>
           <div class="detail-item"><span class="detail-name">/data</span><span class="detail-desc">Analyseer CSV en Excel bestanden: structuur, kwaliteit, statistieken en issues</span></div>
           <div class="detail-item"><span class="detail-name">/debug</span><span class="detail-desc">Systematic debugging workflow when something is broken</span></div>
-          <div class="detail-item"><span class="detail-name">/git</span><span class="detail-desc">One-command git workflow: stage, commit, merge, push, and release</span></div>
-          <div class="detail-item"><span class="detail-name">/ledger</span><span class="detail-desc">Convert audit findings into task ledger entries</span></div>
-          <div class="detail-item"><span class="detail-name">/next</span><span class="detail-desc">Pick → worktree → implement → commit → merge → push → next</span></div>
-          <div class="detail-item"><span class="detail-name">/nice-docs</span><span class="detail-desc">Generate branded documents from markdown</span></div>
-          <div class="detail-item"><span class="detail-name">/pdf</span><span class="detail-desc">Read, edit, or manipulate existing PDF files</span></div>
+          <div class="detail-item"><span class="detail-name">/discover</span><span class="detail-desc">Scan ~/Dev for git repos not yet tracked in projects.json</span></div>
+          <div class="detail-item"><span class="detail-name">/frysk</span><span class="detail-desc">---</span></div>
+          <div class="detail-item"><span class="detail-name">/go</span><span class="detail-desc">---</span></div>
           <div class="detail-item"><span class="detail-name">/pr</span><span class="detail-desc">Review a pull request from multiple perspectives</span></div>
           <div class="detail-item"><span class="detail-name">/refactor</span><span class="detail-desc">Systematic code refactoring with impact analysis, safety checks, and test verification</span></div>
-          <div class="detail-item"><span class="detail-name">/report</span><span class="detail-desc">Generate weekly reports: cross-project summary for team meetings, or per-project client reports</span></div>
           <div class="detail-item"><span class="detail-name">/research</span><span class="detail-desc">Structured multi-source web research with comparison tables, source evaluation, and vault…</span></div>
-          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Use this command to manage tasks in one shared ledger for Codex, Claude Code, and Gemini CLI</span></div>
+          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Use this command to manage tasks in the Obsidian vault — the single source of truth for all…</span></div>
           <div class="detail-item"><span class="detail-name">/vault-health</span><span class="detail-desc">Voert een complete health check uit op de Obsidian vault</span></div>
-          <div class="detail-item"><span class="detail-name">/word</span><span class="detail-desc">Read, edit, or manipulate existing Word documents</span></div>
-          <div class="detail-item"><span class="detail-name">/xlsx</span><span class="detail-desc">Create, read, edit, or fix spreadsheet files</span></div>
         </div>
       </details>
 
@@ -875,7 +881,7 @@
           <div class="arch-brain">
             <div class="arch-brain-label">Agent Brain</div>
             <div class="arch-brain-items">
-              <span class="arch-brain-item">40 Skills</span>
+              <span class="arch-brain-item">49 Skills</span>
               <span class="arch-brain-item">Shared Memory</span>
               <span class="arch-brain-item">Context Sync</span>
             </div>
