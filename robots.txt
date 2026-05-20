@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /variant-
 
 Sitemap: https://viggomeesters.nl/sitemap.xml
