@@ -44,8 +44,8 @@ The canonical hostname is `viggomeesters.nl`; `www.viggomeesters.nl` redirects t
 ## Content Map
 
 - `index.html`: homepage.
-- `agent-brain/`: AI coordination system page.
-- `raycast-life-os/`: Life OS project page.
+- `agent-brain/`: Hermes + Life OS AI workflow system page.
+- `raycast-life-os/`: vault-first Life OS project page.
 - `methodologies/`: methodology index.
 - `helicopter-to-detail/`, `knowledge-pyramid/`, `funnel-analysis/`: methodology pages.
 - `cli-agents-guide/`: CLI agents guide.

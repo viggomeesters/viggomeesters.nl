@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""generate-showcases.py — Regenerate showcase pages from source-of-truth files.
+"""generate-showcases.py — legacy showcase generator.
 
-Reads:
+This script targets the old Agent Brain/Raycast Life OS source layout and can
+reintroduce stale count-driven public copy. It is kept as a historical helper,
+but write/dry-run execution now requires --legacy.
+
+Legacy reads:
   - ~/Dev/agent-brain/context/registry.json
   - ~/Dev/raycast-life-os/extensions/life-os/package.json
 
-Updates content between <!-- BEGIN:section --> / <!-- END:section --> markers in:
+Legacy updates content between <!-- BEGIN:section --> / <!-- END:section --> markers in:
   - agent-brain/index.html
   - raycast-life-os/index.html
 """
@@ -96,7 +100,7 @@ def count_rlo_services():
 
 
 def load_brain_data():
-    """Load Agent Brain data from registry.json."""
+    """Load legacy Agent Brain data from registry.json."""
     with open(BRAIN_REGISTRY) as f:
         data = json.load(f)
     counts = data.get("counts", {})
@@ -312,7 +316,7 @@ def update_rlo_page(dry_run=False):
 
 
 def update_brain_page(dry_run=False):
-    print("── Agent Brain ──")
+    print("── Legacy Agent Brain ──")
     grouped, commands, counts = load_brain_data()
     n_skills = counts.get("skills", 0)
     n_cmds = counts.get("commands", 0)
@@ -355,9 +359,18 @@ def update_brain_page(dry_run=False):
 def main():
     ap = argparse.ArgumentParser(description="Regenerate showcase pages")
     ap.add_argument("--dry-run", action="store_true", help="Preview without writing")
+    ap.add_argument("--legacy", action="store_true", help="Run the deprecated legacy generator intentionally")
     ap.add_argument("--brain-only", action="store_true")
     ap.add_argument("--rlo-only", action="store_true")
     args = ap.parse_args()
+
+    if not args.legacy:
+        print(
+            "This generator is deprecated and can reintroduce stale public copy. "
+            "Pass --legacy to run it intentionally.",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
     if not args.brain_only:
         update_rlo_page(args.dry_run)
