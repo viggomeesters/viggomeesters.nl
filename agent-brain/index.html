@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agent Brain — AI Coordination System</title>
-  <meta name="description" content="Deterministic autopilot for coordinating Claude, Codex, and Gemini. 49 skills, 12 commands, 60 scripts.">
+  <title>Hermes + Life OS — AI Workflow System</title>
+  <meta name="description" content="AI-assisted workflow system combining Hermes, reusable skills, delegated agents, and vault-first context.">
   <link rel="canonical" href="https://viggomeesters.nl/agent-brain/">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -617,37 +617,37 @@
 
     <!-- Header -->
     <div class="header reveal">
-      <h1 class="title">Agent Brain</h1>
-      <p class="subtitle">Deterministic autopilot for AI-assisted development. One shared brain that coordinates three language models across code, communication, and knowledge management.</p>
+      <h1 class="title">Hermes + Life OS</h1>
+      <p class="subtitle">A practical AI workflow system: Hermes for execution, reusable skills for procedures, delegated agents for parallel work, and a vault-first Life OS for durable context.</p>
     </div>
 
     <!-- Stats -->
     <!-- BEGIN:stats -->
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num">49</div>
-        <div class="stat-label">Skills</div>
+        <div class="stat-num">Skills</div>
+        <div class="stat-label">Reusable procedures</div>
       </div>
       <div class="stat">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Commands</div>
+        <div class="stat-num">Agents</div>
+        <div class="stat-label">Delegated work</div>
       </div>
       <div class="stat">
-        <div class="stat-num">60</div>
-        <div class="stat-label">Scripts</div>
+        <div class="stat-num">Vault</div>
+        <div class="stat-label">Durable context</div>
       </div>
       <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Tools</div>
+        <div class="stat-num">Checks</div>
+        <div class="stat-label">Verified output</div>
       </div>
     </div>
     <!-- END:stats -->
 
     <!-- Tools -->
     <div class="agents reveal">
-      <div class="agent-chip claude"><span class="agent-dot"></span>Claude Code</div>
+      <div class="agent-chip claude"><span class="agent-dot"></span>Hermes</div>
       <div class="agent-chip codex"><span class="agent-dot"></span>Codex</div>
-      <div class="agent-chip gemini"><span class="agent-dot"></span>Gemini CLI</div>
+      <div class="agent-chip gemini"><span class="agent-dot"></span>Subagents</div>
     </div>
 
     <div class="divider"></div>
@@ -655,60 +655,24 @@
     <!-- Skills -->
     <!-- BEGIN:skills -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #22c55e">Skills (49)</div>
+      <div class="section-label" style="--dot-color: #22c55e">Reusable workflow areas</div>
 
       <details>
         <summary>
           <span class="summary-left">
-            <span class="summary-icon audit">&#9872;</span>
+            <span class="summary-icon auto">&#9881;</span>
             <span class="summary-text">
-              <span class="summary-name">Audit</span>
-              <span class="summary-desc">Comprehensive code quality frameworks</span>
+              <span class="summary-name">Execution</span>
+              <span class="summary-desc">Hermes runs concrete work from chat, terminal, browser, files, web, and scheduled jobs</span>
             </span>
           </span>
-          <span class="summary-count">19</span>
+          <span class="summary-count">live</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">audit-code-api</span><span class="detail-desc">API design audit: REST/GraphQL conventions, error responses, pagination, versioning, rate…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-code-frontend</span><span class="detail-desc">Frontend audit: component architecture, responsive design, state management, CSS quality, SEO</span></div>
-          <div class="detail-item"><span class="detail-name">audit-code-quality</span><span class="detail-desc">Code quality audit: DRY violations, dead code, complexity, type safety, error handling, naming…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-code-testing</span><span class="detail-desc">Test quality audit: coverage gaps, missing integration tests, flaky tests, edge cases, test…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-concept-arch</span><span class="detail-desc">Architecture audit: coupling, boundaries, layering, circular deps, separation of concerns…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-concept-design</span><span class="detail-desc">Design compliance audit: toetst of de implementatie nog in lijn is met het oorspronkelijke…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-concept-features</span><span class="detail-desc">Feature audit: missing features, UX gaps, competitive positioning, quick wins, roadmap opportunities</span></div>
-          <div class="detail-item"><span class="detail-name">audit-concept-ux</span><span class="detail-desc">UX audit: user flows, interaction feedback, cognitive load, microcopy, error handling UX…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-diff</span><span class="detail-desc">Performs security-focused differential review of code changes (PRs, commits, diffs)</span></div>
-          <div class="detail-item"><span class="detail-name">audit-full</span><span class="detail-desc">Full parallel audit: runs all 17 audit skills across 5 phases (concept, code, guard, perf, ship)…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-guard-data</span><span class="detail-desc">Data & privacy audit: GDPR compliance, PII handling, data retention, consent management, logging…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-guard-deps</span><span class="detail-desc">Dependency audit: outdated packages, known CVEs, license compliance, supply chain risks…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-guard-security</span><span class="detail-desc">Security audit: OWASP risks, auth, secrets, input validation, insecure defaults, API footguns…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-perf-automation</span><span class="detail-desc">Automation maturity audit: AI-token waste, manual-work-that-could-be-scripted, repeated prompts…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-perf-backend</span><span class="detail-desc">Backend performance audit: N+1 queries, caching, blocking operations, memory leaks, database…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-perf-mobile</span><span class="detail-desc">Mobile app audit: app size, startup time, battery usage, offline handling, platform guidelines…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-perf-web</span><span class="detail-desc">Web performance audit: Core Web Vitals (LCP, CLS, INP), bundle size, code splitting, image…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-ship-a11y</span><span class="detail-desc">Accessibility audit: WCAG AA compliance, semantic HTML, ARIA, keyboard navigation, color…</span></div>
-          <div class="detail-item"><span class="detail-name">audit-ship-devops</span><span class="detail-desc">DevOps audit: CI/CD pipelines, logging, monitoring, health checks, Docker configs, runtime safety</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon comm">&#9993;</span>
-            <span class="summary-text">
-              <span class="summary-name">Communication</span>
-              <span class="summary-desc">Message drafting, email, and meeting workflows</span>
-            </span>
-          </span>
-          <span class="summary-count">4</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">comm-chat</span><span class="detail-desc">Draft and send chat messages across platforms (Teams, WhatsApp, SMS/iMessage)</span></div>
-          <div class="detail-item"><span class="detail-name">comm-mail-save</span><span class="detail-desc">Save inbox emails to vault as interaction notes</span></div>
-          <div class="detail-item"><span class="detail-name">comm-mail-write</span><span class="detail-desc">Compose and reply to emails via Apple Mail</span></div>
-          <div class="detail-item"><span class="detail-name">comm-meeting</span><span class="detail-desc">Meeting prep and debrief</span></div>
+          <div class="detail-item"><span class="detail-name">Tool-backed actions</span><span class="detail-desc">Commands are executed and verified instead of described as advice.</span></div>
+          <div class="detail-item"><span class="detail-name">Scheduled checks</span><span class="detail-desc">Recurring jobs can collect data, watch services, and report only when useful.</span></div>
+          <div class="detail-item"><span class="detail-name">Profile-aware setup</span><span class="detail-desc">Separate runtime contexts keep personal, family, and project workflows apart.</span></div>
         </div>
       </details>
 
@@ -717,20 +681,36 @@
           <span class="summary-left">
             <span class="summary-icon dev">&#9998;</span>
             <span class="summary-text">
-              <span class="summary-name">Development</span>
-              <span class="summary-desc">Language and framework expertise</span>
+              <span class="summary-name">Skills</span>
+              <span class="summary-desc">Reusable procedures capture how recurring work should be done</span>
             </span>
           </span>
-          <span class="summary-count">6</span>
+          <span class="summary-count">reuse</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">dev-alteryx</span><span class="detail-desc">Build, debug, and validate Alteryx .yxmd workflows</span></div>
-          <div class="detail-item"><span class="detail-name">dev-flutter</span><span class="detail-desc">Flutter/Dart mobile development for Luminos (migraine tracking app)</span></div>
-          <div class="detail-item"><span class="detail-name">dev-frontend</span><span class="detail-desc">Create distinctive, production-grade frontend interfaces with high design quality</span></div>
-          <div class="detail-item"><span class="detail-name">dev-python</span><span class="detail-desc">Configures Python projects with modern tooling (uv, ruff, ty)</span></div>
-          <div class="detail-item"><span class="detail-name">dev-raycast</span><span class="detail-desc">Raycast extension development patterns</span></div>
-          <div class="detail-item"><span class="detail-name">dev-react</span><span class="detail-desc">React and Next.js performance optimization guidelines from Vercel Engineering</span></div>
+          <div class="detail-item"><span class="detail-name">Playbooks</span><span class="detail-desc">Stable steps for coding, research, GitHub, vault work, shopping, media, and operations.</span></div>
+          <div class="detail-item"><span class="detail-name">Pitfalls</span><span class="detail-desc">Known edge cases and verification steps are documented where they are reused.</span></div>
+          <div class="detail-item"><span class="detail-name">Cumulative improvement</span><span class="detail-desc">When a workflow changes, the skill gets patched instead of rediscovered next time.</span></div>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon audit">&#9872;</span>
+            <span class="summary-text">
+              <span class="summary-name">Delegated agents</span>
+              <span class="summary-desc">Independent workers handle research, implementation, and review in separate contexts</span>
+            </span>
+          </span>
+          <span class="summary-count">parallel</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Parallel workstreams</span><span class="detail-desc">Independent subtasks can run side-by-side without flooding the main context.</span></div>
+          <div class="detail-item"><span class="detail-name">Fresh review</span><span class="detail-desc">A separate reviewer can inspect the diff without sharing the implementer's assumptions.</span></div>
+          <div class="detail-item"><span class="detail-name">Verifiable handoff</span><span class="detail-desc">Workers return concrete paths, URLs, statuses, or findings that can be checked.</span></div>
         </div>
       </details>
 
@@ -739,85 +719,19 @@
           <span class="summary-left">
             <span class="summary-icon doc">&#9783;</span>
             <span class="summary-text">
-              <span class="summary-name">Documentation</span>
-              <span class="summary-desc">Document and file handling</span>
+              <span class="summary-name">Life OS context</span>
+              <span class="summary-desc">The Obsidian vault stays the durable source for tasks, references, people, health, and reflection</span>
             </span>
           </span>
-          <span class="summary-count">5</span>
+          <span class="summary-count">vault</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">doc-nice</span><span class="detail-desc">Use this skill when the user wants to create, generate, or write new documents, reports, memos…</span></div>
-          <div class="detail-item"><span class="detail-name">doc-pdf</span><span class="detail-desc">Use this skill to read, edit, or manipulate EXISTING PDF files</span></div>
-          <div class="detail-item"><span class="detail-name">doc-vault</span><span class="detail-desc">Interact with an Obsidian vault safely and consistently</span></div>
-          <div class="detail-item"><span class="detail-name">doc-word</span><span class="detail-desc">Use this skill to read, edit, or manipulate EXISTING Word documents (.docx files)</span></div>
-          <div class="detail-item"><span class="detail-name">doc-xlsx</span><span class="detail-desc">Use this skill any time a spreadsheet file is the primary input or output</span></div>
+          <div class="detail-item"><span class="detail-name">Vault-first memory</span><span class="detail-desc">Durable context is written back as notes instead of disappearing into chat history.</span></div>
+          <div class="detail-item"><span class="detail-name">Typed context</span><span class="detail-desc">Tasks, contacts, purchases, references, health logs, and reflections keep their own structure.</span></div>
+          <div class="detail-item"><span class="detail-name">Validation</span><span class="detail-desc">Schema checks and explicit changed paths keep automated updates auditable.</span></div>
         </div>
       </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon git">&#9741;</span>
-            <span class="summary-text">
-              <span class="summary-name">Git & CI</span>
-              <span class="summary-desc">Version control and CI/CD workflows</span>
-            </span>
-          </span>
-          <span class="summary-count">2</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">gh-fix-ci</span><span class="detail-desc">Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use…</span></div>
-          <div class="detail-item"><span class="detail-name">git-ship</span><span class="detail-desc">Safe Git workflow for inspect, commit, push, branch sync, and release preparation</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon work">&#9201;</span>
-            <span class="summary-text">
-              <span class="summary-name">Work Management</span>
-              <span class="summary-desc">Calendar, focus, and reporting</span>
-            </span>
-          </span>
-          <span class="summary-count">4</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">work-calendar</span><span class="detail-desc">Manage Apple Calendar events safely through AppleScript</span></div>
-          <div class="detail-item"><span class="detail-name">focus-planning</span><span class="detail-desc">Daily planning and focus management</span></div>
-          <div class="detail-item"><span class="detail-name">work-report</span><span class="detail-desc">Weekly work report generator</span></div>
-          <div class="detail-item"><span class="detail-name">work-sweep</span><span class="detail-desc">Interactive sweep processing</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon auto">&#9881;</span>
-            <span class="summary-text">
-              <span class="summary-name">Automation</span>
-              <span class="summary-desc">Core autonomous task execution</span>
-            </span>
-          </span>
-          <span class="summary-count">9</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">atf-transform</span><span class="detail-desc">Release workflow for ATF Transform Template</span></div>
-          <div class="detail-item"><span class="detail-name">frysk</span><span class="detail-desc">Vertaal tekst naar Fries met Nederlandse ondertiteling</span></div>
-          <div class="detail-item"><span class="detail-name">ledger</span><span class="detail-desc">Convert conversation output (suggestions, plans, audit findings, research, proposals) into vault…</span></div>
-          <div class="detail-item"><span class="detail-name">meeting-process</span><span class="detail-desc">Verwerk opgenomen meetings uit de meeting pipeline (`~/Documents/meetings/`) naar…</span></div>
-          <div class="detail-item"><span class="detail-name">next</span><span class="detail-desc">Pick and implement the next task from the vault for the current project</span></div>
-          <div class="detail-item"><span class="detail-name">publish-html</span><span class="detail-desc">Publish research or content as an interactive HTML page via temp-publisher</span></div>
-          <div class="detail-item"><span class="detail-name">sdp-extract-fields</span><span class="detail-desc">Extract filled fields from client SAP migration templates and write to SDP analytics</span></div>
-          <div class="detail-item"><span class="detail-name">sdp-objects</span><span class="detail-desc">Release workflow for SDP Migration Objects</span></div>
-          <div class="detail-item"><span class="detail-name">vernederlands</span><span class="detail-desc">Herschrijf tekst naar zuiver Nederlands — vervangt anglicismen door Nederlandse alternatieven en…</span></div>
-        </div>
-      </details>
-
     </div>
     <!-- END:skills -->
 
@@ -826,36 +740,43 @@
     <!-- Commands -->
     <!-- BEGIN:commands -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #818cf8">Commands (12)</div>
+      <div class="section-label" style="--dot-color: #818cf8">Operating modes</div>
 
       <details>
         <summary>
           <span class="summary-left">
             <span class="summary-icon cmd">/</span>
             <span class="summary-text">
-              <span class="summary-name">Slash Commands</span>
-              <span class="summary-desc">Quick-access workflows invoked via /command</span>
+              <span class="summary-name">Chat to action</span>
+              <span class="summary-desc">Short Telegram prompts become concrete tool-backed work with compact checkpoints</span>
             </span>
           </span>
-          <span class="summary-count">12</span>
+          <span class="summary-count">act</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">/briefing</span><span class="detail-desc">Unified morning briefing: calendar, tasks, stale work, contacts in one view</span></div>
-          <div class="detail-item"><span class="detail-name">/contacts</span><span class="detail-desc">Show overdue and upcoming contact follow-ups from entity directory</span></div>
-          <div class="detail-item"><span class="detail-name">/data</span><span class="detail-desc">Analyseer CSV en Excel bestanden: structuur, kwaliteit, statistieken en issues</span></div>
-          <div class="detail-item"><span class="detail-name">/debug</span><span class="detail-desc">Systematic debugging workflow when something is broken</span></div>
-          <div class="detail-item"><span class="detail-name">/discover</span><span class="detail-desc">Scan ~/Dev for git repos not yet tracked in projects.json</span></div>
-          <div class="detail-item"><span class="detail-name">/frysk</span><span class="detail-desc">---</span></div>
-          <div class="detail-item"><span class="detail-name">/go</span><span class="detail-desc">---</span></div>
-          <div class="detail-item"><span class="detail-name">/pr</span><span class="detail-desc">Review a pull request from multiple perspectives</span></div>
-          <div class="detail-item"><span class="detail-name">/refactor</span><span class="detail-desc">Systematic code refactoring with impact analysis, safety checks, and test verification</span></div>
-          <div class="detail-item"><span class="detail-name">/research</span><span class="detail-desc">Structured multi-source web research with comparison tables, source evaluation, and vault…</span></div>
-          <div class="detail-item"><span class="detail-name">/task</span><span class="detail-desc">Use this command to manage tasks in the Obsidian vault — the single source of truth for all…</span></div>
-          <div class="detail-item"><span class="detail-name">/vault-health</span><span class="detail-desc">Voert een complete health check uit op de Obsidian vault</span></div>
+          <div class="detail-item"><span class="detail-name">Direct execution</span><span class="detail-desc">The default path is to inspect, change, test, and report rather than ask for step-by-step permission.</span></div>
+          <div class="detail-item"><span class="detail-name">Safe escalation</span><span class="detail-desc">Questions are reserved for missing credentials, destructive actions, or materially different choices.</span></div>
         </div>
       </details>
 
+      <details>
+        <summary>
+          <span class="summary-left">
+            <span class="summary-icon work">&#9201;</span>
+            <span class="summary-text">
+              <span class="summary-name">Review loop</span>
+              <span class="summary-desc">Diffs, checks, and independent review keep output measurable</span>
+            </span>
+          </span>
+          <span class="summary-count">check</span>
+          <span class="chevron">&#9654;</span>
+        </summary>
+        <div class="detail-list">
+          <div class="detail-item"><span class="detail-name">Local gates</span><span class="detail-desc">Run project checks, inspect diffs, and avoid publishing brittle or stale claims.</span></div>
+          <div class="detail-item"><span class="detail-name">Devil review</span><span class="detail-desc">A separate pass looks for slop: vague copy, unverifiable numbers, missing verification, and stale assumptions.</span></div>
+        </div>
+      </details>
     </div>
     <!-- END:commands -->
 
@@ -868,9 +789,9 @@
         <div class="arch-flow">
           <!-- Agents column -->
           <div class="arch-col">
-            <div class="arch-node claude"><span class="node-dot"></span>Claude</div>
+            <div class="arch-node claude"><span class="node-dot"></span>Hermes</div>
             <div class="arch-node codex"><span class="node-dot"></span>Codex</div>
-            <div class="arch-node gemini"><span class="node-dot"></span>Gemini</div>
+            <div class="arch-node gemini"><span class="node-dot"></span>Subagents</div>
           </div>
 
           <!-- Arrow left -->
@@ -880,9 +801,9 @@
 
           <!-- Brain center -->
           <div class="arch-brain">
-            <div class="arch-brain-label">Agent Brain</div>
+            <div class="arch-brain-label">Hermes + Life OS</div>
             <div class="arch-brain-items">
-              <span class="arch-brain-item">49 Skills</span>
+              <span class="arch-brain-item">Reusable Skills</span>
               <span class="arch-brain-item">Shared Memory</span>
               <span class="arch-brain-item">Context Sync</span>
             </div>

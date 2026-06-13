@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life OS — Personal Knowledge System</title>
-  <meta name="description" content="A personal knowledge system built on Obsidian and Raycast. 45 commands, 11 note types, contact CRM, health tracking, and an open-source starter vault.">
+  <title>Life OS — Vault-First Personal Knowledge System</title>
+  <meta name="description" content="Vault-first personal knowledge system built around Obsidian, automation, and AI-assisted context capture.">
   <link rel="canonical" href="https://viggomeesters.nl/raycast-life-os/">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -563,26 +563,26 @@
 
     <div class="header reveal">
       <h1 class="title">Life OS</h1>
-      <p class="subtitle">A personal knowledge system built on Obsidian and Raycast. 45 commands for vault management, contact CRM, task scoring, health tracking, and Apple ecosystem automation — plus an open-source starter vault to get you going.</p>
+      <p class="subtitle">A vault-first personal knowledge system built around Obsidian, automation, and AI-assisted context capture for tasks, contacts, health, purchases, references, and reflection.</p>
     </div>
 
     <!-- BEGIN:stats -->
     <div class="stats reveal">
       <div class="stat">
-        <div class="stat-num">45</div>
-        <div class="stat-label">Commands</div>
+        <div class="stat-num">Vault</div>
+        <div class="stat-label">Source of truth</div>
       </div>
       <div class="stat">
-        <div class="stat-num">32</div>
-        <div class="stat-label">Services</div>
+        <div class="stat-num">Agents</div>
+        <div class="stat-label">Context capture</div>
       </div>
       <div class="stat">
-        <div class="stat-num">12</div>
-        <div class="stat-label">Note Types</div>
+        <div class="stat-num">Schema</div>
+        <div class="stat-label">Typed notes</div>
       </div>
       <div class="stat">
-        <div class="stat-num">4</div>
-        <div class="stat-label">Areas</div>
+        <div class="stat-num">Checks</div>
+        <div class="stat-label">Validation</div>
       </div>
     </div>
     <!-- END:stats -->
@@ -590,9 +590,9 @@
     <div class="tech-chips reveal">
       <span class="tech-chip">TypeScript</span>
       <span class="tech-chip">React</span>
-      <span class="tech-chip">Raycast API</span>
+      <span class="tech-chip">Hermes</span>
       <span class="tech-chip">Obsidian</span>
-      <span class="tech-chip">AppleScript</span>
+      <span class="tech-chip">Automation</span>
       <span class="tech-chip">Zod</span>
       <span class="tech-chip">Fuse.js</span>
     </div>
@@ -602,7 +602,7 @@
     <!-- Commands -->
     <!-- BEGIN:commands -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #f97316">Commands (45)</div>
+      <div class="section-label" style="--dot-color: #f97316">Core workflows</div>
 
       <details>
         <summary>
@@ -610,73 +610,16 @@
             <span class="summary-icon capture">+</span>
             <span class="summary-text">
               <span class="summary-name">Capture</span>
-              <span class="summary-desc">Create notes, tasks, health logs, and daily entries</span>
+              <span class="summary-desc">Turn loose inputs into durable notes, tasks, references, and logs</span>
             </span>
           </span>
-          <span class="summary-count">9</span>
+          <span class="summary-count">inbox</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">New Note</span><span class="detail-desc">Create a new note in your vault</span></div>
-          <div class="detail-item"><span class="detail-name">New Task</span><span class="detail-desc">Create a new task</span></div>
-          <div class="detail-item"><span class="detail-name">Log Health</span><span class="detail-desc">Log health data (migraine, weight, symptoms)</span></div>
-          <div class="detail-item"><span class="detail-name">Log Interaction</span><span class="detail-desc">Quick log a call, meeting, visit, or letter</span></div>
-          <div class="detail-item"><span class="detail-name">Daily Note</span><span class="detail-desc">Open today's daily note (creates if needed)</span></div>
-          <div class="detail-item"><span class="detail-name">Sync Daily Note</span><span class="detail-desc">Sync missing notes into today's daily note</span></div>
-          <div class="detail-item"><span class="detail-name">Health Dashboard</span><span class="detail-desc">View health trends and statistics</span></div>
-          <div class="detail-item"><span class="detail-name">Nutrition Dashboard</span><span class="detail-desc">Track daily calories and macros</span></div>
-          <div class="detail-item"><span class="detail-name">Task from Note</span><span class="detail-desc">Create a task linked to the note in your clipboard</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon save">&#8615;</span>
-            <span class="summary-text">
-              <span class="summary-name">Save</span>
-              <span class="summary-desc">Capture emails, chats, and bookmarks from external apps</span>
-            </span>
-          </span>
-          <span class="summary-count">11</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Save Mail</span><span class="detail-desc">Save selected Apple Mail as note</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Task</span><span class="detail-desc">Save selected Apple Mail as note and create follow-up task</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Attachments</span><span class="detail-desc">Save selected Apple Mail as note and copy attachments to vault</span></div>
-          <div class="detail-item"><span class="detail-name">Save Mail + Task + Attachments</span><span class="detail-desc">Save selected Apple Mail as note, create follow-up task, and copy attachments</span></div>
-          <div class="detail-item"><span class="detail-name">Save WhatsApp</span><span class="detail-desc">Save copied WhatsApp chat messages as note</span></div>
-          <div class="detail-item"><span class="detail-name">Save WhatsApp + Task</span><span class="detail-desc">Save copied WhatsApp chat as note and create task</span></div>
-          <div class="detail-item"><span class="detail-name">Save Teams</span><span class="detail-desc">Save copied Microsoft Teams chat messages as note</span></div>
-          <div class="detail-item"><span class="detail-name">Save Teams + Task</span><span class="detail-desc">Save copied Teams chat as note and create task</span></div>
-          <div class="detail-item"><span class="detail-name">Save Bookmark</span><span class="detail-desc">Save URL from browser or clipboard</span></div>
-          <div class="detail-item"><span class="detail-name">Copy Mail Link</span><span class="detail-desc">Copy markdown link to selected Apple Mail message</span></div>
-          <div class="detail-item"><span class="detail-name">Path to Link</span><span class="detail-desc">Convert local folder path to Obsidian markdown link</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon prm">&#9829;</span>
-            <span class="summary-text">
-              <span class="summary-name">PRM</span>
-              <span class="summary-desc">Contact management, decay tracking, and anniversaries</span>
-            </span>
-          </span>
-          <span class="summary-count">8</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Contacts</span><span class="detail-desc">View and search all contacts</span></div>
-          <div class="detail-item"><span class="detail-name">Contact Insights</span><span class="detail-desc">Contact decay tracker — see who you're losing touch with</span></div>
-          <div class="detail-item"><span class="detail-name">Anniversaries</span><span class="detail-desc">View upcoming birthdays, weddings, and other anniversaries</span></div>
-          <div class="detail-item"><span class="detail-name">Sync Contacts</span><span class="detail-desc">Sync Obsidian contacts to Apple Contacts and Google Contacts</span></div>
-          <div class="detail-item"><span class="detail-name">Test Notifications</span><span class="detail-desc">Preview and manually trigger iMessage anniversary alerts</span></div>
-          <div class="detail-item"><span class="detail-name">Check Anniversaries</span><span class="detail-desc">Run anniversary notification and reminder logic now</span></div>
-          <div class="detail-item"><span class="detail-name">Entity Timeline</span><span class="detail-desc">Full CRM-style timeline for any contact: interactions, tasks, purchases, and notes</span></div>
-          <div class="detail-item"><span class="detail-name">Merge Entities</span><span class="detail-desc">Merge duplicate entities: updates all entity arrays, WikiLinks, and deletes the old file</span></div>
+          <div class="detail-item"><span class="detail-name">Quick capture</span><span class="detail-desc">Create notes, tasks, daily entries, and context records with the least possible friction.</span></div>
+          <div class="detail-item"><span class="detail-name">External inputs</span><span class="detail-desc">Save useful mail, chat excerpts, links, product pages, and documents with provenance.</span></div>
+          <div class="detail-item"><span class="detail-name">Voice and reflection</span><span class="detail-desc">Transcripts and summaries become traceable journal or reflection notes.</span></div>
         </div>
       </details>
 
@@ -685,41 +628,17 @@
           <span class="summary-left">
             <span class="summary-icon tasks">&#9745;</span>
             <span class="summary-text">
-              <span class="summary-name">Tasks</span>
-              <span class="summary-desc">Prioritized tasks, chores, rituals, and habits</span>
+              <span class="summary-name">Operate</span>
+              <span class="summary-desc">Use the vault for tasks, contacts, purchases, projects, and recurring reviews</span>
             </span>
           </span>
-          <span class="summary-count">6</span>
+          <span class="summary-count">daily</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Task Inbox</span><span class="detail-desc">Show your next prioritized task</span></div>
-          <div class="detail-item"><span class="detail-name">Task Overview</span><span class="detail-desc">Browse and filter all tasks</span></div>
-          <div class="detail-item"><span class="detail-name">Today's Focus</span><span class="detail-desc">Overzicht: overdue taken, vandaag due, contacten, verjaardagen</span></div>
-          <div class="detail-item"><span class="detail-name">Chores</span><span class="detail-desc">Huishoudelijke taken met eerlijke verdeling</span></div>
-          <div class="detail-item"><span class="detail-name">Rituals</span><span class="detail-desc">Quality of life rituals met completion tracking</span></div>
-          <div class="detail-item"><span class="detail-name">Habits Dashboard</span><span class="detail-desc">Combined dashboard of rituals and chores with streaks, fairness, and completion rates</span></div>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          <span class="summary-left">
-            <span class="summary-icon browse">&#9776;</span>
-            <span class="summary-text">
-              <span class="summary-name">Browse</span>
-              <span class="summary-desc">References, media, projects, and purchases</span>
-            </span>
-          </span>
-          <span class="summary-count">5</span>
-          <span class="chevron">&#9654;</span>
-        </summary>
-        <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">References</span><span class="detail-desc">Browse books, movies, articles, bookmarks, and other references</span></div>
-          <div class="detail-item"><span class="detail-name">Media Browser</span><span class="detail-desc">Browse series en films. Filter op platform, status en IMDB-rating. Watch Next: backlog gesorteerd op IMDB.</span></div>
-          <div class="detail-item"><span class="detail-name">Projects</span><span class="detail-desc">Browse projects with task counts and status</span></div>
-          <div class="detail-item"><span class="detail-name">Purchases</span><span class="detail-desc">Browse purchases by category with spending overview</span></div>
-          <div class="detail-item"><span class="detail-name">Recent Items</span><span class="detail-desc">Recently modified notes sorted by date with type filtering</span></div>
+          <div class="detail-item"><span class="detail-name">Task flow</span><span class="detail-desc">Inbox, prioritisation, next actions, chores, rituals, and project follow-up stay linked to source notes.</span></div>
+          <div class="detail-item"><span class="detail-name">People context</span><span class="detail-desc">Contacts, interactions, anniversaries, and relationship context remain queryable and auditable.</span></div>
+          <div class="detail-item"><span class="detail-name">Practical records</span><span class="detail-desc">Purchases, references, health logs, and media notes are stored in the same durable system.</span></div>
         </div>
       </details>
 
@@ -728,23 +647,19 @@
           <span class="summary-left">
             <span class="summary-icon review">&#9670;</span>
             <span class="summary-text">
-              <span class="summary-name">Search, Calendar & Review</span>
-              <span class="summary-desc">Vault search, calendar import, weekly review, and health</span>
+              <span class="summary-name">Validate & review</span>
+              <span class="summary-desc">Schema checks, broken-link checks, and periodic reviews keep the system usable</span>
             </span>
           </span>
-          <span class="summary-count">6</span>
+          <span class="summary-count">verify</span>
           <span class="chevron">&#9654;</span>
         </summary>
         <div class="detail-list">
-          <div class="detail-item"><span class="detail-name">Life OS Config</span><span class="detail-desc">Configuration and maintenance tools</span></div>
-          <div class="detail-item"><span class="detail-name">Vault Health</span><span class="detail-desc">Check vault for schema issues, broken links, and encoding problems</span></div>
-          <div class="detail-item"><span class="detail-name">Search Vault</span><span class="detail-desc">Search all notes with type-aware filtering</span></div>
-          <div class="detail-item"><span class="detail-name">Import Calendar</span><span class="detail-desc">Import calendar events from Apple Calendar to Obsidian</span></div>
-          <div class="detail-item"><span class="detail-name">Weekly Review</span><span class="detail-desc">Dashboard of the past 7 days: tasks, interactions, notes, health, and upcoming items</span></div>
-          <div class="detail-item"><span class="detail-name">Morning Briefing</span><span class="detail-desc">Proactive daily summary: overdue tasks, calendar, anniversaries, contacts, chores</span></div>
+          <div class="detail-item"><span class="detail-name">Vault health</span><span class="detail-desc">Check schema issues, broken links, encoding problems, and changed paths after automated updates.</span></div>
+          <div class="detail-item"><span class="detail-name">Review loops</span><span class="detail-desc">Daily, weekly, and project reviews pull from the same vault context instead of separate dashboards.</span></div>
+          <div class="detail-item"><span class="detail-name">AI-assisted cleanup</span><span class="detail-desc">Agents can enrich, classify, and link notes while preserving provenance and validation.</span></div>
         </div>
       </details>
-
     </div>
     <!-- END:commands -->
 
@@ -752,7 +667,7 @@
 
     <!-- Note Types -->
     <div class="reveal">
-      <div class="section-label" style="--dot-color: #a855f7">Schema — 11 Note Types</div>
+      <div class="section-label" style="--dot-color: #a855f7">Schema — typed note families</div>
       <div class="type-chips">
         <span class="type-chip">entity</span>
         <span class="type-chip">interaction</span>
@@ -778,17 +693,16 @@
           <span class="starter-icon">&#9878;</span>
           <div class="starter-text">
             <span class="starter-name">Life OS Starter Vault</span>
-            <span class="starter-desc">Open-source Obsidian starter vault with 11 note types, 15 templates, and setup scripts. Clone and start organizing in 5 minutes.</span>
+            <span class="starter-desc">Open-source Obsidian template with the core schema, starter templates, and agent-friendly conventions. Use it as a starting point, not a frozen copy of my private vault.</span>
           </div>
         </div>
         <span class="starter-badge">Use template &rarr;</span>
       </a>
       <div class="starter-details">
-        <span class="tech-chip">15 Templates</span>
-        <span class="tech-chip">11 Note Types</span>
-        <span class="tech-chip">Setup Scripts</span>
+        <span class="tech-chip">Starter Templates</span>
+        <span class="tech-chip">Typed Notes</span>
         <span class="tech-chip">Minimal Theme</span>
-        <span class="tech-chip">AI Agent Ready</span>
+        <span class="tech-chip">Agent Friendly</span>
         <span class="tech-chip">MIT License</span>
       </div>
     </div>

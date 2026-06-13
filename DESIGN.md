@@ -67,7 +67,7 @@ Each project has a unique accent color. These are applied via inline `style` att
 | Visual PM | Purple | `#a855f7` | `rgba(168,85,247,0.10)` |
 | Kraamweek | Coral pink | `#f472b6` | `rgba(244,114,182,0.10)` |
 | Dimma | Teal/cyan | `#06b6d4` | `rgba(6,182,212,0.10)` |
-| Agent Brain | Emerald | `#22c55e` | `rgba(34,197,94,0.10)` |
+| Hermes + Life OS | Emerald | `#22c55e` | `rgba(34,197,94,0.10)` |
 | Life OS | Orange | `#f97316` | `rgba(249,115,22,0.10)` |
 | Methodologies | Amber | `#f59e0b` | `rgba(245,158,11,0.10)` |
 
@@ -115,7 +115,7 @@ Label tiles use a colored dot (`7px`, with matching `box-shadow` glow):
 | Tags | `0.68em` | 600 | `--card-color` |
 | Footer | `0.72em` | 400 | `--text-muted` |
 
-**Rule:** The name uses tight letter-spacing (`-0.02em`). The McCoy company name in the tagline is gold (`#eab308`, weight 600).
+**Rule:** The name uses tight letter-spacing (`-0.02em`). The highlighted phrase in the tagline is gold (`#eab308`, weight 600).
 
 ---
 
@@ -268,7 +268,7 @@ All icons are **inline SVG**, sized `22x22` in a `44x44` container (`card-icon-w
 | Tag | Value |
 |-----|-------|
 | `title` | Viggo Meesters |
-| `description` | SAP Data Management at McCoy. Tinkering with code on the side. |
+| `description` | AI-assisted systems, data workflows, and personal knowledge infrastructure. |
 | `theme-color` | `#0c0c0f` |
 | `og:image` | `/og-image.png` (1200x630) |
 | `og:url` | `https://viggomeesters.nl` |
@@ -306,7 +306,7 @@ These are explicit prohibitions. They exist because they were tried and removed.
 
 ## Subpages
 
-Subpages (`/agent-brain/`, `/raycast-life-os/`) follow the same visual language but are independent HTML files with their own content structure.
+Subpages (`/agent-brain/`, `/raycast-life-os/`) follow the same visual language but are independent HTML files with their own content structure. Keep public copy stable and avoid brittle counts unless generated from a current source.
 
 **Shared with homepage:**
 - Same color tokens and Sora font
@@ -315,7 +315,7 @@ Subpages (`/agent-brain/`, `/raycast-life-os/`) follow the same visual language 
 - Same hover behavior and reduced-motion support
 
 **Subpage-specific:**
-- May use their own accent color as dominant (e.g., emerald for Agent Brain)
+- May use their own accent color as dominant (e.g., emerald for Hermes + Life OS)
 - May have different layout structures (e.g., stat grids, accordion sections)
 - Same architecture rules: single HTML file, inline CSS/JS, no build tools
 
