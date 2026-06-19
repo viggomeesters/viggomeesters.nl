@@ -268,7 +268,7 @@ All icons are **inline SVG**, sized `22x22` in a `44x44` container (`card-icon-w
 | Tag | Value |
 |-----|-------|
 | `title` | Viggo Meesters |
-| `description` | AI-assisted systems, data workflows, and personal knowledge infrastructure. |
+| `description` | Data & Systems Innovator building AI-assisted tools, workflows, and knowledge systems that turn complexity into structure. |
 | `theme-color` | `#0c0c0f` |
 | `og:image` | `/og-image.png` (1200x630) |
 | `og:url` | `https://viggomeesters.nl` |
