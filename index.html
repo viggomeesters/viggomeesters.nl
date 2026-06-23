@@ -134,6 +134,74 @@
       background: linear-gradient(135deg, rgba(59,130,246,0.06) 0%, rgba(168,85,247,0.04) 50%, rgba(249,115,22,0.03) 100%);
     }
 
+
+    /* Full-width guides/blog feature */
+    .tile.guide-hub {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 18px;
+      text-decoration: none;
+      color: var(--text);
+      background: linear-gradient(135deg, rgba(249,115,22,0.10), rgba(59,130,246,0.04) 48%, rgba(34,197,94,0.04));
+      border-left: 3px solid #f97316;
+    }
+    .guide-hub .guide-icon-wrap {
+      width: 54px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      background: rgba(249,115,22,0.10);
+      color: #f97316;
+      flex-shrink: 0;
+    }
+    .guide-hub .guide-icon { width: 25px; height: 25px; }
+    .guide-hub .guide-eyebrow {
+      font-size: 0.68em;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #f97316;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    .guide-hub .guide-title {
+      font-size: 1.05em;
+      font-weight: 700;
+      color: #eeeff4;
+      margin-bottom: 4px;
+    }
+    .guide-hub .guide-desc {
+      font-size: 0.82em;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+    .guide-hub .guide-meta {
+      justify-self: end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+      font-size: 0.7em;
+      color: var(--text-muted);
+    }
+    .guide-hub .guide-pill {
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(249,115,22,0.10);
+      color: #f97316;
+      font-weight: 600;
+    }
+    @media (hover: hover) {
+      .tile.guide-hub:hover {
+        transform: scale(1.015);
+        box-shadow: 0 0 22px rgba(249,115,22,0.10), 0 8px 32px rgba(0,0,0,0.3);
+        border-color: rgba(249,115,22,0.32);
+      }
+    }
+
     /* Circular avatar with static color glow */
     .avatar-wrap {
       position: relative;
@@ -265,6 +333,10 @@
       color: var(--text-muted);
       line-height: 1.45;
       flex: 1;
+    }
+
+    a.tile.card.full {
+      grid-column: 1 / -1;
     }
 
     a.tile.card .card-tag {
@@ -505,6 +577,23 @@
         </div>
       </div>
 
+
+
+      <a href="/guides/" class="tile guide-hub">
+        <div class="guide-icon-wrap">
+          <svg class="guide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M9 7h7"/><path d="M9 11h6"/><path d="M9 15h4"/></svg>
+        </div>
+        <div>
+          <div class="guide-eyebrow">Guides & Articles</div>
+          <div class="guide-title">How the setup works in practice</div>
+          <div class="guide-desc">Articles and practical guides, including CLI agents, Hermes, Obsidian, and markdown-first workflows.</div>
+        </div>
+        <div class="guide-meta">
+          <span class="guide-pill">1 guide</span>
+          <span>read first →</span>
+        </div>
+      </a>
+
       <!-- Demos label -->
       <h2 class="tile label" style="--dot-color: #3b82f6">Demos</h2>
 
@@ -643,17 +732,7 @@
       <!-- Setup label -->
       <h2 class="tile label" style="--dot-color: #64748b">Setup</h2>
 
-      <a href="/cli-agents-guide/" class="tile card"
-         style="--card-color: #f97316; --card-soft: rgba(249,115,22,0.10)">
-        <div class="card-icon-wrap">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><line x1="9" y1="7" x2="16" y2="7"/><line x1="9" y1="11" x2="14" y2="11"/></svg>
-        </div>
-        <div class="card-name">AI Setup</div>
-        <div class="card-desc">CLI agents, Hermes, Obsidian, and a markdown-first working loop</div>
-        <span class="card-tag">Guide</span>
-      </a>
-
-      <a href="/tech-stack/" class="tile card"
+      <a href="/tech-stack/" class="tile card full"
          style="--card-color: #64748b; --card-soft: rgba(100,116,139,0.10)">
         <div class="card-icon-wrap">
           <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>

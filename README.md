@@ -52,6 +52,7 @@ The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggome
 - `raycast-life-os/`: older vault-first Life OS project page.
 - `methodologies/`: methodology index.
 - `helicopter-to-detail/`, `knowledge-pyramid/`, `funnel-analysis/`, `source-backed-synthesis/`, `proof-first-delivery/`, `vault-first-operating-model/`, `agent-workflow-loop/`: methodology pages.
+- `guides/`: guides and articles index.
 - `cli-agents-guide/`: CLI agents guide.
 - `tech-stack/`: granular tech stack index.
 - `tech-stack/*/`: granular stack subpages for hardware, software, AI agents, dev tools, knowledge system, and hosting/automation.

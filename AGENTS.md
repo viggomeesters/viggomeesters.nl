@@ -61,6 +61,7 @@ explicitly asks for one.
   `knowledge-pyramid/`, `funnel-analysis/`, `source-backed-synthesis/`,
   `proof-first-delivery/`, `vault-first-operating-model/`, and
   `agent-workflow-loop/`.
+- Guides/articles index: `guides/`.
 - SEO/evergreen pages: `beste-kattenvoer/`, `beste-kattenbrokken/`.
 - Tech stack pages: `tech-stack/` and `tech-stack/*/`.
 - Generated skills pages: `skills/` and `skills/*/`, based on the local Hermes skills registry.
