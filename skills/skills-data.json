@@ -1,0 +1,1280 @@
+{
+  "generated_at": "2026-06-23",
+  "count": 182,
+  "skills": [
+    {
+      "name": "agent-cli-delegation",
+      "category": "autonomous-ai-agents",
+      "description": "Use when delegating coding or review work to external autonomous coding CLIs such as Claude Code, Codex, or OpenCode. Selects the right backend, invocation mode, sandbox, PR/review flow, and verification contract.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "hermes-agent",
+      "category": "autonomous-ai-agents",
+      "description": "Configure, extend, or contribute to Hermes Agent.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "kanban-codex-lane",
+      "category": "autonomous-ai-agents",
+      "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "computer-use",
+      "category": "core",
+      "description": "|",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "dogfood",
+      "category": "core",
+      "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "go-workflow",
+      "category": "core",
+      "description": "Use only when the user explicitly says `legacy go-workflow` or asks to inspect historical repo-contained go-workflow artifacts. Deprecated for Viggo: bare `Go`, `Next`, `Ledger`, `$go-*`, and normal repo work route to vault-first Agent Workflow Lite.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-antislop",
+      "category": "core",
+      "description": "ANTISLOP phase for repo-contained go-workflow runs. Remove sloppy artifacts before shipping.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-audit",
+      "category": "core",
+      "description": "AUDIT support skill for repo-contained go-workflow runs. Run selectable quality gates for code, tests, architecture, API, performance, accessibility, UX, and security-style checks.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-better",
+      "category": "core",
+      "description": "BETTER support skill for repo-contained go-workflow runs. Post-run improvement loop: turn a completed task/session into better workflow rules, tasks, tests, docs, or skill updates.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-build",
+      "category": "core",
+      "description": "BUILD phase for repo-contained go-workflow runs. Change only the claimed task's allowed modify scope.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-cancel",
+      "category": "core",
+      "description": "CANCEL support skill for repo-contained go-workflow runs. Gracefully stop, supersede, or cancel obsolete workflow tasks without corrupting queue or git state.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-devil",
+      "category": "core",
+      "description": "DEVIL phase for repo-contained go-workflow runs. Run adversarial review for risky or multi-file changes.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-docs-ledger",
+      "category": "core",
+      "description": "DOCS/LEDGER phase for repo-contained go-workflow runs. Update docs, task state, evidence, and run ledgers.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-git",
+      "category": "core",
+      "description": "GIT ROUTER support skill for repo-contained go-workflow runs. Keep repository state safe: status hygiene, selective staging, ship, CI repair, PR/check inspection, and clean return to main.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-interview",
+      "category": "core",
+      "description": "INTERVIEW support skill for repo-contained go-workflow runs. Ambiguity gate for work that cannot be safely planned without a small number of targeted questions.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-plan",
+      "category": "core",
+      "description": "PLAN phase for repo-contained go-workflow runs. Turn intent and repo state into bounded requirements and acceptance checks.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-release",
+      "category": "core",
+      "description": "RELEASE support skill for repo-contained go-workflow runs. Separate release/version/tag/notes behavior from generic docs-ledger work and make final publish evidence explicit.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-route-claim",
+      "category": "core",
+      "description": "ROUTE/CLAIM phase for repo-contained go-workflow runs. Select exactly one executable task and write an exclusive handoff.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-setup",
+      "category": "core",
+      "description": "SETUP phase for repo-contained go-workflow runs. Establish repository context before planning or editing.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-ship",
+      "category": "core",
+      "description": "SHIP phase for repo-contained go-workflow runs. Commit, push or PR, and report final git evidence.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-workflow-verify",
+      "category": "core",
+      "description": "VERIFY phase for repo-contained go-workflow runs. Run the task and repository checks that prove the change.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "yuanbao",
+      "category": "core",
+      "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "architecture-diagram",
+      "category": "creative",
+      "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "ascii-art",
+      "category": "creative",
+      "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "ascii-video",
+      "category": "creative",
+      "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "baoyu-article-illustrator",
+      "category": "creative",
+      "description": "Article illustrations: type × style × palette consistency.",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "baoyu-comic",
+      "category": "creative",
+      "description": "Knowledge comics (知识漫画): educational, biography, tutorial.",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "baoyu-infographic",
+      "category": "creative",
+      "description": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "claude-design",
+      "category": "creative",
+      "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "comfyui",
+      "category": "creative",
+      "description": "Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "design-md",
+      "category": "creative",
+      "description": "Author/validate/export Google's DESIGN.md token spec files.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "excalidraw",
+      "category": "creative",
+      "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "frontend",
+      "category": "creative",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "frontend-slides",
+      "category": "creative",
+      "description": "Create distinctive zero-dependency HTML slide decks with curated visual presets, viewport-fitting rules, keyboard navigation, animation, and optional vault/temp-publisher delivery. Recovered from Viggo's historical Life OS slides skill.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "humanizer",
+      "category": "creative",
+      "description": "Humanize text: strip AI-isms and add real voice.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "ideation",
+      "category": "creative",
+      "description": "Generate project ideas via creative constraints.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "landing-page-redesign",
+      "category": "creative",
+      "description": "Rebuild cluttered or incoherent marketing/landing pages around one clear product narrative, especially when the existing page has mixed concepts, demos, docs, and business strategy competing for attention.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "local-service-website-design",
+      "category": "creative",
+      "description": "Design and ship distinctive non-generic websites for local service businesses and managed-website offers, using business-specific metaphors, sharp scope, real content, and browser/mobile verification.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "manim-video",
+      "category": "creative",
+      "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "p5js",
+      "category": "creative",
+      "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "pixel-art",
+      "category": "creative",
+      "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "popular-web-designs",
+      "category": "creative",
+      "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "pretext",
+      "category": "creative",
+      "description": "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "product-tool-frontend-design",
+      "category": "creative",
+      "description": "Design and rebuild small calculator/comparison/productivity web tools into modern, minimal, calculator-first product UIs with progressive disclosure and proof-backed browser verification.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "product-tool-ui",
+      "category": "creative",
+      "description": "Design and plan small productivity/calculator/data-tool webapp UIs that should feel modern, quiet, useful, and not overwhelming. Use for calculator-first redesigns, progressive disclosure, expert-mode preservation, and Viggo Tools UI-style house-language decisions.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "sketch",
+      "category": "creative",
+      "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "songwriting-and-ai-music",
+      "category": "creative",
+      "description": "Songwriting craft and Suno AI music prompts.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "successive-website-redesigns",
+      "category": "creative",
+      "description": "Create a genuinely new website design direction for the same business after previous variants already exist, preserving business facts while changing design DNA and verifying desktop/mobile quality.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "touchdesigner-mcp",
+      "category": "creative",
+      "description": "Control a running TouchDesigner instance via twozero MCP — create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "jupyter-live-kernel",
+      "category": "data-science",
+      "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "hermes-operations-runbook",
+      "category": "devops",
+      "description": "Operate Viggo's Hermes runtime as a class-level runbook: gateway/profile concurrency, runtime config SSOT, web backend routing, WSL/Windows access, and voice/STT/TTS pipeline troubleshooting.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "kanban-workflows",
+      "category": "devops",
+      "description": "Use when operating Hermes Kanban workflows as either orchestrator or worker: decompose work into cards, route to profiles, claim/heartbeat/finish cards, recover stuck workers, and keep tenant/workspace boundaries clear.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "vercel-operations-runbook",
+      "category": "devops",
+      "description": "Use when operating Vercel projects beyond normal deploys: inspect project state, replace/migrate projects, move aliases/domains, attach Supabase or storage integrations, manage environment variables, isolate provisioning bugs with static deploys, and verify production without leaking secrets.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "webhook-subscriptions",
+      "category": "devops",
+      "description": "Webhook subscriptions: event-driven agent runs.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "himalaya",
+      "category": "email",
+      "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "minecraft-modpack-server",
+      "category": "gaming",
+      "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "pokemon-player",
+      "category": "gaming",
+      "description": "Play Pokemon via headless emulator + RAM reads.",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "codebase-inspection",
+      "category": "github",
+      "description": "Inspect codebases: architecture, stack, hosting/runtime, storage, LOC, languages, ratios.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "github-operations",
+      "category": "github",
+      "description": "Use when operating GitHub end to end: authentication, repository setup, branches, issues, PRs, code review, CI, releases, and API/gh troubleshooting. Routes to the right GitHub sub-workflow while preserving verification and side-effect guardrails.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "native-mcp",
+      "category": "mcp",
+      "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "gif-search",
+      "category": "media",
+      "description": "Search/download GIFs from Tenor via curl + jq.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "heartmula",
+      "category": "media",
+      "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "songsee",
+      "category": "media",
+      "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "spotify",
+      "category": "media",
+      "description": "Spotify: play, search, queue, manage playlists and devices.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "youtube-content",
+      "category": "media",
+      "description": "YouTube transcripts to summaries, threads, blogs.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "audiocraft-audio-generation",
+      "category": "mlops",
+      "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "dspy",
+      "category": "mlops",
+      "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+      "source": "official",
+      "trust": "official"
+    },
+    {
+      "name": "evaluating-llms-harness",
+      "category": "mlops",
+      "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "huggingface-hub",
+      "category": "mlops",
+      "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "llama-cpp",
+      "category": "mlops",
+      "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "obliteratus",
+      "category": "mlops",
+      "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "segment-anything-model",
+      "category": "mlops",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "serving-llms-vllm",
+      "category": "mlops",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "weights-and-biases",
+      "category": "mlops",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "audio-to-obsidian-vault",
+      "category": "note-taking",
+      "description": "Use when Viggo sends an audio/voice message that should become durable Obsidian/Life OS context: transcript, summary, context lookup, project/entity/topic enrichment, and any explicit instruction execution.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "document-photo-to-vault",
+      "category": "note-taking",
+      "description": "Use when Viggo sends photos/screenshots of physical or digital documents that should be captured into the Life OS/Obsidian vault, especially multi-photo letters such as Belastingdienst correspondence that need OCR/transcription, one combined source note, saved media embeds, entity/project/context links, daily logging, and explicit validation.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "life-os-custom-harness",
+      "category": "note-taking",
+      "description": "Inspect and operate Viggo's legacy Life OS custom agent harness split across life-os-core and life-os-pipeline.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "life-os-memory-pipeline",
+      "category": "note-taking",
+      "description": "Design and operate a local, vault-first memory pipeline for Viggo's Life OS: raw Hermes interactions, extracted facts, memory/context cards, and retrieval, using Honcho as inspiration without cloud lock-in.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "life-os-task",
+      "category": "note-taking",
+      "description": "Use when Viggo wants durable task management in the Life OS vault: create, inspect, update, classify, or bridge tasks between Hermes session todos, Hermes Kanban, and vault task notes.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "obsidian",
+      "category": "note-taking",
+      "description": "Read, search, create, and edit notes in the Obsidian vault.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "self-analysis-context-writeback",
+      "category": "note-taking",
+      "description": "Use when Viggo asks a personal/self-analysis question; answer context-first from Life OS, then patch vault context when the exchange sharpens the durable self-model.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "telegram-to-vault-router",
+      "category": "note-taking",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "vault-capture-operations",
+      "category": "note-taking",
+      "description": "Class-level operational patterns for safe Obsidian/vault captures from Telegram or local evidence, including Syncthing conflict handling, media preservation, read-back, and validation discipline.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "vault-context-memory-ingestion",
+      "category": "note-taking",
+      "description": "Read a bounded subset of Viggo's Life OS vault system/context docs and convert durable, non-sensitive insights into Hermes memory and fact_store.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-life-os-vault",
+      "category": "note-taking",
+      "description": "Work safely with Viggo's Syncthing-backed Obsidian/Life OS vault and related Life OS capture pipelines from WSL/Telegram, including vault writes, schema discovery, meeting/call capture outputs, validation, and write/commit discipline.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-reflect",
+      "category": "note-taking",
+      "description": "Use when Viggo asks to reflect, recap a day/week/month/session, find patterns in recent work or life context, or turn scattered context into one sharp observation without turning it into a checklist.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "website-scrape-to-vault",
+      "category": "note-taking",
+      "description": "Scrape public website content into Viggo's Life OS vault as bounded data artifacts plus an index reference note, with validation.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "youtube-to-obsidian-vault",
+      "category": "note-taking",
+      "description": "Standard workflow for Viggo: when a YouTube URL is received, extract the transcript, create an Obsidian/Life OS vault note, summarize it, map it against relevant vault context, add WikiLinks/URLs/topics/entities, and include advice when useful.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-correction-loop",
+      "category": "productivity",
+      "description": "Use when Viggo corrects the agent's behavior, invokes selfimprove-style review, asks why the agent chose the wrong lane, or wants a durable process fix after unintended side effects. Converts the miss into skill/memory/script/config changes with verification.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-prompt-intelligence",
+      "category": "productivity",
+      "description": "Use when turning public system-prompt leak, agent-prompt benchmark, or coding-agent prompt repositories into safe defensive improvements: source maps, credential-free watchers, skill patches, regression evals, and opt-in cron enablement.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "airtable",
+      "category": "productivity",
+      "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "bertus-command-bus",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "bertus-email-gateway-ops",
+      "category": "productivity",
+      "description": "Operate Bertus/Hermes email gateway settings: home address, allowed users, bounces, startup/shutdown notifications, and verification.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "better",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "brainstorm",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "calendar-invite-email",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "caveman",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "compact-agent-output",
+      "category": "productivity",
+      "description": "Use when Viggo asks for shorter answers, caveman style, less verbosity, Telegram-friendly summaries, or when finishing agentic work for Viggo. Preserve evidence while compressing chat output.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "consumption-kruidvat",
+      "category": "productivity",
+      "description": "Use when building, maintaining, or running Kruidvat supplement shopping/cart automation in the Life OS consumption repo. Loads repo docs, supplement decision guardrails, browser/cart safety rules, and Codex handoff checklist.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "consumption-notenshop",
+      "category": "productivity",
+      "description": "Use when building, maintaining, or running the De Notenshop recurring cart automation in the Life OS consumption repo. Loads the repo docs, vault source note, browser/cart safety rules, and Codex handoff checklist.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "external-service-automation",
+      "category": "productivity",
+      "description": "Build and operate safe automations around third-party services: MCP wrappers, email unsubscribe flows, browser/API discovery, auth handling, side-effect limits, tests, and handoff docs.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "generated-document-review",
+      "category": "productivity",
+      "description": "Review generated customer-facing document artifacts (DOCX/PDF/screenshots/reports/FOs) visually, textually, and table-semantically before claiming they are ready.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "google-workspace",
+      "category": "productivity",
+      "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "grill-me",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "hardening-pass",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "improve",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "job-application-package",
+      "category": "productivity",
+      "description": "Use when Viggo asks for a vacancy-specific application package: research docs → claim matrix → motivation letter → CV → polished PDF/HTML output, with extra guardrails for CV quality.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "linear",
+      "category": "productivity",
+      "description": "Linear: manage issues, projects, teams via GraphQL + curl.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "maps",
+      "category": "productivity",
+      "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "master-tactician",
+      "category": "productivity",
+      "description": "Use when reviewing sensitive stakeholder messages, permission requests, negotiations, risk disclosures, employer/client boundary wording, or any draft where tactical positioning matters. Finds logical flaws, adversarial interpretations, over-disclosure, leverage loss, and safer alternatives before presenting a final draft.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "nano-pdf",
+      "category": "productivity",
+      "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "next",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "next-improvements",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "notion",
+      "category": "productivity",
+      "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "ocr-and-documents",
+      "category": "productivity",
+      "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "powerpoint",
+      "category": "productivity",
+      "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "recheck",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "selfimprove",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "selfimprove-axe",
+      "category": "productivity",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "skills-sh-curation",
+      "category": "productivity",
+      "description": "Use when Viggo asks to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "teams-meeting-pipeline",
+      "category": "productivity",
+      "description": "Operate the Teams meeting summary pipeline via Hermes CLI — summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "temp-publisher",
+      "category": "productivity",
+      "description": "Publish temporary, browsable HTML artifacts to Viggo's Vercel-backed temp-publisher repo with expiry metadata and optional cleanup. Trigger phrases include \"publish to html\" and \"publish html\" for the md → linkjes → concreet maken → plaatjes → temp-publisher workflow.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "verification-line",
+      "category": "productivity",
+      "description": "Use when finishing any non-trivial Hermes task: produce an evidence-backed verification line with sources, changed artifacts, validation commands/results, and remaining risks.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-agent-interaction-style",
+      "category": "productivity",
+      "description": "Communicate with Viggo during agentic work: concise progress/results, approval prompts for risky actions, Dutch/Telegram style, and concrete scope/risk reporting.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-draft",
+      "category": "productivity",
+      "description": "Use when composing messages for Viggo: email, Telegram, Teams/chat, SMS/iMessage-style text, replies, sensitive wording, Dutch rewrites, Frisian variants, or any message that should be previewed before sending.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-output",
+      "category": "productivity",
+      "description": "Use when Viggo asks for a polished deliverable: report, memo, one-pager, presentation, PDF/DOCX/PPTX, interactive HTML, dashboard, diagram-rich output, or anything that should look finished rather than be a plain chat answer.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-research-decision-support",
+      "category": "productivity",
+      "description": "Research and rank real-world options for Viggo with evidence, fit trade-offs, and practical next actions: shopping, career opportunities, application packs, and comparable decision-support scans.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "webshop-cart-automation",
+      "category": "productivity",
+      "description": "Semi-automate recurring webshop orders by filling carts via official APIs, private platform endpoints, or Playwright/browser automation while stopping before payment.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "godmode",
+      "category": "red-teaming",
+      "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "arxiv",
+      "category": "research",
+      "description": "Search arXiv papers by keyword, author, category, or ID.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "blogwatcher",
+      "category": "research",
+      "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "llm-wiki",
+      "category": "research",
+      "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "polymarket",
+      "category": "research",
+      "description": "Query Polymarket: markets, prices, orderbooks, history.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "public-person-background-check-to-vault",
+      "category": "research",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "research-paper-writing",
+      "category": "research",
+      "description": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "worldmonitor",
+      "category": "research",
+      "description": "Use WorldMonitor as a read-only external intelligence source through the local Bertus/Hermes wrapper; health/OpenAPI checks work without credentials, data endpoints use optional WM_KEY.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "openhue",
+      "category": "smart-home",
+      "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "xurl",
+      "category": "social-media",
+      "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "agent-workflow-lite",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-workflow-lite-execution",
+      "category": "software-development",
+      "description": "Execute vault-first Agent Workflow Lite tasks and parent plans atomically: claim, implement, verify, commit/push, finish, refresh parent progress, and report evidence.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-workflow-lite-planning",
+      "category": "software-development",
+      "description": "Plan vault-first Agent Workflow Lite work packages when the execution repo may live on another machine/profile; create parent plans and child tasks without claiming or implementing.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-workflow-loop",
+      "category": "software-development",
+      "description": "Use when Viggo says loop, ralph, werk tot groen, or asks for Ralph/OMX/Oh-My-Codex-style persistence around Agent Workflow Lite tasks and plans. Runs bounded build→verify→critic→repair cycles until gates pass or a blocker is proven.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "audit",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "aw-lite-loop-runtime",
+      "category": "software-development",
+      "description": "Use when operating durable go-loop state for vault-first Agent Workflow Lite: task/plan loop blocks, loop-run manifests, go_loop.py helper commands, validation, and handoff evidence without replacing claim/finish execution.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "data-audit",
+      "category": "software-development",
+      "description": "Audit data tools, ETL flows, generated reports, and transformations for correctness, lineage, reproducibility, and wrong-but-plausible data risks.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "debug",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "debugging-hermes-tui-commands",
+      "category": "software-development",
+      "description": "Debug Hermes TUI slash commands: Python, gateway, Ink UI.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "devil",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "devil-review",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "fo-generation-quality-gates",
+      "category": "software-development",
+      "description": ">-",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-goal",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-loop",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-now",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-plan",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "go-task",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "grill-with-docs",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "hermes-agent-skill-authoring",
+      "category": "software-development",
+      "description": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "hermes-s6-container-supervision",
+      "category": "software-development",
+      "description": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "life-os-hermes-workflow",
+      "category": "software-development",
+      "description": "Use when doing substantial or complex programming, coding, repository, automation, debugging, implementation, refactor, test, docs, or multi-file software work for Viggo in Hermes. Also use for the trigger phrase 'agent_project_workspace workflow' / 'Agent Project Workspace workflow' in a repo: install or operate repo-local .hermes project/task orchestration. Enforces SETUP→PLAN→ROUTE/CLAIM→BUILD→VERIFY→DOCUMENTATION→DEVIL→ANTISLOP→SHIP with evidence-first verification and in-repo documentation ",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "loop",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "mem-ui-design",
+      "category": "software-development",
+      "description": "Audit and polish Minimal ETL Modeler UI design consistency with screenshot-backed, repo-native changes.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "obsidian-plugin-portfolio",
+      "category": "software-development",
+      "description": "Build, audit, release, and triage Viggo's small Obsidian plugin repos as a portfolio: community readiness, GitHub releases, Obsidian directory status, Windows-local test vault smoke, and safe scope decisions.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "plan",
+      "category": "software-development",
+      "description": "Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "private-project-notes-repo-intake",
+      "category": "software-development",
+      "description": "Process screenshots/documents into private project notes repositories: resolve/clone exact repo first, use AW Lite safely, store source/work/notes in the right folders, commit/push, and report privacy-light evidence.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "prompt-evaluation",
+      "category": "software-development",
+      "description": "Build and maintain prompt/agent evaluation harnesses: promptfoo suites, deterministic local providers, regression cases, rubric assertions, and CI-ready verification for Life OS, Hermes, McCoy, or other prompt-heavy systems.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "quality-audit",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "refactor",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "runtime-release-browser-evidence",
+      "category": "software-development",
+      "description": "Use when shipping browser/runtime changes through Agent Workflow Lite that require release/version metadata, standalone HTML/export verification, or browser proof.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "sdp-alteryx-template-field-analysis",
+      "category": "software-development",
+      "description": "Analyze Smart Data Platform ↔ Alteryx Template Flows field-key mismatches and design template-driven generator fixes.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "sdp-dashboard-sqlite-read-model",
+      "category": "software-development",
+      "description": "Build or maintain the SDP Dashboard local SQLite read model from smart-data-platform; smart-data-platform is the SSOT for upstream SDP data.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "simplify-code",
+      "category": "software-development",
+      "description": "Parallel 3-agent cleanup of recent code changes.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "skill-command-routing",
+      "category": "software-development",
+      "description": "Design, implement, and verify Hermes skill command routing: slash commands, Telegram-safe aliases, plain-text trigger routing, and pre-model skill invocation rewrites.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "spike",
+      "category": "software-development",
+      "description": "Throwaway experiments to validate an idea before build.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "subagent-driven-development",
+      "category": "software-development",
+      "description": "Execute plans via delegate_task subagents (2-stage review).",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "systematic-debugging",
+      "category": "software-development",
+      "description": "4-phase root cause debugging: understand bugs before fixing.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "tdd",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "test-driven-development",
+      "category": "software-development",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "source": "builtin",
+      "trust": "builtin"
+    },
+    {
+      "name": "vault-aw-lite-operations",
+      "category": "software-development",
+      "description": ">-",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "vercel-app-versioning",
+      "category": "software-development",
+      "description": "Add durable build/version markers and stale-cache recovery to small Vercel web apps.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggo-adr",
+      "category": "software-development",
+      "description": "Use when a technical or architectural decision should be captured: technology choice, trade-off, module boundary, data model, workflow convention, or any decision that future Viggo/agents should not have to rediscover.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "viggomeesters-homepage-development",
+      "category": "software-development",
+      "description": "Use when developing Viggo's personal homepage viggomeesters.nl on Vercel: inspect the static repo, make small homepage/content edits, add project tiles/pages, verify locally/browser, and deploy safely.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "writing-plans",
+      "category": "software-development",
+      "description": "Write implementation plans: bite-sized tasks, paths, code.",
+      "source": "local",
+      "trust": "local"
+    }
+  ]
+}

@@ -60,6 +60,8 @@ explicitly asks for one.
 - Methodology pages: `methodologies/`, `helicopter-to-detail/`,
   `knowledge-pyramid/`, `funnel-analysis/`.
 - SEO/evergreen pages: `beste-kattenvoer/`, `beste-kattenbrokken/`.
+- Tech stack pages: `tech-stack/` and `tech-stack/*/`.
+- Generated skills pages: `skills/` and `skills/*/`, based on the local Hermes skills registry.
 - Uses/tooling page: `uses/`.
 - Obsidian portfolio page: `obsidian-plugins/`.
 - Archived variants: `variant-*.html`; audit only, never expose as canonical

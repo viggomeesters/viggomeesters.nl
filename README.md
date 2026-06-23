@@ -53,7 +53,11 @@ The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggome
 - `methodologies/`: methodology index.
 - `helicopter-to-detail/`, `knowledge-pyramid/`, `funnel-analysis/`: methodology pages.
 - `cli-agents-guide/`: CLI agents guide.
-- `uses/`: stack and tools page.
+- `tech-stack/`: granular tech stack index.
+- `tech-stack/*/`: granular stack subpages for hardware, software, AI agents, dev tools, knowledge system, and hosting/automation.
+- `skills/`: generated public snapshot of Hermes skill registry.
+- `skills/*/`: per-skill public summary pages.
+- `uses/`: legacy stack and tools page.
 - `sap-agent-context/`: project page for the SAP Agent Context repository.
 - `mega-vault-viewer/`: project page for the Mega Vault Viewer repository.
 - `obsidian-plugins/`: public Obsidian plugin portfolio snapshot with GitHub source links.
