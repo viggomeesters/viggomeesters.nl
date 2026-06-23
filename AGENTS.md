@@ -58,7 +58,9 @@ explicitly asks for one.
 - Personal knowledge system timeline pages: `personal-knowledge-system/` and `personal-knowledge-system/*/`.
 - Project pages: `sap-agent-context/`, `mega-vault-viewer/`, `obsidian-plugins/`.
 - Methodology pages: `methodologies/`, `helicopter-to-detail/`,
-  `knowledge-pyramid/`, `funnel-analysis/`.
+  `knowledge-pyramid/`, `funnel-analysis/`, `source-backed-synthesis/`,
+  `proof-first-delivery/`, `vault-first-operating-model/`, and
+  `agent-workflow-loop/`.
 - SEO/evergreen pages: `beste-kattenvoer/`, `beste-kattenbrokken/`.
 - Tech stack pages: `tech-stack/` and `tech-stack/*/`.
 - Generated skills pages: `skills/` and `skills/*/`, based on the local Hermes skills registry.
