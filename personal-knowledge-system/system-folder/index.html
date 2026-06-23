@@ -52,6 +52,9 @@
       <article class="info-card"><h2>Role</h2><p>Keeps rules and machine-facing context close to the knowledge they govern.</p></article>
       <article class="info-card"><h2>Contains</h2><ul><li>system/docs/agent-instructions.md</li><li>system/scripts/vault/*</li><li>contracts and validation rules</li><li>workflow queues, indexes, generated artifacts</li></ul></article>
       <article class="info-card"><h2>Interfaces</h2><ul><li>Hermes reads these before vault work</li><li>Scripts create validated mutations</li><li>Agents use this as operational context</li></ul></article>
+
+      <article class="info-card"><h2>Maintenance rule</h2><p>Operational files live here when they help validate, route, index, or instruct the vault workflow.</p></article>
+      <article class="info-card"><h2>Proof signal</h2><p>A future agent can read the folder and understand the contract before changing anything.</p></article>
     </section>
     <p class="foundation"><strong>Failure mode:</strong> If system rules live only in chat memory, they drift and cannot be audited.</p>
     <div class="cta-row"><a class="cta" href="/personal-knowledge-system/schema-and-frontmatter/">&larr; Schema &amp; frontmatter</a><a class="cta" href="/personal-knowledge-system/">All components</a><a class="cta" href="/personal-knowledge-system/validation-and-indexing/">Validation &amp; indexes &rarr;</a></div>

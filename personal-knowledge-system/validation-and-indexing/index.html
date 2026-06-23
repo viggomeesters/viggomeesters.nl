@@ -52,6 +52,9 @@
       <article class="info-card"><h2>Role</h2><p>Makes mutations trustworthy and makes the vault fast enough to query without loading everything.</p></article>
       <article class="info-card"><h2>Contains</h2><ul><li>validate_vault.py and schema checks</li><li>Generated indexes and MOCs</li><li>Transaction/capture runners</li><li>Visible failure events for blocked writes</li></ul></article>
       <article class="info-card"><h2>Interfaces</h2><ul><li>Hermes verifies after edits</li><li>Capture tools use runners/queues</li><li>Indexes expose bounded context to agents</li></ul></article>
+
+      <article class="info-card"><h2>Maintenance rule</h2><p>Validation failures should be visible events, not silent skips or partial writes.</p></article>
+      <article class="info-card"><h2>Proof signal</h2><p>Links, frontmatter, generated indexes, and read models can be checked before trusting an output.</p></article>
     </section>
     <p class="foundation"><strong>Failure mode:</strong> Without validation, automation silently corrupts the source of truth.</p>
     <div class="cta-row"><a class="cta" href="/personal-knowledge-system/system-folder/">&larr; system/ folder</a><a class="cta" href="/personal-knowledge-system/">All components</a><a class="cta" href="/personal-knowledge-system/agent-interfaces/">Agent interfaces &rarr;</a></div>
