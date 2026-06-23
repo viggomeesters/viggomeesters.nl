@@ -47,7 +47,9 @@ The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggome
 - `agent-workflow/`: timeline index for AI workflow evolution.
 - `agent-workflow/*/`: per-stage timeline pages for the AI workflow evolution.
 - `agent-brain/`: Hermes + Life OS AI workflow system page.
-- `raycast-life-os/`: vault-first Life OS project page.
+- `personal-knowledge-system/`: timeline index for the vault/knowledge-system evolution.
+- `personal-knowledge-system/*/`: per-layer pages for the vault/knowledge-system evolution.
+- `raycast-life-os/`: older vault-first Life OS project page.
 - `methodologies/`: methodology index.
 - `helicopter-to-detail/`, `knowledge-pyramid/`, `funnel-analysis/`: methodology pages.
 - `cli-agents-guide/`: CLI agents guide.

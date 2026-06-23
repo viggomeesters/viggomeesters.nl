@@ -36,6 +36,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/obsidian-vault/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/vault-outside-obsidian/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/hermes-command-bus/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/skills-procedural-memory/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/personal-knowledge-system/telegram-cockpit/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/raycast-life-os/</loc>
     <lastmod>2026-06-07</lastmod>
     <priority>0.8</priority>
