@@ -43,7 +43,7 @@
   <url>
     <loc>https://viggomeesters.com/guides/</loc>
     <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/helicopter-to-detail/</loc>
@@ -922,6 +922,11 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/public-person-background-check-to-vault/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/public-repo-aw-lite-onboarding/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>

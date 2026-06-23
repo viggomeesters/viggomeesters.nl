@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-23",
-  "count": 182,
+  "count": 183,
   "skills": [
     {
       "name": "agent-cli-delegation",
@@ -1154,6 +1154,13 @@
       "name": "prompt-evaluation",
       "category": "software-development",
       "description": "Build and maintain prompt/agent evaluation harnesses: promptfoo suites, deterministic local providers, regression cases, rubric assertions, and CI-ready verification for Life OS, Hermes, McCoy, or other prompt-heavy systems.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "public-repo-aw-lite-onboarding",
+      "category": "software-development",
+      "description": "Use when Viggo asks to start a new public repo and create an Agent Workflow Lite plan/backlog for it, especially when repo runtime data/indexes must stay outside Git.",
       "source": "local",
       "trust": "local"
     },
