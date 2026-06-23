@@ -54,6 +54,7 @@ explicitly asks for one.
 
 - Homepage: `index.html`; identity, profile, project links, social links.
 - Project pages: `agent-brain/`, `raycast-life-os/`.
+- Agent workflow timeline pages: `agent-workflow/` and `agent-workflow/*/`.
 - Project pages: `sap-agent-context/`, `mega-vault-viewer/`, `obsidian-plugins/`.
 - Methodology pages: `methodologies/`, `helicopter-to-detail/`,
   `knowledge-pyramid/`, `funnel-analysis/`.
