@@ -50,5 +50,6 @@ The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggome
 - `helicopter-to-detail/`, `knowledge-pyramid/`, `funnel-analysis/`: methodology pages.
 - `cli-agents-guide/`: CLI agents guide.
 - `uses/`: stack and tools page.
+- `obsidian-plugins/`: public Obsidian plugin portfolio snapshot with GitHub source links.
 - `beste-kattenvoer/`, `beste-kattenbrokken/`: cat food analysis pages.
 - `variant-*.html`: archived design variants, excluded from indexing.

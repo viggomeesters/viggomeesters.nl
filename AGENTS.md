@@ -58,6 +58,7 @@ explicitly asks for one.
   `knowledge-pyramid/`, `funnel-analysis/`.
 - SEO/evergreen pages: `beste-kattenvoer/`, `beste-kattenbrokken/`.
 - Uses/tooling page: `uses/`.
+- Obsidian portfolio page: `obsidian-plugins/`.
 - Archived variants: `variant-*.html`; audit only, never expose as canonical
   content, sitemap entries, or normal navigation.
 

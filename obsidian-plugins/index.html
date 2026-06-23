@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsidian Plugins — Viggo Meesters</title>
+  <meta name="description" content="A public portfolio of small Obsidian plugins and read-only viewer utilities by Viggo Meesters.">
+  <link rel="canonical" href="https://viggomeesters.com/obsidian-plugins/">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --accent: #a855f7;
+      --accent-soft: rgba(168,85,247,0.10);
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; background: var(--bg); }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.6; overflow-x: hidden; min-height: 100vh; }
+    body::after { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.03; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 256px 256px; }
+    .aurora { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+    .aurora::before { content: ''; position: absolute; width: 140%; height: 140%; top: -20%; left: -20%; background: radial-gradient(ellipse 600px 400px at 15% 10%, rgba(168,85,247,0.10) 0%, transparent 70%), radial-gradient(ellipse 500px 500px at 75% 25%, rgba(59,130,246,0.06) 0%, transparent 60%), radial-gradient(ellipse 700px 300px at 50% 65%, rgba(34,197,94,0.05) 0%, transparent 60%); animation: aurora-drift 40s ease-in-out infinite; }
+    @keyframes aurora-drift { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(20px, -10px) rotate(0.4deg); } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } html { scroll-behavior: auto; } }
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .page { position: relative; z-index: 1; max-width: 920px; margin: 0 auto; padding: 60px 20px 60px; }
+    .back { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82em; color: var(--text-muted); text-decoration: none; margin-bottom: 32px; padding: 6px 14px; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 10px; transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce); }
+    .back:hover { color: var(--text-secondary); border-color: var(--border); transform: translateX(-3px); }
+    .header { margin-bottom: 24px; max-width: 720px; }
+    .eyebrow { font-family: var(--font-mono); font-size: 0.72em; color: var(--accent); text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 10px; }
+    .title { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700; color: #eeeff4; letter-spacing: -0.04em; line-height: 1.02; text-wrap: balance; }
+    .subtitle { color: var(--text-secondary); margin-top: 14px; max-width: 660px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 28px 0; }
+    .stat { padding: 18px 14px; background: rgba(20,20,24,0.78); border: 1px solid var(--border-subtle); border-radius: var(--radius); }
+    .stat-num { font-family: var(--font-mono); color: #eeeff4; font-weight: 500; }
+    .stat-label { font-size: 0.72em; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 34px; }
+    .cta { color: #eeeff4; text-decoration: none; background: var(--accent-soft); border: 1px solid rgba(168,85,247,0.35); border-radius: 999px; padding: 10px 15px; font-size: 0.86em; transition: transform 0.3s var(--bounce), border-color 0.2s; }
+    .cta:hover { transform: translateY(-2px); border-color: rgba(168,85,247,0.65); }
+    .section-label { display: flex; align-items: center; gap: 8px; padding: 22px 0 12px; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); font-weight: 500; }
+    .section-label::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(168,85,247,0.6); }
+    .plugin-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .plugin-card { display: flex; flex-direction: column; gap: 6px; min-height: 132px; padding: 18px; background: rgba(20,20,24,0.72); border: 1px solid var(--border-subtle); border-radius: var(--radius); color: inherit; text-decoration: none; position: relative; overflow: hidden; transition: transform 0.3s var(--bounce), border-color 0.2s, background 0.2s; }
+    .plugin-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--accent); opacity: 0.8; }
+    .plugin-card:hover { transform: translateY(-3px); border-color: rgba(168,85,247,0.38); background: rgba(26,26,32,0.86); }
+    .plugin-name { color: #eeeff4; font-weight: 600; font-size: 0.95em; }
+    .plugin-desc { color: var(--text-secondary); font-size: 0.82em; line-height: 1.45; flex: 1; }
+    .plugin-link { color: var(--accent); font-family: var(--font-mono); font-size: 0.72em; }
+    .note { margin-top: 22px; padding: 16px; border: 1px solid var(--border-subtle); background: rgba(168,85,247,0.05); border-radius: var(--radius); color: var(--text-secondary); font-size: 0.88em; }
+    .footer { margin-top: 40px; font-size: 0.72em; color: var(--text-muted); text-align: center; opacity: 0.5; }
+    @media (max-width: 720px) { .page { padding: 40px 14px 40px; } .stats, .plugin-grid { grid-template-columns: 1fr; } .title { font-size: 2rem; } }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <a href="/" class="back reveal">&larr; viggomeesters.com</a>
+    <header class="header reveal">
+      <div class="eyebrow">Obsidian plugin portfolio</div>
+      <h1 class="title">Small plugins for making vaults more inspectable.</h1>
+      <p class="subtitle">A portfolio of focused Obsidian utilities: mostly read-only viewers for file formats and metadata that normally break the flow of a Markdown vault. The frozen list below is a snapshot; GitHub remains the live index.</p>
+    </header>
+    <section class="stats reveal" aria-label="Plugin portfolio summary">
+      <div class="stat"><div class="stat-num">28</div><div class="stat-label">public plugin repos</div></div>
+      <div class="stat"><div class="stat-num">Read-only</div><div class="stat-label">viewer bias</div></div>
+      <div class="stat"><div class="stat-num">GitHub</div><div class="stat-label">source of truth</div></div>
+    </section>
+    <div class="cta-row reveal">
+      <a class="cta" href="https://github.com/viggomeesters?tab=repositories&q=obsidian-&type=source&sort=name" target="_blank" rel="noopener">Open live GitHub index &rarr;</a>
+      <a class="cta" href="https://github.com/viggomeesters/obsidian-minimal-hidden-files" target="_blank" rel="noopener">Featured plugin &rarr;</a>
+    </div>
+    <section aria-labelledby="plugin-list">
+      <div class="section-label" id="plugin-list">Snapshot list</div>
+      <div class="plugin-grid">
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-alteryx-viewer</span>
+          <span class="plugin-desc">Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-ango-companion" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-ango-companion</span>
+          <span class="plugin-desc">Small Obsidian utility/plugin.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-archive-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-archive-viewer</span>
+          <span class="plugin-desc">Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-csv-tsv-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-csv-tsv-viewer</span>
+          <span class="plugin-desc">Read-only CSV and TSV table viewer.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-diff-patch-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-diff-patch-viewer</span>
+          <span class="plugin-desc">Read-only .diff and .patch viewer for Obsidian</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-eml-email-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-eml-email-viewer</span>
+          <span class="plugin-desc">Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-folder-sort-view" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-folder-sort-view</span>
+          <span class="plugin-desc">Public-API Obsidian folder view sorted Z-to-A</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-folder-sort-z-to-a" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-folder-sort-z-to-a</span>
+          <span class="plugin-desc">Spike plugin for Z-to-A folder ordering in Obsidian&#x27;s native File Explorer</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-git-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-git-viewer</span>
+          <span class="plugin-desc">Lightweight read-only Git status viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-html-page-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-html-page-viewer</span>
+          <span class="plugin-desc">Read-only sandboxed HTML page viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-ics-calendar-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-ics-calendar-viewer</span>
+          <span class="plugin-desc">Small Obsidian utility/plugin.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-json-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-json-viewer</span>
+          <span class="plugin-desc">Read-only JSON and JSONL tree viewer for Obsidian</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-log-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-log-viewer</span>
+          <span class="plugin-desc">Read-only log file viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-minimal-hidden-files" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-minimal-hidden-files</span>
+          <span class="plugin-desc">Reveal safe dotfiles and dotfolders in Obsidian&#x27;s native File Explorer.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-newest-files" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-newest-files</span>
+          <span class="plugin-desc">Small Obsidian utility/plugin.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-plist-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-plist-viewer</span>
+          <span class="plugin-desc">Read-only Apple plist and mobileconfig viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-python-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-python-viewer</span>
+          <span class="plugin-desc">Read-only Python source and structure viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-raycast</span>
+          <span class="plugin-desc">Raycast extension with commands for the note taking app Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-script-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-script-viewer</span>
+          <span class="plugin-desc">Read-only script source, outline, and safety-hint viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-slide-deck-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-slide-deck-viewer</span>
+          <span class="plugin-desc">Read-only PPTX slide inspection view for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-sql-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-sql-viewer</span>
+          <span class="plugin-desc">Read-only SQLite database viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-toml-ini-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-toml-ini-viewer</span>
+          <span class="plugin-desc">Small Obsidian utility/plugin.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-txt-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-txt-viewer</span>
+          <span class="plugin-desc">Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-vcf-contacts-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-vcf-contacts-viewer</span>
+          <span class="plugin-desc">Read-only VCF contact card viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-word-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-word-viewer</span>
+          <span class="plugin-desc">Read-only DOCX document viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-xlsx-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-xlsx-viewer</span>
+          <span class="plugin-desc">Read-only XLSX workbook value viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-xml-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-xml-viewer</span>
+          <span class="plugin-desc">Read-only XML tree and source viewer for Obsidian.</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-yaml-viewer" target="_blank" rel="noopener">
+          <span class="plugin-name">obsidian-yaml-viewer</span>
+          <span class="plugin-desc">Read-only YAML tree viewer for Obsidian</span>
+          <span class="plugin-link">GitHub &rarr;</span>
+        </a>
+      </div>
+    </section>
+    <p class="note">Count excludes infrastructure/meta repos like <code>obsidian-releases</code> and <code>obsidian-test-vault</code>. For the current portfolio, use the GitHub index above.</p>
+    <div class="footer">&copy; 2026 Viggo Meesters</div>
+  </main>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) if (entry.isIntersecting) entry.target.classList.add('visible');
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
