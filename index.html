@@ -135,70 +135,89 @@
     }
 
 
-    /* Full-width guides/blog feature */
+    /* Minimal full-width guides/blog link */
     .tile.guide-hub {
       grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
+      display: flex;
       align-items: center;
-      gap: 18px;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 62px;
+      padding: 18px 22px;
       text-decoration: none;
       color: var(--text);
-      background: linear-gradient(135deg, rgba(249,115,22,0.10), rgba(59,130,246,0.04) 48%, rgba(34,197,94,0.04));
-      border-left: 3px solid #f97316;
+      background: rgba(20, 20, 24, 0.42);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      isolation: isolate;
     }
-    .guide-hub .guide-icon-wrap {
-      width: 54px;
-      height: 54px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 15px;
-      background: rgba(249,115,22,0.10);
-      color: #f97316;
-      flex-shrink: 0;
+    .tile.guide-hub::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: conic-gradient(
+        from 145deg,
+        #3b82f6,
+        #a855f7,
+        #f472b6,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #f97316,
+        #818cf8,
+        #3b82f6
+      );
+      opacity: 0.72;
+      pointer-events: none;
+      z-index: -1;
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
     }
-    .guide-hub .guide-icon { width: 25px; height: 25px; }
-    .guide-hub .guide-eyebrow {
-      font-size: 0.68em;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #f97316;
-      font-weight: 600;
-      margin-bottom: 5px;
+    .tile.guide-hub::after {
+      content: '';
+      position: absolute;
+      inset: -10px;
+      border-radius: calc(var(--radius) + 8px);
+      background: conic-gradient(
+        from 145deg,
+        #3b82f6,
+        #a855f7,
+        #f472b6,
+        #eab308,
+        #22c55e,
+        #06b6d4,
+        #f97316,
+        #818cf8,
+        #3b82f6
+      );
+      opacity: 0.07;
+      filter: blur(18px);
+      pointer-events: none;
+      z-index: -2;
     }
     .guide-hub .guide-title {
-      font-size: 1.05em;
+      font-size: 0.92em;
       font-weight: 700;
       color: #eeeff4;
-      margin-bottom: 4px;
+      letter-spacing: 0.01em;
     }
-    .guide-hub .guide-desc {
-      font-size: 0.82em;
-      line-height: 1.45;
+    .guide-hub .guide-arrow {
       color: var(--text-muted);
-    }
-    .guide-hub .guide-meta {
-      justify-self: end;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 8px;
-      font-size: 0.7em;
-      color: var(--text-muted);
-    }
-    .guide-hub .guide-pill {
-      padding: 4px 10px;
-      border-radius: 8px;
-      background: rgba(249,115,22,0.10);
-      color: #f97316;
-      font-weight: 600;
+      font-size: 0.9em;
+      transition: color 0.2s, transform 0.2s;
     }
     @media (hover: hover) {
       .tile.guide-hub:hover {
-        transform: scale(1.015);
-        box-shadow: 0 0 22px rgba(249,115,22,0.10), 0 8px 32px rgba(0,0,0,0.3);
-        border-color: rgba(249,115,22,0.32);
+        transform: scale(1.01);
+        background: rgba(20, 20, 24, 0.58);
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.08), 0 8px 32px rgba(0,0,0,0.25);
+      }
+      .tile.guide-hub:hover .guide-arrow {
+        color: #eeeff4;
+        transform: translateX(3px);
       }
     }
 
@@ -580,18 +599,8 @@
 
 
       <a href="/guides/" class="tile guide-hub">
-        <div class="guide-icon-wrap">
-          <svg class="guide-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/><path d="M9 7h7"/><path d="M9 11h6"/><path d="M9 15h4"/></svg>
-        </div>
-        <div>
-          <div class="guide-eyebrow">Guides & Articles</div>
-          <div class="guide-title">How the setup works in practice</div>
-          <div class="guide-desc">Articles and practical guides, including CLI agents, Hermes, Obsidian, and markdown-first workflows.</div>
-        </div>
-        <div class="guide-meta">
-          <span class="guide-pill">1 guide</span>
-          <span>read first →</span>
-        </div>
+        <span class="guide-title">Guides &amp; Articles</span>
+        <span class="guide-arrow">&rarr;</span>
       </a>
 
       <!-- Demos label -->
