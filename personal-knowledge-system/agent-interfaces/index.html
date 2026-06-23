@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Knowledge System Components — Viggo Meesters</title>
-  <meta name="description" content="The current components of Viggo Meesters personal knowledge system: Markdown vault, schema, system folder, validation, indexes, and agent interfaces.">
-  <link rel="canonical" href="https://viggomeesters.com/personal-knowledge-system/">
+  <title>Agent interfaces — Personal Knowledge System</title>
+  <meta name="description" content="The access layer on top of the vault: Hermes, skills, Telegram, repo tools, browser tools, and scheduled jobs that turn the vault into an operational cockpit.">
+  <link rel="canonical" href="https://viggomeesters.com/personal-knowledge-system/agent-interfaces/">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,43 +42,19 @@
 <body>
   <div class="aurora"></div>
   <main class="page">
-    <a href="/" class="back">&larr; viggomeesters.com</a>
+    <a href="/personal-knowledge-system/" class="back">&larr; Personal Knowledge System</a>
     <header class="hero">
-      <div class="eyebrow">Personal knowledge system components</div>
-      <h1 class="title">The parts of the system.</h1>
-      <p class="subtitle">Niet de evolutie, maar de actuele bouwblokken: vault, schema, system folder, validation/indexing, and the agent interfaces around it. The vault stays the source of truth; everything else reads from it or writes back with provenance.</p>
+      <div class="eyebrow">Component / Interfaces</div>
+      <h1 class="title">Agent interfaces</h1>
+      <p class="subtitle">The access layer on top of the vault: Hermes, skills, Telegram, repo tools, browser tools, and scheduled jobs that turn the vault into an operational cockpit.</p>
     </header>
-    <section class="architecture" aria-label="Personal knowledge system architecture"><div class="arch-node"><div class="arch-label">Source</div><div class="arch-title">Markdown vault</div></div><div class="arch-node"><div class="arch-label">Structure</div><div class="arch-title">Schema &amp; frontmatter</div></div><div class="arch-node"><div class="arch-label">Operating layer</div><div class="arch-title">system/ folder</div></div><div class="arch-node"><div class="arch-label">Integrity</div><div class="arch-title">Validation &amp; indexes</div></div><div class="arch-node"><div class="arch-label">Interfaces</div><div class="arch-title">Agent interfaces</div></div></section>
-    <div class="section-label">Components</div>
-    <section class="components" aria-label="Personal knowledge system components">
-      <a class="component" href="/personal-knowledge-system/markdown-vault/">
-        <span class="component-label">Source</span>
-        <span><span class="component-title">Markdown vault</span><span class="component-summary">The durable source of truth: Markdown files, folders, WikiLinks, frontmatter, notes, project context, decisions, and references that stay readable outside any app.</span></span>
-        <span class="component-arrow">Open &rarr;</span>
-      </a>      <a class="component" href="/personal-knowledge-system/schema-and-frontmatter/">
-        <span class="component-label">Structure</span>
-        <span><span class="component-title">Schema &amp; frontmatter</span><span class="component-summary">The typed shape of the vault: metadata, entity fields, topics, status, source links, project slugs, dates, and classification rules.</span></span>
-        <span class="component-arrow">Open &rarr;</span>
-      </a>      <a class="component" href="/personal-knowledge-system/system-folder/">
-        <span class="component-label">Operating layer</span>
-        <span><span class="component-title">system/ folder</span><span class="component-summary">The internal operating layer: contracts, docs, scripts, indexes, workflow state, templates, and agent instructions that make the vault runnable.</span></span>
-        <span class="component-arrow">Open &rarr;</span>
-      </a>      <a class="component" href="/personal-knowledge-system/validation-and-indexing/">
-        <span class="component-label">Integrity</span>
-        <span><span class="component-title">Validation &amp; indexes</span><span class="component-summary">The quality gate and retrieval layer: validators, link checks, generated indexes, read models, and failure events when something cannot be safely written.</span></span>
-        <span class="component-arrow">Open &rarr;</span>
-      </a>      <a class="component" href="/personal-knowledge-system/agent-interfaces/">
-        <span class="component-label">Interfaces</span>
-        <span><span class="component-title">Agent interfaces</span><span class="component-summary">The access layer on top of the vault: Hermes, skills, Telegram, repo tools, browser tools, and scheduled jobs that turn the vault into an operational cockpit.</span></span>
-        <span class="component-arrow">Open &rarr;</span>
-      </a>
+    <section class="info-grid" aria-label="Component detail">
+      <article class="info-card"><h2>Role</h2><p>Lets short commands become sourced, validated actions while the vault remains the source of truth.</p></article>
+      <article class="info-card"><h2>Contains</h2><ul><li>Hermes command bus</li><li>Skills as procedural memory</li><li>Telegram text/voice capture</li><li>Repo/web/calendar/email tools that write back with provenance</li></ul></article>
+      <article class="info-card"><h2>Interfaces</h2><ul><li>Reads vault context, acts through tools, writes back via workflow rules</li><li>Routes reusable work through /skills/</li><li>Keeps session/memory/fact stores as cache unless mirrored</li></ul></article>
     </section>
-    <p class="foundation"><strong>Core rule:</strong> Hermes memory, sessions, facts, Telegram, skills, and generated indexes are useful caches/interfaces. The durable truth lives in Markdown files with schema, provenance, validation, and source-backed links.</p>
-    <div class="cta-row">
-      <a class="cta" href="/skills/">Open skills registry &rarr;</a>
-      <a class="cta" href="/agent-workflow/">Open agent workflow &rarr;</a>
-      <a class="cta" href="/guides/">Open guides &rarr;</a>
-    </div>
+    <p class="foundation"><strong>Failure mode:</strong> If interfaces become the source of truth, knowledge fragments across chats and tool state.</p>
+    <div class="cta-row"><a class="cta" href="/personal-knowledge-system/validation-and-indexing/">&larr; Validation &amp; indexes</a><a class="cta" href="/personal-knowledge-system/">All components</a></div>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
 </body>

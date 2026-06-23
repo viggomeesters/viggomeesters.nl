@@ -73,7 +73,7 @@
   <url>
     <loc>https://viggomeesters.com/personal-knowledge-system/</loc>
     <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/proof-first-delivery/</loc>
@@ -136,27 +136,27 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/personal-knowledge-system/hermes-command-bus/</loc>
+    <loc>https://viggomeesters.com/personal-knowledge-system/agent-interfaces/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/personal-knowledge-system/obsidian-vault/</loc>
+    <loc>https://viggomeesters.com/personal-knowledge-system/markdown-vault/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/personal-knowledge-system/skills-procedural-memory/</loc>
+    <loc>https://viggomeesters.com/personal-knowledge-system/schema-and-frontmatter/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/personal-knowledge-system/telegram-cockpit/</loc>
+    <loc>https://viggomeesters.com/personal-knowledge-system/system-folder/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/personal-knowledge-system/vault-outside-obsidian/</loc>
+    <loc>https://viggomeesters.com/personal-knowledge-system/validation-and-indexing/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
