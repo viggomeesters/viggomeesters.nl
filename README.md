@@ -1,4 +1,4 @@
-# viggomeesters.nl
+# viggomeesters.com
 
 ![version](https://img.shields.io/badge/version-v1.0-31addd)
 
@@ -32,14 +32,14 @@ GitHub repository: `github.com/viggomeesters/viggomeesters.nl`
 
 ## DNS
 
-The domains `viggomeesters.nl` and `www.viggomeesters.nl` are attached to the Vercel project. DNS should point to Vercel:
+The domains `viggomeesters.com`, `www.viggomeesters.com`, `viggomeesters.nl`, and `www.viggomeesters.nl` are attached to the Vercel project. DNS should point to Vercel:
 
 ```text
-A viggomeesters.nl 76.76.21.21
-A www.viggomeesters.nl 76.76.21.21
+A viggomeesters.com 76.76.21.21
+A www.viggomeesters.com 76.76.21.21
 ```
 
-The canonical hostname is `viggomeesters.nl`; `www.viggomeesters.nl` redirects to the apex domain.
+The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggomeesters.nl`, and `www.viggomeesters.nl` redirect to the apex domain.
 
 ## Content Map
 

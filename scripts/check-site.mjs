@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const baseUrl = "https://viggomeesters.nl";
+const baseUrl = "https://viggomeesters.com";
 const errors = [];
 
 function read(file) {
@@ -96,25 +96,26 @@ for (const file of variantPages) {
 }
 
 const robots = read("robots.txt");
-assert(robots.includes("Sitemap: https://viggomeesters.nl/sitemap.xml"), "robots.txt: missing sitemap");
+assert(robots.includes("Sitemap: https://viggomeesters.com/sitemap.xml"), "robots.txt: missing sitemap");
 assert(robots.includes("Disallow: /variant-"), "robots.txt: variants are not disallowed");
 
 const vercel = JSON.parse(read("vercel.json"));
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");
 assert(Array.isArray(vercel.redirects), "vercel.json: redirects must be configured");
-assert(
-  vercel.redirects.some(
-    (redirect) =>
-      redirect.destination === "https://viggomeesters.nl/:path*" &&
-      redirect.has?.some(
-        (condition) =>
-          condition.type === "header" &&
-          condition.key === "host" &&
-          condition.value === "www.viggomeesters.nl",
-      ),
-  ),
-  "vercel.json: missing www to apex redirect",
-);
+for (const host of ["www.viggomeesters.com", "viggomeesters.nl", "www.viggomeesters.nl"]) {
+  assert(
+    vercel.redirects.some(
+      (redirect) =>
+        redirect.destination === "https://viggomeesters.com/:path*" &&
+        redirect.has?.some(
+          (condition) =>
+            condition.type === "host" &&
+            condition.value === host,
+        ),
+    ),
+    `vercel.json: missing redirect from ${host} to viggomeesters.com`,
+  );
+}
 assert(
   vercel.headers?.some(
     (entry) =>

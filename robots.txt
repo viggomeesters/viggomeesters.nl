@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /variant-
 
-Sitemap: https://viggomeesters.nl/sitemap.xml
+Sitemap: https://viggomeesters.com/sitemap.xml

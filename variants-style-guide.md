@@ -1,6 +1,6 @@
 # Homepage Variants — Style Guide
 
-Five unique creative directions for viggomeesters.nl. All share: dark base, per-project color system, same content/icons, responsive, production-ready.
+Five unique creative directions for viggomeesters.com. All share: dark base, per-project color system, same content/icons, responsive, production-ready.
 
 ---
 

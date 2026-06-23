@@ -2,7 +2,7 @@
 
 ## Project
 
-This repository is a static personal site for `viggomeesters.nl`, deployed on Vercel and linked to `github.com/viggomeesters/viggomeesters.nl`.
+This repository is a static personal site for `viggomeesters.com` (repo name still `viggomeesters.nl`), deployed on Vercel and linked to `github.com/viggomeesters/viggomeesters.nl`.
 
 There is no framework and no build step. The production output is the repository root.
 
@@ -25,7 +25,7 @@ There is no framework and no build step. The production output is the repository
 
 - Keep the site static unless the task explicitly asks for a framework.
 - Prefer small, direct edits to the relevant HTML file over introducing shared tooling.
-- Preserve absolute public URLs as `https://viggomeesters.nl/...`.
+- Preserve absolute public URLs as `https://viggomeesters.com/...`.
 - When adding a public page, update all of these together:
   - the page canonical URL,
   - `sitemap.xml`,
@@ -37,7 +37,7 @@ There is no framework and no build step. The production output is the repository
 ## viggomeesters-site-upkeep
 
 Use this repo-local process when asked to refresh, audit, add to, or otherwise
-keep `viggomeesters.nl` up to date. This is the repo-specific skill/procedure;
+keep `viggomeesters.com` up to date. This is the repo-specific skill/procedure;
 keep it here instead of creating a detached global skill unless the user
 explicitly asks for one.
 
@@ -85,7 +85,7 @@ task needs external verification.
   relevant internal links, and `scripts/check-site.mjs` expectations together.
 - When materially changing a public page, update only that page's sitemap
   `lastmod`; do not bulk-touch dates.
-- Keep public canonical URLs on `https://viggomeesters.nl/...`.
+- Keep public canonical URLs on `https://viggomeesters.com/...`.
 - Keep `robots.txt` and `vercel.json` protections for `variant-*` pages intact.
 - Avoid adding scripts, dependencies, shared tooling, or a build step unless the
   repeated maintenance problem is concrete and the user agrees.
@@ -105,7 +105,7 @@ task needs external verification.
 - `Run viggomeesters-site-upkeep freshness audit for the public pages.`
 - `Update the uses page using viggomeesters-site-upkeep.`
 - `Add a public page using viggomeesters-site-upkeep and keep sitemap/canonical in sync.`
-- `Prepare viggomeesters.nl for deploy; do not deploy yet.`
+- `Prepare viggomeesters.com for deploy; do not deploy yet.`
 
 ## Deployment
 
@@ -114,8 +114,8 @@ The Vercel project is `viggos-projects-eac4720a/viggomeesters.nl`.
 Custom domains are configured in Vercel, but DNS must point to Vercel:
 
 ```text
-A viggomeesters.nl 76.76.21.21
-A www.viggomeesters.nl 76.76.21.21
+A viggomeesters.com 76.76.21.21
+A www.viggomeesters.com 76.76.21.21
 ```
 
-The canonical hostname is `viggomeesters.nl`; `www.viggomeesters.nl` should redirect to the apex domain.
+The canonical hostname is `viggomeesters.com`; `www.viggomeesters.com`, `viggomeesters.nl`, and `www.viggomeesters.nl` should redirect to the apex domain.

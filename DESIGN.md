@@ -1,4 +1,4 @@
-# Design Manifest — viggomeesters.nl
+# Design Manifest — viggomeesters.com
 
 This document is the single source of truth for all design decisions on this site.
 Every change must be checked against these principles. If it conflicts, the change loses.
@@ -271,7 +271,7 @@ All icons are **inline SVG**, sized `22x22` in a `44x44` container (`card-icon-w
 | `description` | Data & Systems Innovator building AI-assisted tools, workflows, and knowledge systems that turn complexity into structure. |
 | `theme-color` | `#0c0c0f` |
 | `og:image` | `/og-image.png` (1200x630) |
-| `og:url` | `https://viggomeesters.nl` |
+| `og:url` | `https://viggomeesters.com` |
 | `twitter:card` | `summary_large_image` |
 | Favicon | Inline SVG data URI — "VM" monogram with blue→purple→orange gradient |
 
