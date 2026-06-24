@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JSONL Is the Agent-First Data Structure</title>
-  <meta name="description" content="Why JSONL records plus JSON Schema and evals make a better canonical source of truth for agent-first systems than YAML, one big JSON file, or SQLite.">
+  <meta name="description" content="Why atomic JSONL records plus JSON Schema, retrieval hints, and evals make a better canonical source of truth for agent-first knowledge corpora than YAML, one big JSON file, or SQLite.">
   <link rel="canonical" href="https://viggomeesters.com/jsonl-agent-first-data-structures/">
   <meta name="theme-color" content="#0c0c0f">
   <meta property="og:title" content="JSONL Is the Agent-First Data Structure">
-  <meta property="og:description" content="Agent-first systems need atomic, typed, citeable records. JSONL should be the canonical SSOT; SQLite, DuckDB, and bundles are build targets.">
+  <meta property="og:description" content="Agent-first knowledge systems need atomic, typed, citeable records. JSONL should be canonical; SQLite, DuckDB, indexes, embeddings, and bundles are build targets.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://viggomeesters.com/jsonl-agent-first-data-structures/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -381,6 +381,115 @@
     .section-num.amber { background: var(--amber-soft); color: var(--amber); }
     .section-num.cyan { background: var(--cyan-soft); color: var(--cyan); }
 
+
+    .article-cover {
+      position: relative;
+      overflow: hidden;
+      margin: -18px 0 42px;
+      min-height: 260px;
+      border: 1px solid rgba(59,130,246,0.22);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(59,130,246,0.24), transparent 34%),
+        radial-gradient(circle at 82% 28%, rgba(168,85,247,0.22), transparent 32%),
+        radial-gradient(circle at 58% 84%, rgba(34,197,94,0.18), transparent 34%),
+        linear-gradient(135deg, rgba(20,20,24,0.96), rgba(12,12,15,0.98));
+      box-shadow: 0 24px 80px rgba(0,0,0,0.34), inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+
+    .article-cover::before {
+      content: '';
+      position: absolute;
+      inset: 26px;
+      border-radius: 22px;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
+      background-size: 34px 34px;
+      mask-image: radial-gradient(circle at center, black, transparent 78%);
+    }
+
+    .cover-date {
+      position: absolute;
+      top: 22px;
+      right: 24px;
+      z-index: 2;
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      padding: 8px 12px;
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 999px;
+      background: rgba(12,12,15,0.62);
+      backdrop-filter: blur(10px);
+    }
+
+    .cover-map {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .cover-node, .cover-pill {
+      position: absolute;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(12,12,15,0.78);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.24);
+      backdrop-filter: blur(12px);
+    }
+
+    .cover-node {
+      width: 112px;
+      height: 112px;
+      border-radius: 28px;
+      display: grid;
+      place-items: center;
+      color: var(--text-bright);
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      font-size: 1.6em;
+    }
+
+    .cover-pill {
+      border-radius: 999px;
+      padding: 9px 13px;
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .cover-line {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.20), transparent);
+      transform-origin: left center;
+    }
+
+    .cover-title {
+      position: absolute;
+      left: 28px;
+      bottom: 26px;
+      z-index: 2;
+      max-width: 420px;
+    }
+
+    .cover-title strong {
+      display: block;
+      color: var(--text-bright);
+      font-size: clamp(1.55rem, 4vw, 2.45rem);
+      line-height: 1.02;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .cover-title span {
+      color: var(--text-secondary);
+      font-size: 0.88em;
+    }
+
     /* Divider */
     .divider {
       height: 1px;
@@ -484,6 +593,11 @@
       .comparison { font-size: 0.82em; }
       .comparison th, .comparison td { padding: 10px 12px; }
       pre { padding: 16px; }
+      .article-cover { min-height: 220px; border-radius: 22px; }
+      .cover-date { left: 18px; right: auto; top: 18px; }
+      .cover-node { width: 84px; height: 84px; border-radius: 22px; font-size: 1.2em; }
+      .cover-title { left: 20px; right: 20px; bottom: 20px; }
+      .cover-pill { font-size: 0.66em; }
     }
   </style>
 </head>
@@ -502,14 +616,33 @@
         <span class="tool-chip gemini"><span class="tool-dot"></span>Evals</span>
         <span class="tool-chip obsidian"><span class="tool-dot"></span>SQLite as artifact</span>
       </div>
-      <p class="meta">By Viggo Meesters &middot; June 2026</p>
+      <p class="meta">By Viggo Meesters &middot; 24 June 2026</p>
     </div>
+
+    <figure class="article-cover" aria-label="Article visual: JSONL records compile into agent runtime artifacts">
+      <div class="cover-date">24 Jun 2026</div>
+      <div class="cover-map" aria-hidden="true">
+        <div class="cover-line" style="left: 22%; top: 39%; width: 42%; transform: rotate(15deg);"></div>
+        <div class="cover-line" style="left: 38%; top: 56%; width: 36%; transform: rotate(-18deg);"></div>
+        <div class="cover-node" style="left: 12%; top: 24%; color: var(--codex);">{ }</div>
+        <div class="cover-node" style="right: 13%; top: 36%; color: var(--green);">.jsonl</div>
+        <div class="cover-pill" style="left: 42%; top: 18%;">schema/*.json</div>
+        <div class="cover-pill" style="left: 42%; top: 45%;">evals/*.jsonl</div>
+        <div class="cover-pill" style="right: 9%; bottom: 22%;">dist/*.sqlite</div>
+      </div>
+      <figcaption class="cover-title">
+        <strong>Atomic records first.</strong>
+        <span>Schema-checked source. Generated runtime databases. Retrieval evals as proof.</span>
+      </figcaption>
+    </figure>
+
 
     <nav class="toc">
       <div class="toc-title">Contents</div>
       <ol>
         <li><a href="#thesis">The thesis</a></li>
         <li><a href="#why-jsonl">Why JSONL wins</a></li>
+        <li><a href="#nuance">The important nuance</a></li>
         <li><a href="#not-sqlite">Why SQLite is not the SSOT</a></li>
         <li><a href="#record-shape">The agent-first record shape</a></li>
         <li><a href="#architecture">The architecture I would build</a></li>
@@ -522,11 +655,13 @@
 
       <p>I recently changed my mind about the canonical data layer for agent-first systems. If humans are the primary authors, Markdown or YAML can be a good starting point. If agents are the primary readers, writers, retrievers, and auditors, the source of truth should optimize for their operating model instead.</p>
 
-      <p>For <a href="/sap-agent-context/">SAP Agent Context</a>, that means the canonical SSOT should be <strong>JSONL files plus JSON Schema</strong>. Not SQLite as the canonical source. Not one large JSON blob. YAML can still be an authoring layer, but it should not be the hard machine contract.</p>
+      <p>For <a href="/sap-agent-context/">SAP Agent Context</a>, that means the canonical SSOT should be <strong>JSONL files plus JSON Schema</strong>. SAP Agent Context is not one configuration object; it is a knowledge corpus and agent context graph with apps, tables, fields, workflows, roles, claims, sources, relations, and eval fixtures.</p>
+
+      <p>That distinction matters. For one contract object, a single JSON file can be the right canonical form. For many atomic knowledge records, JSONL is stronger. For query/runtime/index speed, SQLite or DuckDB should be generated. YAML can remain a human authoring format, but it should not be the hard agent contract.</p>
 
       <div class="callout tip">
         <div class="callout-title">Strong recommendation</div>
-        <p>Make JSONL records the canonical source, generate SQLite/DuckDB/bundles/embeddings from it, and treat evals as part of the data contract.</p>
+        <p>Make JSONL records the canonical source for the knowledge corpus, keep JSON Schema as the contract, generate SQLite/DuckDB/Turso/vector artifacts from it, and treat evals as part of the quality contract.</p>
       </div>
 
       <div class="workflow">
@@ -574,9 +709,41 @@
 
       <p>Most importantly: JSONL pushes you away from documents and toward records. That matters when the product is not a human-readable knowledge base, but a context operating system for agents.</p>
 
+
       <div class="divider"></div>
 
-      <h2 id="not-sqlite"><span class="section-num purple">3</span>Why SQLite is not the SSOT</h2>
+      <h2 id="nuance"><span class="section-num purple">3</span>The important nuance</h2>
+
+      <p>The answer is not “JSONL for everything.” The answer is: choose the canonical format based on the shape of the truth.</p>
+
+      <table class="comparison">
+        <tr>
+          <th>Source shape</th>
+          <th>Best canonical form</th>
+        </tr>
+        <tr>
+          <td>One configuration or schema contract</td>
+          <td>JSON. A single <code>vault-schema.json</code>-style contract can be the right source of truth.</td>
+        </tr>
+        <tr>
+          <td>Many atomic knowledge records</td>
+          <td>JSONL. Records stay small, reviewable, streamable, citeable, and independently validatable.</td>
+        </tr>
+        <tr>
+          <td>Query, runtime, search, analytics</td>
+          <td>Generated SQLite, DuckDB, Turso, vector indexes, and bundles. Fast to use, not canonical to edit.</td>
+        </tr>
+        <tr>
+          <td>Human drafting</td>
+          <td>Optional YAML or Markdown authoring layer. Useful for people, but compiled into the stricter record contract.</td>
+        </tr>
+      </table>
+
+      <p>I would also split curated retrieval data from generated indexes. Keywords, query patterns, and negative retrieval hints can be canonical because they encode intent. Embeddings, FTS indexes, ANN indexes, and database tables are generated artifacts.</p>
+
+      <div class="divider"></div>
+
+      <h2 id="not-sqlite"><span class="section-num amber">4</span>Why SQLite is not the SSOT</h2>
 
       <p>SQLite is excellent. I want it in the system. I just do not want it as the canonical source.</p>
 
@@ -591,12 +758,15 @@
 
       <div class="divider"></div>
 
-      <h2 id="record-shape"><span class="section-num green">4</span>The agent-first record shape</h2>
+      <h2 id="record-shape"><span class="section-num green">5</span>The agent-first record shape</h2>
 
-      <p>An agent-first record should not be a loose summary. It needs stable identity, claims, evidence, relations, retrieval hints, constraints, and freshness. Agents should not guess why a record exists or how safe it is to use.</p>
+      <p>An agent-first record should not be a loose summary. It needs stable identity, evidence, relations, retrieval hints, constraints, and freshness. If claims carry evidence, confidence, and freshness, they should often become first-class records instead of always being embedded inside an item.</p>
 
-      <div class="code-label">records/apps.jsonl</div>
-      <pre><code>{"id":"sap.app.eam.pm.ie03","kind":"sap_app","title":"IE03 - Display equipment","summary":"SAP GUI transaction context for displaying equipment.","topics":["sap-gui","eam","plant-maintenance","equipment"],"claims":[{"statement":"IE03 is used to display equipment master data.","confidence":"high","evidence_ids":["sap.ref.eam.pm.transaction-code-public-cross-check"]}],"relations":[{"type":"operates_on","target_id":"sap.object.eam-equipment"}],"retrieval":{"keywords":["IE03","equipment display","SAP GUI"],"queries":["How do I display equipment in SAP GUI?"],"negative_keywords":["create equipment","change equipment"]},"freshness":{"reviewed_at":"2026-06-24","review_after":"2026-12-24"}}</code></pre>
+      <div class="code-label">records/items/sap_app.jsonl</div>
+      <pre><code>{"id":"sap.app.eam.pm.ie03","kind":"sap_app","title":"IE03 - Display Equipment","summary":"SAP GUI transaction context for displaying equipment.","topics":["sap-gui","eam","plant-maintenance","equipment"],"claim_ids":["sap.claim.ie03.display-equipment"],"source_ids":["sap.source.tc-ie03-public"]}</code></pre>
+
+      <div class="code-label">records/claims.jsonl</div>
+      <pre><code>{"id":"sap.claim.ie03.display-equipment","subject_id":"sap.app.eam.pm.ie03","statement":"IE03 is used to display equipment master data.","confidence":"high","evidence_ids":["sap.source.tc-ie03-public"],"freshness":{"reviewed_at":"2026-06-24","review_after":"2026-12-24"}}</code></pre>
 
       <p>The point is not that every record must be large. The point is that the important semantics are explicit. A good agent record can answer:</p>
 
@@ -612,27 +782,33 @@
 
       <div class="divider"></div>
 
-      <h2 id="architecture"><span class="section-num amber">5</span>The architecture I would build</h2>
+      <h2 id="architecture"><span class="section-num cyan">6</span>The architecture I would build</h2>
 
       <p>The repo should not be organized around documents. It should be organized around typed, testable, buildable records.</p>
 
       <div class="code-label">repository shape</div>
       <pre><code>records/
-  apps.jsonl
-  tables.jsonl
-  fields.jsonl
-  workflows.jsonl
-  roles.jsonl
+  items/
+    sap_app.jsonl
+    sap_table.jsonl
+    sap_field.jsonl
+    workflow.jsonl
+    role.jsonl
   claims.jsonl
-  sources.jsonl
   relations.jsonl
+  sources.jsonl
 
 schema/
   item.schema.json
   claim.schema.json
   relation.schema.json
+  source.schema.json
   bundle.schema.json
   eval.schema.json
+
+retrieval/
+  hints.jsonl
+  query_patterns.jsonl
 
 evals/
   retrieval.jsonl
@@ -642,8 +818,9 @@ evals/
 dist/
   sap-agent-context.sqlite
   sap-agent-context.duckdb
-  bundles/*.json
-  embeddings/*.jsonl</code></pre>
+  indexes/
+  bundles/
+  embeddings/</code></pre>
 
       <p>The CLI then becomes the agent interface:</p>
 
@@ -656,14 +833,14 @@ sap-agent-context build-db --target duckdb
 sap-agent-context eval retrieval
 sap-agent-context explain sap.app.eam.pm.ie03</code></pre>
 
-      <p>The product is not the repository. The product is the bounded context bundle an agent can trust for a specific goal.</p>
+      <p>The product is not the repository. The product is the bounded context bundle an agent can trust for a specific goal: relevant records, must-cite evidence, warnings, gaps, confidence, and forbidden assumptions.</p>
 
       <div class="code-label">dist/bundles/eam-equipment-display.json</div>
-      <pre><code>{"bundle_id":"bundle.eam.equipment-display","goal":"write FO for EAM equipment display flow","items":["sap.app.eam.pm.ie03","sap.object.eam-equipment"],"must_cite":["sap.ref.eam.pm.transaction-code-public-cross-check"],"warnings":[],"gaps":["customer-specific authorization model not supplied"],"confidence":"medium"}</code></pre>
+      <pre><code>{"bundle_id":"bundle.eam.equipment-display","goal":"write FO for EAM equipment display flow","items":["sap.app.eam.pm.ie03","sap.object.eam-equipment"],"must_cite":["sap.source.tc-ie03-public"],"warnings":[],"gaps":["customer-specific authorization model not supplied"],"forbidden_assumptions":["do not infer customer authorization design"],"confidence":"medium"}</code></pre>
 
       <div class="divider"></div>
 
-      <h2 id="north-star"><span class="section-num cyan">6</span>The north star</h2>
+      <h2 id="north-star"><span class="section-num orange">7</span>The north star</h2>
 
       <p>If humans rarely touch the data directly, stop designing the canonical layer as if it is a document library. Design it for what agents actually need to do:</p>
 
@@ -674,7 +851,7 @@ sap-agent-context explain sap.app.eam.pm.ie03</code></pre>
         <li><strong>Detect gaps</strong> instead of hallucinating missing customer-specific proof.</li>
       </ol>
 
-      <p>That is why my current answer is simple: <strong>JSONL is the best canonical SSOT for agent-first systems</strong>. SQLite, DuckDB, Turso, bundles, embeddings, and vector stores are generated accelerators. Evals are the quality contract. JSON Schema is the guardrail. The source is atomic JSONL.</p>
+      <p>That is why my current answer is slightly more precise: <strong>JSONL is the best canonical SSOT for agent-first knowledge corpora</strong>. A single schema contract can still be JSON. SQLite, DuckDB, Turso, bundles, embeddings, and generated indexes are accelerators. Curated retrieval hints and evals are part of the quality contract. JSON Schema is the guardrail. The knowledge source is atomic JSONL.</p>
 
       <div class="callout info">
         <div class="callout-title">Stack implication</div>
