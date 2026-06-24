@@ -385,34 +385,32 @@
     .article-cover {
       position: relative;
       overflow: hidden;
-      margin: -18px 0 42px;
-      min-height: 260px;
-      border: 1px solid rgba(59,130,246,0.22);
-      border-radius: 28px;
+      margin: -10px 0 42px;
+      min-height: 330px;
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 24px;
       background:
-        radial-gradient(circle at 18% 18%, rgba(59,130,246,0.24), transparent 34%),
-        radial-gradient(circle at 82% 28%, rgba(168,85,247,0.22), transparent 32%),
-        radial-gradient(circle at 58% 84%, rgba(34,197,94,0.18), transparent 34%),
-        linear-gradient(135deg, rgba(20,20,24,0.96), rgba(12,12,15,0.98));
-      box-shadow: 0 24px 80px rgba(0,0,0,0.34), inset 0 1px 0 rgba(255,255,255,0.05);
+        linear-gradient(145deg, rgba(26,26,32,0.98), rgba(12,12,15,0.99)),
+        radial-gradient(circle at 78% 22%, rgba(59,130,246,0.14), transparent 34%);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.04);
     }
 
     .article-cover::before {
       content: '';
       position: absolute;
-      inset: 26px;
-      border-radius: 22px;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px);
-      background-size: 34px 34px;
-      mask-image: radial-gradient(circle at center, black, transparent 78%);
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 0, rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(transparent 0, rgba(255,255,255,0.028) 1px, transparent 1px);
+      background-size: 42px 42px;
+      opacity: 0.45;
+      mask-image: linear-gradient(135deg, black, transparent 78%);
     }
 
     .cover-date {
       position: absolute;
       top: 22px;
-      right: 24px;
+      left: 24px;
       z-index: 2;
       font-family: var(--font-mono);
       font-size: 0.72em;
@@ -422,56 +420,59 @@
       padding: 8px 12px;
       border: 1px solid rgba(255,255,255,0.10);
       border-radius: 999px;
-      background: rgba(12,12,15,0.62);
-      backdrop-filter: blur(10px);
+      background: rgba(12,12,15,0.68);
     }
 
-    .cover-map {
+    .cover-mark {
       position: absolute;
-      inset: 0;
-      z-index: 1;
-    }
-
-    .cover-node, .cover-pill {
-      position: absolute;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(12,12,15,0.78);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.24);
-      backdrop-filter: blur(12px);
-    }
-
-    .cover-node {
-      width: 112px;
-      height: 112px;
-      border-radius: 28px;
-      display: grid;
-      place-items: center;
-      color: var(--text-bright);
+      top: 26px;
+      right: 28px;
+      z-index: 2;
+      color: rgba(238,239,244,0.14);
+      font-size: clamp(3.8rem, 12vw, 7.2rem);
+      line-height: 0.85;
       font-weight: 700;
-      letter-spacing: -0.05em;
-      font-size: 1.6em;
+      letter-spacing: -0.08em;
+      pointer-events: none;
     }
 
-    .cover-pill {
-      border-radius: 999px;
-      padding: 9px 13px;
-      font-family: var(--font-mono);
-      font-size: 0.72em;
-      color: var(--text-secondary);
-      white-space: nowrap;
+    .cover-code {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      z-index: 2;
+      display: grid;
+      gap: 8px;
+      max-width: 560px;
     }
 
     .cover-line {
-      position: absolute;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.20), transparent);
-      transform-origin: left center;
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      padding: 9px 12px;
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 12px;
+      background: rgba(12,12,15,0.72);
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      line-height: 1.45;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cover-line strong {
+      color: var(--text-bright);
+      font-weight: 600;
     }
 
     .cover-title {
       position: absolute;
-      left: 28px;
-      bottom: 26px;
+      left: 24px;
+      top: 86px;
       z-index: 2;
       max-width: 420px;
     }
@@ -479,15 +480,15 @@
     .cover-title strong {
       display: block;
       color: var(--text-bright);
-      font-size: clamp(1.55rem, 4vw, 2.45rem);
+      font-size: clamp(1.55rem, 4vw, 2.35rem);
       line-height: 1.02;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.055em;
       margin-bottom: 8px;
     }
 
     .cover-title span {
       color: var(--text-secondary);
-      font-size: 0.88em;
+      font-size: 0.9em;
     }
 
     /* Divider */
@@ -593,11 +594,12 @@
       .comparison { font-size: 0.82em; }
       .comparison th, .comparison td { padding: 10px 12px; }
       pre { padding: 16px; }
-      .article-cover { min-height: 220px; border-radius: 22px; }
-      .cover-date { left: 18px; right: auto; top: 18px; }
-      .cover-node { width: 84px; height: 84px; border-radius: 22px; font-size: 1.2em; }
-      .cover-title { left: 20px; right: 20px; bottom: 20px; }
-      .cover-pill { font-size: 0.66em; }
+      .article-cover { min-height: 300px; border-radius: 20px; }
+      .cover-date { left: 18px; top: 18px; }
+      .cover-mark { right: 20px; top: 30px; }
+      .cover-title { left: 18px; right: 18px; top: 66px; }
+      .cover-code { left: 18px; right: 18px; bottom: 18px; }
+      .cover-line { font-size: 0.66em; }
     }
   </style>
 </head>
@@ -621,19 +623,16 @@
 
     <figure class="article-cover" aria-label="Article visual: JSONL records compile into agent runtime artifacts">
       <div class="cover-date">24 Jun 2026</div>
-      <div class="cover-map" aria-hidden="true">
-        <div class="cover-line" style="left: 22%; top: 39%; width: 42%; transform: rotate(15deg);"></div>
-        <div class="cover-line" style="left: 38%; top: 56%; width: 36%; transform: rotate(-18deg);"></div>
-        <div class="cover-node" style="left: 12%; top: 24%; color: var(--codex);">{ }</div>
-        <div class="cover-node" style="right: 13%; top: 36%; color: var(--green);">.jsonl</div>
-        <div class="cover-pill" style="left: 42%; top: 18%;">schema/*.json</div>
-        <div class="cover-pill" style="left: 42%; top: 45%;">evals/*.jsonl</div>
-        <div class="cover-pill" style="right: 9%; bottom: 22%;">dist/*.sqlite</div>
-      </div>
+      <div class="cover-mark" aria-hidden="true">JSONL</div>
       <figcaption class="cover-title">
         <strong>Atomic records first.</strong>
-        <span>Schema-checked source. Generated runtime databases. Retrieval evals as proof.</span>
+        <span>Canonical source as lines. Runtime databases as build targets.</span>
       </figcaption>
+      <div class="cover-code" aria-hidden="true">
+        <span class="cover-line"><strong>records/items.jsonl</strong> → typed SAP context</span>
+        <span class="cover-line"><strong>claims.jsonl</strong> → evidence, confidence, freshness</span>
+        <span class="cover-line"><strong>dist/*.sqlite</strong> → generated runtime index</span>
+      </div>
     </figure>
 
 
