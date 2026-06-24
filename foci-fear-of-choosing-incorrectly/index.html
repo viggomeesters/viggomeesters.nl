@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOCI: Fear of Choosing Incorrectly</title>
+  <meta name="description" content="FOCI is the fear of choosing incorrectly: the decision-making cousin of FOMO. A compact frame for noticing when comparison has stopped helping and started blocking progress.">
+  <link rel="canonical" href="https://viggomeesters.com/foci-fear-of-choosing-incorrectly/">
+  <meta name="theme-color" content="#0c0c0f">
+  <meta property="og:title" content="FOCI: Fear of Choosing Incorrectly">
+  <meta property="og:description" content="FOMO pulls you toward every option. FOCI freezes you in front of one. The remedy starts by separating reversible decisions from irreversible ones.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.com/foci-fear-of-choosing-incorrectly/">
+  <meta property="og:image" content="https://viggomeesters.com/assets/blog/foci-fear-of-choosing-incorrectly-hero.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://viggomeesters.com/assets/blog/foci-fear-of-choosing-incorrectly-hero.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0c0c0f;--surface:#141418;--elevated:#1a1a20;--border:#2a2a32;--sub:#1e1e26;--text:#c8cbd5;--secondary:#8a90a6;--muted:#53586b;--bright:#eeeff4;--orange:#f97316;--purple:#a855f7;--blue:#3b82f6;--green:#22c55e;--amber:#eab308;--cyan:#06b6d4;--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px}
+    html{background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.7;min-height:100vh;overflow-x:hidden}
+    .aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+    .aurora::before{content:'';position:absolute;inset:-20%;background:radial-gradient(ellipse 600px 400px at 16% 8%,rgba(249,115,22,.07),transparent 70%),radial-gradient(ellipse 520px 520px at 80% 22%,rgba(168,85,247,.06),transparent 62%),radial-gradient(ellipse 680px 320px at 48% 68%,rgba(59,130,246,.05),transparent 62%),radial-gradient(ellipse 440px 620px at 8% 82%,rgba(34,197,94,.045),transparent 72%)}
+    .page{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:60px 20px 80px}
+    .back{display:inline-flex;gap:6px;align-items:center;margin-bottom:40px;padding:6px 14px;border:1px solid var(--sub);border-radius:10px;background:var(--surface);color:var(--muted);font-size:.82em;text-decoration:none;transition:color .2s,border-color .2s,transform .2s}
+    .back:hover{color:var(--secondary);border-color:var(--border);transform:translateX(-3px)}
+    .hero{margin-bottom:38px}
+    .eyebrow{font-family:var(--mono);font-size:.75em;color:var(--orange);letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+    h1{font-size:clamp(2.15rem,6vw,4rem);line-height:1.05;letter-spacing:-.055em;color:var(--bright);font-weight:700;text-wrap:balance;margin-bottom:14px}
+    .subtitle{font-size:1.04em;color:var(--secondary);max-width:690px}
+    .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:10px;border:1px solid var(--sub);background:rgba(255,255,255,.035);font-family:var(--mono);font-size:.74em;color:var(--secondary)}
+    .chip::before{content:'';width:6px;height:6px;border-radius:999px;background:currentColor}
+    .chip.orange{color:var(--orange)}.chip.blue{color:var(--blue)}.chip.purple{color:var(--purple)}.chip.green{color:var(--green)}
+    .article-cover{margin:34px 0 44px;border:1px solid var(--sub);border-radius:24px;background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(255,255,255,.015));overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.35)}
+    .article-cover img{display:block;width:100%;height:auto}
+    .article-cover figcaption{padding:12px 16px;color:var(--muted);font-size:.82em;border-top:1px solid var(--sub)}
+    .toc{padding:18px 20px;margin:0 0 42px;border:1px solid var(--sub);border-radius:var(--radius);background:rgba(255,255,255,.025)}
+    .toc strong{display:block;color:var(--bright);margin-bottom:8px}
+    .toc a{display:block;color:var(--secondary);text-decoration:none;padding:4px 0;font-size:.95em}
+    .toc a:hover{color:var(--orange)}
+    .article h2{font-size:1.42em;letter-spacing:-.025em;color:var(--bright);margin:46px 0 16px;padding-top:8px}
+    .article h3{font-size:1.05em;color:#e0e1e8;margin:28px 0 10px}
+    .article p{margin-bottom:16px}
+    .article ul,.article ol{padding-left:20px;margin-bottom:16px}
+    .article li{margin-bottom:8px}
+    .article strong{color:#e0e1e8;font-weight:600}
+    .article a{color:var(--orange);text-decoration:none;border-bottom:1px solid rgba(249,115,22,.3)}
+    code{font-family:var(--mono);font-size:.88em;background:var(--elevated);padding:2px 7px;border-radius:6px;color:#e0e1e8}
+    .callout{margin:24px 0;padding:20px 22px;border-radius:var(--radius);border:1px solid rgba(59,130,246,.18);background:rgba(59,130,246,.075);color:#d9e6ff}
+    .callout.orange{border-color:rgba(249,115,22,.22);background:rgba(249,115,22,.08);color:#ffe1cc}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 26px}
+    .card{padding:18px;border:1px solid var(--sub);border-radius:var(--radius);background:rgba(255,255,255,.026)}
+    .card h3{margin-top:0;color:var(--bright)}
+    .rule{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;margin:16px 0;padding:16px;border:1px solid var(--sub);border-radius:14px;background:rgba(255,255,255,.025)}
+    .num{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:rgba(249,115,22,.11);color:var(--orange);font-family:var(--mono);font-weight:600}
+    .footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--sub);color:var(--muted);font-size:.88em}
+    .footer a{color:var(--secondary);text-decoration:none}
+    @media (max-width:640px){.page{padding:44px 18px 64px}.split{grid-template-columns:1fr}h1{font-size:2.35rem}}
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <a href="/guides/" class="back">&larr; Guides &amp; Articles</a>
+
+    <header class="hero">
+      <div class="eyebrow">Decision language</div>
+      <h1>FOCI: Fear of Choosing Incorrectly</h1>
+      <p class="subtitle">FOMO is the fear of missing out. FOCI is the quieter cousin: the fear that the option you choose will turn out to be the wrong one.</p>
+      <div class="meta">
+        <span class="chip orange">June 24, 2026</span>
+        <span class="chip blue">decision-making</span>
+        <span class="chip purple">coined term</span>
+        <span class="chip green">practical frame</span>
+      </div>
+    </header>
+
+    <figure class="article-cover">
+      <img src="/assets/blog/foci-fear-of-choosing-incorrectly-hero.svg" alt="FOCI hero illustration showing option cards, a highlighted choice, a compass, and a good-enough checkmark" width="1280" height="720" loading="eager" decoding="async">
+      <figcaption>FOCI names the moment where more comparison stops reducing risk and starts delaying the choice.</figcaption>
+    </figure>
+
+    <nav class="toc" aria-label="Table of contents">
+      <strong>In this article</strong>
+      <a href="#definition">1. The definition</a>
+      <a href="#fomo-vs-foci">2. FOMO vs FOCI</a>
+      <a href="#signals">3. How FOCI shows up</a>
+      <a href="#escape">4. The escape hatch</a>
+      <a href="#language">5. Why the term helps</a>
+    </nav>
+
+    <article class="article">
+      <section id="definition">
+        <h2>1. The definition</h2>
+        <p><strong>FOCI</strong> stands for <strong>Fear of Choosing Incorrectly</strong>: the anxiety that a decision will be wrong, even after you have enough information to make a reasonable call.</p>
+        <p>The term came out of a small household taxonomy Anne and I use for decisions. We already had <strong>FOMO</strong>, <em>Fear of Missing Out</em>. But FOMO did not quite describe the feeling of standing in front of several acceptable options and freezing because one of them might later prove inferior.</p>
+        <div class="callout orange"><strong>Short version:</strong> FOMO asks, “What if I miss something?” FOCI asks, “What if I choose the wrong thing?”</div>
+      </section>
+
+      <section id="fomo-vs-foci">
+        <h2>2. FOMO vs FOCI</h2>
+        <p>The two fears can look similar from the outside: too many tabs open, too many reviews read, too many options still alive. But the internal motion is different.</p>
+        <div class="split">
+          <div class="card">
+            <h3>FOMO pulls outward</h3>
+            <p>It keeps adding inputs: another event, another article, another product, another route. The loss is imagined as <em>not being there</em> when something better happens.</p>
+          </div>
+          <div class="card">
+            <h3>FOCI locks inward</h3>
+            <p>It keeps re-checking the choice itself. The loss is imagined as <em>being responsible</em> for choosing an option that later feels wrong.</p>
+          </div>
+        </div>
+        <p>That distinction matters because the remedies differ. FOMO often needs boundaries around intake. FOCI needs a better decision rule.</p>
+      </section>
+
+      <section id="signals">
+        <h2>3. How FOCI shows up</h2>
+        <p>FOCI is easy to mistake for diligence because it often starts as healthy comparison. It becomes a problem when extra research no longer changes the likely decision, only the comfort level around deciding.</p>
+        <div class="rule"><span class="num">1</span><p><strong>The comparison keeps restarting.</strong> You find a good option, then rebuild the shortlist because the existence of alternatives still feels threatening.</p></div>
+        <div class="rule"><span class="num">2</span><p><strong>The decision rule stays implicit.</strong> You compare price, quality, taste, risk, reversibility, aesthetics, and future regret at the same time, so no option can conclusively win.</p></div>
+        <div class="rule"><span class="num">3</span><p><strong>The cost of delay disappears from the spreadsheet.</strong> The wrong choice feels expensive; the stalled choice feels free. It usually is not.</p></div>
+        <div class="rule"><span class="num">4</span><p><strong>You want certainty for a decision that only supports probability.</strong> Some choices can be improved with information. Others can only be made, observed, and adjusted.</p></div>
+      </section>
+
+      <section id="escape">
+        <h2>4. The escape hatch</h2>
+        <p>The practical move is not to bully yourself into decisiveness. It is to make the structure of the choice visible.</p>
+        <ol>
+          <li><strong>Name the fear.</strong> “This is not FOMO; this is FOCI.” That stops the fake solution of simply gathering more options.</li>
+          <li><strong>Classify reversibility.</strong> Is this a one-way door, a two-way door, or a subscription you can cancel next month?</li>
+          <li><strong>Define good enough before comparing.</strong> Write the minimum bar in one sentence: budget, safety, quality, time, or taste.</li>
+          <li><strong>Set a stop rule.</strong> Decide what new information would actually change the choice. If the next article cannot change it, it is entertainment, not research.</li>
+          <li><strong>Keep the repair path explicit.</strong> If the choice is wrong, what is the first corrective move? A known repair path lowers the emotional price of choosing.</li>
+        </ol>
+        <div class="callout"><strong>The key test:</strong> if you already know what you would pick but keep searching for emotional permission, you are probably inside FOCI.</div>
+      </section>
+
+      <section id="language">
+        <h2>5. Why the term helps</h2>
+        <p>A good term is a handle. It lets two people point at a repeated pattern without relitigating the whole psychology every time.</p>
+        <p>FOCI is useful because it makes a private decision state externally discussable: “Are we still learning, or are we scared to choose incorrectly?” That question is less dramatic than “why are we overthinking this?” and more actionable than “just decide.”</p>
+        <p>It also protects good research from becoming infinite research. Some choices deserve a careful comparison. Some deserve a timer, a threshold, and the humility to adjust later.</p>
+        <p><strong>FOCI does not mean every doubt is irrational.</strong> It means the next useful step may be designing the decision, not feeding the comparison machine.</p>
+      </section>
+    </article>
+
+    <div class="footer">
+      <a href="/guides/">Guides &amp; Articles</a> &middot; <a href="/proof-first-delivery/">Proof-First Delivery</a> &middot; <a href="/">viggomeesters.com</a>
+    </div>
+  </main>
+</body>
+</html>
