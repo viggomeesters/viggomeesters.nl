@@ -11,6 +11,9 @@
   <meta property="og:description" content="Use JSONL as canonical records, SQLite as local runtime, FTS5 for exact search, sqlite-vec for local semantics, DuckDB for analytics, and Postgres/Turso for application state.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://viggomeesters.com/database-types-agent-first-systems/">
+  <meta property="og:image" content="https://viggomeesters.com/assets/blog/database-types-agent-first-systems-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://viggomeesters.com/assets/blog/database-types-agent-first-systems-hero.jpg">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -380,112 +383,30 @@
 
 
     .article-cover {
-      position: relative;
-      overflow: hidden;
-      margin: -10px 0 42px;
-      min-height: 330px;
+      margin: -8px 0 42px;
       border: 1px solid rgba(255,255,255,0.10);
       border-radius: 24px;
-      background:
-        linear-gradient(145deg, rgba(26,26,32,0.98), rgba(12,12,15,0.99)),
-        radial-gradient(circle at 78% 22%, rgba(59,130,246,0.14), transparent 34%);
+      overflow: hidden;
+      background: var(--bg-surface);
       box-shadow: 0 24px 70px rgba(0,0,0,0.30), inset 0 1px 0 rgba(255,255,255,0.04);
     }
 
-    .article-cover::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, transparent 0, rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(transparent 0, rgba(255,255,255,0.028) 1px, transparent 1px);
-      background-size: 42px 42px;
-      opacity: 0.45;
-      mask-image: linear-gradient(135deg, black, transparent 78%);
-    }
-
-    .cover-date {
-      position: absolute;
-      top: 22px;
-      left: 24px;
-      z-index: 2;
-      font-family: var(--font-mono);
-      font-size: 0.72em;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--text-secondary);
-      padding: 8px 12px;
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 999px;
-      background: rgba(12,12,15,0.68);
-    }
-
-    .cover-mark {
-      position: absolute;
-      top: 26px;
-      right: 28px;
-      z-index: 2;
-      color: rgba(238,239,244,0.14);
-      font-size: clamp(3.8rem, 12vw, 7.2rem);
-      line-height: 0.85;
-      font-weight: 700;
-      letter-spacing: -0.08em;
-      pointer-events: none;
-    }
-
-    .cover-code {
-      position: absolute;
-      left: 24px;
-      right: 24px;
-      bottom: 24px;
-      z-index: 2;
-      display: grid;
-      gap: 8px;
-      max-width: 560px;
-    }
-
-    .cover-line {
+    .article-cover img {
       display: block;
-      width: fit-content;
-      max-width: 100%;
-      padding: 9px 12px;
-      border: 1px solid rgba(255,255,255,0.09);
-      border-radius: 12px;
-      background: rgba(12,12,15,0.72);
-      color: var(--text-secondary);
-      font-family: var(--font-mono);
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      background: var(--bg-elevated);
+    }
+
+    .article-cover figcaption {
+      padding: 12px 14px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: var(--text-muted);
       font-size: 0.72em;
-      line-height: 1.45;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .cover-line strong {
-      color: var(--text-bright);
-      font-weight: 600;
-    }
-
-    .cover-title {
-      position: absolute;
-      left: 24px;
-      top: 86px;
-      z-index: 2;
-      max-width: 420px;
-    }
-
-    .cover-title strong {
-      display: block;
-      color: var(--text-bright);
-      font-size: clamp(1.55rem, 4vw, 2.35rem);
-      line-height: 1.02;
-      letter-spacing: -0.055em;
-      margin-bottom: 8px;
-    }
-
-    .cover-title span {
-      color: var(--text-secondary);
-      font-size: 0.9em;
+      line-height: 1.5;
+      background: rgba(12,12,15,0.70);
     }
 
     /* Divider */
@@ -591,12 +512,7 @@
       .comparison { font-size: 0.82em; }
       .comparison th, .comparison td { padding: 10px 12px; }
       pre { padding: 16px; }
-      .article-cover { min-height: 300px; border-radius: 20px; }
-      .cover-date { left: 18px; top: 18px; }
-      .cover-mark { right: 20px; top: 30px; }
-      .cover-title { left: 18px; right: 18px; top: 66px; }
-      .cover-code { left: 18px; right: 18px; bottom: 18px; }
-      .cover-line { font-size: 0.66em; }
+      .article-cover { border-radius: 18px; }
     }
   </style>
 </head>
@@ -618,18 +534,9 @@
       <p class="meta">By Viggo Meesters &middot; 24 June 2026</p>
     </div>
 
-    <figure class="article-cover" aria-label="Article visual: canonical records compile into specialized database runtime surfaces">
-      <div class="cover-date">24 Jun 2026</div>
-      <div class="cover-mark" aria-hidden="true">DB</div>
-      <figcaption class="cover-title">
-        <strong>One source. Many surfaces.</strong>
-        <span>Pick the database by job, not by hype cycle.</span>
-      </figcaption>
-      <div class="cover-code" aria-hidden="true">
-        <span class="cover-line"><strong>records/*.jsonl</strong> → canonical, reviewable truth</span>
-        <span class="cover-line"><strong>SQLite + FTS5 + sqlite-vec</strong> → local agent runtime</span>
-        <span class="cover-line"><strong>DuckDB / Postgres / vector DB</strong> → analytics, app state, scale</span>
-      </div>
+    <figure class="article-cover">
+      <img src="/assets/blog/database-types-agent-first-systems-hero.jpg" alt="Database Types for Agent-First Systems hero showing JSONL records compiled into SQLite, FTS5, sqlite-vec, DuckDB, Postgres, and vector database runtime surfaces" width="1280" height="720" loading="eager" decoding="async">
+      <figcaption>Canonical JSONL records compile into specialized generated runtime surfaces: SQLite, FTS5, sqlite-vec, DuckDB, Postgres, and vector databases.</figcaption>
     </figure>
 
     <nav class="toc">
