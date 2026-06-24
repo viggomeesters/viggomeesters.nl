@@ -4,7 +4,7 @@
 
 - Repo: `/home/viggo/github/viggomeesters.nl`
 - Canonical: `https://viggomeesters.com`
-- Initial check: `npm run check` passed before edits
+- Latest refresh: `git pull --ff-only` and `npm run check` passed before Cluster A.
 
 ## Completed clusters
 
@@ -14,26 +14,30 @@
 - Updated `/tech-stack/` from 6 to 5 sections.
 - Updated `/personal-knowledge-system/` hero copy to English and made taxonomy explicit.
 - Updated homepage card copy for Personal Knowledge System.
-- Validation: `npm run check` passed with 249 public pages.
 
 ### Cluster 2 — thin hub/detail pass: Guides + Tech Stack
 
 - Enriched `/guides/` with shelf rules without turning it into a heavy systems block.
 - Enriched `/tech-stack/` with an explicit boundary explaining why Personal Knowledge System components are not listed there.
 - Enriched all 5 tech-stack detail pages with `Why this belongs in the stack` and `Maintenance boundary` sections.
-- Browser-checked `/guides/`, `/tech-stack/`, `/tech-stack/hardware/`, and `/personal-knowledge-system/` for overflow and visual coherence.
 
 ### Cluster 3 — Personal Knowledge System detail pages
 
 - Enriched all 5 component detail pages with `Maintenance rule` and `Proof signal` cards.
-- Browser-checked `/personal-knowledge-system/markdown-vault/` for layout, cards, and overflow.
+
+### Cluster A — project pages
+
+- Enriched `/sap-agent-context/` and `/mega-vault-viewer/` with `How it works`, `Status & proof`, `Boundary`, and `Next action` cards.
+- Added portfolio boundary/status notes to `/obsidian-plugins/`.
+- Updated stale public `Life OS` naming on `/agent-brain/` and `/raycast-life-os/` to current Personal Knowledge System terminology while preserving legacy URLs and GitHub links.
+- Browser-checked `/sap-agent-context/` and `/raycast-life-os/`; curl-checked all changed project pages for expected content.
 
 ## Review stack verdict for completed clusters
 
-- Audit: taxonomy drift fixed; Tech Stack no longer owns vault/schema/validation concepts.
-- Recheck: Guides and detail pages are less thin while still compact.
-- Devil: no fake metrics or private details added; generated skill pages untouched; no framework/build step introduced.
-- Judge: pass for completed clusters; continue later with remaining thin project/methodology pages.
+- Audit: project pages now include role, status/proof, boundaries, and source CTAs without moving them to the wrong shelf.
+- Recheck: the thin project pages no longer feel like title + CTA stubs; legacy naming is less confusing.
+- Devil: no fake metrics or private vault details added; GitHub proof is limited to HTTP reachability and does not claim repository quality.
+- Judge: pass for Cluster A; next exact cluster is Methodology pages.
 
 ## Page class counts
 
@@ -47,28 +51,54 @@
 - system-detail: 9
 - tech-stack-detail: 5
 
+## Remaining thin non-generated pages
+
+- `/agent-workflow/2025-december-github-copilot-vscode/` — system-detail, 1276 chars, From typing code to steering autocomplete.
+- `/agent-workflow/2026-february-claude-code-life-os-x/` — system-detail, 1328 chars, From repo sessions to a vault-backed operating layer.
+- `/agent-workflow/2026-january-claude-code-agent-brain/` — system-detail, 1265 chars, From editor helper to repo-operating agent.
+- `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` — system-detail, 1430 chars, From one agent session to a command bus with procedural memory.
+- `/agent-workflow/` — hub, 1565 chars, From editor helper to routed agent cockpit.
+- `/agent-workflow-loop/` — methodology, 729 chars, Agent Workflow Loop
+- `/guides/` — hub, 988 chars, Practical writing, outside the systems grid.
+- `/` — homepage, 1405 chars, Viggo Meesters
+- `/methodologies/` — hub, 1438 chars, Methodologies
+- `/personal-knowledge-system/agent-interfaces/` — system-detail, 1108 chars, Agent interfaces
+- `/personal-knowledge-system/markdown-vault/` — system-detail, 994 chars, Markdown vault
+- `/personal-knowledge-system/schema-and-frontmatter/` — system-detail, 1000 chars, Schema & frontmatter
+- `/personal-knowledge-system/system-folder/` — system-detail, 994 chars, system/ folder
+- `/personal-knowledge-system/validation-and-indexing/` — system-detail, 997 chars, Validation & indexes
+- `/proof-first-delivery/` — methodology, 712 chars, Proof-first Delivery
+- `/source-backed-synthesis/` — methodology, 804 chars, Source-backed Synthesis
+- `/tech-stack/ai-agents/` — tech-stack-detail, 1044 chars, AI Agents
+- `/tech-stack/developer-tools/` — tech-stack-detail, 1011 chars, Developer Tools
+- `/tech-stack/hardware/` — tech-stack-detail, 1197 chars, Hardware
+- `/tech-stack/hosting-automation/` — tech-stack-detail, 1064 chars, Hosting & Automation
+- `/tech-stack/` — hub, 1274 chars, Granular stack, easy to maintain.
+- `/tech-stack/software/` — tech-stack-detail, 1061 chars, Software
+- `/vault-first-operating-model/` — methodology, 737 chars, Vault-first Operating Model
+
 ## Findings index
 
 | Status | Class | Route | Chars | Flags | Notes |
 |---|---:|---|---:|---|---|
-| ok | project | `/agent-brain/` | 2849 | Life OS label | Hermes + Life OS |
+| ok | project | `/agent-brain/` | 2945 |  | Hermes + Personal Knowledge System |
 | thin | system-detail | `/agent-workflow/2025-december-github-copilot-vscode/` | 1276 | thin | From typing code to steering autocomplete. |
-| thin | system-detail | `/agent-workflow/2026-february-claude-code-life-os-x/` | 1328 | thin; Life OS label | From repo sessions to a vault-backed operating layer. |
+| thin | system-detail | `/agent-workflow/2026-february-claude-code-life-os-x/` | 1328 | thin; legacy URL/name | From repo sessions to a vault-backed operating layer. |
 | thin | system-detail | `/agent-workflow/2026-january-claude-code-agent-brain/` | 1265 | thin | From editor helper to repo-operating agent. |
 | thin | system-detail | `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` | 1430 | thin | From one agent session to a command bus with procedural memory. |
 | thin | hub | `/agent-workflow/` | 1565 | thin | From editor helper to routed agent cockpit. |
 | thin | methodology | `/agent-workflow-loop/` | 729 | thin | Agent Workflow Loop |
-| language | seo-dutch | `/beste-kattenbrokken/` | 13897 | Dutch? waarom, hoe, geen, niet | Beste Kattenbrokken 2026 |
-| language | seo-dutch | `/beste-kattenvoer/` | 13909 | Dutch? mager, waarom, hoe, geen, niet | Beste Kattenvoer 2026 |
+| ok | seo-dutch | `/beste-kattenbrokken/` | 13897 | Dutch? waarom, hoe, geen, niet | Beste Kattenbrokken 2026 |
+| ok | seo-dutch | `/beste-kattenvoer/` | 13909 | Dutch? mager, waarom, hoe, geen, niet | Beste Kattenvoer 2026 |
 | ok | other | `/cli-agents-guide/` | 10353 |  | CLI Agents + Obsidian: A Practical Guide |
 | ok | methodology | `/funnel-analysis/` | 6118 |  | Funnel Analysis |
 | thin | hub | `/guides/` | 988 | thin | Practical writing, outside the systems grid. |
 | ok | methodology | `/helicopter-to-detail/` | 4453 |  | Helicopter to Detail |
 | thin | homepage | `/` | 1405 | thin | Viggo Meesters |
 | ok | methodology | `/knowledge-pyramid/` | 6339 |  | Knowledge Pyramid |
-| thin | project | `/mega-vault-viewer/` | 1092 | thin | A local-first viewer for large Markdown vaults. |
+| ok | project | `/mega-vault-viewer/` | 1875 |  | A local-first viewer for large Markdown vaults. |
 | thin | hub | `/methodologies/` | 1438 | thin | Methodologies |
-| ok | project | `/obsidian-plugins/` | 3103 |  | Small plugins for making vaults more inspectable. |
+| ok | project | `/obsidian-plugins/` | 3531 |  | Small plugins for making vaults more inspectable. |
 | thin | system-detail | `/personal-knowledge-system/agent-interfaces/` | 1108 | thin | Agent interfaces |
 | ok | hub | `/personal-knowledge-system/` | 2055 |  | The operating map of the system. |
 | thin | system-detail | `/personal-knowledge-system/markdown-vault/` | 994 | thin | Markdown vault |
@@ -76,8 +106,8 @@
 | thin | system-detail | `/personal-knowledge-system/system-folder/` | 994 | thin | system/ folder |
 | thin | system-detail | `/personal-knowledge-system/validation-and-indexing/` | 997 | thin | Validation &amp; indexes |
 | thin | methodology | `/proof-first-delivery/` | 712 | thin | Proof-first Delivery |
-| ok | project | `/raycast-life-os/` | 2101 | Life OS label | Life OS |
-| thin | project | `/sap-agent-context/` | 1088 | thin | SAP context that agents can actually use. |
+| ok | project | `/raycast-life-os/` | 2403 | legacy URL/name | Personal Knowledge System starter |
+| ok | project | `/sap-agent-context/` | 1960 |  | SAP context that agents can actually use. |
 | skip-generated | generated-skill | `/skills/agent-cli-delegation/` | 609 |  | agent-cli-delegation |
 | skip-generated | generated-skill | `/skills/agent-correction-loop/` | 642 |  | agent-correction-loop |
 | skip-generated | generated-skill | `/skills/agent-prompt-intelligence/` | 632 |  | agent-prompt-intelligence |
@@ -191,11 +221,11 @@
 | skip-generated | generated-skill | `/skills/kanban-worker/` | 628 |  | kanban-worker |
 | skip-generated | generated-skill | `/skills/kanban-workflows/` | 575 |  | kanban-workflows |
 | skip-generated | generated-skill | `/skills/landing-page-redesign/` | 580 |  | landing-page-redesign |
-| skip-generated | generated-skill | `/skills/life-os-custom-harness/` | 495 | Life OS label | life-os-custom-harness |
-| skip-generated | generated-skill | `/skills/life-os-hermes-workflow/` | 904 | Life OS label | life-os-hermes-workflow |
-| skip-generated | generated-skill | `/skills/life-os-meeting-capture-pipeline/` | 686 | Life OS label | life-os-meeting-capture-pipeline |
-| skip-generated | generated-skill | `/skills/life-os-memory-pipeline/` | 593 | Life OS label | life-os-memory-pipeline |
-| skip-generated | generated-skill | `/skills/life-os-task/` | 538 | Life OS label | life-os-task |
+| skip-generated | generated-skill | `/skills/life-os-custom-harness/` | 495 | legacy URL/name | life-os-custom-harness |
+| skip-generated | generated-skill | `/skills/life-os-hermes-workflow/` | 904 | legacy URL/name | life-os-hermes-workflow |
+| skip-generated | generated-skill | `/skills/life-os-meeting-capture-pipeline/` | 686 | legacy URL/name | life-os-meeting-capture-pipeline |
+| skip-generated | generated-skill | `/skills/life-os-memory-pipeline/` | 593 | legacy URL/name | life-os-memory-pipeline |
+| skip-generated | generated-skill | `/skills/life-os-task/` | 538 | legacy URL/name | life-os-task |
 | skip-generated | generated-skill | `/skills/linear/` | 396 |  | linear |
 | skip-generated | generated-skill | `/skills/llama-cpp/` | 389 |  | llama-cpp |
 | skip-generated | generated-skill | `/skills/llm-wiki/` | 393 |  | llm-wiki |
@@ -274,7 +304,7 @@
 | skip-generated | generated-skill | `/skills/viggo-adr/` | 581 |  | viggo-adr |
 | skip-generated | generated-skill | `/skills/viggo-agent-interaction-style/` | 569 |  | viggo-agent-interaction-style |
 | skip-generated | generated-skill | `/skills/viggo-draft/` | 563 |  | viggo-draft |
-| skip-generated | generated-skill | `/skills/viggo-life-os-vault/` | 609 | Life OS label | viggo-life-os-vault |
+| skip-generated | generated-skill | `/skills/viggo-life-os-vault/` | 609 | legacy URL/name | viggo-life-os-vault |
 | skip-generated | generated-skill | `/skills/viggo-output/` | 581 |  | viggo-output |
 | skip-generated | generated-skill | `/skills/viggo-reflect/` | 556 |  | viggo-reflect |
 | skip-generated | generated-skill | `/skills/viggo-research-decision-support/` | 608 |  | viggo-research-decision-support |

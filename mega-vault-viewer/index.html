@@ -63,9 +63,14 @@
         <article class="info-card"><h2>What it is</h2><p>A desktop viewer for browsing big Markdown knowledge bases without turning the vault into a web app or remote service.</p></article>
         <article class="info-card"><h2>Why it exists</h2><p>Large vaults get hard to inspect through normal file trees. This gives the vault a fast, purpose-built reading and navigation surface.</p></article>
         <article class="info-card"><h2>Useful for</h2><p>Personal knowledge systems, agent context stores, project archives, research corpora, and mixed-format Markdown folders.</p></article>
+        <article class="info-card"><h2>How it works</h2><p>The project frames a vault as a local corpus to inspect: folders, Markdown, mixed file types, and navigation surfaces stay on the machine instead of becoming a remote app.</p></article>
+        <article class="info-card"><h2>Status & proof</h2><p>Public GitHub repository is reachable and remains the live source for code and release state.</p></article>
+        <article class="info-card"><h2>Boundary</h2><p>This is a viewer/inspection surface. It should not own the canonical vault, mutate private notes, or become a hosted knowledge base by accident.</p></article>
+        <article class="info-card"><h2>Next action</h2><p>Open the repository when you need the current app code or release state. Use this page to understand the local-first viewer idea before evaluating the implementation.</p></article>
         <article class="info-card"><h2>Design bias</h2><p>Keep the data local, make inspection fast, and treat GitHub/code as secondary to the human browsing experience.</p></article>
       </div>
     </section>
+    <p class="note reveal">Proof checked: the public GitHub repository returned HTTP 200 during this audit. The website gives the human overview; GitHub remains the technical source.</p>
     <p class="note reveal">This page is the human-readable project entrypoint. GitHub remains the source for code, releases, issues, and the latest technical details.</p>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
