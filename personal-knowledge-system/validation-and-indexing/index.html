@@ -55,6 +55,11 @@
 
       <article class="info-card"><h2>Maintenance rule</h2><p>Validation failures should be visible events, not silent skips or partial writes.</p></article>
       <article class="info-card"><h2>Proof signal</h2><p>Links, frontmatter, generated indexes, and read models can be checked before trusting an output.</p></article>
+            <article class="info-card"><h2>Input protocol</h2><p>Validators read committed conventions, bounded vault subsets, and generated indexes; they should not depend on hidden editor state or stale chat context.</p></article>
+      <article class="info-card"><h2>Output protocol</h2><p>The useful output is a concrete pass/fail signal, changed paths, and enough diagnostics to fix the source note rather than patching downstream symptoms.</p></article>
+      <article class="info-card"><h2>Review checklist</h2><p>Does the check fail loudly enough, does it name the source file to fix, and does the generated index stay rebuildable from committed inputs?</p></article>
+      <article class="info-card"><h2>Concrete example</h2><p>When an index is stale, the right fix is usually to rebuild it from the vault source and report changed paths, not to hand-edit the generated output until it looks correct.</p></article>
+      <article class="info-card"><h2>Public boundary</h2><p>Share the verification philosophy and output shape, not private index contents, personal entities, or unreleased automation internals.</p></article>
     </section>
     <p class="foundation"><strong>Failure mode:</strong> Without validation, automation silently corrupts the source of truth.</p>
     <div class="cta-row"><a class="cta" href="/personal-knowledge-system/system-folder/">&larr; system/ folder</a><a class="cta" href="/personal-knowledge-system/">All components</a><a class="cta" href="/personal-knowledge-system/agent-interfaces/">Agent interfaces &rarr;</a></div>

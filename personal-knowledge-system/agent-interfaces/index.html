@@ -55,6 +55,10 @@
 
       <article class="info-card"><h2>Maintenance rule</h2><p>Interfaces may be fast and conversational, but durable changes still need provenance and vault writeback.</p></article>
       <article class="info-card"><h2>Proof signal</h2><p>A command can be traced from Telegram/session input to vault context, repo output, or an explicit blocker.</p></article>
+            <article class="info-card"><h2>Input protocol</h2><p>Agents should receive bounded context, clear read/write permissions, and the exact source path or workflow contract that governs the operation.</p></article>
+      <article class="info-card"><h2>Output protocol</h2><p>A good agent output leaves traceable evidence: changed files, validation results, provenance, and a handoff that another agent or human can resume.</p></article>
+      <article class="info-card"><h2>Review checklist</h2><p>Did the agent receive only bounded context, did it respect read/write scope, and did the output include evidence instead of a vague done-claim?</p></article>
+      <article class="info-card"><h2>Concrete example</h2><p>A Telegram instruction that changes a repo should resolve to a bounded task, inspect source context, edit only allowed files, run mechanical checks, and return commit plus verification evidence.</p></article>
     </section>
     <p class="foundation"><strong>Failure mode:</strong> If interfaces become the source of truth, knowledge fragments across chats and tool state.</p>
     <div class="cta-row"><a class="cta" href="/personal-knowledge-system/validation-and-indexing/">&larr; Validation &amp; indexes</a><a class="cta" href="/personal-knowledge-system/">All components</a></div>
