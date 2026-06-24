@@ -121,6 +121,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/tech-news/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/uses/</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.8</priority>

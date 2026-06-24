@@ -139,7 +139,7 @@
     .guide-pair {
       grid-column: 1 / -1;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 10px;
     }
     .tile.guide-hub {
@@ -640,6 +640,11 @@
           <span class="guide-title">Repo Trendwatcher<span class="guide-meta" id="trendwatch-last-run">Last run loading…</span></span>
           <span class="guide-arrow">&rarr;</span>
         </a>
+
+        <a href="/tech-news/" class="tile guide-hub">
+          <span class="guide-title">Tech Newswatcher<span class="guide-meta" id="tech-news-last-run">Last run loading…</span></span>
+          <span class="guide-arrow">&rarr;</span>
+        </a>
       </div>
 
       <!-- Demos label -->
@@ -878,6 +883,25 @@
         })
         .catch(() => {
           trendwatchLastRun.textContent = 'Last run unavailable';
+        });
+    }
+
+    const techNewsLastRun = document.getElementById('tech-news-last-run');
+    if (techNewsLastRun) {
+      fetch('/tech-news/data.json', { cache: 'no-store' })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
+        .then((payload) => {
+          const generatedAt = payload.generatedAt;
+          if (!generatedAt) return;
+          const run = new Date(generatedAt);
+          const formatted = new Intl.DateTimeFormat('en-GB', {
+            day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit',
+            timeZone: 'Europe/Amsterdam', hour12: false
+          }).format(run);
+          techNewsLastRun.textContent = `Last run ${formatted}`;
+        })
+        .catch(() => {
+          techNewsLastRun.textContent = 'Last run unavailable';
         });
     }
   </script>
