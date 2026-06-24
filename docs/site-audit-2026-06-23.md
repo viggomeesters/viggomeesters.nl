@@ -4,7 +4,7 @@
 
 - Repo: `/home/viggo/github/viggomeesters.nl`
 - Canonical: `https://viggomeesters.com`
-- Latest refresh: Cluster C validation passed with `npm run check`.
+- Latest refresh: Cluster D validation passed with `npm run check`.
 
 ## Completed clusters
 
@@ -33,14 +33,20 @@
 - Added a timeline reading guide, taxonomy boundary, and evidence standard to `/agent-workflow/`.
 - Added `Stage interpretation` sections to all 4 stage pages.
 - Added `Page role` notes to the 3 thinner stage pages.
-- Browser-checked `/agent-workflow/` and the 2026 May detail page for layout and overflow.
+
+### Cluster D — homepage, routes, docs, and variants
+
+- Audited homepage taxonomy: Demos / Projects / Systems / Setup / Guides still route to the intended shelves.
+- Confirmed removed `/tech-stack/knowledge-system/` is not in live routes or sitemap; only audit docs mention the removal.
+- Cleaned stale public `Life OS` visible labels in `/uses/` and homepage variant files while preserving legacy URLs/repo names where they are the actual address.
+- Browser-checked `/uses/` with all detail sections opened; no horizontal overflow and no visible `Life OS` copy in that page.
 
 ## Review stack verdict for completed clusters
 
 - Audit: completed clusters now map to the requested page classes and avoid taxonomy drift.
-- Recheck: project/methodology/agent-workflow pages are less thin while preserving the static-site visual language.
-- Devil: no fake metrics, private vault content, or invented proof added; live/source claims are bounded.
-- Judge: pass for Cluster C; next exact cluster is Homepage + routes, then generated Skills template.
+- Recheck: project/methodology/agent-workflow/routes pages are less thin or less stale while preserving the static-site visual language.
+- Devil: legacy URLs and generated skill names were not renamed blindly; only public-facing label drift was cleaned.
+- Judge: pass for Cluster D; next exact cluster is generated Skills template review.
 
 ## Page class counts
 
@@ -321,5 +327,5 @@
 | thin | tech-stack-detail | `/tech-stack/hosting-automation/` | 1064 | thin | Hosting &amp; Automation |
 | thin | hub | `/tech-stack/` | 1274 | thin | Granular stack, easy to maintain. |
 | thin | tech-stack-detail | `/tech-stack/software/` | 1061 | thin | Software |
-| ok | other | `/uses/` | 2204 |  | Tech Stack |
+| ok | other | `/uses/` | 2222 |  | Tech Stack |
 | ok | methodology | `/vault-first-operating-model/` | 1838 |  | Vault-first Operating Model |
