@@ -4,7 +4,7 @@
 
 - Repo: `/home/viggo/github/viggomeesters.nl`
 - Canonical: `https://viggomeesters.com`
-- Latest refresh: Cluster D validation passed with `npm run check`.
+- Latest refresh: Cluster E validation passed with `npm run check`.
 
 ## Completed clusters
 
@@ -36,21 +36,27 @@
 
 ### Cluster D — homepage, routes, docs, and variants
 
-- Audited homepage taxonomy: Demos / Projects / Systems / Setup / Guides still route to the intended shelves.
-- Confirmed removed `/tech-stack/knowledge-system/` is not in live routes or sitemap; only audit docs mention the removal.
+- Audited homepage taxonomy and route labels.
 - Cleaned stale public `Life OS` visible labels in `/uses/` and homepage variant files while preserving legacy URLs/repo names where they are the actual address.
-- Browser-checked `/uses/` with all detail sections opened; no horizontal overflow and no visible `Life OS` copy in that page.
+
+### Cluster E — generated Skills template
+
+- Audited `/skills/`, sample detail pages, and `scripts/generate-skills-pages.py`.
+- Fixed the generator to remove obsolete generated skill detail pages that are no longer in the active Hermes registry.
+- Regenerated skills from the active enabled registry: 185 skills across 18 categories.
+- Updated homepage Skills badge from 183 to 185.
+- Verified public `skills-data.json` still excludes private `path` fields and search metadata remains present.
 
 ## Review stack verdict for completed clusters
 
-- Audit: completed clusters now map to the requested page classes and avoid taxonomy drift.
-- Recheck: project/methodology/agent-workflow/routes pages are less thin or less stale while preserving the static-site visual language.
-- Devil: legacy URLs and generated skill names were not renamed blindly; only public-facing label drift was cleaned.
-- Judge: pass for Cluster D; next exact cluster is generated Skills template review.
+- Audit: all requested clusters have been processed; generated Skills are handled through the generator/template only.
+- Recheck: remaining thin pages are mostly deliberately compact hubs/details, not broken taxonomy or stale generated pages.
+- Devil: no private SKILL.md runbooks or local paths were published; stale generated pages were pruned instead of manually curated.
+- Judge: pass for Cluster E; loop complete for this pass.
 
 ## Page class counts
 
-- generated-skill: 212
+- generated-skill: 185
 - homepage: 1
 - hub: 6
 - methodology: 7
@@ -114,12 +120,7 @@
 | skip-generated | generated-skill | `/skills/agent-workflow-lite-execution/` | 590 |  | agent-workflow-lite-execution |
 | skip-generated | generated-skill | `/skills/agent-workflow-lite-planning/` | 601 |  | agent-workflow-lite-planning |
 | skip-generated | generated-skill | `/skills/agent-workflow-loop/` | 625 |  | agent-workflow-loop |
-| skip-generated | generated-skill | `/skills/agent-workflow-resilience/` | 431 |  | agent-workflow-resilience |
 | skip-generated | generated-skill | `/skills/airtable/` | 403 |  | airtable |
-| skip-generated | generated-skill | `/skills/alteryx-flow-generator-operations/` | 621 |  | alteryx-flow-generator-operations |
-| skip-generated | generated-skill | `/skills/apple-notes/` | 411 |  | apple-notes |
-| skip-generated | generated-skill | `/skills/apple-platform-automation/` | 617 |  | apple-platform-automation |
-| skip-generated | generated-skill | `/skills/apple-reminders/` | 420 |  | apple-reminders |
 | skip-generated | generated-skill | `/skills/architecture-diagram/` | 430 |  | architecture-diagram |
 | skip-generated | generated-skill | `/skills/arxiv/` | 383 |  | arxiv |
 | skip-generated | generated-skill | `/skills/ascii-art/` | 390 |  | ascii-art |
@@ -127,10 +128,7 @@
 | skip-generated | generated-skill | `/skills/audio-to-obsidian-vault/` | 593 |  | audio-to-obsidian-vault |
 | skip-generated | generated-skill | `/skills/audiocraft-audio-generation/` | 446 |  | audiocraft-audio-generation |
 | skip-generated | generated-skill | `/skills/audit/` | 390 |  | audit |
-| skip-generated | generated-skill | `/skills/audit-findings-to-aw-lite-plan/` | 629 |  | audit-findings-to-aw-lite-plan |
-| skip-generated | generated-skill | `/skills/aw-lite-legacy-workflow-migration/` | 666 |  | aw-lite-legacy-workflow-migration |
 | skip-generated | generated-skill | `/skills/aw-lite-loop-runtime/` | 619 |  | aw-lite-loop-runtime |
-| skip-generated | generated-skill | `/skills/aw-lite-planning/` | 594 |  | aw-lite-planning |
 | skip-generated | generated-skill | `/skills/baoyu-article-illustrator/` | 445 |  | baoyu-article-illustrator |
 | skip-generated | generated-skill | `/skills/baoyu-comic/` | 403 |  | baoyu-comic |
 | skip-generated | generated-skill | `/skills/baoyu-infographic/` | 411 |  | baoyu-infographic |
@@ -139,13 +137,10 @@
 | skip-generated | generated-skill | `/skills/better/` | 377 |  | better |
 | skip-generated | generated-skill | `/skills/blogwatcher/` | 403 |  | blogwatcher |
 | skip-generated | generated-skill | `/skills/brainstorm/` | 389 |  | brainstorm |
-| skip-generated | generated-skill | `/skills/business-architecture-explainer-reports/` | 688 |  | business-architecture-explainer-reports |
 | skip-generated | generated-skill | `/skills/calendar-invite-email/` | 422 |  | calendar-invite-email |
 | skip-generated | generated-skill | `/skills/caveman/` | 380 |  | caveman |
-| skip-generated | generated-skill | `/skills/claude-code/` | 438 |  | claude-code |
 | skip-generated | generated-skill | `/skills/claude-design/` | 408 |  | claude-design |
 | skip-generated | generated-skill | `/skills/codebase-inspection/` | 454 |  | codebase-inspection |
-| skip-generated | generated-skill | `/skills/codex/` | 421 |  | codex |
 | skip-generated | generated-skill | `/skills/comfyui/` | 546 |  | comfyui |
 | skip-generated | generated-skill | `/skills/compact-agent-output/` | 571 |  | compact-agent-output |
 | skip-generated | generated-skill | `/skills/computer-use/` | 341 |  | computer-use |
@@ -163,18 +158,13 @@
 | skip-generated | generated-skill | `/skills/evaluating-llms-harness/` | 427 |  | evaluating-llms-harness |
 | skip-generated | generated-skill | `/skills/excalidraw/` | 396 |  | excalidraw |
 | skip-generated | generated-skill | `/skills/external-service-automation/` | 586 |  | external-service-automation |
-| skip-generated | generated-skill | `/skills/findmy/` | 394 |  | findmy |
 | skip-generated | generated-skill | `/skills/fo-generation-quality-gates/` | 419 |  | fo-generation-quality-gates |
 | skip-generated | generated-skill | `/skills/frontend/` | 375 |  | frontend |
+| skip-generated | generated-skill | `/skills/frontend-product-ui/` | 504 |  | frontend-product-ui |
 | skip-generated | generated-skill | `/skills/frontend-slides/` | 593 |  | frontend-slides |
 | skip-generated | generated-skill | `/skills/generated-document-review/` | 557 |  | generated-document-review |
 | skip-generated | generated-skill | `/skills/gif-search/` | 382 |  | gif-search |
-| skip-generated | generated-skill | `/skills/github-auth/` | 415 |  | github-auth |
-| skip-generated | generated-skill | `/skills/github-code-review/` | 430 |  | github-code-review |
-| skip-generated | generated-skill | `/skills/github-issues/` | 424 |  | github-issues |
 | skip-generated | generated-skill | `/skills/github-operations/` | 606 |  | github-operations |
-| skip-generated | generated-skill | `/skills/github-pr-workflow/` | 433 |  | github-pr-workflow |
-| skip-generated | generated-skill | `/skills/github-repo-management/` | 442 |  | github-repo-management |
 | skip-generated | generated-skill | `/skills/go-goal/` | 396 |  | go-goal |
 | skip-generated | generated-skill | `/skills/go-loop/` | 396 |  | go-loop |
 | skip-generated | generated-skill | `/skills/go-now/` | 393 |  | go-now |
@@ -210,19 +200,15 @@
 | skip-generated | generated-skill | `/skills/huggingface-hub/` | 411 |  | huggingface-hub |
 | skip-generated | generated-skill | `/skills/humanizer/` | 387 |  | humanizer |
 | skip-generated | generated-skill | `/skills/ideation/` | 384 |  | ideation |
-| skip-generated | generated-skill | `/skills/imessage/` | 405 |  | imessage |
 | skip-generated | generated-skill | `/skills/improve/` | 380 |  | improve |
-| ok | hub | `/skills/` | 28570 |  | Skills as reusable operating knowledge. |
+| ok | hub | `/skills/` | 28919 |  | Skills as reusable operating knowledge. |
 | skip-generated | generated-skill | `/skills/job-application-package/` | 572 |  | job-application-package |
 | skip-generated | generated-skill | `/skills/jupyter-live-kernel/` | 428 |  | jupyter-live-kernel |
 | skip-generated | generated-skill | `/skills/kanban-codex-lane/` | 562 |  | kanban-codex-lane |
-| skip-generated | generated-skill | `/skills/kanban-orchestrator/` | 698 |  | kanban-orchestrator |
-| skip-generated | generated-skill | `/skills/kanban-worker/` | 628 |  | kanban-worker |
 | skip-generated | generated-skill | `/skills/kanban-workflows/` | 575 |  | kanban-workflows |
 | skip-generated | generated-skill | `/skills/landing-page-redesign/` | 580 |  | landing-page-redesign |
 | skip-generated | generated-skill | `/skills/life-os-custom-harness/` | 495 | legacy URL/name | life-os-custom-harness |
 | skip-generated | generated-skill | `/skills/life-os-hermes-workflow/` | 904 | legacy URL/name | life-os-hermes-workflow |
-| skip-generated | generated-skill | `/skills/life-os-meeting-capture-pipeline/` | 686 | legacy URL/name | life-os-meeting-capture-pipeline |
 | skip-generated | generated-skill | `/skills/life-os-memory-pipeline/` | 593 | legacy URL/name | life-os-memory-pipeline |
 | skip-generated | generated-skill | `/skills/life-os-task/` | 538 | legacy URL/name | life-os-task |
 | skip-generated | generated-skill | `/skills/linear/` | 396 |  | linear |
@@ -230,7 +216,6 @@
 | skip-generated | generated-skill | `/skills/llm-wiki/` | 393 |  | llm-wiki |
 | skip-generated | generated-skill | `/skills/local-service-website-design/` | 596 |  | local-service-website-design |
 | skip-generated | generated-skill | `/skills/loop/` | 387 |  | loop |
-| skip-generated | generated-skill | `/skills/macos-computer-use/` | 379 |  | macos-computer-use |
 | skip-generated | generated-skill | `/skills/manim-video/` | 395 |  | manim-video |
 | skip-generated | generated-skill | `/skills/maps/` | 388 |  | maps |
 | skip-generated | generated-skill | `/skills/master-tactician/` | 692 |  | master-tactician |
@@ -240,13 +225,11 @@
 | skip-generated | generated-skill | `/skills/native-mcp/` | 389 |  | native-mcp |
 | skip-generated | generated-skill | `/skills/next/` | 371 |  | next |
 | skip-generated | generated-skill | `/skills/next-improvements/` | 410 |  | next-improvements |
-| skip-generated | generated-skill | `/skills/node-inspect-debugger/` | 476 |  | node-inspect-debugger |
 | skip-generated | generated-skill | `/skills/notion/` | 396 |  | notion |
 | skip-generated | generated-skill | `/skills/obliteratus/` | 392 |  | obliteratus |
 | skip-generated | generated-skill | `/skills/obsidian/` | 401 |  | obsidian |
 | skip-generated | generated-skill | `/skills/obsidian-plugin-portfolio/` | 619 |  | obsidian-plugin-portfolio |
 | skip-generated | generated-skill | `/skills/ocr-and-documents/` | 422 |  | ocr-and-documents |
-| skip-generated | generated-skill | `/skills/opencode/` | 432 |  | opencode |
 | skip-generated | generated-skill | `/skills/openhue/` | 395 |  | openhue |
 | skip-generated | generated-skill | `/skills/p5js/` | 374 |  | p5js |
 | skip-generated | generated-skill | `/skills/pixel-art/` | 389 |  | pixel-art |
@@ -262,14 +245,11 @@
 | skip-generated | generated-skill | `/skills/prompt-evaluation/` | 611 |  | prompt-evaluation |
 | skip-generated | generated-skill | `/skills/public-person-background-check-to-vault/` | 468 |  | public-person-background-check-to-vault |
 | skip-generated | generated-skill | `/skills/public-repo-aw-lite-onboarding/` | 592 |  | public-repo-aw-lite-onboarding |
-| skip-generated | generated-skill | `/skills/python-debugpy/` | 442 |  | python-debugpy |
 | skip-generated | generated-skill | `/skills/quality-audit/` | 414 |  | quality-audit |
 | skip-generated | generated-skill | `/skills/recheck/` | 380 |  | recheck |
 | skip-generated | generated-skill | `/skills/refactor/` | 399 |  | refactor |
-| skip-generated | generated-skill | `/skills/requesting-code-review/` | 478 |  | requesting-code-review |
 | skip-generated | generated-skill | `/skills/research-paper-writing/` | 431 |  | research-paper-writing |
 | skip-generated | generated-skill | `/skills/runtime-release-browser-evidence/` | 595 |  | runtime-release-browser-evidence |
-| skip-generated | generated-skill | `/skills/safe-output-compression/` | 576 |  | safe-output-compression |
 | skip-generated | generated-skill | `/skills/sdp-alteryx-template-field-analysis/` | 558 |  | sdp-alteryx-template-field-analysis |
 | skip-generated | generated-skill | `/skills/sdp-dashboard-sqlite-read-model/` | 569 |  | sdp-dashboard-sqlite-read-model |
 | skip-generated | generated-skill | `/skills/segment-anything-model/` | 431 |  | segment-anything-model |
@@ -285,6 +265,7 @@
 | skip-generated | generated-skill | `/skills/songwriting-and-ai-music/` | 428 |  | songwriting-and-ai-music |
 | skip-generated | generated-skill | `/skills/spike/` | 406 |  | spike |
 | skip-generated | generated-skill | `/skills/spotify/` | 386 |  | spotify |
+| skip-generated | generated-skill | `/skills/sqlite-bulk-import-debugging/` | 547 |  | sqlite-bulk-import-debugging |
 | skip-generated | generated-skill | `/skills/subagent-driven-development/` | 476 |  | subagent-driven-development |
 | skip-generated | generated-skill | `/skills/successive-website-redesigns/` | 594 |  | successive-website-redesigns |
 | skip-generated | generated-skill | `/skills/systematic-debugging/` | 456 |  | systematic-debugging |
@@ -312,8 +293,6 @@
 | skip-generated | generated-skill | `/skills/webshop-cart-automation/` | 555 |  | webshop-cart-automation |
 | skip-generated | generated-skill | `/skills/website-scrape-to-vault/` | 516 |  | website-scrape-to-vault |
 | skip-generated | generated-skill | `/skills/weights-and-biases/` | 420 |  | weights-and-biases |
-| skip-generated | generated-skill | `/skills/windows-laptop-quiet-tuning/` | 576 |  | windows-laptop-quiet-tuning |
-| skip-generated | generated-skill | `/skills/windows-wsl-quiet-operations/` | 574 |  | windows-wsl-quiet-operations |
 | skip-generated | generated-skill | `/skills/worldmonitor/` | 533 |  | worldmonitor |
 | skip-generated | generated-skill | `/skills/writing-plans/` | 433 |  | writing-plans |
 | skip-generated | generated-skill | `/skills/xurl/` | 388 |  | xurl |

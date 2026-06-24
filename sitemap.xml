@@ -73,7 +73,7 @@
   <url>
     <loc>https://viggomeesters.com/personal-knowledge-system/</loc>
     <lastmod>2026-06-23</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/proof-first-delivery/</loc>
@@ -196,32 +196,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/agent-workflow-resilience/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/airtable/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/alteryx-flow-generator-operations/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/apple-notes/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/apple-platform-automation/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/apple-reminders/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -256,27 +231,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/audit-findings-to-aw-lite-plan/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/audit/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/aw-lite-legacy-workflow-migration/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/aw-lite-loop-runtime/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/aw-lite-planning/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -321,11 +281,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/business-architecture-explainer-reports/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/calendar-invite-email/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -336,22 +291,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/claude-code/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/claude-design/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/codebase-inspection/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/codex/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -441,13 +386,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/findmy/</loc>
+    <loc>https://viggomeesters.com/skills/fo-generation-quality-gates/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/fo-generation-quality-gates/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://viggomeesters.com/skills/frontend-product-ui/</loc>
+    <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -471,32 +416,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/github-auth/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/github-code-review/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/github-issues/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/github-operations/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/github-pr-workflow/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/github-repo-management/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -676,11 +596,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/imessage/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/improve/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -701,16 +616,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/kanban-orchestrator/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/kanban-worker/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/kanban-workflows/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -727,11 +632,6 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/life-os-hermes-workflow/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/life-os-meeting-capture-pipeline/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -767,11 +667,6 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/loop/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/macos-computer-use/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -821,11 +716,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/node-inspect-debugger/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/notion/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -847,11 +737,6 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/ocr-and-documents/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/opencode/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -931,11 +816,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/python-debugpy/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/quality-audit/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -951,22 +831,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/skills/requesting-code-review/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/skills/research-paper-writing/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/runtime-release-browser-evidence/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/safe-output-compression/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
@@ -1043,6 +913,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/spotify/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/sqlite-bulk-import-debugging/</loc>
+    <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -1177,16 +1052,6 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/skills/weights-and-biases/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/windows-laptop-quiet-tuning/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/skills/windows-wsl-quiet-operations/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>

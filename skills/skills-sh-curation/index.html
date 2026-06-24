@@ -17,37 +17,9 @@
 <body>
   <main class="page">
     <a class="back" href="/skills/">&larr; Skills</a>
-    <header><div class="eyebrow">Skill / productivity</div><h1 class="title">skills-sh-curation</h1><p class="subtitle">Use when Viggo asks to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">productivity</span><span class="pill">snapshot 2026-06-23</span></div></header>
-    <section class="section"><div class="section-title">How to use</div><div class="list"><article class="item"><strong>Load name</strong><p><code>skills-sh-curation</code></p></article><article class="item"><strong>Scope</strong><p>This public page intentionally shows the skill name, category, and high-level description only. Full runtime instructions stay in Hermes where they can include operational guardrails.</p></article></div></section>
+    <header><div class="eyebrow">Skill / productivity</div><h1 class="title">skills-sh-curation</h1><p class="subtitle">Use when Viggo asks to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">productivity</span><span class="pill">snapshot 2026-06-24</span></div></header>
+    <section class="section"><div class="section-title">How to use</div><div class="list"><article class="item"><strong>Load name</strong><p><code>skills-sh-curation</code></p></article><article class="item"><strong>Public boundary</strong><p>This page is a public registry card, not the full runbook. It intentionally omits private operational steps, local paths, credentials, and sensitive project context.</p></article><article class="item"><strong>Registry source</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to discover that a workflow exists; load the skill inside Hermes to execute it.</p></article></div></section>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
-  <script>
-const q=document.querySelector('[data-search]');
-const result=document.querySelector('[data-result-count]');
-function applySkillSearch(){
-  const v=(q?.value||'').trim().toLowerCase();
-  let total=0;
-  document.querySelectorAll('[data-skill-section]').forEach(section=>{
-    let visible=0;
-    section.querySelectorAll('[data-filter]').forEach(card=>{
-      const match=!v || card.dataset.filter.includes(v);
-      card.hidden=!match;
-      if(match) visible+=1;
-    });
-    section.hidden=visible===0;
-    const title=section.querySelector('[data-section-title]');
-    if(title){
-      const label=section.dataset.category || '';
-      const base=Number(section.dataset.total || visible);
-      title.textContent = v ? `${label} · ${visible}/${base}` : `${label} · ${base}`;
-    }
-    total+=visible;
-  });
-  if(result){
-    result.textContent = v ? `${total} matching skill${total===1?'':'s'}` : `${result.dataset.total} skills across ${result.dataset.categories} categories`;
-  }
-}
-if(q){q.addEventListener('input',applySkillSearch);applySkillSearch();}
-</script>
 </body>
 </html>

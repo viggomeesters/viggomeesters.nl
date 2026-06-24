@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-23",
-  "count": 183,
+  "generated_at": "2026-06-24",
+  "count": 185,
   "skills": [
     {
       "name": "agent-cli-delegation",
@@ -1053,6 +1053,13 @@
       "trust": "local"
     },
     {
+      "name": "frontend-product-ui",
+      "category": "software-development",
+      "description": "Build and harden interactive product UIs with dense inputs, calculators, exports, and domain-specific defaults.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
       "name": "go-goal",
       "category": "software-development",
       "description": "Enabled Hermes skill from local source.",
@@ -1219,6 +1226,13 @@
       "description": "Throwaway experiments to validate an idea before build.",
       "source": "builtin",
       "trust": "builtin"
+    },
+    {
+      "name": "sqlite-bulk-import-debugging",
+      "category": "software-development",
+      "description": "Debug and harden large SQLite CLI/import pipelines, especially generated SQL scripts that ingest user text or Markdown corpora.",
+      "source": "local",
+      "trust": "local"
     },
     {
       "name": "subagent-driven-development",

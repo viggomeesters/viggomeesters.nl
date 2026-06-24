@@ -80,8 +80,9 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     return data
 
 
-def page(title: str, desc: str, canonical: str, body: str) -> str:
-    return f'''<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>{esc(title)}</title>\n  <meta name="description" content="{esc(desc)}">\n  <link rel="canonical" href="{esc(canonical)}">\n  <meta name="theme-color" content="#0c0c0f">\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n  <style>{CSS}</style>\n</head>\n<body>\n  <main class="page">\n{body}\n    <div class="footer">&copy; 2026 Viggo Meesters</div>\n  </main>\n  {SCRIPT}\n</body>\n</html>\n'''
+def page(title: str, desc: str, canonical: str, body: str, include_script: bool = True) -> str:
+    script = f"\n  {SCRIPT}" if include_script else ""
+    return f'''<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>{esc(title)}</title>\n  <meta name="description" content="{esc(desc)}">\n  <link rel="canonical" href="{esc(canonical)}">\n  <meta name="theme-color" content="#0c0c0f">\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n  <style>{CSS}</style>\n</head>\n<body>\n  <main class="page">\n{body}\n    <div class="footer">&copy; 2026 Viggo Meesters</div>\n  </main>{script}\n</body>\n</html>\n'''
 
 
 def local_descriptions() -> dict[str, dict[str, str]]:
@@ -148,6 +149,22 @@ def discover() -> list[dict[str, str]]:
     return enabled_skills_from_cli()
 
 
+def clean_obsolete_skill_pages(out: Path, skills: list[dict[str, str]]) -> None:
+    """Remove stale generated skill detail pages that no longer exist in the active registry."""
+    active_slugs = {slugify(skill["name"]) for skill in skills}
+    for child in out.iterdir():
+        if not child.is_dir() or child.name in active_slugs:
+            continue
+        index = child / "index.html"
+        if not index.exists():
+            continue
+        text = index.read_text(errors="ignore")
+        if "<title>" in text and " — Skill" in text and "/skills/" in text:
+            for nested in child.iterdir():
+                nested.unlink()
+            child.rmdir()
+
+
 def regenerate_sitemap() -> None:
     sitemap = ROOT / "sitemap.xml"
     old = sitemap.read_text() if sitemap.exists() else ""
@@ -171,14 +188,15 @@ def main() -> None:
     skills = discover()
     out = ROOT / "skills"
     out.mkdir(exist_ok=True)
+    clean_obsolete_skill_pages(out, skills)
     (out / "skills-data.json").write_text(json.dumps({"generated_at": TODAY, "count": len(skills), "skills": [{k: v for k, v in skill.items() if k != "path"} for skill in skills]}, ensure_ascii=False, indent=2))
     groups = defaultdict(list)
     for skill in skills:
         groups[skill["category"]].append(skill)
-        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">How to use</div><div class="list"><article class="item"><strong>Load name</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>Scope</strong><p>This public page intentionally shows the skill name, category, and high-level description only. Full runtime instructions stay in Hermes where they can include operational guardrails.</p></article></div></section>'''
+        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">How to use</div><div class="list"><article class="item"><strong>Load name</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>Public boundary</strong><p>This page is a public registry card, not the full runbook. It intentionally omits private operational steps, local paths, credentials, and sensitive project context.</p></article><article class="item"><strong>Registry source</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to discover that a workflow exists; load the skill inside Hermes to execute it.</p></article></div></section>'''
         d = out / slugify(skill["name"])
         d.mkdir(exist_ok=True)
-        (d / "index.html").write_text(page(f"{skill['name']} — Skill", skill["description"] or f"Hermes skill {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body))
+        (d / "index.html").write_text(page(f"{skill['name']} — Skill", skill["description"] or f"Hermes skill {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))
     sections = []
     for category in sorted(groups):
         cards = []
