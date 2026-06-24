@@ -117,7 +117,7 @@
         <div class="stats" aria-label="Trendwatch summary">
           <div class="stat"><strong id="stat-total">—</strong><span>repos in ledger</span></div>
           <div class="stat"><strong id="stat-useful">—</strong><span>open useful signals</span></div>
-          <div class="stat"><strong id="stat-today">—</strong><span>newest scout date</span></div>
+          <div class="stat"><strong id="stat-today">—</strong><span>latest run</span></div>
         </div>
       </div>
       <aside class="panel legend" aria-label="Action legend">
@@ -156,7 +156,14 @@
     const accentFor = (action) => ({ Mine: '#22c55e', Watch: '#06b6d4', Ledger: '#8b93a7', Done: '#a855f7', Skip: '#ef4444' }[action] || '#8b93a7');
     const riskFor = (risk) => risk >= 4 ? '#ef4444' : risk >= 2 ? '#f97316' : '#22c55e';
     const fmt = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+    const timeFmt = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam', hour12: false });
+    const shortTimeFmt = new Intl.DateTimeFormat('en-GB', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam', hour12: false });
     const safe = (value) => String(value ?? '').replace(/[&<>'"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch]));
+    const formatRun = (value, formatter = timeFmt) => {
+      if (!value) return 'unknown';
+      const date = new Date(value);
+      return Number.isNaN(date.getTime()) ? String(value) : formatter.format(date);
+    };
     const bar = (label, value, risk = false) => {
       const numeric = Math.max(0, Math.min(5, Number(value) || 0));
       const segments = Array.from({ length: 5 }, (_, index) => `<span class="seg ${index < numeric ? 'on' : ''}"></span>`).join('');
@@ -203,8 +210,9 @@
         data = payload.items || [];
         document.querySelector('#stat-total').textContent = payload.total ?? data.length;
         document.querySelector('#stat-useful').textContent = payload.usefulOpen ?? '—';
-        document.querySelector('#stat-today').textContent = data[0]?.firstSeen || payload.ledgerUpdated || '—';
-        document.querySelector('#updated').textContent = `Updated ${payload.ledgerUpdated || 'unknown'} · ${data.length} repos`;
+        const lastRun = payload.generatedAt || payload.ledgerUpdated;
+        document.querySelector('#stat-today').textContent = formatRun(lastRun, shortTimeFmt);
+        document.querySelector('#updated').textContent = `Last run ${formatRun(lastRun)} · ${data.length} repos`;
         render();
       })
       .catch((error) => {

@@ -136,8 +136,13 @@
 
 
     /* Minimal full-width guides/blog link */
-    .tile.guide-hub {
+    .guide-pair {
       grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .tile.guide-hub {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -203,6 +208,14 @@
       font-weight: 700;
       color: #eeeff4;
       letter-spacing: 0.01em;
+    }
+    .guide-hub .guide-meta {
+      display: block;
+      margin-top: 2px;
+      color: var(--text-muted);
+      font-size: 0.68em;
+      font-weight: 500;
+      letter-spacing: 0;
     }
     .guide-hub .guide-arrow {
       color: var(--text-muted);
@@ -593,6 +606,7 @@
       .avatar-wrap::before { inset: -3px; }
       .avatar-wrap::after { inset: -7px; }
       .tile.profile { gap: 14px; padding: 20px; }
+      .guide-pair { grid-template-columns: 1fr; }
       .form-row { flex-direction: column; gap: 10px; }
     }
   </style>
@@ -616,15 +630,17 @@
 
 
 
-      <a href="/guides/" class="tile guide-hub">
-        <span class="guide-title">Guides &amp; Articles</span>
-        <span class="guide-arrow">&rarr;</span>
-      </a>
+      <div class="guide-pair">
+        <a href="/guides/" class="tile guide-hub">
+          <span class="guide-title">Guides &amp; Articles</span>
+          <span class="guide-arrow">&rarr;</span>
+        </a>
 
-      <a href="/trendwatch/" class="tile guide-hub">
-        <span class="guide-title">Repo Trendwatcher</span>
-        <span class="guide-arrow">daily scout &rarr;</span>
-      </a>
+        <a href="/trendwatch/" class="tile guide-hub">
+          <span class="guide-title">Repo Trendwatcher<span class="guide-meta" id="trendwatch-last-run">Last run loading…</span></span>
+          <span class="guide-arrow">&rarr;</span>
+        </a>
+      </div>
 
       <!-- Demos label -->
       <h2 class="tile label" style="--dot-color: #3b82f6">Demos</h2>
@@ -854,6 +870,25 @@
         btn.disabled = false;
       }
     });
+
+    const trendwatchLastRun = document.getElementById('trendwatch-last-run');
+    if (trendwatchLastRun) {
+      fetch('/trendwatch/data.json', { cache: 'no-store' })
+        .then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
+        .then((payload) => {
+          const generatedAt = payload.generatedAt || payload.ledgerUpdated;
+          if (!generatedAt) return;
+          const run = new Date(generatedAt);
+          const formatted = new Intl.DateTimeFormat('en-GB', {
+            day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit',
+            timeZone: 'Europe/Amsterdam', hour12: false
+          }).format(run);
+          trendwatchLastRun.textContent = `Last run ${formatted}`;
+        })
+        .catch(() => {
+          trendwatchLastRun.textContent = 'Last run unavailable';
+        });
+    }
   </script>
 </body>
 </html>
