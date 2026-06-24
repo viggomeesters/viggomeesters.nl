@@ -90,9 +90,10 @@
     .chip { border: 1px solid var(--line-soft); background: rgba(255,255,255,0.035); border-radius: 999px; padding: 4px 8px; }
     .scores { display: grid; gap: 7px; align-content: center; }
     .score { display: grid; grid-template-columns: 72px 1fr 28px; align-items: center; gap: 8px; font-size: 0.72rem; color: var(--muted); }
-    .track { height: 8px; border-radius: 999px; overflow: hidden; background: rgba(255,255,255,0.065); }
-    .fill { width: calc(var(--value) * 20%); height: 100%; border-radius: inherit; background: var(--accent); box-shadow: 0 0 18px color-mix(in srgb, var(--accent) 44%, transparent); }
-    .score.risk .fill { background: var(--risk); box-shadow: 0 0 18px color-mix(in srgb, var(--risk) 44%, transparent); }
+    .track { height: 10px; border-radius: 999px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; }
+    .seg { border-radius: 999px; background: rgba(255,255,255,0.10); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.035); }
+    .seg.on { background: var(--accent); box-shadow: 0 0 12px rgba(6,182,212,0.5); }
+    .score.risk .seg.on { background: var(--risk); box-shadow: 0 0 12px rgba(249,115,22,0.45); }
     .decision { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 12px; text-align: right; }
     .decision small { color: var(--dim); font-size: 0.72rem; }
     .empty { display: none; padding: 30px; text-align: center; color: var(--muted); }
@@ -156,7 +157,11 @@
     const riskFor = (risk) => risk >= 4 ? '#ef4444' : risk >= 2 ? '#f97316' : '#22c55e';
     const fmt = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
     const safe = (value) => String(value ?? '').replace(/[&<>'"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[ch]));
-    const bar = (label, value, risk = false) => `<div class="score ${risk ? 'risk' : ''}"><span>${label}</span><span class="track"><span class="fill" style="--value:${Number(value) || 0}"></span></span><strong>${Number(value) || 0}</strong></div>`;
+    const bar = (label, value, risk = false) => {
+      const numeric = Math.max(0, Math.min(5, Number(value) || 0));
+      const segments = Array.from({ length: 5 }, (_, index) => `<span class="seg ${index < numeric ? 'on' : ''}"></span>`).join('');
+      return `<div class="score ${risk ? 'risk' : ''}"><span>${label}</span><span class="track" aria-hidden="true">${segments}</span><strong>${numeric}</strong></div>`;
+    };
 
     function render() {
       const q = search.value.trim().toLowerCase();
