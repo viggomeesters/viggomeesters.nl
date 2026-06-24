@@ -4,22 +4,17 @@
 
 - Repo: `/home/viggo/github/viggomeesters.nl`
 - Canonical: `https://viggomeesters.com`
-- Latest refresh: Cluster B validation passed with `npm run check`.
+- Latest refresh: Cluster C validation passed with `npm run check`.
 
 ## Completed clusters
 
 ### Cluster 1 — taxonomy fix: Tech Stack vs Personal Knowledge System
 
-- Removed `/tech-stack/knowledge-system/` because those items are Personal Knowledge System components, not generic tech stack.
-- Updated `/tech-stack/` from 6 to 5 sections.
-- Updated `/personal-knowledge-system/` hero copy to English and made taxonomy explicit.
-- Updated homepage card copy for Personal Knowledge System.
+- Removed `/tech-stack/knowledge-system/`; updated `/tech-stack/`; made `/personal-knowledge-system/` the component map.
 
 ### Cluster 2 — thin hub/detail pass: Guides + Tech Stack
 
-- Enriched `/guides/` with shelf rules without turning it into a heavy systems block.
-- Enriched `/tech-stack/` with an explicit boundary explaining why Personal Knowledge System components are not listed there.
-- Enriched all 5 tech-stack detail pages with `Why this belongs in the stack` and `Maintenance boundary` sections.
+- Enriched `/guides/`, `/tech-stack/`, and all 5 tech-stack detail pages with boundaries and maintenance rules.
 
 ### Cluster 3 — Personal Knowledge System detail pages
 
@@ -27,22 +22,25 @@
 
 ### Cluster A — project pages
 
-- Enriched `/sap-agent-context/` and `/mega-vault-viewer/` with `How it works`, `Status & proof`, `Boundary`, and `Next action` cards.
-- Added portfolio boundary/status notes to `/obsidian-plugins/`.
-- Updated stale public `Life OS` naming on `/agent-brain/` and `/raycast-life-os/` to current Personal Knowledge System terminology while preserving legacy URLs and GitHub links.
+- Enriched project pages with status/proof, boundary, next-action, and current Personal Knowledge System terminology.
 
 ### Cluster B — methodology pages
 
-- Enriched `/source-backed-synthesis/`, `/proof-first-delivery/`, `/vault-first-operating-model/`, and `/agent-workflow-loop/` with `When to use`, `Steps`, `Example`, `Failure mode`, `Output contract`, and taxonomy boundary sections.
-- Added framework boundary and shelf contract guardrail cards to `/methodologies/`.
-- Browser-checked `/agent-workflow-loop/` and `/methodologies/` for layout, taxonomy, and overflow.
+- Enriched thin methodology pages with use/steps/example/failure/output/taxonomy sections and added hub guardrails.
+
+### Cluster C — Agent Workflow pages
+
+- Added a timeline reading guide, taxonomy boundary, and evidence standard to `/agent-workflow/`.
+- Added `Stage interpretation` sections to all 4 stage pages.
+- Added `Page role` notes to the 3 thinner stage pages.
+- Browser-checked `/agent-workflow/` and the 2026 May detail page for layout and overflow.
 
 ## Review stack verdict for completed clusters
 
-- Audit: taxonomy boundaries are explicit; methodologies remain frameworks, not systems or skills.
-- Recheck: thin methodology stubs now explain use, execution, output, and failure modes.
-- Devil: no fake case studies or made-up metrics were added; examples stay pattern-level and truthful.
-- Judge: pass for Cluster B; next exact cluster is Agent Workflow pages.
+- Audit: completed clusters now map to the requested page classes and avoid taxonomy drift.
+- Recheck: project/methodology/agent-workflow pages are less thin while preserving the static-site visual language.
+- Devil: no fake metrics, private vault content, or invented proof added; live/source claims are bounded.
+- Judge: pass for Cluster C; next exact cluster is Homepage + routes, then generated Skills template.
 
 ## Page class counts
 
@@ -58,11 +56,6 @@
 
 ## Remaining thin non-generated pages
 
-- `/agent-workflow/2025-december-github-copilot-vscode/` — system-detail, 1276 chars, From typing code to steering autocomplete.
-- `/agent-workflow/2026-february-claude-code-life-os-x/` — system-detail, 1328 chars, From repo sessions to a vault-backed operating layer.
-- `/agent-workflow/2026-january-claude-code-agent-brain/` — system-detail, 1265 chars, From editor helper to repo-operating agent.
-- `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` — system-detail, 1430 chars, From one agent session to a command bus with procedural memory.
-- `/agent-workflow/` — hub, 1565 chars, From editor helper to routed agent cockpit.
 - `/guides/` — hub, 988 chars, Practical writing, outside the systems grid.
 - `/` — homepage, 1405 chars, Viggo Meesters
 - `/personal-knowledge-system/agent-interfaces/` — system-detail, 1108 chars, Agent interfaces
@@ -82,11 +75,11 @@
 | Status | Class | Route | Chars | Flags | Notes |
 |---|---:|---|---:|---|---|
 | ok | project | `/agent-brain/` | 2945 |  | Hermes + Personal Knowledge System |
-| thin | system-detail | `/agent-workflow/2025-december-github-copilot-vscode/` | 1276 | thin | From typing code to steering autocomplete. |
-| thin | system-detail | `/agent-workflow/2026-february-claude-code-life-os-x/` | 1328 | thin; legacy URL/name | From repo sessions to a vault-backed operating layer. |
-| thin | system-detail | `/agent-workflow/2026-january-claude-code-agent-brain/` | 1265 | thin | From editor helper to repo-operating agent. |
-| thin | system-detail | `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` | 1430 | thin | From one agent session to a command bus with procedural memory. |
-| thin | hub | `/agent-workflow/` | 1565 | thin | From editor helper to routed agent cockpit. |
+| ok | system-detail | `/agent-workflow/2025-december-github-copilot-vscode/` | 1861 |  | From typing code to steering autocomplete. |
+| ok | system-detail | `/agent-workflow/2026-february-claude-code-life-os-x/` | 1853 | legacy URL/name | From repo sessions to a vault-backed operating layer. |
+| ok | system-detail | `/agent-workflow/2026-january-claude-code-agent-brain/` | 1814 |  | From editor helper to repo-operating agent. |
+| ok | system-detail | `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` | 1822 |  | From one agent session to a command bus with procedural memory. |
+| ok | hub | `/agent-workflow/` | 2109 |  | From editor helper to routed agent cockpit. |
 | ok | methodology | `/agent-workflow-loop/` | 1864 |  | Agent Workflow Loop |
 | ok | seo-dutch | `/beste-kattenbrokken/` | 13897 |  | Beste Kattenbrokken 2026 |
 | ok | seo-dutch | `/beste-kattenvoer/` | 13909 |  | Beste Kattenvoer 2026 |
