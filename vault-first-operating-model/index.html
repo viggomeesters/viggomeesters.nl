@@ -30,6 +30,21 @@
       <article class="item"><strong>Core loop</strong><p>Capture in Markdown, structure through system folders and schema.yaml, validate before trusting, and keep caches clearly downstream of the vault.</p></article>
       <article class="item"><strong>Boundary</strong><p>This overlaps with Systems, but the methodology is the decision rule: source-of-truth first, cache/tool second.</p></article>
     </div></section>
+
+    <section class="section"><div class="section-title">Operating guide</div><div class="list">
+      <article class="item"><strong>When to use</strong><p>Use when knowledge should outlive a chat or tool cache: operating rules, project context, decisions, captures, recurring workflows, and source-backed notes.</p></article>
+      <article class="item"><strong>Steps</strong><p>Write durable context to the canonical vault location, attach provenance, validate schema/links where possible, treat generated indexes as downstream, and report changed paths.</p></article>
+      <article class="item"><strong>Example</strong><p>A Telegram capture becomes a scoped vault note or queue item with source, chat/thread/session IDs, project slug when known, and validation evidence.</p></article>
+      <article class="item"><strong>Failure mode</strong><p>The model fails when agent memory becomes the real source of truth, loose inbox notes bypass schema, or automation silently drops failed vault writes.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Output contract</div><div class="list">
+      <article class="item"><strong>Minimum proof</strong><p>The minimum output is a durable vault record or validated no-write event with provenance, changed paths, and downstream index/cache status. If the vault cannot be written safely, report the failure visibly.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Taxonomy boundary</div><div class="list">
+      <article class="item"><strong>Related shelf</strong><p>Related shelf: `/personal-knowledge-system/` maps the system components; this page is the operating rule that decides where truth should live.</p></article>
+    </div></section>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
 </body>

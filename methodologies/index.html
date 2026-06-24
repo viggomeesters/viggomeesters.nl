@@ -129,7 +129,7 @@
     }
 
     /* Methodology card */
-    a.method-card {
+    .method-card {
       display: flex;
       align-items: flex-start;
       gap: 18px;
@@ -197,7 +197,7 @@
     }
 
     @media (hover: hover) {
-      a.method-card:hover {
+      .method-card:hover {
         transform: scale(1.02);
         background: linear-gradient(135deg, var(--card-soft, rgba(255,255,255,0.04)), transparent 70%);
         box-shadow:
@@ -206,19 +206,19 @@
         border-color: var(--card-color, var(--border));
         border-left-color: var(--card-color, var(--border));
       }
-      a.method-card:hover .method-icon-wrap {
+      .method-card:hover .method-icon-wrap {
         transform: scale(1.1);
         box-shadow: 0 0 16px var(--card-soft, transparent);
       }
-      a.method-card:hover .method-name { color: #ffffff; }
-      a.method-card:hover .arrow {
+      .method-card:hover .method-name { color: #ffffff; }
+      .method-card:hover .arrow {
         transform: translateX(3px);
         color: var(--card-color, var(--text-secondary));
       }
     }
 
     @media (hover: none) {
-      a.method-card:active { transform: scale(0.97); }
+      .method-card:active { transform: scale(0.97); }
     }
 
     /* Footer */
@@ -382,6 +382,16 @@
         <span class="arrow">&rarr;</span>
       </a>
 
+
+    <div class="method-card" style="--card-color:#64748b;--card-soft:rgba(100,116,139,0.10)">
+      <div class="method-icon-wrap"><span class="method-icon">↯</span></div>
+      <div class="method-content"><div class="method-title">Framework boundary</div><p class="method-desc">Methodologies are decision rules and repeatable work models. Systems, skills, project repositories, and setup inventories stay on their own pages so this shelf does not become a dumping ground.</p><div class="method-meta"><span>taxonomy</span><span>guardrail</span></div></div>
+    </div>
+
+    <div class="method-card" style="--card-color:#3b82f6;--card-soft:rgba(59,130,246,0.10)">
+      <div class="method-icon-wrap"><span class="method-icon">✓</span></div>
+      <div class="method-content"><div class="method-title">Shelf contract</div><p class="method-desc">Every methodology page should answer: when to use it, the steps, the output, one concrete example, and the failure mode. If it cannot answer those, it is probably a note, system, or skill instead of a methodology.</p><div class="method-meta"><span>quality bar</span><span>page checklist</span></div></div>
+    </div>
     </div>
 
     <div class="footer">&copy; 2026 Viggo Meesters</div>

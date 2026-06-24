@@ -4,7 +4,7 @@
 
 - Repo: `/home/viggo/github/viggomeesters.nl`
 - Canonical: `https://viggomeesters.com`
-- Latest refresh: `git pull --ff-only` and `npm run check` passed before Cluster A.
+- Latest refresh: Cluster B validation passed with `npm run check`.
 
 ## Completed clusters
 
@@ -30,14 +30,19 @@
 - Enriched `/sap-agent-context/` and `/mega-vault-viewer/` with `How it works`, `Status & proof`, `Boundary`, and `Next action` cards.
 - Added portfolio boundary/status notes to `/obsidian-plugins/`.
 - Updated stale public `Life OS` naming on `/agent-brain/` and `/raycast-life-os/` to current Personal Knowledge System terminology while preserving legacy URLs and GitHub links.
-- Browser-checked `/sap-agent-context/` and `/raycast-life-os/`; curl-checked all changed project pages for expected content.
+
+### Cluster B — methodology pages
+
+- Enriched `/source-backed-synthesis/`, `/proof-first-delivery/`, `/vault-first-operating-model/`, and `/agent-workflow-loop/` with `When to use`, `Steps`, `Example`, `Failure mode`, `Output contract`, and taxonomy boundary sections.
+- Added framework boundary and shelf contract guardrail cards to `/methodologies/`.
+- Browser-checked `/agent-workflow-loop/` and `/methodologies/` for layout, taxonomy, and overflow.
 
 ## Review stack verdict for completed clusters
 
-- Audit: project pages now include role, status/proof, boundaries, and source CTAs without moving them to the wrong shelf.
-- Recheck: the thin project pages no longer feel like title + CTA stubs; legacy naming is less confusing.
-- Devil: no fake metrics or private vault details added; GitHub proof is limited to HTTP reachability and does not claim repository quality.
-- Judge: pass for Cluster A; next exact cluster is Methodology pages.
+- Audit: taxonomy boundaries are explicit; methodologies remain frameworks, not systems or skills.
+- Recheck: thin methodology stubs now explain use, execution, output, and failure modes.
+- Devil: no fake case studies or made-up metrics were added; examples stay pattern-level and truthful.
+- Judge: pass for Cluster B; next exact cluster is Agent Workflow pages.
 
 ## Page class counts
 
@@ -58,24 +63,19 @@
 - `/agent-workflow/2026-january-claude-code-agent-brain/` — system-detail, 1265 chars, From editor helper to repo-operating agent.
 - `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` — system-detail, 1430 chars, From one agent session to a command bus with procedural memory.
 - `/agent-workflow/` — hub, 1565 chars, From editor helper to routed agent cockpit.
-- `/agent-workflow-loop/` — methodology, 729 chars, Agent Workflow Loop
 - `/guides/` — hub, 988 chars, Practical writing, outside the systems grid.
 - `/` — homepage, 1405 chars, Viggo Meesters
-- `/methodologies/` — hub, 1438 chars, Methodologies
 - `/personal-knowledge-system/agent-interfaces/` — system-detail, 1108 chars, Agent interfaces
 - `/personal-knowledge-system/markdown-vault/` — system-detail, 994 chars, Markdown vault
 - `/personal-knowledge-system/schema-and-frontmatter/` — system-detail, 1000 chars, Schema & frontmatter
 - `/personal-knowledge-system/system-folder/` — system-detail, 994 chars, system/ folder
 - `/personal-knowledge-system/validation-and-indexing/` — system-detail, 997 chars, Validation & indexes
-- `/proof-first-delivery/` — methodology, 712 chars, Proof-first Delivery
-- `/source-backed-synthesis/` — methodology, 804 chars, Source-backed Synthesis
 - `/tech-stack/ai-agents/` — tech-stack-detail, 1044 chars, AI Agents
 - `/tech-stack/developer-tools/` — tech-stack-detail, 1011 chars, Developer Tools
 - `/tech-stack/hardware/` — tech-stack-detail, 1197 chars, Hardware
 - `/tech-stack/hosting-automation/` — tech-stack-detail, 1064 chars, Hosting & Automation
 - `/tech-stack/` — hub, 1274 chars, Granular stack, easy to maintain.
 - `/tech-stack/software/` — tech-stack-detail, 1061 chars, Software
-- `/vault-first-operating-model/` — methodology, 737 chars, Vault-first Operating Model
 
 ## Findings index
 
@@ -87,9 +87,9 @@
 | thin | system-detail | `/agent-workflow/2026-january-claude-code-agent-brain/` | 1265 | thin | From editor helper to repo-operating agent. |
 | thin | system-detail | `/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/` | 1430 | thin | From one agent session to a command bus with procedural memory. |
 | thin | hub | `/agent-workflow/` | 1565 | thin | From editor helper to routed agent cockpit. |
-| thin | methodology | `/agent-workflow-loop/` | 729 | thin | Agent Workflow Loop |
-| ok | seo-dutch | `/beste-kattenbrokken/` | 13897 | Dutch? waarom, hoe, geen, niet | Beste Kattenbrokken 2026 |
-| ok | seo-dutch | `/beste-kattenvoer/` | 13909 | Dutch? mager, waarom, hoe, geen, niet | Beste Kattenvoer 2026 |
+| ok | methodology | `/agent-workflow-loop/` | 1864 |  | Agent Workflow Loop |
+| ok | seo-dutch | `/beste-kattenbrokken/` | 13897 |  | Beste Kattenbrokken 2026 |
+| ok | seo-dutch | `/beste-kattenvoer/` | 13909 |  | Beste Kattenvoer 2026 |
 | ok | other | `/cli-agents-guide/` | 10353 |  | CLI Agents + Obsidian: A Practical Guide |
 | ok | methodology | `/funnel-analysis/` | 6118 |  | Funnel Analysis |
 | thin | hub | `/guides/` | 988 | thin | Practical writing, outside the systems grid. |
@@ -97,7 +97,7 @@
 | thin | homepage | `/` | 1405 | thin | Viggo Meesters |
 | ok | methodology | `/knowledge-pyramid/` | 6339 |  | Knowledge Pyramid |
 | ok | project | `/mega-vault-viewer/` | 1875 |  | A local-first viewer for large Markdown vaults. |
-| thin | hub | `/methodologies/` | 1438 | thin | Methodologies |
+| ok | hub | `/methodologies/` | 1930 |  | Methodologies |
 | ok | project | `/obsidian-plugins/` | 3531 |  | Small plugins for making vaults more inspectable. |
 | thin | system-detail | `/personal-knowledge-system/agent-interfaces/` | 1108 | thin | Agent interfaces |
 | ok | hub | `/personal-knowledge-system/` | 2055 |  | The operating map of the system. |
@@ -105,7 +105,7 @@
 | thin | system-detail | `/personal-knowledge-system/schema-and-frontmatter/` | 1000 | thin | Schema &amp; frontmatter |
 | thin | system-detail | `/personal-knowledge-system/system-folder/` | 994 | thin | system/ folder |
 | thin | system-detail | `/personal-knowledge-system/validation-and-indexing/` | 997 | thin | Validation &amp; indexes |
-| thin | methodology | `/proof-first-delivery/` | 712 | thin | Proof-first Delivery |
+| ok | methodology | `/proof-first-delivery/` | 1803 |  | Proof-first Delivery |
 | ok | project | `/raycast-life-os/` | 2403 | legacy URL/name | Personal Knowledge System starter |
 | ok | project | `/sap-agent-context/` | 1960 |  | SAP context that agents can actually use. |
 | skip-generated | generated-skill | `/skills/agent-cli-delegation/` | 609 |  | agent-cli-delegation |
@@ -321,7 +321,7 @@
 | skip-generated | generated-skill | `/skills/youtube-content/` | 400 |  | youtube-content |
 | skip-generated | generated-skill | `/skills/youtube-to-obsidian-vault/` | 637 |  | youtube-to-obsidian-vault |
 | skip-generated | generated-skill | `/skills/yuanbao/` | 381 |  | yuanbao |
-| thin | methodology | `/source-backed-synthesis/` | 804 | thin | Source-backed Synthesis |
+| ok | methodology | `/source-backed-synthesis/` | 1915 |  | Source-backed Synthesis |
 | thin | tech-stack-detail | `/tech-stack/ai-agents/` | 1044 | thin | AI Agents |
 | thin | tech-stack-detail | `/tech-stack/developer-tools/` | 1011 | thin | Developer Tools |
 | thin | tech-stack-detail | `/tech-stack/hardware/` | 1197 | thin | Hardware |
@@ -329,4 +329,4 @@
 | thin | hub | `/tech-stack/` | 1274 | thin | Granular stack, easy to maintain. |
 | thin | tech-stack-detail | `/tech-stack/software/` | 1061 | thin | Software |
 | ok | other | `/uses/` | 2204 |  | Tech Stack |
-| thin | methodology | `/vault-first-operating-model/` | 737 | thin | Vault-first Operating Model |
+| ok | methodology | `/vault-first-operating-model/` | 1838 |  | Vault-first Operating Model |

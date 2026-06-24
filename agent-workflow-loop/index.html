@@ -30,6 +30,21 @@
       <article class="item"><strong>Core loop</strong><p>Turn intent into scope, edit inside that scope, verify with real commands, attack the result, remove slop, then ship only when evidence is attached.</p></article>
       <article class="item"><strong>Output</strong><p>A completed artifact plus a trace of what changed, what passed, what was reviewed, and what remains intentionally out of scope.</p></article>
     </div></section>
+
+    <section class="section"><div class="section-title">Operating guide</div><div class="list">
+      <article class="item"><strong>When to use</strong><p>Use when a task is broad enough that a single pass will likely produce a fake green: coding work, site audits, generated artifacts, or anything that needs repeated verification.</p></article>
+      <article class="item"><strong>Steps</strong><p>Define the target, run one scoped build attempt, verify with project gates, audit/recheck/devil the result, repair only in scope, then ship or block with evidence.</p></article>
+      <article class="item"><strong>Example</strong><p>A site-audit loop indexes pages, fixes one cluster, browser-checks it, updates the ledger, commits that cluster, and only then moves to the next cluster.</p></article>
+      <article class="item"><strong>Failure mode</strong><p>The loop fails when it becomes unbounded perfectionism, parallel writers touching the same files, or a vague “keep improving” task with no stop condition.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Output contract</div><div class="list">
+      <article class="item"><strong>Minimum proof</strong><p>The minimum output is a scoped artifact, verification log, review verdict, changed paths or commit, and a clear stop/continue decision. If a blocker appears, the loop should preserve evidence rather than hide it.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Taxonomy boundary</div><div class="list">
+      <article class="item"><strong>Related shelf</strong><p>Related shelf: `/agent-workflow/` is the system timeline; this page is only the loop rule for running scoped agent work without trusting the first green.</p></article>
+    </div></section>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
 </body>

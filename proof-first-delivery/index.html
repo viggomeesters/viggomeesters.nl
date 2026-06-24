@@ -30,6 +30,21 @@
       <article class="item"><strong>Core loop</strong><p>Define proof before editing, run the smallest meaningful validation, inspect the real surface, and report exact commands/URLs/results.</p></article>
       <article class="item"><strong>Output</strong><p>Changed paths, validation commands, pass/fail evidence, live/local URL where relevant, and open risks only if they are real.</p></article>
     </div></section>
+
+    <section class="section"><div class="section-title">Operating guide</div><div class="list">
+      <article class="item"><strong>When to use</strong><p>Use whenever a deliverable can be objectively exercised: a website page, CLI output, data file, PDF, deployment, route, or generated artifact.</p></article>
+      <article class="item"><strong>Steps</strong><p>Name the proof before changing files, build the smallest real artifact, run the strongest available check, inspect the user-facing result, then report exact evidence.</p></article>
+      <article class="item"><strong>Example</strong><p>For a homepage change, proof is not “HTML edited”; it is `npm run check`, browser overflow probe, rendered-page inspection, commit, and live URL check after push.</p></article>
+      <article class="item"><strong>Failure mode</strong><p>The framework fails when evidence is replaced by plausible-sounding summaries, screenshots are skipped for visual work, or known gaps are softened into “probably fine”.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Output contract</div><div class="list">
+      <article class="item"><strong>Minimum proof</strong><p>The minimum output is the artifact plus proof: commands, rendered inspection, live/local URL when relevant, and a short residual-risk note. If the proof cannot be produced, the result is blocked, not done.</p></article>
+    </div></section>
+
+    <section class="section"><div class="section-title">Taxonomy boundary</div><div class="list">
+      <article class="item"><strong>Related shelf</strong><p>Related shelf: project pages and demos show artifacts; this page defines the delivery rule that makes an artifact believable.</p></article>
+    </div></section>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
 </body>
