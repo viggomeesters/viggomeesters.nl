@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSONL Is the Agent-First Data Structure</title>
+  <meta name="description" content="Why JSONL records plus JSON Schema and evals make a better canonical source of truth for agent-first systems than YAML, one big JSON file, or SQLite.">
+  <link rel="canonical" href="https://viggomeesters.com/jsonl-agent-first-data-structures/">
+  <meta name="theme-color" content="#0c0c0f">
+  <meta property="og:title" content="JSONL Is the Agent-First Data Structure">
+  <meta property="og:description" content="Agent-first systems need atomic, typed, citeable records. JSONL should be the canonical SSOT; SQLite, DuckDB, and bundles are build targets.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.com/jsonl-agent-first-data-structures/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0c0c0f;
+      --bg-surface: #141418;
+      --bg-elevated: #1a1a20;
+      --border: #2a2a32;
+      --border-subtle: #1e1e26;
+      --text: #c8cbd5;
+      --text-secondary: #8a90a6;
+      --text-muted: #53586b;
+      --text-bright: #eeeff4;
+      --font: 'Sora', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+      --radius: 16px;
+      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      --claude: #f97316;
+      --claude-soft: rgba(249,115,22,0.10);
+      --gemini: #a855f7;
+      --gemini-soft: rgba(168,85,247,0.10);
+      --codex: #3b82f6;
+      --codex-soft: rgba(59,130,246,0.10);
+      --green: #22c55e;
+      --green-soft: rgba(34,197,94,0.10);
+      --amber: #eab308;
+      --amber-soft: rgba(234,179,8,0.10);
+      --cyan: #06b6d4;
+      --cyan-soft: rgba(6,182,212,0.10);
+      --pink: #f472b6;
+      --pink-soft: rgba(244,114,182,0.10);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background: var(--bg);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.7;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .aurora {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .aurora::before {
+      content: '';
+      position: absolute;
+      width: 140%;
+      height: 140%;
+      top: -20%;
+      left: -20%;
+      background:
+        radial-gradient(ellipse 600px 400px at 15% 10%, rgba(249,115,22,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 500px at 75% 25%, rgba(168,85,247,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 700px 300px at 50% 65%, rgba(59,130,246,0.04) 0%, transparent 60%),
+        radial-gradient(ellipse 400px 600px at 10% 80%, rgba(34,197,94,0.05) 0%, transparent 70%);
+    }
+    .aurora::after {
+      content: '';
+      position: absolute;
+      width: 130%;
+      height: 130%;
+      top: -15%;
+      left: -15%;
+      background:
+        radial-gradient(ellipse 500px 350px at 70% 55%, rgba(6,182,212,0.05) 0%, transparent 60%),
+        radial-gradient(ellipse 600px 400px at 30% 40%, rgba(234,179,8,0.04) 0%, transparent 70%);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px 80px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-bottom: 40px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s, transform 0.3s var(--bounce);
+    }
+    .back:hover {
+      color: var(--text-secondary);
+      border-color: var(--border);
+      transform: translateX(-3px);
+    }
+
+    .hero {
+      margin-bottom: 48px;
+    }
+
+    .hero h1 {
+      font-size: 2.2em;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .hero .subtitle {
+      font-size: 1em;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .hero .meta {
+      margin-top: 16px;
+      font-size: 0.78em;
+      color: var(--text-muted);
+    }
+
+    .tools-row {
+      display: flex;
+      gap: 8px;
+      margin: 24px 0 0;
+      flex-wrap: wrap;
+    }
+
+    .tool-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 10px;
+      font-size: 0.78em;
+      font-weight: 500;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .tool-chip.claude { background: var(--claude-soft); color: var(--claude); border-color: rgba(249,115,22,0.15); }
+    .tool-chip.gemini { background: var(--gemini-soft); color: var(--gemini); border-color: rgba(168,85,247,0.15); }
+    .tool-chip.codex { background: var(--codex-soft); color: var(--codex); border-color: rgba(59,130,246,0.15); }
+    .tool-chip.green { background: var(--green-soft); color: var(--green); border-color: rgba(34,197,94,0.15); }
+    .tool-chip.obsidian { background: var(--gemini-soft); color: var(--gemini); border-color: rgba(168,85,247,0.15); }
+
+    .tool-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .article h2 {
+      font-size: 1.4em;
+      font-weight: 700;
+      color: var(--text-bright);
+      letter-spacing: -0.02em;
+      margin: 48px 0 16px;
+      padding-top: 8px;
+    }
+
+    .article h3 {
+      font-size: 1.05em;
+      font-weight: 600;
+      color: #e0e1e8;
+      margin: 32px 0 12px;
+    }
+
+    .article p {
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    .article a {
+      color: var(--claude);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(249,115,22,0.3);
+      transition: border-color 0.2s;
+    }
+    .article a:hover {
+      border-color: var(--claude);
+    }
+
+    .article ul, .article ol {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+      line-height: 1.65;
+    }
+
+    .article strong {
+      color: #e0e1e8;
+      font-weight: 600;
+    }
+
+    .article em {
+      color: var(--text-secondary);
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.88em;
+      background: var(--bg-elevated);
+      padding: 2px 7px;
+      border-radius: 6px;
+      color: #e0e1e8;
+    }
+
+    pre {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      line-height: 1.55;
+    }
+
+    pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.82em;
+      color: var(--text);
+    }
+
+    .code-label {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.72em;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      padding: 6px 14px;
+      margin-bottom: -1px;
+      position: relative;
+      z-index: 1;
+    }
+    .code-label + pre {
+      border-radius: 0 var(--radius) var(--radius) var(--radius);
+    }
+
+    .callout {
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      border: 1px solid;
+    }
+
+    .callout.tip {
+      background: var(--green-soft);
+      border-color: rgba(34,197,94,0.15);
+    }
+    .callout.tip .callout-title { color: var(--green); }
+
+    .callout.warn {
+      background: var(--amber-soft);
+      border-color: rgba(234,179,8,0.15);
+    }
+    .callout.warn .callout-title { color: var(--amber); }
+
+    .callout.info {
+      background: var(--cyan-soft);
+      border-color: rgba(6,182,212,0.15);
+    }
+    .callout.info .callout-title { color: var(--cyan); }
+
+    .callout-title {
+      font-size: 0.82em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      font-size: 0.92em;
+    }
+
+    .comparison {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-bottom: 24px;
+      font-size: 0.88em;
+    }
+
+    .comparison th {
+      text-align: left;
+      padding: 12px 16px;
+      background: var(--bg-elevated);
+      color: var(--text-secondary);
+      font-weight: 600;
+      font-size: 0.82em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison th:first-child { border-radius: var(--radius) 0 0 0; }
+    .comparison th:last-child { border-radius: 0 var(--radius) 0 0; }
+
+    .comparison td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      vertical-align: top;
+    }
+
+    .comparison tr:last-child td { border-bottom: none; }
+    .comparison tr:last-child td:first-child { border-radius: 0 0 0 var(--radius); }
+    .comparison tr:last-child td:last-child { border-radius: 0 0 var(--radius) 0; }
+
+    .comparison td:first-child {
+      font-weight: 500;
+      color: #e0e1e8;
+      white-space: nowrap;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 9px;
+      font-size: 0.72em;
+      font-weight: 700;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .section-num.orange { background: var(--claude-soft); color: var(--claude); }
+    .section-num.purple { background: var(--gemini-soft); color: var(--gemini); }
+    .section-num.blue { background: var(--codex-soft); color: var(--codex); }
+    .section-num.green { background: var(--green-soft); color: var(--green); }
+    .section-num.amber { background: var(--amber-soft); color: var(--amber); }
+    .section-num.cyan { background: var(--cyan-soft); color: var(--cyan); }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 48px 0;
+    }
+
+    .workflow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 20px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .wf-step {
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 0.78em;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .wf-arrow {
+      color: var(--text-muted);
+      font-size: 0.82em;
+      padding: 0 6px;
+    }
+
+    .toc {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin-bottom: 40px;
+    }
+
+    .toc-title {
+      font-size: 0.7em;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .toc ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      margin-bottom: 6px;
+    }
+
+    .toc li::before {
+      content: counter(toc) ".";
+      font-family: var(--font-mono);
+      font-size: 0.78em;
+      color: var(--text-muted);
+      margin-right: 10px;
+      display: inline-block;
+      width: 22px;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92em;
+      transition: color 0.2s;
+    }
+    .toc a:hover { color: var(--text-bright); }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.72em;
+      color: var(--text-muted);
+      text-align: center;
+      opacity: 0.5;
+    }
+    .footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text-secondary); }
+
+    @media (max-width: 640px) {
+      .page { padding: 40px 14px 60px; }
+      .hero h1 { font-size: 1.6em; }
+      .article h2 { font-size: 1.2em; }
+      .tools-row { gap: 6px; }
+      .comparison { font-size: 0.82em; }
+      .comparison th, .comparison td { padding: 10px 12px; }
+      pre { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+
+  <div class="page">
+    <a href="/guides/" class="back">&larr; Guides & Articles</a>
+
+    <div class="hero">
+      <h1>JSONL Is the Agent-First Data Structure</h1>
+      <p class="subtitle">If the system is built primarily for agents, the canonical source of truth should not be YAML, one large JSON document, or SQLite. It should be atomic JSONL records, validated by schema, tested by evals, and compiled into fast runtime targets.</p>
+      <div class="tools-row">
+        <span class="tool-chip codex"><span class="tool-dot"></span>JSONL</span>
+        <span class="tool-chip green"><span class="tool-dot"></span>JSON Schema</span>
+        <span class="tool-chip gemini"><span class="tool-dot"></span>Evals</span>
+        <span class="tool-chip obsidian"><span class="tool-dot"></span>SQLite as artifact</span>
+      </div>
+      <p class="meta">By Viggo Meesters &middot; June 2026</p>
+    </div>
+
+    <nav class="toc">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#thesis">The thesis</a></li>
+        <li><a href="#why-jsonl">Why JSONL wins</a></li>
+        <li><a href="#not-sqlite">Why SQLite is not the SSOT</a></li>
+        <li><a href="#record-shape">The agent-first record shape</a></li>
+        <li><a href="#architecture">The architecture I would build</a></li>
+        <li><a href="#north-star">The north star</a></li>
+      </ol>
+    </nav>
+
+    <div class="article">
+      <h2 id="thesis"><span class="section-num orange">1</span>The thesis</h2>
+
+      <p>I recently changed my mind about the canonical data layer for agent-first systems. If humans are the primary authors, Markdown or YAML can be a good starting point. If agents are the primary readers, writers, retrievers, and auditors, the source of truth should optimize for their operating model instead.</p>
+
+      <p>For <a href="/sap-agent-context/">SAP Agent Context</a>, that means the canonical SSOT should be <strong>JSONL files plus JSON Schema</strong>. Not SQLite as the canonical source. Not one large JSON blob. YAML can still be an authoring layer, but it should not be the hard machine contract.</p>
+
+      <div class="callout tip">
+        <div class="callout-title">Strong recommendation</div>
+        <p>Make JSONL records the canonical source, generate SQLite/DuckDB/bundles/embeddings from it, and treat evals as part of the data contract.</p>
+      </div>
+
+      <div class="workflow">
+        <span class="wf-step" style="background: var(--codex-soft); color: var(--codex);">records/*.jsonl</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--green-soft); color: var(--green);">JSON Schema</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--amber-soft); color: var(--amber);">evals/*.jsonl</span>
+        <span class="wf-arrow">&rarr;</span>
+        <span class="wf-step" style="background: var(--cyan-soft); color: var(--cyan);">dist/* runtime artifacts</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 id="why-jsonl"><span class="section-num blue">2</span>Why JSONL wins</h2>
+
+      <p>JSONL is boring in the best possible way: one JSON object per line. That gives an agent a stream of small, typed, addressable records instead of a document it has to interpret.</p>
+
+      <table class="comparison">
+        <tr>
+          <th>Property</th>
+          <th>Why agents care</th>
+        </tr>
+        <tr>
+          <td>Atomic records</td>
+          <td>Each line can be read, validated, diffed, embedded, cited, replaced, or rejected independently.</td>
+        </tr>
+        <tr>
+          <td>Stable Git diffs</td>
+          <td>One changed fact can become one changed line when records are sorted and IDs are stable.</td>
+        </tr>
+        <tr>
+          <td>Streaming friendly</td>
+          <td>Agents and pipelines can process large files line by line without loading the whole corpus.</td>
+        </tr>
+        <tr>
+          <td>Schema native</td>
+          <td>JSON Schema gives a crisp machine contract for required fields, enums, relations, freshness, and constraints.</td>
+        </tr>
+        <tr>
+          <td>Toolchain compatible</td>
+          <td>Python, Node, embeddings pipelines, vector stores, SQLite, DuckDB, Turso, and Postgres all ingest it easily.</td>
+        </tr>
+      </table>
+
+      <p>Most importantly: JSONL pushes you away from documents and toward records. That matters when the product is not a human-readable knowledge base, but a context operating system for agents.</p>
+
+      <div class="divider"></div>
+
+      <h2 id="not-sqlite"><span class="section-num purple">3</span>Why SQLite is not the SSOT</h2>
+
+      <p>SQLite is excellent. I want it in the system. I just do not want it as the canonical source.</p>
+
+      <p>SQLite, DuckDB, libSQL, Turso, vector indexes, and JSON bundles should be <strong>generated runtime artifacts</strong>. They make agents fast at query time. They should not be the place where the public repository stores the canonical facts.</p>
+
+      <div class="callout warn">
+        <div class="callout-title">Database as artifact</div>
+        <p>Use SQLite for local querying and runtime speed. Use JSONL for reviewable, mergeable, schema-validated truth.</p>
+      </div>
+
+      <p>As a canonical repo format, SQLite has the wrong failure modes: opaque diffs, heavy migrations, awkward merge conflicts, and poor review ergonomics. Agents can read SQLite, but contributors and reviewers cannot easily inspect what changed. For an agent-first repo, that is backwards: the source should be transparent, and the runtime should be generated.</p>
+
+      <div class="divider"></div>
+
+      <h2 id="record-shape"><span class="section-num green">4</span>The agent-first record shape</h2>
+
+      <p>An agent-first record should not be a loose summary. It needs stable identity, claims, evidence, relations, retrieval hints, constraints, and freshness. Agents should not guess why a record exists or how safe it is to use.</p>
+
+      <div class="code-label">records/apps.jsonl</div>
+      <pre><code>{"id":"sap.app.eam.pm.ie03","kind":"sap_app","title":"IE03 - Display equipment","summary":"SAP GUI transaction context for displaying equipment.","topics":["sap-gui","eam","plant-maintenance","equipment"],"claims":[{"statement":"IE03 is used to display equipment master data.","confidence":"high","evidence_ids":["sap.ref.eam.pm.transaction-code-public-cross-check"]}],"relations":[{"type":"operates_on","target_id":"sap.object.eam-equipment"}],"retrieval":{"keywords":["IE03","equipment display","SAP GUI"],"queries":["How do I display equipment in SAP GUI?"],"negative_keywords":["create equipment","change equipment"]},"freshness":{"reviewed_at":"2026-06-24","review_after":"2026-12-24"}}</code></pre>
+
+      <p>The point is not that every record must be large. The point is that the important semantics are explicit. A good agent record can answer:</p>
+
+      <ul>
+        <li>What is this?</li>
+        <li>Which claims does it make?</li>
+        <li>What evidence supports those claims?</li>
+        <li>How fresh is it?</li>
+        <li>How does it relate to other records?</li>
+        <li>When should it be retrieved?</li>
+        <li>When should it <em>not</em> be retrieved?</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h2 id="architecture"><span class="section-num amber">5</span>The architecture I would build</h2>
+
+      <p>The repo should not be organized around documents. It should be organized around typed, testable, buildable records.</p>
+
+      <div class="code-label">repository shape</div>
+      <pre><code>records/
+  apps.jsonl
+  tables.jsonl
+  fields.jsonl
+  workflows.jsonl
+  roles.jsonl
+  claims.jsonl
+  sources.jsonl
+  relations.jsonl
+
+schema/
+  item.schema.json
+  claim.schema.json
+  relation.schema.json
+  bundle.schema.json
+  eval.schema.json
+
+evals/
+  retrieval.jsonl
+  bundle_quality.jsonl
+  adversarial.jsonl
+
+dist/
+  sap-agent-context.sqlite
+  sap-agent-context.duckdb
+  bundles/*.json
+  embeddings/*.jsonl</code></pre>
+
+      <p>The CLI then becomes the agent interface:</p>
+
+      <div class="code-label">agent interface</div>
+      <pre><code>sap-agent-context validate
+sap-agent-context query "IE03 equipment display"
+sap-agent-context bundle --goal "FO for SAP GUI equipment display"
+sap-agent-context build-db --target sqlite
+sap-agent-context build-db --target duckdb
+sap-agent-context eval retrieval
+sap-agent-context explain sap.app.eam.pm.ie03</code></pre>
+
+      <p>The product is not the repository. The product is the bounded context bundle an agent can trust for a specific goal.</p>
+
+      <div class="code-label">dist/bundles/eam-equipment-display.json</div>
+      <pre><code>{"bundle_id":"bundle.eam.equipment-display","goal":"write FO for EAM equipment display flow","items":["sap.app.eam.pm.ie03","sap.object.eam-equipment"],"must_cite":["sap.ref.eam.pm.transaction-code-public-cross-check"],"warnings":[],"gaps":["customer-specific authorization model not supplied"],"confidence":"medium"}</code></pre>
+
+      <div class="divider"></div>
+
+      <h2 id="north-star"><span class="section-num cyan">6</span>The north star</h2>
+
+      <p>If humans rarely touch the data directly, stop designing the canonical layer as if it is a document library. Design it for what agents actually need to do:</p>
+
+      <ol>
+        <li><strong>Retrieve</strong> the right bounded context.</li>
+        <li><strong>Reason</strong> over explicit claims and relations.</li>
+        <li><strong>Cite</strong> stable IDs and evidence.</li>
+        <li><strong>Detect gaps</strong> instead of hallucinating missing customer-specific proof.</li>
+      </ol>
+
+      <p>That is why my current answer is simple: <strong>JSONL is the best canonical SSOT for agent-first systems</strong>. SQLite, DuckDB, Turso, bundles, embeddings, and vector stores are generated accelerators. Evals are the quality contract. JSON Schema is the guardrail. The source is atomic JSONL.</p>
+
+      <div class="callout info">
+        <div class="callout-title">Stack implication</div>
+        <p>This is the direction I want to process further into my own stack: typed JSONL records as the source, generated databases as runtime, and retrieval evals as proof that agents are getting the right context.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="/guides/">Guides & Articles</a> &middot; <a href="/sap-agent-context/">SAP Agent Context</a> &middot; <a href="/tech-stack/">Tech Stack</a>
+    </div>
+  </div>
+</body>
+</html>
