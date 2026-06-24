@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T20:51:36+02:00",
+  "generatedAt": "2026-06-24T20:58:07+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
   "usefulOpen": 74,
@@ -2565,12 +2565,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "78ae587d20dd4bcd",
-      "title": "I Met With China's Top AI Experts. They're Freaking Out, Too",
+      "id": "38e067c3f2f4b2c0",
+      "title": "I Met With China’s Top AI Experts. They’re Freaking Out, Too",
       "url": "https://www.wired.com/story/ai-arms-race-china-us-cooperation/",
       "source": "Wired",
-      "published": "2026-06-24T20:49:26+02:00",
-      "summary": "The AI arms race between China and the US has researchers on both sides worried about a \"Chernobyl moment.\"",
+      "published": "2026-06-24T20:45:00+02:00",
+      "summary": "The AI arms race between China and the US has researchers on both sides worried about a “Chernobyl moment.”",
       "areas": [
         "developer-tools"
       ],
