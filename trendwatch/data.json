@@ -1,0 +1,4624 @@
+{
+  "generatedAt": "2026-06-24T20:08:42+02:00",
+  "ledgerUpdated": "2026-06-24",
+  "source": "system/contracts/repo-inspiration-ledger.yaml",
+  "total": 131,
+  "usefulOpen": 62,
+  "recommendations": {
+    "mine_now": 9,
+    "ledger_only": 66,
+    "watch": 56
+  },
+  "items": [
+    {
+      "id": "shanraisshan-claude-code-best-practice",
+      "repo": "shanraisshan/claude-code-best-practice",
+      "url": "https://github.com/shanraisshan/claude-code-best-practice",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 86,
+      "why": "from vibe coding to agentic engineering - practice makes claude perfect",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "agentic-ai",
+        "agentic-coding",
+        "agentic-engineering",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "best-practices",
+        "boris",
+        "claude"
+      ],
+      "language": "HTML",
+      "stars": 59631,
+      "forks": 5996,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 4,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "continuedev-continue",
+      "repo": "continuedev/continue",
+      "url": "https://github.com/continuedev/continue",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 80,
+      "why": "open-source coding agent",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "ai",
+        "cli",
+        "developer-tools",
+        "open-source",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 34377,
+      "forks": 4819,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "clementtsang-bottom",
+      "repo": "ClementTsang/bottom",
+      "url": "https://github.com/ClementTsang/bottom",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 80,
+      "why": "Yet another cross-platform graphical process/system monitor.",
+      "areas": [
+        "automation",
+        "devtools",
+        "frontend"
+      ],
+      "tags": [
+        "bottom",
+        "btm",
+        "cli",
+        "cross-platform",
+        "monitoring",
+        "rust",
+        "terminal",
+        "top",
+        "tui"
+      ],
+      "language": "Rust",
+      "stars": 13619,
+      "forks": 353,
+      "license": "MIT",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "chatwoot-chatwoot",
+      "repo": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "areas": [
+        "frontend",
+        "sap"
+      ],
+      "tags": [
+        "actioncable",
+        "chat-widget",
+        "conversation",
+        "customer-support",
+        "dashboard",
+        "design",
+        "docker",
+        "docker-image",
+        "heroku",
+        "intercom"
+      ],
+      "language": "Ruby",
+      "stars": 33407,
+      "forks": 7865,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "revfactory-harness",
+      "repo": "revfactory/harness",
+      "url": "https://github.com/revfactory/harness",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 48,
+      "why": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "claude-code",
+        "claude-code-plugin",
+        "harness",
+        "harness-engineering",
+        "html"
+      ],
+      "language": "HTML",
+      "stars": 7481,
+      "forks": 1046,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "anthropics-claude-plugins-official",
+      "repo": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 48,
+      "why": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "claude-code",
+        "mcp",
+        "python",
+        "skills"
+      ],
+      "language": "Python",
+      "stars": 30904,
+      "forks": 3364,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "stablyai-orca",
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 41,
+      "why": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "byoungd-english-level-up-tips",
+      "repo": "byoungd/English-level-up-tips",
+      "url": "https://github.com/byoungd/English-level-up-tips",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "An advanced guide to learn English which might benefit you a lot 🎉 . 人生进阶指南 离谱的人生 离谱的英语学习指南/英语学习教程/英语学习/学英语",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "chinese",
+        "english-learning",
+        "tutorial"
+      ],
+      "language": "",
+      "stars": 54576,
+      "forks": 5588,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "run-llama-liteparse",
+      "repo": "run-llama/liteparse",
+      "url": "https://github.com/run-llama/liteparse",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "A fast, helpful, and open-source document parser",
+      "areas": [],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "articles-mongodb-gitdailies-case-study",
+      "repo": "articles/mongodb-gitdailies-case-study",
+      "url": "https://github.com/articles/mongodb-gitdailies-case-study",
+      "firstSeen": "2026-06-24",
+      "lastSeen": "2026-06-24",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "MongoDB's teams reduced PR review times by up to 54% .",
+      "areas": [
+        "devtools"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "langgenius-dify",
+      "repo": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "Production-ready platform for agentic workflow development.",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "automation",
+        "gemini",
+        "genai",
+        "gpt",
+        "gpt-4"
+      ],
+      "language": "TypeScript",
+      "stars": 146202,
+      "forks": 22991,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 4,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "calesthio-openmontage",
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "areas": [
+        "data",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agentic-ai",
+        "ai",
+        "claude",
+        "copilot",
+        "cursor",
+        "elevenlabs",
+        "ffmpeg",
+        "flux",
+        "image-generation"
+      ],
+      "language": "Python",
+      "stars": 12931,
+      "forks": 1610,
+      "license": "AGPL-3.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 4,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "panniantong-agent-reach",
+      "repo": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "areas": [
+        "automation",
+        "devtools",
+        "hermes"
+      ],
+      "tags": [
+        "agent-infrastructure",
+        "ai-agent",
+        "ai-search",
+        "automation",
+        "bilibili",
+        "claude-code",
+        "cli",
+        "cursor",
+        "free-api",
+        "llm-tools"
+      ],
+      "language": "Python",
+      "stars": 38044,
+      "forks": 3014,
+      "license": "MIT",
+      "scores": {
+        "fit": 4,
+        "leverage": 5,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "jcodesmore-ai-website-cloner-template",
+      "repo": "JCodesMore/ai-website-cloner-template",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "Clone any website with one command using AI coding agents",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-tools",
+        "automation",
+        "boilerplate",
+        "claude",
+        "claude-code",
+        "clone",
+        "developer-tools",
+        "nextjs"
+      ],
+      "language": "TypeScript",
+      "stars": 17963,
+      "forks": 2759,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "egonex-ai-understand-anything",
+      "repo": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "areas": [
+        "automation",
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 66332,
+      "forks": 5502,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "deusdata-codebase-memory-mcp",
+      "repo": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 5,
+      "status": "reviewed",
+      "recommendation": "mine_now",
+      "action": "Mine",
+      "actionDetail": "Worth a focused pattern-mining pass",
+      "priority": 100,
+      "why": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "areas": [
+        "automation",
+        "data",
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "aider",
+        "ast",
+        "c",
+        "claude-code",
+        "code-analysis",
+        "code-intelligence",
+        "codex",
+        "cursor",
+        "cypher",
+        "developer-tools"
+      ],
+      "language": "C",
+      "stars": 11930,
+      "forks": 877,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "can1357-oh-my-pi",
+      "repo": "can1357/oh-my-pi",
+      "url": "https://github.com/can1357/oh-my-pi",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 88,
+      "why": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
+      "areas": [
+        "automation",
+        "devtools",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "ai-agent",
+        "ai-coding-agent",
+        "anthropic",
+        "bun",
+        "claude",
+        "cli",
+        "coding-assistant",
+        "llm",
+        "mcp",
+        "multi-provider"
+      ],
+      "language": "TypeScript",
+      "stars": 14199,
+      "forks": 1245,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "kestra-io-kestra",
+      "repo": "kestra-io/kestra",
+      "url": "https://github.com/kestra-io/kestra",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 86,
+      "why": "Event Driven Orchestration & Scheduling Platform for Mission Critical Applications",
+      "areas": [
+        "automation",
+        "data",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "ai-agents",
+        "automation",
+        "control-plane",
+        "data-engineering",
+        "data-orchestration",
+        "data-orchestrator",
+        "devops",
+        "etl",
+        "hacktoberfest",
+        "high-availability"
+      ],
+      "language": "Java",
+      "stars": 27128,
+      "forks": 2627,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 5,
+        "leverage": 2,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "esengine-deepseek-reasonix",
+      "repo": "esengine/DeepSeek-Reasonix",
+      "url": "https://github.com/esengine/DeepSeek-Reasonix",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 86,
+      "why": "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.",
+      "areas": [
+        "automation",
+        "devtools",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agent-framework",
+        "ai-agent",
+        "ai-coding",
+        "cli",
+        "coding-agent",
+        "deepseek",
+        "developer-tools",
+        "go",
+        "ink"
+      ],
+      "language": "Go",
+      "stars": 23973,
+      "forks": 1464,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 2,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "heygen-com-hyperframes",
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 84,
+      "why": "Write HTML. Render video. Built for agents.",
+      "areas": [
+        "frontend",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "ai",
+        "animation",
+        "ffmpeg",
+        "framework",
+        "gsap",
+        "html",
+        "mcp",
+        "puppeteer",
+        "rendering",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 30219,
+      "forks": 2834,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 2,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "cocoindex-io-cocoindex",
+      "repo": "cocoindex-io/cocoindex",
+      "url": "https://github.com/cocoindex-io/cocoindex",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 84,
+      "why": "Incremental engine for long horizon agents 🌟 Star if you like it!",
+      "areas": [
+        "data",
+        "hermes",
+        "sap",
+        "vault"
+      ],
+      "tags": [
+        "agentic-data-framework",
+        "ai",
+        "ai-agents",
+        "change-data-capture",
+        "codebase-intelligence",
+        "context-engineering",
+        "data-engineering",
+        "data-indexing",
+        "data-processing",
+        "etl"
+      ],
+      "language": "Rust",
+      "stars": 10467,
+      "forks": 812,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 5,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "bytedance-deer-flow",
+      "repo": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 84,
+      "why": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agentic",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "deep-research",
+        "harness",
+        "langchain",
+        "langgraph"
+      ],
+      "language": "Python",
+      "stars": 73449,
+      "forks": 9922,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 3,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "affaan-m-ecc",
+      "repo": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 7,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 84,
+      "why": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "areas": [
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools",
+        "javascript",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "language": "JavaScript",
+      "stars": 220043,
+      "forks": 33719,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 3,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "palmier-io-palmier-pro",
+      "repo": "palmier-io/palmier-pro",
+      "url": "https://github.com/palmier-io/palmier-pro",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "macOS video editor built for AI",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "ai-video",
+        "claude",
+        "macos",
+        "mcp",
+        "seedance2",
+        "swift",
+        "video-editor"
+      ],
+      "language": "Swift",
+      "stars": 7851,
+      "forks": 525,
+      "license": "GPL-3.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "langchain-ai-langchain",
+      "repo": "langchain-ai/langchain",
+      "url": "https://github.com/langchain-ai/langchain",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "The agent engineering platform.",
+      "areas": [
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "deepagents",
+        "enterprise",
+        "framework",
+        "gemini",
+        "generative-ai"
+      ],
+      "language": "Python",
+      "stars": 139935,
+      "forks": 23206,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "harry0703-moneyprinterturbo",
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "automation",
+        "chatgpt",
+        "moviepy",
+        "python",
+        "shortvideo",
+        "tiktok"
+      ],
+      "language": "Python",
+      "stars": 91485,
+      "forks": 13189,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "firecrawl-firecrawl",
+      "repo": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "The API to search, scrape, and interact with the web at scale. 🔥",
+      "areas": [
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-crawler",
+        "ai-scraping",
+        "ai-search",
+        "crawler",
+        "data-extraction",
+        "html-to-markdown",
+        "llm",
+        "markdown"
+      ],
+      "language": "TypeScript",
+      "stars": 137589,
+      "forks": 7969,
+      "license": "AGPL-3.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "daytonaio-daytona",
+      "repo": "daytonaio/daytona",
+      "url": "https://github.com/daytonaio/daytona",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "Daytona is a Secure and Elastic Infrastructure for Running AI-Generated Code",
+      "areas": [
+        "automation",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "agentic-workflow",
+        "ai",
+        "ai-agents",
+        "ai-runtime",
+        "ai-sandboxes",
+        "code-execution",
+        "code-interpreter",
+        "developer-tools",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 72340,
+      "forks": 5611,
+      "license": "AGPL-3.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "dair-ai-prompt-engineering-guide",
+      "repo": "dair-ai/Prompt-Engineering-Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents.",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agents",
+        "ai-agents",
+        "chatgpt",
+        "deep-learning",
+        "generative-ai",
+        "language-model",
+        "llms",
+        "mdx",
+        "openai"
+      ],
+      "language": "MDX",
+      "stars": 75886,
+      "forks": 8306,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "dagster-io-dagster",
+      "repo": "dagster-io/dagster",
+      "url": "https://github.com/dagster-io/dagster",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "An orchestration platform for the development, production, and observation of data assets.",
+      "areas": [
+        "automation",
+        "data",
+        "sap"
+      ],
+      "tags": [
+        "analytics",
+        "dagster",
+        "data-engineering",
+        "data-integration",
+        "data-orchestrator",
+        "data-pipelines",
+        "data-science",
+        "etl",
+        "metadata",
+        "mlops"
+      ],
+      "language": "Python",
+      "stars": 15735,
+      "forks": 2168,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "browser-use-browser-use",
+      "repo": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "ai-agents",
+        "ai-tools",
+        "browser-automation",
+        "browser-use",
+        "llm",
+        "playwright",
+        "python"
+      ],
+      "language": "Python",
+      "stars": 100183,
+      "forks": 11161,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "apache-airflow",
+      "repo": "apache/airflow",
+      "url": "https://github.com/apache/airflow",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
+      "areas": [
+        "automation",
+        "data",
+        "sap"
+      ],
+      "tags": [
+        "airflow",
+        "apache",
+        "apache-airflow",
+        "automation",
+        "dag",
+        "data-engineering",
+        "data-integration",
+        "data-orchestrator",
+        "data-pipelines",
+        "data-science"
+      ],
+      "language": "Python",
+      "stars": 45901,
+      "forks": 17274,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "abapgit-abapgit",
+      "repo": "abapGit/abapGit",
+      "url": "https://github.com/abapGit/abapGit",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "Git client for ABAP",
+      "areas": [
+        "automation",
+        "devtools",
+        "frontend",
+        "sap"
+      ],
+      "tags": [
+        "abap",
+        "abapgit",
+        "git-client",
+        "hacktoberfest",
+        "platform",
+        "sap",
+        "sap-gui"
+      ],
+      "language": "ABAP",
+      "stars": 1866,
+      "forks": 609,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "zhulinsen-daily-stock-analysis",
+      "repo": "ZhuLinsen/daily_stock_analysis",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "python",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading"
+      ],
+      "language": "Python",
+      "stars": 46236,
+      "forks": 42084,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "avaiga-taipy",
+      "repo": "Avaiga/taipy",
+      "url": "https://github.com/Avaiga/taipy",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 82,
+      "why": "Turns Data and AI algorithms into production-ready web applications in no time.",
+      "areas": [
+        "automation",
+        "data",
+        "frontend"
+      ],
+      "tags": [
+        "automation",
+        "data-engineering",
+        "data-integration",
+        "data-ops",
+        "data-visualization",
+        "datascience",
+        "developer-tools",
+        "hacktoberfest",
+        "hacktoberfest2023",
+        "job-scheduler"
+      ],
+      "language": "Python",
+      "stars": 19245,
+      "forks": 1985,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "khoj-ai-khoj",
+      "repo": "khoj-ai/khoj",
+      "url": "https://github.com/khoj-ai/khoj",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 81,
+      "why": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 5,
+        "leverage": 2,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "tursodatabase-turso",
+      "repo": "tursodatabase/turso",
+      "url": "https://github.com/tursodatabase/turso",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 80,
+      "why": "Turso is an in-process SQL database, compatible with SQLite.",
+      "areas": [
+        "data",
+        "sap"
+      ],
+      "tags": [
+        "database",
+        "embedded-database",
+        "rust",
+        "sql",
+        "sqlite3",
+        "webassembly"
+      ],
+      "language": "Rust",
+      "stars": 21648,
+      "forks": 1091,
+      "license": "MIT",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "argoproj-argo-workflows",
+      "repo": "argoproj/argo-workflows",
+      "url": "https://github.com/argoproj/argo-workflows",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 80,
+      "why": "Workflow Engine for Kubernetes",
+      "areas": [
+        "automation",
+        "data",
+        "devtools"
+      ],
+      "tags": [
+        "airflow",
+        "argo",
+        "argo-workflows",
+        "batch-processing",
+        "cloud-native",
+        "cncf",
+        "dag",
+        "data-engineering",
+        "gitops",
+        "go"
+      ],
+      "language": "Go",
+      "stars": 16773,
+      "forks": 3560,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "anthropics-knowledge-work-plugins",
+      "repo": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 80,
+      "why": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "areas": [
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 21786,
+      "forks": 2544,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "n8n-io-n8n",
+      "repo": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 79,
+      "why": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow",
+        "development",
+        "integration-framework",
+        "integrations",
+        "ipaas",
+        "low-code"
+      ],
+      "language": "TypeScript",
+      "stars": 193691,
+      "forks": 58770,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 4,
+        "leverage": 2,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "colbymchenry-codegraph",
+      "repo": "colbymchenry/codegraph",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 79,
+      "why": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "areas": [
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 53315,
+      "forks": 3258,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 3,
+        "novelty": 4,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "asgeirtj-system-prompts-leaks",
+      "repo": "asgeirtj/system_prompts_leaks",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 79,
+      "why": "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
+      "areas": [
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 45121,
+      "forks": 7431,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 3,
+        "novelty": 4,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "puppeteer-puppeteer",
+      "repo": "puppeteer/puppeteer",
+      "url": "https://github.com/puppeteer/puppeteer",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 78,
+      "why": "JavaScript API for Chrome and Firefox",
+      "areas": [
+        "automation",
+        "devtools"
+      ],
+      "tags": [
+        "automation",
+        "chrome",
+        "chromium",
+        "developer-tools",
+        "firefox",
+        "headless-chrome",
+        "node-module",
+        "testing",
+        "typescript",
+        "web"
+      ],
+      "language": "TypeScript",
+      "stars": 95205,
+      "forks": 9462,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "apache-superset",
+      "repo": "apache/superset",
+      "url": "https://github.com/apache/superset",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 78,
+      "why": "Apache Superset is a Data Visualization and Data Exploration Platform",
+      "areas": [
+        "data",
+        "frontend"
+      ],
+      "tags": [
+        "analytics",
+        "apache",
+        "apache-superset",
+        "asf",
+        "bi",
+        "business-analytics",
+        "business-intelligence",
+        "data-analysis",
+        "data-analytics",
+        "data-engineering"
+      ],
+      "language": "TypeScript",
+      "stars": 73448,
+      "forks": 17688,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "alfateam-orange-orm",
+      "repo": "alfateam/orange-orm",
+      "url": "https://github.com/alfateam/orange-orm",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 78,
+      "why": "The ultimate ORM for Node and Typescript",
+      "areas": [
+        "data",
+        "sap"
+      ],
+      "tags": [
+        "database",
+        "javascript",
+        "mssql",
+        "mssqlserver",
+        "mysql",
+        "nodejs",
+        "orm",
+        "orms",
+        "postgres",
+        "postgresql"
+      ],
+      "language": "JavaScript",
+      "stars": 1001,
+      "forks": 23,
+      "license": "ISC",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "d4vinci-scrapling",
+      "repo": "D4Vinci/Scrapling",
+      "url": "https://github.com/D4Vinci/Scrapling",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 78,
+      "why": "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "ai-scraping",
+        "automation",
+        "crawler",
+        "crawling",
+        "crawling-python",
+        "data",
+        "data-extraction",
+        "mcp",
+        "mcp-server"
+      ],
+      "language": "Python",
+      "stars": 65678,
+      "forks": 6487,
+      "license": "BSD-3-Clause",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "google-gemini-gemini-cli",
+      "repo": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 77,
+      "why": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "areas": [
+        "automation",
+        "devtools",
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "farion1231-cc-switch",
+      "repo": "farion1231/cc-switch",
+      "url": "https://github.com/farion1231/cc-switch",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 77,
+      "why": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "brianpetro-obsidian-smart-connections",
+      "repo": "brianpetro/obsidian-smart-connections",
+      "url": "https://github.com/brianpetro/obsidian-smart-connections",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 77,
+      "why": "Find related notes and excerpts while writing. Your link building copilot displays relevant content in graph + list view. A local embedding model powers semantic search. Zero setup. No API key.",
+      "areas": [
+        "frontend",
+        "hermes",
+        "sap",
+        "vault"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 5,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "airbytehq-airbyte",
+      "repo": "airbytehq/airbyte",
+      "url": "https://github.com/airbytehq/airbyte",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 77,
+      "why": "Open-source data movement for ELT pipelines and AI agents — from APIs, databases & files to warehouses, lakes, and AI applications. Both self-hosted and Cloud.",
+      "areas": [
+        "data",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "bigquery",
+        "change-data-capture",
+        "data",
+        "data-analysis",
+        "data-collection",
+        "data-engineering",
+        "data-integration",
+        "data-pipeline",
+        "elt",
+        "etl"
+      ],
+      "language": "Python",
+      "stars": 21508,
+      "forks": 5235,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 4,
+        "leverage": 1,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "composiohq-awesome-claude-skills",
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 76,
+      "why": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "antigravity",
+        "automation",
+        "claude",
+        "claude-code",
+        "codex",
+        "composio",
+        "cursor",
+        "developer-tools"
+      ],
+      "language": "Python",
+      "stars": 65573,
+      "forks": 7292,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 4,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 2
+      }
+    },
+    {
+      "id": "turbot-steampipe",
+      "repo": "turbot/steampipe",
+      "url": "https://github.com/turbot/steampipe",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "Zero-ETL, infinite possibilities. Live query APIs, code & more with SQL. No DB required.",
+      "areas": [
+        "data",
+        "frontend",
+        "sap"
+      ],
+      "tags": [
+        "go"
+      ],
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "steedos-steedos-platform",
+      "repo": "steedos/steedos-platform",
+      "url": "https://github.com/steedos/steedos-platform",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "The AI-Native Infrastructure for Enterprise Apps. Powered by ObjectStack (ObjectQL, ObjectOS, Object UI). Turn Prompts into Enterprise Software.",
+      "areas": [
+        "frontend",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "santifer-career-ops",
+      "repo": "santifer/career-ops",
+      "url": "https://github.com/santifer/career-ops",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "pathwaycom-pathway",
+      "repo": "pathwaycom/pathway",
+      "url": "https://github.com/pathwaycom/pathway",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG.",
+      "areas": [
+        "data",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "open-webui-open-webui",
+      "repo": "open-webui/open-webui",
+      "url": "https://github.com/open-webui/open-webui",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "llm",
+        "llm-ui",
+        "llm-webui",
+        "llms",
+        "mcp",
+        "ollama",
+        "ollama-webui",
+        "open-webui",
+        "openai"
+      ],
+      "language": "Python",
+      "stars": 142679,
+      "forks": 20518,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "ogulcancelik-herdr",
+      "repo": "ogulcancelik/herdr",
+      "url": "https://github.com/ogulcancelik/herdr",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "agent multiplexer that lives in your terminal.",
+      "areas": [
+        "devtools",
+        "hermes"
+      ],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "prefecthq-prefect",
+      "repo": "PrefectHQ/prefect",
+      "url": "https://github.com/PrefectHQ/prefect",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.",
+      "areas": [
+        "automation",
+        "data",
+        "frontend"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 4,
+        "leverage": 0,
+        "novelty": 5,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "kong-insomnia",
+      "repo": "Kong/insomnia",
+      "url": "https://github.com/Kong/insomnia",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 75,
+      "why": "The open-source, cross-platform API client for GraphQL, REST, WebSockets, SSE and gRPC. With Cloud, Local and Git storage.",
+      "areas": [
+        "automation",
+        "devtools"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 39571,
+      "forks": 2344,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "vectordotdev-vector",
+      "repo": "vectordotdev/vector",
+      "url": "https://github.com/vectordotdev/vector",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "A high-performance observability data pipeline.",
+      "areas": [
+        "data",
+        "devtools"
+      ],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "rtk-ai-rtk",
+      "repo": "rtk-ai/rtk",
+      "url": "https://github.com/rtk-ai/rtk",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
+      "areas": [
+        "automation",
+        "hermes"
+      ],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "microsoft-playwright",
+      "repo": "microsoft/playwright",
+      "url": "https://github.com/microsoft/playwright",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.",
+      "areas": [
+        "automation",
+        "devtools"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "mage-ai-mage-ai",
+      "repo": "mage-ai/mage-ai",
+      "url": "https://github.com/mage-ai/mage-ai",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "🧙 Build, run, and manage data pipelines for integrating and transforming data.",
+      "areas": [
+        "data",
+        "frontend"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "vinzent03-obsidian-git",
+      "repo": "Vinzent03/obsidian-git",
+      "url": "https://github.com/Vinzent03/obsidian-git",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "Integrate Git version control with automatic commit-and-sync and other advanced features in Obsidian.md",
+      "areas": [
+        "devtools",
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "ui5-cli",
+      "repo": "UI5/cli",
+      "url": "https://github.com/UI5/cli",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "An open and modular toolchain to develop state of the art applications based on the UI5 framework",
+      "areas": [
+        "automation",
+        "frontend"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "snailclimb-javaguide",
+      "repo": "Snailclimb/JavaGuide",
+      "url": "https://github.com/Snailclimb/JavaGuide",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+      "areas": [
+        "automation",
+        "frontend"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "datatalksclub-data-engineering-zoomcamp",
+      "repo": "DataTalksClub/data-engineering-zoomcamp",
+      "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 73,
+      "why": "Data Engineering Zoomcamp is a free 9-week course on building production-ready data pipelines. The next cohort starts in January 2026. Join the course here 👇🏼",
+      "areas": [
+        "data",
+        "frontend"
+      ],
+      "tags": [
+        "course",
+        "data-engineering",
+        "dbt",
+        "docker",
+        "free",
+        "jupyter notebook",
+        "kafka",
+        "kestra",
+        "spark"
+      ],
+      "language": "Jupyter Notebook",
+      "stars": 42694,
+      "forks": 8449,
+      "license": "unknown",
+      "scores": {
+        "fit": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "f-prompts-chat",
+      "repo": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "reviewed",
+      "recommendation": "watch",
+      "action": "Watch",
+      "actionDetail": "Interesting; wait or mine when it matches a current project",
+      "priority": 72,
+      "why": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "areas": [
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts",
+        "claude",
+        "gemini",
+        "gpt",
+        "gpt-4",
+        "html"
+      ],
+      "language": "HTML",
+      "stars": 164127,
+      "forks": 21261,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 2
+      }
+    },
+    {
+      "id": "zarazhangrui-frontend-slides",
+      "repo": "zarazhangrui/frontend-slides",
+      "url": "https://github.com/zarazhangrui/frontend-slides",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Viggo asked whether this agent-neutral HTML slide skill can improve the frontend/output stack and how to mine it.",
+      "areas": [
+        "frontend-slides",
+        "output",
+        "viggo-agent-skills",
+        "hermes",
+        "design-quality-gates"
+      ],
+      "tags": [
+        "frontend-slides",
+        "html-decks",
+        "pptx-conversion",
+        "visual-style-discovery",
+        "fixed-stage",
+        "anti-slop",
+        "browser-verification",
+        "pdf-export"
+      ],
+      "language": "JavaScript",
+      "stars": 22600,
+      "forks": 1800,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 5,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 2
+      }
+    },
+    {
+      "id": "zarazhangrui-beautiful-html-templates",
+      "repo": "zarazhangrui/beautiful-html-templates",
+      "url": "https://github.com/zarazhangrui/beautiful-html-templates",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "adopted",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Viggo asked whether this HTML template library can improve the frontend/output stack and how to mine it.",
+      "areas": [
+        "viggo-agent-skills",
+        "output",
+        "frontend-slides",
+        "html-decks",
+        "design-quality-gates"
+      ],
+      "tags": [
+        "html-templates",
+        "slide-decks",
+        "frontend-design",
+        "agent-skills",
+        "anti-slop",
+        "visual-previews",
+        "template-selection",
+        "provenance"
+      ],
+      "language": "HTML",
+      "stars": 3100,
+      "forks": 278,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 5,
+        "novelty": 4,
+        "maturity": 4,
+        "risk": 2
+      }
+    },
+    {
+      "id": "rohitg00-ai-engineering-from-scratch",
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "mined",
+      "recommendation": "ledger_only",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Viggo asked what we can mine from AI Engineering from Scratch for our Hermes/Bertus/AW Lite setup.",
+      "areas": [
+        "hermes",
+        "bertus-command-bus",
+        "agent-workflow-lite",
+        "viggo-agent-skills",
+        "runtime-hardening"
+      ],
+      "tags": [
+        "ai-engineering",
+        "agent-engineering",
+        "runtime-hardening",
+        "skills",
+        "tool-registry",
+        "prompt-injection-defense",
+        "verification-gates",
+        "cost-governors",
+        "shared-memory",
+        "observability"
+      ],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 0,
+        "maturity": 0,
+        "risk": 0
+      }
+    },
+    {
+      "id": "mukul975-anthropic-cybersecurity-skills",
+      "repo": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+      "areas": [
+        "automation",
+        "devtools",
+        "hermes"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 19021,
+      "forks": 2234,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 5,
+        "novelty": 5,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "leonxlnx-taste-skill",
+      "repo": "Leonxlnx/taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "adopted",
+      "recommendation": "ledger_only",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Viggo asked to mine the Taste Skill trend for the central frontend design skill.",
+      "areas": [
+        "frontend",
+        "viggo-agent-skills",
+        "hermes",
+        "design-quality-gates"
+      ],
+      "tags": [
+        "frontend-design",
+        "anti-slop",
+        "agent-skills",
+        "design-taste",
+        "landing-pages",
+        "portfolios",
+        "redesigns",
+        "ui-quality-gates",
+        "motion-discipline"
+      ],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 0,
+        "maturity": 0,
+        "risk": 0
+      }
+    },
+    {
+      "id": "mvanhorn-last30days-skill",
+      "repo": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 48,
+      "why": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "ai-prompts",
+        "ai-skill",
+        "bluesky",
+        "claude",
+        "claude-code",
+        "clawhub",
+        "deep-research",
+        "hackernews",
+        "instagram",
+        "openclaw"
+      ],
+      "language": "Python",
+      "stars": 45907,
+      "forks": 3811,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "addyosmani-agent-skills",
+      "repo": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 48,
+      "why": "Production-grade engineering skills for AI coding agents.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "agent-skills",
+        "antigravity",
+        "antigravity-ide",
+        "claude-code",
+        "cursor",
+        "shell",
+        "skills"
+      ],
+      "language": "Shell",
+      "stars": 65588,
+      "forks": 7085,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "dietrichgebert-ponytail",
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 48,
+      "why": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "agent-skills",
+        "ai-agents",
+        "claude",
+        "claude-code",
+        "claude-code-plugin",
+        "cursor-rules",
+        "developer-tools",
+        "javascript",
+        "llm",
+        "prompt-engineering"
+      ],
+      "language": "JavaScript",
+      "stars": 50632,
+      "forks": 2494,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "mattpocock-skills",
+      "repo": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 46,
+      "why": "Skills for Real Engineers. Straight from my .claude directory.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "shell"
+      ],
+      "language": "Shell",
+      "stars": 142324,
+      "forks": 12307,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "nousresearch-hermes-agent",
+      "repo": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 5,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 46,
+      "why": "The agent that grows with you",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt",
+        "claude",
+        "claude-code",
+        "clawdbot",
+        "codex",
+        "hermes"
+      ],
+      "language": "Python",
+      "stars": 200220,
+      "forks": 35661,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "lyogavin-airllm",
+      "repo": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 44,
+      "why": "AirLLM 70B inference with single 4GB GPU",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "chinese-llm",
+        "chinese-nlp",
+        "finetune",
+        "generative-ai",
+        "instruct-gpt",
+        "instruction-set",
+        "jupyter notebook",
+        "llama",
+        "llm",
+        "lora"
+      ],
+      "language": "Jupyter Notebook",
+      "stars": 21167,
+      "forks": 2426,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "lfnovo-open-notebook",
+      "repo": "lfnovo/open-notebook",
+      "url": "https://github.com/lfnovo/open-notebook",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 44,
+      "why": "An Open Source implementation of Notebook LM with more flexibility and features",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "assistant",
+        "learning",
+        "note-taking",
+        "notebook",
+        "notes-app",
+        "self-learning",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 32693,
+      "forks": 3690,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "garrytan-gstack",
+      "repo": "garrytan/gstack",
+      "url": "https://github.com/garrytan/gstack",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 44,
+      "why": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 113444,
+      "forks": 16830,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "colemurray-background-agents",
+      "repo": "ColeMurray/background-agents",
+      "url": "https://github.com/ColeMurray/background-agents",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 44,
+      "why": "An open-source background agents coding system",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 2016,
+      "forks": 314,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "nvidia-skillspector",
+      "repo": "NVIDIA/SkillSpector",
+      "url": "https://github.com/NVIDIA/SkillSpector",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 43,
+      "why": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 3,
+        "novelty": 3,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "penpot-penpot",
+      "repo": "penpot/penpot",
+      "url": "https://github.com/penpot/penpot",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "Penpot: The open-source design tool for design and code collaboration",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "clojure",
+        "clojurescript",
+        "design",
+        "prototyping",
+        "ui",
+        "ux-design",
+        "ux-experience"
+      ],
+      "language": "Clojure",
+      "stars": 53045,
+      "forks": 3393,
+      "license": "MPL-2.0",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "jamiepine-voicebox",
+      "repo": "jamiepine/voicebox",
+      "url": "https://github.com/jamiepine/voicebox",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "The open-source AI voice studio. Clone, dictate, create.",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "ai",
+        "cuda",
+        "mlx",
+        "qwen3-tts",
+        "qwen3-tts-ui",
+        "typescript",
+        "voice-ai",
+        "voice-clone",
+        "whisper"
+      ],
+      "language": "TypeScript",
+      "stars": 32613,
+      "forks": 3956,
+      "license": "MIT",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "eooce-auto-deploy-sap-and-keepalive",
+      "repo": "eooce/Auto-deploy-sap-and-keepalive",
+      "url": "https://github.com/eooce/Auto-deploy-sap-and-keepalive",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "Auto deploy sap and keepalive",
+      "areas": [
+        "sap"
+      ],
+      "tags": [
+        "javascript",
+        "sap",
+        "trojan",
+        "vless-ws-tls",
+        "vmess",
+        "vmess-ws-tls"
+      ],
+      "language": "JavaScript",
+      "stars": 726,
+      "forks": 2107,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 0
+      }
+    },
+    {
+      "id": "blacksmithgu-obsidian-dataview",
+      "repo": "blacksmithgu/obsidian-dataview",
+      "url": "https://github.com/blacksmithgu/obsidian-dataview",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "A data index and query language over Markdown files, for https://obsidian.md/.",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "obsidian-md",
+        "obsidian-plugin",
+        "query-language",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 9091,
+      "forks": 541,
+      "license": "MIT",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 4,
+        "risk": 0
+      }
+    },
+    {
+      "id": "apple-container",
+      "repo": "apple/container",
+      "url": "https://github.com/apple/container",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "swift"
+      ],
+      "language": "Swift",
+      "stars": 39602,
+      "forks": 1157,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "abap2xlsx-abap2xlsx",
+      "repo": "abap2xlsx/abap2xlsx",
+      "url": "https://github.com/abap2xlsx/abap2xlsx",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 42,
+      "why": "Generate your professional Excel spreadsheet from ABAP",
+      "areas": [
+        "sap"
+      ],
+      "tags": [
+        "abap",
+        "backend",
+        "erp",
+        "excel",
+        "excel-export",
+        "excel-import",
+        "excelgenerator",
+        "excelreader",
+        "excelwriter",
+        "hacktoberfest"
+      ],
+      "language": "ABAP",
+      "stars": 866,
+      "forks": 315,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 0
+      }
+    },
+    {
+      "id": "thedotmack-claude-mem",
+      "repo": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 41,
+      "why": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "phuryn-pm-skills",
+      "repo": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 41,
+      "why": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "withastro-flue",
+      "repo": "withastro/flue",
+      "url": "https://github.com/withastro/flue",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "The sandbox agent framework.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "tashfeenahmed-freellmapi",
+      "repo": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "OpenAI-compatible proxy that stacks the free tiers of 16 LLM providers (~1.7B tokens/month) behind one /v1 endpoint — plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "makeplane-plane",
+      "repo": "makeplane/plane",
+      "url": "https://github.com/makeplane/plane",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
+      "areas": [
+        "automation"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "lobehub-lobehub",
+      "repo": "lobehub/lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "infiniflow-ragflow",
+      "repo": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "huginn-huginn",
+      "repo": "huginn/huginn",
+      "url": "https://github.com/huginn/huginn",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "Create agents that monitor and act on your behalf. Your agents are standing by!",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "ruby"
+      ],
+      "language": "Ruby",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "hardikpandya-stop-slop",
+      "repo": "hardikpandya/stop-slop",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "A skill file for removing AI tells from prose",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 11935,
+      "forks": 833,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "stirling-tools-stirling-pdf",
+      "repo": "Stirling-Tools/Stirling-PDF",
+      "url": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere",
+      "areas": [
+        "devtools"
+      ],
+      "tags": [
+        "docker",
+        "hacktoberfest",
+        "java",
+        "pdf",
+        "pdf-converter",
+        "pdf-editor",
+        "pdf-manipulation",
+        "pdf-merger",
+        "pdf-ocr",
+        "pdf-tools"
+      ],
+      "language": "TypeScript",
+      "stars": 83301,
+      "forks": 7256,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 1,
+        "leverage": 2,
+        "novelty": 3,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
+      "id": "lmcache-lmcache",
+      "repo": "LMCache/LMCache",
+      "url": "https://github.com/LMCache/LMCache",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 39,
+      "why": "LMCache: Supercharge Your LLM with the Fastest KV Cache Layer",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 9656,
+      "forks": 1385,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "windingwind-zotero-better-notes",
+      "repo": "windingwind/zotero-better-notes",
+      "url": "https://github.com/windingwind/zotero-better-notes",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Everything about note management. All in Zotero.",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "obsidianmd-obsidian-releases",
+      "repo": "obsidianmd/obsidian-releases",
+      "url": "https://github.com/obsidianmd/obsidian-releases",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Community plugins list, theme list, and releases of Obsidian.",
+      "areas": [
+        "vault"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "obsidian-community-obsidian-kanban",
+      "repo": "obsidian-community/obsidian-kanban",
+      "url": "https://github.com/obsidian-community/obsidian-kanban",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Create markdown-backed Kanban boards in Obsidian.",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "koala73-worldmonitor",
+      "repo": "koala73/worldmonitor",
+      "url": "https://github.com/koala73/worldmonitor",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 4,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 58700,
+      "forks": 9259,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "kepano-obsidian-minimal",
+      "repo": "kepano/obsidian-minimal",
+      "url": "https://github.com/kepano/obsidian-minimal",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "A distraction-free and highly customizable theme for Obsidian.",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "css"
+      ],
+      "language": "CSS",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "jackyzha0-quartz",
+      "repo": "jackyzha0/quartz",
+      "url": "https://github.com/jackyzha0/quartz",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "🌱 a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "inoerp-inoerp",
+      "repo": "inoerp/inoERP",
+      "url": "https://github.com/inoerp/inoERP",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "inoERP is an OneApp [ Go back-end & Flutter front-end ] based enterprise management system",
+      "areas": [
+        "sap"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "hoppscotch-hoppscotch",
+      "repo": "hoppscotch/hoppscotch",
+      "url": "https://github.com/hoppscotch/hoppscotch",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desktop & CLI • Open-Source Alternative to Postman, Insomnia",
+      "areas": [
+        "automation"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "heshengtao-super-agent-party",
+      "repo": "heshengtao/super-agent-party",
+      "url": "https://github.com/heshengtao/super-agent-party",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "⭐ All-in-one AI companion! Super Agent Party = Self hosted neuro sama + openclaw! ⭐ 全能AI伴侣！超级智能体派对 = 自托管neuro sama + openclaw!",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "silentvoid13-templater",
+      "repo": "SilentVoid13/Templater",
+      "url": "https://github.com/SilentVoid13/Templater",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "A template plugin for obsidian",
+      "areas": [
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "sap-archive-pyrfc",
+      "repo": "SAP-archive/PyRFC",
+      "url": "https://github.com/SAP-archive/PyRFC",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "Asynchronous, non-blocking SAP NW RFC SDK bindings for Python",
+      "areas": [
+        "sap"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "githubdaily-githubdaily",
+      "repo": "GitHubDaily/GitHubDaily",
+      "url": "https://github.com/GitHubDaily/GitHubDaily",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 37,
+      "why": "坚持分享 GitHub 上高质量、有趣实用的开源技术教程、开发者工具、编程网站、技术资讯。A list cool, interesting projects of GitHub.",
+      "areas": [
+        "devtools"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "yonggekkk-argosbx",
+      "repo": "yonggekkk/argosbx",
+      "url": "https://github.com/yonggekkk/argosbx",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "小白自建代理神器！ArgoSBX一键无交互小钢炮脚本💣：Sing-box、Xray、Argo三内核自动搭配；支持VPS、Docker、容器多环境部署；套CDN的5大方案+套WARP的15种组合；已支持协议：AnyTLS、Any-reality、Vless-xhttp-reality-vision-enc、Vless-tcp-reality-vision、Vless-xhttp-vision-enc、Vless-ws-vision-enc、Shadowsocks-2022、Hysteria2、Tuic、Socks5、Vmess-ws、Argo临时/固定隧道",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "shell"
+      ],
+      "language": "Shell",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "teslamate-org-teslamate",
+      "repo": "teslamate-org/teslamate",
+      "url": "https://github.com/teslamate-org/teslamate",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "A self-hosted data logger for your Tesla 🚘 [main maintainer= @JakobLichterfeld ]",
+      "areas": [],
+      "tags": [
+        "elixir"
+      ],
+      "language": "Elixir",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "openai-plugins",
+      "repo": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "OpenAI Plugins",
+      "areas": [],
+      "tags": [
+        "javascript"
+      ],
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 2,
+        "risk": 1
+      }
+    },
+    {
+      "id": "netdata-netdata",
+      "repo": "netdata/netdata",
+      "url": "https://github.com/netdata/netdata",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "The fastest path to AI-powered full stack observability, even for lean teams.",
+      "areas": [
+        "devtools"
+      ],
+      "tags": [
+        "go"
+      ],
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "n0-computer-iroh",
+      "repo": "n0-computer/iroh",
+      "url": "https://github.com/n0-computer/iroh",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "IP addresses break, dial keys instead. Modular networking stack in Rust.",
+      "areas": [],
+      "tags": [
+        "rust"
+      ],
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "iptv-org-iptv",
+      "repo": "iptv-org/iptv",
+      "url": "https://github.com/iptv-org/iptv",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 3,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "Collection of publicly available IPTV channels from all over the world",
+      "areas": [],
+      "tags": [
+        "iptv",
+        "m3u",
+        "playlist",
+        "streams",
+        "tv",
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 127741,
+      "forks": 7029,
+      "license": "Unlicense",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 5,
+        "risk": 1
+      }
+    },
+    {
+      "id": "google-research-timesfm",
+      "repo": "google-research/timesfm",
+      "url": "https://github.com/google-research/timesfm",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+      "areas": [],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 25195,
+      "forks": 2399,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "freecodecamp-freecodecamp",
+      "repo": "freeCodeCamp/freeCodeCamp",
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-23",
+      "seenCount": 1,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+      "areas": [],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 450282,
+      "forks": 45214,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "significant-gravitas-autogpt",
+      "repo": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+      "areas": [
+        "frontend"
+      ],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "opencut-app-opencut",
+      "repo": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 35,
+      "why": "The open-source CapCut alternative",
+      "areas": [],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "maturity": 3,
+        "risk": 1
+      }
+    },
+    {
+      "id": "redpanda-data-connect",
+      "repo": "redpanda-data/connect",
+      "url": "https://github.com/redpanda-data/connect",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "Fancy stream processing made operationally mundane",
+      "areas": [],
+      "tags": [
+        "go"
+      ],
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "ollama-ollama",
+      "repo": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "areas": [],
+      "tags": [
+        "go"
+      ],
+      "language": "Go",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "localstack-localstack",
+      "repo": "localstack/localstack",
+      "url": "https://github.com/localstack/localstack",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline",
+      "areas": [],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "huggingface-transformers",
+      "repo": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "areas": [],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "eugeneyan-applied-ml",
+      "repo": "eugeneyan/applied-ml",
+      "url": "https://github.com/eugeneyan/applied-ml",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "📚 Papers & tech blogs by companies sharing their work on data science & machine learning in production.",
+      "areas": [],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "openhands-openhands",
+      "repo": "OpenHands/OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "🙌 OpenHands: AI-Driven Development",
+      "areas": [],
+      "tags": [
+        "python"
+      ],
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "gokumohandas-made-with-ml",
+      "repo": "GokuMohandas/Made-With-ML",
+      "url": "https://github.com/GokuMohandas/Made-With-ML",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 33,
+      "why": "Learn how to develop, deploy and iterate on production-grade ML applications.",
+      "areas": [],
+      "tags": [
+        "jupyter notebook"
+      ],
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "maturity": 1,
+        "risk": 1
+      }
+    },
+    {
+      "id": "punkpeye-awesome-mcp-servers",
+      "repo": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "inbox",
+      "recommendation": "ledger_only",
+      "action": "Ledger",
+      "actionDetail": "Captured for provenance only",
+      "priority": 27,
+      "why": "A collection of MCP servers.",
+      "areas": [
+        "hermes"
+      ],
+      "tags": [],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "unknown",
+      "scores": {
+        "fit": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "maturity": 1,
+        "risk": 3
+      }
+    },
+    {
+      "id": "microsoft-markitdown",
+      "repo": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "firstSeen": "2026-06-22",
+      "lastSeen": "2026-06-24",
+      "seenCount": 2,
+      "status": "adopted",
+      "recommendation": "ledger_only",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Viggo asked whether MarkItDown could be useful for the vault/document intake pipeline.",
+      "areas": [
+        "hermes",
+        "bertus-command-bus",
+        "vault",
+        "document-intake",
+        "markitdown-staging"
+      ],
+      "tags": [
+        "markitdown",
+        "document-intake",
+        "markdown-conversion",
+        "vault-staging",
+        "quality-gate",
+        "manifest",
+        "ocr-boundary",
+        "provenance"
+      ],
+      "language": "",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "scores": {
+        "fit": 0,
+        "leverage": 0,
+        "novelty": 0,
+        "maturity": 0,
+        "risk": 0
+      }
+    }
+  ]
+}
