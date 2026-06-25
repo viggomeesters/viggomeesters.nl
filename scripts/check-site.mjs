@@ -45,6 +45,61 @@ const publicPages = htmlFiles
   .sort();
 const variantPages = htmlFiles.filter((file) => /^variant-.*\.html$/.test(file)).sort();
 
+const publicCopyBans = [
+  /\bWhat belongs here:/i,
+  /\bReader promise:/i,
+  /\bPublishing rule:/i,
+  /\bQuality bar:/i,
+  /\bCurrent queue:/i,
+  /\bEditorial checklist:/i,
+  /\bNavigation role:/i,
+  /\bStatus & proof:/i,
+  /\bDesign bias:/i,
+  /\bPublic boundary:/i,
+  /\bInput protocol:/i,
+  /\bOutput protocol:/i,
+  /\bReview checklist:/i,
+  /\bRegistry source:/i,
+  /\bLoad name:/i,
+  /private runbooks/i,
+  /vault-only operating notes/i,
+  /public-safe tooling decisions/i,
+  /future candidates are/i,
+  /should not compete with Systems or Setup/i,
+  /\bDecision and proof\b/,
+  /\bDecision rule\b/,
+  /\bProof signal\b/,
+  /\bProof rule\b/,
+  /\bSelection rule\b/,
+  /\bMaintenance boundary\b/,
+  /\bMaintenance signal\b/,
+  /\bUpdate trigger\b/,
+  /\bOutput contract\b/,
+  /\bMinimum proof\b/,
+  /\bShelf contract\b/,
+  /source: local Hermes registry/i,
+  /procedural runbooks/i,
+  /unreleased runbooks/i,
+  /private task history/i,
+  /Update this page when/i,
+  /change this page when/i,
+  /Include an agent surface when/i,
+  /Include software when/i,
+  /Include a device only when/i,
+  /Include public delivery and scheduled\/integration surfaces/i,
+  /Include tools that make changes reproducible/i,
+];
+
+function stripMarkup(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&[a-z]+;/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 for (const file of htmlFiles) {
   const html = read(file);
   for (const match of html.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)) {
@@ -74,6 +129,15 @@ for (const file of publicPages) {
     html.includes(`<link rel="canonical" href="${expected}">`),
     `${file}: missing canonical ${expected}`,
   );
+}
+
+
+for (const file of publicPages) {
+  if (file.startsWith("variant-")) continue;
+  const visibleText = stripMarkup(read(file));
+  for (const pattern of publicCopyBans) {
+    assert(!pattern.test(visibleText), `${file}: public copy contains internal/agent-facing wording matching ${pattern}`);
+  }
 }
 
 const sitemap = read("sitemap.xml");

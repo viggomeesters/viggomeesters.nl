@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-06-25",
-  "count": 189,
+  "count": 190,
   "skills": [
     {
       "name": "agent-cli-delegation",
@@ -348,7 +348,7 @@
     {
       "name": "viggomeesters-asset-prompt",
       "category": "creative",
-      "description": "Workflow for repo/blog hero images, “viggomeesters asset prompt”, “asset prompt”, “image generation”, README hero, blog hero, project card visuals, or similar playful illustrations in the viggomeesters.com visual style. Produces reusable prompts, style rules, and repo asset placement guidance.",
+      "description": "Enabled Hermes skill from local source.",
       "source": "local",
       "trust": "local"
     },
@@ -636,6 +636,13 @@
       "name": "agent-prompt-intelligence",
       "category": "productivity",
       "description": "Workflow for turning public system-prompt leak, agent-prompt benchmark, or coding-agent prompt repositories into safe defensive improvements: source maps, credential-free watchers, skill patches, regression evals, and opt-in cron enablement.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "agent-retro-library-maintenance",
+      "category": "productivity",
+      "description": "Workflow for after sessions where requests to review the conversation and update the skill library: consolidate learnings into class-level skills, references, templates, or scripts without creating one-off skill sprawl.",
       "source": "local",
       "trust": "local"
     },
