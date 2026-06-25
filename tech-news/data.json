@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-24T20:59:55+02:00",
+  "generatedAt": "2026-06-25T07:05:59+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 74,
+  "usefulOpen": 72,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,48 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "9f281121a58d845a",
+      "title": "simonw/browser-compat-db",
+      "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-24T23:59:03+00:00",
+      "summary": "simonw/browser-compat-db Inspired by Mozilla's new MDN MCP service - source code here - I decided to try converting their comprehensive mdn/browser-compat-data repository full of browser compatibility data into a SQLite database. This new GitHub repo includes a Claude Code for web (Opus 4.8) generated script for doing that using sqlite-utils . I wanted the r",
+      "areas": [
+        "ai-agents",
+        "data-platforms",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "mcp"
+        ],
+        "models": [
+          "claude"
+        ],
+        "developer-tools": [
+          "github",
+          "git",
+          "ide"
+        ],
+        "data-platforms": [
+          "data",
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 5,
+        "leverage": 3,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "11347d529558da7d",
       "title": "OPFS + Pyodide test harness",
@@ -303,41 +345,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "cc770dce6f4b13cc",
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "url": "https://openai.com/index/bbva",
-      "source": "OpenAI News",
-      "published": "2026-06-11T02:00:00+02:00",
-      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "fe34bb5bf0a78597",
       "title": "OpenAI to acquire Ona",
       "url": "https://openai.com/index/openai-to-acquire-ona",
@@ -369,6 +376,41 @@
       "scores": {
         "relevance": 5,
         "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "cc770dce6f4b13cc",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "source": "OpenAI News",
+      "published": "2026-06-11T02:00:00+02:00",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -702,37 +744,6 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 2
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "67fb8b19ac1f01fe",
-      "title": "Figma now has AI motion graphics and shader tools",
-      "url": "https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements",
-      "source": "The Verge",
-      "published": "2026-06-24T12:15:00-04:00",
-      "summary": "Figma has revealed some new design and coding product updates at its annual Config conference that aim to help creatives \"push their ideas further\" and automate tedious tasks with AI. Part of this is a reimagined canvas that's now optimized for full-stack development, according to Figma, bringing teams, AI agents, tools, and materials \"together in […]",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
       },
       "priority": 88,
       "action": "Read",
@@ -1198,7 +1209,7 @@
       "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
       "source": "Simon Willison",
       "published": "2026-06-23T21:34:37+00:00",
-      "summary": "Release: datasette 1.0a35 I'll write more about this one tomorrow, but it's a big release. Three highlights from the release notes: New \"Create table\" interface in the database actions menu, backed by the /<database>/-/create JSON API . It can define columns, primary keys, custom column types, NOT NULL constraints, literal defaults, expression defaults and s",
+      "summary": "Release: datasette 1.0a35 I'll write more about this one soon, but it's a big release. Three highlights from the release notes: New \"Create table\" interface in the database actions menu, backed by the /<database>/-/create JSON API . It can define columns, primary keys, custom column types, NOT NULL constraints, literal defaults, expression defaults and singl",
       "areas": [
         "data-platforms"
       ],
@@ -1331,6 +1342,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "214a754cc8bf45e1",
+      "title": "How pull request limits are cutting down the noise",
+      "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+      "source": "GitHub Blog",
+      "published": "2026-06-18T18:00:00+02:00",
+      "summary": "Learn how pull request limits can help manage contribution volume in your repositories, and see what’s next on the roadmap. The post How pull request limits are cutting down the noise appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "45f4133ca82c1665",
       "title": "Getting more from each token: How Copilot improves context handling and model routing",
       "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
@@ -1372,33 +1410,6 @@
         "developer-tools": [
           "github",
           "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "b3969b5061690619",
-      "title": "Mapping SQLite result columns back to their source `table.column`",
-      "url": "https://simonwillison.net/2026/Jun/13/sqlite-column-provenance/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-13T23:05:00+00:00",
-      "summary": "Research: Mapping SQLite result columns back to their source `table.column` It would be neat if arbitrary SQL queries in Datasette could be rendered with additional information based on which columns from which tables were included in the results. To build that, we would need to be able to look at a SQL query like select users.name, orders.total from users j",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "sqlite"
         ]
       },
       "scores": {
@@ -1473,38 +1484,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fca4f8a7216a436a",
-      "title": "Anthropic’s Claude Tag is learning your company, one Slack message at a time",
-      "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
-      "source": "TechCrunch",
-      "published": "2026-06-23T19:00:00+02:00",
-      "summary": "Anthropic’s new Claude Tag brings an always-on AI teammate to Slack. But beyond productivity, the feature is a strategic play to capture organizational context, institutional knowledge, and enterprise workflows.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
-        ],
-        "enterprise-ai": [
-          "enterprise",
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "05f5412af05e6b45",
       "title": "Helping build shared standards for advanced AI",
       "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
@@ -1565,19 +1544,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7ff26277a261ed91",
-      "title": "Haystack: Open-Source AI Framework for Production Ready Agents, RAG",
-      "url": "https://haystack.deepset.ai/",
+      "id": "b93a26aa81d25609",
+      "title": "Bible as RAG Database",
+      "url": "https://www.crosscanon.com/",
       "source": "Hacker News",
-      "published": "2026-06-24T13:21:32+02:00",
+      "published": "2026-06-25T03:42:55+02:00",
       "summary": "Comments",
       "areas": [
-        "ai-agents"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
+        "data-platforms": [
+          "data",
+          "database"
         ]
       },
       "scores": {
@@ -1620,36 +1599,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "02f9b436e3865a03",
-      "title": "Klue says hackers stole credential from 2022 that led to customer data breaches",
-      "url": "https://techcrunch.com/2026/06/23/klue-says-hackers-stole-credential-from-2022-that-led-to-customer-data-breaches/",
-      "source": "TechCrunch",
-      "published": "2026-06-23T21:43:56+02:00",
-      "summary": "It's unclear why Klue had not revoked the credential after the limited pilot, which hackers then used to breach a system holding keys for accessing customers' data.",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "961655c1db74a082",
       "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
       "url": "https://openai.com/index/gpt-5-immunology-mystery",
@@ -1663,6 +1612,33 @@
         "models": [
           "openai",
           "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "b9bd7447621e0d51",
+      "title": "GLM-5.2 is a step change for open agents",
+      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+      "source": "Hacker News",
+      "published": "2026-06-23T05:23:28+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
         ]
       },
       "scores": {
@@ -2068,33 +2044,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fd1fd32b5cfb20bd",
-      "title": "India’s MoEngage bets that the future of marketing is millions of AI agents",
-      "url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T01:30:00+02:00",
-      "summary": "The all-cash deal gives MoEngage access to technology that assigns AI agents to individual customers.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "2c5df162c69243dc",
       "title": "Quoting Charity Majors",
       "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
@@ -2225,6 +2174,137 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "cda85b3b5cfd1daa",
+      "title": "What I'm Finding About LLM Code Style and Token Costs",
+      "url": "https://www.jimmont.com/llm-style-token-costs",
+      "source": "Hacker News",
+      "published": "2026-06-25T02:52:40+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c6243dd265b8c541",
+      "title": "How to Opt Out of Google Search’s New AI Data Training Feature",
+      "url": "https://www.wired.com/story/how-to-opt-out-of-google-search-new-ai-data-training/",
+      "source": "Wired",
+      "published": "2026-06-25T00:36:16+02:00",
+      "summary": "Google’s Search history update stores media uploads from your interactions, like images used in reverse image searches, for training its AI models.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "faa6c40a99621f4e",
+      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
+      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
+      "source": "TechCrunch",
+      "published": "2026-06-24T23:56:41+02:00",
+      "summary": "While AI dominates the layoff narrative, engineers are actually making up a larger share of new hires, according to SignalFire data.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "30bdffe9004b1310",
+      "title": "New website names and shames companies that still don’t offer passkeys to users",
+      "url": "https://techcrunch.com/2026/06/24/new-website-names-and-shames-companies-that-still-dont-offer-passkeys-to-users/",
+      "source": "TechCrunch",
+      "published": "2026-06-24T23:04:04+02:00",
+      "summary": "According to a new site, 24% of the most popular websites in the world don't offer support for passkeys, which are considered the most secure way to log in to apps and services.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fc676cdce2c16413",
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "source": "Hacker News",
+      "published": "2026-06-24T21:48:01+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "c4546c44a3f016e9",
       "title": "OpenAI unveils its first custom chip, built by Broadcom",
       "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
@@ -2251,18 +2331,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d2c75d0cbf82944d",
-      "title": "I taught a bucket to speak Git",
-      "url": "https://www.tigrisdata.com/blog/objgit/",
-      "source": "Hacker News",
-      "published": "2026-06-24T18:04:26+02:00",
-      "summary": "Comments",
+      "id": "e6756e47d99970c2",
+      "title": "This new tracking label could help solve cargo theft",
+      "url": "https://techcrunch.com/2026/06/24/this-new-tracking-label-could-help-solve-cargo-theft/",
+      "source": "TechCrunch",
+      "published": "2026-06-24T17:00:00+02:00",
+      "summary": "The Samsara Tracking Label hides a BLE system that can offer real-time location in a disposable package.",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "git"
+          "ide"
         ]
       },
       "scores": {
@@ -2277,18 +2357,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e6756e47d99970c2",
-      "title": "This new tracking label could help solve cargo theft",
-      "url": "https://techcrunch.com/2026/06/24/this-new-tracking-label-could-help-solve-cargo-theft/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T17:00:00+02:00",
-      "summary": "The Samsara Tracking Label hides a BLE system that can offer real-time location in a disposable package.",
+      "id": "521b3c354d07999c",
+      "title": "45°C cooling design cuts data center water use to near zero",
+      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+      "source": "Hacker News",
+      "published": "2026-06-24T16:10:11+02:00",
+      "summary": "Comments",
       "areas": [
-        "developer-tools"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "ide"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -2382,59 +2462,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b841aa5062ac7e64",
-      "title": "NSA lost access to Mythos amid Anthropic dispute",
-      "url": "https://www.nytimes.com/2026/06/23/us/politics/nsa-lost-access-anthropic-tool.html",
-      "source": "Hacker News",
-      "published": "2026-06-24T13:45:47+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "be821e35ce5d97d6",
-      "title": "The $27 million Al proxy war over Alex Bores ends in a draw",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results",
-      "source": "The Verge",
-      "published": "2026-06-24T13:25:00-04:00",
-      "summary": "The expensive, $27 million political proxy war between Anthropic and OpenAI came to a draw last night when Alex Bores, a New York state Assemblyman whose popularity surged after being targeted by a pro-AI super PAC, narrowly lost the Democratic primary to represent New York's 12th Congressional district. Prior to the race, Bores, a former […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "6f848b1ac84265e5",
       "title": "US's climate.gov site, taken down by Trump, relaunched by nonprofit",
       "url": "https://arstechnica.com/science/2026/06/uss-climate-gov-site-taken-down-by-trump-relaunched-by-nonprofit/",
@@ -2461,18 +2488,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "128b303e6ad23e7c",
-      "title": "Show HN: peerd – AI agent harness that runs entirely in your browser",
-      "url": "https://github.com/NotASithLord/peerd",
+      "id": "ea558f574e173afa",
+      "title": "15 sorting algorithms in 6 minutes (2013) [video]",
+      "url": "https://www.youtube.com/watch?v=kPRA0W1kECg",
       "source": "Hacker News",
-      "published": "2026-06-23T17:05:00+02:00",
+      "published": "2026-06-23T07:29:54+02:00",
       "summary": "Comments",
       "areas": [
-        "ai-agents"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -2487,96 +2514,72 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "a02069b1699f7699",
-      "title": "How to burst the AI bubble: Strike at its roots",
-      "url": "https://arstechnica.com/gadgets/2026/06/how-to-burst-the-ai-bubble-strike-at-its-roots/",
+      "id": "514d896cf2c4ee92",
+      "title": "Show HN: Write SaaS apps where users control where their data is stored",
+      "url": "https://github.com/wolfoo2931/linkedrecords/",
+      "source": "Hacker News",
+      "published": "2026-06-19T09:37:14+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "598a1e48adc7dd75",
+      "title": "The Skylight Calendar Is One of My Favorite Products On Sale for Prime Day",
+      "url": "https://www.wired.com/story/skylight-calendar-prime-day-deal-2026/",
+      "source": "Wired",
+      "published": "2026-06-25T02:59:18+02:00",
+      "summary": "The Skylight Calendar 2 and Calendar Max are both on sale for Prime Day if you've been dreaming of a digital calendar to manage your household.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "eaf577753f3947a4",
+      "title": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
+      "url": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/",
       "source": "Ars Technica",
-      "published": "2026-06-23T14:00:34+02:00",
-      "summary": "Sci-fi author/tech journalist Cory Doctorow on his new book, The Reverse Centaur's Guide to Life After AI .",
+      "published": "2026-06-25T00:28:18+02:00",
+      "summary": "The silicon race is heating up amid the struggle to keep up with demand.",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "91a5488764d3c41c",
-      "title": "Show HN: Monolisa v3 – a typeface for developers and creatives",
-      "url": "https://www.monolisa.dev/",
-      "source": "Hacker News",
-      "published": "2026-06-22T16:05:23+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "9d31e8d579cf9898",
-      "title": "A Practical Guide to SSH Tunnels: Local and Remote Port Forwarding",
-      "url": "https://labs.iximiuz.com/tutorials/ssh-tunnels",
-      "source": "Hacker News",
-      "published": "2026-06-20T05:55:19+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "38e067c3f2f4b2c0",
-      "title": "I Met With China’s Top AI Experts. They’re Freaking Out, Too",
-      "url": "https://www.wired.com/story/ai-arms-race-china-us-cooperation/",
-      "source": "Wired",
-      "published": "2026-06-24T20:45:00+02:00",
-      "summary": "The AI arms race between China and the US has researchers on both sides worried about a “Chernobyl moment.”",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
+        "models": [
+          "llm",
+          "openai",
+          "inference"
         ]
       },
       "scores": {
@@ -2591,44 +2594,44 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e0bb869183fae591",
-      "title": "Introducing the MDN MCP server",
-      "url": "https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/",
-      "source": "Lobsters",
-      "published": "2026-06-24T17:48:03+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "mcp"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "454d28cb6e61f944",
-      "title": "The Trump White House Is Over Anthropic CEO Dario Amodei",
-      "url": "https://www.wired.com/story/the-trump-white-house-is-over-anthropics-dario-amodei/",
-      "source": "Wired",
-      "published": "2026-06-24T17:15:00+02:00",
-      "summary": "At high-stakes meetings with the White House, Anthropic's cofounder—a \"weirdo,\" per one official—has been replaced by cofounder Tom Brown.",
+      "id": "1e929bd5078553a9",
+      "title": "AI researchers continue to leave Google for its rivals",
+      "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
+      "source": "TechCrunch",
+      "published": "2026-06-24T23:42:07+02:00",
+      "summary": "Top AI researchers Jonas Adler and Alexander Pritzel are leaving Google for Anthropic, following departures from top scientists Noam Shazeer and John Jumper.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "122091fd194be772",
+      "title": "One-two punch delivered in global operation disrupts cybercrime \"assembly line\"",
+      "url": "https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/",
+      "source": "Ars Technica",
+      "published": "2026-06-24T23:03:34+02:00",
+      "summary": "\"Operation Endgame\" simultaneously disrupts two widely used crime tools.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
