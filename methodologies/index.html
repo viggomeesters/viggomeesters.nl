@@ -18,8 +18,8 @@
       --bg: #0c0c0f;
       --bg-surface: #141418;
       --bg-elevated: #1a1a20;
-      --border: #2a2a32;
-      --border-subtle: #1e1e26;
+      --border: rgba(255,255,255,0.10);
+      --border-subtle: rgba(255,255,255,0.055);
       --text: #c8cbd5;
       --text-secondary: #8a90a6;
       --text-muted: #777c90;
@@ -136,7 +136,7 @@
       padding: 24px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--card-color, var(--border-subtle));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.026), 0 0 28px color-mix(in srgb, var(--card-color, var(--border-subtle)) 7%, transparent), 0 14px 40px rgba(0,0,0,0.13);
       border-radius: var(--radius);
       text-decoration: none;
       color: var(--text);
@@ -204,7 +204,7 @@
           0 0 20px var(--card-soft, transparent),
           0 8px 32px rgba(0,0,0,0.3);
         border-color: var(--card-color, var(--border));
-        border-left-color: var(--card-color, var(--border));
+        border-color: var(--card-color, var(--border));
       }
       .method-card:hover .method-icon-wrap {
         transform: scale(1.1);

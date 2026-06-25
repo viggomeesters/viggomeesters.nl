@@ -36,11 +36,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/jsonl-agent-first-data-structures/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/database-types-agent-first-systems/</loc>
     <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
@@ -63,6 +58,11 @@
   <url>
     <loc>https://viggomeesters.com/helicopter-to-detail/</loc>
     <lastmod>2026-05-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/jsonl-agent-first-data-structures/</loc>
+    <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -116,6 +116,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/tech-news/</loc>
+    <lastmod>2026-06-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/tech-stack/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.8</priority>
@@ -123,12 +128,7 @@
   <url>
     <loc>https://viggomeesters.com/trendwatch/</loc>
     <lastmod>2026-06-24</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://viggomeesters.com/tech-news/</loc>
-    <lastmod>2026-06-24</lastmod>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/uses/</loc>
@@ -183,6 +183,11 @@
   <url>
     <loc>https://viggomeesters.com/personal-knowledge-system/validation-and-indexing/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/adversarial-audit-probes/</loc>
+    <lastmod>2026-06-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -621,6 +626,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/impeccable/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/improve/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -628,6 +638,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/job-application-package/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/jsonl-runtime-indexes/</loc>
+    <lastmod>2026-06-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -1053,6 +1068,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/viggo-research-decision-support/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/viggomeesters-asset-prompt/</loc>
+    <lastmod>2026-06-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

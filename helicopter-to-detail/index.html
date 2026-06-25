@@ -18,8 +18,8 @@
       --bg: #0c0c0f;
       --bg-surface: #141418;
       --bg-elevated: #1a1a20;
-      --border: #2a2a32;
-      --border-subtle: #1e1e26;
+      --border: rgba(255,255,255,0.10);
+      --border-subtle: rgba(255,255,255,0.055);
       --text: #c8cbd5;
       --text-secondary: #8a90a6;
       --text-muted: #53586b;
@@ -297,7 +297,7 @@
     .layer {
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--accent);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.026), 0 0 28px color-mix(in srgb, var(--accent) 7%, transparent), 0 14px 40px rgba(0,0,0,0.13);
       border-radius: var(--radius);
       padding: 24px;
       margin-bottom: 12px;

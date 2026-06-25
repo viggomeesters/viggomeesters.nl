@@ -17,8 +17,8 @@
       --bg: #0c0c0f;
       --bg-surface: #141418;
       --bg-elevated: #1a1a20;
-      --border: #2a2a32;
-      --border-subtle: #1e1e26;
+      --border: rgba(255,255,255,0.10);
+      --border-subtle: rgba(255,255,255,0.055);
       --text: #c8cbd5;
       --text-secondary: #8a90a6;
       --text-muted: #53586b;
@@ -441,7 +441,7 @@
       padding: 22px 24px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
-      border-left: 3px solid var(--sage);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.026), 0 0 28px color-mix(in srgb, var(--sage) 7%, transparent), 0 14px 40px rgba(0,0,0,0.13);
       border-radius: var(--radius);
       text-decoration: none;
       color: inherit;
@@ -451,7 +451,7 @@
     @media (hover: hover) {
       .starter-card:hover {
         border-color: var(--sage);
-        border-left-color: var(--sage);
+        border-color: var(--sage);
         background: var(--bg-elevated);
         transform: scale(1.02);
         box-shadow: 0 0 20px var(--sage-soft), 0 8px 24px rgba(0,0,0,0.2);
@@ -712,7 +712,7 @@
     <div class="reveal">
       <div class="section-label" style="--dot-color: #06b6d4">Project boundary</div>
       <div class="detail-list">
-        <div class="detail-item"><span class="detail-name">Status & proof</span><span class="detail-desc">The public starter repository returned HTTP 200 during this audit; GitHub remains the current technical source.</span></div>
+        <div class="detail-item"><span class="detail-name">Current source</span><span class="detail-desc">GitHub remains the current technical source for the public starter repository.</span></div>
         <div class="detail-item"><span class="detail-name">Boundary</span><span class="detail-desc">The starter demonstrates conventions. The private vault remains separate and is not published through this template.</span></div>
       </div>
     </div>

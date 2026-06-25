@@ -27,7 +27,7 @@ BASE = "https://viggomeesters.com"
 TODAY = _dt.date.today().isoformat()
 
 CSS = """
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--bg:#0c0c0f;--surface:#141418;--border:#2a2a32;--sub:#1e1e26;--text:#c8cbd5;--muted:#53586b;--secondary:#8a90a6;--accent:#22c55e;--soft:rgba(34,197,94,.10);--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px;--bounce:cubic-bezier(.34,1.56,.64,1)}html{background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;min-height:100vh;overflow-x:hidden}.page{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:58px 20px 64px}.back{display:inline-flex;align-items:center;gap:6px;font-size:.82em;color:var(--muted);text-decoration:none;margin-bottom:32px;padding:6px 14px;background:var(--surface);border:1px solid var(--sub);border-radius:10px}.eyebrow{font-family:var(--mono);font-size:.72em;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.title{font-size:clamp(2rem,5vw,3.2rem);line-height:1.04;letter-spacing:-.04em;color:#eeeff4;font-weight:700;text-wrap:balance}.subtitle{max-width:760px;margin-top:14px;color:var(--secondary)}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.pill{font-family:var(--mono);font-size:.72em;color:var(--secondary);background:rgba(255,255,255,.035);border:1px solid var(--sub);border-radius:999px;padding:5px 8px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}.card{display:flex;gap:16px;align-items:flex-start;padding:20px;background:rgba(20,20,24,.74);border:1px solid var(--sub);border-left:3px solid var(--accent);border-radius:var(--radius);text-decoration:none;color:inherit}.icon{width:42px;height:42px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-family:var(--mono);font-size:.8em}.card h2{font-size:1em;color:#eeeff4;margin-bottom:5px}.card p{font-size:.88em;color:var(--secondary)}.tiny{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-family:var(--mono);font-size:.7em;color:var(--muted)}.section{margin-top:34px}.section-title{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-family:var(--mono);font-size:.75em;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.section[hidden],.card[hidden]{display:none!important}.result-count{font-family:var(--mono);font-size:.75em;color:var(--muted);margin-top:10px}.search{width:100%;margin-top:22px;padding:12px 14px;border:1px solid var(--sub);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}.item{padding:16px 18px;background:rgba(20,20,24,.74);border:1px solid var(--sub);border-radius:14px}.item strong{color:#eeeff4}.item p{color:var(--secondary);font-size:.9em;margin-top:4px}.list{display:grid;gap:10px}.footer{margin-top:42px;text-align:center;color:var(--muted);font-size:.72em;opacity:.55}@media(max-width:760px){.page{padding:42px 14px}.grid{grid-template-columns:1fr}.title{font-size:2rem}}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--bg:#0c0c0f;--surface:#141418;--border:rgba(255,255,255,.10);--sub:rgba(255,255,255,.055);--text:#c8cbd5;--muted:#53586b;--secondary:#8a90a6;--accent:#22c55e;--soft:rgba(34,197,94,.10);--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px;--bounce:cubic-bezier(.34,1.56,.64,1)}html{background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.6;min-height:100vh;overflow-x:hidden}.page{position:relative;z-index:1;max-width:980px;margin:0 auto;padding:58px 20px 64px}.back{display:inline-flex;align-items:center;gap:6px;font-size:.82em;color:var(--muted);text-decoration:none;margin-bottom:32px;padding:6px 14px;background:var(--surface);border:1px solid var(--sub);border-radius:10px}.eyebrow{font-family:var(--mono);font-size:.72em;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.title{font-size:clamp(2rem,5vw,3.2rem);line-height:1.04;letter-spacing:-.04em;color:#eeeff4;font-weight:700;text-wrap:balance}.subtitle{max-width:760px;margin-top:14px;color:var(--secondary)}.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.pill{font-family:var(--mono);font-size:.72em;color:var(--secondary);background:rgba(255,255,255,.035);border:1px solid var(--sub);border-radius:999px;padding:5px 8px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}.card{display:flex;gap:16px;align-items:flex-start;padding:20px;background:rgba(20,20,24,.74);border:1px solid var(--sub);border-radius:var(--radius);box-shadow:inset 0 1px 0 rgba(255,255,255,.026),0 0 28px rgba(34,197,94,.055),0 14px 40px rgba(0,0,0,.13);text-decoration:none;color:inherit}.icon{width:42px;height:42px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-family:var(--mono);font-size:.8em}.card h2{font-size:1em;color:#eeeff4;margin-bottom:5px}.card p{font-size:.88em;color:var(--secondary)}.tiny{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-family:var(--mono);font-size:.7em;color:var(--muted)}.section{margin-top:34px}.section-title{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-family:var(--mono);font-size:.75em;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.section[hidden],.card[hidden]{display:none!important}.result-count{font-family:var(--mono);font-size:.75em;color:var(--muted);margin-top:10px}.search{width:100%;margin-top:22px;padding:12px 14px;border:1px solid var(--sub);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}.item{padding:16px 18px;background:rgba(20,20,24,.74);border:1px solid var(--sub);border-radius:14px}.item strong{color:#eeeff4}.item p{color:var(--secondary);font-size:.9em;margin-top:4px}.list{display:grid;gap:10px}.footer{margin-top:42px;text-align:center;color:var(--muted);font-size:.72em;opacity:.55}@media(max-width:760px){.page{padding:42px 14px}.grid{grid-template-columns:1fr}.title{font-size:2rem}}
 """
 SCRIPT = """<script>
 const q=document.querySelector('[data-search]');
@@ -62,6 +62,36 @@ if(q){q.addEventListener('input',applySkillSearch);applySkillSearch();}
 def esc(value: str) -> str:
     return html.escape(value or "")
 
+
+
+def public_description(value: str) -> str:
+    """Turn runtime skill-router descriptions into visitor-facing public copy."""
+    raw = (value or "").strip()
+    lower = raw.lower()
+    prefix = ""
+    rest = raw
+    if lower.startswith("use only when "):
+        prefix = "Specialized workflow for "
+        rest = raw[len("Use only when "):]
+    elif lower.startswith("use when "):
+        prefix = "Workflow for "
+        rest = raw[len("Use when "):]
+    elif lower.startswith("use "):
+        prefix = "Workflow for "
+        rest = raw[len("Use "):]
+    if prefix:
+        rest = re.sub(r"^(Viggo asks for|Viggo asks|Viggo wants|the user asks for|the user asks|requests for|requests)\s+", "", rest, flags=re.IGNORECASE)
+        if rest:
+            rest = rest[0].lower() + rest[1:]
+        text = prefix + rest
+    else:
+        text = raw
+    text = text.replace("Viggo asks for", "requests for")
+    text = text.replace("Viggo asks", "requests")
+    text = text.replace("Viggo wants", "requests")
+    text = text.replace("the user asks for", "requests for")
+    text = text.replace("the user asks", "requests")
+    return text[:500]
 
 def slugify(value: str) -> str:
     value = value.lower().replace("/", "-")
@@ -186,6 +216,8 @@ def regenerate_sitemap() -> None:
 
 def main() -> None:
     skills = discover()
+    for skill in skills:
+        skill["description"] = public_description(skill.get("description", ""))
     out = ROOT / "skills"
     out.mkdir(exist_ok=True)
     clean_obsolete_skill_pages(out, skills)
@@ -193,7 +225,7 @@ def main() -> None:
     groups = defaultdict(list)
     for skill in skills:
         groups[skill["category"]].append(skill)
-        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">How to use</div><div class="list"><article class="item"><strong>Load name</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>Public boundary</strong><p>This page is a public registry card, not the full runbook. It intentionally omits private operational steps, local paths, credentials, and sensitive project context.</p></article><article class="item"><strong>Registry source</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to discover that a workflow exists; load the skill inside Hermes to execute it.</p></article></div></section>'''
+        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">Public summary</div><div class="list"><article class="item"><strong>Skill identifier</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>What this page is</strong><p>A public summary card for discovery. Detailed runbooks, private steps, local paths, credentials, and sensitive project context are intentionally not published.</p></article><article class="item"><strong>Registry snapshot</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to see that a workflow exists; the actual workflow runs inside Hermes.</p></article></div></section>'''
         d = out / slugify(skill["name"])
         d.mkdir(exist_ok=True)
         (d / "index.html").write_text(page(f"{skill['name']} — Skill", skill["description"] or f"Hermes skill {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))

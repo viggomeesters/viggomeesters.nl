@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-24",
-  "count": 185,
+  "generated_at": "2026-06-25",
+  "count": 189,
   "skills": [
     {
       "name": "agent-cli-delegation",
       "category": "autonomous-ai-agents",
-      "description": "Use when delegating coding or review work to external autonomous coding CLIs such as Claude Code, Codex, or OpenCode. Selects the right backend, invocation mode, sandbox, PR/review flow, and verification contract.",
+      "description": "Workflow for delegating coding or review work to external autonomous coding CLIs such as Claude Code, Codex, or OpenCode. Selects the right backend, invocation mode, sandbox, PR/review flow, and verification contract.",
       "source": "local",
       "trust": "local"
     },
@@ -19,7 +19,7 @@
     {
       "name": "kanban-codex-lane",
       "category": "autonomous-ai-agents",
-      "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+      "description": "Workflow for a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
       "source": "local",
       "trust": "local"
     },
@@ -40,7 +40,7 @@
     {
       "name": "go-workflow",
       "category": "core",
-      "description": "Use only when the user explicitly says `legacy go-workflow` or asks to inspect historical repo-contained go-workflow artifacts. Deprecated for Viggo: bare `Go`, `Next`, `Ledger`, `$go-*`, and normal repo work route to vault-first Agent Workflow Lite.",
+      "description": "Specialized workflow for the user explicitly says `legacy go-workflow` or asks to inspect historical repo-contained go-workflow artifacts. Deprecated for Viggo: bare `Go`, `Next`, `Ledger`, `$go-*`, and normal repo work route to vault-first Agent Workflow Lite.",
       "source": "local",
       "trust": "local"
     },
@@ -299,7 +299,7 @@
     {
       "name": "pretext",
       "category": "creative",
-      "description": "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+      "description": "Workflow for building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
       "source": "builtin",
       "trust": "builtin"
     },
@@ -346,6 +346,13 @@
       "trust": "builtin"
     },
     {
+      "name": "viggomeesters-asset-prompt",
+      "category": "creative",
+      "description": "Workflow for repo/blog hero images, “viggomeesters asset prompt”, “asset prompt”, “image generation”, README hero, blog hero, project card visuals, or similar playful illustrations in the viggomeesters.com visual style. Produces reusable prompts, style rules, and repo asset placement guidance.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
       "name": "jupyter-live-kernel",
       "category": "data-science",
       "description": "Iterative Python via live Jupyter kernel (hamelnb).",
@@ -362,14 +369,14 @@
     {
       "name": "kanban-workflows",
       "category": "devops",
-      "description": "Use when operating Hermes Kanban workflows as either orchestrator or worker: decompose work into cards, route to profiles, claim/heartbeat/finish cards, recover stuck workers, and keep tenant/workspace boundaries clear.",
+      "description": "Workflow for operating Hermes Kanban workflows as either orchestrator or worker: decompose work into cards, route to profiles, claim/heartbeat/finish cards, recover stuck workers, and keep tenant/workspace boundaries clear.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "vercel-operations-runbook",
       "category": "devops",
-      "description": "Use when operating Vercel projects beyond normal deploys: inspect project state, replace/migrate projects, move aliases/domains, attach Supabase or storage integrations, manage environment variables, isolate provisioning bugs with static deploys, and verify production without leaking secrets.",
+      "description": "Workflow for operating Vercel projects beyond normal deploys: inspect project state, replace/migrate projects, move aliases/domains, attach Supabase or storage integrations, manage environment variables, isolate provisioning bugs with static deploys, and verify production without leaking secrets.",
       "source": "local",
       "trust": "local"
     },
@@ -411,7 +418,7 @@
     {
       "name": "github-operations",
       "category": "github",
-      "description": "Use when operating GitHub end to end: authentication, repository setup, branches, issues, PRs, code review, CI, releases, and API/gh troubleshooting. Routes to the right GitHub sub-workflow while preserving verification and side-effect guardrails.",
+      "description": "Workflow for operating GitHub end to end: authentication, repository setup, branches, issues, PRs, code review, CI, releases, and API/gh troubleshooting. Routes to the right GitHub sub-workflow while preserving verification and side-effect guardrails.",
       "source": "local",
       "trust": "local"
     },
@@ -523,14 +530,14 @@
     {
       "name": "audio-to-obsidian-vault",
       "category": "note-taking",
-      "description": "Use when Viggo sends an audio/voice message that should become durable Obsidian/Life OS context: transcript, summary, context lookup, project/entity/topic enrichment, and any explicit instruction execution.",
+      "description": "Workflow for viggo sends an audio/voice message that should become durable Obsidian/Life OS context: transcript, summary, context lookup, project/entity/topic enrichment, and any explicit instruction execution.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "document-photo-to-vault",
       "category": "note-taking",
-      "description": "Use when Viggo sends photos/screenshots of physical or digital documents that should be captured into the Life OS/Obsidian vault, especially multi-photo letters such as Belastingdienst correspondence that need OCR/transcription, one combined source note, saved media embeds, entity/project/context links, daily logging, and explicit validation.",
+      "description": "Workflow for viggo sends photos/screenshots of physical or digital documents that should be captured into the Life OS/Obsidian vault, especially multi-photo letters such as Belastingdienst correspondence that need OCR/transcription, one combined source note, saved media embeds, entity/project/context links, daily logging, and explicit validation.",
       "source": "local",
       "trust": "local"
     },
@@ -551,7 +558,7 @@
     {
       "name": "life-os-task",
       "category": "note-taking",
-      "description": "Use when Viggo wants durable task management in the Life OS vault: create, inspect, update, classify, or bridge tasks between Hermes session todos, Hermes Kanban, and vault task notes.",
+      "description": "Workflow for durable task management in the Life OS vault: create, inspect, update, classify, or bridge tasks between Hermes session todos, Hermes Kanban, and vault task notes.",
       "source": "local",
       "trust": "local"
     },
@@ -565,7 +572,7 @@
     {
       "name": "self-analysis-context-writeback",
       "category": "note-taking",
-      "description": "Use when Viggo asks a personal/self-analysis question; answer context-first from Life OS, then patch vault context when the exchange sharpens the durable self-model.",
+      "description": "Workflow for a personal/self-analysis question; answer context-first from Life OS, then patch vault context when the exchange sharpens the durable self-model.",
       "source": "local",
       "trust": "local"
     },
@@ -600,7 +607,7 @@
     {
       "name": "viggo-reflect",
       "category": "note-taking",
-      "description": "Use when Viggo asks to reflect, recap a day/week/month/session, find patterns in recent work or life context, or turn scattered context into one sharp observation without turning it into a checklist.",
+      "description": "Workflow for to reflect, recap a day/week/month/session, find patterns in recent work or life context, or turn scattered context into one sharp observation without turning it into a checklist.",
       "source": "local",
       "trust": "local"
     },
@@ -621,14 +628,14 @@
     {
       "name": "agent-correction-loop",
       "category": "productivity",
-      "description": "Use when Viggo corrects the agent's behavior, invokes selfimprove-style review, asks why the agent chose the wrong lane, or wants a durable process fix after unintended side effects. Converts the miss into skill/memory/script/config changes with verification.",
+      "description": "Workflow for viggo corrects the agent's behavior, invokes selfimprove-style review, asks why the agent chose the wrong lane, or wants a durable process fix after unintended side effects. Converts the miss into skill/memory/script/config changes with verification.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "agent-prompt-intelligence",
       "category": "productivity",
-      "description": "Use when turning public system-prompt leak, agent-prompt benchmark, or coding-agent prompt repositories into safe defensive improvements: source maps, credential-free watchers, skill patches, regression evals, and opt-in cron enablement.",
+      "description": "Workflow for turning public system-prompt leak, agent-prompt benchmark, or coding-agent prompt repositories into safe defensive improvements: source maps, credential-free watchers, skill patches, regression evals, and opt-in cron enablement.",
       "source": "local",
       "trust": "local"
     },
@@ -684,21 +691,21 @@
     {
       "name": "compact-agent-output",
       "category": "productivity",
-      "description": "Use when Viggo asks for shorter answers, caveman style, less verbosity, Telegram-friendly summaries, or when finishing agentic work for Viggo. Preserve evidence while compressing chat output.",
+      "description": "Workflow for shorter answers, caveman style, less verbosity, Telegram-friendly summaries, or when finishing agentic work for Viggo. Preserve evidence while compressing chat output.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "consumption-kruidvat",
       "category": "productivity",
-      "description": "Use when building, maintaining, or running Kruidvat supplement shopping/cart automation in the Life OS consumption repo. Loads repo docs, supplement decision guardrails, browser/cart safety rules, and Codex handoff checklist.",
+      "description": "Workflow for building, maintaining, or running Kruidvat supplement shopping/cart automation in the Life OS consumption repo. Loads repo docs, supplement decision guardrails, browser/cart safety rules, and Codex handoff checklist.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "consumption-notenshop",
       "category": "productivity",
-      "description": "Use when building, maintaining, or running the De Notenshop recurring cart automation in the Life OS consumption repo. Loads the repo docs, vault source note, browser/cart safety rules, and Codex handoff checklist.",
+      "description": "Workflow for building, maintaining, or running the De Notenshop recurring cart automation in the Life OS consumption repo. Loads the repo docs, vault source note, browser/cart safety rules, and Codex handoff checklist.",
       "source": "local",
       "trust": "local"
     },
@@ -747,7 +754,7 @@
     {
       "name": "job-application-package",
       "category": "productivity",
-      "description": "Use when Viggo asks for a vacancy-specific application package: research docs → claim matrix → motivation letter → CV → polished PDF/HTML output, with extra guardrails for CV quality.",
+      "description": "Workflow for a vacancy-specific application package: research docs → claim matrix → motivation letter → CV → polished PDF/HTML output, with extra guardrails for CV quality.",
       "source": "local",
       "trust": "local"
     },
@@ -768,7 +775,7 @@
     {
       "name": "master-tactician",
       "category": "productivity",
-      "description": "Use when reviewing sensitive stakeholder messages, permission requests, negotiations, risk disclosures, employer/client boundary wording, or any draft where tactical positioning matters. Finds logical flaws, adversarial interpretations, over-disclosure, leverage loss, and safer alternatives before presenting a final draft.",
+      "description": "Workflow for reviewing sensitive stakeholder messages, permission requests, negotiations, risk disclosures, employer/client boundary wording, or any draft where tactical positioning matters. Finds logical flaws, adversarial interpretations, over-disclosure, leverage loss, and safer alternatives before presenting a final draft.",
       "source": "local",
       "trust": "local"
     },
@@ -838,7 +845,7 @@
     {
       "name": "skills-sh-curation",
       "category": "productivity",
-      "description": "Use when Viggo asks to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.",
+      "description": "Workflow for to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.",
       "source": "local",
       "trust": "local"
     },
@@ -859,7 +866,7 @@
     {
       "name": "verification-line",
       "category": "productivity",
-      "description": "Use when finishing any non-trivial Hermes task: produce an evidence-backed verification line with sources, changed artifacts, validation commands/results, and remaining risks.",
+      "description": "Workflow for finishing any non-trivial Hermes task: produce an evidence-backed verification line with sources, changed artifacts, validation commands/results, and remaining risks.",
       "source": "local",
       "trust": "local"
     },
@@ -873,14 +880,14 @@
     {
       "name": "viggo-draft",
       "category": "productivity",
-      "description": "Use when composing messages for Viggo: email, Telegram, Teams/chat, SMS/iMessage-style text, replies, sensitive wording, Dutch rewrites, Frisian variants, or any message that should be previewed before sending.",
+      "description": "Workflow for composing messages for Viggo: email, Telegram, Teams/chat, SMS/iMessage-style text, replies, sensitive wording, Dutch rewrites, Frisian variants, or any message that should be previewed before sending.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "viggo-output",
       "category": "productivity",
-      "description": "Use when Viggo asks for a polished deliverable: report, memo, one-pager, presentation, PDF/DOCX/PPTX, interactive HTML, dashboard, diagram-rich output, or anything that should look finished rather than be a plain chat answer.",
+      "description": "Workflow for a polished deliverable: report, memo, one-pager, presentation, PDF/DOCX/PPTX, interactive HTML, dashboard, diagram-rich output, or anything that should look finished rather than be a plain chat answer.",
       "source": "local",
       "trust": "local"
     },
@@ -950,7 +957,7 @@
     {
       "name": "worldmonitor",
       "category": "research",
-      "description": "Use WorldMonitor as a read-only external intelligence source through the local Bertus/Hermes wrapper; health/OpenAPI checks work without credentials, data endpoints use optional WM_KEY.",
+      "description": "Workflow for worldMonitor as a read-only external intelligence source through the local Bertus/Hermes wrapper; health/OpenAPI checks work without credentials, data endpoints use optional WM_KEY.",
       "source": "local",
       "trust": "local"
     },
@@ -967,6 +974,13 @@
       "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
       "source": "builtin",
       "trust": "builtin"
+    },
+    {
+      "name": "adversarial-audit-probes",
+      "category": "software-development",
+      "description": "Workflow for during audits of existing apps, calculators, import/export flows, generated artifacts, or data-entry tools when a happy-path review may miss boundary failures. Adds small adversarial probes that prove malformed inputs, stale configs, and edge cases cannot corrupt primary outputs.",
+      "source": "local",
+      "trust": "local"
     },
     {
       "name": "agent-workflow-lite",
@@ -992,7 +1006,7 @@
     {
       "name": "agent-workflow-loop",
       "category": "software-development",
-      "description": "Use when Viggo says loop, ralph, werk tot groen, or asks for Ralph/OMX/Oh-My-Codex-style persistence around Agent Workflow Lite tasks and plans. Runs bounded build→verify→critic→repair cycles until gates pass or a blocker is proven.",
+      "description": "Workflow for viggo says loop, ralph, werk tot groen, or asks for Ralph/OMX/Oh-My-Codex-style persistence around Agent Workflow Lite tasks and plans. Runs bounded build→verify→critic→repair cycles until gates pass or a blocker is proven.",
       "source": "local",
       "trust": "local"
     },
@@ -1006,7 +1020,7 @@
     {
       "name": "aw-lite-loop-runtime",
       "category": "software-development",
-      "description": "Use when operating durable go-loop state for vault-first Agent Workflow Lite: task/plan loop blocks, loop-run manifests, go_loop.py helper commands, validation, and handoff evidence without replacing claim/finish execution.",
+      "description": "Workflow for operating durable go-loop state for vault-first Agent Workflow Lite: task/plan loop blocks, loop-run manifests, go_loop.py helper commands, validation, and handoff evidence without replacing claim/finish execution.",
       "source": "local",
       "trust": "local"
     },
@@ -1116,9 +1130,23 @@
       "trust": "local"
     },
     {
+      "name": "impeccable",
+      "category": "software-development",
+      "description": "Enabled Hermes skill from local source.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
+      "name": "jsonl-runtime-indexes",
+      "category": "software-development",
+      "description": "Build rebuildable local runtime indexes from canonical JSONL records using SQLite, FTS5, optional local vector layers, runtime search CLI, and evaluation gates.",
+      "source": "local",
+      "trust": "local"
+    },
+    {
       "name": "life-os-hermes-workflow",
       "category": "software-development",
-      "description": "Use when doing substantial or complex programming, coding, repository, automation, debugging, implementation, refactor, test, docs, or multi-file software work for Viggo in Hermes. Also use for the trigger phrase 'agent_project_workspace workflow' / 'Agent Project Workspace workflow' in a repo: install or operate repo-local .hermes project/task orchestration. Enforces SETUP→PLAN→ROUTE/CLAIM→BUILD→VERIFY→DOCUMENTATION→DEVIL→ANTISLOP→SHIP with evidence-first verification and in-repo documentation ",
+      "description": "Workflow for doing substantial or complex programming, coding, repository, automation, debugging, implementation, refactor, test, docs, or multi-file software work for Viggo in Hermes. Also use for the trigger phrase 'agent_project_workspace workflow' / 'Agent Project Workspace workflow' in a repo: install or operate repo-local .hermes project/task orchestration. Enforces SETUP→PLAN→ROUTE/CLAIM→BUILD→VERIFY→DOCUMENTATION→DEVIL→ANTISLOP→SHIP with evidence-first verification and in-repo documentat",
       "source": "local",
       "trust": "local"
     },
@@ -1167,7 +1195,7 @@
     {
       "name": "public-repo-aw-lite-onboarding",
       "category": "software-development",
-      "description": "Use when Viggo asks to start a new public repo and create an Agent Workflow Lite plan/backlog for it, especially when repo runtime data/indexes must stay outside Git.",
+      "description": "Workflow for to start a new public repo and create an Agent Workflow Lite plan/backlog for it, especially when repo runtime data/indexes must stay outside Git.",
       "source": "local",
       "trust": "local"
     },
@@ -1188,7 +1216,7 @@
     {
       "name": "runtime-release-browser-evidence",
       "category": "software-development",
-      "description": "Use when shipping browser/runtime changes through Agent Workflow Lite that require release/version metadata, standalone HTML/export verification, or browser proof.",
+      "description": "Workflow for shipping browser/runtime changes through Agent Workflow Lite that require release/version metadata, standalone HTML/export verification, or browser proof.",
       "source": "local",
       "trust": "local"
     },
@@ -1279,14 +1307,14 @@
     {
       "name": "viggo-adr",
       "category": "software-development",
-      "description": "Use when a technical or architectural decision should be captured: technology choice, trade-off, module boundary, data model, workflow convention, or any decision that future Viggo/agents should not have to rediscover.",
+      "description": "Workflow for a technical or architectural decision should be captured: technology choice, trade-off, module boundary, data model, workflow convention, or any decision that future Viggo/agents should not have to rediscover.",
       "source": "local",
       "trust": "local"
     },
     {
       "name": "viggomeesters-homepage-development",
       "category": "software-development",
-      "description": "Use when developing Viggo's personal homepage viggomeesters.nl on Vercel: inspect the static repo, make small homepage/content edits, add project tiles/pages, verify locally/browser, and deploy safely.",
+      "description": "Workflow for developing Viggo's personal homepage viggomeesters.nl on Vercel: inspect the static repo, make small homepage/content edits, add project tiles/pages, verify locally/browser, and deploy safely.",
       "source": "local",
       "trust": "local"
     },

@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    :root { --bg:#0c0c0f; --bg-surface:#141418; --bg-elevated:#1a1a20; --border:#2a2a32; --border-subtle:#1e1e26; --text:#c8cbd5; --text-secondary:#8a90a6; --text-muted:#53586b; --accent:#22c55e; --accent-soft:rgba(34,197,94,0.10); --font:'Sora',system-ui,-apple-system,sans-serif; --font-mono:'JetBrains Mono','SF Mono',monospace; --radius:16px; --bounce:cubic-bezier(0.34,1.56,0.64,1); }
+    :root { --bg:#0c0c0f; --bg-surface:#141418; --bg-elevated:#1a1a20; --border:rgba(255,255,255,.10); --border-subtle:rgba(255,255,255,.055); --text:#c8cbd5; --text-secondary:#8a90a6; --text-muted:#53586b; --accent:#22c55e; --accent-soft:rgba(34,197,94,0.10); --font:'Sora',system-ui,-apple-system,sans-serif; --font-mono:'JetBrains Mono','SF Mono',monospace; --radius:16px; --bounce:cubic-bezier(0.34,1.56,0.64,1); }
     html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; background:var(--bg); }
     body { background:var(--bg); color:var(--text); font-family:var(--font); font-size:15px; line-height:1.6; overflow-x:hidden; min-height:100vh; }
     body::after { content:''; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.03; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size:256px 256px; }
@@ -32,7 +32,7 @@
     .cta-row { display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 34px; } .cta { color:#eeeff4; text-decoration:none; background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius:999px; padding:10px 15px; font-size:.86em; transition:transform .3s var(--bounce),border-color .2s; } .cta:hover { transform:translateY(-2px); border-color:var(--accent); }
     .topic-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; } .topic-row span { font-family:var(--font-mono); font-size:.72em; color:var(--text-secondary); background:rgba(255,255,255,.035); border:1px solid var(--border-subtle); padding:5px 8px; border-radius:999px; }
     .section-label { display:flex; align-items:center; gap:8px; padding:22px 0 12px; font-size:.7em; text-transform:uppercase; letter-spacing:.15em; color:var(--text-muted); font-weight:500; } .section-label::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent); }
-    .info-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .info-card { min-height:160px; padding:20px; background:rgba(20,20,24,.72); border:1px solid var(--border-subtle); border-radius:var(--radius); position:relative; overflow:hidden; } .info-card::before { content:''; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--accent); opacity:.8; } .info-card h2 { color:#eeeff4; font-size:1em; margin-bottom:8px; } .info-card p { color:var(--text-secondary); font-size:.9em; }
+    .info-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .info-card { min-height:160px; padding:20px; background:rgba(20,20,24,.72); border:1px solid var(--border-subtle); border-radius:var(--radius); position:relative; overflow:hidden; box-shadow:inset 0 1px 0 rgba(255,255,255,.026),0 0 28px color-mix(in srgb,var(--accent) 7%,transparent),0 14px 40px rgba(0,0,0,.13); }  .info-card h2 { color:#eeeff4; font-size:1em; margin-bottom:8px; } .info-card p { color:var(--text-secondary); font-size:.9em; }
     .note { margin-top:18px; padding:16px; border:1px solid var(--border-subtle); background:var(--accent-soft); border-radius:var(--radius); color:var(--text-secondary); font-size:.88em; }
     .footer { margin-top:40px; font-size:.72em; color:var(--text-muted); text-align:center; opacity:.5; }
     @media (max-width:720px) { .page { padding:40px 14px; } .stats,.info-grid { grid-template-columns:1fr; } .title { font-size:2rem; } }
@@ -64,13 +64,13 @@
         <article class="info-card"><h2>Why it exists</h2><p>Large vaults get hard to inspect through normal file trees. This gives the vault a fast, purpose-built reading and navigation surface.</p></article>
         <article class="info-card"><h2>Useful for</h2><p>Personal knowledge systems, agent context stores, project archives, research corpora, and mixed-format Markdown folders.</p></article>
         <article class="info-card"><h2>How it works</h2><p>The project frames a vault as a local corpus to inspect: folders, Markdown, mixed file types, and navigation surfaces stay on the machine instead of becoming a remote app.</p></article>
-        <article class="info-card"><h2>Status & proof</h2><p>Public GitHub repository is reachable and remains the live source for code and release state.</p></article>
+        <article class="info-card"><h2>Current source</h2><p>GitHub remains the live source for code and release state.</p></article>
         <article class="info-card"><h2>Boundary</h2><p>This is a viewer/inspection surface. It should not own the canonical vault, mutate private notes, or become a hosted knowledge base by accident.</p></article>
         <article class="info-card"><h2>Next action</h2><p>Open the repository when you need the current app code or release state. Use this page to understand the local-first viewer idea before evaluating the implementation.</p></article>
-        <article class="info-card"><h2>Design bias</h2><p>Keep the data local, make inspection fast, and treat GitHub/code as secondary to the human browsing experience.</p></article>
+        <article class="info-card"><h2>Design direction</h2><p>Keep the data local, make inspection fast, and treat GitHub/code as secondary to the human browsing experience.</p></article>
       </div>
     </section>
-    <p class="note reveal">Proof checked: the public GitHub repository returned HTTP 200 during this audit. The website gives the human overview; GitHub remains the technical source.</p>
+    <p class="note reveal">The website gives the human overview; GitHub remains the technical source for code and release state.</p>
     <p class="note reveal">This page is the human-readable project entrypoint. GitHub remains the source for code, releases, issues, and the latest technical details.</p>
     <div class="footer">&copy; 2026 Viggo Meesters</div>
   </main>
