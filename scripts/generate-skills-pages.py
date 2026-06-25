@@ -68,8 +68,9 @@ def public_description(value: str) -> str:
     """Turn runtime skill-router descriptions into visitor-facing public copy."""
     raw = (value or "").strip()
     lower = raw.lower()
-    prefix = ""
     rest = raw
+    prefix = ""
+
     if lower.startswith("use only when "):
         prefix = "Specialized workflow for "
         rest = raw[len("Use only when "):]
@@ -79,13 +80,24 @@ def public_description(value: str) -> str:
     elif lower.startswith("use "):
         prefix = "Workflow for "
         rest = raw[len("Use "):]
+
     if prefix:
-        rest = re.sub(r"^(Viggo asks for|Viggo asks|Viggo wants|the user asks for|the user asks|requests for|requests)\s+", "", rest, flags=re.IGNORECASE)
-        if rest:
-            rest = rest[0].lower() + rest[1:]
-        text = prefix + rest
+        rest = re.sub(r"^(Viggo asks for|Viggo asks|Viggo wants|the user asks for|the user asks|requests for|requests)\s+", "", rest, flags=re.IGNORECASE).strip()
+        # Runtime descriptions often begin with infinitives or temporal clauses:
+        # "to find...", "during audits...". Make those read like public summaries.
+        if rest.lower().startswith("to "):
+            text = "Workflow to " + rest[3:]
+        elif rest.lower().startswith("during "):
+            text = "Workflow for use during " + rest[7:]
+        elif rest.lower().startswith(("when ", "where ", "while ")):
+            text = "Workflow for " + rest
+        else:
+            if rest:
+                rest = rest[0].lower() + rest[1:]
+            text = prefix + rest
     else:
         text = raw
+
     text = text.replace("Viggo asks for", "requests for")
     text = text.replace("Viggo asks", "requests")
     text = text.replace("Viggo wants", "requests")

@@ -607,7 +607,7 @@
     {
       "name": "viggo-reflect",
       "category": "note-taking",
-      "description": "Workflow for to reflect, recap a day/week/month/session, find patterns in recent work or life context, or turn scattered context into one sharp observation without turning it into a checklist.",
+      "description": "Workflow to reflect, recap a day/week/month/session, find patterns in recent work or life context, or turn scattered context into one sharp observation without turning it into a checklist.",
       "source": "local",
       "trust": "local"
     },
@@ -845,7 +845,7 @@
     {
       "name": "skills-sh-curation",
       "category": "productivity",
-      "description": "Workflow for to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.",
+      "description": "Workflow to find, compare, import, or evaluate external agent skills from skills.sh or similar skill directories; search externally, compare against installed Hermes skills, and convert only durable patterns rather than blindly installing.",
       "source": "local",
       "trust": "local"
     },
@@ -978,7 +978,7 @@
     {
       "name": "adversarial-audit-probes",
       "category": "software-development",
-      "description": "Workflow for during audits of existing apps, calculators, import/export flows, generated artifacts, or data-entry tools when a happy-path review may miss boundary failures. Adds small adversarial probes that prove malformed inputs, stale configs, and edge cases cannot corrupt primary outputs.",
+      "description": "Workflow for use during audits of existing apps, calculators, import/export flows, generated artifacts, or data-entry tools when a happy-path review may miss boundary failures. Adds small adversarial probes that prove malformed inputs, stale configs, and edge cases cannot corrupt primary outputs.",
       "source": "local",
       "trust": "local"
     },
@@ -1195,7 +1195,7 @@
     {
       "name": "public-repo-aw-lite-onboarding",
       "category": "software-development",
-      "description": "Workflow for to start a new public repo and create an Agent Workflow Lite plan/backlog for it, especially when repo runtime data/indexes must stay outside Git.",
+      "description": "Workflow to start a new public repo and create an Agent Workflow Lite plan/backlog for it, especially when repo runtime data/indexes must stay outside Git.",
       "source": "local",
       "trust": "local"
     },

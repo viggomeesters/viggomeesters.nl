@@ -15,21 +15,18 @@ import html
 import json
 import os
 import re
-import smtplib
 import subprocess
 import sys
 import urllib.request
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from email.message import EmailMessage
 from pathlib import Path
 from typing import Any
 
 SITE_REPO = Path(os.environ.get("TECH_NEWS_SITE_REPO", "/home/viggo/github/viggomeesters.nl")).expanduser()
 OUT = SITE_REPO / "tech-news" / "data.json"
 USER_AGENT = "BertusTechNewswatcher/0.1 (+https://viggomeesters.com)"
-MONTHS_NL = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]
 
 FEEDS: dict[str, str] = {
     "Hacker News": "https://news.ycombinator.com/rss",
@@ -204,68 +201,11 @@ def publish_if_changed() -> tuple[bool, str]:
     return push.returncode == 0, (commit.stdout + push.stdout).strip()
 
 
-def load_env(path: Path = Path.home() / ".hermes" / ".env") -> dict[str, str]:
-    env: dict[str, str] = {}
-    if not path.exists():
-        return env
-    for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        env[key.strip()] = value.strip().strip('"').strip("'")
-    return env
-
-
-def subject_date(dt: datetime) -> str:
-    local = dt.astimezone()
-    return f"{local.day} {MONTHS_NL[local.month - 1]}"
-
-
-def send_status_email(subject: str, body: str) -> bool:
-    env = {**load_env(), **os.environ}
-    sender = env.get("EMAIL_ADDRESS", "").strip()
-    password = env.get("EMAIL_PASSWORD", "").strip()
-    recipient = env.get("EMAIL_HOME_ADDRESS", "").strip() or sender
-    host = env.get("EMAIL_SMTP_HOST", "smtp.gmail.com").strip()
-    port = int(env.get("EMAIL_SMTP_PORT", "587") or "587")
-    if not (sender and password and recipient and host):
-        raise RuntimeError("email config incomplete")
-    msg = EmailMessage()
-    msg["From"] = f"Bertus <{sender}>"
-    msg["To"] = recipient
-    msg["Subject"] = subject
-    msg.set_content(body)
-    with smtplib.SMTP(host, port, timeout=30) as smtp:
-        smtp.starttls()
-        smtp.login(sender, password)
-        smtp.send_message(msg)
-    return True
-
-
-def status_email_body(payload: dict[str, Any]) -> str:
-    top = [i for i in payload.get("items", []) if i.get("action") == "Read" and int(i.get("priority") or 0) >= 95][:2]
-    lines = [
-        "Tech news run gedraaid.",
-        f"Run: {datetime.now().astimezone().strftime('%Y-%m-%d %H:%M %Z')}",
-        "Pagina: https://viggomeesters.com/tech-news/",
-        f"Items: {payload.get('total', 0)} · read/watch: {payload.get('usefulOpen', 0)}",
-    ]
-    if top:
-        lines.append("")
-        lines.append("Heel passend:")
-        for item in top:
-            lines.append(f"- {item['title']} — {item['source']} ({item['url']})")
-    return "\n".join(lines) + "\n"
-
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=90)
     parser.add_argument("--no-publish", action="store_true", help="write JSON only; do not commit/push")
     parser.add_argument("--quiet", action="store_true", help="only print errors")
-    parser.add_argument("--no-email", action="store_true", help="do not send the daily status email")
-    parser.add_argument("--stdout-digest", action="store_true", help="print the old cron-style digest to stdout")
     args = parser.parse_args()
 
     items, errors = collect(args.limit)
@@ -289,10 +229,7 @@ def main() -> int:
         return 0
 
     ok, detail = publish_if_changed()
-    if not args.no_email:
-        subject = f"Tech news - {subject_date(datetime.now().astimezone())}"
-        send_status_email(subject, status_email_body(payload))
-    if ok and args.stdout_digest and not args.quiet:
+    if ok and not args.quiet:
         top = [i for i in items if i.get("action") in {"Read", "Watch"}][:5]
         print(f"## 🟣 Tech Newswatcher — {datetime.now().astimezone().strftime('%Y-%m-%d %H:%M %Z')}")
         print(f"Samenvatting: {useful} useful / {len(items)} items · pagina bijgewerkt")
