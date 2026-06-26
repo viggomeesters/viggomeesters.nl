@@ -11,6 +11,9 @@
   <meta property="og:description" content="A practical guide to Claude Code, Gemini CLI, Codex, and Obsidian as an agent-friendly knowledge database.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://viggomeesters.com/cli-agents-guide/">
+  <meta property="og:image" content="https://viggomeesters.com/assets/blog/cli-agents-guide-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://viggomeesters.com/assets/blog/cli-agents-guide-hero.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -186,6 +189,28 @@
       height: 6px;
       border-radius: 50%;
       background: currentColor;
+    }
+
+    .article-cover {
+      margin: -12px 0 42px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.015));
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+    }
+
+    .article-cover img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .article-cover figcaption {
+      padding: 12px 16px;
+      color: var(--text-muted);
+      font-size: 0.82em;
+      border-top: 1px solid var(--border-subtle);
     }
 
     .article h2 {
@@ -504,6 +529,11 @@
       </div>
       <p class="meta">By Viggo Meesters &middot; March 2026</p>
     </div>
+
+    <figure class="article-cover">
+      <img src="/assets/blog/cli-agents-guide-hero.jpg" alt="CLI Agents + Obsidian guide hero showing a CLI agent feeding a versioned markdown vault that produces tasks, meeting notes, email saves, research notes, project context, git commits, and automations" width="1280" height="720" loading="eager" decoding="async">
+      <figcaption>A CLI agent becomes useful when it can read and update a local, markdown, versioned vault.</figcaption>
+    </figure>
 
     <nav class="toc">
       <div class="toc-title">Contents</div>
