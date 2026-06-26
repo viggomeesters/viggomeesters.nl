@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-25T07:05:59+02:00",
+  "generatedAt": "2026-06-26T07:05:43+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 72,
+  "usefulOpen": 78,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,74 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "4e5c2e14e9125143",
+      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+      "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+      "source": "GitHub Blog",
+      "published": "2026-06-26T00:59:45+02:00",
+      "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog .",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ],
+        "developer-tools": [
+          "github",
+          "git",
+          "copilot"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 3,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "d7a0d66021e394c3",
+      "title": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
+      "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T18:55:00+02:00",
+      "summary": "General Intuition has raised $320 million to scale AI trained on millions of hours of gameplay, betting action data can help AI develop something closer to human intuition.",
+      "areas": [
+        "ai-agents",
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "9f281121a58d845a",
       "title": "simonw/browser-compat-db",
@@ -458,6 +526,37 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "30b56db3afff3586",
+      "title": "How agents are transforming work",
+      "url": "https://openai.com/index/how-agents-are-transforming-work",
+      "source": "OpenAI News",
+      "published": "2026-06-25T04:00:00+02:00",
+      "summary": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles.",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "bdaee6cea28b1e00",
       "title": "Quoting Tom MacWright",
       "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
@@ -618,35 +717,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "65c47b184c6421e4",
-      "title": "How we made GitHub Copilot CLI more selective about delegation",
-      "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
-      "source": "GitHub Blog",
-      "published": "2026-06-13T00:26:23+02:00",
-      "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob. The post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "cli",
-          "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 94,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "8feaa8482c54b71f",
       "title": "The emergence of the web data infrastructure layer for AI",
       "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
@@ -715,35 +785,31 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "3d63457388de0d56",
-      "title": "Google is finally opening the Play Store to outside payments",
-      "url": "https://www.theverge.com/policy/956296/google-play-app-store-alternative-billing-fee-antitrust",
-      "source": "The Verge",
-      "published": "2026-06-24T13:36:44-04:00",
-      "summary": "While the court still hasn't signed off on the massive settlement resolving Epic's antitrust lawsuit against Google for having a monopoly over Android's app store with Google Play, the tech giant says it will start rolling out changes to the way it handles billing for developers worldwide. As announced in March, the flat 30 percent […]",
+      "id": "848db8a0fbe30545",
+      "title": "Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents",
+      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T22:19:25+02:00",
+      "summary": "Agent-testing startup Patronus AI, founded by former Meta AI researchers, is experiencing nearly insatiable demand, its investor says.",
       "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
+        "ai-agents",
+        "developer-tools"
       ],
       "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
         "developer-tools": [
-          "developer",
-          "ide"
-        ],
-        "enterprise-ai": [
-          "aws"
-        ],
-        "privacy-risk": [
-          "lawsuit"
+          "git"
         ]
       },
       "scores": {
-        "relevance": 4,
+        "relevance": 3,
         "leverage": 1,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 2
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 88,
       "action": "Read",
@@ -1204,6 +1270,33 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "acf6a10dec2ad1d9",
+      "title": "datasette-export-database 0.3a2",
+      "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-25T17:21:09+00:00",
+      "summary": "Release: datasette-export-database 0.3a2 An embarrassingly tiny release. The pyproject.toml had pinned to datasette==1.0a27 , inadvertently making this plugin incompatible with all other Datasette versions. It's now datasette>=1.0a27 instead. Tags: datasette",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "af4d320506893f97",
       "title": "datasette 1.0a35",
       "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
@@ -1315,6 +1408,33 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "6943b218757a4069",
+      "title": "AI and Liability",
+      "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-25T22:28:46+00:00",
+      "summary": "AI and Liability Bruce Schneier on the recent German ruling that Google be held liable for errors introduced in their AI overviews: AI agents are agents of the person or organization that deploys them—and should be treated by the law as such. If a company hired human writers to write its summaries, that company would be liable for inaccuracies in those summa",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "4e7caa0c0f347b17",
       "title": "Temporary Cloudflare Accounts for AI agents",
       "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
@@ -1424,22 +1544,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d19aaea335602194",
-      "title": "Computer use in Gemini 3.5 Flash",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
-      "source": "Hacker News",
-      "published": "2026-06-24T19:21:34+02:00",
-      "summary": "Comments",
+      "id": "0759bf27294a5ed0",
+      "title": "Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and Meta Leaks Employee Data",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/",
+      "source": "Wired",
+      "published": "2026-06-26T01:13:45+02:00",
+      "summary": "The decision by Amazon-owned MGM Studios to drop the OpenAI movie is just part of AI and film industries becoming increasingly intertwined. On Uncanny Valley, we look at where this is all headed.",
       "areas": [
-        "ai-agents",
+        "data-platforms",
         "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "computer use"
-        ],
         "models": [
-          "gemini"
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1454,22 +1574,84 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "10cb9f4c7a4c4e4e",
-      "title": "RubyLLM: A Ruby framework for all major AI providers",
-      "url": "https://rubyllm.com/",
-      "source": "Hacker News",
-      "published": "2026-06-24T16:41:41+02:00",
-      "summary": "Comments",
+      "id": "309ce7538815fe80",
+      "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
+      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T19:38:27+02:00",
+      "summary": "Despite ChatGPT's commanding market lead, consumers who pay for AI have been increasingly choosing Anthropic's Claude, data shows.",
       "areas": [
-        "developer-tools",
+        "data-platforms",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "llm"
+          "anthropic",
+          "claude",
+          "gpt"
         ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "e10561acfec0e4bd",
+      "title": "Rippling now wants to be your entire data stack",
+      "url": "https://techcrunch.com/2026/06/25/parker-conrad-knows-which-employees-are-worth-their-ai-spend-and-says-rippling-can-help-you-too/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T18:00:00+02:00",
+      "summary": "\"There were employees doing things like, 'Claude is so helpful for me — it analyzes my calendar and my email and puts together a plan for me,'\" he says. \"That person was spending at a run rate of $30,000 a year for this.\"",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "2ccd7795a3bef554",
+      "title": "British Police Built a Sprawling Crime-Prediction Machine. Some Results Couldn’t Be Trusted",
+      "url": "https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/",
+      "source": "Wired",
+      "published": "2026-06-25T12:00:00+02:00",
+      "summary": "As UK police embrace the AI revolution, a WIRED investigation reveals the messy inside story of one region’s experiment with predictive analytics.",
+      "areas": [
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
         "developer-tools": [
           "ide"
+        ],
+        "data-platforms": [
+          "analytics"
         ]
       },
       "scores": {
@@ -1544,27 +1726,31 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b93a26aa81d25609",
-      "title": "Bible as RAG Database",
-      "url": "https://www.crosscanon.com/",
-      "source": "Hacker News",
-      "published": "2026-06-25T03:42:55+02:00",
-      "summary": "Comments",
+      "id": "b0d1ef31d74a4879",
+      "title": "OpenAI will delay GPT-5.6 after Trump administration request",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
+      "source": "The Verge",
+      "published": "2026-06-25T17:57:06-04:00",
+      "summary": "The Trump administration, apprehensive of potential security issues, has reportedly asked OpenAI to stagger the release of its next big-ticket model, GPT-5.6. The Information reported that OpenAI CEO Sam Altman told employees Wednesday in a company Q&A that it would release GPT-5.6 in limited preview form - granting access only to a small group of […]",
       "areas": [
-        "data-platforms"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "privacy-risk": [
+          "security"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 1,
+        "relevance": 3,
+        "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -1612,33 +1798,6 @@
         "models": [
           "openai",
           "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "b9bd7447621e0d51",
-      "title": "GLM-5.2 is a step change for open agents",
-      "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
-      "source": "Hacker News",
-      "published": "2026-06-23T05:23:28+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
         ]
       },
       "scores": {
@@ -1914,58 +2073,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f2a1cb83bc4fae4a",
-      "title": "Publishing WASM wheels to PyPI for use with Pyodide",
-      "url": "https://simonwillison.net/2026/Jun/13/publishing-wasm-wheels/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-13T23:55:18+00:00",
-      "summary": "The Pyodide 314.0 release announcement (via Hacker News ) includes news I've been looking forward to for a long time: You can now publish Python packages built for Pyodide (or any Python runtime compatible with the PyEmscripten platform defined in PEP 783 ) directly to PyPI and install them at runtime. Previously, the Pyodide maintainers had to maintain, bui",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "3f439b56d2242ef4",
-      "title": "luau-wasm 0.1a0",
-      "url": "https://simonwillison.net/2026/Jun/13/luau-wasm/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-13T23:14:30+00:00",
-      "summary": "Release: luau-wasm 0.1a0 See Publishing WASM wheels to PyPI for use with Pyodide for details. Tags: lua , webassembly , pyodide",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "f2a6f25c2b0debbc",
       "title": "How Preply combines AI and human tutors to personalize learning",
       "url": "https://openai.com/index/preply",
@@ -2018,28 +2125,56 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "95f7fe92b0dca3f7",
-      "title": "Introducing the OpenAI Economic Research Exchange",
-      "url": "https://openai.com/index/economic-research-exchange",
-      "source": "OpenAI News",
-      "published": "2026-06-08T02:00:00+02:00",
-      "summary": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects.",
+      "id": "333c08540b660a3d",
+      "title": "Notion Mail shuts down amid agent takeover",
+      "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T21:14:46+02:00",
+      "summary": "The company said it is discontinuing its email inbox in favor of its AI agent offering as users are increasingly handing over the reins of their email to the agents.",
       "areas": [
-        "models"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "ai-agents": [
+          "agent",
+          "agents"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 1,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 78,
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "202c77217d16cf03",
+      "title": "Notion killing Skiff-influenced email app since most users use AI agents instead",
+      "url": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/",
+      "source": "Ars Technica",
+      "published": "2026-06-25T21:04:57+02:00",
+      "summary": "Notion is \"going all in on using agents to run your inbox.\"",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2174,194 +2309,73 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "cda85b3b5cfd1daa",
-      "title": "What I'm Finding About LLM Code Style and Token Costs",
-      "url": "https://www.jimmont.com/llm-style-token-costs",
-      "source": "Hacker News",
-      "published": "2026-06-25T02:52:40+02:00",
-      "summary": "Comments",
+      "id": "c7acf2f862f12e4a",
+      "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
+      "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
+      "source": "TechCrunch",
+      "published": "2026-06-26T01:34:39+02:00",
+      "summary": "penAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of to the broader public. The reason: the Trump administration told it to.",
       "areas": [
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "llm"
+          "openai",
+          "gpt"
+        ],
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
-        "relevance": 2,
+        "relevance": 3,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c6243dd265b8c541",
-      "title": "How to Opt Out of Google Search’s New AI Data Training Feature",
-      "url": "https://www.wired.com/story/how-to-opt-out-of-google-search-new-ai-data-training/",
-      "source": "Wired",
-      "published": "2026-06-25T00:36:16+02:00",
-      "summary": "Google’s Search history update stores media uploads from your interactions, like images used in reverse image searches, for training its AI models.",
+      "id": "36d11cb0b4d66715",
+      "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
+      "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
+      "source": "Ars Technica",
+      "published": "2026-06-25T20:01:48+02:00",
+      "summary": "Alibaba allegedly used 25,000 accounts to mine Claude over 28.8 million exchanges.",
       "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "faa6c40a99621f4e",
-      "title": "AI was supposed to kill engineering jobs, but new data suggests they’re the most resilient",
-      "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T23:56:41+02:00",
-      "summary": "While AI dominates the layoff narrative, engineers are actually making up a larger share of new hires, according to SignalFire data.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "30bdffe9004b1310",
-      "title": "New website names and shames companies that still don’t offer passkeys to users",
-      "url": "https://techcrunch.com/2026/06/24/new-website-names-and-shames-companies-that-still-dont-offer-passkeys-to-users/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T23:04:04+02:00",
-      "summary": "According to a new site, 24% of the most popular websites in the world don't offer support for passkeys, which are considered the most secure way to log in to apps and services.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "fc676cdce2c16413",
-      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
-      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-      "source": "Hacker News",
-      "published": "2026-06-24T21:48:01+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
           "anthropic",
           "claude"
+        ],
+        "privacy-risk": [
+          "attack"
         ]
       },
       "scores": {
-        "relevance": 2,
+        "relevance": 3,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c4546c44a3f016e9",
-      "title": "OpenAI unveils its first custom chip, built by Broadcom",
-      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "id": "b8840cfa9545037c",
+      "title": "A data race that doesn't compile",
+      "url": "https://corentin-core.github.io/posts/ruxe-type-level-disjointness/",
       "source": "Hacker News",
-      "published": "2026-06-24T19:47:00+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "e6756e47d99970c2",
-      "title": "This new tracking label could help solve cargo theft",
-      "url": "https://techcrunch.com/2026/06/24/this-new-tracking-label-could-help-solve-cargo-theft/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T17:00:00+02:00",
-      "summary": "The Samsara Tracking Label hides a BLE system that can offer real-time location in a disposable package.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "521b3c354d07999c",
-      "title": "45°C cooling design cuts data center water use to near zero",
-      "url": "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
-      "source": "Hacker News",
-      "published": "2026-06-24T16:10:11+02:00",
+      "published": "2026-06-26T03:33:15+02:00",
       "summary": "Comments",
       "areas": [
         "data-platforms"
@@ -2383,12 +2397,64 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "c7c81375db894b7b",
-      "title": "GTA VI is a worrying sign for the future of physical games",
-      "url": "https://www.theverge.com/games/956389/grand-theft-auto-6-gta-digital-code-in-box-physical-games",
+      "id": "0dce27f157b60755",
+      "title": "YouTube updates Shorts to make it even more like TikTok",
+      "url": "https://www.theverge.com/streaming/957422/youtube-shorts-update-tiktok",
       "source": "The Verge",
-      "published": "2026-06-24T14:42:07-04:00",
-      "summary": "Rockstar Games has finally given Grand Theft Auto VI a price ahead of the game's November 19th launch. But while announcing that the game would cost $79.99, Rockstar also confirmed that the physical versions of GTA VI won't include a disc, and instead will only contain a download code inside the box. Not only is […]",
+      "published": "2026-06-25T18:08:30-04:00",
+      "summary": "YouTube is adding even more TikTok-like features to Shorts, including a new \"clear screen\" mode that removes the icons and text from the video you're watching. In a blog post on Thursday, YouTube says it's also replacing the \"thumbs-up\" button with a \"heart\" icon, and is introducing a new option that lets you watch Shorts […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9da607e489c3f6bb",
+      "title": "Trump administration bars Polestar from selling its new EVs in the US",
+      "url": "https://techcrunch.com/2026/06/25/trump-admin-bars-polestar-from-selling-its-new-evs-in-the-us/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T16:55:25+02:00",
+      "summary": "The Department of Commerce declined to give the Chinese-owned automaker a special authorization to keep selling EVs in the U.S.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f1f37706902d8f7e",
+      "title": "The Download: Europe’s heat wave hits the grid, and IBM’s chip targets Moore’s Law",
+      "url": "https://www.technologyreview.com/2026/06/25/1139738/the-download-europe-heat-wave-ibm-chip-moores-law/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-25T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Europe’s extreme heat is shutting down power plants Europe is in the middle of a record-breaking heat wave, and the grid is being pushed to its limits as people turn to…",
       "areas": [
         "developer-tools"
       ],
@@ -2462,18 +2528,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "6f848b1ac84265e5",
-      "title": "US's climate.gov site, taken down by Trump, relaunched by nonprofit",
-      "url": "https://arstechnica.com/science/2026/06/uss-climate-gov-site-taken-down-by-trump-relaunched-by-nonprofit/",
-      "source": "Ars Technica",
-      "published": "2026-06-24T00:07:56+02:00",
-      "summary": "Climate.us has now restored everything taken down by the government.",
+      "id": "df66830461fe31d5",
+      "title": "Record type inference for dummies",
+      "url": "http://haskellforall.com/2026/06/record-type-inference-for-dummies",
+      "source": "Hacker News",
+      "published": "2026-06-23T15:04:38+02:00",
+      "summary": "Comments",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "cli"
+        "models": [
+          "inference"
         ]
       },
       "scores": {
@@ -2488,11 +2554,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "ea558f574e173afa",
-      "title": "15 sorting algorithms in 6 minutes (2013) [video]",
-      "url": "https://www.youtube.com/watch?v=kPRA0W1kECg",
+      "id": "fc0785f25aadd1cd",
+      "title": "Oxide computer 3D rack guided tour",
+      "url": "https://explorer.oxide.computer/",
       "source": "Hacker News",
-      "published": "2026-06-23T07:29:54+02:00",
+      "published": "2026-06-22T17:21:04+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2514,92 +2580,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "514d896cf2c4ee92",
-      "title": "Show HN: Write SaaS apps where users control where their data is stored",
-      "url": "https://github.com/wolfoo2931/linkedrecords/",
-      "source": "Hacker News",
-      "published": "2026-06-19T09:37:14+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "598a1e48adc7dd75",
-      "title": "The Skylight Calendar Is One of My Favorite Products On Sale for Prime Day",
-      "url": "https://www.wired.com/story/skylight-calendar-prime-day-deal-2026/",
+      "id": "1e7c071ceff68606",
+      "title": "Anthropic Thinks Its Own Success Is Key to Making AI Safe",
+      "url": "https://www.wired.com/story/anthropic-thinks-ai-can-only-be-safe-under-its-control/",
       "source": "Wired",
-      "published": "2026-06-25T02:59:18+02:00",
-      "summary": "The Skylight Calendar 2 and Calendar Max are both on sale for Prime Day if you've been dreaming of a digital calendar to manage your household.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "eaf577753f3947a4",
-      "title": "OpenAI and Broadcom announce chip designed for LLM inference at scale",
-      "url": "https://arstechnica.com/gadgets/2026/06/openai-and-broadcom-announce-chip-designed-for-llm-inference-at-scale/",
-      "source": "Ars Technica",
-      "published": "2026-06-25T00:28:18+02:00",
-      "summary": "The silicon race is heating up amid the struggle to keep up with demand.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai",
-          "inference"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1e929bd5078553a9",
-      "title": "AI researchers continue to leave Google for its rivals",
-      "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/",
-      "source": "TechCrunch",
-      "published": "2026-06-24T23:42:07+02:00",
-      "summary": "Top AI researchers Jonas Adler and Alexander Pritzel are leaving Google for Anthropic, following departures from top scientists Noam Shazeer and John Jumper.",
+      "published": "2026-06-26T02:49:13+02:00",
+      "summary": "Anthropic's critics argue it's rapidly accumulating power. The company says that's what responsible AI development looks like.",
       "areas": [
         "models"
       ],
@@ -2620,18 +2606,70 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "122091fd194be772",
-      "title": "One-two punch delivered in global operation disrupts cybercrime \"assembly line\"",
-      "url": "https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/",
-      "source": "Ars Technica",
-      "published": "2026-06-24T23:03:34+02:00",
-      "summary": "\"Operation Endgame\" simultaneously disrupts two widely used crime tools.",
+      "id": "d177e62d46e16885",
+      "title": "Announcing Silk: a silky smooth fiber runtime for ClickHouse",
+      "url": "https://clickhouse.com/blog/silk",
+      "source": "Lobsters",
+      "published": "2026-06-25T23:41:27+02:00",
+      "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "ide"
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "07bfc83d612d4672",
+      "title": "Databricks’ former AI chief thinks he can cut AI’s power bill by 1,000x",
+      "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T18:48:11+02:00",
+      "summary": "Un-0 is an image-generation system tool that shows for the first time how the company's technology can replicate conventional AI systems.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "5cc5c450535bee7c",
+      "title": "Hacked Klue says criminals are deleting stolen customer data, but now other hackers are making threats",
+      "url": "https://techcrunch.com/2026/06/25/hacked-klue-says-criminals-are-deleting-stolen-customer-data-but-now-other-hackers-are-making-threats/",
+      "source": "TechCrunch",
+      "published": "2026-06-25T18:40:15+02:00",
+      "summary": "Market research company Klue told customers that it believes the hacking group that stole their data is now deleting it. The company, however, warned about a second group of hackers wanting ransom.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
