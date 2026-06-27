@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-26T07:05:43+02:00",
+  "generatedAt": "2026-06-27T07:05:17+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 78,
+  "usefulOpen": 81,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,41 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "147a3809de77ffd9",
+      "title": "Incident Report: CVE-2026-LGTM",
+      "url": "https://simonwillison.net/2026/Jun/26/incident-report/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-26T17:58:54+00:00",
+      "summary": "Incident Report: CVE-2026-LGTM Spectacular hypothetical incident report by Andrew Nesbitt. Day 2, 16:00 UTC --- Two AI review agents from competing vendors, both attached to a downstream pull request bumping foxhole-lz4 , enter a disagreement loop over whether the package is malicious. After 340 comments and $41,255 in inference spend, Finance revokes both A",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "models": [
+          "inference"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "4e5c2e14e9125143",
       "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
@@ -44,41 +79,6 @@
         "leverage": 3,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "d7a0d66021e394c3",
-      "title": "General Intuition’s $2.3B bet that video games can train AI agents for the real world",
-      "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T18:55:00+02:00",
-      "summary": "General Intuition has raised $320 million to scale AI trained on millions of hours of gameplay, betting action data can help AI develop something closer to human intuition.",
-      "areas": [
-        "ai-agents",
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
         "risk": 0
       },
       "priority": 100,
@@ -344,40 +344,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "bdcfa93aa2e1e583",
-      "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/",
-      "source": "GitHub Blog",
-      "published": "2026-06-15T22:15:31+02:00",
-      "summary": "GitHub Copilot CLI for Beginners: Learn how to use slash commands to control your terminal AI agent. The post GitHub Copilot CLI for Beginners: Overview of common slash commands appeared first on The GitHub Blog .",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "developer-tools": [
-          "github",
-          "git",
-          "cli",
-          "terminal",
-          "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "23db518ccdaf3399",
       "title": "New OpenAI Academy courses for the next era of work",
       "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
@@ -404,6 +370,41 @@
       "scores": {
         "relevance": 4,
         "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "cc770dce6f4b13cc",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "source": "OpenAI News",
+      "published": "2026-06-11T02:00:00+02:00",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -444,41 +445,6 @@
       "scores": {
         "relevance": 5,
         "leverage": 2,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "cc770dce6f4b13cc",
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "url": "https://openai.com/index/bbva",
-      "source": "OpenAI News",
-      "published": "2026-06-11T02:00:00+02:00",
-      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -654,65 +620,37 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "0c9562f6aeb7d01d",
-      "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
-      "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/",
-      "source": "GitHub Blog",
-      "published": "2026-06-15T21:17:30+02:00",
-      "summary": "A new repository-level dataset, published on GitHub under CC0-1.0, helps researchers and developers discover multilingual developer content across READMEs, issues, and pull requests. The post Accelerating researchers and developers building multilingual AI with a new open dataset appeared first on The GitHub Blog .",
+      "id": "31106294addacaa7",
+      "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
+      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+      "source": "TechCrunch",
+      "published": "2026-06-26T20:32:14+02:00",
+      "summary": "“We don’t believe this kind of government access process should become the long-term default,” says OpenAI. “It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them.”",
       "areas": [
-        "data-platforms",
-        "developer-tools"
+        "developer-tools",
+        "enterprise-ai",
+        "models"
       ],
       "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
         "developer-tools": [
-          "github",
-          "git",
           "developer"
         ],
-        "data-platforms": [
-          "data"
+        "enterprise-ai": [
+          "enterprise"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 2,
+        "relevance": 4,
+        "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
+        "urgency": 3,
         "risk": 0
       },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f4df26d0dcb730af",
-      "title": "datasette-agent 0.3a0",
-      "url": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-15T17:19:27+00:00",
-      "summary": "Release: datasette-agent 0.3a0 New tool, execute_write_sql , which requests user approval and then writes to a database - taking user permissions into account. #27 I added a mechanism for asking user approval in datasette agent 0.2a0 . The new execute_write_sql tool can now prompt the user for all kinds of useful operations. Here's an example where I add som",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "data-platforms": [
-          "data",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
+      "priority": 93,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -781,6 +719,67 @@
         "risk": 1
       },
       "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "8924e77860bf8e0c",
+      "title": "Quoting Timothy B. Lee",
+      "url": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-26T21:15:09+00:00",
+      "summary": "This is like saying there's no learning curve to being a manager because your employees will just do whatever you tell them to do. — Timothy B. Lee , on the idea that LLMs take no skill and have no learning curve Tags: llms , ai , generative-ai",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "f6828c83b62b51b3",
+      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
+      "url": "https://github.com/workweave/router",
+      "source": "Hacker News",
+      "published": "2026-06-26T18:40:11+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "developer-tools": [
+          "codex",
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -981,36 +980,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f161fb31c603686d",
-      "title": "datasette-apps 0.1a2",
-      "url": "https://simonwillison.net/2026/Jun/15/datasette-apps/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-15T17:26:11+00:00",
-      "summary": "Release: datasette-apps 0.1a2 Custom network/CSP origins for apps are now guarded by a new apps-set-csp permission, with an optional allowed_csp_origins plugin allow-list for non-privileged users. The Datasette Agent app creation tool enforces the same rules. #24 Stored query picker now supports keyboard navigation and shows the three most recent accessible ",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
         ],
         "data-platforms": [
           "data"
@@ -1270,6 +1239,33 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "128a5b9440b4ae18",
+      "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+      "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+      "source": "GitHub Blog",
+      "published": "2026-06-26T18:53:57+02:00",
+      "summary": "GitHub joined the United Nations Development Programme in Ghana to explore how open source governance can support one of West Africa's most ambitious digital reform efforts. The post GitHub and UNDP team up to advance development priorities in Ghana with open source appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "acf6a10dec2ad1d9",
       "title": "datasette-export-database 0.3a2",
       "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
@@ -1408,6 +1404,67 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "70e97e8c007919f3",
+      "title": "NYT slams Microsoft for building copyright-infringing supercomputer for OpenAI",
+      "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
+      "source": "Ars Technica",
+      "published": "2026-06-26T22:04:55+02:00",
+      "summary": "NYT shifts OpenAI/Microsoft copyright claims after SCOTUS ruling against Sony.",
+      "areas": [
+        "enterprise-ai",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ],
+        "privacy-risk": [
+          "copyright"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "382360a6e4dd9744",
+      "title": "Transitioning as a Hubber",
+      "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+      "source": "GitHub Blog",
+      "published": "2026-06-26T14:00:00+02:00",
+      "summary": "How GitHub's culture and benefits helped me be the best version of myself. The post Transitioning as a Hubber appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "6943b218757a4069",
       "title": "AI and Liability",
       "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
@@ -1544,114 +1601,113 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "0759bf27294a5ed0",
-      "title": "Why Amazon Dropped Its OpenAI Movie, Data Center Workers Fight Back, and Meta Leaks Employee Data",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-amazon-mgm-openai-movie-data-center-workers-fight-back-meta-leaks-employee-data/",
+      "id": "cf16ab06a480f682",
+      "title": "How People in China Keep Outsmarting Anthropic’s Geolocation Restrictions",
+      "url": "https://www.wired.com/story/how-people-in-china-keep-outsmarting-anthropics-geolocation-restrictions/",
       "source": "Wired",
-      "published": "2026-06-26T01:13:45+02:00",
-      "summary": "The decision by Amazon-owned MGM Studios to drop the OpenAI movie is just part of AI and film industries becoming increasingly intertwined. On Uncanny Valley, we look at where this is all headed.",
+      "published": "2026-06-26T23:02:54+02:00",
+      "summary": "As Anthropic tightens restrictions on access to Claude in China, users keep finding new workarounds, from proxy services to fake identities sourced on Telegram.",
       "areas": [
-        "data-platforms",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fa5afc2c660e0cca",
+      "title": "U.S. government will decide who gets to use GPT-5.6",
+      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
+      "source": "Hacker News",
+      "published": "2026-06-26T20:23:14+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fdffd6f7e9ab6164",
+      "title": "OpenAI poaches Uber India chief to lead its biggest market outside the US",
+      "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
+      "source": "TechCrunch",
+      "published": "2026-06-26T20:19:36+02:00",
+      "summary": "The hire marks OpenAI's latest push into India, expanding offices, partnerships and hiring.",
+      "areas": [
+        "developer-tools",
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai"
         ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "309ce7538815fe80",
-      "title": "Anthropic’s Claude is winning over paid consumers, a market owned by ChatGPT",
-      "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T19:38:27+02:00",
-      "summary": "Despite ChatGPT's commanding market lead, consumers who pay for AI have been increasingly choosing Anthropic's Claude, data shows.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude",
-          "gpt"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e10561acfec0e4bd",
-      "title": "Rippling now wants to be your entire data stack",
-      "url": "https://techcrunch.com/2026/06/25/parker-conrad-knows-which-employees-are-worth-their-ai-spend-and-says-rippling-can-help-you-too/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T18:00:00+02:00",
-      "summary": "\"There were employees doing things like, 'Claude is so helpful for me — it analyzes my calendar and my email and puts together a plan for me,'\" he says. \"That person was spending at a run rate of $30,000 a year for this.\"",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "2ccd7795a3bef554",
-      "title": "British Police Built a Sprawling Crime-Prediction Machine. Some Results Couldn’t Be Trusted",
-      "url": "https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/",
-      "source": "Wired",
-      "published": "2026-06-25T12:00:00+02:00",
-      "summary": "As UK police embrace the AI revolution, a WIRED investigation reveals the messy inside story of one region’s experiment with predictive analytics.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
         "developer-tools": [
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "6ea007a24c5927fd",
+      "title": "The Download: brain-melting heatwaves and unprecedented OpenAI restrictions",
+      "url": "https://www.technologyreview.com/2026/06/26/1139780/the-download-heatwaves-brain-health-openai-restrictions/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-26T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Heat waves mess with your brain. Scientists are trying to figure out why. —Jessica Hamzelou It’s been hot in London this week. Really hot. A dangerous heat wave has hit Western…",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ],
-        "data-platforms": [
-          "analytics"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -1696,50 +1752,45 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "05fa08192d5207d0",
-      "title": "Built to benefit everyone: our plan",
-      "url": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-      "source": "OpenAI News",
-      "published": "2026-06-08T03:30:00+02:00",
-      "summary": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone.",
+      "id": "dd0ce7367f641e5a",
+      "title": "Quoting Dean W. Ball",
+      "url": "https://simonwillison.net/2026/Jun/26/dean-w-ball/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-26T22:25:46+00:00",
+      "summary": "This is a bad state of affairs. Consider, in particular, some industry dynamics: Frontier models are trained at an enormous cost, and a significant fraction of that cost is recouped in the few post-release months that they are broadly available. After that period elapses, the models become sub-frontier, competition emerges, and margins compress. Every week o",
       "areas": [
-        "models",
-        "privacy-risk"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 80,
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b0d1ef31d74a4879",
-      "title": "OpenAI will delay GPT-5.6 after Trump administration request",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request",
-      "source": "The Verge",
-      "published": "2026-06-25T17:57:06-04:00",
-      "summary": "The Trump administration, apprehensive of potential security issues, has reportedly asked OpenAI to stagger the release of its next big-ticket model, GPT-5.6. The Information reported that OpenAI CEO Sam Altman told employees Wednesday in a company Q&A that it would release GPT-5.6 in limited preview form - granting access only to a small group of […]",
+      "id": "c9b745f9cd8a0c7e",
+      "title": "The Pentagon Is Looking Into the Dialog Data Exposure for Unmasking National Security Officials",
+      "url": "https://www.wired.com/story/the-pentagon-is-looking-into-the-dialog-data-exposure-for-unmasking-national-security-officials/",
+      "source": "Wired",
+      "published": "2026-06-26T18:30:33+02:00",
+      "summary": "Exposed records from the private group included the personal information of a senior White House intelligence official and an active-duty special operations officer.",
       "areas": [
-        "models",
+        "data-platforms",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
+        "data-platforms": [
+          "data"
         ],
         "privacy-risk": [
           "security"
@@ -1751,6 +1802,65 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "da2e5f77143d7f28",
+      "title": "Feedbacks upon feedbacks: Rock weathering and the climate",
+      "url": "https://arstechnica.com/science/2026/06/feedbacks-upon-feedbacks-rock-weathering-and-the-climate/",
+      "source": "Ars Technica",
+      "published": "2026-06-26T16:41:18+02:00",
+      "summary": "Rock weathering may release or draw down carbon dioxide—it depends on the rock.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli",
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "341b60abd06cbd83",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "published": "2026-06-26T12:00:00+02:00",
+      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "privacy-risk": [
+          "security",
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 2
       },
       "priority": 78,
       "action": "Watch",
@@ -2125,6 +2235,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "3eeebb69ad685081",
+      "title": "Quoting OpenAI",
+      "url": "https://simonwillison.net/2026/Jun/26/openai/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-26T17:10:43+00:00",
+      "summary": "We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost. [...] We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, ",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "333c08540b660a3d",
       "title": "Notion Mail shuts down amid agent takeover",
       "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
@@ -2257,64 +2394,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b2a42b079472b9f0",
-      "title": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
-      "url": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-15T14:57:33+00:00",
-      "summary": "\"They screwed us\": Personality clashes sent Anthropic's models offline Lots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in this Axios piece, which is the best collection of behind-the-scenes gossip I've seen about the US government export control Mythos/Fable story so far. Logan Graham ( I lead the Frontier Red Tea",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "987de907aca90f16",
-      "title": "Why AI hasn’t replaced software engineers, and won’t",
-      "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-14T23:54:11+00:00",
-      "summary": "Why AI hasn’t replaced software engineers, and won’t Arvind Narayanan and Sayash Kappor take on the question of AI job losses through the lens of a profession that is uniquely suited to AI disruption - software engineering. In this essay, we argue that there is enough evidence to reject the narrative that once AI capabilities reach a certain threshold, it wi",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "c7acf2f862f12e4a",
       "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
       "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
       "source": "TechCrunch",
       "published": "2026-06-26T01:34:39+02:00",
-      "summary": "penAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of to the broader public. The reason: the Trump administration told it to.",
+      "summary": "OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of with the broader public. The reason: the Trump administration told it to.",
       "areas": [
         "models",
         "privacy-risk"
@@ -2371,18 +2456,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b8840cfa9545037c",
-      "title": "A data race that doesn't compile",
-      "url": "https://corentin-core.github.io/posts/ruxe-type-level-disjointness/",
+      "id": "721b0a9a6cef9b9b",
+      "title": "Ask HN: MacBook vs. Dedicated GPU for LLM",
+      "url": "https://news.ycombinator.com/item?id=48694802",
       "source": "Hacker News",
-      "published": "2026-06-26T03:33:15+02:00",
+      "published": "2026-06-27T05:17:43+02:00",
       "summary": "Comments",
       "areas": [
-        "data-platforms"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "models": [
+          "llm"
         ]
       },
       "scores": {
@@ -2397,44 +2482,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "0dce27f157b60755",
-      "title": "YouTube updates Shorts to make it even more like TikTok",
-      "url": "https://www.theverge.com/streaming/957422/youtube-shorts-update-tiktok",
-      "source": "The Verge",
-      "published": "2026-06-25T18:08:30-04:00",
-      "summary": "YouTube is adding even more TikTok-like features to Shorts, including a new \"clear screen\" mode that removes the icons and text from the video you're watching. In a blog post on Thursday, YouTube says it's also replacing the \"thumbs-up\" button with a \"heart\" icon, and is introducing a new option that lets you watch Shorts […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "9da607e489c3f6bb",
-      "title": "Trump administration bars Polestar from selling its new EVs in the US",
-      "url": "https://techcrunch.com/2026/06/25/trump-admin-bars-polestar-from-selling-its-new-evs-in-the-us/",
+      "id": "8be765212bb60ecd",
+      "title": "Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+      "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/",
       "source": "TechCrunch",
-      "published": "2026-06-25T16:55:25+02:00",
-      "summary": "The Department of Commerce declined to give the Chinese-owned automaker a special authorization to keep selling EVs in the U.S.",
+      "published": "2026-06-27T03:01:37+02:00",
+      "summary": "Over 100 companies and government agencies are reportedly authorized to use Mythos 5, including their non-American employees.",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "cli"
+        "models": [
+          "anthropic"
         ]
       },
       "scores": {
@@ -2449,12 +2508,90 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "f1f37706902d8f7e",
-      "title": "The Download: Europe’s heat wave hits the grid, and IBM’s chip targets Moore’s Law",
-      "url": "https://www.technologyreview.com/2026/06/25/1139738/the-download-europe-heat-wave-ibm-chip-moores-law/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-25T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Europe’s extreme heat is shutting down power plants Europe is in the middle of a record-breaking heat wave, and the grid is being pushed to its limits as people turn to…",
+      "id": "8939628a64507c3b",
+      "title": "Trump Administration Allows Anthropic to Release Mythos to Select US Organizations",
+      "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+      "source": "Wired",
+      "published": "2026-06-27T02:26:14+02:00",
+      "summary": "After weeks of negotiations, the White House permitted Anthropic to grant access to its most advanced AI model to a select group of US companies and government agencies.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "be376d9f24bb72f2",
+      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
+      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+      "source": "Hacker News",
+      "published": "2026-06-27T00:48:28+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "06a486ffcf2c38fd",
+      "title": "The gap between open weights LLMs and closed source LLMs",
+      "url": "https://blog.doubleword.ai/frontier-os-llm",
+      "source": "Hacker News",
+      "published": "2026-06-26T23:14:47+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1d4b72d022465f12",
+      "title": "Antibiotic \"megacluster\" discovery provides new strategy to fight superbugs",
+      "url": "https://arstechnica.com/health/2026/06/antibiotic-megacluster-discovery-provides-new-strategy-to-fight-superbugs/",
+      "source": "Ars Technica",
+      "published": "2026-06-26T19:46:07+02:00",
+      "summary": "It's \"an exciting advance in efforts to restock the antibiotic arsenal.\"",
       "areas": [
         "developer-tools"
       ],
@@ -2475,18 +2612,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e4d6d51eab344349",
-      "title": "The Download: introducing the Engineering issue",
-      "url": "https://www.technologyreview.com/2026/06/24/1139658/the-download-introducing-engineering-issue/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-24T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Introducing: the Engineering issue We can’t fix everything, but we can be ambitious. We can take on the challenge of making the world better through human ingenuity. That’s what the new…",
+      "id": "48aba9e67792068f",
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "source": "Hacker News",
+      "published": "2026-06-26T19:06:55+02:00",
+      "summary": "Comments",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "ide"
+        "models": [
+          "gpt"
         ]
       },
       "scores": {
@@ -2501,19 +2638,20 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "13b336261997e84d",
-      "title": "Stripe, Anthropic, and OpenAI are backing an effort to stop respiratory infections",
-      "url": "https://www.technologyreview.com/2026/06/24/1139621/stripe-anthropic-and-openai-are-backing-an-effort-to-stop-respiratory-infections/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-24T14:00:00+02:00",
-      "summary": "The common cold comes for us all—often more than once a year. And there is no way to prevent it. The best you can do is take vitamin C and stay away from people with the sniffles. Now the payment company Stripe, founded by brothers Patrick and John Collison, says it will fund a new…",
+      "id": "a86dcf610044684f",
+      "title": "OpenAI Has New AI Models. Here’s Why You Can’t Use Them",
+      "url": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/",
+      "source": "Wired",
+      "published": "2026-06-26T19:05:40+02:00",
+      "summary": "The White House asked OpenAI to delay the rollout of its GPT-5.6 AI models, two weeks after Anthropic had to take its most advanced AI models offline.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "anthropic"
+          "anthropic",
+          "gpt"
         ]
       },
       "scores": {
@@ -2528,116 +2666,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "df66830461fe31d5",
-      "title": "Record type inference for dummies",
-      "url": "http://haskellforall.com/2026/06/record-type-inference-for-dummies",
+      "id": "73199b1f3e836648",
+      "title": "A Tiny Compiler for Data-Parallel Kernels",
+      "url": "https://healeycodes.com/a-tiny-compiler-for-data-parallel-kernels",
       "source": "Hacker News",
-      "published": "2026-06-23T15:04:38+02:00",
+      "published": "2026-06-25T15:32:12+02:00",
       "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "inference"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "fc0785f25aadd1cd",
-      "title": "Oxide computer 3D rack guided tour",
-      "url": "https://explorer.oxide.computer/",
-      "source": "Hacker News",
-      "published": "2026-06-22T17:21:04+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1e7c071ceff68606",
-      "title": "Anthropic Thinks Its Own Success Is Key to Making AI Safe",
-      "url": "https://www.wired.com/story/anthropic-thinks-ai-can-only-be-safe-under-its-control/",
-      "source": "Wired",
-      "published": "2026-06-26T02:49:13+02:00",
-      "summary": "Anthropic's critics argue it's rapidly accumulating power. The company says that's what responsible AI development looks like.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "d177e62d46e16885",
-      "title": "Announcing Silk: a silky smooth fiber runtime for ClickHouse",
-      "url": "https://clickhouse.com/blog/silk",
-      "source": "Lobsters",
-      "published": "2026-06-25T23:41:27+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "07bfc83d612d4672",
-      "title": "Databricks’ former AI chief thinks he can cut AI’s power bill by 1,000x",
-      "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T18:48:11+02:00",
-      "summary": "Un-0 is an image-generation system tool that shows for the first time how the company's technology can replicate conventional AI systems.",
       "areas": [
         "data-platforms"
       ],
@@ -2649,37 +2683,11 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5cc5c450535bee7c",
-      "title": "Hacked Klue says criminals are deleting stolen customer data, but now other hackers are making threats",
-      "url": "https://techcrunch.com/2026/06/25/hacked-klue-says-criminals-are-deleting-stolen-customer-data-but-now-other-hackers-are-making-threats/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T18:40:15+02:00",
-      "summary": "Market research company Klue told customers that it believes the hacking group that stole their data is now deleting it. The company, however, warned about a second group of hackers wanting ransom.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     }
