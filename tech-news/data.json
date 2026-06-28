@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T07:05:17+02:00",
+  "generatedAt": "2026-06-28T07:05:26+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
   "usefulOpen": 81,
@@ -723,6 +723,40 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "9056d477565e19dc",
+      "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
+      "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+      "source": "Wired",
+      "published": "2026-06-27T12:30:00+02:00",
+      "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
+      "areas": [
+        "data-platforms",
+        "enterprise-ai",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "8924e77860bf8e0c",
       "title": "Quoting Timothy B. Lee",
       "url": "https://simonwillison.net/2026/Jun/26/timothy-b-lee/#atom-everything",
@@ -739,68 +773,6 @@
         ],
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f6828c83b62b51b3",
-      "title": "Show HN: Smart model routing directly in Claude, Codex and Cursor",
-      "url": "https://github.com/workweave/router",
-      "source": "Hacker News",
-      "published": "2026-06-26T18:40:11+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "developer-tools": [
-          "codex",
-          "cursor"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "848db8a0fbe30545",
-      "title": "Patronus AI lands $50M to build ‘digital worlds’ that stress-test AI agents",
-      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T22:19:25+02:00",
-      "summary": "Agent-testing startup Patronus AI, founded by former Meta AI researchers, is experiencing nearly insatiable demand, its investor says.",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ],
-        "developer-tools": [
-          "git"
         ]
       },
       "scores": {
@@ -1601,20 +1573,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "cf16ab06a480f682",
-      "title": "How People in China Keep Outsmarting Anthropic’s Geolocation Restrictions",
-      "url": "https://www.wired.com/story/how-people-in-china-keep-outsmarting-anthropics-geolocation-restrictions/",
-      "source": "Wired",
-      "published": "2026-06-26T23:02:54+02:00",
-      "summary": "As Anthropic tightens restrictions on access to Claude in China, users keep finding new workarounds, from proxy services to fake identities sourced on Telegram.",
+      "id": "e502f7ee039e0bcd",
+      "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
+      "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
+      "source": "TechCrunch",
+      "published": "2026-06-27T18:45:09+02:00",
+      "summary": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
       "areas": [
         "developer-tools",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "anthropic",
-          "claude"
+          "openai"
         ],
         "developer-tools": [
           "ide"
@@ -1632,19 +1603,50 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fa5afc2c660e0cca",
-      "title": "U.S. government will decide who gets to use GPT-5.6",
-      "url": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
-      "source": "Hacker News",
-      "published": "2026-06-26T20:23:14+02:00",
-      "summary": "Comments",
+      "id": "a571e54c17fcbf90",
+      "title": "The fittest founder in the room got cancer. Here’s how he used AI to fight back.",
+      "url": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+      "source": "TechCrunch",
+      "published": "2026-06-27T16:00:00+02:00",
+      "summary": "When confronted with cancer, Connor Christou fed everything tied tied to his regime — blood results, scan data, wearable output, journal entries — into Claude.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "cf16ab06a480f682",
+      "title": "How People in China Keep Outsmarting Anthropic’s Geolocation Restrictions",
+      "url": "https://www.wired.com/story/how-people-in-china-keep-outsmarting-anthropics-geolocation-restrictions/",
+      "source": "Wired",
+      "published": "2026-06-26T23:02:54+02:00",
+      "summary": "As Anthropic tightens restrictions on access to Claude in China, users keep finding new workarounds, from proxy services to fake identities sourced on Telegram.",
       "areas": [
         "developer-tools",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "gpt"
+          "anthropic",
+          "claude"
         ],
         "developer-tools": [
           "ide"
@@ -1748,6 +1750,33 @@
         "risk": 1
       },
       "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "dc2cf516525b6c47",
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "source": "Hacker News",
+      "published": "2026-06-27T16:31:00+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2235,19 +2264,20 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "3eeebb69ad685081",
-      "title": "Quoting OpenAI",
-      "url": "https://simonwillison.net/2026/Jun/26/openai/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-26T17:10:43+00:00",
-      "summary": "We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost. [...] We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, ",
+      "id": "c0a03837b7065f8b",
+      "title": "This puzzle game’s simple premise hides surprising depth",
+      "url": "https://www.theverge.com/games/957474/whats-the-password-review-pc-ios-android",
+      "source": "The Verge",
+      "published": "2026-06-27T08:00:00-04:00",
+      "summary": "What's the Password? has a simple concept: To solve each of the game's more than 100 puzzles, you have to type in the right four-digit password on a number pad. That might sound like a limited constraint. But the simplicity gives solo developer Dan DiIorio, better known as TrampolineTales, lots of room to play with […]",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
+        "developer-tools": [
+          "git",
+          "developer",
+          "ide"
         ]
       },
       "scores": {
@@ -2262,19 +2292,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "333c08540b660a3d",
-      "title": "Notion Mail shuts down amid agent takeover",
-      "url": "https://techcrunch.com/2026/06/25/notion-mail-shuts-down-amid-agent-takeover/",
-      "source": "TechCrunch",
-      "published": "2026-06-25T21:14:46+02:00",
-      "summary": "The company said it is discontinuing its email inbox in favor of its AI agent offering as users are increasingly handing over the reins of their email to the agents.",
+      "id": "3eeebb69ad685081",
+      "title": "Quoting OpenAI",
+      "url": "https://simonwillison.net/2026/Jun/26/openai/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-26T17:10:43+00:00",
+      "summary": "We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost. [...] We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, ",
       "areas": [
-        "ai-agents"
+        "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
+        "models": [
+          "openai",
+          "gpt"
         ]
       },
       "scores": {
@@ -2394,37 +2424,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c7acf2f862f12e4a",
-      "title": "The White House is asking OpenAI to slow roll the release of its new model over safety concerns",
-      "url": "https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/",
-      "source": "TechCrunch",
-      "published": "2026-06-26T01:34:39+02:00",
-      "summary": "OpenAI reportedly plans to share its newest model, GPT 5.6, with a select group of partners instead of with the broader public. The reason: the Trump administration told it to.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "36d11cb0b4d66715",
       "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
       "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
@@ -2456,11 +2455,37 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "721b0a9a6cef9b9b",
-      "title": "Ask HN: MacBook vs. Dedicated GPU for LLM",
-      "url": "https://news.ycombinator.com/item?id=48694802",
+      "id": "f01eecd71f95ab0c",
+      "title": "Indian payments chief thinks AI will be heavily involved in next era of digital payment growth",
+      "url": "https://techcrunch.com/2026/06/27/indian-payments-chief-thinks-ai-will-be-heavily-involved-in-next-era-of-digital-payment-growth/",
+      "source": "TechCrunch",
+      "published": "2026-06-28T07:00:00+02:00",
+      "summary": "Dilip Asbe said that newer UPI apps could be more competitive with a viable commercial model",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b90713bdb399a70b",
+      "title": "Wayfinder Router: deterministic routing of queries between local and hosted LLM",
+      "url": "https://github.com/itsthelore/wayfinder-router",
       "source": "Hacker News",
-      "published": "2026-06-27T05:17:43+02:00",
+      "published": "2026-06-28T06:31:18+02:00",
       "summary": "Comments",
       "areas": [
         "models"
@@ -2468,6 +2493,111 @@
       "matchedKeywords": {
         "models": [
           "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "227960d991005fd8",
+      "title": "AMD Strix Halo RDMA Cluster Setup Guide",
+      "url": "https://github.com/kyuz0/amd-strix-halo-vllm-toolboxes/blob/main/rdma_cluster/setup_guide.md",
+      "source": "Hacker News",
+      "published": "2026-06-28T02:46:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "555eac472c32a7b0",
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "source": "Hacker News",
+      "published": "2026-06-27T11:18:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "inference"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "46d2d1093a5cf486",
+      "title": "Inside the room where the smart home industry is still betting on Matter",
+      "url": "https://www.theverge.com/tech/958008/matter-unify-conference-csa-apple-google-amazon-samsung-smart-home-interoperability",
+      "source": "The Verge",
+      "published": "2026-06-27T09:00:00-04:00",
+      "summary": "Four years ago, overlooking a canal in Amsterdam, the smart home industry collectively launched Matter, the one interoperability standard to rule them all. Heralded as the solution to the industry's struggles, Matter was built on open standards and existing technologies and is the result of years of collaboration between traditional rivals, including Apple, ",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "604c720f6730c9af",
+      "title": "This might be the new best smart speaker",
+      "url": "https://www.theverge.com/tech/958127/google-home-speaker-star-fox-installer",
+      "source": "The Verge",
+      "published": "2026-06-27T08:00:00-04:00",
+      "summary": "Hi, friends! Welcome to Installer No. 134, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, hope you're okay in all this heat, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about Polymarket lies and Jalen Brunson and […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -2534,58 +2664,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "be376d9f24bb72f2",
-      "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-      "url": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-      "source": "Hacker News",
-      "published": "2026-06-27T00:48:28+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "06a486ffcf2c38fd",
-      "title": "The gap between open weights LLMs and closed source LLMs",
-      "url": "https://blog.doubleword.ai/frontier-os-llm",
-      "source": "Hacker News",
-      "published": "2026-06-26T23:14:47+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "1d4b72d022465f12",
       "title": "Antibiotic \"megacluster\" discovery provides new strategy to fight superbugs",
       "url": "https://arstechnica.com/health/2026/06/antibiotic-megacluster-discovery-provides-new-strategy-to-fight-superbugs/",
@@ -2598,86 +2676,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "48aba9e67792068f",
-      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
-      "source": "Hacker News",
-      "published": "2026-06-26T19:06:55+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a86dcf610044684f",
-      "title": "OpenAI Has New AI Models. Here’s Why You Can’t Use Them",
-      "url": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/",
-      "source": "Wired",
-      "published": "2026-06-26T19:05:40+02:00",
-      "summary": "The White House asked OpenAI to delay the rollout of its GPT-5.6 AI models, two weeks after Anthropic had to take its most advanced AI models offline.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "73199b1f3e836648",
-      "title": "A Tiny Compiler for Data-Parallel Kernels",
-      "url": "https://healeycodes.com/a-tiny-compiler-for-data-parallel-kernels",
-      "source": "Hacker News",
-      "published": "2026-06-25T15:32:12+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
