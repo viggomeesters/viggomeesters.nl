@@ -66,6 +66,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/jsonl-vault-spike/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/knowledge-pyramid/</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.7</priority>
@@ -134,6 +139,11 @@
     <loc>https://viggomeesters.com/uses/</loc>
     <lastmod>2026-05-20</lastmod>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/vault-layer/</loc>
+    <lastmod>2026-06-29</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://viggomeesters.com/vault-first-operating-model/</loc>

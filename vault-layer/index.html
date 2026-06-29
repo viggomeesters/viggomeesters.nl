@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultLayer — Viggo Meesters</title>
+  <meta name="description" content="Local-first read model for Markdown and Obsidian vault search, vector retrieval, provenance, CLI, and MCP access.">
+  <link rel="canonical" href="https://viggomeesters.com/vault-layer/">
+  <meta property="og:title" content="VaultLayer — Viggo Meesters">
+  <meta property="og:description" content="Local-first read model for Markdown and Obsidian vault search, vector retrieval, provenance, CLI, and MCP access.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viggomeesters.com/vault-layer/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VaultLayer — Viggo Meesters">
+  <meta name="twitter:description" content="Local-first read model for Markdown and Obsidian vault search, vector retrieval, provenance, CLI, and MCP access.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --bg:#0c0c0f; --bg-surface:#141418; --border:rgba(255,255,255,.10); --border-subtle:rgba(255,255,255,.055); --text:#c8cbd5; --text-secondary:#9aa1b6; --text-muted:#6d7286; --accent:#38bdf8; --accent-soft:rgba(56,189,248,0.10); --font:'Sora',system-ui,-apple-system,sans-serif; --font-mono:'JetBrains Mono','SF Mono',monospace; --radius:16px; --ease:cubic-bezier(0.22,1,0.36,1); }
+    html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; background:var(--bg); }
+    body { background:var(--bg); color:var(--text); font-family:var(--font); font-size:15px; line-height:1.6; overflow-x:hidden; min-height:100vh; }
+    body::after { content:''; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.03; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size:256px 256px; }
+    .aurora { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+    .aurora::before { content:''; position:absolute; width:140%; height:140%; top:-20%; left:-20%; background:radial-gradient(ellipse 620px 420px at 14% 12%, var(--accent-soft) 0%, transparent 68%), radial-gradient(ellipse 520px 500px at 78% 25%, rgba(168,85,247,.07) 0%, transparent 60%), radial-gradient(ellipse 760px 340px at 52% 68%, rgba(59,130,246,.05) 0%, transparent 64%); }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } html { scroll-behavior:auto; } }
+    .reveal { opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease; } .reveal.visible { opacity:1; transform:none; }
+    .page { position:relative; z-index:1; max-width:920px; margin:0 auto; padding:60px 20px; }
+    .back { display:inline-flex; align-items:center; gap:6px; font-size:.82em; color:var(--text-muted); text-decoration:none; margin-bottom:32px; padding:6px 14px; background:var(--bg-surface); border:1px solid var(--border-subtle); border-radius:10px; transition:color .2s,border-color .2s,transform .3s var(--ease); }
+    .back:hover { color:var(--text-secondary); border-color:var(--border); transform:translateX(-3px); }
+    .hero { max-width:790px; margin-bottom:26px; } .eyebrow { font-family:var(--font-mono); font-size:.72em; color:var(--accent); text-transform:uppercase; letter-spacing:.14em; margin-bottom:10px; }
+    .title { font-size:clamp(2rem,5vw,3.45rem); font-weight:700; color:#eeeff4; letter-spacing:-.04em; line-height:1.02; text-wrap:balance; }
+    .subtitle { color:var(--text-secondary); margin-top:14px; max-width:700px; }
+    .topic-row { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; } .topic-row span { font-family:var(--font-mono); font-size:.72em; color:var(--text-secondary); background:rgba(255,255,255,.035); border:1px solid var(--border-subtle); padding:5px 8px; border-radius:999px; }
+    .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:28px 0; } .stat { padding:18px 14px; background:rgba(20,20,24,.78); border:1px solid var(--border-subtle); border-radius:var(--radius); }
+    .stat-num { font-family:var(--font-mono); color:#eeeff4; font-weight:500; } .stat-label { font-size:.72em; color:var(--text-muted); text-transform:uppercase; letter-spacing:.08em; margin-top:4px; }
+    .cta-row { display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 34px; } .cta { color:#eeeff4; text-decoration:none; background:var(--accent-soft); border:1px solid color-mix(in srgb, var(--accent) 45%, transparent); border-radius:999px; padding:10px 15px; font-size:.86em; transition:transform .3s var(--ease),border-color .2s; } .cta:hover { transform:translateY(-2px); border-color:var(--accent); }
+    .section-label { display:flex; align-items:center; gap:8px; padding:22px 0 12px; font-size:.7em; text-transform:uppercase; letter-spacing:.15em; color:var(--text-muted); font-weight:500; } .section-label::before { content:''; width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent); }
+    .info-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .info-card { min-height:160px; padding:20px; background:rgba(20,20,24,.72); border:1px solid var(--border-subtle); border-radius:var(--radius); position:relative; overflow:hidden; box-shadow:inset 0 1px 0 rgba(255,255,255,.026),0 0 28px color-mix(in srgb,var(--accent) 7%,transparent),0 14px 40px rgba(0,0,0,.13); } .info-card h2 { color:#eeeff4; font-size:1em; margin-bottom:8px; } .info-card p { color:var(--text-secondary); font-size:.9em; }
+    .note { margin-top:18px; padding:16px; border:1px solid var(--border-subtle); background:var(--accent-soft); border-radius:var(--radius); color:var(--text-secondary); font-size:.88em; }
+    .footer { margin-top:40px; font-size:.72em; color:var(--text-muted); text-align:center; opacity:.5; }
+    @media (max-width:720px) { .page { padding:40px 14px; } .stats,.info-grid { grid-template-columns:1fr; } .title { font-size:2rem; } }
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <a href="/" class="back reveal">&larr; viggomeesters.com</a>
+    <header class="hero reveal">
+      <div class="eyebrow">Project page</div>
+      <h1 class="title">A local read model for Markdown vaults.</h1>
+      <p class="subtitle">VaultLayer turns a Markdown or Obsidian vault into a rebuildable local database for full-text search, vector retrieval, WikiLinks, metadata, provenance, CLI, and MCP access.</p>
+      <div class="topic-row"><span>markdown</span> <span>obsidian</span> <span>sqlite</span> <span>vectors</span> <span>mcp</span></div>
+    </header>
+    <section class="stats reveal" aria-label="Project summary">
+      <div class="stat"><div class="stat-num">Local-first</div><div class="stat-label">runtime model</div></div>
+      <div class="stat"><div class="stat-num">Provenance</div><div class="stat-label">retrieval rule</div></div>
+      <div class="stat"><div class="stat-num">CLI + MCP</div><div class="stat-label">interfaces</div></div>
+    </section>
+    <div class="cta-row reveal">
+      <a class="cta" href="https://github.com/viggomeesters/vault-layer" target="_blank" rel="noopener">Open GitHub repository &rarr;</a>
+      <a class="cta" href="/">Back to project overview</a>
+    </div>
+    <section aria-labelledby="project-notes">
+      <div class="section-label" id="project-notes">Project notes</div>
+      <div class="info-grid">
+        <article class="info-card"><h2>What it is</h2><p>An open-source indexing layer that keeps the vault as plain files while generating a disposable local database outside the vault and outside the repo.</p></article>
+        <article class="info-card"><h2>Why it exists</h2><p>Agents should not repeatedly crawl large Markdown folders. They need bounded, cited retrieval with source path, heading, hash, timestamp, and excerpt.</p></article>
+        <article class="info-card"><h2>Useful for</h2><p>Local vault search, retrieval benchmarks, vector experiments, MCP tool access, and replacing one-off indexing logic in vault-facing apps.</p></article>
+        <article class="info-card"><h2>How it works</h2><p>The indexer reads Markdown or Obsidian files, builds SQLite/FTS and vector-ready projections, and exposes search results with provenance.</p></article>
+        <article class="info-card"><h2>Safety model</h2><p>Private vault text, generated databases, embeddings, caches, and benchmark outputs stay outside the repository.</p></article>
+        <article class="info-card"><h2>Current focus</h2><p>Pilot-ready local MVP: package smoke tests, doctor checks, benchmark scripts, synthetic messy-vault preflight, and explicit remote-sync boundaries.</p></article>
+        <article class="info-card"><h2>Why it matters</h2><p>It separates storage from retrieval so viewers, agents, and MCP tools can share one rebuildable vault query layer.</p></article>
+        <article class="info-card"><h2>Next action</h2><p>Open GitHub for the current CLI commands, backend details, benchmarks, and implementation state.</p></article>
+      </div>
+    </section>
+    <p class="note reveal">This page is the human-readable project entrypoint. GitHub remains the place for current files, implementation details, issues, and release state.</p>
+    <div class="footer">&copy; 2026 Viggo Meesters</div>
+  </main>
+  <script>
+    const observer = new IntersectionObserver((entries) => { for (const entry of entries) if (entry.isIntersecting) entry.target.classList.add('visible'); }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
