@@ -199,7 +199,7 @@ const priorityPages = rows
   .slice(0, 40);
 
 const result = {
-  generatedAt: new Date().toISOString(),
+  generatedAt: "current working tree",
   baseUrl,
   summary: {
     publicPages: publicPages.length,
