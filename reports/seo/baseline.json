@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-29T10:24:12.228Z",
+  "generatedAt": "2026-06-29T10:26:03.619Z",
   "baseUrl": "https://viggomeesters.com",
   "summary": {
     "publicPages": 232,
     "sitemapEntries": 232,
     "issueTypes": 5,
-    "totalIssueOccurrences": 299,
+    "totalIssueOccurrences": 298,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -30,8 +30,8 @@
       },
       "guides_articles": {
         "pages": 5,
-        "issues": 3,
-        "thin": 1,
+        "issues": 2,
+        "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 5
       },
@@ -81,24 +81,12 @@
     "issueCounts": {
       "long_description": 60,
       "short_description": 105,
-      "thin_under_250_words": 3,
       "short_title": 96,
+      "thin_under_250_words": 2,
       "duplicate_description": 35
     }
   },
   "priorityPages": [
-    {
-      "route": "/guides/",
-      "cluster": "guides_articles",
-      "words": 207,
-      "titleLength": 34,
-      "descriptionLength": 95,
-      "jsonLdCount": 0,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 5
-    },
     {
       "route": "/tech-news/",
       "cluster": "signal_dashboards",
@@ -313,6 +301,16 @@
       "words": 1020,
       "titleLength": 38,
       "descriptionLength": 149,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/guides/",
+      "cluster": "guides_articles",
+      "words": 261,
+      "titleLength": 34,
+      "descriptionLength": 95,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -828,7 +826,7 @@
       "descriptionLength": 95,
       "h1": "Practical writing, outside the systems grid.",
       "h1Count": 1,
-      "words": 207,
+      "words": 261,
       "jsonLdCount": 0,
       "lastmod": "2026-06-24",
       "priority": 0.7,
@@ -837,9 +835,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "thin_under_250_words"
-      ]
+      "issues": []
     },
     {
       "file": "helicopter-to-detail/index.html",
