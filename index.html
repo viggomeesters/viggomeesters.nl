@@ -346,7 +346,6 @@
 
     .profile-intro {
       display: grid;
-      gap: 14px;
       padding-top: 16px;
       border-top: 1px solid rgba(255,255,255,0.07);
     }
@@ -357,50 +356,6 @@
       line-height: 1.65;
       display: block;
       max-width: 58ch;
-    }
-
-    .profile-routes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-    }
-
-    .profile-route {
-      min-width: 0;
-      padding: 10px 11px;
-      border-radius: 14px;
-      text-decoration: none;
-      background: rgba(255,255,255,0.035);
-      border: 1px solid rgba(255,255,255,0.055);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.035);
-      transition: transform 0.25s var(--bounce), background 0.2s ease, border-color 0.2s ease;
-    }
-
-    .profile-route strong {
-      display: block;
-      color: #eeeff4;
-      font-size: 0.82em;
-      line-height: 1.2;
-      letter-spacing: 0.01em;
-    }
-
-    .profile-route span {
-      display: block;
-      margin-top: 3px;
-      color: var(--text-muted);
-      font-size: 0.72em;
-      line-height: 1.25;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    @media (hover: hover) {
-      .profile-route:hover {
-        transform: translateY(-1px);
-        background: color-mix(in srgb, var(--route-color, #ffffff) 10%, rgba(255,255,255,0.035));
-        border-color: color-mix(in srgb, var(--route-color, #ffffff) 24%, rgba(255,255,255,0.055));
-      }
     }
 
     /* Section label tile */
@@ -701,9 +656,8 @@
       .profile-head { gap: 14px; }
       .name { font-size: 1.48em; }
       .tagline { font-size: 0.84em; }
-      .profile-intro { gap: 12px; padding-top: 14px; }
+      .profile-intro { padding-top: 14px; }
       .profile-summary { font-size: 0.84em; line-height: 1.6; }
-      .profile-route { padding: 9px 10px; }
       .guide-pair { grid-template-columns: 1fr; }
       .form-row { flex-direction: column; gap: 10px; }
     }
@@ -729,11 +683,6 @@
         </div>
         <div class="profile-intro">
           <p class="profile-summary">I build small, source-backed systems that turn messy work into repeatable structures: live tools, project write-ups, workflow notes, and practical guides.</p>
-          <nav class="profile-routes" aria-label="Homepage shortcuts">
-            <a href="#demos" class="profile-route" style="--route-color: #3b82f6"><strong>Demos</strong><span>Try tools</span></a>
-            <a href="#systems" class="profile-route" style="--route-color: #22c55e"><strong>Systems</strong><span>See maps</span></a>
-            <a href="/guides/" class="profile-route" style="--route-color: #f97316"><strong>Guides</strong><span>Read notes</span></a>
-          </nav>
         </div>
       </div>
 
