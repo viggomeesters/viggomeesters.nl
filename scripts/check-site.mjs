@@ -122,6 +122,17 @@ for (const file of htmlFiles) {
   }
 }
 
+const homepage = read("index.html");
+for (const match of homepage.matchAll(/<a\b([^>]*)>[\s\S]*?<\/a>/g)) {
+  const attrs = match[1];
+  if (!/class=["'][^"']*\btile\s+card\b[^"']*["']/.test(attrs)) continue;
+  const href = attrs.match(/href=["']([^"']+)["']/)?.[1] || "";
+  assert(
+    !href.includes("github.com"),
+    `index.html: project/navigation tile links directly to GitHub (${href}); use a first-party project page first`,
+  );
+}
+
 for (const file of publicPages) {
   const route = routeForIndex(file);
   const expected = canonicalForRoute(route);
