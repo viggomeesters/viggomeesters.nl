@@ -1,22 +1,22 @@
 # SEO Baseline — viggomeesters.com
 
-Generated: 2026-06-29T10:21:08.102Z
+Generated: 2026-06-29T10:24:12.228Z
 
 ## Summary
 
 - Public pages: 232
 - Sitemap entries: 232
-- Issue occurrences: 301
+- Issue occurrences: 299
 
 ## Top issue types
 
 | Issue | Count |
 |---|---:|
 | short_description | 105 |
-| short_title | 97 |
+| short_title | 96 |
 | long_description | 60 |
 | duplicate_description | 35 |
-| thin_under_250_words | 4 |
+| thin_under_250_words | 3 |
 
 ## Clusters
 
@@ -26,18 +26,17 @@ Generated: 2026-06-29T10:21:08.102Z
 | tech_stack | 7 | 6 | 0 | 0 | 7 |
 | agent_workflow | 6 | 5 | 0 | 0 | 6 |
 | guides_articles | 5 | 3 | 1 | 0 | 5 |
-| homepage | 1 | 2 | 1 | 0 | 1 |
 | signal_dashboards | 2 | 2 | 2 | 0 | 2 |
 | personal_knowledge_system | 8 | 0 | 0 | 0 | 8 |
 | seo_evergreen | 2 | 0 | 0 | 0 | 0 |
 | methodologies | 7 | 0 | 0 | 0 | 7 |
+| homepage | 1 | 0 | 0 | 0 | 1 |
 | project_pages | 3 | 0 | 0 | 0 | 3 |
 
 ## Priority non-skill pages
 
 | Route | Cluster | Words | JSON-LD | Issues |
 |---|---|---:|---:|---|
-| / | homepage | 210 | 0 | short_title, thin_under_250_words |
 | /guides/ | guides_articles | 207 | 0 | thin_under_250_words |
 | /tech-news/ | signal_dashboards | 92 | 0 | thin_under_250_words |
 | /trendwatch/ | signal_dashboards | 105 | 0 | thin_under_250_words |
@@ -52,6 +51,7 @@ Generated: 2026-06-29T10:21:08.102Z
 | /jsonl-agent-first-data-structures/ | guides_articles | 1155 | 0 | long_description |
 | /tech-stack/hardware/ | tech_stack | 293 | 0 | short_title |
 | /tech-stack/hosting-automation/ | tech_stack | 266 | 0 | short_description |
+| / | homepage | 278 | 0 |  |
 | /agent-brain/ | personal_knowledge_system | 395 | 0 |  |
 | /agent-workflow-loop/ | agent_workflow | 292 | 0 |  |
 | /cli-agents-guide/ | guides_articles | 1621 | 0 |  |

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-06-29T10:21:08.102Z",
+  "generatedAt": "2026-06-29T10:24:12.228Z",
   "baseUrl": "https://viggomeesters.com",
   "summary": {
     "publicPages": 232,
     "sitemapEntries": 232,
     "issueTypes": 5,
-    "totalIssueOccurrences": 301,
+    "totalIssueOccurrences": 299,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -44,8 +44,8 @@
       },
       "homepage": {
         "pages": 1,
-        "issues": 2,
-        "thin": 1,
+        "issues": 0,
+        "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 1
       },
@@ -81,25 +81,12 @@
     "issueCounts": {
       "long_description": 60,
       "short_description": 105,
-      "thin_under_250_words": 4,
-      "short_title": 97,
+      "thin_under_250_words": 3,
+      "short_title": 96,
       "duplicate_description": 35
     }
   },
   "priorityPages": [
-    {
-      "route": "/",
-      "cluster": "homepage",
-      "words": 210,
-      "titleLength": 14,
-      "descriptionLength": 122,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_title",
-        "thin_under_250_words"
-      ],
-      "score": 6
-    },
     {
       "route": "/guides/",
       "cluster": "guides_articles",
@@ -269,6 +256,16 @@
         "short_description"
       ],
       "score": 2
+    },
+    {
+      "route": "/",
+      "cluster": "homepage",
+      "words": 278,
+      "titleLength": 61,
+      "descriptionLength": 153,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
     },
     {
       "route": "/agent-brain/",
@@ -871,13 +868,13 @@
       "route": "/",
       "cluster": "homepage",
       "url": "https://viggomeesters.com/",
-      "title": "Viggo Meesters",
-      "titleLength": 14,
-      "description": "Data & Systems Innovator building AI-assisted tools, workflows, and knowledge systems that turn complexity into structure.",
-      "descriptionLength": 122,
+      "title": "Viggo Meesters — AI Workflows, Knowledge Systems & Data Tools",
+      "titleLength": 61,
+      "description": "Viggo Meesters builds AI-assisted workflows, personal knowledge systems, data tools, and practical guides that turn complex work into structured systems.",
+      "descriptionLength": 153,
       "h1": "Viggo Meesters",
       "h1Count": 1,
-      "words": 210,
+      "words": 278,
       "jsonLdCount": 0,
       "lastmod": "2026-06-24",
       "priority": 1,
@@ -886,10 +883,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_title",
-        "thin_under_250_words"
-      ]
+      "issues": []
     },
     {
       "file": "jsonl-agent-first-data-structures/index.html",
