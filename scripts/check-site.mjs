@@ -167,6 +167,7 @@ for (const file of variantPages) {
 const robots = read("robots.txt");
 assert(robots.includes("Sitemap: https://viggomeesters.com/sitemap.xml"), "robots.txt: missing sitemap");
 assert(robots.includes("Disallow: /variant-"), "robots.txt: variants are not disallowed");
+assert(robots.includes("Disallow: /reports/"), "robots.txt: internal reports are not disallowed");
 
 const vercel = JSON.parse(read("vercel.json"));
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");
@@ -192,6 +193,14 @@ assert(
       entry.headers?.some((header) => header.key === "X-Robots-Tag" && header.value.includes("noindex")),
   ),
   "vercel.json: variants need X-Robots-Tag noindex",
+);
+assert(
+  vercel.headers?.some(
+    (entry) =>
+      entry.source === "/reports/:path(.*)" &&
+      entry.headers?.some((header) => header.key === "X-Robots-Tag" && header.value.includes("noindex")),
+  ),
+  "vercel.json: reports need X-Robots-Tag noindex",
 );
 assert(exists("og-image.png"), "missing og-image.png");
 assert(exists("profile.jpg"), "missing profile.jpg");

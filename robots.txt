@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /variant-
+Disallow: /reports/
 
 Sitemap: https://viggomeesters.com/sitemap.xml
