@@ -4,8 +4,8 @@
   "summary": {
     "publicPages": 232,
     "sitemapEntries": 232,
-    "issueTypes": 5,
-    "totalIssueOccurrences": 298,
+    "issueTypes": 4,
+    "totalIssueOccurrences": 283,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -16,7 +16,7 @@
       },
       "agent_workflow": {
         "pages": 6,
-        "issues": 5,
+        "issues": 0,
         "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 6
@@ -30,7 +30,7 @@
       },
       "guides_articles": {
         "pages": 5,
-        "issues": 2,
+        "issues": 0,
         "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 5
@@ -65,186 +65,27 @@
       },
       "signal_dashboards": {
         "pages": 2,
-        "issues": 2,
-        "thin": 2,
+        "issues": 0,
+        "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 2
       },
       "tech_stack": {
         "pages": 7,
-        "issues": 6,
+        "issues": 0,
         "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 7
       }
     },
     "issueCounts": {
-      "long_description": 60,
-      "short_description": 105,
-      "short_title": 96,
-      "thin_under_250_words": 2,
+      "long_description": 54,
+      "short_description": 101,
+      "short_title": 93,
       "duplicate_description": 35
     }
   },
   "priorityPages": [
-    {
-      "route": "/tech-news/",
-      "cluster": "signal_dashboards",
-      "words": 92,
-      "titleLength": 33,
-      "descriptionLength": 91,
-      "jsonLdCount": 0,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 5
-    },
-    {
-      "route": "/trendwatch/",
-      "cluster": "signal_dashboards",
-      "words": 105,
-      "titleLength": 34,
-      "descriptionLength": 97,
-      "jsonLdCount": 0,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 5
-    },
-    {
-      "route": "/tech-stack/ai-agents/",
-      "cluster": "tech_stack",
-      "words": 290,
-      "titleLength": 22,
-      "descriptionLength": 73,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_title",
-        "short_description"
-      ],
-      "score": 3
-    },
-    {
-      "route": "/tech-stack/software/",
-      "cluster": "tech_stack",
-      "words": 288,
-      "titleLength": 21,
-      "descriptionLength": 66,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_title",
-        "short_description"
-      ],
-      "score": 3
-    },
-    {
-      "route": "/agent-workflow/",
-      "cluster": "agent_workflow",
-      "words": 331,
-      "titleLength": 41,
-      "descriptionLength": 39,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/agent-workflow/2025-december-github-copilot-vscode/",
-      "cluster": "agent_workflow",
-      "words": 290,
-      "titleLength": 52,
-      "descriptionLength": 207,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/agent-workflow/2026-february-claude-code-life-os-x/",
-      "cluster": "agent_workflow",
-      "words": 281,
-      "titleLength": 54,
-      "descriptionLength": 210,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/agent-workflow/2026-january-claude-code-agent-brain/",
-      "cluster": "agent_workflow",
-      "words": 280,
-      "titleLength": 60,
-      "descriptionLength": 219,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/",
-      "cluster": "agent_workflow",
-      "words": 262,
-      "titleLength": 65,
-      "descriptionLength": 213,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/foci-fear-of-choosing-incorrectly/",
-      "cluster": "guides_articles",
-      "words": 1150,
-      "titleLength": 34,
-      "descriptionLength": 171,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/jsonl-agent-first-data-structures/",
-      "cluster": "guides_articles",
-      "words": 1155,
-      "titleLength": 39,
-      "descriptionLength": 184,
-      "jsonLdCount": 0,
-      "issues": [
-        "long_description"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/tech-stack/hardware/",
-      "cluster": "tech_stack",
-      "words": 293,
-      "titleLength": 21,
-      "descriptionLength": 83,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_title"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/tech-stack/hosting-automation/",
-      "cluster": "tech_stack",
-      "words": 266,
-      "titleLength": 37,
-      "descriptionLength": 50,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_description"
-      ],
-      "score": 2
-    },
     {
       "route": "/",
       "cluster": "homepage",
@@ -276,6 +117,56 @@
       "score": 1
     },
     {
+      "route": "/agent-workflow/",
+      "cluster": "agent_workflow",
+      "words": 331,
+      "titleLength": 41,
+      "descriptionLength": 144,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/agent-workflow/2025-december-github-copilot-vscode/",
+      "cluster": "agent_workflow",
+      "words": 282,
+      "titleLength": 52,
+      "descriptionLength": 149,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/agent-workflow/2026-february-claude-code-life-os-x/",
+      "cluster": "agent_workflow",
+      "words": 269,
+      "titleLength": 54,
+      "descriptionLength": 137,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/agent-workflow/2026-january-claude-code-agent-brain/",
+      "cluster": "agent_workflow",
+      "words": 267,
+      "titleLength": 60,
+      "descriptionLength": 156,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/",
+      "cluster": "agent_workflow",
+      "words": 252,
+      "titleLength": 65,
+      "descriptionLength": 134,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
       "route": "/cli-agents-guide/",
       "cluster": "guides_articles",
       "words": 1621,
@@ -291,6 +182,16 @@
       "words": 801,
       "titleLength": 38,
       "descriptionLength": 140,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/foci-fear-of-choosing-incorrectly/",
+      "cluster": "guides_articles",
+      "words": 1150,
+      "titleLength": 34,
+      "descriptionLength": 126,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -321,6 +222,16 @@
       "words": 651,
       "titleLength": 43,
       "descriptionLength": 113,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/jsonl-agent-first-data-structures/",
+      "cluster": "guides_articles",
+      "words": 1155,
+      "titleLength": 39,
+      "descriptionLength": 133,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -466,6 +377,16 @@
       "score": 1
     },
     {
+      "route": "/tech-news/",
+      "cluster": "signal_dashboards",
+      "words": 251,
+      "titleLength": 33,
+      "descriptionLength": 91,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
       "route": "/tech-stack/",
       "cluster": "tech_stack",
       "words": 288,
@@ -476,11 +397,61 @@
       "score": 1
     },
     {
+      "route": "/tech-stack/ai-agents/",
+      "cluster": "tech_stack",
+      "words": 301,
+      "titleLength": 57,
+      "descriptionLength": 116,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
       "route": "/tech-stack/developer-tools/",
       "cluster": "tech_stack",
       "words": 287,
       "titleLength": 28,
       "descriptionLength": 102,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/tech-stack/hardware/",
+      "cluster": "tech_stack",
+      "words": 306,
+      "titleLength": 54,
+      "descriptionLength": 132,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/tech-stack/hosting-automation/",
+      "cluster": "tech_stack",
+      "words": 280,
+      "titleLength": 65,
+      "descriptionLength": 141,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/tech-stack/software/",
+      "cluster": "tech_stack",
+      "words": 300,
+      "titleLength": 55,
+      "descriptionLength": 121,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/trendwatch/",
+      "cluster": "signal_dashboards",
+      "words": 252,
+      "titleLength": 34,
+      "descriptionLength": 97,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -568,11 +539,11 @@
       "url": "https://viggomeesters.com/agent-workflow/2025-december-github-copilot-vscode/",
       "title": "GitHub Copilot in VS Code — Agent Workflow Evolution",
       "titleLength": 52,
-      "description": "The first useful layer was not autonomous yet. Copilot lived inside VS Code, completed local code, and made small edits faster, but the human still carried context, planning, testing, and handoff discipline.",
-      "descriptionLength": 207,
+      "description": "How GitHub Copilot in VS Code became the first AI layer in the Viggo Meesters workflow: faster local edits, human-led planning, testing, and handoff.",
+      "descriptionLength": 149,
       "h1": "From typing code to steering autocomplete.",
       "h1Count": 1,
-      "words": 290,
+      "words": 282,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -581,9 +552,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "agent-workflow/2026-february-claude-code-life-os-x/index.html",
@@ -592,11 +561,11 @@
       "url": "https://viggomeesters.com/agent-workflow/2026-february-claude-code-life-os-x/",
       "title": "Claude Code &amp; life-os-x — Agent Workflow Evolution",
       "titleLength": 54,
-      "description": "The scope widened from coding tasks to a broader knowledge and action system. Notes, tasks, context, schemas, and agent work started to live in one markdown-first environment rather than scattered chat history.",
-      "descriptionLength": 210,
+      "description": "How Claude Code and life-os-x connected coding tasks, notes, schemas, and agent context into a markdown-first knowledge and action layer.",
+      "descriptionLength": 137,
       "h1": "From repo sessions to a vault-backed operating layer.",
       "h1Count": 1,
-      "words": 281,
+      "words": 269,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -605,9 +574,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "agent-workflow/2026-january-claude-code-agent-brain/index.html",
@@ -616,11 +583,11 @@
       "url": "https://viggomeesters.com/agent-workflow/2026-january-claude-code-agent-brain/",
       "title": "Claude Code CLI &amp; Agent Brain — Agent Workflow Evolution",
       "titleLength": 60,
-      "description": "Claude Code made the agent feel like a worker inside the repo instead of a text box beside the repo. Agent Brain became the first attempt to package reusable context, commands, and working conventions around that agent.",
-      "descriptionLength": 219,
+      "description": "How Claude Code and Agent Brain moved the Viggo Meesters workflow from editor help to repo-aware CLI agents, reusable context, and repeatable command loops.",
+      "descriptionLength": 156,
       "h1": "From editor helper to repo-operating agent.",
       "h1Count": 1,
-      "words": 280,
+      "words": 267,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -629,9 +596,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "agent-workflow/2026-may-hermes-codex-viggo-agent-skills/index.html",
@@ -640,11 +605,11 @@
       "url": "https://viggomeesters.com/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/",
       "title": "Hermes, Codex &amp; viggo-agent-skills — Agent Workflow Evolution",
       "titleLength": 65,
-      "description": "Hermes became the cockpit and command bus. Codex handled deeper coding loops. viggo-agent-skills captured repeatable workflows as explicit procedures, so agent work could be routed, verified, reused, and improved.",
-      "descriptionLength": 213,
+      "description": "How Hermes, Codex, and viggo-agent-skills turned agent work into a routed command bus with reusable procedures and proof-first checks.",
+      "descriptionLength": 134,
       "h1": "From one agent session to a command bus with procedural memory.",
       "h1Count": 1,
-      "words": 262,
+      "words": 252,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -653,9 +618,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "agent-workflow/index.html",
@@ -664,8 +627,8 @@
       "url": "https://viggomeesters.com/agent-workflow/",
       "title": "Agent Workflow Evolution — Viggo Meesters",
       "titleLength": 41,
-      "description": "A high-level timeline of Viggo Meesters",
-      "descriptionLength": 39,
+      "description": "A visual timeline of the Viggo Meesters AI agent workflow: Copilot, Claude Code, Hermes, Codex, reusable skills, and proof-first delivery gates.",
+      "descriptionLength": 144,
       "h1": "From editor helper to routed agent cockpit.",
       "h1Count": 1,
       "words": 331,
@@ -677,9 +640,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_description"
-      ]
+      "issues": []
     },
     {
       "file": "beste-kattenbrokken/index.html",
@@ -776,8 +737,8 @@
       "url": "https://viggomeesters.com/foci-fear-of-choosing-incorrectly/",
       "title": "FOCI: Fear of Choosing Incorrectly",
       "titleLength": 34,
-      "description": "FOCI is the fear of choosing incorrectly: why the modern chocolate shelf can turn abundance into hesitation, and how choice overload makes the wrong option feel expensive.",
-      "descriptionLength": 171,
+      "description": "FOCI means fear of choosing incorrectly: how abundance, comparison, and choice overload turn simple decisions into hesitation.",
+      "descriptionLength": 126,
       "h1": "FOCI: Fear of Choosing Incorrectly",
       "h1Count": 1,
       "words": 1150,
@@ -789,9 +750,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "funnel-analysis/index.html",
@@ -888,8 +847,8 @@
       "url": "https://viggomeesters.com/jsonl-agent-first-data-structures/",
       "title": "JSONL Is the Agent-First Data Structure",
       "titleLength": 39,
-      "description": "Why atomic JSONL records plus JSON Schema, retrieval hints, and evals make a better canonical source of truth for agent-first knowledge corpora than YAML, one big JSON file, or SQLite.",
-      "descriptionLength": 184,
+      "description": "Why atomic JSONL records, JSON Schema, retrieval hints, and evals make strong source-of-truth data for agent-first knowledge systems.",
+      "descriptionLength": 133,
       "h1": "JSONL Is the Agent-First Data Structure",
       "h1Count": 1,
       "words": 1155,
@@ -901,9 +860,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "long_description"
-      ]
+      "issues": []
     },
     {
       "file": "knowledge-pyramid/index.html",
@@ -5835,7 +5792,7 @@
       "descriptionLength": 91,
       "h1": "Tech Newswatcher",
       "h1Count": 1,
-      "words": 92,
+      "words": 251,
       "jsonLdCount": 0,
       "lastmod": "2026-06-24",
       "priority": 0.7,
@@ -5844,22 +5801,20 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "thin_under_250_words"
-      ]
+      "issues": []
     },
     {
       "file": "tech-stack/ai-agents/index.html",
       "route": "/tech-stack/ai-agents/",
       "cluster": "tech_stack",
       "url": "https://viggomeesters.com/tech-stack/ai-agents/",
-      "title": "AI Agents — Tech Stack",
-      "titleLength": 22,
-      "description": "The agent layer behind coding, research, automation, and command routing.",
-      "descriptionLength": 73,
+      "title": "AI Agents Tech Stack — Hermes, Coding Agents & Automation",
+      "titleLength": 57,
+      "description": "How Hermes, coding agents, reusable skills, and command routing fit into Viggo Meesters’ AI-assisted workflow stack.",
+      "descriptionLength": 116,
       "h1": "AI Agents",
       "h1Count": 1,
-      "words": 290,
+      "words": 301,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -5868,10 +5823,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_title",
-        "short_description"
-      ]
+      "issues": []
     },
     {
       "file": "tech-stack/developer-tools/index.html",
@@ -5900,13 +5852,13 @@
       "route": "/tech-stack/hardware/",
       "cluster": "tech_stack",
       "url": "https://viggomeesters.com/tech-stack/hardware/",
-      "title": "Hardware — Tech Stack",
-      "titleLength": 21,
-      "description": "Machines, input devices, local runtime surfaces, and practical workstation choices.",
-      "descriptionLength": 83,
+      "title": "Hardware Tech Stack — Mac, WSL, Mobile Command Surface",
+      "titleLength": 54,
+      "description": "The hardware and runtime surfaces behind Viggo Meesters’ workflow: Mac deep work, Windows/WSL execution, and mobile command capture.",
+      "descriptionLength": 132,
       "h1": "Hardware",
       "h1Count": 1,
-      "words": 293,
+      "words": 306,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -5915,22 +5867,20 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_title"
-      ]
+      "issues": []
     },
     {
       "file": "tech-stack/hosting-automation/index.html",
       "route": "/tech-stack/hosting-automation/",
       "cluster": "tech_stack",
       "url": "https://viggomeesters.com/tech-stack/hosting-automation/",
-      "title": "Hosting &amp; Automation — Tech Stack",
-      "titleLength": 37,
-      "description": "Public delivery, scheduled work, and integrations.",
-      "descriptionLength": 50,
+      "title": "Hosting &amp; Automation Tech Stack — Vercel, Cron & Integrations",
+      "titleLength": 65,
+      "description": "The public delivery and automation layer behind viggomeesters.com: Vercel hosting, cron/watchers, webhooks, email, and Telegram integrations.",
+      "descriptionLength": 141,
       "h1": "Hosting Automation",
       "h1Count": 1,
-      "words": 266,
+      "words": 280,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -5939,9 +5889,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_description"
-      ]
+      "issues": []
     },
     {
       "file": "tech-stack/index.html",
@@ -5970,13 +5918,13 @@
       "route": "/tech-stack/software/",
       "cluster": "tech_stack",
       "url": "https://viggomeesters.com/tech-stack/software/",
-      "title": "Software — Tech Stack",
-      "titleLength": 21,
-      "description": "Daily applications and services that form the working environment.",
-      "descriptionLength": 66,
+      "title": "Software Tech Stack — Obsidian, Hermes, GitHub & Vercel",
+      "titleLength": 55,
+      "description": "The daily software layer behind Viggo Meesters’ workflow: Obsidian, Hermes, GitHub, Vercel, Telegram, and delivery tools.",
+      "descriptionLength": 121,
       "h1": "Software",
       "h1Count": 1,
-      "words": 288,
+      "words": 300,
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
@@ -5985,10 +5933,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "short_title",
-        "short_description"
-      ]
+      "issues": []
     },
     {
       "file": "trendwatch/index.html",
@@ -6001,7 +5946,7 @@
       "descriptionLength": 97,
       "h1": "Repo Trendwatcher",
       "h1Count": 1,
-      "words": 105,
+      "words": 252,
       "jsonLdCount": 0,
       "lastmod": "2026-06-24",
       "priority": 0.7,
@@ -6010,9 +5955,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "thin_under_250_words"
-      ]
+      "issues": []
     },
     {
       "file": "uses/index.html",

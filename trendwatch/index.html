@@ -97,6 +97,9 @@
     .decision { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 12px; text-align: right; }
     .decision small { color: var(--dim); font-size: 0.72rem; }
     .empty { display: none; padding: 30px; text-align: center; color: var(--muted); }
+    .context { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 0 0 18px; }
+    .context-card { padding: 18px; border: 1px solid var(--line-soft); background: rgba(20,20,24,0.62); border-radius: 20px; color: var(--muted); font-size: 0.86rem; }
+    .context-card strong { display: block; margin-bottom: 6px; color: var(--text); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.07em; }
     .footer-note { margin-top: 24px; color: var(--dim); font-size: 0.76rem; text-align: center; }
     @media (max-width: 960px) { .hero { grid-template-columns: 1fr; } .row { grid-template-columns: 76px minmax(0, 1fr); } .scores, .decision { grid-column: 2; } .decision { align-items: flex-start; text-align: left; flex-direction: row; } .toolbar { grid-template-columns: 1fr; } .filters { justify-content: flex-start; } }
     @media (max-width: 560px) { .page { padding: 22px 12px 44px; } .hero-main { padding: 24px; } .stats { grid-template-columns: 1fr; } .row { grid-template-columns: 1fr; } .scores, .decision { grid-column: auto; } .signal { flex-direction: row; align-items: center; justify-content: space-between; } .priority { width: 48px; height: 48px; } .score { grid-template-columns: 64px 1fr 24px; } }
@@ -128,6 +131,12 @@
         <div class="legend-row"><span class="pill done">Done</span><span>already mined or adopted</span></div>
         <div class="legend-row"><span class="pill skip">Skip</span><span>noise or risk marker</span></div>
       </aside>
+    </section>
+
+    <section class="context" aria-label="How to use Repo Trendwatcher">
+      <div class="context-card"><strong>What it is</strong> A public snapshot of repository signals from GitHub trend scouting. The page is not a generic trending list; it is filtered for tools, patterns, and libraries that may help agent workflows, personal knowledge systems, data tooling, or static publishing.</div>
+      <div class="context-card"><strong>How to read it</strong> Priority is a triage signal, not a quality score. Use the action labels first: Mine means inspect soon, Watch means keep an eye on the pattern, Ledger means provenance only, and Skip keeps noisy or risky items visible without pretending they are useful.</div>
+      <div class="context-card"><strong>Public boundary</strong> The feed keeps private notes out of the page. It exposes only the repository name, short rationale, tags, fit/leverage/risk scores, and next action so visitors can understand why a tool is interesting without seeing the internal vault ledger. The goal is explainable discovery: enough context to follow the signal, not enough to leak raw workflow notes.</div>
     </section>
 
     <section class="toolbar" aria-label="Filter trendwatch feed">

@@ -66,6 +66,9 @@
     .decision { display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; gap:12px; text-align:right; }
     .decision small { color:var(--dim); font-size:.72rem; }
     .empty { display:none; padding:30px; text-align:center; color:var(--muted); }
+    .context { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin:0 0 18px; }
+    .context-card { padding:18px; border:1px solid var(--line-soft); background:rgba(20,20,24,.62); border-radius:20px; color:var(--muted); font-size:.86rem; }
+    .context-card strong { display:block; margin-bottom:6px; color:var(--text); font-size:.82rem; text-transform:uppercase; letter-spacing:.07em; }
     .footer-note { margin-top:24px; color:var(--dim); font-size:.76rem; text-align:center; }
     @media (max-width:960px) { .hero{grid-template-columns:1fr;} .row{grid-template-columns:76px minmax(0,1fr);} .decision{grid-column:2;align-items:flex-start;text-align:left;flex-direction:row;} .toolbar{grid-template-columns:1fr;} .filters{justify-content:flex-start;} }
     @media (max-width:560px) { .page{padding:22px 12px 44px;} .hero-main{padding:24px;} .stats{grid-template-columns:1fr;} .row{grid-template-columns:1fr;} .decision{grid-column:auto;} .signal{flex-direction:row;align-items:center;justify-content:space-between;} .priority{width:48px;height:48px;} }
@@ -92,6 +95,11 @@
         <div class="legend-row"><span class="pill ledger">Ledger</span><span>context only</span></div>
         <div class="legend-row"><span class="pill skip">Skip</span><span>noise or low fit</span></div>
       </aside>
+    </section>
+    <section class="context" aria-label="How to use Tech Newswatcher">
+      <div class="context-card"><strong>What it is</strong> A public news signal board for the parts of technology that matter to this site: AI agents, developer tools, data infrastructure, local-first systems, enterprise AI, and practical automation. It is curated for relevance rather than general news volume.</div>
+      <div class="context-card"><strong>How to read it</strong> The priority number is a triage shortcut. Read items are worth opening soon, Watch items may become useful later, Ledger items preserve context, and Skip keeps low-fit stories visible so the feed remains honest about what was considered, not only what survived as a recommendation or future reading candidate for the site.</div>
+      <div class="context-card"><strong>Source boundary</strong> Links go back to the original publishers. The page stores summaries and action labels only; it does not republish private analysis, copy paywalled article text, or pretend every story is a recommendation. It is a lightweight reading queue and provenance trail for public technology signals, useful when checking which themes are recurring across AI, data, and developer-tool coverage over time.</div>
     </section>
     <section class="toolbar" aria-label="Filter tech news feed">
       <input class="search" id="search" type="search" placeholder="Filter title, source, topic…" autocomplete="off">
