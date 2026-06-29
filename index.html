@@ -129,10 +129,17 @@
     .tile.profile {
       grid-column: 1 / -1;
       display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 16px;
+      padding: 30px;
+      background: linear-gradient(135deg, rgba(59,130,246,0.06) 0%, rgba(168,85,247,0.04) 50%, rgba(249,115,22,0.03) 100%);
+    }
+
+    .profile-head {
+      display: flex;
       align-items: center;
       gap: 20px;
-      padding: 28px;
-      background: linear-gradient(135deg, rgba(59,130,246,0.06) 0%, rgba(168,85,247,0.04) 50%, rgba(249,115,22,0.03) 100%);
     }
 
 
@@ -299,26 +306,13 @@
       font-weight: 600;
     }
 
-    .tile.note {
-      grid-column: 1 / -1;
+    .profile-summary {
       color: var(--text-secondary);
       font-size: 0.86em;
-      background: rgba(20,20,24,0.50);
-      border-color: rgba(255,255,255,0.035);
-      box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.026),
-        0 0 28px rgba(34,197,94,0.06),
-        0 14px 40px rgba(0,0,0,0.13);
-      padding: 18px 20px;
-    }
-    .note-kicker {
       display: block;
-      margin-bottom: 5px;
-      color: #eeeff4;
-      font-family: var(--font-mono);
-      font-size: 0.74em;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      max-width: 52ch;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.055);
     }
 
     /* Section label tile */
@@ -617,6 +611,8 @@
       .avatar-wrap::before { inset: -3px; }
       .avatar-wrap::after { inset: -7px; }
       .tile.profile { gap: 14px; padding: 20px; }
+      .profile-head { gap: 14px; }
+      .profile-summary { padding-top: 12px; }
       .guide-pair { grid-template-columns: 1fr; }
       .form-row { flex-direction: column; gap: 10px; }
     }
@@ -631,19 +627,17 @@
 
       <!-- Profile tile -->
       <div class="tile profile">
-        <div class="avatar-wrap">
-          <img src="profile.jpg" alt="Viggo Meesters" class="avatar" width="80" height="80">
+        <div class="profile-head">
+          <div class="avatar-wrap">
+            <img src="profile.jpg" alt="Viggo Meesters" class="avatar" width="80" height="80">
+          </div>
+          <div class="profile-text">
+            <h1 class="name">Viggo Meesters</h1>
+            <p class="tagline"><strong>Data &amp; Systems Innovator.</strong> AI workflows, knowledge systems, and practical data tools.</p>
+          </div>
         </div>
-        <div class="profile-text">
-          <h1 class="name">Viggo Meesters</h1>
-          <p class="tagline"><strong>Data &amp; Systems Innovator.</strong> AI workflows, personal knowledge systems, data tools, and practical guides for turning complex work into structure.</p>
-        </div>
+        <p class="profile-summary">Public notes, live demos, and project write-ups about turning complex work into structured systems. Start with guides for long-form thinking, trendwatchers for current signals, or demos when you want to try something directly.</p>
       </div>
-
-      <section class="tile note" aria-label="Site overview">
-        <span class="note-kicker">AI WORKFLOWS · KNOWLEDGE SYSTEMS · DATA TOOLS</span>
-        <p>This site collects the public side of my work: live tools, project write-ups, agent workflow notes, personal knowledge-system components, and guides about markdown-first systems. Start with the guides for long-form explanations, the systems pages for architecture, or the demos when you want to try something directly.</p>
-      </section>
 
 
 
