@@ -59,7 +59,13 @@ function classify(route) {
   if (route.startsWith("/personal-knowledge-system/") || route === "/agent-brain/" || route === "/raycast-life-os/") return "personal_knowledge_system";
   if (route.startsWith("/tech-stack/") || route === "/uses/") return "tech_stack";
   if (route.startsWith("/skills/")) return "skills_registry";
-  if (["/sap-agent-context/", "/mega-vault-viewer/", "/obsidian-plugins/"].includes(route)) return "project_pages";
+  if ([
+    "/sap-agent-context/",
+    "/mega-vault-viewer/",
+    "/obsidian-plugins/",
+    "/jsonl-vault-spike/",
+    "/vault-layer/",
+  ].includes(route)) return "project_pages";
   if (["/beste-kattenvoer/", "/beste-kattenbrokken/"].includes(route)) return "seo_evergreen";
   if (route === "/trendwatch/" || route === "/tech-news/") return "signal_dashboards";
   if ([

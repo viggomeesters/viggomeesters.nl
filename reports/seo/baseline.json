@@ -4,8 +4,8 @@
   "summary": {
     "publicPages": 234,
     "sitemapEntries": 234,
-    "issueTypes": 5,
-    "totalIssueOccurrences": 284,
+    "issueTypes": 4,
+    "totalIssueOccurrences": 283,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -49,19 +49,12 @@
         "missingOgImage": 0,
         "missingJsonLd": 1
       },
-      "other": {
-        "pages": 2,
-        "issues": 1,
-        "thin": 1,
-        "missingOgImage": 0,
-        "missingJsonLd": 2
-      },
       "project_pages": {
-        "pages": 3,
+        "pages": 5,
         "issues": 0,
         "thin": 0,
         "missingOgImage": 0,
-        "missingJsonLd": 3
+        "missingJsonLd": 5
       },
       "skills_registry": {
         "pages": 191,
@@ -89,23 +82,10 @@
       "long_description": 54,
       "short_description": 101,
       "short_title": 93,
-      "thin_under_250_words": 1,
       "duplicate_description": 35
     }
   },
   "priorityPages": [
-    {
-      "route": "/vault-layer/",
-      "cluster": "other",
-      "words": 248,
-      "titleLength": 27,
-      "descriptionLength": 113,
-      "jsonLdCount": 0,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 5
-    },
     {
       "route": "/",
       "cluster": "homepage",
@@ -258,7 +238,7 @@
     },
     {
       "route": "/jsonl-vault-spike/",
-      "cluster": "other",
+      "cluster": "project_pages",
       "words": 258,
       "titleLength": 34,
       "descriptionLength": 131,
@@ -492,6 +472,16 @@
       "words": 312,
       "titleLength": 40,
       "descriptionLength": 122,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/vault-first-operating-model/",
+      "cluster": "methodologies",
+      "words": 264,
+      "titleLength": 41,
+      "descriptionLength": 124,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -875,7 +865,7 @@
     {
       "file": "jsonl-vault-spike/index.html",
       "route": "/jsonl-vault-spike/",
-      "cluster": "other",
+      "cluster": "project_pages",
       "url": "https://viggomeesters.com/jsonl-vault-spike/",
       "title": "JSONL Vault Spike — Viggo Meesters",
       "titleLength": 34,
@@ -6036,7 +6026,7 @@
     {
       "file": "vault-layer/index.html",
       "route": "/vault-layer/",
-      "cluster": "other",
+      "cluster": "project_pages",
       "url": "https://viggomeesters.com/vault-layer/",
       "title": "VaultLayer — Viggo Meesters",
       "titleLength": 27,
@@ -6044,7 +6034,7 @@
       "descriptionLength": 113,
       "h1": "A local read model for Markdown vaults.",
       "h1Count": 1,
-      "words": 248,
+      "words": 398,
       "jsonLdCount": 0,
       "lastmod": "2026-06-29",
       "priority": 0.7,
@@ -6053,9 +6043,7 @@
       "hasOgImage": true,
       "hasTwitterCard": true,
       "hasAnalytics": true,
-      "issues": [
-        "thin_under_250_words"
-      ]
+      "issues": []
     }
   ]
 }
