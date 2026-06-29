@@ -36,7 +36,7 @@
       --text-muted: #777c90;
       --font: 'Sora', system-ui, -apple-system, sans-serif;
       --radius: 20px;
-      --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+      --bounce: cubic-bezier(0.22, 1, 0.36, 1);
     }
 
     html {
@@ -131,14 +131,49 @@
       display: flex;
       flex-direction: column;
       align-items: stretch;
-      gap: 16px;
+      gap: 22px;
       padding: 30px;
-      background: linear-gradient(135deg, rgba(59,130,246,0.06) 0%, rgba(168,85,247,0.04) 50%, rgba(249,115,22,0.03) 100%);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(59,130,246,0.13), transparent 34%),
+        radial-gradient(circle at 90% 8%, rgba(168,85,247,0.12), transparent 28%),
+        linear-gradient(135deg, rgba(26,26,32,0.78), rgba(18,18,23,0.58) 60%, rgba(20,20,24,0.48));
+      border-color: rgba(255,255,255,0.07);
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.055),
+        inset 0 -1px 0 rgba(255,255,255,0.02),
+        0 24px 70px rgba(0,0,0,0.24),
+        0 0 42px rgba(59,130,246,0.055);
+      isolation: isolate;
+    }
+
+    .tile.profile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, rgba(255,255,255,0.06), transparent 32%),
+        radial-gradient(circle at 84% 88%, rgba(249,115,22,0.08), transparent 28%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .tile.profile::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.055) 1px, transparent 1px);
+      background-size: 42px 42px;
+      opacity: 0.05;
+      mask-image: linear-gradient(135deg, transparent 0%, #000 18%, #000 62%, transparent 100%);
+      pointer-events: none;
+      z-index: -1;
     }
 
     .profile-head {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
     }
 
@@ -274,21 +309,23 @@
 
     .avatar {
       position: relative;
-      width: 80px;
-      height: 80px;
+      width: 84px;
+      height: 84px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid var(--bg);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.28);
     }
 
     .profile-text {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 7px;
+      min-width: 0;
     }
 
     .name {
-      font-size: 1.7em;
+      font-size: 1.86em;
       font-weight: 700;
       color: #eeeff4;
       line-height: 1.1;
@@ -300,19 +337,70 @@
       color: var(--text-secondary);
       line-height: 1.5;
       font-weight: 400;
+      max-width: 42ch;
     }
     .tagline strong {
       color: #eab308;
       font-weight: 600;
     }
 
+    .profile-intro {
+      display: grid;
+      gap: 14px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
     .profile-summary {
-      color: var(--text-secondary);
-      font-size: 0.86em;
+      color: #b4bacb;
+      font-size: 0.92em;
+      line-height: 1.65;
       display: block;
-      max-width: 52ch;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,0.055);
+      max-width: 58ch;
+    }
+
+    .profile-routes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .profile-route {
+      min-width: 0;
+      padding: 10px 11px;
+      border-radius: 14px;
+      text-decoration: none;
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.055);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.035);
+      transition: transform 0.25s var(--bounce), background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .profile-route strong {
+      display: block;
+      color: #eeeff4;
+      font-size: 0.82em;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+    }
+
+    .profile-route span {
+      display: block;
+      margin-top: 3px;
+      color: var(--text-muted);
+      font-size: 0.72em;
+      line-height: 1.25;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    @media (hover: hover) {
+      .profile-route:hover {
+        transform: translateY(-1px);
+        background: color-mix(in srgb, var(--route-color, #ffffff) 10%, rgba(255,255,255,0.035));
+        border-color: color-mix(in srgb, var(--route-color, #ffffff) 24%, rgba(255,255,255,0.055));
+      }
     }
 
     /* Section label tile */
@@ -468,7 +556,6 @@
         box-shadow: 0 0 16px var(--link-soft, transparent), 0 4px 16px rgba(0,0,0,0.2);
         background: var(--link-soft, var(--bg-elevated));
         border-color: var(--link-color, var(--border));
-        border-color: var(--link-color, var(--border));
       }
       a.tile.link:hover .link-icon {
         opacity: 1;
@@ -554,7 +641,7 @@
       font-size: 0.85em;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.3s var(--bounce);
+      transition: transform 0.3s var(--bounce), box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
     }
     .contact-form button:hover {
       transform: translateY(-2px) scale(1.02);
@@ -612,7 +699,11 @@
       .avatar-wrap::after { inset: -7px; }
       .tile.profile { gap: 14px; padding: 20px; }
       .profile-head { gap: 14px; }
-      .profile-summary { padding-top: 12px; }
+      .name { font-size: 1.48em; }
+      .tagline { font-size: 0.84em; }
+      .profile-intro { gap: 12px; padding-top: 14px; }
+      .profile-summary { font-size: 0.84em; line-height: 1.6; }
+      .profile-route { padding: 9px 10px; }
       .guide-pair { grid-template-columns: 1fr; }
       .form-row { flex-direction: column; gap: 10px; }
     }
@@ -636,7 +727,14 @@
             <p class="tagline"><strong>Data &amp; Systems Innovator.</strong> AI workflows, knowledge systems, and practical data tools.</p>
           </div>
         </div>
-        <p class="profile-summary">Public notes, live demos, and project write-ups about turning complex work into structured systems. Start with guides for long-form thinking, trendwatchers for current signals, or demos when you want to try something directly.</p>
+        <div class="profile-intro">
+          <p class="profile-summary">I build small, source-backed systems that turn messy work into repeatable structures: live tools, project write-ups, workflow notes, and practical guides.</p>
+          <nav class="profile-routes" aria-label="Homepage shortcuts">
+            <a href="#demos" class="profile-route" style="--route-color: #3b82f6"><strong>Demos</strong><span>Try tools</span></a>
+            <a href="#systems" class="profile-route" style="--route-color: #22c55e"><strong>Systems</strong><span>See maps</span></a>
+            <a href="/guides/" class="profile-route" style="--route-color: #f97316"><strong>Guides</strong><span>Read notes</span></a>
+          </nav>
+        </div>
       </div>
 
 
@@ -659,7 +757,7 @@
       </div>
 
       <!-- Demos label -->
-      <h2 class="tile label" style="--dot-color: #3b82f6">Demos</h2>
+      <h2 class="tile label" id="demos" style="--dot-color: #3b82f6">Demos</h2>
 
       <!-- Demo tiles -->
       <a href="https://minimal-etl-modeler.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -751,7 +849,7 @@
       </a>
 
       <!-- Systems label -->
-      <h2 class="tile label" style="--dot-color: #22c55e">Systems</h2>
+      <h2 class="tile label" id="systems" style="--dot-color: #22c55e">Systems</h2>
 
 
       <a href="/agent-workflow/" class="tile card"
