@@ -105,6 +105,7 @@ for (const file of htmlFiles) {
   for (const match of html.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)) {
     const raw = match[1];
     if (/^(https?:|mailto:|data:|#)/.test(raw)) continue;
+    if (raw.startsWith("/_vercel/")) continue;
 
     const clean = raw.split("#")[0].split("?")[0];
     if (!clean) continue;
@@ -128,6 +129,10 @@ for (const file of publicPages) {
   assert(
     html.includes(`<link rel="canonical" href="${expected}">`),
     `${file}: missing canonical ${expected}`,
+  );
+  assert(
+    html.includes('<script defer src="/_vercel/insights/script.js"></script>'),
+    `${file}: missing Vercel Web Analytics script`,
   );
 }
 
