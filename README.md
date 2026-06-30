@@ -27,7 +27,7 @@ The check script validates internal links, canonical URLs, sitemap coverage, cra
 npm run submit:indexnow
 ```
 
-The IndexNow submitter reads `sitemap.xml`, uses the public `indexnow-key.txt` verification file, and submits the current public URL list to IndexNow after deploy.
+The IndexNow submitter reads `sitemap.xml`, uses the public root `{key}.txt` verification file, and submits the current public URL list to IndexNow after deploy.
 
 ## Deploy
 

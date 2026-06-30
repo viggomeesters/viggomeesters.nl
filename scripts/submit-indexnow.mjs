@@ -2,8 +2,9 @@ import https from "node:https";
 import fs from "node:fs";
 
 const host = "viggomeesters.com";
-const keyFile = "indexnow-key.txt";
-const key = fs.readFileSync(new URL(`../${keyFile}`, import.meta.url), "utf8").trim();
+const keyFile = fs.readdirSync(new URL("..", import.meta.url)).find((file) => /^[a-f0-9]{32}\.txt$/i.test(file));
+if (!keyFile) throw new Error("Missing IndexNow key file named {key}.txt");
+const key = keyFile.replace(/\.txt$/i, "");
 const keyLocation = `https://${host}/${keyFile}`;
 const sitemap = fs.readFileSync(new URL("../sitemap.xml", import.meta.url), "utf8");
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);

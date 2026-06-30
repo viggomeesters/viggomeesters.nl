@@ -223,11 +223,14 @@ assert(
 );
 assert(exists("og-image.png"), "missing og-image.png");
 assert(exists("profile.jpg"), "missing profile.jpg");
-assert(exists("indexnow-key.txt"), "missing IndexNow key file");
+const indexNowKeys = fs.readdirSync(root).filter((file) => /^[a-f0-9]{32}\.txt$/i.test(file));
+assert(indexNowKeys.length === 1, "expected exactly one root IndexNow key file named {key}.txt");
 assert(exists("scripts/submit-indexnow.mjs"), "missing IndexNow submit script");
 
-const indexNowKey = read("indexnow-key.txt").trim();
-assert(/^[a-f0-9]{32}$/i.test(indexNowKey), "indexnow-key.txt: expected 32 hex characters");
+if (indexNowKeys.length === 1) {
+  const indexNowKey = indexNowKeys[0].replace(/\.txt$/i, "");
+  assert(read(indexNowKeys[0]).trim() === indexNowKey, "IndexNow key file content must match filename");
+}
 
 assert(homepage.includes('"@type": "Person"'), "index.html: missing Person JSON-LD");
 assert(homepage.includes('"@type": "WebSite"'), "index.html: missing WebSite JSON-LD");
