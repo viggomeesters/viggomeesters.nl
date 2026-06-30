@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-29T07:05:28+02:00",
+  "generatedAt": "2026-06-30T07:05:11+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 82,
+  "usefulOpen": 79,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,78 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "6afe4c31c977ed83",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+      "source": "GitHub Blog",
+      "published": "2026-06-29T18:10:20+02:00",
+      "summary": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help. The post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub Blog .",
+      "areas": [
+        "data-platforms",
+        "developer-tools",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git",
+          "ide"
+        ],
+        "data-platforms": [
+          "data",
+          "database"
+        ],
+        "privacy-risk": [
+          "vulnerability"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 3,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "57277b5a8d62e868",
+      "title": "Agent confidence on the technical frontier",
+      "url": "https://www.technologyreview.com/2026/06/29/1139635/agent-confidence-on-the-technical-frontier/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-29T16:44:01+02:00",
+      "summary": "Enterprise investment in AI is booming. Gartner is calling 2026 an “inflection year” for organizations to align their AI projects with strategic business objectives. As the pressure to prove ROI mounts, executives and technology leaders are looking to agentic AI to drive the measurable financial outcomes their businesses seek. A prime opportunity for AI agen",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "147a3809de77ffd9",
       "title": "Incident Report: CVE-2026-LGTM",
@@ -379,6 +451,41 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "cc770dce6f4b13cc",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "source": "OpenAI News",
+      "published": "2026-06-11T02:00:00+02:00",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "fe34bb5bf0a78597",
       "title": "OpenAI to acquire Ona",
       "url": "https://openai.com/index/openai-to-acquire-ona",
@@ -410,41 +517,6 @@
       "scores": {
         "relevance": 5,
         "leverage": 2,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "cc770dce6f4b13cc",
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "url": "https://openai.com/index/bbva",
-      "source": "OpenAI News",
-      "published": "2026-06-11T02:00:00+02:00",
-      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -488,6 +560,37 @@
         "risk": 1
       },
       "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "883db8a18f25d8da",
+      "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+      "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-29T16:17:59+00:00",
+      "summary": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce. [...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparabl",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ],
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -620,75 +723,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "31106294addacaa7",
-      "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
-      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
-      "source": "TechCrunch",
-      "published": "2026-06-26T20:32:14+02:00",
-      "summary": "“We don’t believe this kind of government access process should become the long-term default,” says OpenAI. “It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them.”",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "developer"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "8feaa8482c54b71f",
-      "title": "The emergence of the web data infrastructure layer for AI",
-      "url": "https://www.technologyreview.com/2026/06/24/1139202/the-emergence-of-the-web-data-infrastructure-layer-for-ai/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-24T13:59:54+02:00",
-      "summary": "AI is booming. New use cases are emerging each day. To capitalize on the technology’s potential, enterprises require data at scale. In many cases, though, the relevant information is blocked or unstructured, which limits its use by AI models. To understand this challenge, consider the foundation of the web itself. The web was not designed…",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "c1eb090a73ced5c0",
       "title": "Predicting model behavior before release by simulating deployment",
       "url": "https://openai.com/index/deployment-simulation",
@@ -719,6 +753,100 @@
         "risk": 1
       },
       "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "04fa67a6b27ef0bc",
+      "title": "Cursor now has a mobile app for guiding your coding agent on the go",
+      "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
+      "source": "TechCrunch",
+      "published": "2026-06-29T19:03:50+02:00",
+      "summary": "Cursor has launched a new mobile app for remote oversight over coding agents.",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents",
+          "coding agent"
+        ],
+        "developer-tools": [
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "396edcae95ae213d",
+      "title": "OpenAI is teasing new hardware… for Codex",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
+      "source": "The Verge",
+      "published": "2026-06-29T14:52:03-04:00",
+      "summary": "OpenAI is releasing some sort of device related to its AI-powered coding tool, Codex, on July 15th. In a video posted to X on Monday, OpenAI shows a square-shaped device with several buttons, alongside the caption, \"Your favorite Codex shortcuts are getting an upgrade.\" This isn't the mysterious AI-powered device OpenAI is working on with […]",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "developer-tools": [
+          "ide",
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4dcdbab212d91e02",
+      "title": "Mapping Europe’s AI Workforce Opportunity",
+      "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+      "source": "OpenAI News",
+      "published": "2026-06-29T09:00:00+02:00",
+      "summary": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "enterprise-ai": [
+          "workflow",
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1181,32 +1309,29 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "b4cbf8ddde8a5581",
-      "title": "Industrial policy for the Intelligence Age",
-      "url": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-      "source": "OpenAI News",
-      "published": "2026-06-09T02:00:00+02:00",
-      "summary": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.",
+      "id": "24a13fa1d9d35940",
+      "title": "Highlights from Git 2.55",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "source": "GitHub Blog",
+      "published": "2026-06-29T19:25:25+02:00",
+      "summary": "The open source Git project just released Git 2.55. Here is GitHub’s look at some of the most interesting features and changes introduced since last time. The post Highlights from Git 2.55 appeared first on The GitHub Blog .",
       "areas": [
-        "developer-tools",
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
         "developer-tools": [
-          "ide"
+          "github",
+          "git"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 1,
+        "relevance": 2,
+        "leverage": 2,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 88,
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1346,70 +1471,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "2b17f59bd9b0f48e",
-      "title": "Quoting Matteo Wong, The Atlantic",
-      "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-16T03:07:54+00:00",
-      "summary": "Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House’s report on the Fable jailbreak to get her appraisal. (She said that she is not being paid by Anthropic.) The report, Moussouris said, involved IT experts asking Fable to help find and patch bugs. When given deliberately ins",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "70e97e8c007919f3",
-      "title": "NYT slams Microsoft for building copyright-infringing supercomputer for OpenAI",
-      "url": "https://arstechnica.com/tech-policy/2026/06/microsoft-built-supercomputer-to-help-openai-infringe-copyrights-nyt-alleged/",
-      "source": "Ars Technica",
-      "published": "2026-06-26T22:04:55+02:00",
-      "summary": "NYT shifts OpenAI/Microsoft copyright claims after SCOTUS ruling against Sony.",
-      "areas": [
-        "enterprise-ai",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "copyright"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "edd3019a4dd9cd31",
       "title": "Quoting Jon Udell",
       "url": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
@@ -1432,44 +1493,6 @@
         "novelty": 3,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "99462e73d2337328",
-      "title": "Prosecutors used ChatGPT logs as evidence in the Palisades fire trial",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/958751/prosecutors-chatgpt-palisades-wildfire-arson-mistrial",
-      "source": "The Verge",
-      "published": "2026-06-28T10:12:06-04:00",
-      "summary": "Jonathan Rinderknecht was facing arson charges for setting a fire on New Year's Day in 2025, which became one of the deadliest wildfires in LA history. To make their case, prosecutors turned to location data from his iPhone, security camera footage, and witness testimony. But they also turned to his ChatGPT logs. Prosecutors said that […]",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 5,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 3
       },
       "priority": 82,
       "action": "Watch",
@@ -1584,104 +1607,20 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "45f4133ca82c1665",
-      "title": "Getting more from each token: How Copilot improves context handling and model routing",
-      "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
-      "source": "GitHub Blog",
-      "published": "2026-06-17T21:41:46+02:00",
-      "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further. The post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "55601d767328130d",
-      "title": "What are git worktrees, and why should I use them?",
-      "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
-      "source": "GitHub Blog",
-      "published": "2026-06-16T22:58:54+02:00",
-      "summary": "Git worktrees have been around since 2015, but it wasn't until recently they became popular. Learn what they are, how to use them, and why you might. The post What are git worktrees, and why should I use them? appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "272bd1c429c41d59",
-      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
-      "url": "https://github.com/openai/codex/issues/2847",
-      "source": "Hacker News",
-      "published": "2026-06-28T14:27:33+02:00",
-      "summary": "Comments",
+      "id": "e32e1896f892bcb2",
+      "title": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
+      "url": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
+      "source": "Wired",
+      "published": "2026-06-29T23:49:26+02:00",
+      "summary": "Hundreds of contractors working on a project for Meta pretended to be kids in order to see how other chatbots like Gemini and ChatGPT would respond to high-risk subjects, WIRED found.",
       "areas": [
         "developer-tools",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e502f7ee039e0bcd",
-      "title": "Apple Vision Pro exec is reportedly leaving for OpenAI",
-      "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/",
-      "source": "TechCrunch",
-      "published": "2026-06-27T18:45:09+02:00",
-      "summary": "Paul Meade, the Apple vice president in charge of the Vision Pro headset, is reportedly leaving the company to join OpenAI’s hardware team.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
+          "gpt",
+          "gemini"
         ],
         "developer-tools": [
           "ide"
@@ -1699,19 +1638,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a571e54c17fcbf90",
-      "title": "The fittest founder in the room got cancer. Here’s how he used AI to fight back.",
-      "url": "https://techcrunch.com/2026/06/27/the-fittest-founder-in-the-room-got-cancer-heres-how-he-used-ai-to-fight-back/",
+      "id": "d5886a215f237f1d",
+      "title": "Gemini’s personalized AI image generation is now free for US users",
+      "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
       "source": "TechCrunch",
-      "published": "2026-06-27T16:00:00+02:00",
-      "summary": "When confronted with cancer, Connor Christou fed everything tied tied to his regime — blood results, scan data, wearable output, journal entries — into Claude.",
+      "published": "2026-06-29T22:12:59+02:00",
+      "summary": "Google is expanding Gemini’s personalized AI image generation to eligible free users in the U.S., allowing the chatbot to create images based on your interests and data from connected Google apps.",
       "areas": [
         "data-platforms",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "claude"
+          "gemini"
         ],
         "data-platforms": [
           "data"
@@ -1729,23 +1668,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "cf16ab06a480f682",
-      "title": "How People in China Keep Outsmarting Anthropic’s Geolocation Restrictions",
-      "url": "https://www.wired.com/story/how-people-in-china-keep-outsmarting-anthropics-geolocation-restrictions/",
-      "source": "Wired",
-      "published": "2026-06-26T23:02:54+02:00",
-      "summary": "As Anthropic tightens restrictions on access to Claude in China, users keep finding new workarounds, from proxy services to fake identities sourced on Telegram.",
+      "id": "5b87e882f53c484a",
+      "title": "Waymo and Uber quietly part ways in Phoenix",
+      "url": "https://techcrunch.com/2026/06/29/waymo-and-uber-quietly-part-ways-in-phoenix/",
+      "source": "TechCrunch",
+      "published": "2026-06-29T20:45:12+02:00",
+      "summary": "Uber said it is readying the launch of a separate autonomous vehicle partnership in the city, but did not name the partner.",
       "areas": [
-        "developer-tools",
-        "models"
+        "ai-agents",
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
+        "ai-agents": [
+          "autonomous"
         ],
-        "developer-tools": [
-          "ide"
+        "data-platforms": [
+          "etl"
         ]
       },
       "scores": {
@@ -1760,22 +1698,53 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fdffd6f7e9ab6164",
-      "title": "OpenAI poaches Uber India chief to lead its biggest market outside the US",
-      "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/",
-      "source": "TechCrunch",
-      "published": "2026-06-26T20:19:36+02:00",
-      "summary": "The hire marks OpenAI's latest push into India, expanding offices, partnerships and hiring.",
+      "id": "f9d100e8f9c5183c",
+      "title": "The Anti-Data-Center Movement Is Reshaping Michigan Politics",
+      "url": "https://www.wired.com/story/anti-data-center-movement-reshaping-michigan-politics/",
+      "source": "Wired",
+      "published": "2026-06-29T12:30:00+02:00",
+      "summary": "Climate activist Will Lawrence cofounded the Sunrise Movement. Now, he has shifted his focus in his attempt to compete for a swing-district seat by calling for a data center moratorium.",
       "areas": [
-        "developer-tools",
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "63283a88f4cf1308",
+      "title": "Lawmakers want to ban AI companies from selling your health data",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
+      "source": "The Verge",
+      "published": "2026-06-29T12:00:00-04:00",
+      "summary": "A new proposal would ban the sale of Americans' health and location information to data brokers - including information people reveal to an AI chatbot like ChatGPT or Claude. In the coming weeks, Senator Elizabeth Warren (D-MA) and Representative Mary Gay Scanlon (D-PA) are planning to debut a new version of the Health and Location […]",
+      "areas": [
+        "data-platforms",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
+          "claude",
+          "gpt"
         ],
-        "developer-tools": [
-          "ide"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1850,31 +1819,54 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "0f2cc15546009f5f",
-      "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
-      "source": "The Verge",
-      "published": "2026-06-28T17:42:51-04:00",
-      "summary": "China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and OpenAI in other, more general tasks, it seems that China has dramatically reduced the gap in the capabilities between its models and those of […]",
+      "id": "407645c88b74db36",
+      "title": "AI agents are not your “coworkers”",
+      "url": "https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-29T20:00:00+02:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Imagine coming in to work to learn that a new underling will report to you. The worker is not a person but an AI tool—one that your company nonetheless calls Alex, an…",
       "areas": [
-        "models",
-        "privacy-risk"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "security"
+        "ai-agents": [
+          "agent",
+          "agents"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 0,
+        "relevance": 2,
+        "leverage": 1,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fcd1f91c269b53eb",
+      "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+      "url": "https://github.com/deepreinforce-ai/Ornith-1",
+      "source": "Hacker News",
+      "published": "2026-06-29T19:16:17+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 78,
       "action": "Watch",
@@ -1907,49 +1899,20 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c9b745f9cd8a0c7e",
-      "title": "The Pentagon Is Looking Into the Dialog Data Exposure for Unmasking National Security Officials",
-      "url": "https://www.wired.com/story/the-pentagon-is-looking-into-the-dialog-data-exposure-for-unmasking-national-security-officials/",
-      "source": "Wired",
-      "published": "2026-06-26T18:30:33+02:00",
-      "summary": "Exposed records from the private group included the personal information of a senior White House intelligence official and an active-duty special operations officer.",
+      "id": "c16f2c4c620cfb89",
+      "title": "How to corrupt an SQLite database file",
+      "url": "https://www.sqlite.org/howtocorrupt.html",
+      "source": "Hacker News",
+      "published": "2026-06-26T20:05:39+02:00",
+      "summary": "Comments",
       "areas": [
-        "data-platforms",
-        "privacy-risk"
+        "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "da2e5f77143d7f28",
-      "title": "Feedbacks upon feedbacks: Rock weathering and the climate",
-      "url": "https://arstechnica.com/science/2026/06/feedbacks-upon-feedbacks-rock-weathering-and-the-climate/",
-      "source": "Ars Technica",
-      "published": "2026-06-26T16:41:18+02:00",
-      "summary": "Rock weathering may release or draw down carbon dioxide—it depends on the rock.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli",
-          "ide"
+          "data",
+          "sqlite",
+          "database"
         ]
       },
       "scores": {
@@ -2260,32 +2223,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "532cfc4956ecc229",
-      "title": "The Fable 5 Export Controls Harm US Cyber Defense",
-      "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-16T05:20:29+00:00",
-      "summary": "The Fable 5 Export Controls Harm US Cyber Defense I quoted The Atlantic quoting Kate Moussouris earlier, when I should have gone straight to the source. Here she is confirming that the \"jailbreak\" that got Claude Fable 5 banned under an export control really was \"fix this code\": The researchers took open-source code with known CVEs, plus new code with delibe",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "f2a6f25c2b0debbc",
       "title": "How Preply combines AI and human tutors to personalize learning",
       "url": "https://openai.com/index/preply",
@@ -2391,33 +2328,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "202c77217d16cf03",
-      "title": "Notion killing Skiff-influenced email app since most users use AI agents instead",
-      "url": "https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/",
-      "source": "Ars Technica",
-      "published": "2026-06-25T21:04:57+02:00",
-      "summary": "Notion is \"going all in on using agents to run your inbox.\"",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "2c5df162c69243dc",
       "title": "Quoting Charity Majors",
       "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
@@ -2470,172 +2380,46 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "36d11cb0b4d66715",
-      "title": "Anthropic says Alibaba must be punished for largest Claude cloning attack",
-      "url": "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
-      "source": "Ars Technica",
-      "published": "2026-06-25T20:01:48+02:00",
-      "summary": "Alibaba allegedly used 25,000 accounts to mine Claude over 28.8 million exchanges.",
+      "id": "05c9933c00c5d2a9",
+      "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change",
+      "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+      "source": "Wired",
+      "published": "2026-06-29T12:00:00+02:00",
+      "summary": "Europe’s pro-competition proposals could see Google Search and Android systems opened up. The company claims there are serious privacy flaws.",
       "areas": [
-        "models",
+        "data-platforms",
+        "enterprise-ai",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "aws"
         ],
         "privacy-risk": [
-          "attack"
+          "privacy",
+          "security"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 4,
         "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 1
+        "urgency": 4,
+        "risk": 3
       },
       "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "6bb2758a79ccf7fd",
-      "title": "Age verification is just a precursor to automated attribution of speech",
-      "url": "https://nonogra.ph/age-verification-is-just-a-precursor-to-attribution-of-speech-06-29-2026",
+      "id": "309fcefe6a05f50b",
+      "title": "Scientists find molecular-level evidence for two structures in liquid water",
+      "url": "https://phys.org/news/2026-06-scientists-molecular-evidence-liquid.html",
       "source": "Hacker News",
-      "published": "2026-06-29T05:42:07+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cursor"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1fab3fcf7df4840a",
-      "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
-      "url": "https://arxiv.org/abs/2401.07013",
-      "source": "Hacker News",
-      "published": "2026-06-29T00:32:04+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "language model"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "4bf74fe601d037e8",
-      "title": "Show HN: NanoEuler – GPT-2 scale model in pure C/CUDA from scratch",
-      "url": "https://github.com/JustVugg/nanoeuler",
-      "source": "Hacker News",
-      "published": "2026-06-28T21:38:14+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "04b3752f254e0655",
-      "title": "GLM 5.2 beats Claude in our benchmarks",
-      "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-      "source": "Hacker News",
-      "published": "2026-06-28T19:50:47+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "b8b6cb342987844b",
-      "title": "I used Claude Code to get a second opinion on my MRI",
-      "url": "https://antoine.fi/mri-analysis-using-claude-code-opus",
-      "source": "Hacker News",
-      "published": "2026-06-28T18:35:19+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "17dd3fd7614160de",
-      "title": "More evidence is consistent with possible ancient life on Mars (2025)",
-      "url": "https://www.cbc.ca/radio/quirks/more-evidence-of-life-on-mars-but-still-no-life-1.7649645",
-      "source": "Hacker News",
-      "published": "2026-06-28T13:55:08+02:00",
+      "published": "2026-06-30T00:18:26+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2657,18 +2441,20 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "f01eecd71f95ab0c",
-      "title": "Indian payments chief thinks AI will be heavily involved in next era of digital payment growth",
-      "url": "https://techcrunch.com/2026/06/27/indian-payments-chief-thinks-ai-will-be-heavily-involved-in-next-era-of-digital-payment-growth/",
+      "id": "85bf1c2273727969",
+      "title": "Anthropic and Gov. Newsom forge deal allowing California government to use Claude at half price",
+      "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
       "source": "TechCrunch",
-      "published": "2026-06-28T07:00:00+02:00",
-      "summary": "Dilip Asbe said that newer UPI apps could be more competitive with a viable commercial model",
+      "published": "2026-06-29T20:10:26+02:00",
+      "summary": "As Anthropic forges a closer relationship with the state of California, the federal government has made an enemy out of the OpenAI rival.",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "git"
+        "models": [
+          "openai",
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
@@ -2683,12 +2469,90 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "85e8deb3234b542b",
-      "title": "Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on",
-      "url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-      "source": "TechCrunch",
-      "published": "2026-06-27T14:00:00+02:00",
-      "summary": "New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.",
+      "id": "5c0fb0d07e487b89",
+      "title": "Rocketlab acquires Iridium",
+      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "source": "Hacker News",
+      "published": "2026-06-29T16:09:24+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "etl"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "16ff2b99f16d86d3",
+      "title": "Tidal won’t pay royalties on AI-generated music but isn’t banning it outright",
+      "url": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
+      "source": "The Verge",
+      "published": "2026-06-29T15:47:35-04:00",
+      "summary": "Tidal shared its new policies regarding AI-generated music today and how the platform plans to \"protect artists\" and \"inform listeners.\" Instead of banning it outright, starting on July 15th Tidal will label tracks it has identified as being 100 percent AI-generated with an icon. But starting today those tracks will no longer be monetizable. \"Tidal's […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8d6a36141a14497d",
+      "title": "The Download: metric weaknesses and AI elephant warnings",
+      "url": "https://www.technologyreview.com/2026/06/29/1139834/the-download-metric-weaknesses-ai-elephant-warnings/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-29T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The inevitable weakness of metrics There are plenty of useful things a metric can reveal. There are even more that it can obscure or corrupt. Like a lot of people bitten…",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8939628a64507c3b",
+      "title": "Trump Administration Allows Anthropic to Release Mythos to Select US Organizations",
+      "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
+      "source": "Wired",
+      "published": "2026-06-27T02:26:14+02:00",
+      "summary": "After weeks of negotiations, the White House permitted Anthropic to grant access to its most advanced AI model to a select group of US companies and government agencies.",
       "areas": [
         "models"
       ],
@@ -2705,6 +2569,136 @@
         "risk": 0
       },
       "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f1f37706902d8f7e",
+      "title": "The Download: Europe’s heat wave hits the grid, and IBM’s chip targets Moore’s Law",
+      "url": "https://www.technologyreview.com/2026/06/25/1139738/the-download-europe-heat-wave-ibm-chip-moores-law/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-25T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Europe’s extreme heat is shutting down power plants Europe is in the middle of a record-breaking heat wave, and the grid is being pushed to its limits as people turn to…",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a4b9839e31c811fe",
+      "title": "Sony erases digital content from libraries; we're reminded we don’t own what we buy",
+      "url": "https://arstechnica.com/gadgets/2026/06/sony-erases-digital-content-from-libraries-were-reminded-we-dont-own-what-we-buy/",
+      "source": "Ars Technica",
+      "published": "2026-06-29T21:10:57+02:00",
+      "summary": "Sony has been scaling down its digitial store for a few years.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "72d6b12d81268569",
+      "title": "Ozone loss was a thing even before CFCs were widely used",
+      "url": "https://arstechnica.com/science/2026/06/ozone-damage-could-have-been-detected-decades-earlier/",
+      "source": "Ars Technica",
+      "published": "2026-06-29T21:00:23+02:00",
+      "summary": "With today’s scientific tools, the problem could have been spotted in the 1950s.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "63f055de0f322631",
+      "title": "Omen AI’s plan to optimize data centers is all wet",
+      "url": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
+      "source": "TechCrunch",
+      "published": "2026-06-29T15:00:00+02:00",
+      "summary": "Omen AI raised a $31 million Series A to monitor chip coolant and stop bacterial outbreaks in data centers.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e98a7da165ac05cb",
+      "title": "At $499, Apple’s M3-powered iPad Air is a good deal",
+      "url": "https://www.theverge.com/gadgets/959080/ipad-air-m3-5g-wifi-deal-sale",
+      "source": "The Verge",
+      "published": "2026-06-29T13:49:12-04:00",
+      "summary": "Most of Apple’s price increases have gone into effect, resulting in iPads and other products costing hundreds more than they did a few days ago. If last week’s Prime Day sale wasn’t a good time to consider buying an iPad, we found a deal worth considering that’s just under $500 right now. The 128GB iPad […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     }
