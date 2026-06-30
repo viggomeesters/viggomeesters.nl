@@ -145,6 +145,14 @@ for (const file of publicPages) {
     html.includes('<script defer src="/_vercel/insights/script.js"></script>'),
     `${file}: missing Vercel Web Analytics script`,
   );
+  for (const faviconTag of [
+    '<link rel="icon" href="/favicon.ico" sizes="any">',
+    '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+    '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+    '<link rel="manifest" href="/site.webmanifest">',
+  ]) {
+    assert(html.includes(faviconTag), `${file}: missing favicon tag ${faviconTag}`);
+  }
 }
 
 

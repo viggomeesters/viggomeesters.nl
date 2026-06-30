@@ -1,0 +1,24 @@
+{
+  "name": "Viggo Meesters",
+  "short_name": "Viggo",
+  "icons": [
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0c0c0f",
+  "background_color": "#0c0c0f",
+  "display": "standalone"
+}
