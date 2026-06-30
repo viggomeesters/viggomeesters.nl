@@ -223,6 +223,16 @@ assert(
 );
 assert(exists("og-image.png"), "missing og-image.png");
 assert(exists("profile.jpg"), "missing profile.jpg");
+assert(exists("indexnow-key.txt"), "missing IndexNow key file");
+assert(exists("scripts/submit-indexnow.mjs"), "missing IndexNow submit script");
+
+const indexNowKey = read("indexnow-key.txt").trim();
+assert(/^[a-f0-9]{32}$/i.test(indexNowKey), "indexnow-key.txt: expected 32 hex characters");
+
+assert(homepage.includes('"@type": "Person"'), "index.html: missing Person JSON-LD");
+assert(homepage.includes('"@type": "WebSite"'), "index.html: missing WebSite JSON-LD");
+assert(homepage.includes('"@id": "https://viggomeesters.com/#person"'), "index.html: missing Person @id JSON-LD");
+assert(homepage.includes('"publisher": {'), "index.html: WebSite JSON-LD should link to Person publisher");
 
 if (errors.length > 0) {
   console.error(`Site check failed with ${errors.length} issue(s):`);

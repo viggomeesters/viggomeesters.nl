@@ -16,9 +16,18 @@ Open `http://localhost:4173`.
 
 ```sh
 npm run check
+npm run check:seo
 ```
 
-The check script validates internal links, canonical URLs, sitemap coverage, crawler configuration, and Vercel routing assumptions.
+The check script validates internal links, canonical URLs, sitemap coverage, crawler configuration, structured-data presence, favicon/manifest wiring, IndexNow setup, and Vercel routing assumptions.
+
+## Search indexing
+
+```sh
+npm run submit:indexnow
+```
+
+The IndexNow submitter reads `sitemap.xml`, uses the public `indexnow-key.txt` verification file, and submits the current public URL list to IndexNow after deploy.
 
 ## Deploy
 
