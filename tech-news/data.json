@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-30T07:05:11+02:00",
+  "generatedAt": "2026-07-01T07:05:58+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 79,
+  "usefulOpen": 82,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,43 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "ecf4eaae9d3ad909",
+      "title": "Anthropic’s Claude Science bets on workflow, not a new model, to win over scientists",
+      "url": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T19:00:00+02:00",
+      "summary": "Anthropic's Claude Science is a workbench that gives scientists one environment to do computational research, saving them from the need to bounce between databases, pipelines, and tools.",
+      "areas": [
+        "data-platforms",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ],
+        "data-platforms": [
+          "data",
+          "database",
+          "pipeline"
+        ],
+        "enterprise-ai": [
+          "workflow"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "6afe4c31c977ed83",
       "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
@@ -564,6 +601,108 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "6f3817a6e9ce7789",
+      "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T20:00:00+02:00",
+      "summary": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
+      "areas": [
+        "ai-agents",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents",
+          "agentic"
+        ],
+        "models": [
+          "anthropic",
+          "claude",
+          "gpt",
+          "gemini"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "3e723a39be54664a",
+      "title": "Have your agent record video demos of its work with shot-scraper video",
+      "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T16:54:26+00:00",
+      "summary": "shot-scraper video is a new command introduced in today's shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I've written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling t",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents",
+          "coding agent"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "d9167c066f6f7030",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
+      "source": "OpenAI News",
+      "published": "2026-06-30T02:00:00+02:00",
+      "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "developer-tools": [
+          "ide",
+          "debug"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "883db8a18f25d8da",
       "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
       "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
@@ -723,6 +862,78 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "85ae8f4911589bba",
+      "title": "Anthropic’s long-sidelined Fable 5 is greenlit to return",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+      "source": "The Verge",
+      "published": "2026-06-30T20:03:55-04:00",
+      "summary": "After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft […]",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "microsoft",
+          "google cloud",
+          "aws"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "bfa1e5bb0dc2456f",
+      "title": "Building tech in the world’s secret R&D hub",
+      "url": "https://www.technologyreview.com/2026/06/30/1139661/building-tech-in-the-worlds-secret-rd-hub/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-30T12:23:30+02:00",
+      "summary": "Apple. Anthropic. Disney Research. Google. Meta. Microsoft. NVIDIA. OpenAI. Few places outside Silicon Valley can claim R&D hubs from all of these companies. Fewer still are concentrated in a city of just over 400,000 people—roughly half the size of San Francisco. Over the past two decades, however, many of the world’s most influential technology companies…",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "c1eb090a73ced5c0",
       "title": "Predicting model behavior before release by simulating deployment",
       "url": "https://openai.com/index/deployment-simulation",
@@ -757,24 +968,23 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "04fa67a6b27ef0bc",
-      "title": "Cursor now has a mobile app for guiding your coding agent on the go",
-      "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
-      "source": "TechCrunch",
-      "published": "2026-06-29T19:03:50+02:00",
-      "summary": "Cursor has launched a new mobile app for remote oversight over coding agents.",
+      "id": "ac508c7f632c24a2",
+      "title": "What's new in Claude Sonnet 5",
+      "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T21:23:02+00:00",
+      "summary": "What's new in Claude Sonnet 5 Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post. Anthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they w",
       "areas": [
-        "ai-agents",
-        "developer-tools"
+        "developer-tools",
+        "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents",
-          "coding agent"
+        "models": [
+          "anthropic",
+          "claude"
         ],
         "developer-tools": [
-          "cursor"
+          "developer"
         ]
       },
       "scores": {
@@ -789,12 +999,166 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "396edcae95ae213d",
-      "title": "OpenAI is teasing new hardware… for Codex",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/959174/openai-codex-hardware-work-louder",
-      "source": "The Verge",
-      "published": "2026-06-29T14:52:03-04:00",
-      "summary": "OpenAI is releasing some sort of device related to its AI-powered coding tool, Codex, on July 15th. In a video posted to X on Monday, OpenAI shows a square-shaped device with several buttons, alongside the caption, \"Your favorite Codex shortcuts are getting an upgrade.\" This isn't the mysterious AI-powered device OpenAI is working on with […]",
+      "id": "0d13ee700d17d570",
+      "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T17:00:00+02:00",
+      "summary": "Engineers on the new team will embed within companies to deploy purpose-built agents, focusing on fast deployments and customer self-sufficiency.",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "a828c65174f9af0d",
+      "title": "shot-scraper 1.10",
+      "url": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T15:10:14+00:00",
+      "summary": "Release: shot-scraper 1.10 The big new feature is shot-scraper video storyboard.yml , described in detail in Have your agent record video demos of its work with shot-scraper video . Tags: shot-scraper",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4cf87956a74886d3",
+      "title": "The Download: AI “coworkers” and stratospheric internet",
+      "url": "https://www.technologyreview.com/2026/06/30/1139954/the-download-ai-agents-coworkers-solar-powered-internet/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-30T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI agents are not your “coworkers” Imagine coming in to work to learn that a new underling will report to you. The worker is not a person but an AI tool—one…",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "0724a0d575b1ab08",
+      "title": "How ChatGPT adoption has expanded",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
+      "source": "OpenAI News",
+      "published": "2026-06-30T11:00:00+02:00",
+      "summary": "New OpenAI Signals data shows how ChatGPT adoption is growing globally, with users increasing usage, exploring more capabilities, and driving growth across regions and languages.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "50a70d3498ded244",
+      "title": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI News",
+      "published": "2026-06-30T02:00:00+02:00",
+      "summary": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "abd2bc95869e92ef",
+      "title": "Inside Genebench-Pro",
+      "url": "https://openai.com/index/genebench-pro/case-studies",
+      "source": "OpenAI News",
+      "published": "2026-06-30T02:00:00+02:00",
+      "summary": "",
       "areas": [
         "developer-tools",
         "models"
@@ -804,8 +1168,7 @@
           "openai"
         ],
         "developer-tools": [
-          "ide",
-          "codex"
+          "ide"
         ]
       },
       "scores": {
@@ -875,40 +1238,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "9056d477565e19dc",
-      "title": "Security News This Week: LastPass Users Had Their Data Stolen—Again",
-      "url": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
-      "source": "Wired",
-      "published": "2026-06-27T12:30:00+02:00",
-      "summary": "Plus: Former national security advisor John Bolton pleads guilty in classified-materials case, Microsoft helps take down major infostealer infrastructure, and more.",
-      "areas": [
-        "data-platforms",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 88,
       "action": "Read",
@@ -1067,66 +1396,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "846beb5fcbb233bd",
-      "title": "datasette 1.0a34",
-      "url": "https://simonwillison.net/2026/Jun/16/datasette/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-16T21:31:24+00:00",
-      "summary": "Release: datasette 1.0a34 Quoting the release notes: The big feature in this alpha is tools to insert, edit and delete rows within the Datasette interface. These features are available on table pages, and edit and delete are also available as action items on the row page. The inspiration for this feature - which is long overdue - was Datasette Agent . I adde",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "e3b4057426c4a98d",
-      "title": "datasette-tailscale 0.1a0",
-      "url": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-16T16:18:20+00:00",
-      "summary": "Release: datasette-tailscale 0.1a0 A very experimental alpha plugin which lets you do this: datasette tailscale mydata.db \\ --ts-authkey tskey-auth-xxxx --ts-hostname datasette-preview This starts a localhost Datasette server with a Tailscale sidecar that connects it to your Tailnet, such that http://datasette-preview/ serves Datasette. It's using the Python",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "f9bf56121ac4f388",
       "title": "Introducing the OpenAI Partner Network",
       "url": "https://openai.com/index/introducing-openai-partner-network",
@@ -1187,124 +1456,29 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "6c89a1c46bc5d564",
-      "title": "PRC-linked influence operations are targeting AI debates in the US",
-      "url": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-      "source": "OpenAI News",
-      "published": "2026-06-10T14:00:00+02:00",
-      "summary": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims about ChatGPT.",
+      "id": "3c980dd250b98689",
+      "title": "How GitHub maintains compliance for open source dependencies",
+      "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+      "source": "GitHub Blog",
+      "published": "2026-06-30T19:28:16+02:00",
+      "summary": "Explore how the Open Source Program Office uses GitHub’s new license compliance product to manage open source dependencies at scale. The post How GitHub maintains compliance for open source dependencies appeared first on The GitHub Blog .",
       "areas": [
-        "data-platforms",
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "9dcbb07c3e2a5cd4",
-      "title": "From data to decisions: how LSEG is scaling trusted AI",
-      "url": "https://openai.com/index/lseg",
-      "source": "OpenAI News",
-      "published": "2026-06-10T02:00:00+02:00",
-      "summary": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "26dceef2b837e1eb",
-      "title": "How engineers at Nextdoor use Codex to build without limits",
-      "url": "https://openai.com/index/nextdoor",
-      "source": "OpenAI News",
-      "published": "2026-06-09T14:00:00+02:00",
-      "summary": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
         "developer-tools": [
-          "codex"
+          "github",
+          "git"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 1,
+        "relevance": 2,
+        "leverage": 2,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "de6b9c3ee2e6306b",
-      "title": "What Codex unlocks for Notion",
-      "url": "https://openai.com/index/notion",
-      "source": "OpenAI News",
-      "published": "2026-06-09T12:00:00+02:00",
-      "summary": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1471,6 +1645,40 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "2adb21bf69ca4ffb",
+      "title": "New attack provides one more reason why AI browsers are a bad idea",
+      "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+      "source": "Ars Technica",
+      "published": "2026-06-30T22:03:14+02:00",
+      "summary": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+      "areas": [
+        "developer-tools",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "privacy-risk": [
+          "attack"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "edd3019a4dd9cd31",
       "title": "Quoting Jon Udell",
       "url": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
@@ -1580,29 +1788,93 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "214a754cc8bf45e1",
-      "title": "How pull request limits are cutting down the noise",
-      "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
-      "source": "GitHub Blog",
-      "published": "2026-06-18T18:00:00+02:00",
-      "summary": "Learn how pull request limits can help manage contribution volume in your repositories, and see what’s next on the roadmap. The post How pull request limits are cutting down the noise appeared first on The GitHub Blog .",
+      "id": "32e0b99839445585",
+      "title": "Claude Science is Anthropic’s newest flagship product",
+      "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
+      "source": "MIT Technology Review",
+      "published": "2026-06-30T23:50:04+02:00",
+      "summary": "At an event for pharmaceutical executives, biotech founders, and researchers on Tuesday, Anthropic announced Claude Science, a major new product intended to support scientific research in the same way that Claude Code supports software engineering. Like Claude Code, Claude Science can autonomously carry out meaningful work when given concise, high-level inst",
       "areas": [
-        "developer-tools"
+        "ai-agents",
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
+        "ai-agents": [
+          "autonomous"
+        ],
+        "models": [
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 82,
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "c89b2a08f91cf2fb",
+      "title": "X now offers an MCP server to make its platform easier for AI tools to use",
+      "url": "https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T17:08:42+02:00",
+      "summary": "X has launched a hosted MCP server, making it easier for developers to connect AI applications with the company’s API.",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "mcp"
+        ],
+        "developer-tools": [
+          "developer"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "6465881a8556714f",
+      "title": "007 First Light’s developer lays off staff but claims its next franchise will continue",
+      "url": "https://www.theverge.com/games/959713/io-interactive-project-fantasy-layoffs",
+      "source": "The Verge",
+      "published": "2026-06-30T14:14:05-04:00",
+      "summary": "IO Interactive, the studio behind the Hitman series and 007 First Light, announced that it is laying off staff after a relationship with an \"external partner\" on its next big franchise, Project Fantasy, \"has come to an end.\" IO has described Project Fantasy as an \"online fantasy RPG\", and Kotaku and Bloomberg report that Microsoft, […]",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "developer"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1638,66 +1910,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d5886a215f237f1d",
-      "title": "Gemini’s personalized AI image generation is now free for US users",
-      "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
-      "source": "TechCrunch",
-      "published": "2026-06-29T22:12:59+02:00",
-      "summary": "Google is expanding Gemini’s personalized AI image generation to eligible free users in the U.S., allowing the chatbot to create images based on your interests and data from connected Google apps.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5b87e882f53c484a",
-      "title": "Waymo and Uber quietly part ways in Phoenix",
-      "url": "https://techcrunch.com/2026/06/29/waymo-and-uber-quietly-part-ways-in-phoenix/",
-      "source": "TechCrunch",
-      "published": "2026-06-29T20:45:12+02:00",
-      "summary": "Uber said it is readying the launch of a separate autonomous vehicle partnership in the city, but did not name the partner.",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "autonomous"
-        ],
-        "data-platforms": [
-          "etl"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "f9d100e8f9c5183c",
       "title": "The Anti-Data-Center Movement Is Reshaping Michigan Politics",
       "url": "https://www.wired.com/story/anti-data-center-movement-reshaping-michigan-politics/",
@@ -1711,37 +1923,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "cli"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "63283a88f4cf1308",
-      "title": "Lawmakers want to ban AI companies from selling your health data",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/959033/health-location-data-protection-act-ai-warren-scanlon",
-      "source": "The Verge",
-      "published": "2026-06-29T12:00:00-04:00",
-      "summary": "A new proposal would ban the sale of Americans' health and location information to data brokers - including information people reveal to an AI chatbot like ChatGPT or Claude. In the coming weeks, Senator Elizabeth Warren (D-MA) and Representative Mary Gay Scanlon (D-PA) are planning to debut a new version of the Health and Location […]",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude",
-          "gpt"
         ],
         "data-platforms": [
           "data"
@@ -1819,6 +2000,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "5e5852a7465ad77e",
+      "title": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
+      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+      "source": "The Verge",
+      "published": "2026-06-30T15:24:51-04:00",
+      "summary": "Google's NotebookLM is adding a new way to catch up on your notes: TikTok-style AI videos. The new feature is rolling out to Google AI Ultra and Pro subscribers, allowing NotebookLM to generate 60-second vertical AI clips based on the sources you upload to the app. The example shared by Google details Australia's unsuccessful war […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli",
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "407645c88b74db36",
       "title": "AI agents are not your “coworkers”",
       "url": "https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/",
@@ -1846,19 +2054,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fcd1f91c269b53eb",
-      "title": "Ornith-1.0: self-improving open-source models for agentic coding",
-      "url": "https://github.com/deepreinforce-ai/Ornith-1",
+      "id": "8a2a5d74b74c07ca",
+      "title": "Reading the internals of Postgres: Database cluster, databases, and tables",
+      "url": "https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables",
       "source": "Hacker News",
-      "published": "2026-06-29T19:16:17+02:00",
+      "published": "2026-06-29T14:59:49+02:00",
       "summary": "Comments",
       "areas": [
-        "ai-agents"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
+        "data-platforms": [
+          "data",
+          "database"
         ]
       },
       "scores": {
@@ -1885,34 +2093,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "c16f2c4c620cfb89",
-      "title": "How to corrupt an SQLite database file",
-      "url": "https://www.sqlite.org/howtocorrupt.html",
-      "source": "Hacker News",
-      "published": "2026-06-26T20:05:39+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "sqlite",
-          "database"
         ]
       },
       "scores": {
@@ -2171,32 +2351,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7ee8323b130adcd2",
-      "title": "GLM-5.2 is probably the most powerful text-only open weights LLM",
-      "url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-17T23:58:39+00:00",
-      "summary": "Chinese AI lab Z.ai released GLM-5.2 to their coding plan subscribers on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license. Similar in size to their previous GLM-5 and GLM-5.1 releases this is a 753B parameter, 1.51TB monster - with 40 active parameters (Mixture of Experts). GLM-5.2 is a text input only model - Z.a",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "b51ab823f9912acd",
       "title": "Introducing LifeSciBench",
       "url": "https://openai.com/index/introducing-life-sci-bench",
@@ -2275,6 +2429,60 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "e0cc28fe04940a94",
+      "title": "Quoting Anthropic",
+      "url": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T23:58:15+00:00",
+      "summary": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. — Anthropic , on Twitter Tags: anthropic , claude , generative-ai , claude-mythos , ai , llms",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "anthropic",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "916761293fc9a214",
+      "title": "Nano Banana 2 Lite",
+      "url": "https://simonwillison.net/2026/Jun/30/nano-banana-2-lite/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-06-30T22:15:35+00:00",
+      "summary": "Nano Banana 2 Lite Also known as Gemini 3.1 Flash Lite Image ( gemini-3.1-flash-lite-image in their API ), this is the \"fastest and cheapest Gemini image model, engineered for velocity and scale\". I used AI studio to run this prompt: Do a where's Waldo style image but it's where is the raccoon holding a ham radio I like that one better than the results I got",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "7467c212a938c971",
       "title": "Hack Your Summer",
       "url": "https://simonwillison.net/2026/Jun/28/hack-your-summer/#atom-everything",
@@ -2328,132 +2536,17 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2c5df162c69243dc",
-      "title": "Quoting Charity Majors",
-      "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-17T17:12:41+00:00",
-      "summary": "What happened in 2025 was this: the economics of code production were turned upside down . Instead of being very hard, time-consuming, and expensive to generate code, it became effectively free and instant. Lines of code went from being treasured, reused, cared for and carefully curated, to being disposable and regenerable, practically overnight. — Charity M",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "11957b49273eed60",
-      "title": "— a still that plays",
-      "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-17T03:56:10+00:00",
-      "summary": "Tool: <click-to-play> — a still that plays A progressive enchantment Web Component that turns this markup: <click-to-play> <a href=\"URL to GIF\"> <img src=\"URL to first frame\" alt=\"...\"> </a> </click-to-play> Into a still frame with a click to play button which loads the GIF on demand. For when you don't want big GIFs to be loaded unless people want to play t",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "05c9933c00c5d2a9",
-      "title": "Top Google Security Staff Warn Search Data Could Be Hacked if EU Rules Change",
-      "url": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
-      "source": "Wired",
-      "published": "2026-06-29T12:00:00+02:00",
-      "summary": "Europe’s pro-competition proposals could see Google Search and Android systems opened up. The company claims there are serious privacy flaws.",
-      "areas": [
-        "data-platforms",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "aws"
-        ],
-        "privacy-risk": [
-          "privacy",
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 3
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "309fcefe6a05f50b",
-      "title": "Scientists find molecular-level evidence for two structures in liquid water",
-      "url": "https://phys.org/news/2026-06-scientists-molecular-evidence-liquid.html",
+      "id": "06daa384eb474e3e",
+      "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
+      "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
       "source": "Hacker News",
-      "published": "2026-06-30T00:18:26+02:00",
+      "published": "2026-07-01T01:55:12+02:00",
       "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "85bf1c2273727969",
-      "title": "Anthropic and Gov. Newsom forge deal allowing California government to use Claude at half price",
-      "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
-      "source": "TechCrunch",
-      "published": "2026-06-29T20:10:26+02:00",
-      "summary": "As Anthropic forges a closer relationship with the state of California, the federal government has made an enemy out of the OpenAI rival.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "anthropic",
           "claude"
         ]
       },
@@ -2469,194 +2562,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5c0fb0d07e487b89",
-      "title": "Rocketlab acquires Iridium",
-      "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-acquire-iridium-historic-deal-creating-fully",
+      "id": "343f1fc0a77e5cfe",
+      "title": "TabFM: A zero-shot foundation model for tabular data",
+      "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
       "source": "Hacker News",
-      "published": "2026-06-29T16:09:24+02:00",
+      "published": "2026-07-01T00:08:38+02:00",
       "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "etl"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "16ff2b99f16d86d3",
-      "title": "Tidal won’t pay royalties on AI-generated music but isn’t banning it outright",
-      "url": "https://www.theverge.com/tech/959211/tidal-ai-music-policy-demonetizingdetect-label",
-      "source": "The Verge",
-      "published": "2026-06-29T15:47:35-04:00",
-      "summary": "Tidal shared its new policies regarding AI-generated music today and how the platform plans to \"protect artists\" and \"inform listeners.\" Instead of banning it outright, starting on July 15th Tidal will label tracks it has identified as being 100 percent AI-generated with an icon. But starting today those tracks will no longer be monetizable. \"Tidal's […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "8d6a36141a14497d",
-      "title": "The Download: metric weaknesses and AI elephant warnings",
-      "url": "https://www.technologyreview.com/2026/06/29/1139834/the-download-metric-weaknesses-ai-elephant-warnings/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-29T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The inevitable weakness of metrics There are plenty of useful things a metric can reveal. There are even more that it can obscure or corrupt. Like a lot of people bitten…",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "8939628a64507c3b",
-      "title": "Trump Administration Allows Anthropic to Release Mythos to Select US Organizations",
-      "url": "https://www.wired.com/story/anthropic-restores-access-to-mythos/",
-      "source": "Wired",
-      "published": "2026-06-27T02:26:14+02:00",
-      "summary": "After weeks of negotiations, the White House permitted Anthropic to grant access to its most advanced AI model to a select group of US companies and government agencies.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "f1f37706902d8f7e",
-      "title": "The Download: Europe’s heat wave hits the grid, and IBM’s chip targets Moore’s Law",
-      "url": "https://www.technologyreview.com/2026/06/25/1139738/the-download-europe-heat-wave-ibm-chip-moores-law/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-25T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Europe’s extreme heat is shutting down power plants Europe is in the middle of a record-breaking heat wave, and the grid is being pushed to its limits as people turn to…",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a4b9839e31c811fe",
-      "title": "Sony erases digital content from libraries; we're reminded we don’t own what we buy",
-      "url": "https://arstechnica.com/gadgets/2026/06/sony-erases-digital-content-from-libraries-were-reminded-we-dont-own-what-we-buy/",
-      "source": "Ars Technica",
-      "published": "2026-06-29T21:10:57+02:00",
-      "summary": "Sony has been scaling down its digitial store for a few years.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "72d6b12d81268569",
-      "title": "Ozone loss was a thing even before CFCs were widely used",
-      "url": "https://arstechnica.com/science/2026/06/ozone-damage-could-have-been-detected-decades-earlier/",
-      "source": "Ars Technica",
-      "published": "2026-06-29T21:00:23+02:00",
-      "summary": "With today’s scientific tools, the problem could have been spotted in the 1950s.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "63f055de0f322631",
-      "title": "Omen AI’s plan to optimize data centers is all wet",
-      "url": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
-      "source": "TechCrunch",
-      "published": "2026-06-29T15:00:00+02:00",
-      "summary": "Omen AI raised a $31 million Series A to monitor chip coolant and stop bacterial outbreaks in data centers.",
       "areas": [
         "data-platforms"
       ],
@@ -2668,21 +2579,21 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e98a7da165ac05cb",
-      "title": "At $499, Apple’s M3-powered iPad Air is a good deal",
-      "url": "https://www.theverge.com/gadgets/959080/ipad-air-m3-5g-wifi-deal-sale",
-      "source": "The Verge",
-      "published": "2026-06-29T13:49:12-04:00",
-      "summary": "Most of Apple’s price increases have gone into effect, resulting in iPads and other products costing hundreds more than they did a few days ago. If last week’s Prime Day sale wasn’t a good time to consider buying an iPad, we found a deal worth considering that’s just under $500 right now. The 128GB iPad […]",
+      "id": "3f0f1a6250bf84ea",
+      "title": "Amazon blames piracy apps with malware for killing new Fire Stick sideloading",
+      "url": "https://arstechnica.com/gadgets/2026/06/exec-blames-malware-threat-for-amazon-blocking-sideloading-on-new-fire-sticks/",
+      "source": "Ars Technica",
+      "published": "2026-06-30T23:04:53+02:00",
+      "summary": "New Fire Stick OS helps Amazon block third-party homepage launchers, ad blockers.",
       "areas": [
         "developer-tools"
       ],
@@ -2694,11 +2605,142 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "6f0b731300347027",
+      "title": "Clicks shows off its BlackBerry-inspired phone in a new hands-on video",
+      "url": "https://techcrunch.com/2026/06/30/clicks-shows-off-its-blackberry-inspired-phone-in-a-new-hands-on-video/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T20:34:22+02:00",
+      "summary": "A new video shows the final production version of the upcoming Clicks Communicator, a BlackBerry-like smartphone that runs modern apps.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli",
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2c35ae22493da13c",
+      "title": "Claude Sonnet 5",
+      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "source": "Hacker News",
+      "published": "2026-06-30T19:59:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "05d7da46b1eee5ec",
+      "title": "Claude Science",
+      "url": "https://claude.com/product/claude-science",
+      "source": "Hacker News",
+      "published": "2026-06-30T19:07:41+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9b9f878941fea098",
+      "title": "Claude Code is steganographically marking requests",
+      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
+      "source": "Hacker News",
+      "published": "2026-06-30T17:44:24+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "110b25bb61e09725",
+      "title": "Podcasting platform Riverside enters the newsletter publishing game",
+      "url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
+      "source": "TechCrunch",
+      "published": "2026-06-30T17:00:00+02:00",
+      "summary": "Users will be able use AI to create newsletters based on their recordings.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     }
