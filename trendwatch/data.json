@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T11:58:55+02:00",
+  "generatedAt": "2026-07-02T12:35:08+02:00",
   "ledgerUpdated": "2026-07-02",
   "source": "system/contracts/repo-inspiration-ledger.yaml",
   "total": 192,
-  "usefulOpen": 81,
+  "usefulOpen": 78,
   "recommendations": {
     "mine_now": 10,
     "ledger_only": 104,
@@ -255,47 +255,6 @@
       }
     },
     {
-      "id": "google-agents-cli",
-      "repo": "google/agents-cli",
-      "url": "https://github.com/google/agents-cli",
-      "firstSeen": "2026-07-01",
-      "lastSeen": "2026-07-01",
-      "seenCount": 1,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
-      "areas": [
-        "automation",
-        "hermes",
-        "sap"
-      ],
-      "tags": [
-        "adk",
-        "agent-development-kit",
-        "agents",
-        "coding-agent",
-        "gemini",
-        "gemini-enterprise-agent-platform",
-        "generative-ai",
-        "google-cloud",
-        "python"
-      ],
-      "language": "Python",
-      "stars": 4315,
-      "forks": 464,
-      "license": "Apache-2.0",
-      "scores": {
-        "fit": 4,
-        "leverage": 4,
-        "novelty": 5,
-        "maturity": 4,
-        "risk": 0
-      }
-    },
-    {
       "id": "diegosouzapw-omniroute",
       "repo": "diegosouzapw/OmniRoute",
       "url": "https://github.com/diegosouzapw/OmniRoute",
@@ -479,6 +438,47 @@
         "novelty": 4,
         "maturity": 2,
         "risk": 1
+      }
+    },
+    {
+      "id": "google-agents-cli",
+      "repo": "google/agents-cli",
+      "url": "https://github.com/google/agents-cli",
+      "firstSeen": "2026-07-01",
+      "lastSeen": "2026-07-01",
+      "seenCount": 1,
+      "status": "adopted",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "The CLI and skills that turn any coding assistant into an expert at creating, evaluating, and deploying AI agents on Google Cloud.",
+      "areas": [
+        "automation",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "adk",
+        "agent-development-kit",
+        "agents",
+        "coding-agent",
+        "gemini",
+        "gemini-enterprise-agent-platform",
+        "generative-ai",
+        "google-cloud",
+        "python"
+      ],
+      "language": "Python",
+      "stars": 4315,
+      "forks": 464,
+      "license": "Apache-2.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 4,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 0
       }
     },
     {
@@ -2505,90 +2505,6 @@
         "novelty": 5,
         "maturity": 4,
         "risk": 1
-      }
-    },
-    {
-      "id": "calesthio-openmontage",
-      "repo": "calesthio/OpenMontage",
-      "url": "https://github.com/calesthio/OpenMontage",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-02",
-      "seenCount": 16,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
-      "areas": [
-        "data",
-        "frontend",
-        "hermes"
-      ],
-      "tags": [
-        "agent",
-        "agentic-ai",
-        "ai",
-        "claude",
-        "copilot",
-        "cursor",
-        "elevenlabs",
-        "ffmpeg",
-        "flux",
-        "image-generation"
-      ],
-      "language": "Python",
-      "stars": 12931,
-      "forks": 1610,
-      "license": "AGPL-3.0",
-      "scores": {
-        "fit": 4,
-        "leverage": 4,
-        "novelty": 5,
-        "maturity": 5,
-        "risk": 0
-      }
-    },
-    {
-      "id": "panniantong-agent-reach",
-      "repo": "Panniantong/Agent-Reach",
-      "url": "https://github.com/Panniantong/Agent-Reach",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-02",
-      "seenCount": 16,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-      "areas": [
-        "automation",
-        "devtools",
-        "hermes"
-      ],
-      "tags": [
-        "agent-infrastructure",
-        "ai-agent",
-        "ai-search",
-        "automation",
-        "bilibili",
-        "claude-code",
-        "cli",
-        "cursor",
-        "free-api",
-        "llm-tools"
-      ],
-      "language": "Python",
-      "stars": 38044,
-      "forks": 3014,
-      "license": "MIT",
-      "scores": {
-        "fit": 4,
-        "leverage": 5,
-        "novelty": 5,
-        "maturity": 5,
-        "risk": 0
       }
     },
     {
@@ -4732,6 +4648,90 @@
         "novelty": 5,
         "maturity": 3,
         "risk": 1
+      }
+    },
+    {
+      "id": "calesthio-openmontage",
+      "repo": "calesthio/OpenMontage",
+      "url": "https://github.com/calesthio/OpenMontage",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
+      "seenCount": 16,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.",
+      "areas": [
+        "data",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agentic-ai",
+        "ai",
+        "claude",
+        "copilot",
+        "cursor",
+        "elevenlabs",
+        "ffmpeg",
+        "flux",
+        "image-generation"
+      ],
+      "language": "Python",
+      "stars": 12931,
+      "forks": 1610,
+      "license": "AGPL-3.0",
+      "scores": {
+        "fit": 4,
+        "leverage": 4,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
+      }
+    },
+    {
+      "id": "panniantong-agent-reach",
+      "repo": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
+      "seenCount": 16,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "areas": [
+        "automation",
+        "devtools",
+        "hermes"
+      ],
+      "tags": [
+        "agent-infrastructure",
+        "ai-agent",
+        "ai-search",
+        "automation",
+        "bilibili",
+        "claude-code",
+        "cli",
+        "cursor",
+        "free-api",
+        "llm-tools"
+      ],
+      "language": "Python",
+      "stars": 38044,
+      "forks": 3014,
+      "license": "MIT",
+      "scores": {
+        "fit": 4,
+        "leverage": 5,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 0
       }
     },
     {
