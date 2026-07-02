@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T12:35:08+02:00",
+  "generatedAt": "2026-07-02T13:36:54+02:00",
   "ledgerUpdated": "2026-07-02",
   "source": "system/contracts/repo-inspiration-ledger.yaml",
   "total": 192,
-  "usefulOpen": 78,
+  "usefulOpen": 76,
   "recommendations": {
     "mine_now": 10,
     "ledger_only": 104,
@@ -2466,81 +2466,6 @@
       }
     },
     {
-      "id": "langgenius-dify",
-      "repo": "langgenius/dify",
-      "url": "https://github.com/langgenius/dify",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-02",
-      "seenCount": 19,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "Production-ready platform for agentic workflow development.",
-      "areas": [
-        "automation",
-        "frontend",
-        "hermes"
-      ],
-      "tags": [
-        "agent",
-        "agentic-ai",
-        "agentic-framework",
-        "agentic-workflow",
-        "ai",
-        "automation",
-        "gemini",
-        "genai",
-        "gpt",
-        "gpt-4"
-      ],
-      "language": "TypeScript",
-      "stars": 146202,
-      "forks": 22991,
-      "license": "NOASSERTION",
-      "scores": {
-        "fit": 4,
-        "leverage": 3,
-        "novelty": 5,
-        "maturity": 4,
-        "risk": 1
-      }
-    },
-    {
-      "id": "egonex-ai-understand-anything",
-      "repo": "Egonex-AI/Understand-Anything",
-      "url": "https://github.com/Egonex-AI/Understand-Anything",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-06-25",
-      "seenCount": 3,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
-      "areas": [
-        "automation",
-        "hermes",
-        "vault"
-      ],
-      "tags": [
-        "typescript"
-      ],
-      "language": "TypeScript",
-      "stars": 66332,
-      "forks": 5502,
-      "license": "unknown",
-      "scores": {
-        "fit": 4,
-        "leverage": 3,
-        "novelty": 5,
-        "maturity": 3,
-        "risk": 1
-      }
-    },
-    {
       "id": "can1357-oh-my-pi",
       "repo": "can1357/oh-my-pi",
       "url": "https://github.com/can1357/oh-my-pi",
@@ -4651,6 +4576,48 @@
       }
     },
     {
+      "id": "langgenius-dify",
+      "repo": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
+      "seenCount": 19,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Production-ready platform for agentic workflow development.",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes"
+      ],
+      "tags": [
+        "agent",
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai",
+        "automation",
+        "gemini",
+        "genai",
+        "gpt",
+        "gpt-4"
+      ],
+      "language": "TypeScript",
+      "stars": 146202,
+      "forks": 22991,
+      "license": "NOASSERTION",
+      "scores": {
+        "fit": 4,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 4,
+        "risk": 1
+      }
+    },
+    {
       "id": "calesthio-openmontage",
       "repo": "calesthio/OpenMontage",
       "url": "https://github.com/calesthio/OpenMontage",
@@ -4817,6 +4784,39 @@
         "novelty": 5,
         "maturity": 5,
         "risk": 2
+      }
+    },
+    {
+      "id": "egonex-ai-understand-anything",
+      "repo": "Egonex-AI/Understand-Anything",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-06-25",
+      "seenCount": 3,
+      "status": "mined",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "areas": [
+        "automation",
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "typescript"
+      ],
+      "language": "TypeScript",
+      "stars": 66332,
+      "forks": 5502,
+      "license": "MIT",
+      "scores": {
+        "fit": 4,
+        "leverage": 3,
+        "novelty": 5,
+        "maturity": 3,
+        "risk": 1
       }
     },
     {
