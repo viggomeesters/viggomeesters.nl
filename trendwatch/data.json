@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-02T06:41:36+02:00",
+  "generatedAt": "2026-07-02T11:58:55+02:00",
   "ledgerUpdated": "2026-07-02",
   "source": "system/contracts/repo-inspiration-ledger.yaml",
   "total": 192,
-  "usefulOpen": 83,
+  "usefulOpen": 81,
   "recommendations": {
     "mine_now": 10,
     "ledger_only": 104,
@@ -2592,49 +2592,6 @@
       }
     },
     {
-      "id": "jcodesmore-ai-website-cloner-template",
-      "repo": "JCodesMore/ai-website-cloner-template",
-      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-02",
-      "seenCount": 9,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "Clone any website with one command using AI coding agents",
-      "areas": [
-        "automation",
-        "frontend",
-        "hermes",
-        "sap"
-      ],
-      "tags": [
-        "ai",
-        "ai-agents",
-        "ai-tools",
-        "automation",
-        "boilerplate",
-        "claude",
-        "claude-code",
-        "clone",
-        "developer-tools",
-        "nextjs"
-      ],
-      "language": "TypeScript",
-      "stars": 17963,
-      "forks": 2759,
-      "license": "MIT",
-      "scores": {
-        "fit": 5,
-        "leverage": 3,
-        "novelty": 5,
-        "maturity": 5,
-        "risk": 0
-      }
-    },
-    {
       "id": "egonex-ai-understand-anything",
       "repo": "Egonex-AI/Understand-Anything",
       "url": "https://github.com/Egonex-AI/Understand-Anything",
@@ -2665,49 +2622,6 @@
         "novelty": 5,
         "maturity": 3,
         "risk": 1
-      }
-    },
-    {
-      "id": "deusdata-codebase-memory-mcp",
-      "repo": "DeusData/codebase-memory-mcp",
-      "url": "https://github.com/DeusData/codebase-memory-mcp",
-      "firstSeen": "2026-06-23",
-      "lastSeen": "2026-07-02",
-      "seenCount": 17,
-      "status": "reviewed",
-      "recommendation": "mine_now",
-      "action": "Mine",
-      "actionDetail": "Worth a focused pattern-mining pass",
-      "priority": 100,
-      "why": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
-      "areas": [
-        "automation",
-        "data",
-        "hermes",
-        "vault"
-      ],
-      "tags": [
-        "aider",
-        "ast",
-        "c",
-        "claude-code",
-        "code-analysis",
-        "code-intelligence",
-        "codex",
-        "cursor",
-        "cypher",
-        "developer-tools"
-      ],
-      "language": "C",
-      "stars": 11930,
-      "forks": 877,
-      "license": "MIT",
-      "scores": {
-        "fit": 5,
-        "leverage": 3,
-        "novelty": 5,
-        "maturity": 5,
-        "risk": 0
       }
     },
     {
@@ -4859,6 +4773,92 @@
         "leverage": 0,
         "novelty": 0,
         "maturity": 0,
+        "risk": 0
+      }
+    },
+    {
+      "id": "jcodesmore-ai-website-cloner-template",
+      "repo": "JCodesMore/ai-website-cloner-template",
+      "url": "https://github.com/JCodesMore/ai-website-cloner-template",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
+      "seenCount": 9,
+      "status": "adopted",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "Clone any website with one command using AI coding agents",
+      "areas": [
+        "automation",
+        "frontend",
+        "hermes",
+        "sap"
+      ],
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-tools",
+        "automation",
+        "boilerplate",
+        "claude",
+        "claude-code",
+        "clone",
+        "developer-tools",
+        "nextjs"
+      ],
+      "language": "TypeScript",
+      "stars": 17963,
+      "forks": 2759,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 4,
+        "novelty": 5,
+        "maturity": 5,
+        "risk": 2
+      }
+    },
+    {
+      "id": "deusdata-codebase-memory-mcp",
+      "repo": "DeusData/codebase-memory-mcp",
+      "url": "https://github.com/DeusData/codebase-memory-mcp",
+      "firstSeen": "2026-06-23",
+      "lastSeen": "2026-07-02",
+      "seenCount": 17,
+      "status": "adopted",
+      "recommendation": "mine_now",
+      "action": "Done",
+      "actionDetail": "Already mined/adopted",
+      "priority": 55,
+      "why": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
+      "areas": [
+        "automation",
+        "data",
+        "hermes",
+        "vault"
+      ],
+      "tags": [
+        "aider",
+        "ast",
+        "c",
+        "claude-code",
+        "code-analysis",
+        "code-intelligence",
+        "codex",
+        "cursor",
+        "cypher",
+        "developer-tools"
+      ],
+      "language": "C",
+      "stars": 11930,
+      "forks": 877,
+      "license": "MIT",
+      "scores": {
+        "fit": 5,
+        "leverage": 4,
+        "novelty": 5,
+        "maturity": 5,
         "risk": 0
       }
     },

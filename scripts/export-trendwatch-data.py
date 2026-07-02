@@ -57,8 +57,20 @@ def score(review: dict[str, Any], key: str) -> int:
     return max(0, min(5, as_int(review.get(key), 0)))
 
 
-def action_for(recommendation: str, status: str) -> tuple[str, str]:
+def is_done_entry(entry: dict[str, Any], status: str) -> bool:
+    """Treat mined/adopted entries as done even if a later scout regressed status.
+
+    The ledger's durable mining evidence is stronger than the triage status:
+    once ideas were extracted or applied somewhere, the public dashboard should
+    not keep surfacing the repo as an open Mine item.
+    """
     if status in {"adopted", "mined"}:
+        return True
+    return bool(entry.get("ideas_extracted") or entry.get("applied_in"))
+
+
+def action_for(recommendation: str, status: str, done: bool = False) -> tuple[str, str]:
+    if done:
         return "Done", "Already mined/adopted"
     if recommendation == "mine_now":
         return "Mine", "Worth a focused pattern-mining pass"
@@ -69,8 +81,8 @@ def action_for(recommendation: str, status: str) -> tuple[str, str]:
     return "Ledger", "Captured for provenance only"
 
 
-def priority_for(review: dict[str, Any], status: str) -> int:
-    if status in {"adopted", "mined"}:
+def priority_for(review: dict[str, Any], status: str, done: bool = False) -> int:
+    if done:
         return 55
     rec = clean(review.get("recommendation"), "ledger_only")
     base = {"mine_now": 95, "watch": 72, "ledger_only": 38, "reject": 8}.get(rec, 30)
@@ -98,9 +110,10 @@ def main() -> int:
         review = entry.get("review") if isinstance(entry.get("review"), dict) else {}
         recommendation = clean(review.get("recommendation"), "ledger_only")
         status = clean(entry.get("status"), "inbox")
-        action, action_detail = action_for(recommendation, status)
-        priority = priority_for(review, status)
-        if recommendation in {"mine_now", "watch"} and status not in {"mined", "adopted"}:
+        done = is_done_entry(entry, status)
+        action, action_detail = action_for(recommendation, status, done)
+        priority = priority_for(review, status, done)
+        if recommendation in {"mine_now", "watch"} and not done:
             useful += 1
         recommendations[recommendation] = recommendations.get(recommendation, 0) + 1
         areas = entry.get("mined_for") or review.get("matched_stack_areas") or []
