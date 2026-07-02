@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-01T07:05:58+02:00",
+  "generatedAt": "2026-07-02T07:05:57+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 82,
+  "usefulOpen": 84,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -18,29 +18,27 @@
   "errors": {},
   "items": [
     {
-      "id": "ecf4eaae9d3ad909",
-      "title": "Anthropic’s Claude Science bets on workflow, not a new model, to win over scientists",
-      "url": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/",
+      "id": "879e5cf7fbe499ec",
+      "title": "Gemini Spark, Google’s agentic assistant, is now available on Mac",
+      "url": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/",
       "source": "TechCrunch",
-      "published": "2026-06-30T19:00:00+02:00",
-      "summary": "Anthropic's Claude Science is a workbench that gives scientists one environment to do computational research, saving them from the need to bounce between databases, pipelines, and tools.",
+      "published": "2026-07-01T16:20:19+02:00",
+      "summary": "Google's 24/7 agentic assistant, Gemini Spark, comes to Mac alongside other improvements, like real-time tracking and support for more apps.",
       "areas": [
-        "data-platforms",
-        "enterprise-ai",
+        "ai-agents",
+        "developer-tools",
         "models"
       ],
       "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ],
         "models": [
-          "anthropic",
-          "claude"
+          "gemini"
         ],
-        "data-platforms": [
-          "data",
-          "database",
-          "pipeline"
-        ],
-        "enterprise-ai": [
-          "workflow"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -377,43 +375,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "d8c7e0d7552692df",
-      "title": "How we built an internal data analytics agent",
-      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
-      "source": "GitHub Blog",
-      "published": "2026-06-19T18:00:00+02:00",
-      "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it. The post How we built an internal data analytics agent appeared first on The GitHub Blog .",
-      "areas": [
-        "ai-agents",
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "developer-tools": [
-          "github",
-          "git",
-          "copilot"
-        ],
-        "data-platforms": [
-          "data",
-          "analytics"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "f88be3ce19efa291",
       "title": "New usage analytics and updated spend controls for enterprises",
       "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
@@ -488,41 +449,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "cc770dce6f4b13cc",
-      "title": "BBVA puts AI at the core of banking with OpenAI",
-      "url": "https://openai.com/index/bbva",
-      "source": "OpenAI News",
-      "published": "2026-06-11T02:00:00+02:00",
-      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "fe34bb5bf0a78597",
       "title": "OpenAI to acquire Ona",
       "url": "https://openai.com/index/openai-to-acquire-ona",
@@ -554,6 +480,41 @@
       "scores": {
         "relevance": 5,
         "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "cc770dce6f4b13cc",
+      "title": "BBVA puts AI at the core of banking with OpenAI",
+      "url": "https://openai.com/index/bbva",
+      "source": "OpenAI News",
+      "published": "2026-06-11T02:00:00+02:00",
+      "summary": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -597,45 +558,6 @@
         "risk": 1
       },
       "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "6f3817a6e9ce7789",
-      "title": "Anthropic launches Claude Sonnet 5 as a cheaper way to run agents",
-      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/",
-      "source": "TechCrunch",
-      "published": "2026-06-30T20:00:00+02:00",
-      "summary": "Anthropic’s Claude Sonnet 5 brings stronger agentic capabilities, lower pricing, and improved safety, positioning the model as a cheaper alternative to Opus, GPT-5.5, and Gemini Pro.",
-      "areas": [
-        "ai-agents",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents",
-          "agentic"
-        ],
-        "models": [
-          "anthropic",
-          "claude",
-          "gpt",
-          "gemini"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 96,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -862,29 +784,26 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "85ae8f4911589bba",
-      "title": "Anthropic’s long-sidelined Fable 5 is greenlit to return",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+      "id": "622bbba118983913",
+      "title": "Xbox testing disc-to-digital feature that digitizes a physical game collection",
+      "url": "https://www.theverge.com/report/960173/microsoft-xbox-disc-to-digital-feature-physical-game-collection",
       "source": "The Verge",
-      "published": "2026-06-30T20:03:55-04:00",
-      "summary": "After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access Wednesday to users globally on Claude platforms, and that the company would re-enable access on AWS, Google Cloud, and Microsoft […]",
+      "published": "2026-07-01T13:41:23-04:00",
+      "summary": "Microsoft will likely soon follow Sony and stop the production of physical discs for Xbox games. But instead of leaving physical discs behind entirely, sources familiar with Microsoft's plans tell me the company has quietly been working on a disc-to-digital feature that will allow Xbox owners to digitize their existing physical game collections. Xbox employe",
       "areas": [
+        "data-platforms",
         "developer-tools",
-        "enterprise-ai",
-        "models"
+        "enterprise-ai"
       ],
       "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
-        ],
         "developer-tools": [
-          "ide"
+          "git"
+        ],
+        "data-platforms": [
+          "etl"
         ],
         "enterprise-ai": [
-          "microsoft",
-          "google cloud",
-          "aws"
+          "microsoft"
         ]
       },
       "scores": {
@@ -999,38 +918,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "0d13ee700d17d570",
-      "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
-      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
-      "source": "TechCrunch",
-      "published": "2026-06-30T17:00:00+02:00",
-      "summary": "Engineers on the new team will embed within companies to deploy purpose-built agents, focusing on fast deployments and customer self-sufficiency.",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ],
-        "models": [
-          "openai",
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "a828c65174f9af0d",
       "title": "shot-scraper 1.10",
       "url": "https://simonwillison.net/2026/Jun/30/shot-scraper/#atom-everything",
@@ -1123,36 +1010,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "50a70d3498ded244",
-      "title": "Introducing GeneBench-Pro",
-      "url": "https://openai.com/index/introducing-genebench-pro",
-      "source": "OpenAI News",
-      "published": "2026-06-30T02:00:00+02:00",
-      "summary": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "abd2bc95869e92ef",
       "title": "Inside Genebench-Pro",
       "url": "https://openai.com/index/genebench-pro/case-studies",
@@ -1169,6 +1026,36 @@
         ],
         "developer-tools": [
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "50a70d3498ded244",
+      "title": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI News",
+      "published": "2026-06-30T02:00:00+02:00",
+      "summary": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1452,6 +1339,38 @@
         "risk": 0
       },
       "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "718f9d2be6bc9bd3",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+      "source": "GitHub Blog",
+      "published": "2026-07-01T17:59:29+02:00",
+      "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before. The post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ],
+        "privacy-risk": [
+          "security",
+          "attack"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 2
+      },
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1788,6 +1707,69 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "30faaf883f55dfa8",
+      "title": "Meta, like SpaceX, looks to turn excess AI compute into cash",
+      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
+      "source": "TechCrunch",
+      "published": "2026-07-01T15:43:07+02:00",
+      "summary": "Meta is developing plans for a cloud infrastructure business, selling access to AI compute power and models. The move would pit it against the big cloud providers like Amazon Web Services, Google Cloud, and Microsoft Azure.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "microsoft",
+          "google cloud",
+          "azure"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fba0cd1dcad1d5c7",
+      "title": "The Download: Anthropic launches Claude Science, and California’s carbon manure math",
+      "url": "https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-01T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Claude Science is Anthropic’s newest flagship product At an event for pharmaceutical executives, biotech founders, and researchers yesterday, Anthropic announced Claude Science, a major new product intended to support scie",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "32e0b99839445585",
       "title": "Claude Science is Anthropic’s newest flagship product",
       "url": "https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/",
@@ -1805,157 +1787,6 @@
         "models": [
           "anthropic",
           "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "c89b2a08f91cf2fb",
-      "title": "X now offers an MCP server to make its platform easier for AI tools to use",
-      "url": "https://techcrunch.com/2026/06/30/x-now-offers-an-mcp-server-to-make-its-platform-easier-for-ai-tools-to-use/",
-      "source": "TechCrunch",
-      "published": "2026-06-30T17:08:42+02:00",
-      "summary": "X has launched a hosted MCP server, making it easier for developers to connect AI applications with the company’s API.",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "mcp"
-        ],
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "6465881a8556714f",
-      "title": "007 First Light’s developer lays off staff but claims its next franchise will continue",
-      "url": "https://www.theverge.com/games/959713/io-interactive-project-fantasy-layoffs",
-      "source": "The Verge",
-      "published": "2026-06-30T14:14:05-04:00",
-      "summary": "IO Interactive, the studio behind the Hitman series and 007 First Light, announced that it is laying off staff after a relationship with an \"external partner\" on its next big franchise, Project Fantasy, \"has come to an end.\" IO has described Project Fantasy as an \"online fantasy RPG\", and Kotaku and Bloomberg report that Microsoft, […]",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e32e1896f892bcb2",
-      "title": "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs",
-      "url": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
-      "source": "Wired",
-      "published": "2026-06-29T23:49:26+02:00",
-      "summary": "Hundreds of contractors working on a project for Meta pretended to be kids in order to see how other chatbots like Gemini and ChatGPT would respond to high-risk subjects, WIRED found.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt",
-          "gemini"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "f9d100e8f9c5183c",
-      "title": "The Anti-Data-Center Movement Is Reshaping Michigan Politics",
-      "url": "https://www.wired.com/story/anti-data-center-movement-reshaping-michigan-politics/",
-      "source": "Wired",
-      "published": "2026-06-29T12:30:00+02:00",
-      "summary": "Climate activist Will Lawrence cofounded the Sunrise Movement. Now, he has shifted his focus in his attempt to compete for a swing-district seat by calling for a data center moratorium.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "6ea007a24c5927fd",
-      "title": "The Download: brain-melting heatwaves and unprecedented OpenAI restrictions",
-      "url": "https://www.technologyreview.com/2026/06/26/1139780/the-download-heatwaves-brain-health-openai-restrictions/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-26T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Heat waves mess with your brain. Scientists are trying to figure out why. —Jessica Hamzelou It’s been hot in London this week. Really hot. A dangerous heat wave has hit Western…",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "ide"
         ]
       },
       "scores": {
@@ -2000,19 +1831,130 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "5e5852a7465ad77e",
-      "title": "Google’s NotebookLM can sum up your research in a TikTok-style clip",
-      "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips",
+      "id": "76a33854f6c2edbe",
+      "title": "Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers",
+      "url": "https://senior-swe-bench.snorkel.ai/",
+      "source": "Hacker News",
+      "published": "2026-07-02T04:55:16+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "5defe5a2b13cc24e",
+      "title": "Cloudflare’s new policy pushes AI companies to pay for publishers’ content",
+      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+      "source": "TechCrunch",
+      "published": "2026-07-01T19:48:37+02:00",
+      "summary": "Cloudflare is giving AI companies until September 15 to separate web crawlers used for search from those used for AI training and agents, or risk being blocked by default on many publisher sites.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "2835c3a795f81a2a",
+      "title": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
+      "url": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
+      "source": "Wired",
+      "published": "2026-07-01T18:00:00+02:00",
+      "summary": "The government has removed restrictions on Anthropic’s Fable 5 and Mythos 5 AI models—but there were strings attached.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fee039b306479a1a",
+      "title": "Sony is killing discs — and showing us why it’s a terrible idea",
+      "url": "https://www.theverge.com/games/960212/sony-playstation-killing-discs-digital-preservation",
       "source": "The Verge",
-      "published": "2026-06-30T15:24:51-04:00",
-      "summary": "Google's NotebookLM is adding a new way to catch up on your notes: TikTok-style AI videos. The new feature is rolling out to Google AI Ultra and Pro subscribers, allowing NotebookLM to generate 60-second vertical AI clips based on the sources you upload to the app. The example shared by Google details Australia's unsuccessful war […]",
+      "published": "2026-07-01T11:00:00-04:00",
+      "summary": "The future of video game preservation just took a major hit. This morning, Sony announced that, starting in January 2028, the company will no longer produce physical PlayStation discs, which means that from that moment on you can only purchase new PS5 games digitally. At the same time, Sony also announced that it's going to […]",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "cli",
+          "git",
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "f4d27f606ebbadcc",
+      "title": "Database Traffic Control",
+      "url": "https://planetscale.com/blog/introducing-database-traffic-control",
+      "source": "Hacker News",
+      "published": "2026-06-30T10:58:41+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data",
+          "database"
         ]
       },
       "scores": {
@@ -2040,33 +1982,6 @@
         "ai-agents": [
           "agent",
           "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "8a2a5d74b74c07ca",
-      "title": "Reading the internals of Postgres: Database cluster, databases, and tables",
-      "url": "https://www.buraksen.dev/articles/internals-of-postgresql-db-cluster-and-tables",
-      "source": "Hacker News",
-      "published": "2026-06-29T14:59:49+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
         ]
       },
       "scores": {
@@ -2429,6 +2344,62 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "a57c68480a3fe5d6",
+      "title": "Improving token efficiency for GitHub Copilot in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+      "source": "Lobsters",
+      "published": "2026-07-02T04:32:44+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git",
+          "copilot"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "aa90dc0bc734fc81",
+      "title": "Which GitHub features are needed in a code forge before you can migrate?",
+      "url": "https://lobste.rs/s/w01x4p/which_github_features_are_needed_code",
+      "source": "Lobsters",
+      "published": "2026-07-01T12:22:06+02:00",
+      "summary": "Which GitHub features would you consider a blocker for migrating to a different code forge, and in what order do you prioritize them? Context: I am heads down building a code forge ( https://juju.bi ) based on three ideas: Code collaboration part should work offline Should be compatible with GitHub API (like how some services are considered S3 compatible) Su",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git",
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "e0cc28fe04940a94",
       "title": "Quoting Anthropic",
       "url": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
@@ -2536,123 +2507,78 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "06daa384eb474e3e",
-      "title": "Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5",
-      "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
-      "source": "Hacker News",
-      "published": "2026-07-01T01:55:12+02:00",
-      "summary": "Comments",
+      "id": "478187478294e29d",
+      "title": "After spooking Trump into safety testing, Anthropic AI models get global release",
+      "url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release/",
+      "source": "Ars Technica",
+      "published": "2026-07-01T18:44:18+02:00",
+      "summary": "US lifts curbs on Anthropic’s advanced Fable and Mythos models.",
       "areas": [
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "claude"
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
-        "relevance": 2,
+        "relevance": 3,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "343f1fc0a77e5cfe",
-      "title": "TabFM: A zero-shot foundation model for tabular data",
-      "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
-      "source": "Hacker News",
-      "published": "2026-07-01T00:08:38+02:00",
-      "summary": "Comments",
+      "id": "f7fb596c1c0555af",
+      "title": "Motorola Phones Now Have a Built-In Travel eSIM for Mobile Data Outside the US",
+      "url": "https://www.wired.com/story/exclusive-motorola-phones-now-get-a-built-in-travel-esim/",
+      "source": "Wired",
+      "published": "2026-07-01T15:00:00+02:00",
+      "summary": "Available in select markets thanks to a partnership with Gigs, Motorola phone owners have one less hurdle to clear when signing up for a data-only eSIM before traveling abroad.",
       "areas": [
-        "data-platforms"
+        "data-platforms",
+        "developer-tools"
       ],
       "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ],
         "data-platforms": [
           "data"
         ]
       },
       "scores": {
-        "relevance": 2,
+        "relevance": 3,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "3f0f1a6250bf84ea",
-      "title": "Amazon blames piracy apps with malware for killing new Fire Stick sideloading",
-      "url": "https://arstechnica.com/gadgets/2026/06/exec-blames-malware-threat-for-amazon-blocking-sideloading-on-new-fire-sticks/",
-      "source": "Ars Technica",
-      "published": "2026-06-30T23:04:53+02:00",
-      "summary": "New Fire Stick OS helps Amazon block third-party homepage launchers, ad blockers.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "6f0b731300347027",
-      "title": "Clicks shows off its BlackBerry-inspired phone in a new hands-on video",
-      "url": "https://techcrunch.com/2026/06/30/clicks-shows-off-its-blackberry-inspired-phone-in-a-new-hands-on-video/",
-      "source": "TechCrunch",
-      "published": "2026-06-30T20:34:22+02:00",
-      "summary": "A new video shows the final production version of the upcoming Clicks Communicator, a BlackBerry-like smartphone that runs modern apps.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli",
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
         "novelty": 4,
         "urgency": 2,
         "risk": 1
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2c35ae22493da13c",
-      "title": "Claude Sonnet 5",
-      "url": "https://www.anthropic.com/news/claude-sonnet-5",
+      "id": "d23ff2d7c9311d89",
+      "title": "Healthy but sedentary people show early decline in cellular energy production",
+      "url": "https://news.cuanschutz.edu/news-stories/healthy-but-sedentary-individuals-show-early-decline-in-cellular-energy-production",
       "source": "Hacker News",
-      "published": "2026-06-30T19:59:52+02:00",
+      "published": "2026-07-02T00:48:56+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "claude"
+        "developer-tools": [
+          "cli"
         ]
       },
       "scores": {
@@ -2667,18 +2593,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "05d7da46b1eee5ec",
-      "title": "Claude Science",
-      "url": "https://claude.com/product/claude-science",
-      "source": "Hacker News",
-      "published": "2026-06-30T19:07:41+02:00",
-      "summary": "Comments",
+      "id": "fe9f04dc506b7042",
+      "title": "Sony announces end of PlayStation discs, parts of digital store in the same day",
+      "url": "https://arstechnica.com/gaming/2026/07/sony-will-stop-making-physical-copies-of-playstation-games-in-2028/",
+      "source": "Ars Technica",
+      "published": "2026-07-01T20:41:49+02:00",
+      "summary": "“We will own nothing, it's truly sad.”",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "claude"
+        "developer-tools": [
+          "git"
         ]
       },
       "scores": {
@@ -2693,44 +2619,96 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9b9f878941fea098",
-      "title": "Claude Code is steganographically marking requests",
-      "url": "https://thereallo.dev/blog/claude-code-prompt-steganography",
-      "source": "Hacker News",
-      "published": "2026-06-30T17:44:24+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "110b25bb61e09725",
-      "title": "Podcasting platform Riverside enters the newsletter publishing game",
-      "url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
+      "id": "e6512ba17570c649",
+      "title": "Neocloud Together AI raises $800M, leaps to $8.3B valuation",
+      "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
       "source": "TechCrunch",
-      "published": "2026-06-30T17:00:00+02:00",
-      "summary": "Users will be able use AI to create newsletters based on their recordings.",
+      "published": "2026-07-01T20:29:14+02:00",
+      "summary": "The AI neocloud provider, which specializes in hosting open source models, last raised at a $3.3 billion valuation in early 2025.",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1306b097aabae2ea",
+      "title": "For first time, a cell built from scratch grows and divides",
+      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
+      "source": "Hacker News",
+      "published": "2026-07-01T16:20:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8ffc4d265ac0fc0e",
+      "title": "Sony to end physical PlayStation game disc production in 2028",
+      "url": "https://techcrunch.com/2026/07/01/sony-to-end-physical-playstation-game-discs-in-2028/",
+      "source": "TechCrunch",
+      "published": "2026-07-01T16:16:32+02:00",
+      "summary": "Sony will stop producing physical discs for all new PlayStation games beginning in 2028, as the company embraces an all-digital future.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "aa2188f63f4dae9f",
+      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "source": "TechCrunch",
+      "published": "2026-07-01T04:16:06+02:00",
+      "summary": "The Trump administration's erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
         ]
       },
       "scores": {
