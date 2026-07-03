@@ -1,0 +1,16 @@
+{
+  "schema": "go-workflow.repo-local.project.v1",
+  "kind": "project",
+  "id": "viggomeesters-site",
+  "name": "viggomeesters.com",
+  "source_of_truth": "repo-local",
+  "default_verification": [
+    "npm run check",
+    "git diff --check"
+  ],
+  "links": {
+    "repo": "https://github.com/viggomeesters/viggomeesters.nl",
+    "public_url": "https://viggomeesters.com",
+    "stack": "https://github.com/viggomeesters/go-workflow-stack"
+  }
+}

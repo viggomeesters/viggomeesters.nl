@@ -1,0 +1,29 @@
+{
+  "schema": "go-workflow.repo-local.vision.v1",
+  "kind": "vision",
+  "project": "viggomeesters-site",
+  "status": "active",
+  "north_star": "A public personal site that lets technical visitors quickly understand Viggo’s projects, systems, and proof-first working style.",
+  "wedge": "Static, source-backed portfolio pages with enough context to judge the work without private vault access.",
+  "target_user": "Technical visitors, collaborators, recruiters, and future agents maintaining the site.",
+  "core_promise": "A fresh clone plus public pages explain what the site is, how it is verified, and what small work is next.",
+  "product_principles": [
+    "static-first",
+    "proof-first",
+    "visitor-facing-copy",
+    "public-safe metadata",
+    "repo-local agent continuity"
+  ],
+  "non_goals": [
+    "no redesign in this pilot",
+    "no production deploy required",
+    "no broad AW Lite migration",
+    "no private vault data in public repo"
+  ],
+  "success_metrics": [
+    "npm run check passes",
+    "go-workflow-stack validate/readback passes",
+    "fresh clone route is repo-local",
+    "one small repo-local task is completed with evidence"
+  ]
+}

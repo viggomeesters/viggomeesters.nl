@@ -1,0 +1,46 @@
+{
+  "schema": "go-workflow.repo-local.hierarchy.v1",
+  "kind": "hierarchy",
+  "project": "viggomeesters-site",
+  "feature_groups": [
+    {
+      "id": "public-site",
+      "name": "Public site",
+      "features": [
+        {
+          "id": "homepage",
+          "name": "Homepage and navigation",
+          "tasks": []
+        },
+        {
+          "id": "project-pages",
+          "name": "Project/system pages",
+          "tasks": []
+        },
+        {
+          "id": "guides-indexes",
+          "name": "Guides, indexes, and generated public snapshots",
+          "tasks": []
+        }
+      ]
+    },
+    {
+      "id": "site-operations",
+      "name": "Site operations",
+      "features": [
+        {
+          "id": "checks",
+          "name": "Static checks and SEO checks",
+          "tasks": []
+        },
+        {
+          "id": "repo-local-workflow",
+          "name": "Repo-local agent workflow pilot",
+          "tasks": [
+            "document-repo-local-workflow-pilot"
+          ]
+        }
+      ]
+    }
+  ]
+}

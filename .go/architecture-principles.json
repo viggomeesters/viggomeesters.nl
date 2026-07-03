@@ -1,0 +1,31 @@
+{
+  "schema": "go-workflow.repo-local.architecture-principles.v1",
+  "kind": "architecture_principles",
+  "project": "viggomeesters-site",
+  "principles": [
+    {
+      "id": "static-site",
+      "statement": "Keep the public site static and dependency-light unless explicitly changed.",
+      "rationale": "The repo deploys directly from root to Vercel and should remain easy to inspect, clone, and verify.",
+      "enforcement": "AGENTS.md plus npm run check"
+    },
+    {
+      "id": "public-canonical",
+      "statement": "Public URLs canonicalize to https://viggomeesters.com/.",
+      "rationale": "Avoid split identity between .nl, .com, and Vercel aliases.",
+      "enforcement": "scripts/check-site.mjs canonical/sitemap checks"
+    },
+    {
+      "id": "visitor-facing-copy",
+      "statement": "Public pages must use visitor-facing labels, not internal agent/editorial labels.",
+      "rationale": "The site is a public portfolio, not an agent runbook.",
+      "enforcement": "site checks and browser review"
+    },
+    {
+      "id": "repo-local-agent-contract",
+      "statement": "Agent workflow state for this pilot lives in .go/ and is JSON/JSONL canonical.",
+      "rationale": "A fresh clone should explain current direction and next work without private vault context.",
+      "enforcement": "go-workflow-stack validate/readback"
+    }
+  ]
+}

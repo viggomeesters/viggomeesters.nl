@@ -1,0 +1,34 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "document-repo-local-workflow-pilot",
+  "status": "open",
+  "project": "viggomeesters-site",
+  "summary": "Document the repo-local workflow pilot in README",
+  "description": "Add a short README section that explains this repo now carries pilot .go workflow state and how to validate/readback it with go-workflow-stack. Do not change public page rendering.",
+  "scope": {
+    "read": [
+      "README.md",
+      ".go/**",
+      "package.json"
+    ],
+    "modify": [
+      "README.md",
+      ".go/**"
+    ]
+  },
+  "acceptance": [
+    "README has a concise Repo-local workflow pilot section.",
+    "The section points to go-workflow-stack validate/readback commands.",
+    "npm run check and git diff --check pass.",
+    "go finish records evidence in .go/evidence/events.jsonl."
+  ],
+  "verification": [
+    "npm run check",
+    "git diff --check",
+    "python3 ~/github/go-workflow-stack/cli/go.py validate .",
+    "python3 ~/github/go-workflow-stack/cli/go.py readback ."
+  ],
+  "claim": {},
+  "evidence": []
+}
