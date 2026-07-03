@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-02T07:05:57+02:00",
+  "generatedAt": "2026-07-03T07:05:59+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 84,
+  "usefulOpen": 76,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -18,12 +18,12 @@
   "errors": {},
   "items": [
     {
-      "id": "879e5cf7fbe499ec",
-      "title": "Gemini Spark, Google’s agentic assistant, is now available on Mac",
-      "url": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/",
-      "source": "TechCrunch",
-      "published": "2026-07-01T16:20:19+02:00",
-      "summary": "Google's 24/7 agentic assistant, Gemini Spark, comes to Mac alongside other improvements, like real-time tracking and support for more apps.",
+      "id": "d7adf2005d2ff345",
+      "title": "llm-coding-agent 0.1a0",
+      "url": "https://simonwillison.net/2026/Jul/2/llm-coding-agent/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-02T19:33:12+00:00",
+      "summary": "Release: llm-coding-agent 0.1a0 Another Fable 5 experiment. Now that my LLM library has evolved into more of an agent framework it's time to see what a simple coding agent would look like built on it. I started a new Python library using my python-lib-template-repository GitHub template repository, then ran these two prompts (here's the Claude Code for web t",
       "areas": [
         "ai-agents",
         "developer-tools",
@@ -32,13 +32,49 @@
       "matchedKeywords": {
         "ai-agents": [
           "agent",
-          "agentic"
+          "coding agent"
         ],
         "models": [
-          "gemini"
+          "llm",
+          "claude"
         ],
         "developer-tools": [
-          "ide"
+          "github",
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 3,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "118a188c6e62a162",
+      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-02T18:25:00+00:00",
+      "summary": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest ",
+      "areas": [
+        "ai-agents",
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent"
+        ],
+        "models": [
+          "claude"
+        ],
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -84,41 +120,6 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 1
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "57277b5a8d62e868",
-      "title": "Agent confidence on the technical frontier",
-      "url": "https://www.technologyreview.com/2026/06/29/1139635/agent-confidence-on-the-technical-frontier/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-29T16:44:01+02:00",
-      "summary": "Enterprise investment in AI is booming. Gartner is calling 2026 an “inflection year” for organizations to align their AI projects with strategic business objectives. As the pressure to prove ROI mounts, executives and technology leaders are looking to agentic AI to drive the measurable financial outcomes their businesses seek. A prime opportunity for AI agen",
-      "areas": [
-        "ai-agents",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
       },
       "priority": 100,
       "action": "Read",
@@ -339,42 +340,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "28fd6d4b1a1b3474",
-      "title": "Quoting Sean Lynch",
-      "url": "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-19T22:45:49+00:00",
-      "summary": "The real valuable capability MCP offers over skills/CLI is isolating the auth flow outside of the agent’s context window, and potentially out of the harness completely. [...] Maybe the idealized form of MCP is just an auth gateway for the API and nothing else. That’d still be a win. — Sean Lynch , comment on Hacker News Tags: model-context-protocol , llms , ",
-      "areas": [
-        "ai-agents",
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "mcp"
-        ],
-        "models": [
-          "llm"
-        ],
-        "developer-tools": [
-          "cli",
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "f88be3ce19efa291",
       "title": "New usage analytics and updated spend controls for enterprises",
       "url": "https://openai.com/index/chatgpt-enterprise-spend-controls",
@@ -558,6 +523,37 @@
         "risk": 1
       },
       "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "9ba0954fcfd8ada0",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "source": "GitHub Blog",
+      "published": "2026-07-02T18:00:00+02:00",
+      "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months. The post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ],
+        "enterprise-ai": [
+          "workflow"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -784,75 +780,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "622bbba118983913",
-      "title": "Xbox testing disc-to-digital feature that digitizes a physical game collection",
-      "url": "https://www.theverge.com/report/960173/microsoft-xbox-disc-to-digital-feature-physical-game-collection",
-      "source": "The Verge",
-      "published": "2026-07-01T13:41:23-04:00",
-      "summary": "Microsoft will likely soon follow Sony and stop the production of physical discs for Xbox games. But instead of leaving physical discs behind entirely, sources familiar with Microsoft's plans tell me the company has quietly been working on a disc-to-digital feature that will allow Xbox owners to digitize their existing physical game collections. Xbox employe",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ],
-        "data-platforms": [
-          "etl"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "bfa1e5bb0dc2456f",
-      "title": "Building tech in the world’s secret R&D hub",
-      "url": "https://www.technologyreview.com/2026/06/30/1139661/building-tech-in-the-worlds-secret-rd-hub/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-30T12:23:30+02:00",
-      "summary": "Apple. Anthropic. Disney Research. Google. Meta. Microsoft. NVIDIA. OpenAI. Few places outside Silicon Valley can claim R&D hubs from all of these companies. Fewer still are concentrated in a city of just over 400,000 people—roughly half the size of San Francisco. Over the past two decades, however, many of the world’s most influential technology companies…",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "c1eb090a73ced5c0",
       "title": "Predicting model behavior before release by simulating deployment",
       "url": "https://openai.com/index/deployment-simulation",
@@ -883,6 +810,38 @@
         "risk": 1
       },
       "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "a66b730d9af9866c",
+      "title": "Can Cursor Remain a Platform for OpenAI and Anthropic’s Models Inside SpaceX?",
+      "url": "https://www.wired.com/story/can-cursor-remain-an-open-platform-inside-of-spacex/",
+      "source": "Wired",
+      "published": "2026-07-02T20:01:20+02:00",
+      "summary": "Cursor hopes to continue offering third-party AI models after it's acquired by SpaceX, testing the relationships between frontier AI labs.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ],
+        "developer-tools": [
+          "ide",
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1177,36 +1136,6 @@
         ],
         "developer-tools": [
           "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "e45a75f0043b947e",
-      "title": "Datasette Apps: Host custom HTML applications inside Datasette",
-      "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-18T23:58:38+00:00",
-      "summary": "Today we launched a new plugin for Datasette, datasette-apps , with this launch announcement post on the Datasette project blog. That post has the what , but I'm going to expand on that a little bit here to provide the why . The TL;DR Datasette Apps are self-contained HTML+JavaScript applications that run in a tightly constrained <iframe> sandbox hosted on y",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -1537,65 +1466,32 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "2f867edd87b0de1c",
-      "title": "From pledge to practice: Building a more inclusive open source ecosystem",
-      "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
-      "source": "GitHub Blog",
-      "published": "2026-06-22T19:20:31+02:00",
-      "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. The post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog .",
+      "id": "cdd67a439f418f0a",
+      "title": "Understand to participate",
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-02T17:07:14+00:00",
+      "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me: Understand to participate Geoffrey was talking about the challenge of collaborating with coding agents as they construct increasingly large and sophisticated changes, and the need to avoid taking on cognitive debt as your understanding drifts from how the code",
       "areas": [
-        "developer-tools"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
+        "ai-agents": [
+          "agent",
+          "agents",
+          "coding agent"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 2,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "2adb21bf69ca4ffb",
-      "title": "New attack provides one more reason why AI browsers are a bad idea",
-      "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
-      "source": "Ars Technica",
-      "published": "2026-06-30T22:03:14+02:00",
-      "summary": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
-      "areas": [
-        "developer-tools",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
       "id": "edd3019a4dd9cd31",
@@ -1707,24 +1603,117 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "30faaf883f55dfa8",
-      "title": "Meta, like SpaceX, looks to turn excess AI compute into cash",
-      "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/",
-      "source": "TechCrunch",
-      "published": "2026-07-01T15:43:07+02:00",
-      "summary": "Meta is developing plans for a cloud infrastructure business, selling access to AI compute power and models. The move would pit it against the big cloud providers like Amazon Web Services, Google Cloud, and Microsoft Azure.",
+      "id": "1715f1a058519094",
+      "title": "Claude-real-video － any LLM can watch a video",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "source": "Hacker News",
+      "published": "2026-07-02T21:10:12+02:00",
+      "summary": "Comments",
       "areas": [
         "developer-tools",
-        "enterprise-ai"
+        "models"
       ],
       "matchedKeywords": {
+        "models": [
+          "llm",
+          "claude"
+        ],
         "developer-tools": [
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "54171ac83802273b",
+      "title": "Trump gets OpenAI to offer US 5% stake, far lower than Sanders’ target",
+      "url": "https://arstechnica.com/tech-policy/2026/07/openai-floats-giving-us-5-stake-to-win-over-ai-haters/",
+      "source": "Ars Technica",
+      "published": "2026-07-02T17:12:25+02:00",
+      "summary": "Insiders say Sam Altman is in active talks with the Trump administration.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "d853d7a5392c1205",
+      "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
+      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+      "source": "TechCrunch",
+      "published": "2026-07-02T15:53:00+02:00",
+      "summary": "Microsoft follows Amazon, OpenAI, and Anthropic with its new AI deployment group.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
         ],
         "enterprise-ai": [
-          "microsoft",
-          "google cloud",
-          "azure"
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "56b8db13c496a9ec",
+      "title": "The Download: a startup has a solution for AI’s groupthink problem",
+      "url": "https://www.technologyreview.com/2026/07/02/1140027/the-download-ai-groupthink-llms/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-02T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. LLMs are stuck in a groupthink groove. This startup is trying to get them out. Open up your chatbot of choice—Claude, ChatGPT, Gemini—and type “Give me a random number between 1…",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "claude",
+          "gpt",
+          "gemini"
+        ],
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -1831,102 +1820,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "76a33854f6c2edbe",
-      "title": "Senior SWE-Bench: open-source benchmark that assesses agents as senior engineers",
-      "url": "https://senior-swe-bench.snorkel.ai/",
+      "id": "fdb33ff714869583",
+      "title": "Mystery identity of 'Green Boots' climber is finally solved after DNA test",
+      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html",
       "source": "Hacker News",
-      "published": "2026-07-02T04:55:16+02:00",
+      "published": "2026-07-03T00:44:04+02:00",
       "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5defe5a2b13cc24e",
-      "title": "Cloudflare’s new policy pushes AI companies to pay for publishers’ content",
-      "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
-      "source": "TechCrunch",
-      "published": "2026-07-01T19:48:37+02:00",
-      "summary": "Cloudflare is giving AI companies until September 15 to separate web crawlers used for search from those used for AI training and agents, or risk being blocked by default on many publisher sites.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "2835c3a795f81a2a",
-      "title": "Anthropic Added a New Security Measure to Get Back Into the Trump Administration’s Good Graces",
-      "url": "https://www.wired.com/story/anthropic-added-a-new-security-measure-to-get-back-into-the-trump-administrations-good-graces/",
-      "source": "Wired",
-      "published": "2026-07-01T18:00:00+02:00",
-      "summary": "The government has removed restrictions on Anthropic’s Fable 5 and Mythos 5 AI models—but there were strings attached.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "fee039b306479a1a",
-      "title": "Sony is killing discs — and showing us why it’s a terrible idea",
-      "url": "https://www.theverge.com/games/960212/sony-playstation-killing-discs-digital-preservation",
-      "source": "The Verge",
-      "published": "2026-07-01T11:00:00-04:00",
-      "summary": "The future of video game preservation just took a major hit. This morning, Sony announced that, starting in January 2028, the company will no longer produce physical PlayStation discs, which means that from that moment on you can only purchase new PS5 games digitally. At the same time, Sony also announced that it's going to […]",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "git",
+          "cli",
           "ide"
         ]
       },
@@ -1942,11 +1847,11 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f4d27f606ebbadcc",
-      "title": "Database Traffic Control",
-      "url": "https://planetscale.com/blog/introducing-database-traffic-control",
+      "id": "ade9535107d302dd",
+      "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
+      "url": "http://www.lmdb.tech/doc/",
       "source": "Hacker News",
-      "published": "2026-06-30T10:58:41+02:00",
+      "published": "2026-07-02T22:01:20+02:00",
       "summary": "Comments",
       "areas": [
         "data-platforms"
@@ -1955,33 +1860,6 @@
         "data-platforms": [
           "data",
           "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "407645c88b74db36",
-      "title": "AI agents are not your “coworkers”",
-      "url": "https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-29T20:00:00+02:00",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Imagine coming in to work to learn that a new underling will report to you. The worker is not a person but an AI tool—one that your company nonetheless calls Alex, an…",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
         ]
       },
       "scores": {
@@ -2213,32 +2091,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "90b1014c61493427",
-      "title": "datasette-acl 0.6a0",
-      "url": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-18T19:03:13+00:00",
-      "summary": "Release: datasette-acl 0.6a0 This release expands datasette-acl from table-only permissions toward a general resource-sharing system. Alex Garcia did most of the work for this release - we're fleshing out the plugin that will allow multi-user Datasette instances finely grained control over who can access which resources within Datasette. Tags: datasette , al",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "7b613419add80c79",
       "title": "Improving health intelligence in ChatGPT",
       "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
@@ -2344,48 +2196,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a57c68480a3fe5d6",
-      "title": "Improving token efficiency for GitHub Copilot in VS Code",
-      "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
-      "source": "Lobsters",
-      "published": "2026-07-02T04:32:44+02:00",
-      "summary": "Comments",
+      "id": "9bc58a047f1918b2",
+      "title": "Mark Zuckerberg tells staff that AI agents haven’t progressed as quickly as he’d hoped",
+      "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/",
+      "source": "TechCrunch",
+      "published": "2026-07-03T01:38:10+02:00",
+      "summary": "At an internal meeting, the Meta CEO reportedly said that AI development efforts were not moving as quickly as anticipated.",
       "areas": [
-        "developer-tools"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "aa90dc0bc734fc81",
-      "title": "Which GitHub features are needed in a code forge before you can migrate?",
-      "url": "https://lobste.rs/s/w01x4p/which_github_features_are_needed_code",
-      "source": "Lobsters",
-      "published": "2026-07-01T12:22:06+02:00",
-      "summary": "Which GitHub features would you consider a blocker for migrating to a different code forge, and in what order do you prioritize them? Context: I am heads down building a code forge ( https://juju.bi ) based on three ideas: Code collaboration part should work offline Should be compatible with GitHub API (like how some services are considered S3 compatible) Su",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "ide"
+        "ai-agents": [
+          "agent",
+          "agents"
         ]
       },
       "scores": {
@@ -2405,7 +2228,7 @@
       "url": "https://simonwillison.net/2026/Jun/30/anthropic/#atom-everything",
       "source": "Simon Willison",
       "published": "2026-06-30T23:58:15+00:00",
-      "summary": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. — Anthropic , on Twitter Tags: anthropic , claude , generative-ai , claude-mythos , ai , llms",
+      "summary": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5. We'll begin restoring access tomorrow, and will share an update soon. — Anthropic , on Twitter Tags: anthropic , claude , generative-ai , claude-mythos-fable , ai , llms",
       "areas": [
         "models"
       ],
@@ -2507,78 +2330,123 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "478187478294e29d",
-      "title": "After spooking Trump into safety testing, Anthropic AI models get global release",
-      "url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release/",
-      "source": "Ars Technica",
-      "published": "2026-07-01T18:44:18+02:00",
-      "summary": "US lifts curbs on Anthropic’s advanced Fable and Mythos models.",
+      "id": "4efc01bd38b62f58",
+      "title": "Virginia bans sale of geolocation data",
+      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
+      "source": "Hacker News",
+      "published": "2026-07-02T23:03:45+02:00",
+      "summary": "Comments",
       "areas": [
-        "models",
-        "privacy-risk"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "f7fb596c1c0555af",
-      "title": "Motorola Phones Now Have a Built-In Travel eSIM for Mobile Data Outside the US",
-      "url": "https://www.wired.com/story/exclusive-motorola-phones-now-get-a-built-in-travel-esim/",
-      "source": "Wired",
-      "published": "2026-07-01T15:00:00+02:00",
-      "summary": "Available in select markets thanks to a partnership with Gigs, Motorola phone owners have one less hurdle to clear when signing up for a data-only eSIM before traveling abroad.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
         "data-platforms": [
           "data"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d23ff2d7c9311d89",
-      "title": "Healthy but sedentary people show early decline in cellular energy production",
-      "url": "https://news.cuanschutz.edu/news-stories/healthy-but-sedentary-individuals-show-early-decline-in-cellular-energy-production",
+      "id": "148b484a5cdd8cfe",
+      "title": "Anthropic is discussing a new custom chip with Samsung",
+      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "source": "TechCrunch",
+      "published": "2026-07-02T20:31:09+02:00",
+      "summary": "The news comes about a week after OpenAI announced its own custom AI chip in a partnership with Broadcom.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9baf6ce7eeff1764",
+      "title": "Meta has a new app called Pocket that is absolutely nothing like the old Pocket",
+      "url": "https://www.theverge.com/tech/961086/meta-pocket-app-gizmo-ai",
+      "source": "The Verge",
+      "published": "2026-07-02T17:09:06-04:00",
+      "summary": "Mozilla shut down the well-loved read-it-later Pocket app last year, and now Meta is launching an app called Pocket with an entirely different, AI-focused pitch: this new app lets you make and share little interactive \"gizmos\" built from an AI prompt, as reported by Business Insider. Meta CEO Mark Zuckerberg is all in on AI […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "186a2200b2f688e5",
+      "title": "PeerTube is a free, decentralized and federated video platform",
+      "url": "https://github.com/Chocobozzz/PeerTube",
       "source": "Hacker News",
-      "published": "2026-07-02T00:48:56+02:00",
+      "published": "2026-07-02T13:17:45+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "cli"
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "086d49d20400df21",
+      "title": "Inside the Luddite Festival Harnessing Gen Z’s Rage Against Big Tech",
+      "url": "https://www.wired.com/story/inside-the-luddite-festival-harnessing-gen-zs-rage-against-big-tech/",
+      "source": "Wired",
+      "published": "2026-07-02T12:00:00+02:00",
+      "summary": "New York City’s Summer of Ludd festival is teaching people how to live offline amid the suffocating presence of Big Tech.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -2619,12 +2487,42 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e6512ba17570c649",
-      "title": "Neocloud Together AI raises $800M, leaps to $8.3B valuation",
-      "url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-      "source": "TechCrunch",
-      "published": "2026-07-01T20:29:14+02:00",
-      "summary": "The AI neocloud provider, which specializes in hosting open source models, last raised at a $3.3 billion valuation in early 2025.",
+      "id": "5bd87bbe8f2bd6b6",
+      "title": "T-Mobile moving tens of thousands of virtual machines off VMware amid lawsuit",
+      "url": "https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/",
+      "source": "Ars Technica",
+      "published": "2026-07-01T23:21:21+02:00",
+      "summary": "T-Mobile wants Broadcom to keep supporting its VMware perpetual licenses.",
+      "areas": [
+        "enterprise-ai",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "aws"
+        ],
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 68,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "779345f9a2a3aa30",
+      "title": "Sony’s PlayStation disc factory is already being repurposed",
+      "url": "https://www.theverge.com/games/961203/sony-austria-thalgau-end-disc-production-microlenses-instead",
+      "source": "The Verge",
+      "published": "2026-07-02T21:05:13-04:00",
+      "summary": "The video game disc is dead, and Sony's been planning to kill it for some time, according to a report out of Austria. The man who leads Sony's discmaking operations, Sony DADC president Dietmar Tanzer, told ORF Salzburg that the company's Thalgau plant produces 600,000 discs every day, half of which are for PlayStation. But […]",
       "areas": [
         "developer-tools"
       ],
@@ -2636,22 +2534,48 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "1306b097aabae2ea",
-      "title": "For first time, a cell built from scratch grows and divides",
-      "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/",
-      "source": "Hacker News",
-      "published": "2026-07-01T16:20:52+02:00",
+      "id": "5d925b532565b574",
+      "title": "No LLM code in dependencies",
+      "url": "https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/",
+      "source": "Lobsters",
+      "published": "2026-07-02T20:43:32+02:00",
       "summary": "Comments",
       "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9b63f00373be531e",
+      "title": "Travel app Hopper to pay $35M in FTC settlement over ‘unfairly’ charging hidden fees",
+      "url": "https://techcrunch.com/2026/07/02/travel-app-hopper-to-pay-35m-in-ftc-settlement-over-unfairly-charging-hidden-fees/",
+      "source": "TechCrunch",
+      "published": "2026-07-02T20:39:14+02:00",
+      "summary": "Hopper will pay $35 million to settle FTC allegations that it used deceptive “dark patterns” to hide fees and mislead travelers about the costs and benefits of services.",
+      "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
@@ -2662,21 +2586,21 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "8ffc4d265ac0fc0e",
-      "title": "Sony to end physical PlayStation game disc production in 2028",
-      "url": "https://techcrunch.com/2026/07/01/sony-to-end-physical-playstation-game-discs-in-2028/",
-      "source": "TechCrunch",
-      "published": "2026-07-01T16:16:32+02:00",
-      "summary": "Sony will stop producing physical discs for all new PlayStation games beginning in 2028, as the company embraces an all-digital future.",
+      "id": "7b395d63815a6e1d",
+      "title": ".gitignore Isn’t the Only Way To Ignore Files in Git",
+      "url": "https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/",
+      "source": "Lobsters",
+      "published": "2026-07-02T18:33:28+02:00",
+      "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
@@ -2688,37 +2612,89 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "aa2188f63f4dae9f",
-      "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
-      "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+      "id": "ef865540540a15b7",
+      "title": "OpenAI proposed donating 5% of its equity to a US sovereign wealth fund",
+      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
       "source": "TechCrunch",
-      "published": "2026-07-01T04:16:06+02:00",
-      "summary": "The Trump administration's erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases.",
+      "published": "2026-07-02T17:20:51+02:00",
+      "summary": "OpenAI CEO Sam Altman has reportedly proposed giving 5% of the company’s equity to a U.S. sovereign wealth fund, reviving discussions about letting the public share in the financial gains from the AI boom.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "anthropic"
+          "openai"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "d3b1b5c27cf2bbef",
+      "title": "The best July 4th sales we found so far",
+      "url": "https://www.theverge.com/gadgets/958906/best-july-4th-tech-deal-sale",
+      "source": "The Verge",
+      "published": "2026-07-02T16:15:45-04:00",
+      "summary": "July 4th sales are typically a precursor to what we’d see during a mid-July Prime Day, but obviously things are flipped around this year. Last week’s big Prime Day sale is over, yet there are a number of familiar deals still poking around in the week leading up to the nation’s birthday. Best Buy is […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1887f68965f09477",
+      "title": "Woman's hip replacement disintegrates, causing severe metal poisoning",
+      "url": "https://arstechnica.com/health/2026/07/womans-puzzling-decline-turns-out-to-be-cobalt-poisoning-from-hip-replacement/",
+      "source": "Ars Technica",
+      "published": "2026-07-02T16:04:28+02:00",
+      "summary": "Doctors find grey fluid and dead, metallic flesh inside poisoned woman's hip.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     }
