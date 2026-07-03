@@ -37,7 +37,7 @@ Public-safe:
 - public-safe generated skill metadata;
 - `.go/` repo-local workflow state.
 
-Not public-safe and must stay out of the repo:
+Forbidden / not public-safe and must stay out of the repo:
 
 - private vault exports;
 - secrets or tokens;
