@@ -49,7 +49,7 @@
 
 ### Cluster F — remaining thin hubs/details
 
-- Enriched `/guides/` with reader promise, quality bar, candidate queue, editorial checklist, and navigation role.
+- Enriched `/guides/` with reader promise, quality bar, article queue, editorial checklist, and navigation role.
 - Added compact homepage shelf-orientation and reader-path notes clarifying Projects vs Systems vs Methodologies vs Skills vs Setup.
 - Enriched all 5 Personal Knowledge System detail pages with input/output protocol, review checklist, concrete example, and public-boundary cards where needed.
 - Enriched `/tech-stack/` with curation/proof/update rules and all 5 tech-stack detail pages with decision/proof, update trigger, concrete example, and public-boundary sections where needed.

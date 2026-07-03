@@ -1,0 +1,41 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "make-site-repo-public-complete",
+  "project": "viggomeesters-site",
+  "status": "active",
+  "summary": "Make viggomeesters.nl repo public-complete",
+  "description": "Apply public repo-complete hardening to the static personal site repository, verify privacy/readiness, and make GitHub metadata public-ready.",
+  "scope": {
+    "read": [
+      "README.md",
+      "package.json",
+      "scripts/**",
+      ".go/**"
+    ],
+    "modify": [
+      "README.md",
+      "LICENSE",
+      "SECURITY.md",
+      "CONTRIBUTING.md",
+      "CHANGELOG.md",
+      ".github/**",
+      "assets/**",
+      "docs/**",
+      ".go/**"
+    ]
+  },
+  "acceptance": [
+    "repo_complete public validate has no hard blockers or any remaining blockers are explicitly proven false-positive/out-of-scope.",
+    "GitHub metadata is public-ready and visibility is handled deliberately."
+  ],
+  "verification": [
+    "npm run check",
+    "python3 /home/viggo/github/viggo-agent-skills/scripts/repo_complete_bootstrap.py --mode validate --path . --public --json"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-03T22:39:38+02:00"
+  },
+  "evidence": []
+}

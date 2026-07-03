@@ -1,0 +1,172 @@
+{
+  "$schema": "https://viggomeesters.github.io/schemas/repo-vision-contract.schema.json",
+  "schema_version": "1.0.0",
+  "artifact_kind": "repo_design_vision_contract",
+  "repo": {
+    "name": "viggomeesters.nl",
+    "primary_users": [
+      "technical visitors",
+      "Viggo",
+      "agents maintaining the public site"
+    ],
+    "product_surface": "public_static_site"
+  },
+  "vision": {
+    "one_line": "A static public home for Viggo Meesters' projects, systems, guides, and proof-first working style.",
+    "north_star": "A visitor can understand what Viggo builds, how he works, and which public artifacts are worth opening within a few clicks.",
+    "promise": "A fresh clone should explain the site, validate all public pages locally, and preserve the boundary between public narrative and private vault context."
+  },
+  "principles": [
+    {
+      "id": "agent-first",
+      "title": "Agent-readable contracts",
+      "rule": "Keep workflow and review context in explicit files that agents can validate without private chat history.",
+      "good": [
+        ".go JSON state",
+        "docs/vision.json",
+        "local checks"
+      ],
+      "bad": [
+        "implicit context",
+        "manual-only handoffs",
+        "unverified claims"
+      ]
+    },
+    {
+      "id": "json-first",
+      "title": "JSON-first machine contracts",
+      "rule": "Machine-consumable workflow state should be JSON or JSONL, with Markdown used for public narrative only.",
+      "good": [
+        ".go/project.json",
+        ".go/tasks/*.json",
+        "events.jsonl"
+      ],
+      "bad": [
+        "prose as the only source of truth",
+        "generated evidence only in Markdown"
+      ]
+    },
+    {
+      "id": "static-first",
+      "title": "Static first",
+      "rule": "Keep the public site as plain static files unless a concrete repeated maintenance problem justifies tooling.",
+      "good": [
+        "HTML pages",
+        "local check script",
+        "no build dependency"
+      ],
+      "bad": [
+        "framework drift",
+        "runtime-only rendering",
+        "unnecessary dependency churn"
+      ]
+    },
+    {
+      "id": "public-safe",
+      "title": "Public-safe by default",
+      "rule": "Only publish content that is safe for a public GitHub repository and public website.",
+      "good": [
+        "source labels",
+        "public project summaries",
+        "generated safe skill metadata"
+      ],
+      "bad": [
+        "private vault exports",
+        "customer data",
+        "secrets",
+        "private screenshots"
+      ]
+    },
+    {
+      "id": "proof-first",
+      "title": "Proof-first delivery",
+      "rule": "Every meaningful site or repo change should be backed by local checks and, when visual, browser evidence.",
+      "good": [
+        "npm run check",
+        "repo-local validate/readback",
+        "scoped commits"
+      ],
+      "bad": [
+        "fake done",
+        "unchecked public pages",
+        "broad unrelated edits"
+      ]
+    },
+    {
+      "id": "repo-local-workflow",
+      "title": "Repo-local agent continuity",
+      "rule": "The repository owns its `.go/` workflow state so future agents can continue without private chat or vault state.",
+      "good": [
+        ".go/project.json",
+        ".go/hierarchy.json",
+        ".go/tasks"
+      ],
+      "bad": [
+        "hidden central execution state as the only source",
+        "manual task JSON when CLI primitives exist"
+      ]
+    }
+  ],
+  "non_goals": [
+    "Publishing private vault contents",
+    "Replacing the static site with a framework by default",
+    "Treating generated process notes as visitor-facing copy",
+    "Making the repository depend on private local paths"
+  ],
+  "public_safety": {
+    "forbidden": [
+      "secrets",
+      "customer data",
+      "private screenshots",
+      "proprietary copied content",
+      "raw private vault exports"
+    ],
+    "required_boundaries": [
+      "public-safe summaries only",
+      "canonical URLs on viggomeesters.com",
+      "explicit source or freshness labels when relevant"
+    ]
+  },
+  "acceptance_scorecard": [
+    {
+      "id": "site-check",
+      "question": "Can a fresh clone validate the public site?",
+      "pass_condition": "npm run check passes without private dependencies."
+    },
+    {
+      "id": "repo-local",
+      "question": "Can an agent read direction and next work locally?",
+      "pass_condition": "go-workflow-stack route/status/validate/readback pass against .go."
+    },
+    {
+      "id": "public-ready",
+      "question": "Is the repo safe and understandable as a public GitHub project?",
+      "pass_condition": "README, license, security, changelog, metadata, and privacy review are present."
+    }
+  ],
+  "review_checklist": [
+    "Run npm run check",
+    "Run repo-local validate/readback for .go changes",
+    "Update sitemap/canonical URLs for new public pages",
+    "Keep private operational details out of public files",
+    "Report any privacy false positives explicitly before publishing"
+  ],
+  "maturity_model": [
+    {
+      "level": "L0",
+      "state": "present",
+      "meaning": "The static site and repo-local state exist."
+    },
+    {
+      "level": "L1",
+      "state": "tested",
+      "meaning": "Local site checks and repo-local checks pass."
+    },
+    {
+      "level": "L2",
+      "state": "public-ready",
+      "meaning": "GitHub metadata, docs, release, and privacy review are complete."
+    }
+  ],
+  "residual_risk_wording": "This repository is public-facing. High-level descriptions of personal systems are intentional; raw private operational data is not."
+}

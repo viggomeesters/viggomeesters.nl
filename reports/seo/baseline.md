@@ -4,8 +4,8 @@ Generated: current working tree
 
 ## Summary
 
-- Public pages: 234
-- Sitemap entries: 234
+- Public pages: 235
+- Sitemap entries: 235
 - Issue occurrences: 283
 
 ## Top issue types
@@ -27,8 +27,9 @@ Generated: current working tree
 | seo_evergreen | 2 | 0 | 0 | 0 | 0 |
 | guides_articles | 5 | 0 | 0 | 0 | 5 |
 | methodologies | 7 | 0 | 0 | 0 | 7 |
-| homepage | 1 | 0 | 0 | 0 | 1 |
+| homepage | 1 | 0 | 0 | 0 | 0 |
 | project_pages | 5 | 0 | 0 | 0 | 5 |
+| other | 1 | 0 | 0 | 0 | 1 |
 | signal_dashboards | 2 | 0 | 0 | 0 | 2 |
 | tech_stack | 7 | 0 | 0 | 0 | 7 |
 
@@ -36,7 +37,6 @@ Generated: current working tree
 
 | Route | Cluster | Words | JSON-LD | Issues |
 |---|---|---:|---:|---|
-| / | homepage | 262 | 0 |  |
 | /agent-brain/ | personal_knowledge_system | 395 | 0 |  |
 | /agent-workflow-loop/ | agent_workflow | 292 | 0 |  |
 | /agent-workflow/ | agent_workflow | 331 | 0 |  |
@@ -47,15 +47,16 @@ Generated: current working tree
 | /cli-agents-guide/ | guides_articles | 1621 | 0 |  |
 | /database-types-agent-first-systems/ | guides_articles | 801 | 0 |  |
 | /foci-fear-of-choosing-incorrectly/ | guides_articles | 1150 | 0 |  |
-| /funnel-analysis/ | methodologies | 1020 | 0 |  |
-| /guides/ | guides_articles | 261 | 0 |  |
-| /helicopter-to-detail/ | methodologies | 651 | 0 |  |
+| /funnel-analysis/ | methodologies | 1018 | 0 |  |
+| /guides/ | guides_articles | 296 | 0 |  |
+| /helicopter-to-detail/ | methodologies | 649 | 0 |  |
 | /jsonl-agent-first-data-structures/ | guides_articles | 1155 | 0 |  |
 | /jsonl-vault-spike/ | project_pages | 258 | 0 |  |
-| /knowledge-pyramid/ | methodologies | 970 | 0 |  |
+| /knowledge-pyramid/ | methodologies | 968 | 0 |  |
 | /mega-vault-viewer/ | project_pages | 268 | 0 |  |
-| /methodologies/ | methodologies | 281 | 0 |  |
+| /methodologies/ | methodologies | 279 | 0 |  |
 | /obsidian-plugins/ | project_pages | 420 | 0 |  |
+| /omad-fallback-meal/ | other | 860 | 0 |  |
 | /personal-knowledge-system/ | personal_knowledge_system | 278 | 0 |  |
 | /personal-knowledge-system/agent-interfaces/ | personal_knowledge_system | 261 | 0 |  |
 | /personal-knowledge-system/markdown-vault/ | personal_knowledge_system | 285 | 0 |  |
