@@ -3,7 +3,7 @@
   "kind": "task",
   "id": "make-site-repo-public-complete",
   "project": "viggomeesters-site",
-  "status": "active",
+  "status": "done",
   "summary": "Make viggomeesters.nl repo public-complete",
   "description": "Apply public repo-complete hardening to the static personal site repository, verify privacy/readiness, and make GitHub metadata public-ready.",
   "scope": {
@@ -37,5 +37,11 @@
     "agent": "hermes",
     "claimed_at": "2026-07-03T22:39:38+02:00"
   },
-  "evidence": []
+  "evidence": [
+    {
+      "created_at": "2026-07-03T22:44:03+02:00",
+      "agent": "hermes",
+      "summary": "Public repo-complete scaffold applied; GitHub visibility/description/homepage/topics set public-ready; npm run check passed; repo-local validate/readback passed; repo_complete public validate is DEELTIJD only due documented filename false positives in docs/public-readiness-review.md."
+    }
+  ]
 }
