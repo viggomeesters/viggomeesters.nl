@@ -1,0 +1,28 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "review-repo-local-workflow-next-step",
+  "project": "viggomeesters-site",
+  "status": "open",
+  "summary": "Review next repo-local workflow adoption step",
+  "description": "Decide whether the next repo-local workflow pilot should be another real project repo or an exporter/importer slice. This is intentionally a planning placeholder created by the v0.2 task-create smoke.",
+  "scope": {
+    "read": [
+      ".go/**"
+    ],
+    "modify": [
+      ".go/**"
+    ]
+  },
+  "acceptance": [
+    "Next adoption step is explicitly chosen or deferred."
+  ],
+  "verification": [
+    "python3 ~/github/go-workflow-stack/cli/go.py validate ."
+  ],
+  "claim": {
+    "agent": null,
+    "claimed_at": null
+  },
+  "evidence": []
+}

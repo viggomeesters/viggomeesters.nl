@@ -37,7 +37,8 @@
           "id": "repo-local-workflow",
           "name": "Repo-local agent workflow pilot",
           "tasks": [
-            "document-repo-local-workflow-pilot"
+            "document-repo-local-workflow-pilot",
+            "review-repo-local-workflow-next-step"
           ]
         }
       ]
