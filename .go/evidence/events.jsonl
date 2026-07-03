@@ -1,1 +1,2 @@
 {"schema":"go-workflow.repo-local.event.v1","kind":"event","event":"run.checked","created_at":"2026-07-02T00:00:00+00:00","task_id":"task-schema-smoke","agent":"fixture","data":{"result":"seed"}}
+{"schema": "go-workflow.repo-local.event.v1", "kind": "event", "event": "task.finished", "created_at": "2026-07-03T14:28:58+02:00", "task_id": "document-repo-local-workflow-pilot", "agent": "hermes", "data": {"evidence": "README documents repo-local workflow pilot; npm run check, git diff --check, stack validate and readback passed."}}

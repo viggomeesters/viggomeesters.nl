@@ -2,7 +2,7 @@
   "schema": "go-workflow.repo-local.task.v1",
   "kind": "task",
   "id": "document-repo-local-workflow-pilot",
-  "status": "open",
+  "status": "done",
   "project": "viggomeesters-site",
   "summary": "Document the repo-local workflow pilot in README",
   "description": "Add a short README section that explains this repo now carries pilot .go workflow state and how to validate/readback it with go-workflow-stack. Do not change public page rendering.",
@@ -29,6 +29,15 @@
     "python3 ~/github/go-workflow-stack/cli/go.py validate .",
     "python3 ~/github/go-workflow-stack/cli/go.py readback ."
   ],
-  "claim": {},
-  "evidence": []
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-03T14:28:38+02:00"
+  },
+  "evidence": [
+    {
+      "created_at": "2026-07-03T14:28:58+02:00",
+      "agent": "hermes",
+      "summary": "README documents repo-local workflow pilot; npm run check, git diff --check, stack validate and readback passed."
+    }
+  ]
 }

@@ -21,6 +21,18 @@ npm run check:seo
 
 The check script validates internal links, canonical URLs, sitemap coverage, crawler configuration, structured-data presence, favicon/manifest wiring, IndexNow setup, and Vercel routing assumptions.
 
+## Repo-local workflow pilot
+
+This repo carries pilot `.go/` workflow state so a fresh clone can read the site's direction, constraints, hierarchy, and next work without private vault context.
+
+```sh
+python3 ~/github/go-workflow-stack/cli/go.py route . --json
+python3 ~/github/go-workflow-stack/cli/go.py validate .
+python3 ~/github/go-workflow-stack/cli/go.py readback .
+```
+
+The stack owns the tooling; this repo owns its own `.go/` project state.
+
 ## Search indexing
 
 ```sh
