@@ -64,9 +64,17 @@ def esc(value: str) -> str:
 
 
 
-def public_description(value: str) -> str:
-    """Turn runtime skill-router descriptions into visitor-facing public copy."""
+def public_description(value: str, name: str = "skill") -> str:
+    """Turn runtime skill-router descriptions into visitor-facing public copy.
+
+    The generated skill pages are numerous, so this also normalizes snippet
+    length for search pages: specific enough to avoid duplicate/short metadata,
+    but short enough for normal search snippets.
+    """
     raw = (value or "").strip()
+    if not raw or raw.lower().startswith("enabled hermes skill from"):
+        raw = f"Hermes workflow summary for {name}, published as a public registry card with private runbook details intentionally omitted."
+
     lower = raw.lower()
     rest = raw
     prefix = ""
@@ -83,8 +91,6 @@ def public_description(value: str) -> str:
 
     if prefix:
         rest = re.sub(r"^(Viggo asks for|Viggo asks|Viggo wants|the user asks for|the user asks|requests for|requests)\s+", "", rest, flags=re.IGNORECASE).strip()
-        # Runtime descriptions often begin with infinitives or temporal clauses:
-        # "to find...", "during audits...". Make those read like public summaries.
         if rest.lower().startswith("to "):
             text = "Workflow to " + rest[3:]
         elif rest.lower().startswith("during "):
@@ -98,12 +104,26 @@ def public_description(value: str) -> str:
     else:
         text = raw
 
-    text = text.replace("Viggo asks for", "requests for")
-    text = text.replace("Viggo asks", "requests")
-    text = text.replace("Viggo wants", "requests")
-    text = text.replace("the user asks for", "requests for")
-    text = text.replace("the user asks", "requests")
-    return text[:500]
+    replacements = {
+        "Viggo asks for": "requests for",
+        "Viggo asks": "requests",
+        "Viggo wants": "requests",
+        "the user asks for": "requests for",
+        "the user asks": "requests",
+    }
+    for old, new in replacements.items():
+        text = text.replace(old, new)
+
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(re.sub(r"[^A-Za-z0-9]", "", text)) < 24:
+        text = f"Hermes workflow summary for {name}, published as a public registry card with private runbook details intentionally omitted."
+    if len(text) > 158:
+        cut = text[:155].rsplit(" ", 1)[0].rstrip(" ,;:")
+        text = cut + "."
+    if len(text) < 80:
+        suffix = " It is shown as public metadata only; private steps and local paths stay inside Hermes."
+        text = (text.rstrip(".") + "." + suffix)[:168].rsplit(" ", 1)[0].rstrip(" ,;:") + "."
+    return text
 
 def slugify(value: str) -> str:
     value = value.lower().replace("/", "-")
@@ -124,7 +144,7 @@ def parse_frontmatter(text: str) -> dict[str, str]:
 
 def page(title: str, desc: str, canonical: str, body: str, include_script: bool = True) -> str:
     script = f"\n  {SCRIPT}" if include_script else ""
-    return f'''<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>{esc(title)}</title>\n  <meta name="description" content="{esc(desc)}">\n  <link rel="canonical" href="{esc(canonical)}">\n  <meta name="theme-color" content="#0c0c0f">\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n  <style>{CSS}</style>\n</head>\n<body>\n  <main class="page">\n{body}\n    <div class="footer">&copy; 2026 Viggo Meesters</div>\n  </main>{script}\n</body>\n</html>\n'''
+    return f'''<!DOCTYPE html>\n<html lang="en">\n<head>\n  <meta charset="UTF-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <title>{esc(title)}</title>\n  <meta name="description" content="{esc(desc)}">\n  <link rel="canonical" href="{esc(canonical)}">\n  <meta name="theme-color" content="#0c0c0f">\n  <link rel="icon" href="/favicon.ico" sizes="any">\n  <link rel="icon" href="/favicon.svg" type="image/svg+xml">\n  <link rel="apple-touch-icon" href="/apple-touch-icon.png">\n  <link rel="manifest" href="/site.webmanifest">\n  <meta property="og:title" content="{esc(title)}">\n  <meta property="og:description" content="{esc(desc)}">\n  <meta property="og:url" content="{esc(canonical)}">\n  <meta property="og:image" content="https://viggomeesters.com/og-image.png">\n  <meta name="twitter:card" content="summary_large_image">\n  <link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n  <style>{CSS}</style>\n  <script defer src="/_vercel/insights/script.js"></script>\n</head>\n<body>\n  <main class="page">\n{body}\n    <div class="footer">&copy; 2026 Viggo Meesters</div>\n  </main>{script}\n</body>\n</html>\n'''
 
 
 def local_descriptions() -> dict[str, dict[str, str]]:
@@ -229,7 +249,7 @@ def regenerate_sitemap() -> None:
 def main() -> None:
     skills = discover()
     for skill in skills:
-        skill["description"] = public_description(skill.get("description", ""))
+        skill["description"] = public_description(skill.get("description", ""), skill.get("name", "skill"))
     out = ROOT / "skills"
     out.mkdir(exist_ok=True)
     clean_obsolete_skill_pages(out, skills)
@@ -240,7 +260,7 @@ def main() -> None:
         body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">Public summary</div><div class="list"><article class="item"><strong>Skill identifier</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>What this page is</strong><p>A public summary card for discovery. Detailed runbooks, private steps, local paths, credentials, and sensitive project context are intentionally not published.</p></article><article class="item"><strong>Registry snapshot</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to see that a workflow exists; the actual workflow runs inside Hermes.</p></article></div></section>'''
         d = out / slugify(skill["name"])
         d.mkdir(exist_ok=True)
-        (d / "index.html").write_text(page(f"{skill['name']} — Skill", skill["description"] or f"Hermes skill {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))
+        (d / "index.html").write_text(page(f"{skill['name']} — Hermes Skill Workflow", skill["description"] or f"Hermes workflow summary for {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))
     sections = []
     for category in sorted(groups):
         cards = []
@@ -249,7 +269,7 @@ def main() -> None:
             cards.append(f'''      <a class="card" data-filter="{esc(filt)}" href="/skills/{slugify(skill['name'])}/"><div class="icon">SK</div><div><h2>{esc(skill['name'])}</h2><p>{esc(skill['description'] or 'No description available.')}</p><div class="tiny"><span>{esc(category)}</span><span>skill</span></div></div></a>''')
         sections.append(f'''    <section class="section" data-skill-section data-category="{esc(category)}" data-total="{len(groups[category])}"><div class="section-title" data-section-title>{esc(category)} · {len(groups[category])}</div><div class="grid">{''.join(cards)}</div></section>''')
     body = f'''    <a class="back" href="/">&larr; viggomeesters.com</a>\n    <header><div class="eyebrow">Hermes skills registry</div><h1 class="title">Skills as reusable operating knowledge.</h1><p class="subtitle">A public snapshot of reusable Hermes skill categories and summaries. Useful as a map of the operating knowledge behind this site without exposing implementation details.</p><div class="meta"><span class="pill">{len(skills)} skills</span><span class="pill">{len(groups)} categories</span><span class="pill">generated {TODAY}</span><span class="pill">public registry snapshot</span></div></header>\n    <input class="search" data-search placeholder="Search skills, categories, descriptions…" aria-label="Search skills">\n    <div class="result-count" data-result-count data-total="{len(skills)}" data-categories="{len(groups)}">{len(skills)} skills across {len(groups)} categories</div>\n{''.join(sections)}'''
-    (out / "index.html").write_text(page("Skills — Viggo Meesters", "Snapshot index of Hermes skills grouped by category, with per-skill public summary pages.", f"{BASE}/skills/", body))
+    (out / "index.html").write_text(page("Hermes Skills Registry — Viggo Meesters", "Snapshot index of Hermes skills grouped by category, with per-skill public summary pages.", f"{BASE}/skills/", body))
     regenerate_sitemap()
     print(f"Generated {len(skills)} skills across {len(groups)} categories")
 

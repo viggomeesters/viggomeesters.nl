@@ -4,24 +4,19 @@ Generated: current working tree
 
 ## Summary
 
-- Public pages: 235
-- Sitemap entries: 235
-- Issue occurrences: 283
+- Public pages: 256
+- Sitemap entries: 256
+- Issue occurrences: 0
 
 ## Top issue types
 
 | Issue | Count |
 |---|---:|
-| short_description | 101 |
-| short_title | 93 |
-| long_description | 54 |
-| duplicate_description | 35 |
 
 ## Clusters
 
 | Cluster | Pages | Issues | Thin | Missing OG image | Missing JSON-LD |
 |---|---:|---:|---:|---:|---:|
-| skills_registry | 191 | 248 | 0 | 0 | 191 |
 | personal_knowledge_system | 8 | 0 | 0 | 0 | 8 |
 | agent_workflow | 6 | 0 | 0 | 0 | 6 |
 | seo_evergreen | 2 | 0 | 0 | 0 | 0 |
@@ -30,6 +25,7 @@ Generated: current working tree
 | homepage | 1 | 0 | 0 | 0 | 0 |
 | project_pages | 5 | 0 | 0 | 0 | 5 |
 | other | 1 | 0 | 0 | 0 | 1 |
+| skills_registry | 212 | 0 | 0 | 0 | 212 |
 | signal_dashboards | 2 | 0 | 0 | 0 | 2 |
 | tech_stack | 7 | 0 | 0 | 0 | 7 |
 

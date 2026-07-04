@@ -86,13 +86,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/omad-fallback-meal/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <loc>https://viggomeesters.com/obsidian-plugins/</loc>
+    <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/obsidian-plugins/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://viggomeesters.com/omad-fallback-meal/</loc>
+    <lastmod>2026-07-02</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -146,13 +146,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/vault-layer/</loc>
-    <lastmod>2026-06-29</lastmod>
+    <loc>https://viggomeesters.com/vault-first-operating-model/</loc>
+    <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/vault-first-operating-model/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://viggomeesters.com/vault-layer/</loc>
+    <lastmod>2026-06-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -213,6 +213,16 @@
   <url>
     <loc>https://viggomeesters.com/skills/agent-correction-loop/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/agent-learning-gate/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/agent-project-lifecycle/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -286,8 +296,23 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/autonomous-execution-continuation/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/aw-lite-autopilot-missions/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/aw-lite-loop-runtime/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/aw-lite-plan-handoffs/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -471,6 +496,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/go-autopilot/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/go-goal/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -493,6 +523,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/go-task/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/go-vision/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -631,6 +666,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/house-radar-frontend/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/huggingface-hub/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -638,6 +678,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/humanizer/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/idea-sparring-demo-translation/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -866,6 +911,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/public-asset-repo-galleries/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/public-asset-repo-hardening/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/public-asset-repo-sanitization/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/public-person-background-check-to-vault/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -891,13 +951,43 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/rental-source-monitoring/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/repo-complete/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/repo-design-vision/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/repo-local-agent-workflow/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/research-paper-writing/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/restic-backup-operations/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/runtime-release-browser-evidence/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/sap-agent-context-development/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -918,6 +1008,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/self-analysis-context-writeback/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/self-reflect/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -1041,6 +1136,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/vault-document-capture/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/vercel-app-versioning/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -1108,6 +1208,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/webshop-cart-automation/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/website-clone-reconstruction/</loc>
+    <lastmod>2026-07-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
