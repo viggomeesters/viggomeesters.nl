@@ -20,7 +20,9 @@
         {
           "id": "guides-indexes",
           "name": "Guides, indexes, and generated public snapshots",
-          "tasks": []
+          "tasks": [
+            "reduce-seo-metadata-issue-baseline"
+          ]
         }
       ]
     },

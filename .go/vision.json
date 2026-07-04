@@ -3,27 +3,42 @@
   "kind": "vision",
   "project": "viggomeesters-site",
   "status": "active",
-  "north_star": "A public personal site that lets technical visitors quickly understand Viggo’s projects, systems, and proof-first working style.",
-  "wedge": "Static, source-backed portfolio pages with enough context to judge the work without private vault access.",
-  "target_user": "Technical visitors, collaborators, recruiters, and future agents maintaining the site.",
-  "core_promise": "A fresh clone plus public pages explain what the site is, how it is verified, and what small work is next.",
+  "north_star": "viggomeesters.com is a calm, public, proof-first map of Viggo’s work: visitors should understand the projects, systems, methods, and current operating style without needing private context.",
+  "wedge": "Static pages with strong internal navigation, source-backed claims, local validation, and repo-local .go state so both humans and agents can maintain the site from a fresh clone.",
+  "target_user": "Technical visitors, collaborators, recruiters, and maintenance agents working from the public repository.",
+  "core_promise": "Every public page should answer three questions quickly: what is this, why does it matter, and what proof or next route exists? The repo should prove the same through scripts/check.sh, repo-complete, and .go readback.",
+  "current_truths": [
+    "The site is intentionally static: no framework, no dependency install path, no hidden build output.",
+    "The repository is public and should stay public-safe by default.",
+    "Local-only validation is canonical while GitHub Actions is unavailable at account level.",
+    "SEO audit output is now the strongest visible improvement backlog: short titles/descriptions and duplicate descriptions dominate the issue count."
+  ],
   "product_principles": [
     "static-first",
     "proof-first",
     "visitor-facing-copy",
     "public-safe metadata",
-    "repo-local agent continuity"
+    "repo-local agent continuity",
+    "SEO fundamentals without content-farm sludge",
+    "one clear navigation shelf per intent"
   ],
   "non_goals": [
-    "no redesign in this pilot",
-    "no production deploy required",
-    "no broad AW Lite migration",
-    "no private vault data in public repo"
+    "no framework migration",
+    "no production deploy unless explicitly requested",
+    "no private vault data or raw agent runbooks in public pages",
+    "no broad rewrite of all pages in one pass",
+    "no generic corporate portfolio copy"
   ],
   "success_metrics": [
-    "npm run check passes",
-    "go-workflow-stack validate/readback passes",
-    "fresh clone route is repo-local",
-    "one small repo-local task is completed with evidence"
+    "scripts/check.sh passes from a fresh clone",
+    "repo_complete public validate returns JA with zero hard blockers",
+    "go-workflow-stack validate/readback passes and reports repo-local mode",
+    "SEO baseline issue count trends down through bounded, page-cluster tasks",
+    "new public pages update canonical URL, sitemap, and local checks together"
+  ],
+  "near_term_focus": [
+    "Use .go tasks for bounded site improvements instead of chat-only intent.",
+    "Reduce high-confidence SEO metadata issues in page clusters.",
+    "Keep public readiness and local validation green after each slice."
   ]
 }

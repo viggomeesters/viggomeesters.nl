@@ -1,0 +1,50 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "reduce-seo-metadata-issue-baseline",
+  "project": "viggomeesters-site",
+  "status": "open",
+  "summary": "Reduce SEO metadata issue baseline on public pages",
+  "description": "Bounded website improvement: use reports/seo/baseline.md to fix a high-confidence cluster of short titles, short descriptions, long descriptions, or duplicate descriptions. Keep copy visitor-facing and avoid content-farm filler.",
+  "scope": {
+    "read": [
+      ".go/**",
+      "reports/seo/**",
+      "*.html",
+      "*/index.html",
+      "scripts/check-site.mjs",
+      "sitemap.xml",
+      "README.md"
+    ],
+    "modify": [
+      ".go/**",
+      "*.html",
+      "*/index.html",
+      "scripts/check-site.mjs",
+      "sitemap.xml",
+      "reports/seo/baseline.json",
+      "reports/seo/baseline.md"
+    ]
+  },
+  "acceptance": [
+    "At least one coherent page cluster has stronger title/meta description copy.",
+    "npm run check and npm run check:seo pass after the change.",
+    "The SEO baseline issue count or the selected issue cluster count is reduced, or any unchanged count is explained with evidence."
+  ],
+  "verification": [
+    "npm run check",
+    "npm run check:seo",
+    "python3 ~/github/go-workflow-stack/cli/go.py validate ."
+  ],
+  "claim": {
+    "agent": null,
+    "claimed_at": null
+  },
+  "evidence": [
+    {
+      "type": "baseline",
+      "source": "scripts/check.sh",
+      "summary": "Current SEO baseline: 283 issue occurrences; top issue types are short_description=101, short_title=93, long_description=54, duplicate_description=35."
+    }
+  ]
+}
