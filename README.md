@@ -59,6 +59,14 @@ npm run check
 npm run check:seo
 ```
 
+For public repo-readiness and fresh-clone validation, use the local wrapper instead of GitHub Actions:
+
+```sh
+scripts/check.sh
+```
+
+This repository intentionally uses local-only validation because the site is static and has no dependency install/build step.
+
 Submit the deployed sitemap to IndexNow after a production deploy:
 
 ```sh
