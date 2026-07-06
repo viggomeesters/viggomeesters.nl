@@ -73,7 +73,7 @@ def public_description(value: str, name: str = "skill") -> str:
     """
     raw = (value or "").strip()
     if not raw or raw.lower().startswith("enabled hermes skill from"):
-        raw = f"Hermes workflow summary for {name}, published as a public registry card with private runbook details intentionally omitted."
+        raw = f"Public registry entry for {name}: reusable Hermes workflow metadata grouped for discovery."
 
     lower = raw.lower()
     rest = raw
@@ -110,18 +110,34 @@ def public_description(value: str, name: str = "skill") -> str:
         "Viggo wants": "requests",
         "the user asks for": "requests for",
         "the user asks": "requests",
+        "Viggo's personal homepage": "this personal homepage",
+        "Viggo's homepage": "this personal homepage",
+        "Viggo's Hermes runtime": "a Hermes runtime",
+        "Viggo's Life OS": "a private Life OS vault",
+        "Viggo's Syncthing-backed Obsidian/Life OS vault": "a Syncthing-backed Obsidian vault",
+        "Viggo's": "private",
+        "Viggo:": "Example:",
+        "for Viggo:": "for message drafting:",
+        "for Viggo": "for a private operator",
+        "Viggo sends": "incoming captures include",
+        "viggo sends": "incoming captures include",
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
 
+    text = re.sub(r"\b[Vv]iggo\b", "the operator", text)
+    text = re.sub(r"\bshould\b", "can", text, flags=re.IGNORECASE)
+    text = text.replace("for Example:", "for message drafting:")
+    text = text.replace("for the operator:", "for message drafting:")
+    text = text.replace("Workflow for composing messages for message drafting:", "Workflow for composing")
     text = re.sub(r"\s+", " ", text).strip()
     if len(re.sub(r"[^A-Za-z0-9]", "", text)) < 24:
-        text = f"Hermes workflow summary for {name}, published as a public registry card with private runbook details intentionally omitted."
+        text = f"Public registry entry for {name}: reusable Hermes workflow metadata grouped for discovery."
     if len(text) > 158:
         cut = text[:155].rsplit(" ", 1)[0].rstrip(" ,;:")
         text = cut + "."
     if len(text) < 80:
-        suffix = " It is shown as public metadata only; private steps and local paths stay inside Hermes."
+        suffix = " It appears here as a high-level directory entry for discovery."
         text = (text.rstrip(".") + "." + suffix)[:168].rsplit(" ", 1)[0].rstrip(" ,;:") + "."
     return text
 
@@ -257,7 +273,9 @@ def main() -> None:
     groups = defaultdict(list)
     for skill in skills:
         groups[skill["category"]].append(skill)
-        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>\n    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>\n    <section class="section"><div class="section-title">Public summary</div><div class="list"><article class="item"><strong>Skill identifier</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>What this page is</strong><p>A public summary card for discovery. Detailed runbooks, private steps, local paths, credentials, and sensitive project context are intentionally not published.</p></article><article class="item"><strong>Registry snapshot</strong><p>Generated from the currently enabled local Hermes skill registry. Use this page to see that a workflow exists; the actual workflow runs inside Hermes.</p></article></div></section>'''
+        body = f'''    <a class="back" href="/skills/">&larr; Skills</a>
+    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>
+    <section class="section"><div class="section-title">Skill summary</div><div class="list"><article class="item"><strong>Identifier</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>Directory entry</strong><p>A high-level registry card for discovering the workflow category and public description.</p></article><article class="item"><strong>Runtime context</strong><p>The workflow itself runs inside Hermes; this page only exposes the safe directory-level summary.</p></article></div></section>'''
         d = out / slugify(skill["name"])
         d.mkdir(exist_ok=True)
         (d / "index.html").write_text(page(f"{skill['name']} — Hermes Skill Workflow", skill["description"] or f"Hermes workflow summary for {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))
@@ -268,7 +286,7 @@ def main() -> None:
             filt = (skill["name"] + " " + category + " " + (skill["description"] or "")).lower()
             cards.append(f'''      <a class="card" data-filter="{esc(filt)}" href="/skills/{slugify(skill['name'])}/"><div class="icon">SK</div><div><h2>{esc(skill['name'])}</h2><p>{esc(skill['description'] or 'No description available.')}</p><div class="tiny"><span>{esc(category)}</span><span>skill</span></div></div></a>''')
         sections.append(f'''    <section class="section" data-skill-section data-category="{esc(category)}" data-total="{len(groups[category])}"><div class="section-title" data-section-title>{esc(category)} · {len(groups[category])}</div><div class="grid">{''.join(cards)}</div></section>''')
-    body = f'''    <a class="back" href="/">&larr; viggomeesters.com</a>\n    <header><div class="eyebrow">Hermes skills registry</div><h1 class="title">Skills as reusable operating knowledge.</h1><p class="subtitle">A public snapshot of reusable Hermes skill categories and summaries. Useful as a map of the operating knowledge behind this site without exposing implementation details.</p><div class="meta"><span class="pill">{len(skills)} skills</span><span class="pill">{len(groups)} categories</span><span class="pill">generated {TODAY}</span><span class="pill">public registry snapshot</span></div></header>\n    <input class="search" data-search placeholder="Search skills, categories, descriptions…" aria-label="Search skills">\n    <div class="result-count" data-result-count data-total="{len(skills)}" data-categories="{len(groups)}">{len(skills)} skills across {len(groups)} categories</div>\n{''.join(sections)}'''
+    body = f'''    <a class="back" href="/">&larr; viggomeesters.com</a>\n    <header><div class="eyebrow">Hermes skills registry</div><h1 class="title">Skills as reusable operating knowledge.</h1><p class="subtitle">A generated directory of reusable Hermes skill categories and public summaries.</p><div class="meta"><span class="pill">{len(skills)} skills</span><span class="pill">{len(groups)} categories</span><span class="pill">generated {TODAY}</span><span class="pill">generated directory</span></div></header>\n    <input class="search" data-search placeholder="Search skills, categories, descriptions…" aria-label="Search skills">\n    <div class="result-count" data-result-count data-total="{len(skills)}" data-categories="{len(groups)}">{len(skills)} skills across {len(groups)} categories</div>\n{''.join(sections)}'''
     (out / "index.html").write_text(page("Hermes Skills Registry — Viggo Meesters", "Snapshot index of Hermes skills grouped by category, with per-skill public summary pages.", f"{BASE}/skills/", body))
     regenerate_sitemap()
     print(f"Generated {len(skills)} skills across {len(groups)} categories")

@@ -66,11 +66,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://viggomeesters.com/nederlandse-huizenkoop-agent-context/</loc>
-    <lastmod>2026-07-06</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://viggomeesters.com/guides/</loc>
     <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
@@ -103,6 +98,11 @@
   <url>
     <loc>https://viggomeesters.com/methodologies/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/nederlandse-huizenkoop-agent-context/</loc>
+    <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -218,6 +218,11 @@
   <url>
     <loc>https://viggomeesters.com/personal-knowledge-system/validation-and-indexing/</loc>
     <lastmod>2026-06-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/aankoopmakelaar-biedcoach/</loc>
+    <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -676,6 +681,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/hermes-profile-operations/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/hermes-s6-container-supervision/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -728,6 +738,16 @@
   <url>
     <loc>https://viggomeesters.com/skills/jsonl-runtime-indexes/</loc>
     <lastmod>2026-06-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/jsonl-vault-capture-operations/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/jsonl-vault-operations/</loc>
+    <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -926,6 +946,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/skills/project-as-curriculum/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/skills/prompt-evaluation/</loc>
     <lastmod>2026-06-23</lastmod>
     <priority>0.7</priority>
@@ -943,6 +968,11 @@
   <url>
     <loc>https://viggomeesters.com/skills/public-asset-repo-sanitization/</loc>
     <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/public-context-pack-repos/</loc>
+    <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -988,6 +1018,16 @@
   <url>
     <loc>https://viggomeesters.com/skills/repo-local-agent-workflow/</loc>
     <lastmod>2026-07-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/repo-local-go-command-routing/</loc>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viggomeesters.com/skills/repo-local-go-control-handoff/</loc>
+    <lastmod>2026-07-06</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

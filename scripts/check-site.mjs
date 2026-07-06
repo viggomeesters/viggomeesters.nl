@@ -88,6 +88,22 @@ const publicCopyBans = [
   /Include a device only when/i,
   /Include public delivery and scheduled\/integration surfaces/i,
   /Include tools that make changes reproducible/i,
+  /\bWhat you[’']ll find:/i,
+  /\bBest starting point:/i,
+  /\bHow to read them:/i,
+  /Use dates and tags to tell the type apart/i,
+  /\bViggo:/i,
+  /\bViggo[’']s/i,
+  /\bfor Viggo\b/i,
+  /viggo sends/i,
+  /\bWhat this page is\b/i,
+  /\bRegistry snapshot\b/i,
+  /public metadata only/i,
+  /private steps/i,
+  /This page is the human-readable project entrypoint/i,
+  /not a dumping ground/i,
+  /\bShelf shape\b/i,
+  /\bFramework boundary\b/i,
 ];
 
 function stripMarkup(html) {
