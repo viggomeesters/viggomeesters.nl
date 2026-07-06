@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-03T07:05:59+02:00",
+  "generatedAt": "2026-07-06T08:23:05+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 76,
+  "usefulOpen": 77,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -17,6 +17,40 @@
   ],
   "errors": {},
   "items": [
+    {
+      "id": "f6cf54165beecf8c",
+      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-05T01:00:48+00:00",
+      "summary": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible. I started with",
+      "areas": [
+        "data-platforms",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "d7adf2005d2ff345",
       "title": "llm-coding-agent 0.1a0",
@@ -236,41 +270,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "11347d529558da7d",
-      "title": "OPFS + Pyodide test harness",
-      "url": "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-23T18:58:54+00:00",
-      "summary": "Tool: OPFS + Pyodide test harness I've been pondering if Datasette Lite - the Python Datasette application run entirely in the browser using Pyodide and WebAssembly - might be able to edit persistent SQLite files stored on the user's computer. That's what OFPS (Origin Private File System) is for, so I had Claude Code for web build me this playground UI to tr",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data",
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "a39633d1d756d7c5",
       "title": "Samsung Electronics brings ChatGPT and Codex to employees",
       "url": "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment",
@@ -300,39 +299,6 @@
         "leverage": 2,
         "novelty": 4,
         "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "c3bd1cdcf38874ad",
-      "title": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
-      "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-21T23:35:47+00:00",
-      "summary": "sqlite-utils is my combined Python library and CLI tool for working with SQLite databases. It provides an extensive set of higher-level operations on top of Python's default sqlite3 package , including support for complex table transformations , automatic table creation from JSON data and a whole lot more. I released sqlite-utils 4.0rc1 , the first release c",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli",
-          "ide"
-        ],
-        "data-platforms": [
-          "data",
-          "sqlite",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 2,
         "risk": 0
       },
       "priority": 100,
@@ -527,6 +493,38 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "f7fd14ab1da381e8",
+      "title": "June 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-03T14:50:50+00:00",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Claude Fable 5, GPT-5.6, and US export restrictions GLM-5.2 is the new best open weights model Tokenmaxxing is so over Datasette Apps sqlite-utils and shot-scraper and Datasette Miscellaneous WASM proje",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude",
+          "gpt"
+        ],
+        "data-platforms": [
+          "data",
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "9ba0954fcfd8ada0",
       "title": "How GitHub used secret scanning to reach inbox zero",
       "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
@@ -683,37 +681,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "bdaee6cea28b1e00",
-      "title": "Quoting Tom MacWright",
-      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-24T18:13:51+00:00",
-      "summary": "In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with purely LLM-generated commit messages. [...] My other reaction is that I don't know anything about these people . They haven't put themselves out there. They have",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ],
-        "developer-tools": [
-          "github",
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "55409908a247d3f7",
       "title": "I automated my job (and it made me a better leader)",
       "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
@@ -814,6 +781,130 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "8797ebc789d1e617",
+      "title": "sqlite-utils 4.0rc2",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-05T00:47:38+00:00",
+      "summary": "Release: sqlite-utils 4.0rc2 See sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25) .",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "74ff325db522161d",
+      "title": "Building a World Map with only 500 bytes",
+      "url": "https://simonwillison.net/2026/Jul/4/building-a-world-map-with-only-500-bytes/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-04T23:09:02+00:00",
+      "summary": "Building a World Map with only 500 bytes Iwo Kadziela (assisted by Codex) figured out a way to generate a credible ASCII world map using 445 bytes of data: The key trick is to use deflate compression, which is then wired together using this neat snippet of JavaScript. I didn't know you could use fetch() with data: URIs like this: fetch('data:;base64,1ZpLsgIx",
+      "areas": [
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "codex"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "addf3a7c42db2cbe",
+      "title": "Security Roundup: Apple’s Hide My Email Service Fails to Hide Your Email",
+      "url": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+      "source": "Wired",
+      "published": "2026-07-04T12:30:00+02:00",
+      "summary": "Plus: Alleged Scattered Spider hacking member extradited, dozens of license plate reader errors, and Indian officials are concerned about WhatsApp’s username rollout.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "sap"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "56eb0344e825dd3a",
+      "title": "Fable's judgement",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-03T18:51:06+00:00",
+      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example they gave was testing. You can tell Fable \"only use automated testing for larger fe",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "a66b730d9af9866c",
       "title": "Can Cursor Remain a Platform for OpenAI and Anthropic’s Models Inside SpaceX?",
       "url": "https://www.wired.com/story/can-cursor-remain-an-open-platform-inside-of-spacex/",
@@ -890,37 +981,6 @@
       "matchedKeywords": {
         "ai-agents": [
           "agent"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "4cf87956a74886d3",
-      "title": "The Download: AI “coworkers” and stratospheric internet",
-      "url": "https://www.technologyreview.com/2026/06/30/1139954/the-download-ai-agents-coworkers-solar-powered-internet/",
-      "source": "MIT Technology Review",
-      "published": "2026-06-30T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI agents are not your “coworkers” Imagine coming in to work to learn that a new underling will report to you. The worker is not a person but an AI tool—one…",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
         ],
         "developer-tools": [
           "ide"
@@ -1412,33 +1472,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "af4d320506893f97",
-      "title": "datasette 1.0a35",
-      "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-23T21:34:37+00:00",
-      "summary": "Release: datasette 1.0a35 I'll write more about this one soon, but it's a big release. Three highlights from the release notes: New \"Create table\" interface in the database actions menu, backed by the /<database>/-/create JSON API . It can define columns, primary keys, custom column types, NOT NULL constraints, literal defaults, expression defaults and singl",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "d06659496b0f63dc",
       "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
       "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
@@ -1576,38 +1609,11 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "4e7caa0c0f347b17",
-      "title": "Temporary Cloudflare Accounts for AI agents",
-      "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-21T22:01:04+00:00",
-      "summary": "Temporary Cloudflare Accounts for AI agents The announcement says this is \"for AI agents\" but (as is pretty common these days) the AI hook isn't really necessary, this is an interesting feature for everyone else as well. Short version: you can now create a Cloudflare Workers project and run this, without even creating a Cloudflare account: npx wrangler deplo",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "1715f1a058519094",
-      "title": "Claude-real-video － any LLM can watch a video",
-      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "id": "ae015f54f58ba666",
+      "title": "GPT-5.6 Sol Ultra will be in Codex",
+      "url": "https://twitter.com/thsottiaux/status/2073933490513752151",
       "source": "Hacker News",
-      "published": "2026-07-02T21:10:12+02:00",
+      "published": "2026-07-06T03:04:03+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools",
@@ -1615,11 +1621,70 @@
       ],
       "matchedKeywords": {
         "models": [
-          "llm",
-          "claude"
+          "gpt"
         ],
         "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "0dc1b2b7ef8fab1d",
+      "title": "Infuriating Google commercial imagines the founding fathers embracing AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961468/google-ai-commercial-founding-fathers-declaration-of-independence",
+      "source": "The Verge",
+      "published": "2026-07-05T10:23:11-04:00",
+      "summary": "\"Group project, but make it 1776.\" That's how a new commercial for Google Workspace opens. And things only get cringier from there. The clip imagines what it would be like if the founding fathers turned to Google's collaboration tools and Gemini to help them draft the Declaration of Independence. Ben Franklin texts Thomas Jefferson to […]",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ],
+        "developer-tools": [
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "bcc6f70d74864ef9",
+      "title": "Xbox is a disaster",
+      "url": "https://www.theverge.com/column/960600/xbox-is-a-disaster",
+      "source": "The Verge",
+      "published": "2026-07-05T08:00:00-04:00",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the bleak state of the video game industry, follow Andrew Webster. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Microsoft closed out Summer […]",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
           "ide"
+        ],
+        "enterprise-ai": [
+          "microsoft"
         ]
       },
       "scores": {
@@ -1650,37 +1715,6 @@
         ],
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "d853d7a5392c1205",
-      "title": "Microsoft launches its own AI deployment company with $2.5 billion commitment",
-      "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
-      "source": "TechCrunch",
-      "published": "2026-07-02T15:53:00+02:00",
-      "summary": "Microsoft follows Amazon, OpenAI, and Anthropic with its new AI deployment group.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "enterprise-ai": [
-          "microsoft"
         ]
       },
       "scores": {
@@ -1820,19 +1854,20 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fdb33ff714869583",
-      "title": "Mystery identity of 'Green Boots' climber is finally solved after DNA test",
-      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html",
+      "id": "fc224df529e63574",
+      "title": "Does code cleanliness affect coding agents? A controlled minimal-pair study",
+      "url": "https://arxiv.org/abs/2605.20049",
       "source": "Hacker News",
-      "published": "2026-07-03T00:44:04+02:00",
+      "published": "2026-07-06T01:03:55+02:00",
       "summary": "Comments",
       "areas": [
-        "developer-tools"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "cli",
-          "ide"
+        "ai-agents": [
+          "agent",
+          "agents",
+          "coding agent"
         ]
       },
       "scores": {
@@ -1847,19 +1882,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ade9535107d302dd",
-      "title": "Lightning Memory-Mapped Database Manager (LMDB) 1.0",
-      "url": "http://www.lmdb.tech/doc/",
-      "source": "Hacker News",
-      "published": "2026-07-02T22:01:20+02:00",
-      "summary": "Comments",
+      "id": "6e8efb5c1189fe24",
+      "title": "Better Models: Worse Tools",
+      "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-04T22:53:52+00:00",
+      "summary": "Better Models: Worse Tools Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8. The edit itself is usually correct but the arguments do not match the schema as the model",
       "areas": [
-        "data-platforms"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
+        "models": [
+          "claude"
         ]
       },
       "scores": {
@@ -2013,32 +2047,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b4769c92fe11beff",
-      "title": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
-      "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-22T23:43:51+00:00",
-      "summary": "This morning on Hacker News I saw Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance , describing a small but effective inpainting model - a model where you can mark regions of an image to remove and the model imagines what should fill the space. The released model required PyTorch and NVIDIA CUDA , but since it described itself ",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "efc11ca230b8a25a",
       "title": "Patch the Planet: a Daybreak initiative to support open source maintainers",
       "url": "https://openai.com/index/patch-the-planet",
@@ -2051,32 +2059,6 @@
       "matchedKeywords": {
         "models": [
           "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "79dcaed1c3a35711",
-      "title": "sqlite-utils 4.0rc1",
-      "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-21T23:30:04+00:00",
-      "summary": "Release: sqlite-utils 4.0rc1 See sqlite-utils 4.0rc1 adds migrations and nested transactions . Tags: sqlite-utils",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite"
         ]
       },
       "scores": {
@@ -2192,6 +2174,33 @@
         "risk": 0
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a1b3fd0e6c947004",
+      "title": "Version-controlled databases using Prolly trees",
+      "url": "https://lwn.net/Articles/1068864/",
+      "source": "Lobsters",
+      "published": "2026-07-05T21:28:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2330,18 +2339,48 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "4efc01bd38b62f58",
-      "title": "Virginia bans sale of geolocation data",
-      "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data",
-      "source": "Hacker News",
-      "published": "2026-07-02T23:03:45+02:00",
-      "summary": "Comments",
+      "id": "26b4bf4c9cbda316",
+      "title": "Chemical accidents rise as Trump administration proposes weakening safety rules",
+      "url": "https://arstechnica.com/science/2026/07/chemical-accidents-rise-as-trump-administration-proposes-weakening-safety-rules/",
+      "source": "Ars Technica",
+      "published": "2026-07-05T13:05:22+02:00",
+      "summary": "Chemicals from accidents that injured or killed people increased by nearly 50 percent in recent years.",
       "areas": [
-        "data-platforms"
+        "developer-tools",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "developer-tools": [
+          "ide"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a5e79f747f4dc8c4",
+      "title": "Composite Video on the NES: Why's it so wobbly?",
+      "url": "https://nicole.express/2026/phase-altering-by-line.html",
+      "source": "Hacker News",
+      "published": "2026-07-05T23:45:17+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
@@ -2356,19 +2395,97 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "148b484a5cdd8cfe",
-      "title": "Anthropic is discussing a new custom chip with Samsung",
-      "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/",
+      "id": "3e62639baebd24dc",
+      "title": "It's not about physical vs. digital games, it's about ownership",
+      "url": "https://popcar.bearblog.dev/its-about-ownership/",
+      "source": "Hacker News",
+      "published": "2026-07-05T16:56:15+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "5193d928cdfd7407",
+      "title": "Where to preorder Grand Theft Auto VI",
+      "url": "https://www.theverge.com/gadgets/960838/grand-theft-auto-gta-6-vi-preorder-editions-buy",
+      "source": "The Verge",
+      "published": "2026-07-05T12:00:00-04:00",
+      "summary": "Rockstar's long-awaited Grand Theft Auto VI is launching November 19th, 2026 for PlayStation 5 and Xbox Series S/X consoles. The game will be available digitally at launch, with physical cases containing codes, not discs, so your options for preordering are straightforward. The preloading phase for the game begins on November 12th, which should give you […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "224e58a87e5a6c2e",
+      "title": "There’s a Global Network of Fungi Under Your Feet. This Is the First Complete Map",
+      "url": "https://www.wired.com/story/theres-a-global-network-of-fungi-under-your-feet-this-is-the-first-complete-map/",
+      "source": "Wired",
+      "published": "2026-07-05T11:30:00+02:00",
+      "summary": "A new study has succeeded in mapping, on a global scale, the fungal network that supports plant life and helps regulate our planet’s climate.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c214de33e0e3c336",
+      "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+      "url": "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/",
       "source": "TechCrunch",
-      "published": "2026-07-02T20:31:09+02:00",
-      "summary": "The news comes about a week after OpenAI announced its own custom AI chip in a partnership with Broadcom.",
+      "published": "2026-07-04T17:51:32+02:00",
+      "summary": "Mistral AI, which offers some open source AI models, has raised significant funding since its creation in 2023, with the ambition to “put frontier AI in the hands of everyone.”",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "anthropic"
+          "mistral"
         ]
       },
       "scores": {
@@ -2383,64 +2500,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9baf6ce7eeff1764",
-      "title": "Meta has a new app called Pocket that is absolutely nothing like the old Pocket",
-      "url": "https://www.theverge.com/tech/961086/meta-pocket-app-gizmo-ai",
-      "source": "The Verge",
-      "published": "2026-07-02T17:09:06-04:00",
-      "summary": "Mozilla shut down the well-loved read-it-later Pocket app last year, and now Meta is launching an app called Pocket with an entirely different, AI-focused pitch: this new app lets you make and share little interactive \"gizmos\" built from an AI prompt, as reported by Business Insider. Meta CEO Mark Zuckerberg is all in on AI […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "186a2200b2f688e5",
-      "title": "PeerTube is a free, decentralized and federated video platform",
-      "url": "https://github.com/Chocobozzz/PeerTube",
-      "source": "Hacker News",
-      "published": "2026-07-02T13:17:45+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "086d49d20400df21",
-      "title": "Inside the Luddite Festival Harnessing Gen Z’s Rage Against Big Tech",
-      "url": "https://www.wired.com/story/inside-the-luddite-festival-harnessing-gen-zs-rage-against-big-tech/",
+      "id": "2573aabd15410794",
+      "title": "Scientists Have Identified a New Fossil Species of Axolotl in Mexico",
+      "url": "https://www.wired.com/story/scientists-have-identified-a-new-fossil-species-of-axolotl-in-mexico/",
       "source": "Wired",
-      "published": "2026-07-02T12:00:00+02:00",
-      "summary": "New York City’s Summer of Ludd festival is teaching people how to live offline amid the suffocating presence of Big Tech.",
+      "published": "2026-07-04T11:00:00+02:00",
+      "summary": "Ambystoma quetzalcoatli is the first fossil salamander to be formally identified in Mexico, revealing that axolotls have inhabited the country for millions of years.",
       "areas": [
         "developer-tools"
       ],
@@ -2461,18 +2526,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "fe9f04dc506b7042",
-      "title": "Sony announces end of PlayStation discs, parts of digital store in the same day",
-      "url": "https://arstechnica.com/gaming/2026/07/sony-will-stop-making-physical-copies-of-playstation-games-in-2028/",
-      "source": "Ars Technica",
-      "published": "2026-07-01T20:41:49+02:00",
-      "summary": "“We will own nothing, it's truly sad.”",
+      "id": "8b591f87b8842042",
+      "title": "The Download: a smoking “endgame” and a new Elizabeth Bear story",
+      "url": "https://www.technologyreview.com/2026/07/03/1140134/the-download-uk-smoking-ban-elizabeth-bear-story/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-03T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The UK’s generational tobacco ban might not work. I’m supporting it anyway. —Jessica Hamzelou As the parent of two little girls, I often think about how their childhood is different from…",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "git"
+          "ide"
         ]
       },
       "scores": {
@@ -2487,178 +2552,96 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5bd87bbe8f2bd6b6",
-      "title": "T-Mobile moving tens of thousands of virtual machines off VMware amid lawsuit",
-      "url": "https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/",
+      "id": "9fa2134425fb5a12",
+      "title": "Inside the Luddite festival harnessing Gen Z’s rage against Big Tech",
+      "url": "https://arstechnica.com/culture/2026/07/inside-the-luddite-festival-harnessing-gen-zs-rage-against-big-tech/",
       "source": "Ars Technica",
-      "published": "2026-07-01T23:21:21+02:00",
-      "summary": "T-Mobile wants Broadcom to keep supporting its VMware perpetual licenses.",
+      "published": "2026-07-03T14:00:36+02:00",
+      "summary": "New York City’s Summer of Ludd festival is teaching people how to live offline.",
       "areas": [
-        "enterprise-ai",
-        "privacy-risk"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "aws"
-        ],
-        "privacy-risk": [
-          "lawsuit"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 68,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "779345f9a2a3aa30",
-      "title": "Sony’s PlayStation disc factory is already being repurposed",
-      "url": "https://www.theverge.com/games/961203/sony-austria-thalgau-end-disc-production-microlenses-instead",
-      "source": "The Verge",
-      "published": "2026-07-02T21:05:13-04:00",
-      "summary": "The video game disc is dead, and Sony's been planning to kill it for some time, according to a report out of Austria. The man who leads Sony's discmaking operations, Sony DADC president Dietmar Tanzer, told ORF Salzburg that the company's Thalgau plant produces 600,000 discs every day, half of which are for PlayStation. But […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5d925b532565b574",
-      "title": "No LLM code in dependencies",
-      "url": "https://joeyh.name/blog/entry/no_LLM_code_in_dependencies/",
-      "source": "Lobsters",
-      "published": "2026-07-02T20:43:32+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "9b63f00373be531e",
-      "title": "Travel app Hopper to pay $35M in FTC settlement over ‘unfairly’ charging hidden fees",
-      "url": "https://techcrunch.com/2026/07/02/travel-app-hopper-to-pay-35m-in-ftc-settlement-over-unfairly-charging-hidden-fees/",
-      "source": "TechCrunch",
-      "published": "2026-07-02T20:39:14+02:00",
-      "summary": "Hopper will pay $35 million to settle FTC allegations that it used deceptive “dark patterns” to hide fees and mislead travelers about the costs and benefits of services.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "7b395d63815a6e1d",
-      "title": ".gitignore Isn’t the Only Way To Ignore Files in Git",
-      "url": "https://nelson.cloud/.gitignore-isnt-the-only-way-to-ignore-files-in-git/",
-      "source": "Lobsters",
-      "published": "2026-07-02T18:33:28+02:00",
+      "id": "477f1d02063639ed",
+      "title": "Mr. Baby Paint and accidentally discovering a new cellular automata",
+      "url": "https://tekstien-marginaalien-keskus.aalto.fi/residenssi/heikki/blog/004-december-2/",
+      "source": "Hacker News",
+      "published": "2026-07-03T05:13:53+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "git"
+          "ide"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "ef865540540a15b7",
-      "title": "OpenAI proposed donating 5% of its equity to a US sovereign wealth fund",
-      "url": "https://techcrunch.com/2026/07/02/openai-proposed-donating-5-of-its-equity-to-a-us-sovereign-wealth-fund/",
-      "source": "TechCrunch",
-      "published": "2026-07-02T17:20:51+02:00",
-      "summary": "OpenAI CEO Sam Altman has reportedly proposed giving 5% of the company’s equity to a U.S. sovereign wealth fund, reviving discussions about letting the public share in the financial gains from the AI boom.",
+      "id": "d11a14fd1141437a",
+      "title": "Zuckerberg says AI agent development going slower than expected",
+      "url": "https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/",
+      "source": "Hacker News",
+      "published": "2026-07-02T22:38:06+02:00",
+      "summary": "Comments",
       "areas": [
-        "models"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "ai-agents": [
+          "agent"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d3b1b5c27cf2bbef",
-      "title": "The best July 4th sales we found so far",
-      "url": "https://www.theverge.com/gadgets/958906/best-july-4th-tech-deal-sale",
-      "source": "The Verge",
-      "published": "2026-07-02T16:15:45-04:00",
-      "summary": "July 4th sales are typically a precursor to what we’d see during a mid-July Prime Day, but obviously things are flipped around this year. Last week’s big Prime Day sale is over, yet there are a number of familiar deals still poking around in the week leading up to the nation’s birthday. Best Buy is […]",
+      "id": "739075a60e2e6854",
+      "title": "What Are Fish Oil Supplements Good For? Here’s Your Crash Course",
+      "url": "https://www.wired.com/story/what-are-fish-oil-supplements-good-for-heres-your-crash-course/",
+      "source": "Wired",
+      "published": "2026-07-05T12:00:00+02:00",
+      "summary": "A large-scale clinical trial has shown that even long-term consumption of DHA—an omega-3 fatty acid found in abundance in oily fish—may not lead to improvements in cognitive function.",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "cursor"
+          "cli"
         ]
       },
       "scores": {
@@ -2673,18 +2656,44 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "1887f68965f09477",
-      "title": "Woman's hip replacement disintegrates, causing severe metal poisoning",
-      "url": "https://arstechnica.com/health/2026/07/womans-puzzling-decline-turns-out-to-be-cobalt-poisoning-from-hip-replacement/",
-      "source": "Ars Technica",
-      "published": "2026-07-02T16:04:28+02:00",
-      "summary": "Doctors find grey fluid and dead, metallic flesh inside poisoned woman's hip.",
+      "id": "c7940649deffc013",
+      "title": "The Sourdough Sidekick automates the boring bit of baking",
+      "url": "https://www.theverge.com/tech/959604/sourdough-sidekick-review-king-arthur-starter",
+      "source": "The Verge",
+      "published": "2026-07-05T10:00:00-04:00",
+      "summary": "Baking sourdough bread is inherently old-fashioned, relying on natural fermentation and wild yeast instead of the simple, predictable commercial stuff. So it might sound anathema to bring a gadget into the mix. The trick to the Sourdough Sidekick - backed and branded by King Arthur flour - is that it promises to automate the boring […]",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
           "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2a420b878012f546",
+      "title": "small details in my mastodon client that i wanted more people to notice",
+      "url": "https://w.on-t.work/outpost-frontend-details",
+      "source": "Lobsters",
+      "published": "2026-07-05T09:05:45+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
         ]
       },
       "scores": {
