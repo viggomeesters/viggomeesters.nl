@@ -730,25 +730,43 @@
 
 
 
-      <div class="guide-pair">
+      <div class="guide-pair" aria-label="Guides and methodologies">
         <a href="/guides/" class="tile guide-hub">
           <span class="guide-title">Guides &amp; Articles</span>
           <span class="guide-arrow">&rarr;</span>
         </a>
 
-        <a href="/trendwatch/" class="tile guide-hub">
-          <span class="guide-title">Repo Trendwatcher<span class="guide-meta" id="trendwatch-last-run">Last run loading…</span></span>
-          <span class="guide-arrow">&rarr;</span>
-        </a>
-
-        <a href="/tech-news/" class="tile guide-hub">
-          <span class="guide-title">Tech Newswatcher<span class="guide-meta" id="tech-news-last-run">Last run loading…</span></span>
+        <a href="/methodologies/" class="tile guide-hub">
+          <span class="guide-title">Methodologies</span>
           <span class="guide-arrow">&rarr;</span>
         </a>
       </div>
 
-      <!-- Demos label -->
-      <h2 class="tile label" id="demos" style="--dot-color: #3b82f6">Demos</h2>
+      <!-- Watchers label -->
+      <h2 class="tile label" style="--dot-color: #06b6d4">Watchers</h2>
+
+      <a href="/trendwatch/" class="tile card"
+         style="--card-color: #06b6d4; --card-soft: rgba(6,182,212,0.10)">
+        <div class="card-icon-wrap">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.5"/><path d="M4 19l4-4"/><path d="M20 19l-4-4"/></svg>
+        </div>
+        <div class="card-name">Repo Trendwatcher</div>
+        <div class="card-desc">Public repo scouting, pattern mining, and reusable workflow signals</div>
+        <span class="card-tag" id="trendwatch-last-run">Last run loading…</span>
+      </a>
+
+      <a href="/tech-news/" class="tile card"
+         style="--card-color: #818cf8; --card-soft: rgba(129,140,248,0.10)">
+        <div class="card-icon-wrap">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v12H4z"/><path d="M7 9h10"/><path d="M7 13h6"/><path d="M9 21h6"/><path d="M12 17v4"/></svg>
+        </div>
+        <div class="card-name">Tech Newswatcher</div>
+        <div class="card-desc">Technology signal feed for agent, tooling, and software-development shifts</div>
+        <span class="card-tag" id="tech-news-last-run">Last run loading…</span>
+      </a>
+
+      <!-- Apps label -->
+      <h2 class="tile label" id="apps" style="--dot-color: #3b82f6">Apps</h2>
 
       <!-- Demo tiles -->
       <a href="https://minimal-etl-modeler.vercel.app" class="tile card" target="_blank" rel="noopener"
@@ -806,8 +824,8 @@
         <span class="card-tag">Live</span>
       </a>
 
-      <!-- Agent context packs label -->
-      <h2 class="tile label" style="--dot-color: #818cf8">Agent Context Packs</h2>
+      <!-- Context packs label -->
+      <h2 class="tile label" style="--dot-color: #818cf8">Context Packs</h2>
 
       <a href="/sap-agent-context/" class="tile card"
          style="--card-color: #818cf8; --card-soft: rgba(129,140,248,0.10)">
@@ -872,8 +890,19 @@
         <span class="card-tag">Tool</span>
       </a>
 
-      <!-- Agent workflow tooling label -->
-      <h2 class="tile label" style="--dot-color: #22c55e">Agent Workflow Tooling</h2>
+
+      <a href="/personal-knowledge-system/" class="tile card"
+         style="--card-color: #f97316; --card-soft: rgba(249,115,22,0.10)">
+        <div class="card-icon-wrap">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="card-name">Personal Knowledge System</div>
+        <div class="card-desc">Component map for the vault-first knowledge system</div>
+        <span class="card-tag">System map</span>
+      </a>
+
+      <!-- Agent workflow label -->
+      <h2 class="tile label" style="--dot-color: #22c55e">Agent Workflow</h2>
 
       <a href="/go-project-template/" class="tile card"
          style="--card-color: #f59e0b; --card-soft: rgba(245,158,11,0.10)">
@@ -895,8 +924,6 @@
         <span class="card-tag">Stack</span>
       </a>
 
-      <!-- Systems label -->
-      <h2 class="tile label" id="systems" style="--dot-color: #22c55e">Systems</h2>
 
 
       <a href="/agent-workflow/" class="tile card"
@@ -906,28 +933,9 @@
         </div>
         <div class="card-name">Agent Workflow</div>
         <div class="card-desc">Timeline of Copilot, Claude Code, Hermes, Codex, and skills</div>
-        <span class="card-tag">System</span>
+        <span class="card-tag">Timeline</span>
       </a>
 
-      <a href="/personal-knowledge-system/" class="tile card"
-         style="--card-color: #f97316; --card-soft: rgba(249,115,22,0.10)">
-        <div class="card-icon-wrap">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-        </div>
-        <div class="card-name">Personal Knowledge System</div>
-        <div class="card-desc">Component map for the vault-first knowledge system</div>
-        <span class="card-tag">System</span>
-      </a>
-
-      <a href="/methodologies/" class="tile card"
-         style="--card-color: #f59e0b; --card-soft: rgba(245,158,11,0.10)">
-        <div class="card-icon-wrap">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-        </div>
-        <div class="card-name">Methodologies</div>
-        <div class="card-desc">Reusable frameworks for planning, research, and decomposition</div>
-        <span class="card-tag">Frameworks</span>
-      </a>
 
       <a href="/skills/" class="tile card"
          style="--card-color: #22c55e; --card-soft: rgba(34,197,94,0.10)">
@@ -938,7 +946,6 @@
         <div class="card-desc">Up-to-date Hermes skill registry with categories and detail pages</div>
         <span class="card-tag">185 skills</span>
       </a>
-
       <!-- Setup label -->
       <h2 class="tile label" style="--dot-color: #64748b">Setup</h2>
 
