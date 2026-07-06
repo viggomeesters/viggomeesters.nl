@@ -22,22 +22,24 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "trendwatch" / "data.json"
 
 
-def resolve_vault() -> Path:
-    candidates = []
-    env = os.environ.get("LIFEOS_VAULT", "").strip()
+def resolve_ledger_path() -> Path:
+    candidates: list[Path] = []
+    env = os.environ.get("REPO_TRENDWATCH_LEDGER", "").strip()
     if env:
         candidates.append(Path(env).expanduser())
-    candidates.extend(
-        [
-            Path("/mnt/c/Users/Viggo/Syncthing/vault"),
-            Path("/mnt/c/Users/viggo/Syncthing/vault"),
-            Path("/home/viggo/life-os-vault-runtime"),
-        ]
-    )
-    for root in candidates:
-        if (root / "system" / "contracts" / "repo-inspiration-ledger.yaml").exists():
-            return root
-    raise FileNotFoundError("repo-inspiration-ledger.yaml not found in known vault locations")
+    for key in ("LIFEOS_JSONL_VAULT", "JSONL_VAULT_ROOT", "LIFEOS_VAULT"):
+        env = os.environ.get(key, "").strip()
+        if env:
+            root = Path(env).expanduser()
+            candidates.extend([root / "contracts" / "repo-inspiration-ledger.yaml", root / "system" / "contracts" / "repo-inspiration-ledger.yaml"])
+    candidates.extend([
+        Path("/mnt/c/Users/Viggo/Syncthing/jsonl-vault/default/contracts/repo-inspiration-ledger.yaml"),
+        Path("/mnt/c/Users/viggo/Syncthing/jsonl-vault/default/contracts/repo-inspiration-ledger.yaml"),
+    ])
+    for path in candidates:
+        if path.exists():
+            return path
+    raise FileNotFoundError("repo-inspiration-ledger.yaml not found in JSONL Vault contracts")
 
 
 def clean(value: Any, fallback: str = "") -> str:
@@ -94,8 +96,7 @@ def sort_date(entry: dict[str, Any]) -> str:
 
 
 def main() -> int:
-    vault = resolve_vault()
-    ledger_path = vault / "system" / "contracts" / "repo-inspiration-ledger.yaml"
+    ledger_path = resolve_ledger_path()
     ledger = yaml.safe_load(ledger_path.read_text(encoding="utf-8")) or {}
     entries = ledger.get("entries") or []
     if not isinstance(entries, list):
@@ -159,7 +160,7 @@ def main() -> int:
     payload = {
         "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
         "ledgerUpdated": clean(ledger.get("updated"), date.today().isoformat()),
-        "source": "system/contracts/repo-inspiration-ledger.yaml",
+        "source": "contracts/repo-inspiration-ledger.yaml",
         "total": len(public_items),
         "usefulOpen": useful,
         "recommendations": recommendations,
