@@ -3,6 +3,11 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/nl-homebuying-agent-context/:path*",
+      "destination": "/nederlandse-huizenkoop-agent-context/:path*",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
