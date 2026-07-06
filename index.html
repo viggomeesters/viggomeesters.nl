@@ -426,6 +426,32 @@
       flex-shrink: 0;
     }
 
+    .tile.group-label {
+      grid-column: 1 / -1;
+      background: rgba(255,255,255,0.018);
+      border-color: rgba(255,255,255,0.025);
+      padding: 14px 16px 12px;
+      margin-top: 4px;
+      color: #aab0c2;
+      font-size: 0.68em;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tile.group-label::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--dot-color, #818cf8);
+      box-shadow: 0 0 8px var(--dot-color, rgba(129,140,248,0.4));
+      flex-shrink: 0;
+    }
+
     /* Project card tiles */
     a.tile.card {
       display: flex;
@@ -809,6 +835,8 @@
       <!-- Projects label -->
       <h2 class="tile label" style="--dot-color: #818cf8">Projects</h2>
 
+      <h3 class="tile group-label" style="--dot-color: #818cf8">Agent context packs</h3>
+
       <a href="/sap-agent-context/" class="tile card"
          style="--card-color: #818cf8; --card-soft: rgba(129,140,248,0.10)">
         <div class="card-icon-wrap">
@@ -816,8 +844,20 @@
         </div>
         <div class="card-name">SAP Agent Context</div>
         <div class="card-desc">Source-backed SAP context bundles for AI agents and delivery workflows</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Context</span>
       </a>
+
+      <a href="/nl-homebuying-agent-context/" class="tile card"
+         style="--card-color: #f97316; --card-soft: rgba(249,115,22,0.10)">
+        <div class="card-icon-wrap">
+          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/><path d="M9 9h6"/></svg>
+        </div>
+        <div class="card-name">NL Homebuying Agent Context</div>
+        <div class="card-desc">Source-backed Dutch homebuying context for agent-assisted due diligence</div>
+        <span class="card-tag">Context</span>
+      </a>
+
+      <h3 class="tile group-label" style="--dot-color: #38bdf8">Knowledge tools</h3>
 
       <a href="/mega-vault-viewer/" class="tile card"
          style="--card-color: #22c55e; --card-soft: rgba(34,197,94,0.10)">
@@ -826,7 +866,7 @@
         </div>
         <div class="card-name">Mega Vault Viewer</div>
         <div class="card-desc">Local-first macOS viewer for large mixed-format Markdown knowledge vaults</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Tool</span>
       </a>
 
       <a href="/obsidian-plugins/" class="tile card"
@@ -846,7 +886,7 @@
         </div>
         <div class="card-name">JSONL Vault Spike</div>
         <div class="card-desc">Synthetic proof of concept for agent-readable JSONL context records</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Prototype</span>
       </a>
 
       <a href="/vault-layer/" class="tile card"
@@ -856,17 +896,19 @@
         </div>
         <div class="card-name">VaultLayer</div>
         <div class="card-desc">Local-first read model for Markdown vault search, vectors, and provenance</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Tool</span>
       </a>
+
+      <h3 class="tile group-label" style="--dot-color: #22c55e">Agent workflow tooling</h3>
 
       <a href="/go-project-template/" class="tile card"
          style="--card-color: #f59e0b; --card-soft: rgba(245,158,11,0.10)">
         <div class="card-icon-wrap">
           <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 10h16"/><path d="M7 15h4"/><path d="M7 19h10"/><path d="M14 14l3 3 3-3"/></svg>
         </div>
-        <div class="card-name">go-project-template</div>
+        <div class="card-name">Go Project Template</div>
         <div class="card-desc">Minimal starter repo for local .go agent workflow projects</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Template</span>
       </a>
 
       <a href="/go-workflow-stack/" class="tile card"
@@ -874,9 +916,9 @@
         <div class="card-icon-wrap">
           <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="12" cy="19" r="2"/><path d="M12 7v10"/><path d="M7 12h10"/></svg>
         </div>
-        <div class="card-name">go-workflow-stack</div>
+        <div class="card-name">Go Workflow Stack</div>
         <div class="card-desc">Reusable CLI and schemas for repo-local agent workflow state</div>
-        <span class="card-tag">Project</span>
+        <span class="card-tag">Stack</span>
       </a>
 
       <!-- Systems label -->
