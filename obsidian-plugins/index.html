@@ -67,11 +67,14 @@
     .section-label { display: flex; align-items: center; gap: 8px; padding: 22px 0 12px; font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-muted); font-weight: 500; }
     .section-label::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(168,85,247,0.6); }
     .plugin-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-    .plugin-card { display: flex; flex-direction: column; gap: 6px; min-height: 132px; padding: 18px; background: rgba(20,20,24,0.70); border: 1px solid var(--border-subtle); border-radius: var(--radius); color: inherit; text-decoration: none; position: relative; overflow: hidden; box-shadow: inset 0 1px 0 rgba(255,255,255,0.026), 0 0 28px rgba(168,85,247,0.055), 0 14px 40px rgba(0,0,0,0.13); transition: transform 0.3s var(--bounce), border-color 0.2s, background 0.2s, box-shadow 0.2s; }
+    .plugin-card { display: flex; flex-direction: column; gap: 6px; min-height: 148px; padding: 18px; background: rgba(20,20,24,0.70); border: 1px solid var(--border-subtle); border-radius: var(--radius); color: inherit; position: relative; overflow: hidden; box-shadow: inset 0 1px 0 rgba(255,255,255,0.026), 0 0 28px rgba(168,85,247,0.055), 0 14px 40px rgba(0,0,0,0.13); transition: transform 0.3s var(--bounce), border-color 0.2s, background 0.2s, box-shadow 0.2s; }
     .plugin-card:hover { transform: translateY(-3px); border-color: rgba(168,85,247,0.18); background: rgba(26,26,32,0.78); box-shadow: inset 0 1px 0 rgba(255,255,255,0.032), 0 0 34px rgba(168,85,247,0.075), 0 16px 46px rgba(0,0,0,0.16); }
     .plugin-name { color: #eeeff4; font-weight: 600; font-size: 0.95em; }
+    .plugin-repo { color: var(--text-muted); font-family: var(--font-mono); font-size: 0.68em; overflow-wrap: anywhere; }
     .plugin-desc { color: var(--text-secondary); font-size: 0.82em; line-height: 1.45; flex: 1; }
-    .plugin-link { color: var(--accent); font-family: var(--font-mono); font-size: 0.72em; }
+    .plugin-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .plugin-link { color: var(--accent); font-family: var(--font-mono); font-size: 0.72em; text-decoration: none; }
+    .plugin-link:hover { color: #d8b4fe; }
     .note { margin-top: 22px; padding: 16px; border: 1px solid var(--border-subtle); background: rgba(168,85,247,0.05); border-radius: var(--radius); color: var(--text-secondary); font-size: 0.88em; }
     .footer { margin-top: 40px; font-size: 0.72em; color: var(--text-muted); text-align: center; opacity: 0.5; }
     @media (max-width: 720px) { .page { padding: 40px 14px 40px; } .stats, .plugin-grid { grid-template-columns: 1fr; } .title { font-size: 2rem; } }
@@ -85,12 +88,12 @@
     <header class="header reveal">
       <div class="eyebrow">Obsidian plugin portfolio</div>
       <h1 class="title">Small plugins for making vaults more inspectable.</h1>
-      <p class="subtitle">A portfolio of focused Obsidian utilities: mostly read-only viewers for file formats and metadata that normally break the flow of a Markdown vault. The frozen list below is a snapshot; GitHub remains the live index.</p>
+      <p class="subtitle">A portfolio of focused Obsidian utilities: mostly read-only viewers for file formats and metadata that normally break the flow of a Markdown vault. The frozen list below is a snapshot; GitHub remains the live index, and community-listed plugins link to their Obsidian plugin page.</p>
     </header>
     <section class="stats reveal" aria-label="Plugin portfolio summary">
       <div class="stat"><div class="stat-num">28</div><div class="stat-label">public plugin repos</div></div>
       <div class="stat"><div class="stat-num">Read-only</div><div class="stat-label">viewer focus</div></div>
-      <div class="stat"><div class="stat-num">GitHub</div><div class="stat-label">source of truth</div></div>
+      <div class="stat"><div class="stat-num">25</div><div class="stat-label">community pages</div></div>
     </section>
     <div class="cta-row reveal">
       <a class="cta" href="https://github.com/viggomeesters?tab=repositories&q=obsidian-&type=source&sort=name" target="_blank" rel="noopener">Open live GitHub index &rarr;</a>
@@ -99,152 +102,261 @@
 
     <section aria-labelledby="portfolio-boundary">
       <div class="section-label" id="portfolio-boundary">Portfolio notes</div>
-      <div class="note"><strong>Current source:</strong> this page is a curated snapshot of public repositories. GitHub remains the live index for repo count, archived status, issues, releases, and code.</div>
+      <div class="note"><strong>Current source:</strong> this page is a curated snapshot of public repositories. GitHub remains the live index for repo count, archived status, issues, releases, and code. Obsidian links are shown only when the plugin is present in the official community directory.</div>
       <div class="note"><strong>Design direction:</strong> these plugins should stay small and inspectable. Most of the portfolio exists to make vault files readable without giving plugins broad write access or replacing the vault itself.</div>
     </section>
     <section aria-labelledby="plugin-list">
       <div class="section-label" id="plugin-list">Snapshot list</div>
       <div class="plugin-grid">
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-alteryx-viewer</span>
+        <article class="plugin-card">
+          <span class="plugin-name">Alteryx Viewer</span>
+          <span class="plugin-repo">obsidian-alteryx-viewer</span>
           <span class="plugin-desc">Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-ango-companion" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-ango-companion</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/alteryx-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Ango Companion</span>
+          <span class="plugin-repo">obsidian-ango-companion</span>
           <span class="plugin-desc">Small Obsidian utility/plugin.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-archive-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-archive-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-ango-companion" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Archive Viewer</span>
+          <span class="plugin-repo">obsidian-archive-viewer</span>
           <span class="plugin-desc">Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-csv-tsv-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-csv-tsv-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-archive-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/archive-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">CSV TSV Viewer</span>
+          <span class="plugin-repo">obsidian-csv-tsv-viewer</span>
           <span class="plugin-desc">Read-only CSV and TSV table viewer.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-diff-patch-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-diff-patch-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-csv-tsv-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/csv-tsv-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Diff and Patch Viewer</span>
+          <span class="plugin-repo">obsidian-diff-patch-viewer</span>
           <span class="plugin-desc">Read-only .diff and .patch viewer for Obsidian</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-eml-email-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-eml-email-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-diff-patch-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/diff-patch-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">EML Email Viewer</span>
+          <span class="plugin-repo">obsidian-eml-email-viewer</span>
           <span class="plugin-desc">Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-folder-sort-view" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-folder-sort-view</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-eml-email-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/eml-email-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Folder Sort View</span>
+          <span class="plugin-repo">obsidian-folder-sort-view</span>
           <span class="plugin-desc">Public-API Obsidian folder view sorted Z-to-A</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-folder-sort-z-to-a" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-folder-sort-z-to-a</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-folder-sort-view" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/folder-sort-view" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Folder Sort Z to A</span>
+          <span class="plugin-repo">obsidian-folder-sort-z-to-a</span>
           <span class="plugin-desc">Spike plugin for Z-to-A folder ordering in Obsidian&#x27;s native File Explorer</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-git-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-git-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-folder-sort-z-to-a" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Git Viewer</span>
+          <span class="plugin-repo">obsidian-git-viewer</span>
           <span class="plugin-desc">Lightweight read-only Git status viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-html-page-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-html-page-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-git-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/git-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">HTML Page Viewer</span>
+          <span class="plugin-repo">obsidian-html-page-viewer</span>
           <span class="plugin-desc">Read-only sandboxed HTML page viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-ics-calendar-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-ics-calendar-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-html-page-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/html-page-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">ICS Calendar Viewer</span>
+          <span class="plugin-repo">obsidian-ics-calendar-viewer</span>
           <span class="plugin-desc">Small Obsidian utility/plugin.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-json-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-json-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-ics-calendar-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/ics-calendar-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">JSON Viewer</span>
+          <span class="plugin-repo">obsidian-json-viewer</span>
           <span class="plugin-desc">Read-only JSON and JSONL tree viewer for Obsidian</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-log-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-log-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-json-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/json-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Log Viewer</span>
+          <span class="plugin-repo">obsidian-log-viewer</span>
           <span class="plugin-desc">Read-only log file viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-minimal-hidden-files" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-minimal-hidden-files</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-log-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/log-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Minimal Hidden Files</span>
+          <span class="plugin-repo">obsidian-minimal-hidden-files</span>
           <span class="plugin-desc">Reveal safe dotfiles and dotfolders in Obsidian&#x27;s native File Explorer.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-newest-files" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-newest-files</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-minimal-hidden-files" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/minimal-hidden-files" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Newest Files</span>
+          <span class="plugin-repo">obsidian-newest-files</span>
           <span class="plugin-desc">Small Obsidian utility/plugin.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-plist-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-plist-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-newest-files" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/newest-files" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">PLIST Viewer</span>
+          <span class="plugin-repo">obsidian-plist-viewer</span>
           <span class="plugin-desc">Read-only Apple plist and mobileconfig viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-python-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-python-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-plist-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/plist-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Python Viewer</span>
+          <span class="plugin-repo">obsidian-python-viewer</span>
           <span class="plugin-desc">Read-only Python source and structure viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-raycast</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-python-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/python-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Raycast</span>
+          <span class="plugin-repo">obsidian-raycast</span>
           <span class="plugin-desc">Raycast extension with commands for the note taking app Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-script-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-script-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">GitHub &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Script Viewer</span>
+          <span class="plugin-repo">obsidian-script-viewer</span>
           <span class="plugin-desc">Read-only script source, outline, and safety-hint viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-slide-deck-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-slide-deck-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-script-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/script-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Slide Deck Viewer</span>
+          <span class="plugin-repo">obsidian-slide-deck-viewer</span>
           <span class="plugin-desc">Read-only PPTX slide inspection view for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-sql-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-sql-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-slide-deck-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/slide-deck-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">SQL Viewer</span>
+          <span class="plugin-repo">obsidian-sql-viewer</span>
           <span class="plugin-desc">Read-only SQLite database viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-toml-ini-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-toml-ini-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-sql-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/sql-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">TOML INI Viewer</span>
+          <span class="plugin-repo">obsidian-toml-ini-viewer</span>
           <span class="plugin-desc">Small Obsidian utility/plugin.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-txt-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-txt-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-toml-ini-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/toml-ini-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">TXT Viewer</span>
+          <span class="plugin-repo">obsidian-txt-viewer</span>
           <span class="plugin-desc">Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-vcf-contacts-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-vcf-contacts-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-txt-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/txt-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">VCF Contacts Viewer</span>
+          <span class="plugin-repo">obsidian-vcf-contacts-viewer</span>
           <span class="plugin-desc">Read-only VCF contact card viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-word-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-word-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-vcf-contacts-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/vcf-contacts-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">Word Viewer</span>
+          <span class="plugin-repo">obsidian-word-viewer</span>
           <span class="plugin-desc">Read-only DOCX document viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-xlsx-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-xlsx-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-word-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/word-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">XLSX Viewer</span>
+          <span class="plugin-repo">obsidian-xlsx-viewer</span>
           <span class="plugin-desc">Read-only XLSX workbook value viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-xml-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-xml-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-xlsx-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/xlsx-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">XML Viewer</span>
+          <span class="plugin-repo">obsidian-xml-viewer</span>
           <span class="plugin-desc">Read-only XML tree and source viewer for Obsidian.</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
-        <a class="plugin-card" href="https://github.com/viggomeesters/obsidian-yaml-viewer" target="_blank" rel="noopener">
-          <span class="plugin-name">obsidian-yaml-viewer</span>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-xml-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/xml-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
+        <article class="plugin-card">
+          <span class="plugin-name">YAML Viewer</span>
+          <span class="plugin-repo">obsidian-yaml-viewer</span>
           <span class="plugin-desc">Read-only YAML tree viewer for Obsidian</span>
-          <span class="plugin-link">GitHub &rarr;</span>
-        </a>
+          <span class="plugin-links">
+            <a class="plugin-link" href="https://github.com/viggomeesters/obsidian-yaml-viewer" target="_blank" rel="noopener">GitHub &rarr;</a>
+            <a class="plugin-link" href="https://community.obsidian.md/plugins/yaml-viewer" target="_blank" rel="noopener">Obsidian &rarr;</a>
+          </span>
+        </article>
       </div>
     </section>
     <p class="note">Count excludes infrastructure/meta repos like <code>obsidian-releases</code> and <code>obsidian-test-vault</code>. For the current portfolio, use the GitHub index above.</p>
