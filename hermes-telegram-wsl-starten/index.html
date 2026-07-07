@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hermes + Telegram starten op een oude Windows-pc met WSL</title>
-  <meta name="description" content="Een praktische Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, WSL, OpenAI/Nous Portal en een nuchtere keuze tussen oude pc, mini-pc en VPS.">
+  <meta name="description" content="Een noob-friendly Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, Codex, WSL, OpenAI via ChatGPT/Codex, Holographic Memory en een simpele backend.">
   <link rel="canonical" href="https://viggomeesters.com/hermes-telegram-wsl-starten/">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -12,13 +12,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta property="og:title" content="Hermes + Telegram starten op een oude Windows-pc met WSL">
-  <meta property="og:description" content="Een praktische Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, WSL, OpenAI/Nous Portal en een nuchtere keuze tussen oude pc, mini-pc en VPS.">
+  <meta property="og:description" content="Een noob-friendly Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, Codex, WSL, OpenAI via ChatGPT/Codex, Holographic Memory en een simpele backend.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://viggomeesters.com/hermes-telegram-wsl-starten/">
   <meta property="og:image" content="https://viggomeesters.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hermes + Telegram starten op een oude Windows-pc met WSL">
-  <meta name="twitter:description" content="Een praktische Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, WSL, OpenAI/Nous Portal en een nuchtere keuze tussen oude pc, mini-pc en VPS.">
+  <meta name="twitter:description" content="Een noob-friendly Nederlandse startgids voor een eigen Telegram-agent met Hermes Agent, Codex, WSL, OpenAI via ChatGPT/Codex, Holographic Memory en een simpele backend.">
   <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -499,6 +499,97 @@
     }
     .toc a:hover { color: var(--text-bright); }
 
+
+
+    .term {
+      position: relative;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 3px;
+      color: #e0e1e8;
+      border-bottom: 1px dotted rgba(238,239,244,0.45);
+      cursor: help;
+      outline: none;
+    }
+    .term::after {
+      content: attr(data-tip);
+      position: absolute;
+      left: 0;
+      bottom: calc(100% + 10px);
+      width: min(300px, 78vw);
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: #1a1a20;
+      border: 1px solid rgba(255,255,255,0.14);
+      color: var(--text);
+      font-size: 0.78rem;
+      line-height: 1.45;
+      box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+      opacity: 0;
+      transform: translateY(4px);
+      pointer-events: none;
+      transition: opacity 0.16s ease, transform 0.16s ease;
+      z-index: 20;
+    }
+    .term:hover::after,
+    .term:focus-visible::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .term::before {
+      content: "?";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      font-family: var(--font-mono);
+      font-size: 0.65em;
+      color: var(--cyan);
+      background: var(--cyan-soft);
+    }
+
+    .explain-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-bottom: 24px;
+    }
+    .explain-card {
+      padding: 16px;
+      border-radius: var(--radius);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+    }
+    .explain-card h3 {
+      margin: 0 0 8px;
+      color: var(--text-bright);
+      font-size: 0.95em;
+    }
+    .explain-card p {
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 0.88em;
+      line-height: 1.6;
+    }
+    .prompt-box {
+      border-radius: var(--radius);
+      border: 1px solid rgba(59,130,246,0.22);
+      background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(168,85,247,0.08));
+      padding: 18px 20px;
+      margin-bottom: 22px;
+    }
+    .prompt-box .callout-title { color: var(--codex); }
+    .prompt-box pre code {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    .small-note {
+      color: var(--text-muted);
+      font-size: 0.86em;
+    }
+
     .footer {
       margin-top: 60px;
       font-size: 0.72em;
@@ -522,6 +613,9 @@
       .comparison th, .comparison td { padding: 10px 12px; }
       pre { padding: 16px; }
       .article-cover { border-radius: 18px; }
+      .explain-grid { grid-template-columns: 1fr; }
+      .comparison td:first-child { white-space: normal; }
+      .term::after { left: auto; right: 0; }
     }
   </style>
   <script defer src="/_vercel/insights/script.js"></script>
@@ -534,12 +628,12 @@
 
     <div class="hero">
       <h1>Hermes + Telegram starten op een oude Windows-pc met WSL</h1>
-      <p class="subtitle">Een nuchtere startgids voor iemand die thuis een eigen AI-agent wil draaien: niet meteen een datacenter bouwen, wel snel een bruikbare Telegram-bot online krijgen.</p>
+      <p class="subtitle">Een noob-friendly startgids voor een eigen AI-agent die je gewoon via Telegram appt. De slimme route: installeer eerst Codex op die oude pc, laat Codex Hermes voor je inrichten, en geef Hermes daarna geheugen plus een backend.</p>
       <div class="tools-row">
-        <span class="tool-chip codex"><span class="tool-dot"></span>Hermes Agent</span>
-        <span class="tool-chip green"><span class="tool-dot"></span>Telegram</span>
+        <span class="tool-chip codex"><span class="tool-dot"></span>Codex-first</span>
+        <span class="tool-chip green"><span class="tool-dot"></span>Hermes + Telegram</span>
         <span class="tool-chip gemini"><span class="tool-dot"></span>WSL</span>
-        <span class="tool-chip obsidian"><span class="tool-dot"></span>OpenAI / Nous</span>
+        <span class="tool-chip obsidian"><span class="tool-dot"></span>Holographic Memory</span>
       </div>
       <p class="meta">Door Viggo Meesters &middot; 7 juli 2026</p>
     </div>
@@ -548,12 +642,15 @@
       <div class="toc-title">Inhoud</div>
       <ol>
         <li><a href="#wat-je-bouwt">Wat je bouwt</a></li>
-        <li><a href="#belangrijke-nuance">Belangrijke nuance</a></li>
+        <li><a href="#woordenlijst">Mini-woordenlijst</a></li>
+        <li><a href="#codex-first">Start slimmer: laat Codex de installatie doen</a></li>
         <li><a href="#start-keuze">Welke startsetup kies je?</a></li>
         <li><a href="#wsl-installeren">WSL en Ubuntu installeren</a></li>
+        <li><a href="#codex-installeren">Codex installeren</a></li>
         <li><a href="#hermes-installeren">Hermes installeren</a></li>
-        <li><a href="#model-provider">Modelprovider instellen</a></li>
+        <li><a href="#model-provider">OpenAI/Codex login instellen</a></li>
         <li><a href="#telegram">Telegram koppelen</a></li>
+        <li><a href="#geheugen-backend">Geheugen en backend toevoegen</a></li>
         <li><a href="#permanent-draaien">Permanent laten draaien</a></li>
         <li><a href="#veiligheid">Veiligheid</a></li>
         <li><a href="#succescheck">Succescheck</a></li>
@@ -562,129 +659,202 @@
 
     <div class="article">
       <h2 id="wat-je-bouwt"><span class="section-num orange">1</span>Wat je bouwt</h2>
-      <p>Het doel is simpel: een eigen AI-agent die je via Telegram kunt appen, terwijl de agent op een oude Windows-pc, mini-pc of VPS draait.</p>
-      <p>De agent is <strong>Hermes Agent</strong>. De chatinterface is <strong>Telegram</strong>. De oude Windows-pc draait bij voorkeur <strong>WSL2 met Ubuntu</strong>, zodat Hermes in een normale Linux-omgeving kan draaien.</p>
+      <p>Het doel is simpel: een eigen AI-agent die je via Telegram kunt appen. Jij stuurt een bericht. Telegram stuurt dat naar Hermes. Hermes gebruikt een AI-model, voert eventueel tools uit op je pc, en stuurt antwoord terug.</p>
+      <p>Voor een beginner is de handigste route niet: alles zelf uitzoeken. De handigste route is: eerst <strong>Codex</strong> installeren, daarna Codex vragen om <strong>Hermes + Telegram</strong> netjes voor je te installeren.</p>
 
       <div class="workflow">
-        <span class="wf-step" style="background: var(--codex-soft); color: var(--codex);">Telegram</span>
+        <span class="wf-step" style="background: var(--codex-soft); color: var(--codex);">Jij in Telegram</span>
         <span class="wf-arrow">&rarr;</span>
         <span class="wf-step" style="background: var(--green-soft); color: var(--green);">Hermes Gateway</span>
         <span class="wf-arrow">&rarr;</span>
         <span class="wf-step" style="background: var(--amber-soft); color: var(--amber);">Hermes Agent</span>
         <span class="wf-arrow">&rarr;</span>
-        <span class="wf-step" style="background: var(--cyan-soft); color: var(--cyan);">OpenAI / Nous / andere provider</span>
+        <span class="wf-step" style="background: var(--cyan-soft); color: var(--cyan);">OpenAI via Codex / andere provider</span>
       </div>
 
-      <p>Daarna kun je hem vragen stellen, taken laten uitvoeren, webinformatie laten ophalen, bestanden laten analyseren, code laten aanpassen, samenvattingen laten maken of kleine automatiseringen laten draaien.</p>
+      <p>In deze gids betekent “lokaal draaien”: de agent-runtime, tools, scripts, bestanden, Telegram-gateway en sessies draaien op jouw machine. Het AI-model zelf mag gewoon via OpenAI/Codex, Nous, OpenRouter of een andere provider komen.</p>
 
-      <div class="divider"></div>
-      <h2 id="belangrijke-nuance"><span class="section-num blue">2</span>Belangrijke nuance: lokaal draaien betekent niet lokaal model</h2>
-      <p>“Ik draai thuis een lokale AI” klinkt alsof het hele taalmodel op je eigen pc draait. Dat kan, maar dat is meestal niet de beste eerste stap.</p>
-      <p>In deze setup draait vooral de <strong>agent-runtime</strong> lokaal: Hermes, de tools, de Telegram-gateway, je bestanden, je scripts en je sessies. Het brein komt meestal van een modelprovider zoals OpenAI, Nous Portal, OpenRouter, Anthropic of een andere OpenAI-compatible endpoint.</p>
-
-      <div class="callout warn">
-        <div class="callout-title">ChatGPT abonnement is niet altijd OpenAI API</div>
-        <p>Een ChatGPT Plus/Pro abonnement is niet automatisch hetzelfde als OpenAI API-tegoed. Voor direct OpenAI API-gebruik heb je meestal een API key en API-billing nodig. Als je provider-gedoe wilt vermijden, is Nous Portal vaak de makkelijkste start omdat modeltoegang en toolgateway daar in één setup zitten.</p>
+      <div class="callout tip">
+        <div class="callout-title">Belangrijk uitgangspunt</div>
+        <p>Als je al een ChatGPT-abonnement hebt waarmee je Codex kunt gebruiken, is dat een logische start. Codex ondersteunt inloggen met je ChatGPT-account, en Hermes kan ook met de OpenAI Codex-provider werken. Je hoeft dit dus niet meteen als “API key project” te behandelen.</p>
       </div>
 
       <div class="divider"></div>
-      <h2 id="start-keuze"><span class="section-num purple">3</span>Welke startsetup kies je?</h2>
+      <h2 id="woordenlijst"><span class="section-num blue">2</span>Mini-woordenlijst</h2>
+      <p>Als dit nieuw voor je is, zijn vooral de woorden verwarrend. Deze termen kom je tegen:</p>
+      <div class="explain-grid">
+        <div class="explain-card"><h3>WSL</h3><p>Windows Subsystem for Linux. Je draait Ubuntu/Linux binnen Windows, zonder een aparte Linux-pc te installeren.</p></div>
+        <div class="explain-card"><h3>Ubuntu</h3><p>Een populaire Linux-versie. In deze gids is Ubuntu de plek waar Codex en Hermes hun terminal-werk doen.</p></div>
+        <div class="explain-card"><h3>Terminal</h3><p>Een tekstvenster waarin je commando’s plakt. Denk: PowerShell of Ubuntu, maar dan voor installatie en beheer.</p></div>
+        <div class="explain-card"><h3>Gateway</h3><p>Het deel van Hermes dat Telegram-berichten ontvangt en terugstuurt. Zonder gateway moet je Hermes via de terminal gebruiken.</p></div>
+        <div class="explain-card"><h3>Provider</h3><p>De partij die het AI-model levert, bijvoorbeeld OpenAI/Codex, Nous of OpenRouter.</p></div>
+        <div class="explain-card"><h3>Backend</h3><p>De plek waar je agent duurzame data kwijt kan: notities, taken, logs, context, kennis of geheugen.</p></div>
+      </div>
+
+      <p>Je ziet sommige woorden ook als hover-uitleg in de tekst, bijvoorbeeld <span class="term" tabindex="0" data-tip="WSL = Windows Subsystem for Linux. Daarmee draai je Ubuntu/Linux binnen Windows.">WSL</span>, <span class="term" tabindex="0" data-tip="Een provider levert het AI-model dat Hermes gebruikt om te redeneren en antwoorden te schrijven.">provider</span> en <span class="term" tabindex="0" data-tip="Een gateway verbindt Hermes met apps zoals Telegram, WhatsApp, Discord of e-mail.">gateway</span>.</p>
+
+      <div class="divider"></div>
+      <h2 id="codex-first"><span class="section-num purple">3</span>Start slimmer: laat Codex de installatie doen</h2>
+      <p>De beste noob-route is niet om deze gids perfect handmatig te volgen. Installeer eerst <strong>Codex CLI</strong>, log in met je ChatGPT-account, en laat Codex daarna de rest uitvoeren terwijl jij meekijkt.</p>
+      <p>Waarom? Omdat installaties vaak vastlopen op kleine machine-specifieke dingen: ontbrekende packages, PATH-problemen, een oude Windows-build, een terminal die anders werkt, of een service die niet start. Een agent op dezelfde pc kan die foutmeldingen lezen en meteen de volgende stap proberen.</p>
+
+      <div class="prompt-box">
+        <div class="callout-title">Prompt voor Codex</div>
+        <p>Plak na het installeren van Codex ongeveer dit:</p>
+        <pre><code>Ik wil Hermes Agent installeren op deze oude Windows-pc via WSL/Ubuntu en koppelen aan Telegram.
+Gebruik mijn ChatGPT/Codex-login waar mogelijk voor OpenAI/Codex-auth.
+Installeer Hermes, run hermes doctor, configureer Telegram Gateway, zet veilige allowlist/pairing aan,
+adviseer een geheugen/backend setup met Holographic Memory + jsonl-vault of Notion,
+en stop voordat je destructieve of publieke acties uitvoert.</code></pre>
+      </div>
+
+      <p>Blijf wel opletten: Codex mag helpen, maar jij moet tokens, accounts en security-keuzes bewust behandelen.</p>
+
+      <div class="divider"></div>
+      <h2 id="start-keuze"><span class="section-num amber">4</span>Welke startsetup kies je?</h2>
       <table class="comparison">
         <tr><th>Setup</th><th>Wanneer logisch?</th><th>Nadeel</th></tr>
         <tr><td>Oude Windows-pc met WSL</td><td>Beste pilot. Goedkoop, snel, je hebt hem al liggen.</td><td>Windows sleep, updates en WSL-servicegedoe kunnen de bot stilleggen.</td></tr>
-        <tr><td>Mini-pc met Ubuntu</td><td>Beste thuissetup als je het dagelijks gebruikt.</td><td>Kost iets meer tijd om netjes in te richten.</td></tr>
-        <tr><td>Goedkope VPS</td><td>Beste “altijd bereikbaar”-setup.</td><td>Cloudkosten en iets meer security-verantwoordelijkheid.</td></tr>
-        <tr><td>Volledig lokaal model</td><td>Alleen zinvol als je bewust met lokale modellen wilt spelen.</td><td>Meer hardware, meer tuning, vaak minder goede output dan sterke API-modellen.</td></tr>
+        <tr><td>Mini-pc met Ubuntu</td><td>Beste thuissetup als je Hermes dagelijks gebruikt.</td><td>Iets meer installatie- en beheerwerk.</td></tr>
+        <tr><td>Goedkope VPS</td><td>Beste “altijd bereikbaar”-setup.</td><td>Cloudkosten en meer verantwoordelijkheid voor beveiliging.</td></tr>
+        <tr><td>Volledig lokaal model</td><td>Alleen als je bewust met lokale modellen wilt experimenteren.</td><td>Meer hardware, meer tuning, vaak minder goede output.</td></tr>
       </table>
 
       <div class="callout tip">
         <div class="callout-title">Mijn advies</div>
-        <p>Start op de oude Windows-pc met WSL. Krijg Hermes + Telegram werkend. Gebruik het een week. Als je de bot echt dagelijks gebruikt, verhuis hem daarna naar een mini-pc met Ubuntu of een VPS.</p>
+        <p>Start op de oude Windows-pc met WSL en Codex. Krijg Hermes + Telegram werkend. Gebruik het een week. Als je het dagelijks gebruikt, verhuis daarna naar een mini-pc met Ubuntu of een VPS.</p>
       </div>
 
       <div class="divider"></div>
-      <h2 id="wsl-installeren"><span class="section-num amber">4</span>WSL en Ubuntu installeren</h2>
-      <p>Open PowerShell als administrator en installeer Ubuntu via WSL:</p>
+      <h2 id="wsl-installeren"><span class="section-num green">5</span>WSL en Ubuntu installeren</h2>
+      <p>Open <strong>PowerShell als administrator</strong>. PowerShell is de Windows-terminal. Plak dit commando:</p>
       <pre><code>wsl --install -d Ubuntu</code></pre>
-      <p>Herstart Windows als daarom gevraagd wordt. Open daarna <strong>Ubuntu</strong> vanuit het Startmenu en update de basispakketten:</p>
+      <p>Herstart Windows als daarom gevraagd wordt. Open daarna <strong>Ubuntu</strong> vanuit het Startmenu. Je zit nu in Linux-binnen-Windows.</p>
+      <p>Update Ubuntu en installeer basisgereedschap:</p>
       <pre><code>sudo apt update && sudo apt upgrade -y
 sudo apt install -y git curl xz-utils</code></pre>
+      <p>Wat betekent dit?</p>
+      <ul>
+        <li><code>sudo</code>: voer uit als beheerder binnen Linux.</li>
+        <li><code>apt</code>: de pakketmanager van Ubuntu.</li>
+        <li><code>git</code>: haalt code uit GitHub-repositories.</li>
+        <li><code>curl</code>: downloadt scripts of webdata via de terminal.</li>
+        <li><code>xz-utils</code>: nodig voor sommige gecomprimeerde downloads.</li>
+      </ul>
       <p>Check dat je echt in Linux zit:</p>
       <pre><code>uname -a</code></pre>
 
       <div class="divider"></div>
-      <h2 id="hermes-installeren"><span class="section-num green">5</span>Hermes installeren</h2>
-      <p>Installeer Hermes in Ubuntu/WSL:</p>
+      <h2 id="codex-installeren"><span class="section-num cyan">6</span>Codex installeren</h2>
+      <p>Codex is de command-line coding agent van OpenAI. Hij draait lokaal op je computer en kan helpen om Hermes te installeren, foutmeldingen te lezen en configuratiebestanden aan te passen.</p>
+      <p>In Ubuntu/WSL kun je de officiële installer gebruiken:</p>
+      <pre><code>curl -fsSL https://chatgpt.com/codex/install.sh | sh</code></pre>
+      <p>Start daarna Codex:</p>
+      <pre><code>codex</code></pre>
+      <p>Kies <strong>Sign in with ChatGPT</strong>. Daarmee gebruik je Codex via je ChatGPT-account/abonnement. Dit is juist de route die ik voor beginners zou kiezen.</p>
+      <p class="small-note">Alternatief kan Codex ook via npm: <code>npm install -g @openai/codex</code>. Gebruik de installer hierboven als default.</p>
+
+      <div class="divider"></div>
+      <h2 id="hermes-installeren"><span class="section-num orange">7</span>Hermes installeren</h2>
+      <p>Je kunt dit handmatig doen, maar als Codex al draait: laat Codex meekijken en uitvoeren. Handmatig is dit de basis:</p>
       <pre><code>curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 source ~/.bashrc
 hermes doctor</code></pre>
-      <p>Als het commando <code>hermes</code> niet gevonden wordt, voeg dan de lokale bin-map toe aan je shell:</p>
+      <p><code>hermes doctor</code> is de gezondheidscheck. Die vertelt wat ontbreekt of verkeerd staat.</p>
+      <p>Als <code>hermes</code> niet gevonden wordt, staat de launcher waarschijnlijk nog niet in je PATH. Plak dan:</p>
       <pre><code>echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc</code></pre>
-      <p>Test daarna of Hermes start:</p>
+      <p>Test daarna:</p>
       <pre><code>hermes chat -q "Geef één zin terug: Hermes werkt."</code></pre>
 
       <div class="divider"></div>
-      <h2 id="model-provider"><span class="section-num cyan">6</span>Modelprovider instellen</h2>
-      <p>De makkelijkste route is de interactieve setup:</p>
-      <pre><code>hermes setup</code></pre>
-      <p>Als je Nous Portal gebruikt, is dit de kortste route:</p>
-      <pre><code>hermes setup --portal</code></pre>
-      <p>Als je OpenAI wilt gebruiken, kies je via de modelconfiguratie je provider en model:</p>
+      <h2 id="model-provider"><span class="section-num blue">8</span>OpenAI/Codex login instellen</h2>
+      <p>Hermes heeft een modelprovider nodig: dat is de plek waar het taalmodel vandaan komt. Voor deze route is OpenAI/Codex logisch, omdat je Codex al met je ChatGPT-account gebruikt.</p>
+      <p>Probeer eerst de login-route voor OpenAI Codex:</p>
+      <pre><code>hermes login --provider openai-codex</code></pre>
+      <p>Daarna kun je je model/provider kiezen:</p>
       <pre><code>hermes model</code></pre>
-      <p>Gebruik daarna opnieuw:</p>
-      <pre><code>hermes doctor</code></pre>
-      <p>Los eerst de meldingen op voordat je Telegram koppelt. Dat scheelt zoekwerk: als de CLI al niet werkt, gaat de Telegram-bot ook niet magisch werken.</p>
+      <p>Algemene setup kan ook:</p>
+      <pre><code>hermes setup</code></pre>
+      <p>Als je juist Nous Portal wilt gebruiken, kan dat ook:</p>
+      <pre><code>hermes setup --portal</code></pre>
+      <p>Maar voor iemand met een werkende Codex/ChatGPT-route zou ik beginnen met Codex/OpenAI. Minder losse API-key-rommel, sneller naar een werkende agent.</p>
 
       <div class="divider"></div>
-      <h2 id="telegram"><span class="section-num orange">7</span>Telegram koppelen</h2>
-      <p>Maak eerst een Telegram-bot aan via <strong>@BotFather</strong>:</p>
+      <h2 id="telegram"><span class="section-num green">9</span>Telegram koppelen</h2>
+      <p>Telegram werkt via een bot. Een bot is een speciaal Telegram-account dat berichten kan ontvangen en beantwoorden via een token.</p>
       <ol>
         <li>Open Telegram.</li>
         <li>Zoek <strong>@BotFather</strong>.</li>
         <li>Stuur <code>/newbot</code>.</li>
         <li>Kies een naam, bijvoorbeeld <code>Remko Hermes</code>.</li>
         <li>Kies een username die eindigt op <code>bot</code>, bijvoorbeeld <code>remko_hermes_bot</code>.</li>
-        <li>Bewaar de token die BotFather geeft. Deel die niet.</li>
+        <li>BotFather geeft een token. Dat is een soort wachtwoord voor je bot. Deel die niet.</li>
       </ol>
-      <p>Configureer daarna de Hermes gateway:</p>
+      <p>Configureer daarna Hermes Gateway:</p>
       <pre><code>hermes gateway setup</code></pre>
-      <p>Kies Telegram en plak de BotFather-token. Start daarna de gateway in foreground:</p>
+      <p>Kies Telegram en plak de BotFather-token. Start de gateway om te testen:</p>
       <pre><code>hermes gateway run</code></pre>
-      <p>Stuur nu een DM naar je Telegram-bot. Als hij reageert, is de basis klaar.</p>
+      <p>Stuur nu een DM naar je bot. Als hij antwoordt, werkt de basis.</p>
 
       <div class="divider"></div>
-      <h2 id="permanent-draaien"><span class="section-num blue">8</span>Permanent laten draaien</h2>
-      <p>Voor een eerste test is dit genoeg:</p>
+      <h2 id="geheugen-backend"><span class="section-num purple">10</span>Geheugen en backend toevoegen</h2>
+      <p>Een kale Telegram-agent is leuk, maar beperkt. De echte waarde ontstaat als Hermes dingen kan onthouden en ergens duurzaam kan opslaan.</p>
+      <p>Ik zou twee lagen toevoegen:</p>
+      <table class="comparison">
+        <tr><th>Laag</th><th>Wat doet het?</th><th>Mijn advies</th></tr>
+        <tr><td>Geheugen</td><td>Feiten, voorkeuren, terugkerende context en relaties onthouden.</td><td>Installeer/activeer <strong>Holographic Memory</strong> als die beschikbaar is in je Hermes setup.</td></tr>
+        <tr><td>Backend</td><td>Duurzame opslag voor notities, taken, logs, documenten, captures of kennis.</td><td>Begin simpel met <strong>jsonl-vault</strong>. Kies Notion als je liever een bekende UI hebt.</td></tr>
+      </table>
+      <p>Wat is het verschil?</p>
+      <ul>
+        <li><strong>Holographic Memory</strong>: goed voor “wie is wie?”, voorkeuren, terugkerende context en verbanden tussen dingen.</li>
+        <li><strong>jsonl-vault</strong>: simpele bestanden met één JSON-record per regel. Saai, controleerbaar en goed voor agents.</li>
+        <li><strong>Notion</strong>: prettig als mensen zelf willen meekijken en klikken, maar minder Git/native dan bestanden.</li>
+        <li><strong>Obsidian/Markdown</strong>: sterk als je zelf een lokale kennisbank wilt beheren.</li>
+      </ul>
+      <div class="callout info">
+        <div class="callout-title">Mijn startadvies</div>
+        <p>Voor een persoonlijke agent: Holographic Memory + jsonl-vault. Voor iemand die vooral visueel wil beheren: Holographic Memory + Notion. Laat Codex de beschikbare Hermes memory/backend-opties inspecteren en vraag om de kleinste werkende setup.</p>
+      </div>
+      <p>Prompt voor Codex:</p>
+      <pre><code>Controleer welke memory/backends deze Hermes-installatie ondersteunt.
+Adviseer en configureer een beginner-vriendelijke setup met Holographic Memory plus jsonl-vault of Notion.
+Gebruik geen geheime tokens in chatoutput. Toon alleen welke integraties werken en hoe ik ze test.</code></pre>
+
+      <div class="divider"></div>
+      <h2 id="permanent-draaien"><span class="section-num amber">11</span>Permanent laten draaien</h2>
+      <p>Voor een eerste test is foreground draaien genoeg:</p>
       <pre><code>hermes gateway run</code></pre>
-      <p>Laat de Ubuntu-terminal open staan. Niet mooi, wel eerlijk: dit bewijst eerst of je de agent gebruikt.</p>
-      <p>Als je hem als service wilt draaien, check dan of systemd in WSL werkt:</p>
+      <p>Dat betekent: zolang dit terminalvenster open is, luistert Hermes naar Telegram.</p>
+      <p>Wil je hem als achtergrondservice draaien, check dan eerst of systemd in WSL werkt:</p>
       <pre><code>systemctl --user status</code></pre>
       <p>Als dat werkt:</p>
       <pre><code>hermes gateway install
 hermes gateway start
 hermes gateway status</code></pre>
-      <p>Als WSL afsluit zodra niemand is ingelogd of Windows gaat slapen, is dit geen Hermes-probleem maar een serverprobleem. Zet sleep uit, laat de machine aan staan, of verhuis naar een mini-pc/VPS.</p>
+      <p>Als Windows gaat slapen, stopt je “server”. Zet sleep uit, laat de machine aan staan, of verhuis naar een mini-pc/VPS.</p>
 
       <div class="divider"></div>
-      <h2 id="veiligheid"><span class="section-num purple">9</span>Veiligheid: zet geen terminal-agent publiek open</h2>
-      <p>Een Telegram-bot met agent-tools is geen speelgoedbot. Hij kan, afhankelijk van je toolconfiguratie, commando’s uitvoeren, bestanden lezen, browseracties doen en externe services raken.</p>
+      <h2 id="veiligheid"><span class="section-num cyan">12</span>Veiligheid: zet geen terminal-agent publiek open</h2>
+      <p>Een Telegram-agent met terminal-tools is krachtig. Hij kan, afhankelijk van je instellingen, commando’s uitvoeren, bestanden lezen, browseracties doen en externe services raken.</p>
       <ul>
         <li>Deel de bot niet breed.</li>
         <li>Zet hem niet open voor iedereen.</li>
         <li>Gebruik allowlist of pairing.</li>
-        <li>Zet geen API keys in chatberichten.</li>
-        <li>Laat betalings-, productie- of destructieve acties altijd bewust gated.</li>
+        <li>Zet geen API keys of tokens in chatberichten.</li>
+        <li>Laat betaling, productie, publicatie en destructieve acties bewust gated.</li>
       </ul>
       <p>Als een onbekende user de bot DM’t, kan Hermes met pairing codes werken. Je kunt aanvragen zien en goedkeuren met:</p>
       <pre><code>hermes pairing list
 hermes pairing approve telegram CODE</code></pre>
-      <p>Gebruik <code>GATEWAY_ALLOW_ALL_USERS=true</code> alleen als je bewust een publieke speeltuin bouwt. Voor een persoonlijke agent is dat vrijwel nooit de juiste default.</p>
+      <p>Gebruik <code>GATEWAY_ALLOW_ALL_USERS=true</code> alleen als je bewust een publieke speeltuin bouwt. Voor een persoonlijke agent is dat bijna nooit de juiste default.</p>
 
       <div class="divider"></div>
-      <h2 id="succescheck"><span class="section-num green">10</span>Succescheck</h2>
+      <h2 id="succescheck"><span class="section-num green">13</span>Succescheck</h2>
       <p>Je bent klaar met de eerste setup als deze commando’s werken:</p>
-      <pre><code>hermes doctor
+      <pre><code>codex --version
+hermes doctor
 hermes chat -q "Geef één zin terug: Hermes werkt."
 hermes gateway status</code></pre>
       <p>En als dit in Telegram werkt:</p>
@@ -695,7 +865,7 @@ hermes gateway status</code></pre>
 
       <div class="callout info">
         <div class="callout-title">De nuchtere eindconclusie</div>
-        <p>Een oude Windows-pc met WSL is prima als startbak. Noem het alleen nog geen server voordat hij zeven dagen betrouwbaar bereikbaar is geweest. Als je hem dagelijks gaat gebruiken, is een mini-pc met Ubuntu of een VPS de volwassen stap.</p>
+        <p>Een oude Windows-pc met WSL is prima als startbak. Maar maak het slimmer: installeer Codex, laat Codex Hermes installeren, koppel Telegram, voeg geheugen en een backend toe, en kijk dan of je het zeven dagen echt gebruikt. Daarna pas beslissen of je naar mini-pc of VPS verhuist.</p>
       </div>
     </div>
 
