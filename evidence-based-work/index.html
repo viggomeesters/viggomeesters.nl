@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence-Based Work — Viggo Meesters</title>
+  <meta name="description" content="A lightweight work method for making important decisions, designs, prototypes, and lessons traceable without turning work into bureaucracy.">
+  <link rel="canonical" href="https://viggomeesters.com/evidence-based-work/">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:title" content="Evidence-Based Work — Viggo Meesters">
+  <meta property="og:description" content="A lightweight work method for making important decisions, designs, prototypes, and lessons traceable without turning work into bureaucracy.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.com/evidence-based-work/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Evidence-Based Work — Viggo Meesters">
+  <meta name="twitter:description" content="A lightweight work method for making important decisions, designs, prototypes, and lessons traceable without turning work into bureaucracy.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0c0c0f;--surface:#141418;--elevated:#1a1a20;--border:rgba(255,255,255,.10);--sub:rgba(255,255,255,.055);--text:#c8cbd5;--muted:#53586b;--secondary:#8a90a6;--bright:#eeeff4;--accent:#3b82f6;--accent-soft:rgba(59,130,246,.10);--green:#22c55e;--green-soft:rgba(34,197,94,.10);--orange:#f97316;--orange-soft:rgba(249,115,22,.10);--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px;--bounce:cubic-bezier(.34,1.56,.64,1)}
+    html{background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.75;min-height:100vh;overflow-x:hidden}
+    .aurora{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+    .aurora::before{content:'';position:absolute;width:140%;height:140%;top:-20%;left:-20%;background:radial-gradient(ellipse 600px 400px at 15% 10%,rgba(59,130,246,.08) 0%,transparent 70%),radial-gradient(ellipse 500px 500px at 75% 25%,rgba(249,115,22,.07) 0%,transparent 60%),radial-gradient(ellipse 700px 300px at 50% 65%,rgba(34,197,94,.045) 0%,transparent 60%)}
+    .page{position:relative;z-index:1;max-width:740px;margin:0 auto;padding:60px 20px 80px}
+    .back{display:inline-flex;align-items:center;gap:6px;font-size:.82em;color:var(--muted);text-decoration:none;margin-bottom:40px;padding:6px 14px;background:var(--surface);border:1px solid var(--sub);border-radius:10px;transition:color .2s,border-color .2s,transform .3s var(--bounce)}
+    .back:hover{color:var(--secondary);border-color:var(--border);transform:translateX(-3px)}
+    .hero{margin-bottom:40px}.eyebrow{font-family:var(--mono);font-size:.72em;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}.hero h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.05;letter-spacing:-.045em;color:var(--bright);font-weight:700;text-wrap:balance}.subtitle{max-width:680px;margin-top:14px;color:var(--secondary);font-size:1.02em}.meta{margin-top:16px;color:var(--muted);font-size:.78em}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.chip{font-family:var(--mono);font-size:.72em;color:var(--secondary);background:rgba(255,255,255,.045);border:1px solid var(--sub);border-radius:999px;padding:7px 10px}
+    .principle{margin:32px 0 42px;padding:22px 24px;border-radius:22px;background:linear-gradient(135deg,rgba(59,130,246,.14),rgba(249,115,22,.08));border:1px solid rgba(255,255,255,.10);box-shadow:0 24px 70px rgba(0,0,0,.24)}.principle p{margin:0;color:#e5e7ef;font-size:1.08em;line-height:1.65}.principle strong{color:#fff}
+    .toc{background:var(--surface);border:1px solid var(--sub);border-radius:var(--radius);padding:22px 26px;margin-bottom:44px}.toc-title{font-family:var(--mono);font-size:.7em;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:12px}.toc ol{list-style:none;counter-reset:toc}.toc li{counter-increment:toc;margin-bottom:6px}.toc li::before{content:counter(toc) '.';display:inline-block;width:22px;margin-right:10px;font-family:var(--mono);font-size:.78em;color:var(--muted)}.toc a{color:var(--secondary);text-decoration:none}.toc a:hover{color:var(--bright)}
+    article h2{font-size:1.45em;line-height:1.2;color:var(--bright);letter-spacing:-.025em;margin:46px 0 16px}article h3{font-size:1.05em;color:#e0e1e8;margin:28px 0 10px}article p{margin-bottom:16px}article ul,article ol{padding-left:22px;margin-bottom:18px}article li{margin-bottom:8px}article strong{color:#f2f3f7}article code{font-family:var(--mono);font-size:.92em;color:#dce5ff;background:rgba(59,130,246,.10);border:1px solid rgba(59,130,246,.16);border-radius:7px;padding:1px 6px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0 24px}.card{padding:17px;border-radius:var(--radius);background:var(--surface);border:1px solid var(--sub)}.card h3{margin:0 0 8px;font-size:.95em;color:var(--bright)}.card p{margin:0;color:var(--secondary);font-size:.9em;line-height:1.6}.number{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;border-radius:9px;margin-right:8px;font-family:var(--mono);font-size:.75em;font-weight:700;background:var(--accent-soft);color:var(--accent)}
+    .callout{margin:24px 0;padding:18px 20px;border-radius:var(--radius);background:var(--orange-soft);border:1px solid rgba(249,115,22,.18)}.callout-title{font-family:var(--mono);font-size:.72em;text-transform:uppercase;letter-spacing:.11em;color:var(--orange);margin-bottom:8px}.callout p{margin-bottom:0;color:#d8dbe6}
+    .template{white-space:pre-wrap;margin:22px 0 28px;padding:20px;border-radius:var(--radius);background:#0f1117;border:1px solid rgba(255,255,255,.09);color:#cfd6e6;font-family:var(--mono);font-size:.82em;line-height:1.65;overflow-x:auto}.footer{margin-top:64px;font-size:.72em;color:var(--muted);text-align:center;opacity:.55}.footer a{color:var(--muted);text-decoration:none}.footer a:hover{color:var(--secondary)}
+    @media(max-width:640px){.page{padding:42px 14px 64px}.grid{grid-template-columns:1fr}.hero h1{font-size:2rem}.principle{padding:18px}.toc{padding:18px}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <a href="/guides/" class="back">&larr; Writing</a>
+
+    <header class="hero">
+      <div class="eyebrow">Work method</div>
+      <h1>Evidence-based work</h1>
+      <p class="subtitle">A lightweight way to make important work traceable. Useful for architects, consultants, builders, analysts, and anyone whose real value tends to disappear into meetings.</p>
+      <div class="chips"><span class="chip">evidence</span><span class="chip">architecture</span><span class="chip">delivery</span><span class="chip">knowledge sharing</span></div>
+      <p class="meta">By Viggo Meesters &middot; 11 July 2026</p>
+    </header>
+
+    <div class="principle">
+      <p><strong>Evidence-based work:</strong> when something matters, leave a small trail of context, trade-off, design, result, and reusable lesson.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#problem">The problem</a></li>
+        <li><a href="#method">The method</a></li>
+        <li><a href="#five-pieces">The five pieces of evidence</a></li>
+        <li><a href="#template">A one-page template</a></li>
+        <li><a href="#habit">The habit</a></li>
+        <li><a href="#boundary">The boundary</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section id="problem">
+        <h2><span class="number">01</span>The problem</h2>
+        <p>Some work is easy to see. A ticket closes. A dashboard ships. A bug disappears.</p>
+        <p>Other work is quieter. You clarify a vague problem. You draw the first useful architecture. You turn a messy idea into a prototype. You explain the same concept to three teams until the organization finally has language for it.</p>
+        <p>That kind of work matters, but it evaporates fast. It lives in calls, chat threads, whiteboards, demos, half remembered decisions, and someone's head. A month later people remember that progress happened, but not what changed or why.</p>
+        <p>Evidence-based work is a practical answer to that. It does not mean turning every action into a report. It means important work should leave enough trace that future you, your team, or your manager can reconstruct the value.</p>
+      </section>
+
+      <section id="method">
+        <h2><span class="number">02</span>The method</h2>
+        <p>The method is simple: after meaningful work, capture the smallest useful record of what happened.</p>
+        <p>Not a novel. Not corporate theater. Just enough to answer five questions:</p>
+        <ul>
+          <li>What was the situation?</li>
+          <li>Which trade-offs mattered?</li>
+          <li>What did we design, build, decide, or test?</li>
+          <li>What happened as a result?</li>
+          <li>What can be reused next time?</li>
+        </ul>
+        <p>This is especially useful in roles where the job is partly to create shape: solution architecture, data work, consulting, product discovery, AI enablement, internal tooling, platform work, and technical leadership.</p>
+      </section>
+
+      <section id="five-pieces">
+        <h2><span class="number">03</span>The five pieces of evidence</h2>
+        <div class="grid">
+          <div class="card"><h3>Context</h3><p>The situation, question, constraint, or confusion that made the work necessary.</p></div>
+          <div class="card"><h3>Trade-off</h3><p>The options that were considered, including the direction you deliberately did not take.</p></div>
+          <div class="card"><h3>Design</h3><p>The model, flow, interface, prototype, standard, or plan that made the work concrete.</p></div>
+          <div class="card"><h3>Result</h3><p>The demo, decision, feedback, changed behavior, delivery outcome, or next step.</p></div>
+          <div class="card"><h3>Reusable lesson</h3><p>The pattern, checklist, anti-pattern, or question that should be carried into future work.</p></div>
+          <div class="card"><h3>Links</h3><p>The artifacts that prove it happened: diagrams, decks, docs, repos, tickets, recordings, or decisions.</p></div>
+        </div>
+        <p>The last box is deliberately boring. Links matter. A beautiful explanation without a path back to the actual artifact becomes another memory game.</p>
+      </section>
+
+      <section id="template">
+        <h2><span class="number">04</span>A one-page template</h2>
+        <p>This is usually enough:</p>
+        <pre class="template"># [Topic] evidence note
+
+## Context
+What was the question, situation, or trigger?
+
+## Trade-off
+Which options, constraints, or risks mattered?
+
+## Design or approach
+What was proposed, designed, tested, or built?
+
+## Result
+What changed? Demo, decision, feedback, output, next step?
+
+## Reusable
+What should we reuse next time?
+
+## Links
+Diagrams, docs, tickets, repos, decks, demos, decisions.</pre>
+        <p>If it needs more than one page, fine. If it needs less, also fine. The point is not length. The point is that the work becomes findable and defensible.</p>
+      </section>
+
+      <section id="habit">
+        <h2><span class="number">05</span>The habit</h2>
+        <p>I like the rhythm of a small weekly loop.</p>
+        <ol>
+          <li>Write short evidence notes for important design, discovery, prototype, and knowledge-sharing work.</li>
+          <li>End each note with one reusable lesson.</li>
+          <li>Once a week, pick the strongest notes and link them together.</li>
+          <li>Once a month, turn the best notes into a small portfolio of impact.</li>
+        </ol>
+        <p>This makes performance conversations less vague. Instead of saying "I picked up a lot of things", you can point to designs, decisions, prototypes, sessions, standards, and lessons that other people can use.</p>
+      </section>
+
+      <section id="boundary">
+        <h2><span class="number">06</span>The boundary</h2>
+        <p>The danger is obvious: evidence-based work can become documentation cosplay.</p>
+        <p>That kills the point. Small tasks do not need ceremony. Random opinions do not need a record. Meeting notes without a decision do not automatically deserve to live forever.</p>
+        <div class="callout">
+          <div class="callout-title">The rule</div>
+          <p>If you will need to explain it, defend it, reuse it, hand it over, or scale it, capture it. If not, keep moving.</p>
+        </div>
+        <p>Done well, evidence-based work is not bureaucracy. It is professional memory. It lets good work survive the meeting where it first appeared.</p>
+      </section>
+    </article>
+
+    <div class="footer"><a href="/">viggomeesters.com</a> &middot; <a href="/guides/">Writing</a></div>
+  </main>
+</body>
+</html>
