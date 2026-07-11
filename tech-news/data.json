@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-10T07:05:29+02:00",
+  "generatedAt": "2026-07-11T07:05:53+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 87,
+  "usefulOpen": 82,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -18,12 +18,12 @@
   "errors": {},
   "items": [
     {
-      "id": "f150ca037716fcb0",
-      "title": "An AI agent startup just let its agent run its $100M fundraise",
-      "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T00:08:58+02:00",
-      "summary": "Lyzr, a startup that builds AI agents for enterprises, used its own AI agent to raise a $100 million round — proof, evidently, that the product actually works.",
+      "id": "c71ce6e82e21e627",
+      "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+      "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+      "source": "GitHub Blog",
+      "published": "2026-07-10T17:57:47+02:00",
+      "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence. The post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog .",
       "areas": [
         "ai-agents",
         "developer-tools",
@@ -31,55 +31,21 @@
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agent",
-          "agents"
+          "agent"
         ],
         "developer-tools": [
-          "ide"
+          "github",
+          "git",
+          "ide",
+          "copilot"
         ],
         "enterprise-ai": [
-          "enterprise"
+          "workflow"
         ]
       },
       "scores": {
         "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "cc88667df518d5b9",
-      "title": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
-      "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
-      "source": "TechCrunch",
-      "published": "2026-07-09T21:40:45+02:00",
-      "summary": "Meta's pitch to users is Spark's ability to handle large agentic workloads, fix bugs, and help with large code migrations — the kind of automation that enterprises are increasingly turning to AI companies to provide.",
-      "areas": [
-        "ai-agents",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "enterprise",
-          "automation"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
+        "leverage": 3,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -362,43 +328,6 @@
         "novelty": 4,
         "urgency": 3,
         "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "6afe4c31c977ed83",
-      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
-      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
-      "source": "GitHub Blog",
-      "published": "2026-06-29T18:10:20+02:00",
-      "summary": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help. The post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub Blog .",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "ide"
-        ],
-        "data-platforms": [
-          "data",
-          "database"
-        ],
-        "privacy-risk": [
-          "vulnerability"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 100,
       "action": "Read",
@@ -772,67 +701,121 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "9b6dbd14294e60d1",
-      "title": "New York Times says OpenAI hid evidence in ChatGPT copyright trial",
-      "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/",
+      "id": "c9277a32d935e231",
+      "title": "Filing: College app Fizz accuses VC of sharing confidential startup information with rival Sidechat",
+      "url": "https://techcrunch.com/2026/07/10/filing-college-app-fizz-accuses-vc-of-sharing-confidential-startup-information-with-rival-sidechat/",
       "source": "TechCrunch",
-      "published": "2026-07-09T21:05:58+02:00",
-      "summary": "News publishers say OpenAI hid tools and datasets that could identify copyrighted journalism in ChatGPT outputs, escalating their lawsuit with a new motion for sanctions.",
+      "published": "2026-07-10T19:42:36+02:00",
+      "summary": "Fizz has expanded its lawsuit against rival Sidechat, alleging that a Maveron VC shared its confidential information obtained during a fundraising meeting with the competing startup.",
       "areas": [
-        "data-platforms",
         "developer-tools",
+        "enterprise-ai",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ],
+        "enterprise-ai": [
+          "aws"
+        ],
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "c89802fd483e27cc",
+      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "source": "The Verge",
+      "published": "2026-07-10T17:36:51-04:00",
+      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO Products - Jony Ive's hardware startup, […]",
+      "areas": [
         "enterprise-ai",
         "models",
         "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
+          "openai"
         ],
         "enterprise-ai": [
           "aws"
         ],
         "privacy-risk": [
-          "lawsuit",
-          "copyright"
+          "lawsuit"
         ]
       },
       "scores": {
-        "relevance": 5,
+        "relevance": 4,
         "leverage": 0,
         "novelty": 4,
         "urgency": 4,
-        "risk": 2
+        "risk": 1
       },
-      "priority": 90,
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "a10f496945568196",
-      "title": "OpenAI is shutting down Atlas, but its AI browser ambitions are still growing",
-      "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/",
+      "id": "798601448a5ef1d2",
+      "title": "Hugging Face’s CEO on why companies are done renting their AI",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
       "source": "TechCrunch",
-      "published": "2026-07-10T00:03:54+02:00",
-      "summary": "OpenAI is sunsetting its AI-powered browser after less than a year. But it's moving some agentic browsing features to its desktop app and a Chrome extension.",
+      "published": "2026-07-10T16:00:00+02:00",
+      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
       "areas": [
-        "ai-agents",
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "618c64669efb34cf",
+      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+      "url": "https://openai.com/index/deutsche-telekom",
+      "source": "OpenAI News",
+      "published": "2026-07-10T09:00:00+02:00",
+      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+      "areas": [
+        "enterprise-ai",
         "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
-        ],
         "models": [
           "openai"
+        ],
+        "enterprise-ai": [
+          "workflow"
         ]
       },
       "scores": {
@@ -864,71 +847,6 @@
         ],
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "8495d637bdd84890",
-      "title": "Microsoft’s patch Tuesdays are about to get bigger",
-      "url": "https://www.theverge.com/tech/963307/microsoft-patch-tuesday-ai-security-updates",
-      "source": "The Verge",
-      "published": "2026-07-09T13:00:00-04:00",
-      "summary": "Windows 11 updates could soon include fixes for more security issues at once. Microsoft said in a blog post on Thursday that it's now using AI to \"identify potential issues earlier,\" which means \"customers will see a higher volume of security updates included in each security release.\" Hackers, even amateurs, have increasingly been using AI […]",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "de30a32bf404080d",
-      "title": "Data Centers Are Quietly Taking Over Texas. The Pollution Could Be Catastrophic",
-      "url": "https://www.wired.com/story/data-centers-taking-over-texas-pollution-could-be-catastrophic/",
-      "source": "Wired",
-      "published": "2026-07-09T13:00:00+02:00",
-      "summary": "Thousands of new fossil-fuel power sources are quietly firing up across the state to power the AI boom, thanks to a regulatory loophole, leaving residents feeling blindsided.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data",
-          "etl"
         ]
       },
       "scores": {
@@ -1401,33 +1319,65 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "14e29c720228c2c9",
-      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-      "url": "https://openai.com/index/ai-chemist-improves-reaction",
-      "source": "OpenAI News",
-      "published": "2026-06-17T12:00:00+02:00",
-      "summary": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research.",
+      "id": "f3ba3d7c0317607d",
+      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
+      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
+      "source": "TechCrunch",
+      "published": "2026-07-11T03:01:28+02:00",
+      "summary": "Independent cybersecurity journalist Brian Krebs reported in May that a security researcher with cyber firm GitGuardian alerted him to reams of exposed passwords stored in a publicly accessible GitHub repository, which an employee of a CISA contractor had uploaded.",
       "areas": [
-        "ai-agents",
-        "models"
+        "developer-tools",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "autonomous"
+        "developer-tools": [
+          "github",
+          "git",
+          "ide"
         ],
-        "models": [
-          "openai",
-          "gpt"
+        "privacy-risk": [
+          "security"
         ]
       },
       "scores": {
         "relevance": 3,
         "leverage": 1,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
-      "priority": 88,
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4ee70ce657780dc1",
+      "title": "ICE is threatening to deport witnesses of its latest shooting",
+      "url": "https://www.theverge.com/policy/964294/ice-shooting-houston-lorenzo-salgado-araujo",
+      "source": "The Verge",
+      "published": "2026-07-10T15:20:00-04:00",
+      "summary": "Advocates are demanding that the Department of Homeland Security release bodycam footage of the fatal shooting of Lorenzo Salgado Araujo, a Mexican immigrant who was killed by ICE officers in Houston during a traffic stop earlier this week. But DHS claims the agents involved in the shooting weren't wearing body cameras because of the lengthy […]",
+      "areas": [
+        "ai-agents",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1542,6 +1492,40 @@
         "risk": 0
       },
       "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "746d05eb828bd7af",
+      "title": "OpenAI’s Head of Safety Is Leaving the Company",
+      "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
+      "source": "Wired",
+      "published": "2026-07-11T03:07:26+02:00",
+      "summary": "Johannes Heidecke’s departure comes as OpenAI tries to further integrate its research and safety teams.",
+      "areas": [
+        "developer-tools",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "developer-tools": [
+          "ide"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -1719,8 +1703,71 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "94c0d02d158d4595",
-      "title": "Fidji Simo steps down from OpenAI’s no. 2 role",
+      "id": "ad3d989588d4eb53",
+      "title": "Microsoft Reports a Massive 25 Percent Jump in Emissions",
+      "url": "https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/",
+      "source": "Wired",
+      "published": "2026-07-11T01:16:56+02:00",
+      "summary": "Data centers are driving up the company’s use of electricity—and carbon pollution.",
+      "areas": [
+        "data-platforms",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "47a96e0deb1bdb2a",
+      "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
+      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-10T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the clearest glimpse yet at what’s really going on inside large language models as they…",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "language model",
+          "openai",
+          "anthropic",
+          "claude"
+        ],
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "24bf4d6ae0708e30",
+      "title": "Fidji Simo steps down from OpenAI’s No. 2 role",
       "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
       "source": "TechCrunch",
       "published": "2026-07-10T01:38:00+02:00",
@@ -1768,127 +1815,6 @@
         ],
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "96af8e89ad5ab37a",
-      "title": "How did the government decide OpenAI’s frontier model was safe to release?",
-      "url": "https://techcrunch.com/2026/07/09/how-did-the-government-decide-openais-frontier-model-was-safe-to-release/",
-      "source": "TechCrunch",
-      "published": "2026-07-09T20:22:39+02:00",
-      "summary": "\"Exactly what that dialog looked like between the government and Anthropic and OpenAI is unclear.\"",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "2cd06eacd6790123",
-      "title": "Microsoft’s carbon emissions went up 25 percent last year",
-      "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026",
-      "source": "The Verge",
-      "published": "2026-07-09T20:04:13-04:00",
-      "summary": "Microsoft may once again be struggling to keep up with its own climate goals, according to its 2026 sustainability report. As reported by GeekWire, the report states that Microsoft's carbon emissions increased 25 percent in 2025, totalling 34 million metric tons \"without select interventions.\" Microsoft says this was \"driven primarily by the expansion of our",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "faa54e3afe1447c1",
-      "title": "Influencers Are Promoting $50 Straws They Claim Will Protect Against Electromagnetic Radiation",
-      "url": "https://www.wired.com/story/wellness-influencers-are-promoting-dollar50-straws-to-protect-against-electromagnetic-radiation/",
-      "source": "Wired",
-      "published": "2026-07-09T12:30:00+02:00",
-      "summary": "“EMF straws” and similar products are being sold as a way to block electromagnetic frequencies that come from common electronic devices, even without scientific evidence that they work.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "aws"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "2db21f931da5424c",
-      "title": "Judge rejects Kalshi attempt to override New York state gambling laws",
-      "url": "https://arstechnica.com/tech-policy/2026/07/new-york-can-restrict-sports-gambling-on-prediction-markets-us-judge-rules/",
-      "source": "Ars Technica",
-      "published": "2026-07-08T21:14:02+02:00",
-      "summary": "Kalshi tried to ignore gambling laws on its prediction market, NY governor says.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "aws"
         ]
       },
       "scores": {
@@ -1963,6 +1889,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "762b2a55b6a430c8",
+      "title": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
+      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T16:19:40+02:00",
+      "summary": "The tech giant is in breach of the Digital Services Act by focusing on features like infinite scroll, autoplay, push notifications, and the highly personalized recommendation algorithms, the European Commission said.",
+      "areas": [
+        "developer-tools",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ],
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "87a8effc7094d221",
       "title": "Quoting OpenAI",
       "url": "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
@@ -1984,37 +1940,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "91a708a5ea818d13",
-      "title": "OpenAI launches its new family of models with GPT-5.6",
-      "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T00:24:24+02:00",
-      "summary": "OpenAI's latest family of models promises improvements across a range of areas, including cybersecurity.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -2075,12 +2000,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "45d63905e99d737b",
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "url": "https://openai.com/index/bio-bug-bounty",
+      "id": "ef8a6c2337cc8887",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6",
       "source": "OpenAI News",
       "published": "2026-07-09T12:00:00+02:00",
-      "summary": "Details about the OpenAI Bio Bounty program",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
       "areas": [
         "models"
       ],
@@ -2102,12 +2027,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ef8a6c2337cc8887",
-      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-      "url": "https://openai.com/index/gpt-5-6",
+      "id": "45d63905e99d737b",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/bio-bug-bounty",
       "source": "OpenAI News",
       "published": "2026-07-09T12:00:00+02:00",
-      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "summary": "Details about the OpenAI Bio Bounty program",
       "areas": [
         "models"
       ],
@@ -2510,73 +2435,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "8f65c2c3cd4b88cc",
-      "title": "Repo-Local Documentation System for Humans & Agents",
-      "url": "https://gist.github.com/lukewilson2002/cb48062397d8b51954034d94b8c19d6d",
-      "source": "Lobsters",
-      "published": "2026-07-10T01:49:39+02:00",
-      "summary": "Comments",
+      "id": "d728abea4e71f51e",
+      "title": "Sperm donors need limits, says a European fertility group",
+      "url": "https://www.technologyreview.com/2026/07/10/1140289/sperm-donors-need-limits-says-a-european-fertility-group/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-10T11:00:00+02:00",
+      "summary": "Ties van der Meer doesn’t know how many siblings he has. The 47-year-old was conceived at a private fertility clinic in the Netherlands using sperm provided by an anonymous donor. After the Netherlands banned anonymous donation in 2004, the doctor who ran the clinic destroyed records that might have identified those donors, he says. He…",
       "areas": [
-        "ai-agents"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "dfcd7a38e1c9e0e1",
-      "title": "Physically Based - The PBR values database",
-      "url": "https://physicallybased.info",
-      "source": "Lobsters",
-      "published": "2026-07-09T16:48:28+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "dceaa734b1f09abd",
-      "title": "Madison Square Garden Kept a List of Gay Celebrities",
-      "url": "https://www.wired.com/story/madison-square-garden-celebrity-database-surveillance/",
-      "source": "Wired",
-      "published": "2026-07-09T12:00:00+02:00",
-      "summary": "An MSG database tracked and categorized hundreds of celebs, famous Knicks superfans, and even some of Taylor Swift’s wedding guests. Labels included “LGBTQIA,” “DO NOT HOST,” and low to high “risk.”",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
+        "developer-tools": [
+          "cli",
+          "ide"
         ]
       },
       "scores": {
@@ -2645,49 +2516,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d7b7e66dac2c2932",
-      "title": "OpenAI may have made a fatal misstep in copyright fight with news orgs",
-      "url": "https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says/",
-      "source": "Ars Technica",
-      "published": "2026-07-09T20:57:53+02:00",
-      "summary": "OpenAI may be sanctioned for hiding, deleting ChatGPT logs in NYT copyright fight.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "privacy-risk": [
-          "copyright"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "197bd8fa57aeee05",
-      "title": "Ben Bernanke Joins Anthropic Oversight Trust",
-      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "id": "a4c1159390a9c85d",
+      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
       "source": "Hacker News",
-      "published": "2026-07-10T04:39:07+02:00",
+      "published": "2026-07-10T22:47:09+02:00",
       "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "anthropic"
+          "openai"
         ]
       },
       "scores": {
@@ -2702,11 +2542,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "4d213ee420a23c45",
-      "title": "Why American ambulance rides are so expensive",
-      "url": "https://davidoks.blog/p/why-american-ambulance-rides-are",
+      "id": "7a9eac7da3ba92f2",
+      "title": "An update on residential proxies and the scraper situation",
+      "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
       "source": "Hacker News",
-      "published": "2026-07-10T00:15:56+02:00",
+      "published": "2026-07-10T21:38:34+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2728,18 +2568,148 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "622501ed4d5772d1",
-      "title": "Fidji Simo steps down from leading OpenAI’s AGI work due to illness",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
-      "source": "The Verge",
-      "published": "2026-07-09T19:24:04-04:00",
-      "summary": "OpenAI's Fidji Simo is departing her full-time role as the company's AGI chief and is transitioning to being a \"part-time advisor,\" she said on X. The news follows Simo's original announcement in April that she would take a few weeks of medical leave due to a neuroimmune condition, shortly after she had taken on the […]",
+      "id": "9569969f89767be3",
+      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
+      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
+      "source": "Hacker News",
+      "published": "2026-07-10T20:29:19+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e8bcc76cc4698b2a",
+      "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
+      "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
+      "source": "Hacker News",
+      "published": "2026-07-10T18:37:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1abeeeaebe351434",
+      "title": "Netflix could be planning ‘always-on’ live TV channels",
+      "url": "https://techcrunch.com/2026/07/10/netflix-could-be-planning-always-on-live-tv-channels/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T16:53:08+02:00",
+      "summary": "Amid signs of slowing engagement, Netflix is reportedly considering launching \"always-on\" live channels, giving subscribers something to tune into 24/7.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "70d77cac1c7449f7",
+      "title": "A New Experiential Gallery Just Might Change Your Mind About AI Art",
+      "url": "https://www.wired.com/story/a-new-experiential-gallery-just-might-change-your-mind-about-ai-art/",
+      "source": "Wired",
+      "published": "2026-07-10T12:30:00+02:00",
+      "summary": "Billed as the “world’s first museum of AI arts,” Dataland uses wearables and troves of material from the Amazon to merge nature, biometrics, and art.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fbe4dae4351ed951",
+      "title": "Lobsters Interview with mitchellh",
+      "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/",
+      "source": "Lobsters",
+      "published": "2026-07-09T17:41:15+02:00",
+      "summary": "@mitchellh ( blog ) was behind Vagrant , Packer , Consul , Terraform , Vault , Nomad , Waypoint and now builds Ghostty and Vouch . In this interview, we talk about terminals, Zig and open source. You've been interviewed a lot . Why do people like to interview you? In interviews, everyone comes from a different angle. Many people want to know how the software",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "terminal"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a79d4a99bd2d7297",
+      "title": "The Download: a nuclear landmark, and China eyes Nvidia chips",
+      "url": "https://www.technologyreview.com/2026/07/09/1140283/the-download-nuclear-power-milestone-nvidia-china-ai-chips/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-09T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Four nuclear reactors hit a big milestone in the US —Casey Crownhart I was really looking forward to July 4, and not just because I love a poolside barbecue. This year…",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
