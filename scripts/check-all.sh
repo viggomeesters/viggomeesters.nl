@@ -6,10 +6,14 @@ after_snapshot="$(mktemp)"
 trap 'rm -f "$before_snapshot" "$after_snapshot"' EXIT
 
 snapshot_worktree() {
+  local untracked_files
+  untracked_files="$(mktemp)"
   git diff --binary --no-ext-diff HEAD
+  git ls-files --others --exclude-standard -z > "$untracked_files"
   while IFS= read -r -d '' file; do
     printf '%s  %s\n' "$(git hash-object "$file")" "$file"
-  done < <(git ls-files --others --exclude-standard -z)
+  done < "$untracked_files"
+  rm -f "$untracked_files"
 }
 
 snapshot_worktree > "$before_snapshot"
