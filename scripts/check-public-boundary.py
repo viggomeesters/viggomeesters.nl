@@ -107,18 +107,7 @@ def check(root: Path, public_skills_path: Path, policy_path: Path) -> list[str]:
         entries = load_skills_generator().load_public_allowlist(public_skills_path)
     except (OSError, ValueError, json.JSONDecodeError):
         return ["public skills manifest failed PII and proper-noun validation"]
-    expected_entries = sorted(
-        [
-            {
-                "name": str(entry.get("name", "")).strip(),
-                "category": str(entry.get("category", "")).strip(),
-                "description": str(entry.get("description", "")).strip(),
-            }
-            for entry in entries
-            if isinstance(entry, dict)
-        ],
-        key=lambda entry: (entry["category"], entry["name"]),
-    )
+    expected_entries = sorted(entries, key=lambda entry: (entry["category"], entry["name"]))
     allowed_names = {entry["name"] for entry in expected_entries}
     allowed_slugs = {slugify(name) for name in allowed_names}
     if "" in allowed_names or len(allowed_names) != len(entries) or len(allowed_slugs) != len(entries):

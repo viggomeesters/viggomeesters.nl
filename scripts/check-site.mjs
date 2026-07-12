@@ -33,6 +33,12 @@ function canonicalForRoute(route) {
   return `${baseUrl}${route}`;
 }
 
+function isNoindex(html) {
+  return [...html.matchAll(/<meta\b[^>]*>/gi)].some(
+    ([tag]) => /\bname=["']robots["']/i.test(tag) && /\bcontent=["'][^"']*\bnoindex\b/i.test(tag),
+  );
+}
+
 function assert(condition, message) {
   if (!condition) errors.push(message);
 }
@@ -182,10 +188,19 @@ for (const file of publicPages) {
 
 const sitemap = read("sitemap.xml");
 const sitemapLocs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
-const expectedLocs = publicPages.map((file) => canonicalForRoute(routeForIndex(file)));
+const pageIndexing = publicPages.map((file) => ({
+  file,
+  loc: canonicalForRoute(routeForIndex(file)),
+  noindex: isNoindex(read(file)),
+}));
+const expectedLocs = pageIndexing.filter((page) => !page.noindex).map((page) => page.loc);
 
 for (const loc of expectedLocs) {
   assert(sitemapLocs.includes(loc), `sitemap.xml: missing ${loc}`);
+}
+
+for (const page of pageIndexing.filter((page) => page.noindex)) {
+  assert(!sitemapLocs.includes(page.loc), `sitemap.xml: noindex page should be omitted ${page.loc}`);
 }
 
 for (const loc of sitemapLocs) {
@@ -203,6 +218,7 @@ const robots = read("robots.txt");
 assert(robots.includes("Sitemap: https://viggomeesters.com/sitemap.xml"), "robots.txt: missing sitemap");
 assert(robots.includes("Disallow: /variant-"), "robots.txt: variants are not disallowed");
 assert(robots.includes("Disallow: /reports/"), "robots.txt: internal reports are not disallowed");
+assert(!/^Disallow:\s*\/skills\/?/mi.test(robots), "robots.txt: skills must remain crawlable so page-level noindex can be observed");
 
 const vercel = JSON.parse(read("vercel.json"));
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");

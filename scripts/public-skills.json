@@ -5,80 +5,117 @@
     "CI",
     "ETL",
     "GitHub",
+    "Hermes",
     "Markdown",
+    "Meesters",
+    "MIT",
     "SAP",
-    "Vercel"
+    "Vercel",
+    "Viggo"
   ],
   "skills": [
     {
       "name": "audit",
       "category": "software-development",
-      "description": "Audits an existing app, repository, document or plan and returns evidence-backed, severity-ordered findings."
+      "description": "Audits an existing app, repository, document or plan and returns evidence-backed, severity-ordered findings.",
+      "maintainer": "Viggo Meesters",
+      "origin": "First-party workflow",
+      "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT",
+      "implementation_status": "Summary published; implementation not included.",
+      "reviewed_at": "2026-07-12",
+      "indexable": false
     },
     {
       "name": "brainstorm",
       "category": "productivity",
-      "description": "Shapes an early idea into a testable direction by exposing assumptions, trade-offs and the smallest useful next step."
+      "description": "Shapes an early idea into a testable direction by exposing assumptions, trade-offs and the smallest useful next step.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "debug",
       "category": "software-development",
-      "description": "Reproduces and isolates defects before applying a minimal fix with regression evidence."
+      "description": "Reproduces and isolates defects before applying a minimal fix with regression evidence.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "Not stated", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "devil-review",
       "category": "software-development",
-      "description": "Challenges a proposed ship decision by attacking assumptions, proof quality and unresolved production risk."
+      "description": "Challenges a proposed ship decision by attacking assumptions, proof quality and unresolved production risk.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "frontend",
       "category": "creative",
-      "description": "Builds distinctive production interfaces with repository-native design, accessibility and browser verification."
+      "description": "Builds distinctive production interfaces with repository-native design, accessibility and browser verification.",
+      "maintainer": "Viggo Meesters", "origin": "Curated workflow", "attribution": "Curated and maintained by Viggo Meesters.",
+      "declared_license": "Proprietary", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "hardening-pass",
       "category": "productivity",
-      "description": "Runs a final pre-ship pass across validation, observability, recovery, documentation and operational guardrails."
+      "description": "Runs a final pre-ship pass across validation, observability, recovery, documentation and operational guardrails.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "next-improvements",
       "category": "productivity",
-      "description": "Classifies useful follow-up work after delivery without hiding new scope inside the completed task."
+      "description": "Classifies useful follow-up work after delivery without hiding new scope inside the completed task.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "prompt-evaluation",
       "category": "software-development",
-      "description": "Creates deterministic prompt and agent evaluation suites with regression cases, rubric assertions and automated quality-gate output."
+      "description": "Creates deterministic prompt and agent evaluation suites with regression cases, rubric assertions and automated quality-gate output.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "Not stated", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "public-context-pack-repos",
       "category": "software-development",
-      "description": "Creates source-backed public context repositories that teach a domain clearly to both people and software agents."
+      "description": "Creates source-backed public context repositories that teach a domain clearly to both people and software agents.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "Not stated", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "quality-audit",
       "category": "software-development",
-      "description": "Reviews code, tests, architecture, performance, accessibility, security or production readiness through a focused lens."
+      "description": "Reviews code, tests, architecture, performance, accessibility, security or production readiness through a focused lens.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "recheck",
       "category": "productivity",
-      "description": "Reopens a just-delivered result, tests the completion claim and repairs safe gaps before shipping."
+      "description": "Reopens a just-delivered result, tests the completion claim and repairs safe gaps before shipping.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "refactor",
       "category": "software-development",
-      "description": "Improves code structure through bounded impact analysis, behavior-preserving changes and proportional verification."
+      "description": "Improves code structure through bounded impact analysis, behavior-preserving changes and proportional verification.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "Not stated", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "repo-complete",
       "category": "software-development",
-      "description": "Assesses and improves public repository readiness across documentation, licensing, security, releases and privacy."
+      "description": "Assesses and improves public repository readiness across documentation, licensing, security, releases and privacy.",
+      "maintainer": "Viggo Meesters", "origin": "First-party workflow", "attribution": "Maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     },
     {
       "name": "tdd",
       "category": "software-development",
-      "description": "Applies a strict red-green-refactor cycle with behavior tests written before implementation."
+      "description": "Applies a strict red-green-refactor cycle with behavior tests written before implementation.",
+      "maintainer": "Viggo Meesters", "origin": "Adapted workflow", "attribution": "Adapted and maintained by Viggo Meesters.",
+      "declared_license": "MIT", "implementation_status": "Summary published; implementation not included.", "reviewed_at": "2026-07-12", "indexable": false
     }
   ]
 }

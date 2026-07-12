@@ -5,8 +5,8 @@ Generated: current working tree
 ## Summary
 
 - Public pages: 62
-- Sitemap entries: 62
-- Issue occurrences: 8
+- Sitemap entries: 48
+- Issue occurrences: 7
 
 ## Top issue types
 
@@ -14,7 +14,6 @@ Generated: current working tree
 |---|---:|
 | thin_under_250_words | 6 |
 | short_title | 1 |
-| short_description | 1 |
 
 ## Clusters
 
@@ -24,12 +23,12 @@ Generated: current working tree
 | guides_articles | 5 | 1 | 0 | 0 | 5 |
 | methodologies | 6 | 1 | 1 | 0 | 6 |
 | project_pages | 5 | 1 | 1 | 0 | 5 |
-| skills_registry | 15 | 1 | 0 | 0 | 15 |
 | signal_dashboards | 2 | 1 | 1 | 0 | 2 |
 | personal_knowledge_system | 8 | 0 | 0 | 0 | 8 |
 | agent_workflow | 6 | 0 | 0 | 0 | 6 |
 | seo_evergreen | 2 | 0 | 0 | 0 | 0 |
 | homepage | 1 | 0 | 0 | 0 | 0 |
+| skills_registry | 15 | 0 | 0 | 0 | 15 |
 | tech_stack | 7 | 0 | 0 | 0 | 7 |
 
 ## Priority non-skill pages

@@ -47,6 +47,12 @@ function all(html, regex) {
   return [...html.matchAll(regex)].map((match) => match[1].trim());
 }
 
+function isNoindex(html) {
+  return [...html.matchAll(/<meta\b[^>]*>/gi)].some(
+    ([tag]) => /\bname=["']robots["']/i.test(tag) && /\bcontent=["'][^"']*\bnoindex\b/i.test(tag),
+  );
+}
+
 function classify(route) {
   if (route === "/") return "homepage";
   if (route === "/guides/" || [
@@ -118,6 +124,7 @@ for (const file of publicPages) {
   const hasTwitterCard = /<meta\s+name=["']twitter:card["']/i.test(html);
   const hasAnalytics = html.includes('/_vercel/insights/script.js');
   const sitemap = sitemapByLoc.get(url);
+  const noindex = isNoindex(html);
   const cluster = classify(route);
 
   if (title) titleMap.set(title, [...(titleMap.get(title) || []), route]);
@@ -133,7 +140,8 @@ for (const file of publicPages) {
   if (canonical !== url) pageIssues.push("canonical_mismatch");
   if (h1s.length !== 1) pageIssues.push(`h1_count_${h1s.length}`);
   if (words < 250 && !route.startsWith("/skills/")) pageIssues.push("thin_under_250_words");
-  if (!sitemap) pageIssues.push("missing_sitemap_entry");
+  if (!noindex && !sitemap) pageIssues.push("missing_sitemap_entry");
+  if (noindex && sitemap) pageIssues.push("noindex_in_sitemap");
   if (!hasAnalytics) pageIssues.push("missing_analytics_script");
   if (!hasOgTitle) pageIssues.push("missing_og_title");
   if (!hasOgDescription) pageIssues.push("missing_og_description");
@@ -161,6 +169,7 @@ for (const file of publicPages) {
     hasOgImage,
     hasTwitterCard,
     hasAnalytics,
+    noindex,
     issues: pageIssues,
   });
 
@@ -190,7 +199,7 @@ const issueCounts = issues.reduce((acc, item) => {
 }, {});
 
 const priorityPages = rows
-  .filter((row) => !row.route.startsWith("/skills/"))
+  .filter((row) => !row.noindex && !row.route.startsWith("/skills/"))
   .map((row) => ({
     route: row.route,
     cluster: row.cluster,
