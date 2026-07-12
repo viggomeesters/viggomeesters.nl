@@ -55,7 +55,6 @@ Source context:
 | /cli-agents-guide/ | guides_articles | 1621 | 0 | none |
 | /database-types-agent-first-systems/ | guides_articles | 801 | 0 | none |
 | /foci-fear-of-choosing-incorrectly/ | guides_articles | 1150 | 0 | none |
-| /funnel-analysis/ | methodologies | 1020 | 0 | none |
 
 ## Freshness/source-check scan
 
@@ -76,7 +75,6 @@ Source context:
 | /cli-agents-guide/ | guides_articles |
 | /database-types-agent-first-systems/ | guides_articles |
 | /foci-fear-of-choosing-incorrectly/ | guides_articles |
-| /funnel-analysis/ | methodologies |
 | /guides/ | guides_articles |
 | /helicopter-to-detail/ | methodologies |
 | / | homepage |

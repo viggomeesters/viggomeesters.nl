@@ -14,10 +14,14 @@ There is no framework and no build step. The production output is the repository
 - `og-image.png`, `profile.jpg`: root-level image assets.
 - `sitemap.xml`, `robots.txt`, `vercel.json`: deploy and crawler configuration.
 - `scripts/check-site.mjs`: dependency-free site quality checks for agents and humans.
+- `scripts/public-skills.json`: reviewed allowlist and public copy for generated skill pages.
+- `scripts/public-boundary.json`: blocked routes and hashed private-text markers.
 
 ## Local Commands
 
 - `npm run check`: run all repo checks.
+- `npm test`: run the dependency-free behavior tests.
+- `npm run check:public-boundary`: verify routes, generated skills and private-text markers fail closed.
 - `npm run serve`: serve the static site at `http://localhost:4173`.
 - `npm run deploy:prod`: deploy the linked Vercel project to production.
 
@@ -33,6 +37,10 @@ There is no framework and no build step. The production output is the repository
   - `scripts/check-site.mjs` expectations if needed.
 - Do not commit `.vercel/`; it is local Vercel link metadata and is ignored.
 - Do not expose `variant-*.html` as public canonical content.
+- Never generate skill copy directly from runtime descriptions. Only entries and copy in
+  `scripts/public-skills.json` may reach `skills/`, its JSON data or the sitemap.
+- When taking a route offline, remove it from HTML, navigation, sitemap and deployed reports;
+  then add it to `scripts/public-boundary.json` so it cannot return unnoticed.
 
 ## viggomeesters-site-upkeep
 
@@ -64,7 +72,8 @@ explicitly asks for one.
 - Guides/articles index: `guides/`.
 - SEO/evergreen pages: `beste-kattenvoer/`, `beste-kattenbrokken/`.
 - Tech stack pages: `tech-stack/` and `tech-stack/*/`.
-- Generated skills pages: `skills/` and `skills/*/`, based on the local Hermes skills registry.
+- Generated skills pages: `skills/` and `skills/*/`, restricted to the reviewed
+  `scripts/public-skills.json` allowlist. Runtime registry entries are candidates only.
 - Uses/tooling page: `uses/`.
 - Obsidian portfolio page: `obsidian-plugins/`.
 - Archived variants: `variant-*.html`; audit only, never expose as canonical
@@ -101,7 +110,7 @@ task needs external verification.
 
 ### Validation
 
-- Always run `npm run check`.
+- Always run `npm test` and `npm run check`.
 - For visual/layout changes, run `npm run serve` and inspect
   `http://localhost:4173` in a browser at desktop and mobile widths.
 - For content-only HTML changes, browser QA is optional unless the changed area

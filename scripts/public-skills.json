@@ -1,36 +1,24 @@
 {
-  "generated_at": "2026-07-12",
-  "count": 14,
+  "schema": "viggomeesters.public-skills.v1",
+  "approved_proper_nouns": [
+    "Alteryx",
+    "CI",
+    "ETL",
+    "GitHub",
+    "Markdown",
+    "SAP",
+    "Vercel"
+  ],
   "skills": [
     {
-      "name": "frontend",
-      "category": "creative",
-      "description": "Builds distinctive production interfaces with repository-native design, accessibility and browser verification."
+      "name": "audit",
+      "category": "software-development",
+      "description": "Audits an existing app, repository, document or plan and returns evidence-backed, severity-ordered findings."
     },
     {
       "name": "brainstorm",
       "category": "productivity",
       "description": "Shapes an early idea into a testable direction by exposing assumptions, trade-offs and the smallest useful next step."
-    },
-    {
-      "name": "hardening-pass",
-      "category": "productivity",
-      "description": "Runs a final pre-ship pass across validation, observability, recovery, documentation and operational guardrails."
-    },
-    {
-      "name": "next-improvements",
-      "category": "productivity",
-      "description": "Classifies useful follow-up work after delivery without hiding new scope inside the completed task."
-    },
-    {
-      "name": "recheck",
-      "category": "productivity",
-      "description": "Reopens a just-delivered result, tests the completion claim and repairs safe gaps before shipping."
-    },
-    {
-      "name": "audit",
-      "category": "software-development",
-      "description": "Audits an existing app, repository, document or plan and returns evidence-backed, severity-ordered findings."
     },
     {
       "name": "debug",
@@ -41,6 +29,21 @@
       "name": "devil-review",
       "category": "software-development",
       "description": "Challenges a proposed ship decision by attacking assumptions, proof quality and unresolved production risk."
+    },
+    {
+      "name": "frontend",
+      "category": "creative",
+      "description": "Builds distinctive production interfaces with repository-native design, accessibility and browser verification."
+    },
+    {
+      "name": "hardening-pass",
+      "category": "productivity",
+      "description": "Runs a final pre-ship pass across validation, observability, recovery, documentation and operational guardrails."
+    },
+    {
+      "name": "next-improvements",
+      "category": "productivity",
+      "description": "Classifies useful follow-up work after delivery without hiding new scope inside the completed task."
     },
     {
       "name": "prompt-evaluation",
@@ -56,6 +59,11 @@
       "name": "quality-audit",
       "category": "software-development",
       "description": "Reviews code, tests, architecture, performance, accessibility, security or production readiness through a focused lens."
+    },
+    {
+      "name": "recheck",
+      "category": "productivity",
+      "description": "Reopens a just-delivered result, tests the completion claim and repairs safe gaps before shipping."
     },
     {
       "name": "refactor",

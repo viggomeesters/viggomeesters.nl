@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Generate public skill summary pages from the local Hermes skills registry.
+"""Generate reviewed public skill pages from an explicit allowlist.
 
-This intentionally publishes only name/category/description/path-derived summary
-pages, not full SKILL.md runbooks. Run from the repo root:
+Runtime registry entries are candidates only. Public names, categories and copy
+come from ``scripts/public-skills.json`` so a newly enabled or private skill is
+excluded by default. Run from the repo root:
 
     python3 scripts/generate-skills-pages.py
 
@@ -12,16 +13,21 @@ Then run:
 """
 from __future__ import annotations
 
+import argparse
 import datetime as _dt
 import html
 import json
 import os
 import re
+import shutil
 import subprocess
+import tempfile
 from collections import defaultdict
 from pathlib import Path
+from typing import Optional
 
-ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_ROOT = Path(__file__).resolve().parents[1]
+ROOT = DEFAULT_ROOT
 SKILLS_ROOT = Path.home() / ".hermes" / "skills"
 BASE = "https://viggomeesters.com"
 TODAY = _dt.date.today().isoformat()
@@ -223,34 +229,99 @@ def enabled_skills_from_cli() -> list[dict[str, str]]:
     return sorted(skills, key=lambda s: (s["category"], s["name"]))
 
 
-def discover() -> list[dict[str, str]]:
+def registry_from_json(path: Path) -> list[dict[str, str]]:
+    """Load a captured runtime registry for deterministic generation/tests."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    skills = data.get("skills") if isinstance(data, dict) else data
+    if not isinstance(skills, list) or not all(isinstance(item, dict) for item in skills):
+        raise ValueError(f"Invalid registry JSON: {path}")
+    return skills
+
+
+def load_public_allowlist(path: Path) -> list[dict[str, str]]:
+    """Load and validate the reviewed public metadata before any writes."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or data.get("schema") != "viggomeesters.public-skills.v1":
+        raise ValueError(f"Invalid public skills schema: {path}")
+    approved_raw = data.get("approved_proper_nouns", [])
+    if not isinstance(approved_raw, list) or not all(
+        isinstance(item, str) and item.strip() for item in approved_raw
+    ):
+        raise ValueError("approved_proper_nouns must be a list of non-empty strings")
+    approved_proper_nouns = {item.strip() for item in approved_raw}
+    skills = data.get("skills")
+    if not isinstance(skills, list) or not skills:
+        raise ValueError("Public skills allowlist must contain at least one reviewed skill")
+
+    names: set[str] = set()
+    slugs: set[str] = set()
+    reviewed: list[dict[str, str]] = []
+    for item in skills:
+        if not isinstance(item, dict):
+            raise ValueError("Every public skill entry must be an object")
+        entry = {key: str(item.get(key, "")).strip() for key in ("name", "category", "description")}
+        if not all(entry.values()):
+            raise ValueError("Every public skill needs reviewed name, category and description")
+        validate_public_description(entry["description"], approved_proper_nouns)
+        folded = entry["name"].casefold()
+        slug = slugify(entry["name"])
+        if folded in names:
+            raise ValueError(f"Duplicate public skill name: {entry['name']}")
+        if slug in slugs:
+            raise ValueError(f"Duplicate public skill slug: {slug}")
+        names.add(folded)
+        slugs.add(slug)
+        reviewed.append(entry)
+    return reviewed
+
+
+def validate_public_description(description: str, approved_proper_nouns: set[str]) -> None:
+    """Reject common PII shapes and unreviewed proper nouns without logging values."""
+    pii_patterns = [
+        r"\b[A-Z][A-Za-z'’-]{2,}(?:\s+[A-Z][A-Za-z'’-]{2,}){0,2}\s+\d{1,5}[A-Za-z]?\b",
+        r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b",
+        r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
+        r"(?<!\w)(?:\+?\d[\s().-]?){8,}\d(?!\w)",
+    ]
+    if any(re.search(pattern, description, flags=re.IGNORECASE) for pattern in pii_patterns):
+        raise ValueError("Reviewed public skill description contains PII-like data")
+
+    for match in re.finditer(r"\b[A-Z][A-Za-z0-9]*(?:[-'][A-Za-z0-9]+)*\b", description):
+        token = match.group(0)
+        prefix = description[: match.start()].rstrip()
+        at_sentence_start = not prefix or prefix[-1] in ".?!"
+        if not at_sentence_start and token not in approved_proper_nouns:
+            raise ValueError("Reviewed public skill description contains an unapproved proper noun")
+
+
+def select_public_skills(
+    discovered: list[dict[str, str]], reviewed: list[dict[str, str]]
+) -> list[dict[str, str]]:
+    """Return only allowlisted skills with reviewed metadata.
+
+    Runtime descriptions and operational metadata are deliberately ignored.
+    """
+    by_name = {str(skill.get("name", "")).casefold(): skill for skill in discovered}
+    missing = [entry["name"] for entry in reviewed if entry["name"].casefold() not in by_name]
+    if missing:
+        raise ValueError("Allowlisted skills missing from registry: " + ", ".join(missing))
+    return sorted(reviewed, key=lambda skill: (skill["category"], skill["name"]))
+
+
+def discover(registry_json: Optional[Path] = None) -> list[dict[str, str]]:
+    if registry_json is not None:
+        return registry_from_json(registry_json)
     return enabled_skills_from_cli()
 
 
-def clean_obsolete_skill_pages(out: Path, skills: list[dict[str, str]]) -> None:
-    """Remove stale generated skill detail pages that no longer exist in the active registry."""
-    active_slugs = {slugify(skill["name"]) for skill in skills}
-    for child in out.iterdir():
-        if not child.is_dir() or child.name in active_slugs:
-            continue
-        index = child / "index.html"
-        if not index.exists():
-            continue
-        text = index.read_text(errors="ignore")
-        if "<title>" in text and " — Skill" in text and "/skills/" in text:
-            for nested in child.iterdir():
-                nested.unlink()
-            child.rmdir()
-
-
-def regenerate_sitemap() -> None:
+def render_sitemap(skill_routes: list[str]) -> str:
     sitemap = ROOT / "sitemap.xml"
     old = sitemap.read_text() if sitemap.exists() else ""
     oldmap = dict(re.findall(r"<loc>([^<]+)</loc>\n\s*<lastmod>([^<]+)</lastmod>", old))
-    routes = []
+    routes = list(skill_routes)
     for idx in ROOT.rglob("index.html"):
         rel = idx.relative_to(ROOT).as_posix()
-        if rel.startswith((".git/", ".vercel/", "node_modules/")):
+        if rel.startswith((".git/", ".vercel/", "node_modules/", "skills/", ".skills-build-")):
             continue
         route = "/" if rel == "index.html" else "/" + str(Path(rel).parent).replace("\\", "/") + "/"
         routes.append(route)
@@ -259,37 +330,106 @@ def regenerate_sitemap() -> None:
         loc = BASE + route
         priority = "1.0" if route == "/" else ("0.8" if route in ["/uses/", "/tech-stack/", "/skills/"] else "0.7")
         entries.append(f"  <url>\n    <loc>{loc}</loc>\n    <lastmod>{oldmap.get(loc, TODAY)}</lastmod>\n    <priority>{priority}</priority>\n  </url>")
-    sitemap.write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n")
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n"
 
 
-def main() -> None:
-    skills = discover()
-    for skill in skills:
-        skill["description"] = public_description(skill.get("description", ""), skill.get("name", "skill"))
-    out = ROOT / "skills"
-    out.mkdir(exist_ok=True)
-    clean_obsolete_skill_pages(out, skills)
-    (out / "skills-data.json").write_text(json.dumps({"generated_at": TODAY, "count": len(skills), "skills": [{k: v for k, v in skill.items() if k != "path"} for skill in skills]}, ensure_ascii=False, indent=2))
+def write_skills_tree(out: Path, skills: list[dict[str, str]]) -> int:
+    out.mkdir()
+    (out / "skills-data.json").write_text(
+        json.dumps(
+            {"generated_at": TODAY, "count": len(skills), "skills": skills},
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
     groups = defaultdict(list)
     for skill in skills:
         groups[skill["category"]].append(skill)
         body = f'''    <a class="back" href="/skills/">&larr; Skills</a>
-    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'] or 'No description available.')}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>
+    <header><div class="eyebrow">Skill / {esc(skill['category'])}</div><h1 class="title">{esc(skill['name'])}</h1><p class="subtitle">{esc(skill['description'])}</p><div class="meta"><span class="pill">Hermes skill</span><span class="pill">{esc(skill['category'])}</span><span class="pill">snapshot {TODAY}</span></div></header>
     <section class="section"><div class="section-title">Skill summary</div><div class="list"><article class="item"><strong>Identifier</strong><p><code>{esc(skill['name'])}</code></p></article><article class="item"><strong>Directory entry</strong><p>A high-level registry card for discovering the workflow category and public description.</p></article><article class="item"><strong>Runtime context</strong><p>The workflow itself runs inside Hermes; this page only exposes the safe directory-level summary.</p></article></div></section>'''
-        d = out / slugify(skill["name"])
-        d.mkdir(exist_ok=True)
-        (d / "index.html").write_text(page(f"{skill['name']} — Hermes Skill Workflow", skill["description"] or f"Hermes workflow summary for {skill['name']}.", f"{BASE}/skills/{slugify(skill['name'])}/", body, include_script=False))
+        detail = out / slugify(skill["name"])
+        detail.mkdir()
+        (detail / "index.html").write_text(
+            page(
+                f"{skill['name']} — Hermes Skill Workflow",
+                skill["description"],
+                f"{BASE}/skills/{slugify(skill['name'])}/",
+                body,
+                include_script=False,
+            )
+        )
     sections = []
     for category in sorted(groups):
         cards = []
         for skill in groups[category]:
-            filt = (skill["name"] + " " + category + " " + (skill["description"] or "")).lower()
-            cards.append(f'''      <a class="card" data-filter="{esc(filt)}" href="/skills/{slugify(skill['name'])}/"><div class="icon">SK</div><div><h2>{esc(skill['name'])}</h2><p>{esc(skill['description'] or 'No description available.')}</p><div class="tiny"><span>{esc(category)}</span><span>skill</span></div></div></a>''')
+            filt = (skill["name"] + " " + category + " " + skill["description"]).lower()
+            cards.append(f'''      <a class="card" data-filter="{esc(filt)}" href="/skills/{slugify(skill['name'])}/"><div class="icon">SK</div><div><h2>{esc(skill['name'])}</h2><p>{esc(skill['description'])}</p><div class="tiny"><span>{esc(category)}</span><span>skill</span></div></div></a>''')
         sections.append(f'''    <section class="section" data-skill-section data-category="{esc(category)}" data-total="{len(groups[category])}"><div class="section-title" data-section-title>{esc(category)} · {len(groups[category])}</div><div class="grid">{''.join(cards)}</div></section>''')
     body = f'''    <a class="back" href="/">&larr; viggomeesters.com</a>\n    <header><div class="eyebrow">Hermes skills registry</div><h1 class="title">Skills as reusable operating knowledge.</h1><p class="subtitle">A generated directory of reusable Hermes skill categories and public summaries.</p><div class="meta"><span class="pill">{len(skills)} skills</span><span class="pill">{len(groups)} categories</span><span class="pill">generated {TODAY}</span><span class="pill">generated directory</span></div></header>\n    <input class="search" data-search placeholder="Search skills, categories, descriptions…" aria-label="Search skills">\n    <div class="result-count" data-result-count data-total="{len(skills)}" data-categories="{len(groups)}">{len(skills)} skills across {len(groups)} categories</div>\n{''.join(sections)}'''
-    (out / "index.html").write_text(page("Hermes Skills Registry — Viggo Meesters", "Snapshot index of Hermes skills grouped by category, with per-skill public summary pages.", f"{BASE}/skills/", body))
-    regenerate_sitemap()
-    print(f"Generated {len(skills)} skills across {len(groups)} categories")
+    (out / "index.html").write_text(
+        page(
+            "Hermes Skills Registry — Viggo Meesters",
+            "Snapshot index of reviewed public Hermes skills grouped by category.",
+            f"{BASE}/skills/",
+            body,
+        )
+    )
+    return len(groups)
+
+
+def replace_public_output(staged_skills: Path, staged_sitemap: Path) -> None:
+    target = ROOT / "skills"
+    backup = staged_skills.parent / "skills-backup"
+    had_target = target.exists()
+    if had_target:
+        target.rename(backup)
+    try:
+        staged_skills.rename(target)
+        staged_sitemap.replace(ROOT / "sitemap.xml")
+    except Exception:
+        if target.exists():
+            if target.is_dir():
+                shutil.rmtree(target)
+            else:
+                target.unlink()
+        if had_target and backup.exists():
+            backup.rename(target)
+        raise
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--site-root", type=Path, default=DEFAULT_ROOT)
+    parser.add_argument(
+        "--allowlist",
+        type=Path,
+        help="Reviewed public skill manifest (default: <site-root>/scripts/public-skills.json)",
+    )
+    parser.add_argument(
+        "--registry-json",
+        type=Path,
+        help="Captured runtime registry; defaults to `hermes skills list --enabled-only`",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    global ROOT
+    args = parse_args()
+    ROOT = args.site_root.resolve()
+    allowlist_path = args.allowlist or (ROOT / "scripts" / "public-skills.json")
+    reviewed = load_public_allowlist(allowlist_path)
+    skills = select_public_skills(discover(args.registry_json), reviewed)
+    with tempfile.TemporaryDirectory(prefix=".skills-build-", dir=str(ROOT)) as temp_dir:
+        stage = Path(temp_dir)
+        staged_skills = stage / "skills"
+        category_count = write_skills_tree(staged_skills, skills)
+        skill_routes = ["/skills/"] + [f"/skills/{slugify(skill['name'])}/" for skill in skills]
+        staged_sitemap = stage / "sitemap.xml"
+        staged_sitemap.write_text(render_sitemap(skill_routes))
+        replace_public_output(staged_skills, staged_sitemap)
+    print(f"Generated {len(skills)} skills across {category_count} categories")
 
 
 if __name__ == "__main__":

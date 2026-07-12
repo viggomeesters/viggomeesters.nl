@@ -4,7 +4,9 @@ This review records the manual privacy/readiness decision for making `viggomeest
 
 ## Verdict
 
-The repository is acceptable to publish as the public source for `viggomeesters.com`.
+The current repository tree is acceptable to publish as the public source for
+`viggomeesters.com` only when `npm run check:public-boundary` passes. This
+verdict does not certify earlier public Git history.
 
 The automated repo-complete validator reports two remaining hard findings because it treats public filenames containing `personal` or `private` as privacy signals. For this repository those findings are reviewed as false positives / intentional public surfaces, not leaked private artifacts.
 
@@ -34,7 +36,7 @@ Public-safe:
 
 - static HTML/CSS/JS site source;
 - public project and methodology pages;
-- public-safe generated skill metadata;
+- skill metadata explicitly reviewed in `scripts/public-skills.json`;
 - `.go/` repo-local workflow state.
 
 Forbidden / not public-safe and must stay out of the repo:
@@ -48,4 +50,7 @@ Forbidden / not public-safe and must stay out of the repo:
 
 ## Publication decision
 
-Proceeding with public GitHub visibility is acceptable with the above manual review recorded.
+Proceeding with public GitHub visibility is acceptable for the checked current
+tree with the automated boundary gate passing. Earlier commits may retain
+content removed from the current tree; history rewriting or repository access
+changes require a separate, explicitly approved destructive remediation.

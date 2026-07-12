@@ -13,7 +13,7 @@ This repo publishes the public surface of Viggo's work:
 - project pages for public tools and repositories;
 - methodology pages for proof-first delivery and source-backed synthesis;
 - guides and evergreen reference pages;
-- generated public-safe snapshots such as the skills registry;
+- reviewed public-safe snapshots such as the allowlisted skills registry;
 - repo-local `.go/` workflow state for agent continuity.
 
 Private vault content, client/customer data, secrets, and personal operational notes do not belong in this repository.
@@ -28,7 +28,7 @@ Private vault content, client/customer data, secrets, and personal operational n
 
 - Static site: no runtime framework and no build pipeline.
 - Public-safe content model: publish only what can be reviewed in the repo.
-- Built-in checks for canonical URLs, sitemap coverage, robots rules, structured data, favicon/manifest wiring, IndexNow, and Vercel assumptions.
+- Built-in checks for public boundaries, canonical URLs, sitemap coverage, robots rules, structured data, favicon/manifest wiring, IndexNow, and Vercel assumptions.
 - Repo-local `.go/` workflow pilot so a fresh clone can read direction, constraints, hierarchy, and next work without private vault context.
 
 ## Installation
@@ -55,9 +55,15 @@ Open <http://localhost:4173>.
 Run the normal site checks:
 
 ```sh
+npm test
 npm run check
 npm run check:seo
 ```
+
+The skills registry is fail-closed: `scripts/public-skills.json` is the only
+publication manifest and contains reviewed public copy. Runtime-only skills and
+their descriptions are ignored. `scripts/public-boundary.json` keeps removed
+routes and hashed private-text markers out of deployable output.
 
 For public repo-readiness and fresh-clone validation, use the local wrapper instead of GitHub Actions:
 
@@ -128,7 +134,7 @@ The canonical hostname is `viggomeesters.com`; secondary hostnames should redire
 - `methodologies/`: methodology index.
 - `guides/`: guides and articles index.
 - `tech-stack/`: granular tech stack index.
-- `skills/`: generated public snapshot of Hermes skill metadata.
+- `skills/`: generated snapshot of the explicitly reviewed public skills manifest.
 - `uses/`: legacy stack and tools page.
 - `sap-agent-context/`, `mega-vault-viewer/`, `obsidian-plugins/`: project pages.
 - `beste-kattenvoer/`, `beste-kattenbrokken/`: cat food analysis pages.
@@ -140,7 +146,7 @@ Releases are tracked on GitHub. The current first public release is `v1.0`.
 
 ## Security and privacy
 
-Report security issues through `SECURITY.md`. Do not commit secrets, private vault exports, customer/client material, or private screenshots. The public site may describe personal systems at a high level, but operational private data stays outside this repository.
+Report security issues through `SECURITY.md`. Do not commit secrets, private vault exports, customer/client material, private health/family context, or private screenshots. The public site may describe personal systems at a high level, but operational private data stays outside this repository. Run `npm run check:public-boundary` before every public-content change.
 
 ## License
 

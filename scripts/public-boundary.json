@@ -1,0 +1,32 @@
+{
+  "schema": "viggomeesters.public-boundary.v1",
+  "blocked_routes": [
+    "/agent-brain-personas/",
+    "/funnel-analysis/",
+    "/omad-fallback-meal/",
+    "/skills/aankoopmakelaar-biedcoach/",
+    "/skills/bertus-email-gateway-ops/"
+  ],
+  "forbidden_text_hashes": [
+    {
+      "id": "private-person-a",
+      "words": 1,
+      "sha256": "90b8de4051f02b7a29484341f3a903e1b2c6a233f5465e19c634535c7b315e6f"
+    },
+    {
+      "id": "private-person-b",
+      "words": 1,
+      "sha256": "7ca93840a7ed605f4589947f5844e7603d591de7b010cb7104f52f465822d7f4"
+    },
+    {
+      "id": "private-property-a",
+      "words": 1,
+      "sha256": "f79b5186cf285bc01accd779ac74faaa1fa54372b825b71367eb2083a021c909"
+    },
+    {
+      "id": "private-property-reference-a",
+      "words": 2,
+      "sha256": "3de6f1933d56631248d146fb4b1bd031e4dbab1052863d1624ce7c62c08cfe6b"
+    }
+  ]
+}

@@ -4,7 +4,9 @@
   "private": true,
   "description": "Static personal landing page hosted on Vercel.",
   "scripts": {
-    "check": "node scripts/check-site.mjs",
+    "test": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "check": "npm run check:public-boundary && npm run check:site",
+    "check:public-boundary": "python3 scripts/check-public-boundary.py",
     "check:site": "node scripts/check-site.mjs",
     "check:seo": "node scripts/seo-audit.mjs",
     "serve": "python3 -m http.server 4173",
