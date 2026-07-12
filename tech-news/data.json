@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-12T07:05:38+02:00",
+  "generatedAt": "2026-07-12T19:43:38+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 79,
+  "usefulOpen": 68,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -15,45 +15,37 @@
     "Simon Willison",
     "Wired"
   ],
-  "errors": {},
+  "successfulSources": [
+    "MIT Technology Review",
+    "GitHub Blog",
+    "OpenAI News",
+    "Simon Willison"
+  ],
+  "failedSources": [
+    "Ars Technica",
+    "Hacker News",
+    "Lobsters",
+    "TechCrunch",
+    "The Verge",
+    "Wired"
+  ],
+  "retainedSources": [
+    "Hacker News",
+    "Lobsters",
+    "TechCrunch",
+    "The Verge",
+    "Wired"
+  ],
+  "retainedItems": 17,
+  "errors": {
+    "Hacker News": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>",
+    "Lobsters": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>",
+    "The Verge": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>",
+    "TechCrunch": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>",
+    "Ars Technica": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>",
+    "Wired": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)>"
+  },
   "items": [
-    {
-      "id": "c71ce6e82e21e627",
-      "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
-      "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
-      "source": "GitHub Blog",
-      "published": "2026-07-10T17:57:47+02:00",
-      "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence. The post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog .",
-      "areas": [
-        "ai-agents",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "developer-tools": [
-          "github",
-          "git",
-          "ide",
-          "copilot"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
     {
       "id": "d8d03c38248c31c1",
       "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
@@ -68,7 +60,6 @@
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
           "gpt"
         ],
         "developer-tools": [
@@ -83,75 +74,6 @@
         "leverage": 1,
         "novelty": 4,
         "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "86749a65738ad2c6",
-      "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
-      "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
-      "source": "GitHub Blog",
-      "published": "2026-07-08T23:11:56+02:00",
-      "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation. The post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog .",
-      "areas": [
-        "ai-agents",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
-        ],
-        "developer-tools": [
-          "github",
-          "git"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "7fe62bdefd02aee9",
-      "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
-      "url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/",
-      "source": "GitHub Blog",
-      "published": "2026-07-07T18:00:00+02:00",
-      "summary": "New Innovation Graph data shows global developer communities growing faster than ever, with collaboration reaching new highs across many economies. The post Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide appeared first on The GitHub Blog .",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "developer",
-          "ide"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 2,
         "risk": 0
       },
       "priority": 100,
@@ -175,8 +97,7 @@
           "gpt"
         ],
         "developer-tools": [
-          "github",
-          "git"
+          "github"
         ],
         "data-platforms": [
           "sqlite"
@@ -184,7 +105,7 @@
       },
       "scores": {
         "relevance": 4,
-        "leverage": 2,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -207,48 +128,13 @@
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gpt"
+          "chatgpt"
         ],
         "developer-tools": [
           "codex"
         ],
         "enterprise-ai": [
           "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f6cf54165beecf8c",
-      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
-      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-05T01:00:48+00:00",
-      "summary": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible. I started with",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "sqlite"
         ]
       },
       "scores": {
@@ -284,47 +170,12 @@
           "claude"
         ],
         "developer-tools": [
-          "github",
-          "git"
+          "github"
         ]
       },
       "scores": {
         "relevance": 4,
-        "leverage": 3,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "118a188c6e62a162",
-      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
-      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-02T18:25:00+00:00",
-      "summary": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest ",
-      "areas": [
-        "ai-agents",
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ],
-        "models": [
-          "claude"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
+        "leverage": 2,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -348,10 +199,9 @@
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "chatgpt"
         ],
         "developer-tools": [
-          "ide",
           "codex"
         ],
         "enterprise-ai": [
@@ -360,7 +210,7 @@
       },
       "scores": {
         "relevance": 4,
-        "leverage": 2,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -378,17 +228,13 @@
       "summary": "OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.",
       "areas": [
         "data-platforms",
-        "developer-tools",
         "enterprise-ai",
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
-        ],
-        "developer-tools": [
-          "ide"
+          "chatgpt"
         ],
         "data-platforms": [
           "analytics"
@@ -398,7 +244,7 @@
         ]
       },
       "scores": {
-        "relevance": 5,
+        "relevance": 4,
         "leverage": 1,
         "novelty": 4,
         "urgency": 3,
@@ -409,23 +255,23 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "782c7f0480fc140a",
-      "title": "Rewriting Bun in Rust",
-      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-08T23:57:21+00:00",
-      "summary": "Rewriting Bun in Rust Jarred Sumner has been promising this blog post ( since May 9th ) about his Zig to Rust rewrite of Bun for significantly longer than it took him to finish the rewrite. Honestly, it was worth the wait. This is a detailed description of an extremely sophisticated piece of agentic engineering, featuring dynamic workflows, trial runs, adver",
+      "id": "c71ce6e82e21e627",
+      "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+      "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+      "source": "GitHub Blog",
+      "published": "2026-07-10T17:57:47+02:00",
+      "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence. The post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog .",
       "areas": [
         "ai-agents",
-        "enterprise-ai"
+        "developer-tools"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agent",
-          "agentic"
+          "agent"
         ],
-        "enterprise-ai": [
-          "workflow"
+        "developer-tools": [
+          "github",
+          "copilot"
         ]
       },
       "scores": {
@@ -440,118 +286,23 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "06c8865352753572",
-      "title": "sqlite-utils 4.0, now with database schema migrations",
-      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-07T19:32:57+00:00",
-      "summary": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and sup",
+      "id": "7fe62bdefd02aee9",
+      "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/",
+      "source": "GitHub Blog",
+      "published": "2026-07-07T18:00:00+02:00",
+      "summary": "New Innovation Graph data shows global developer communities growing faster than ever, with collaboration reaching new highs across many economies. The post Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide appeared first on The GitHub Blog .",
       "areas": [
         "data-platforms",
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "ide"
-        ],
-        "data-platforms": [
-          "data",
-          "sqlite",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f7fd14ab1da381e8",
-      "title": "June 2026 newsletter",
-      "url": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-03T14:50:50+00:00",
-      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Claude Fable 5, GPT-5.6, and US export restrictions GLM-5.2 is the new best open weights model Tokenmaxxing is so over Datasette Apps sqlite-utils and shot-scraper and Datasette Miscellaneous WASM proje",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude",
-          "gpt"
-        ],
-        "data-platforms": [
-          "data",
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "9ba0954fcfd8ada0",
-      "title": "How GitHub used secret scanning to reach inbox zero",
-      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
-      "source": "GitHub Blog",
-      "published": "2026-07-02T18:00:00+02:00",
-      "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months. The post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
           "github",
-          "git"
+          "developer"
         ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "d9167c066f6f7030",
-      "title": "Core dump epidemiology: fixing an 18-year-old bug",
-      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
-      "source": "OpenAI News",
-      "published": "2026-06-30T02:00:00+02:00",
-      "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "ide",
-          "debug"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -578,7 +329,7 @@
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agent",
+          "ai agents",
           "agents"
         ],
         "models": [
@@ -632,163 +383,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "9226497d31b489a2",
-      "title": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
-      "url": "https://shipthatcode.com",
-      "source": "Hacker News",
-      "published": "2026-07-11T15:40:27+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ],
-        "data-platforms": [
-          "data",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "c9277a32d935e231",
-      "title": "Filing: College app Fizz accuses VC of sharing confidential startup information with rival Sidechat",
-      "url": "https://techcrunch.com/2026/07/10/filing-college-app-fizz-accuses-vc-of-sharing-confidential-startup-information-with-rival-sidechat/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T19:42:36+02:00",
-      "summary": "Fizz has expanded its lawsuit against rival Sidechat, alleging that a Maveron VC shared its confidential information obtained during a fundraising meeting with the competing startup.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ],
-        "enterprise-ai": [
-          "aws"
-        ],
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "798601448a5ef1d2",
-      "title": "Hugging Face’s CEO on why companies are done renting their AI",
-      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T16:00:00+02:00",
-      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "618c64669efb34cf",
-      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
-      "url": "https://openai.com/index/deutsche-telekom",
-      "source": "OpenAI News",
-      "published": "2026-07-10T09:00:00+02:00",
-      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "95128d332c3055a0",
-      "title": "llm 0.31.1",
-      "url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-09T16:06:15+00:00",
-      "summary": "Release: llm 0.31.1 Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. #1521 This bug came up when I was testing llm-meta-ai . Tags: llm",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "2e81fa4581a546ef",
       "title": "ChatGPT is now a partner for your most ambitious work",
       "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
@@ -804,8 +398,37 @@
           "agent"
         ],
         "models": [
-          "openai",
-          "gpt"
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "86749a65738ad2c6",
+      "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+      "source": "GitHub Blog",
+      "published": "2026-07-08T23:11:56+02:00",
+      "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation. The post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog .",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agentic"
+        ],
+        "developer-tools": [
+          "github"
         ]
       },
       "scores": {
@@ -863,11 +486,10 @@
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "chatgpt"
         ],
         "enterprise-ai": [
-          "enterprise",
-          "workflow"
+          "enterprise"
         ]
       },
       "scores": {
@@ -896,6 +518,36 @@
         "models": [
           "claude",
           "gpt"
+        ],
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "f6cf54165beecf8c",
+      "title": "sqlite-utils 4.0rc2, mostly written by Claude Fable (for about $149.25)",
+      "url": "https://simonwillison.net/2026/Jul/5/sqlite-utils-fable/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-05T01:00:48+00:00",
+      "summary": "I wrote about the sqlite-utils 4.0rc1 release a couple of weeks ago. Since we only have Claude Fable on our Max subscriptions for a few more days, I decided to see if it could help me get to a 4.0 stable release that I felt truly comfortable about, since I try to keep to SemVer and like my incompatible major versions to be as rare as possible. I started with",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
         ],
         "data-platforms": [
           "sqlite"
@@ -973,22 +625,23 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "56eb0344e825dd3a",
-      "title": "Fable's judgement",
-      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "id": "f7fd14ab1da381e8",
+      "title": "June 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
       "source": "Simon Willison",
-      "published": "2026-07-03T18:51:06+00:00",
-      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example they gave was testing. You can tell Fable \"only use automated testing for larger fe",
+      "published": "2026-07-03T14:50:50+00:00",
+      "summary": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Claude Fable 5, GPT-5.6, and US export restrictions GLM-5.2 is the new best open weights model Tokenmaxxing is so over Datasette Apps sqlite-utils and shot-scraper and Datasette Miscellaneous WASM proje",
       "areas": [
-        "developer-tools",
+        "data-platforms",
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "claude"
+          "claude",
+          "gpt"
         ],
-        "developer-tools": [
-          "ide"
+        "data-platforms": [
+          "sqlite"
         ]
       },
       "scores": {
@@ -1016,7 +669,7 @@
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "chatgpt"
         ],
         "data-platforms": [
           "data"
@@ -1034,42 +687,12 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "50a70d3498ded244",
-      "title": "Introducing GeneBench-Pro",
-      "url": "https://openai.com/index/introducing-genebench-pro",
+      "id": "d9167c066f6f7030",
+      "title": "Core dump epidemiology: fixing an 18-year-old bug",
+      "url": "https://openai.com/index/core-dump-epidemiology-data-infrastructure-bug",
       "source": "OpenAI News",
       "published": "2026-06-30T02:00:00+02:00",
-      "summary": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "abd2bc95869e92ef",
-      "title": "Inside Genebench-Pro",
-      "url": "https://openai.com/index/genebench-pro/case-studies",
-      "source": "OpenAI News",
-      "published": "2026-06-30T02:00:00+02:00",
-      "summary": "",
+      "summary": "OpenAI engineers used large-scale core dump analysis to debug rare infrastructure crashes, uncovering both a hardware fault and a long-standing software bug.",
       "areas": [
         "developer-tools",
         "models"
@@ -1079,7 +702,7 @@
           "openai"
         ],
         "developer-tools": [
-          "ide"
+          "debug"
         ]
       },
       "scores": {
@@ -1155,124 +778,27 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "0018c9a42fd172a3",
-      "title": "Codex-maxxing for long-running work",
-      "url": "https://openai.com/index/codex-maxxing-long-running-work",
-      "source": "OpenAI News",
-      "published": "2026-06-22T02:00:00+02:00",
-      "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt.",
+      "id": "06c8865352753572",
+      "title": "sqlite-utils 4.0, now with database schema migrations",
+      "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-07T19:32:57+00:00",
+      "summary": "This morning I released sqlite-utils 4.0 , the 124th release of that project and the first major version bump since 3.0 in November 2020. In addition to some small but significant breaking changes (described in this upgrade guide ), this version introduces three major features: database migrations , nested transactions (via a new db.atomic() method), and sup",
       "areas": [
-        "developer-tools",
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "codex"
+        "data-platforms": [
+          "sqlite",
+          "database"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 1,
+        "relevance": 2,
+        "leverage": 2,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "a7cb5e827639486e",
-      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
-      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
-      "source": "OpenAI News",
-      "published": "2026-06-18T10:00:00+02:00",
-      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "reasoning model"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "7844fcfd55bbdf07",
-      "title": "ICE are heavily armed killers. They’re also huge losers",
-      "url": "https://www.theverge.com/policy/964302/ice-donald-trump-killings",
-      "source": "The Verge",
-      "published": "2026-07-11T09:00:00-04:00",
-      "summary": "Donald Trump's Homeland Security regime has been at the center of two critical stories in the past two weeks. In the first, federal agents shot and killed a man and quickly got to work justifying the use of force under the flimsiest of pretenses. In the other, it made house calls to people who said […]",
-      "areas": [
-        "ai-agents",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "f3ba3d7c0317607d",
-      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
-      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
-      "source": "TechCrunch",
-      "published": "2026-07-11T03:01:28+02:00",
-      "summary": "Independent cybersecurity journalist Brian Krebs reported in May that a security researcher with cyber firm GitGuardian alerted him to reams of exposed passwords stored in a publicly accessible GitHub repository, which an employee of a CISA contractor had uploaded.",
-      "areas": [
-        "developer-tools",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "ide"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 86,
       "action": "Read",
@@ -1290,68 +816,8 @@
       ],
       "matchedKeywords": {
         "data-platforms": [
-          "data",
           "sqlite",
           "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "718f9d2be6bc9bd3",
-      "title": "6 security settings every GitHub maintainer should enable this week",
-      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
-      "source": "GitHub Blog",
-      "published": "2026-07-01T17:59:29+02:00",
-      "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before. The post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
-        ],
-        "privacy-risk": [
-          "security",
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "3c980dd250b98689",
-      "title": "How GitHub maintains compliance for open source dependencies",
-      "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
-      "source": "GitHub Blog",
-      "published": "2026-06-30T19:28:16+02:00",
-      "summary": "Explore how the Open Source Program Office uses GitHub’s new license compliance product to manage open source dependencies at scale. The post How GitHub maintains compliance for open source dependencies appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
         ]
       },
       "scores": {
@@ -1393,67 +859,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "746d05eb828bd7af",
-      "title": "OpenAI’s Head of Safety Is Leaving the Company",
-      "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
-      "source": "Wired",
-      "published": "2026-07-11T03:07:26+02:00",
-      "summary": "Johannes Heidecke’s departure comes as OpenAI tries to further integrate its research and safety teams.",
-      "areas": [
-        "developer-tools",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "ide"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "fdd6c60bdccad393",
-      "title": "How GitHub gave every repository a durable owner",
-      "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
-      "source": "GitHub Blog",
-      "published": "2026-07-09T18:29:37+02:00",
-      "summary": "GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "4caf7d940454e0f9",
       "title": "Introducing Muse Spark 1.1",
       "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
@@ -1465,37 +870,8 @@
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agent",
           "agentic",
           "computer use"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "a2a4ad1d053b31a3",
-      "title": "GitHub availability report: June 2026",
-      "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
-      "source": "GitHub Blog",
-      "published": "2026-07-08T21:35:51+02:00",
-      "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: June 2026 appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "ide"
         ]
       },
       "scores": {
@@ -1522,36 +898,7 @@
       "matchedKeywords": {
         "developer-tools": [
           "github",
-          "git",
           "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "cdd67a439f418f0a",
-      "title": "Understand to participate",
-      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-02T17:07:14+00:00",
-      "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me: Understand to participate Geoffrey was talking about the challenge of collaborating with coding agents as they construct increasingly large and sophisticated changes, and the need to avoid taking on cognitive debt as your understanding drifts from how the code",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents",
-          "coding agent"
         ]
       },
       "scores": {
@@ -1596,6 +943,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "9226497d31b489a2",
+      "title": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
+      "url": "https://shipthatcode.com",
+      "source": "Hacker News",
+      "published": "2026-07-11T15:40:27+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ],
+        "data-platforms": [
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "ad3d989588d4eb53",
       "title": "Microsoft Reports a Massive 25 Percent Jump in Emissions",
       "url": "https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/",
@@ -1626,95 +1003,31 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "47a96e0deb1bdb2a",
-      "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
-      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-10T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the clearest glimpse yet at what’s really going on inside large language models as they…",
+      "id": "341b60abd06cbd83",
+      "title": "Previewing GPT-5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+      "source": "OpenAI News",
+      "published": "2026-06-26T12:00:00+02:00",
+      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
       "areas": [
-        "developer-tools",
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "language model",
           "openai",
-          "anthropic",
-          "claude"
+          "gpt"
         ],
-        "developer-tools": [
-          "ide"
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
         "relevance": 3,
-        "leverage": 0,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e6e3b3e482e2237d",
-      "title": "Anthropic found a hidden space where Claude puzzles over concepts",
-      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-09T22:22:28+02:00",
-      "summary": "The AI firm Anthropic has developed a technique that has given it the clearest glimpse yet at what’s really going on inside large language models as they answer questions or carry out tasks. What they found ranges from the mundane to the unnerving. Researchers at the company built a tool called the Jacobian lens (or…",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "language model",
-          "anthropic",
-          "claude"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "c170d471e8f2dfc0",
-      "title": "The Download: your stake in OpenAI, and the Treasury’s AI warning",
-      "url": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-07T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Your family’s $300 stake in OpenAI Sam Altman’s proposal that Americans should share in the wealth created by AI is back in the spotlight, with reports that he is discussing giving…",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
       "priority": 80,
       "action": "Watch",
@@ -1777,22 +1090,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "762b2a55b6a430c8",
-      "title": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
-      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+      "id": "f3ba3d7c0317607d",
+      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
+      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
       "source": "TechCrunch",
-      "published": "2026-07-10T16:19:40+02:00",
-      "summary": "The tech giant is in breach of the Digital Services Act by focusing on features like infinite scroll, autoplay, push notifications, and the highly personalized recommendation algorithms, the European Commission said.",
+      "published": "2026-07-11T03:01:28+02:00",
+      "summary": "Independent cybersecurity journalist Brian Krebs reported in May that a security researcher with cyber firm GitGuardian alerted him to reams of exposed passwords stored in a publicly accessible GitHub repository, which an employee of a CISA contractor had uploaded.",
       "areas": [
         "developer-tools",
         "privacy-risk"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "git"
+          "github"
         ],
         "privacy-risk": [
-          "breach"
+          "security"
         ]
       },
       "scores": {
@@ -1819,7 +1132,7 @@
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "chatgpt"
         ]
       },
       "scores": {
@@ -1888,46 +1201,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ef8a6c2337cc8887",
-      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-      "url": "https://openai.com/index/gpt-5-6",
-      "source": "OpenAI News",
-      "published": "2026-07-09T12:00:00+02:00",
-      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "id": "95128d332c3055a0",
+      "title": "llm 0.31.1",
+      "url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-09T16:06:15+00:00",
+      "summary": "Release: llm 0.31.1 Fix for a bug with OpenAI Chat Completion endpoints where a tool call with empty arguments could result in a JSON error from some providers. #1521 This bug came up when I was testing llm-meta-ai . Tags: llm",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "45d63905e99d737b",
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "url": "https://openai.com/index/bio-bug-bounty",
-      "source": "OpenAI News",
-      "published": "2026-07-09T12:00:00+02:00",
-      "summary": "Details about the OpenAI Bio Bounty program",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
+          "llm",
+          "openai"
         ]
       },
       "scores": {
@@ -1999,32 +1285,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "32a75df23da7f0ca",
-      "title": "Helping K–12 educators build practical AI skills",
-      "url": "https://openai.com/index/k-12-educators-practical-skills",
-      "source": "OpenAI News",
-      "published": "2026-07-08T12:00:00+02:00",
-      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "37d81f32e63fb047",
       "title": "Introducing GPT-Live",
       "url": "https://openai.com/index/introducing-gpt-live",
@@ -2036,8 +1296,8 @@
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gpt"
+          "gpt",
+          "chatgpt"
         ]
       },
       "scores": {
@@ -2078,33 +1338,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "5786331c6dbd0785",
-      "title": "The foundational elements of AI architecture that IT leaders need to scale",
-      "url": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-07T13:10:52+02:00",
-      "summary": "With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces risk, leaving IT leaders to wonder which investments will prove valuable even six months into the future. Returning to the foundational elements of AI architecture",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agentic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "d795be1324e59ced",
       "title": "tencent/Hy3",
       "url": "https://simonwillison.net/2026/Jul/6/hy3/#atom-everything",
@@ -2131,50 +1364,23 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "6e8efb5c1189fe24",
-      "title": "Better Models: Worse Tools",
-      "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-04T22:53:52+00:00",
-      "summary": "Better Models: Worse Tools Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8. The edit itself is usually correct but the arguments do not match the schema as the model",
+      "id": "718f9d2be6bc9bd3",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+      "source": "GitHub Blog",
+      "published": "2026-07-01T17:59:29+02:00",
+      "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before. The post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog .",
       "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "341b60abd06cbd83",
-      "title": "Previewing GPT-5.6 Sol: a next-generation model",
-      "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-      "source": "OpenAI News",
-      "published": "2026-06-26T12:00:00+02:00",
-      "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
-      "areas": [
-        "models",
+        "developer-tools",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
+        "developer-tools": [
+          "github"
         ],
         "privacy-risk": [
           "security",
-          "safety"
+          "attack"
         ]
       },
       "scores": {
@@ -2189,73 +1395,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "09d6f7705e73599a",
-      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-      "source": "OpenAI News",
-      "published": "2026-06-24T08:00:00+02:00",
-      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+      "id": "3c980dd250b98689",
+      "title": "How GitHub maintains compliance for open source dependencies",
+      "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+      "source": "GitHub Blog",
+      "published": "2026-06-30T19:28:16+02:00",
+      "summary": "Explore how the Open Source Program Office uses GitHub’s new license compliance product to manage open source dependencies at scale. The post How GitHub maintains compliance for open source dependencies appeared first on The GitHub Blog .",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai",
-          "inference"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "961655c1db74a082",
-      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-      "url": "https://openai.com/index/gpt-5-immunology-mystery",
-      "source": "OpenAI News",
-      "published": "2026-06-23T19:00:00+02:00",
-      "summary": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "c707ad6fb9f048a3",
-      "title": "How Omio is building the future of conversational travel",
-      "url": "https://openai.com/index/omio",
-      "source": "OpenAI News",
-      "published": "2026-06-23T02:00:00+02:00",
-      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
+        "developer-tools": [
+          "github"
         ]
       },
       "scores": {
@@ -2296,19 +1447,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7b613419add80c79",
-      "title": "Improving health intelligence in ChatGPT",
-      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "id": "a7cb5e827639486e",
+      "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+      "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
       "source": "OpenAI News",
-      "published": "2026-06-18T13:00:00+02:00",
-      "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+      "published": "2026-06-18T10:00:00+02:00",
+      "summary": "Researchers used an OpenAI reasoning model to help diagnose rare diseases, identifying 18 new diagnoses in previously unsolved cases.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "reasoning model"
         ]
       },
       "scores": {
@@ -2323,19 +1474,305 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d728abea4e71f51e",
-      "title": "Sperm donors need limits, says a European fertility group",
-      "url": "https://www.technologyreview.com/2026/07/10/1140289/sperm-donors-need-limits-says-a-european-fertility-group/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-10T11:00:00+02:00",
-      "summary": "Ties van der Meer doesn’t know how many siblings he has. The 47-year-old was conceived at a private fertility clinic in the Netherlands using sperm provided by an anonymous donor. After the Netherlands banned anonymous donation in 2004, the doctor who ran the clinic destroyed records that might have identified those donors, he says. He…",
+      "id": "618c64669efb34cf",
+      "title": "How Deutsche Telekom is rewiring telecommunications with AI",
+      "url": "https://openai.com/index/deutsche-telekom",
+      "source": "OpenAI News",
+      "published": "2026-07-10T09:00:00+02:00",
+      "summary": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "fdd6c60bdccad393",
+      "title": "How GitHub gave every repository a durable owner",
+      "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
+      "source": "GitHub Blog",
+      "published": "2026-07-09T18:29:37+02:00",
+      "summary": "GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed. The post How GitHub gave every repository a durable owner appeared first on The GitHub Blog .",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "cli",
-          "ide"
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "ef8a6c2337cc8887",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6",
+      "source": "OpenAI News",
+      "published": "2026-07-09T12:00:00+02:00",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "45d63905e99d737b",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "source": "OpenAI News",
+      "published": "2026-07-09T12:00:00+02:00",
+      "summary": "Details about the OpenAI Bio Bounty program",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "782c7f0480fc140a",
+      "title": "Rewriting Bun in Rust",
+      "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-08T23:57:21+00:00",
+      "summary": "Rewriting Bun in Rust Jarred Sumner has been promising this blog post ( since May 9th ) about his Zig to Rust rewrite of Bun for significantly longer than it took him to finish the rewrite. Honestly, it was worth the wait. This is a detailed description of an extremely sophisticated piece of agentic engineering, featuring dynamic workflows, trial runs, adver",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agentic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a2a4ad1d053b31a3",
+      "title": "GitHub availability report: June 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
+      "source": "GitHub Blog",
+      "published": "2026-07-08T21:35:51+02:00",
+      "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: June 2026 appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "32a75df23da7f0ca",
+      "title": "Helping K–12 educators build practical AI skills",
+      "url": "https://openai.com/index/k-12-educators-practical-skills",
+      "source": "OpenAI News",
+      "published": "2026-07-08T12:00:00+02:00",
+      "summary": "OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroom.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "6e8efb5c1189fe24",
+      "title": "Better Models: Worse Tools",
+      "url": "https://simonwillison.net/2026/Jul/4/better-models-worse-tools/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-04T22:53:52+00:00",
+      "summary": "Better Models: Worse Tools Armin reports on a weird problem he ran into while hacking on Pi: The short version is that newer Claude models sometimes call Pi’s edit tool with extra, invented fields in the nested edits[] array. And not Haiku or some small model: Opus 4.8. The edit itself is usually correct but the arguments do not match the schema as the model",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "56eb0344e825dd3a",
+      "title": "Fable's judgement",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-03T18:51:06+00:00",
+      "summary": "One of the most interesting tips I got from the Fireside Chat I hosted with Cat Wu and Thariq Shihipar from the Claude Code team at AIE on Wednesday was to let Fable (and to a certain extent Opus) use their own judgement rather than dictating how they should work. The example they gave was testing. You can tell Fable \"only use automated testing for larger fe",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "118a188c6e62a162",
+      "title": "Using DSPy to evaluate and improve Datasette Agent's SQL system prompts",
+      "url": "https://simonwillison.net/2026/Jul/2/dspy-datasette-agent-prompts/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-02T18:25:00+00:00",
+      "summary": "Research: Using DSPy to evaluate and improve Datasette Agent's SQL system prompts One of this morning's AIE keynotes covered dspy , which reminded me I've been meaning to see if it could help me improve the system prompt used by Datasette Agent - so I fired off an asynchronous research task in Claude Code for web using Claude Fable 5: Pip install the latest ",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "9ba0954fcfd8ada0",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "source": "GitHub Blog",
+      "published": "2026-07-02T18:00:00+02:00",
+      "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months. The post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "cdd67a439f418f0a",
+      "title": "Understand to participate",
+      "url": "https://simonwillison.net/2026/Jul/2/understand-to-participate/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-02T17:07:14+00:00",
+      "summary": "I saw Geoffrey Litt speak at AIE yesterday, and one framing he used particularly resonated with me: Understand to participate Geoffrey was talking about the challenge of collaborating with coding agents as they construct increasingly large and sophisticated changes, and the need to avoid taking on cognitive debt as your understanding drifts from how the code",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agents"
         ]
       },
       "scores": {
@@ -2361,7 +1798,6 @@
       ],
       "matchedKeywords": {
         "models": [
-          "llm",
           "anthropic",
           "claude"
         ]
@@ -2404,6 +1840,249 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "09d6f7705e73599a",
+      "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+      "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+      "source": "OpenAI News",
+      "published": "2026-06-24T08:00:00+02:00",
+      "summary": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "openai",
+          "inference"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "961655c1db74a082",
+      "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery",
+      "source": "OpenAI News",
+      "published": "2026-06-23T19:00:00+02:00",
+      "summary": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "c707ad6fb9f048a3",
+      "title": "How Omio is building the future of conversational travel",
+      "url": "https://openai.com/index/omio",
+      "source": "OpenAI News",
+      "published": "2026-06-23T02:00:00+02:00",
+      "summary": "Discover how Omio uses OpenAI to power conversational travel experiences, accelerate product development, and transform into an AI-native company.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "0018c9a42fd172a3",
+      "title": "Codex-maxxing for long-running work",
+      "url": "https://openai.com/index/codex-maxxing-long-running-work",
+      "source": "OpenAI News",
+      "published": "2026-06-22T02:00:00+02:00",
+      "summary": "Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "7b613419add80c79",
+      "title": "Improving health intelligence in ChatGPT",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+      "source": "OpenAI News",
+      "published": "2026-06-18T13:00:00+02:00",
+      "summary": "Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physician-informed evaluations.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt",
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "746d05eb828bd7af",
+      "title": "OpenAI’s Head of Safety Is Leaving the Company",
+      "url": "https://www.wired.com/story/openai-head-of-safety-leaving/",
+      "source": "Wired",
+      "published": "2026-07-11T03:07:26+02:00",
+      "summary": "Johannes Heidecke’s departure comes as OpenAI tries to further integrate its research and safety teams.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "798601448a5ef1d2",
+      "title": "Hugging Face’s CEO on why companies are done renting their AI",
+      "url": "https://techcrunch.com/2026/07/10/hugging-faces-ceo-on-why-companies-are-done-renting-their-ai/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T16:00:00+02:00",
+      "summary": "Open source AI is booming, according to Hugging Face CEO Clem Delangue. The company has grown into something like a GitHub for AI in recent years, where AI builders can share and download open models and datasets, now used by roughly half the Fortune 500. Delangue has seen the same story play out again and again: companies start […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "79afe03810defc05",
+      "title": "Introducing GPT‑Live",
+      "url": "https://simonwillison.net/2026/Jul/8/introducing-gptlive/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-08T23:20:48+00:00",
+      "summary": "Introducing GPT‑Live OpenAI finally upgraded the model used by ChatGPT voice mode! I've had preview access for a few weeks in the iPhone app, and the new model is very impressive. It also has the ability to spin off harder tasks to GPT-5.5: For questions that require web search, deeper reasoning, or more complex work, it delegates to our latest frontier mode",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt",
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "5786331c6dbd0785",
+      "title": "The foundational elements of AI architecture that IT leaders need to scale",
+      "url": "https://www.technologyreview.com/2026/07/07/1139413/the-foundational-elements-of-ai-architecture-that-it-leaders-need-to-scale/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-07T13:10:52+02:00",
+      "summary": "With the rapid progress of AI capabilities and the move to agentic systems, organizations are expanding their use cases as the technology continues to grow. That constant evolution also introduces risk, leaving IT leaders to wonder which investments will prove valuable even six months into the future. Returning to the foundational elements of AI architecture",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agentic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "714d5cb84d45c511",
       "title": "What xAI's Grok Build CLI Actually Sends to xAI",
       "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
@@ -2421,11 +2100,11 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2447,11 +2126,11 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2473,39 +2152,232 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b517c56273a7d594",
-      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
-      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-      "source": "Hacker News",
-      "published": "2026-07-11T19:21:49+02:00",
-      "summary": "Comments",
+      "id": "47a96e0deb1bdb2a",
+      "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
+      "url": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-10T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Anthropic found a hidden space where Claude puzzles over concepts The AI firm Anthropic has got the clearest glimpse yet at what’s really going on inside large language models as they…",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "ide"
+        "models": [
+          "openai",
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e6e3b3e482e2237d",
+      "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+      "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-09T22:22:28+02:00",
+      "summary": "The AI firm Anthropic has developed a technique that has given it the clearest glimpse yet at what’s really going on inside large language models as they answer questions or carry out tasks. What they found ranges from the mundane to the unnerving. Researchers at the company built a tool called the Jacobian lens (or…",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c170d471e8f2dfc0",
+      "title": "The Download: your stake in OpenAI, and the Treasury’s AI warning",
+      "url": "https://www.technologyreview.com/2026/07/07/1140197/the-download-your-openai-stake-treasury-ai-warning/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-07T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Your family’s $300 stake in OpenAI Sam Altman’s proposal that Americans should share in the wealth created by AI is back in the spotlight, with reports that he is discussing giving…",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "be7c03e0ece39e1b",
+      "title": "Open Source AI Gap Map",
+      "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-03T22:04:31+00:00",
+      "summary": "Open Source AI Gap Map Current AI is \"a global partnership building a public option for AI\", founded as a non-profit at the AI Action Summit in Paris in February 2025 and backed by serious capital ($400m already committed). They launched their Gap Map a couple of days ago - an attempt at indexing the current state of open source AI: The Gap Map v0.1 details ",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "03ffcd65bb015acf",
+      "title": "Quoting Josh W. Comeau",
+      "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-03T21:25:52+00:00",
+      "summary": "I just launched my third course, Whimsical Animations, and so far, it’s on track to sell roughly ⅓ as many copies as a typical course launch. It’s a similar story with my two existing courses. Sales are down significantly from last year. There are likely a lot of reasons for this, but I think the biggest is AI. There’s sort of a double whammy with AI: Many p",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "50a70d3498ded244",
+      "title": "Introducing GeneBench-Pro",
+      "url": "https://openai.com/index/introducing-genebench-pro",
+      "source": "OpenAI News",
+      "published": "2026-06-30T02:00:00+02:00",
+      "summary": "Introducing GeneBench-Pro, a new benchmark testing AI performance in genomics, biology, and scientific research using complex, real-world datasets.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "7844fcfd55bbdf07",
+      "title": "ICE are heavily armed killers. They’re also huge losers",
+      "url": "https://www.theverge.com/policy/964302/ice-donald-trump-killings",
+      "source": "The Verge",
+      "published": "2026-07-11T09:00:00-04:00",
+      "summary": "Donald Trump's Homeland Security regime has been at the center of two critical stories in the past two weeks. In the first, federal agents shot and killed a man and quickly got to work justifying the use of force under the flimsiest of pretenses. In the other, it made house calls to people who said […]",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "c9277a32d935e231",
+      "title": "Filing: College app Fizz accuses VC of sharing confidential startup information with rival Sidechat",
+      "url": "https://techcrunch.com/2026/07/10/filing-college-app-fizz-accuses-vc-of-sharing-confidential-startup-information-with-rival-sidechat/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T19:42:36+02:00",
+      "summary": "Fizz has expanded its lawsuit against rival Sidechat, alleging that a Maveron VC shared its confidential information obtained during a fundraising meeting with the competing startup.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "762b2a55b6a430c8",
+      "title": "EU threatens Meta with fines over addictive features on Facebook and Instagram",
+      "url": "https://techcrunch.com/2026/07/10/eu-threatens-meta-with-fines-over-addictive-features-on-facebook-and-instagram/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T16:19:40+02:00",
+      "summary": "The tech giant is in breach of the Digital Services Act by focusing on features like infinite scroll, autoplay, push notifications, and the highly personalized recommendation algorithms, the European Commission said.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "4f59476906fe1693",
@@ -2514,50 +2386,38 @@
       "source": "The Verge",
       "published": "2026-07-11T08:00:00-04:00",
       "summary": "Hi, friends! Welcome to Installer No. 135, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, crank the AC, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about cold plunges and Colson Whitehead and the food truck mafia, […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
+        "relevance": 0,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "1abeeeaebe351434",
-      "title": "Netflix could be planning ‘always-on’ live TV channels",
-      "url": "https://techcrunch.com/2026/07/10/netflix-could-be-planning-always-on-live-tv-channels/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T16:53:08+02:00",
-      "summary": "Amid signs of slowing engagement, Netflix is reportedly considering launching \"always-on\" live channels, giving subscribers something to tune into 24/7.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
+      "id": "9affc127abf3ad20",
+      "title": "Quoting Nilay Patel",
+      "url": "https://simonwillison.net/2026/Jul/10/nilay-patel/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-10T17:05:26+00:00",
+      "summary": "The reality is to make augmented reality glasses, you need to put a camera next to your eyes that is continuously recording everything you see and processing that to put information over it. There is not another way around it. And there's certainly not a chip that can fit in the stem of a glasses that is both powerful enough and power miserly enough to do th",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 2,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "70d77cac1c7449f7",
@@ -2566,24 +2426,18 @@
       "source": "Wired",
       "published": "2026-07-10T12:30:00+02:00",
       "summary": "Billed as the “world’s first museum of AI arts,” Dataland uses wearables and troves of material from the Amazon to merge nature, biometrics, and art.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
+        "relevance": 0,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "fbe4dae4351ed951",
@@ -2592,50 +2446,18 @@
       "source": "Lobsters",
       "published": "2026-07-09T17:41:15+02:00",
       "summary": "@mitchellh ( blog ) was behind Vagrant , Packer , Consul , Terraform , Vault , Nomad , Waypoint and now builds Ghostty and Vouch . In this interview, we talk about terminals, Zig and open source. You've been interviewed a lot . Why do people like to interview you? In interviews, everyone comes from a different angle. Many people want to know how the software",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "terminal"
-        ]
-      },
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
+        "relevance": 0,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a79d4a99bd2d7297",
-      "title": "The Download: a nuclear landmark, and China eyes Nvidia chips",
-      "url": "https://www.technologyreview.com/2026/07/09/1140283/the-download-nuclear-power-milestone-nvidia-china-ai-chips/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-09T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Four nuclear reactors hit a big milestone in the US —Casey Crownhart I was really looking forward to July 4, and not just because I love a poolside barbecue. This year…",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "947b270c57731488",
@@ -2644,50 +2466,58 @@
       "source": "MIT Technology Review",
       "published": "2026-07-09T10:00:00+02:00",
       "summary": "I was really looking forward to July 4, and not just because I love a poolside barbecue. This year the American holiday also marked a big symbolic deadline for US nuclear power. Last year the Trump administration set a goal to see three new microreactors achieve criticality, a technical milestone establishing that a reactor can…",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
+        "relevance": 0,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "851ad44764f57435",
-      "title": "The Download: worms fight pollution, and geoengineering faces reality",
-      "url": "https://www.technologyreview.com/2026/07/08/1140216/the-download-worms-manure-pollution-geoengineering-reality-check/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-08T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Why worms (and microbes) are catching on as a manure pollution solution Anthony Agueda, a third-generation California dairy farmer, pulls a rake through a bed of dark, wet wood chips to…",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
+      "id": "b517c56273a7d594",
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "source": "Hacker News",
+      "published": "2026-07-11T19:21:49+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
+        "relevance": 0,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 2,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 42,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "1abeeeaebe351434",
+      "title": "Netflix could be planning ‘always-on’ live TV channels",
+      "url": "https://techcrunch.com/2026/07/10/netflix-could-be-planning-always-on-live-tv-channels/",
+      "source": "TechCrunch",
+      "published": "2026-07-10T16:53:08+02:00",
+      "summary": "Amid signs of slowing engagement, Netflix is reportedly considering launching \"always-on\" live channels, giving subscribers something to tune into 24/7.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 2,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 42,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     }
   ]
 }
