@@ -57,7 +57,7 @@ class ContinuousIntegrationContract(unittest.TestCase):
             news = site / "tech-news" / "index.html"
             original_news = news.read_text(encoding="utf-8")
             news.write_text(
-                original_news.replace(' aria-label="Filter technology news"', "", 1),
+                original_news.replace(' for="search"', "", 1),
                 encoding="utf-8",
             )
             a11y = subprocess.run(

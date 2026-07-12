@@ -34,7 +34,7 @@ DEFAULT_MIN_ITEMS = 10
 MIN_RETENTION_RATIO = 0.5
 PUBLISH_BRANCH = os.environ.get("TECH_NEWS_PUBLISH_BRANCH", "main")
 PUBLISH_REMOTE = os.environ.get("TECH_NEWS_PUBLISH_REMOTE", "origin")
-PUBLISH_PATH = "tech-news/data.json"
+PUBLISH_PATHS = ("tech-news/data.json", "tech-news/status.json")
 
 FEEDS: dict[str, str] = {
     "Hacker News": "https://news.ycombinator.com/rss",
@@ -445,13 +445,13 @@ def publish_if_changed() -> PublishResult:
         unrelated = [
             line
             for line in worktree.stdout.splitlines()
-            if line and line[3:] != PUBLISH_PATH
+            if line and line[3:] not in PUBLISH_PATHS
         ]
         if unrelated:
             return PublishResult(
                 "failed",
                 "publish requires a clean worktree outside "
-                f"{PUBLISH_PATH}: {'; '.join(unrelated)}",
+                f"{', '.join(PUBLISH_PATHS)}: {'; '.join(unrelated)}",
             )
 
         fetch = run([
@@ -483,13 +483,13 @@ def publish_if_changed() -> PublishResult:
                 f"{PUBLISH_REMOTE}/{PUBLISH_BRANCH}; divergence {divergence.stdout.strip()}",
             )
 
-        status = run(["git", "status", "--porcelain", "--", PUBLISH_PATH])
+        status = run(["git", "status", "--porcelain", "--", *PUBLISH_PATHS])
         if status.returncode != 0:
             return PublishResult("failed", f"git status failed: {status.stdout.strip()}")
         if not status.stdout.strip():
             return PublishResult("unchanged")
 
-        add = run(["git", "add", "--", PUBLISH_PATH])
+        add = run(["git", "add", "--", *PUBLISH_PATHS])
         if add.returncode != 0:
             return PublishResult("failed", f"git add failed: {add.stdout.strip()}")
 
@@ -500,7 +500,7 @@ def publish_if_changed() -> PublishResult:
             "-m",
             "chore: update tech news snapshot",
             "--",
-            PUBLISH_PATH,
+            *PUBLISH_PATHS,
         ])
         if commit.returncode != 0:
             return PublishResult("failed", f"git commit failed: {commit.stdout.strip()}")
@@ -620,6 +620,7 @@ def main() -> int:
     }
     try:
         atomic_write_json(OUT, payload)
+        atomic_write_json(OUT.with_name("status.json"), {key: payload[key] for key in ("generatedAt", "total", "usefulOpen")})
     except (OSError, ValueError, TypeError) as exc:
         print(f"snapshot write failed: {type(exc).__name__}", file=sys.stderr)
         return 4

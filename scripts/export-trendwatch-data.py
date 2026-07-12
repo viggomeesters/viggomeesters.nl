@@ -20,6 +20,7 @@ except Exception as exc:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "trendwatch" / "data.json"
+STATUS_OUT = ROOT / "trendwatch" / "status.json"
 
 
 def resolve_ledger_path() -> Path:
@@ -168,6 +169,8 @@ def main() -> int:
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    status_payload = {key: payload[key] for key in ("generatedAt", "ledgerUpdated", "total", "usefulOpen")}
+    STATUS_OUT.write_text(json.dumps(status_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"exported {len(public_items)} trendwatch items to {OUT}")
     return 0
 

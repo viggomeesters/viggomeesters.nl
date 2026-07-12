@@ -1126,9 +1126,7 @@
           <button type="submit">Send message</button>
           <p class="form-note">Powered by Formspree. Your email stays private.</p>
         </form>
-        <div class="form-success" id="form-success">
-          Thanks for reaching out. I'll get back to you soon.
-        </div>
+        <div class="form-success" id="form-status" role="status" aria-live="polite" tabindex="-1"></div>
       </div>
 
       <div class="tile footer">&copy; 2026 Viggo Meesters</div>
@@ -1139,11 +1137,13 @@
   <script>
     // Form handling
     const form = document.getElementById('contact-form');
-    const success = document.getElementById('form-success');
+    const formStatus = document.getElementById('form-status');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = form.querySelector('button');
-      btn.textContent = 'Sending...';
+      formStatus.style.display = 'none';
+      formStatus.textContent = '';
+      btn.textContent = 'Sending…';
       btn.disabled = true;
       try {
         const res = await fetch(form.action, {
@@ -1153,20 +1153,28 @@
         });
         if (res.ok) {
           form.style.display = 'none';
-          success.style.display = 'block';
+          formStatus.textContent = "Thanks for reaching out. I'll get back to you soon.";
+          formStatus.style.display = 'block';
+          formStatus.focus();
         } else {
-          btn.textContent = 'Error — try again';
+          btn.textContent = 'Send message';
           btn.disabled = false;
+          formStatus.textContent = 'Your message could not be sent. Check your details and try again.';
+          formStatus.style.display = 'block';
+          formStatus.focus();
         }
       } catch {
-        btn.textContent = 'Error — try again';
+        btn.textContent = 'Send message';
         btn.disabled = false;
+        formStatus.textContent = 'Your message could not be sent. Check your connection and try again.';
+        formStatus.style.display = 'block';
+        formStatus.focus();
       }
     });
 
     const trendwatchLastRun = document.getElementById('trendwatch-last-run');
     if (trendwatchLastRun) {
-      fetch('/trendwatch/data.json', { cache: 'no-store' })
+      fetch('/trendwatch/status.json', { cache: 'no-store' })
         .then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
         .then((payload) => {
           const generatedAt = payload.generatedAt || payload.ledgerUpdated;
@@ -1185,7 +1193,7 @@
 
     const techNewsLastRun = document.getElementById('tech-news-last-run');
     if (techNewsLastRun) {
-      fetch('/tech-news/data.json', { cache: 'no-store' })
+      fetch('/tech-news/status.json', { cache: 'no-store' })
         .then((response) => response.ok ? response.json() : Promise.reject(new Error(`HTTP ${response.status}`)))
         .then((payload) => {
           const generatedAt = payload.generatedAt;

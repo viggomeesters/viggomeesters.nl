@@ -40,7 +40,9 @@ def public_text_files(root: Path, html_files: Iterable[Path]) -> list[Path]:
     for relative in (
         "skills/skills-data.json",
         "tech-news/data.json",
+        "tech-news/status.json",
         "trendwatch/data.json",
+        "trendwatch/status.json",
         "sitemap.xml",
     ):
         path = root / relative
