@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viggo Meesters — AI Workflows, Knowledge Systems & Data Tools</title>
-  <meta name="description" content="Viggo Meesters builds AI-assisted workflows, personal knowledge systems, data tools, and practical guides that turn complex work into structured systems.">
+  <title>Viggo Meesters — SAP Data Migration, ETL &amp; AI Systems</title>
+  <meta name="description" content="Viggo Meesters builds auditable SAP data migration and ETL workflows, Alteryx tooling, and source-backed AI systems for complex delivery work.">
   <link rel="canonical" href="https://viggomeesters.com/">
   <meta name="theme-color" content="#0c0c0f">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta property="og:title" content="Viggo Meesters — AI Workflows, Knowledge Systems & Data Tools">
-  <meta property="og:description" content="AI-assisted workflows, personal knowledge systems, data tools, and practical guides that turn complex work into structured systems.">
+  <meta property="og:title" content="Viggo Meesters — SAP Data Migration, ETL &amp; AI Systems">
+  <meta property="og:description" content="Auditable SAP data migration and ETL workflows, Alteryx tooling, and source-backed AI systems for complex delivery work.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://viggomeesters.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://viggomeesters.com/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Viggo Meesters — AI Workflows, Knowledge Systems & Data Tools">
-  <meta name="twitter:description" content="AI-assisted workflows, personal knowledge systems, data tools, and practical guides that turn complex work into structured systems.">
+  <meta name="twitter:title" content="Viggo Meesters — SAP Data Migration, ETL &amp; AI Systems">
+  <meta name="twitter:description" content="Auditable SAP data migration and ETL workflows, Alteryx tooling, and source-backed AI systems for complex delivery work.">
   <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +35,13 @@
         "name": "Viggo Meesters",
         "url": "https://viggomeesters.com/",
         "image": "https://viggomeesters.com/profile.jpg",
-        "jobTitle": "AI workflow and knowledge systems builder",
-        "description": "Viggo Meesters builds AI-assisted workflows, personal knowledge systems, data tools, and practical guides that turn complex work into structured systems.",
+        "jobTitle": "SAP data migration and AI systems builder",
+        "description": "Viggo Meesters builds auditable SAP data migration and ETL workflows, Alteryx tooling, and source-backed AI systems for complex delivery work.",
         "knowsAbout": [
           "AI-assisted workflows",
+          "SAP data migration",
+          "ETL",
+          "Alteryx",
           "personal knowledge systems",
           "agent workflow",
           "data tools",
@@ -55,7 +58,7 @@
         "@id": "https://viggomeesters.com/#website",
         "url": "https://viggomeesters.com/",
         "name": "Viggo Meesters",
-        "description": "AI-assisted workflows, personal knowledge systems, data tools, and practical guides by Viggo Meesters.",
+        "description": "SAP data migration, ETL, Alteryx and source-backed AI systems by Viggo Meesters.",
         "inLanguage": "en",
         "publisher": {
           "@id": "https://viggomeesters.com/#person"
@@ -74,8 +77,8 @@
       --border: rgba(255,255,255,0.10);
       --border-subtle: rgba(255,255,255,0.055);
       --text: #c8cbd5;
-      --text-secondary: #8a90a6;
-      --text-muted: #777c90;
+      --text-secondary: #a9afc0;
+      --text-muted: #9298aa;
       --font: 'Sora', system-ui, -apple-system, sans-serif;
       --radius: 20px;
       --bounce: cubic-bezier(0.22, 1, 0.36, 1);
@@ -92,7 +95,7 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--font);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.6;
       overflow-x: hidden;
       min-height: 100vh;
@@ -298,7 +301,7 @@
       display: block;
       margin-top: 2px;
       color: var(--text-muted);
-      font-size: 0.68em;
+      font-size: 0.87em;
       font-weight: 500;
       letter-spacing: 0;
     }
@@ -400,13 +403,98 @@
       max-width: 58ch;
     }
 
+    .hero-cta {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      margin-top: 16px;
+      padding: 11px 18px;
+      border: 1px solid rgba(59,130,246,0.38);
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(59,130,246,0.20), rgba(168,85,247,0.13));
+      color: #f3f4f8;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    }
+
+    .flagship-card {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 300px;
+      gap: 14px;
+      background: linear-gradient(150deg, rgba(26,26,32,0.82), rgba(20,20,24,0.52));
+      border-color: rgba(255,255,255,0.08);
+    }
+    .flagship-card .case-kicker {
+      color: var(--case-color, #60a5fa);
+      font-size: 0.8em;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .flagship-card h3 {
+      color: #f1f2f6;
+      font-size: 1.16em;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+    .case-facts {
+      display: grid;
+      gap: 11px;
+    }
+    .case-facts dt {
+      color: var(--text-muted);
+      font-size: 0.8em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .case-facts dd {
+      margin-top: 2px;
+      color: var(--text-secondary);
+      font-size: 0.84em;
+      line-height: 1.55;
+    }
+    .case-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+    .case-links a {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 10px;
+      color: #e5e7ed;
+      font-size: 0.8em;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .case-links a:first-child {
+      border-color: color-mix(in srgb, var(--case-color, #60a5fa) 52%, transparent);
+      background: color-mix(in srgb, var(--case-color, #60a5fa) 11%, transparent);
+    }
+
+    :where(a, button, input, textarea):focus-visible {
+      outline: 3px solid #60a5fa;
+      outline-offset: 3px;
+    }
+
     /* Section label tile */
     .tile.label {
       grid-column: 1 / -1;
       background: transparent;
       border: none;
       padding: 20px 8px 4px;
-      font-size: 0.7em;
+      font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: var(--text-muted);
@@ -466,7 +554,7 @@
     }
 
     a.tile.card .card-desc {
-      font-size: 0.8em;
+      font-size: 0.88em;
       color: var(--text-muted);
       line-height: 1.45;
       flex: 1;
@@ -480,7 +568,7 @@
       display: inline-block;
       margin-top: 12px;
       padding: 3px 10px;
-      font-size: 0.68em;
+      font-size: 0.8em;
       border-radius: 8px;
       font-weight: 600;
       letter-spacing: 0.02em;
@@ -570,7 +658,7 @@
     }
 
     .contact-label {
-      font-size: 0.7em;
+      font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 0.15em;
       color: var(--text-muted);
@@ -603,6 +691,7 @@
     .contact-form input,
     .contact-form textarea {
       width: 100%;
+      min-height: 44px;
       padding: 12px 16px;
       background: var(--bg);
       border: 1px solid var(--border-subtle);
@@ -629,6 +718,7 @@
 
     .contact-form button {
       align-self: flex-start;
+      min-height: 44px;
       padding: 10px 24px;
       background: linear-gradient(135deg, rgba(59,130,246,0.12), rgba(168,85,247,0.08));
       border: 1px solid rgba(59,130,246,0.2);
@@ -647,7 +737,7 @@
     }
 
     .form-note {
-      font-size: 0.72em;
+      font-size: 0.8em;
       color: var(--text-muted);
       margin-top: 4px;
     }
@@ -668,7 +758,7 @@
       background: transparent;
       border: none;
       padding: 16px 8px;
-      font-size: 0.72em;
+      font-size: 0.8em;
       color: var(--text-muted);
       text-align: center;
     }
@@ -700,6 +790,8 @@
       .tagline { font-size: 0.84em; }
       .profile-intro { padding-top: 14px; }
       .profile-summary { font-size: 0.84em; line-height: 1.6; }
+      .hero-cta { width: 100%; }
+      .flagship-card { grid-column: 1 / -1; min-height: 0; }
       .guide-pair { grid-template-columns: 1fr; }
       .form-row { flex-direction: column; gap: 10px; }
     }
@@ -720,15 +812,71 @@
           </div>
           <div class="profile-text">
             <h1 class="name">Viggo Meesters</h1>
-            <p class="tagline"><strong>Data &amp; Systems Innovator.</strong> AI workflows, knowledge systems, and practical data tools.</p>
+            <p class="tagline"><strong>Data migration &amp; AI systems builder.</strong> SAP, ETL, Alteryx and source-backed delivery workflows.</p>
           </div>
         </div>
         <div class="profile-intro">
-          <p class="profile-summary">I build small, source-backed systems that turn messy work into repeatable structures: live tools, project write-ups, workflow notes, and practical guides.</p>
+          <p class="profile-summary">I help delivery teams turn complex data and knowledge work into auditable workflows—from browser-local migration QA to reusable agent context.</p>
+          <a class="hero-cta" href="#selected-work">View selected work &darr;</a>
         </div>
       </div>
 
+      <h2 class="tile label" id="selected-work" style="--dot-color: #3b82f6">Selected work</h2>
 
+      <article class="tile flagship-card" style="--case-color: #3b82f6">
+        <div class="case-kicker">SAP migration QA · ETL</div>
+        <h3>Minimal ETL Modeler</h3>
+        <dl class="case-facts">
+          <div><dt>Problem</dt><dd>Migration teams need to inspect CSV/XLSX mappings and rejected records without sending source data to another service.</dd></div>
+          <div><dt>Result</dt><dd>A browser-local workbench with visual transforms, validation, accepted/rejected exports and a sanitized SAP Material Master checker.</dd></div>
+          <div><dt>Proof</dt><dd>The working live build exposes the visual flow, validation steps and sanitized Material Master checker directly in the browser.</dd></div>
+        </dl>
+        <div class="case-links">
+          <a href="https://minimal-etl-modeler.vercel.app" target="_blank" rel="noopener">Open live workbench &nearr;</a>
+        </div>
+      </article>
+
+      <article class="tile flagship-card" style="--case-color: #818cf8">
+        <div class="case-kicker">SAP delivery context</div>
+        <h3>SAP Agent Context</h3>
+        <dl class="case-facts">
+          <div><dt>Problem</dt><dd>Agent-assisted SAP work becomes unreliable when mappings, workflow and migration guidance lose their source and freshness context.</dd></div>
+          <div><dt>Result</dt><dd>A typed context layer with source labels, review dates, bundle generation and deterministic quality fixtures across core delivery domains.</dd></div>
+          <div><dt>Proof</dt><dd>The public source covers Functional Design, field mapping, migration, workflow, integrations and analytics without customer content.</dd></div>
+        </dl>
+        <div class="case-links">
+          <a href="/sap-agent-context/">Read the case &rarr;</a>
+          <a href="https://github.com/viggomeesters/sap-agent-context" target="_blank" rel="noopener">View repository &nearr;</a>
+        </div>
+      </article>
+
+      <article class="tile flagship-card" style="--case-color: #f59e0b">
+        <div class="case-kicker">Alteryx workflow inspection</div>
+        <h3>Alteryx Viewer</h3>
+        <dl class="case-facts">
+          <div><dt>Problem</dt><dd>Complex <code>.yxmd</code> workflows and <code>.yxzp</code> packages are difficult to inspect safely without opening or executing them in Alteryx Designer.</dd></div>
+          <div><dt>Result</dt><dd>A read-only Obsidian viewer for workflow metadata, tools, connections, paths, formulas, warnings and source XML.</dd></div>
+          <div><dt>Proof</dt><dd>The public MIT repository ships synthetic fixtures and an explicit inspect-only boundary: no execution, editing or network APIs.</dd></div>
+        </dl>
+        <div class="case-links">
+          <a href="/obsidian-plugins/">See the plugin portfolio &rarr;</a>
+          <a href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">View repository &nearr;</a>
+        </div>
+      </article>
+
+      <article class="tile flagship-card" style="--case-color: #22c55e">
+        <div class="case-kicker">Local-first knowledge systems</div>
+        <h3>Mega Vault Viewer</h3>
+        <dl class="case-facts">
+          <div><dt>Problem</dt><dd>Large mixed-format Markdown vaults become difficult to search and navigate without surrendering the files as source of truth.</dd></div>
+          <div><dt>Result</dt><dd>A macOS MVP with rebuildable SQLite and Tantivy indexes for reading, search, backlinks and metadata views.</dd></div>
+          <div><dt>Proof</dt><dd>The public repo ships synthetic fixtures and documents the unsigned, build-from-source maturity boundary.</dd></div>
+        </dl>
+        <div class="case-links">
+          <a href="/mega-vault-viewer/">Read the case &rarr;</a>
+          <a href="https://github.com/viggomeesters/mega-vault-viewer" target="_blank" rel="noopener">View repository &nearr;</a>
+        </div>
+      </article>
 
       <div class="guide-pair" aria-label="Writing">
         <a href="/guides/" class="tile guide-hub">
@@ -764,15 +912,6 @@
       <h2 class="tile label" id="apps" style="--dot-color: #3b82f6">Apps</h2>
 
       <!-- Demo tiles -->
-      <a href="https://minimal-etl-modeler.vercel.app" class="tile card" target="_blank" rel="noopener"
-         style="--card-color: #3b82f6; --card-soft: rgba(59,130,246,0.10)">
-        <div class="card-icon-wrap">
-          <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><line x1="7.2" y1="7" x2="10.5" y2="16"/><line x1="16.8" y1="7" x2="13.5" y2="16"/></svg>
-        </div>
-        <div class="card-name">Minimal ETL Modeler</div>
-        <div class="card-desc">Visual data flow editor inspired by Alteryx</div>
-        <span class="card-tag">Live</span>
-      </a>
       <a href="https://visual-pm-app.vercel.app" class="tile card" target="_blank" rel="noopener"
          style="--card-color: #a855f7; --card-soft: rgba(168,85,247,0.10)">
         <div class="card-icon-wrap">
