@@ -1,0 +1,7 @@
+{
+  "schema": "viggomeesters.feed-link-policy.v1",
+  "blocked_urls": [
+    "https://github.com/Flowseal/zapret-discord-youtube",
+    "https://github.com/articles/mongodb-gitdailies-case-study"
+  ]
+}

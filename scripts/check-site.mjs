@@ -258,6 +258,7 @@ const vercel = JSON.parse(read("vercel.json"));
 assert(vercel.buildCommand === "npm run check:ci", "vercel.json: deployments must run the provider-independent CI gate");
 assert(vercel.outputDirectory === ".", "vercel.json: static root output directory must remain explicit");
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");
+assert(vercel.trailingSlash === true, "vercel.json: trailingSlash must enforce canonical directory URLs");
 assert(Array.isArray(vercel.redirects), "vercel.json: redirects must be configured");
 for (const host of ["www.viggomeesters.com", "viggomeesters.nl", "www.viggomeesters.nl"]) {
   assert(
@@ -289,6 +290,13 @@ assert(
   ),
   "vercel.json: reports need X-Robots-Tag noindex",
 );
+const globalHeaders = vercel.headers?.find((entry) => entry.source === "/(.*)")?.headers || [];
+const csp = globalHeaders.find((header) => header.key === "Content-Security-Policy")?.value || "";
+for (const directive of ["default-src 'self'", "object-src 'none'", "frame-ancestors 'none'", "form-action https://formspree.io", "upgrade-insecure-requests"]) {
+  assert(csp.includes(directive), `vercel.json: CSP missing ${directive}`);
+}
+assert(exists("404.html"), "missing branded 404.html");
+assert(isNoindex(read("404.html")), "404.html must be noindex");
 assert(exists("og-image.png"), "missing og-image.png");
 assert(exists("profile.jpg"), "missing profile.jpg");
 const indexNowKeys = fs.readdirSync(root).filter((file) => /^[a-f0-9]{32}\.txt$/i.test(file));

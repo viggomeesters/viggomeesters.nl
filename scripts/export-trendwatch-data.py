@@ -21,6 +21,14 @@ except Exception as exc:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "trendwatch" / "data.json"
 STATUS_OUT = ROOT / "trendwatch" / "status.json"
+LINK_POLICY = ROOT / "scripts" / "feed-link-policy.json"
+
+
+def blocked_urls() -> set[str]:
+    policy = json.loads(LINK_POLICY.read_text(encoding="utf-8"))
+    if policy.get("schema") != "viggomeesters.feed-link-policy.v1":
+        raise ValueError("invalid feed-link policy schema")
+    return {str(url) for url in policy.get("blocked_urls", [])}
 
 
 def resolve_ledger_path() -> Path:
@@ -106,8 +114,13 @@ def main() -> int:
     public_items: list[dict[str, Any]] = []
     recommendations: dict[str, int] = {}
     useful = 0
+    blocked = blocked_urls()
     for entry in entries:
         if not isinstance(entry, dict):
+            continue
+        repo = clean(entry.get("repo"))
+        url = clean(entry.get("url"), f"https://github.com/{repo}")
+        if not repo or url in blocked or url.startswith("https://github.com/articles/"):
             continue
         review = entry.get("review") if isinstance(entry.get("review"), dict) else {}
         recommendation = clean(review.get("recommendation"), "ledger_only")
@@ -124,14 +137,11 @@ def main() -> int:
         tags = entry.get("tags") or []
         if not isinstance(tags, list):
             tags = []
-        repo = clean(entry.get("repo"))
-        if not repo:
-            continue
         public_items.append(
             {
                 "id": clean(entry.get("id"), repo.lower().replace("/", "-")),
                 "repo": repo,
-                "url": clean(entry.get("url"), f"https://github.com/{repo}"),
+                "url": url,
                 "firstSeen": clean(entry.get("first_seen")),
                 "lastSeen": clean(entry.get("last_seen"), clean(entry.get("first_seen"))),
                 "seenCount": as_int(entry.get("seen_count"), 1),

@@ -1,6 +1,6 @@
 # viggomeesters.com
 
-![version](https://img.shields.io/badge/version-v1.0-31addd)
+![version](https://img.shields.io/badge/version-v1.3-31addd)
 
 Static personal website for Viggo Meesters: public projects, proof-first working methods, system pages, guides, and repo-local agent workflow experiments.
 
@@ -121,14 +121,14 @@ Deploy only after local checks pass. Vercel serves the repository root.
 
 ## DNS
 
-The domains `viggomeesters.com`, `www.viggomeesters.com`, `viggomeesters.nl`, and `www.viggomeesters.nl` are attached to the Vercel project. DNS should point to Vercel:
+The registered production domain and its `www` alias are attached to Vercel:
 
 ```text
-A viggomeesters.com 76.76.21.21
-A www.viggomeesters.com 76.76.21.21
+viggomeesters.com      Vercel DNS
+www.viggomeesters.com  redirect to https://viggomeesters.com/
 ```
 
-The canonical hostname is `viggomeesters.com`; secondary hostnames should redirect to the apex domain.
+The canonical hostname is `viggomeesters.com`. As of 2026-07-12, SIDN RDAP reports `viggomeesters.nl` as `free`, DNS returns no records, and Vercel reports that domain as absent from the account. Restoring a `.nl` redirect therefore requires a separately authorized domain registration/payment before it can be attached to Vercel; it is not a DNS-record-only repair.
 
 ## Content map
 
@@ -149,7 +149,7 @@ The canonical hostname is `viggomeesters.com`; secondary hostnames should redire
 
 ## Release
 
-Releases are tracked on GitHub. The current first public release is `v1.0`.
+Releases are tracked on GitHub. The latest tagged release is `v1.3`; newer production-hardening work remains under `Unreleased` until an explicit release is requested.
 
 ## Security and privacy
 

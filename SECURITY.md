@@ -8,7 +8,7 @@ otherwise in the release notes.
 ## Reporting A Vulnerability
 
 Do not open a public issue for a suspected vulnerability. Contact the maintainer
-privately with:
+privately through [GitHub's private vulnerability reporting form](https://github.com/viggomeesters/viggomeesters.nl/security/advisories/new) with:
 
 - affected version or commit;
 - reproduction steps;

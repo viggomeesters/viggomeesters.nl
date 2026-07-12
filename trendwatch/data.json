@@ -2,11 +2,11 @@
   "generatedAt": "2026-07-12T06:41:20+02:00",
   "ledgerUpdated": "2026-07-12",
   "source": "contracts/repo-inspiration-ledger.yaml",
-  "total": 276,
+  "total": 274,
   "usefulOpen": 101,
   "recommendations": {
     "mine_now": 13,
-    "ledger_only": 161,
+    "ledger_only": 159,
     "watch": 99,
     "reject": 3
   },
@@ -4951,35 +4951,6 @@
       }
     },
     {
-      "id": "flowseal-zapret-discord-youtube",
-      "repo": "Flowseal/zapret-discord-youtube",
-      "url": "https://github.com/Flowseal/zapret-discord-youtube",
-      "firstSeen": "2026-06-25",
-      "lastSeen": "2026-06-25",
-      "seenCount": 1,
-      "status": "inbox",
-      "recommendation": "ledger_only",
-      "action": "Ledger",
-      "actionDetail": "Captured for provenance only",
-      "priority": 35,
-      "why": "Discovered by GitHub trendwatcher.",
-      "areas": [],
-      "tags": [
-        "batchfile"
-      ],
-      "language": "Batchfile",
-      "stars": 30042,
-      "forks": 2344,
-      "license": "NOASSERTION",
-      "scores": {
-        "fit": 0,
-        "leverage": 1,
-        "novelty": 2,
-        "maturity": 4,
-        "risk": 1
-      }
-    },
-    {
       "id": "mervinpraison-praisonai",
       "repo": "MervinPraison/PraisonAI",
       "url": "https://github.com/MervinPraison/PraisonAI",
@@ -5325,35 +5296,6 @@
         "leverage": 1,
         "novelty": 2,
         "maturity": 3,
-        "risk": 1
-      }
-    },
-    {
-      "id": "articles-mongodb-gitdailies-case-study",
-      "repo": "articles/mongodb-gitdailies-case-study",
-      "url": "https://github.com/articles/mongodb-gitdailies-case-study",
-      "firstSeen": "2026-06-24",
-      "lastSeen": "2026-07-08",
-      "seenCount": 2,
-      "status": "inbox",
-      "recommendation": "ledger_only",
-      "action": "Ledger",
-      "actionDetail": "Captured for provenance only",
-      "priority": 35,
-      "why": "MongoDB's teams reduced PR review times by up to 54% .",
-      "areas": [
-        "devtools"
-      ],
-      "tags": [],
-      "language": "",
-      "stars": 0,
-      "forks": 0,
-      "license": "unknown",
-      "scores": {
-        "fit": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "maturity": 1,
         "risk": 1
       }
     },
