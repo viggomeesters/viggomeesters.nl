@@ -7,12 +7,13 @@
     "test": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
     "check": "npm run check:public-boundary && npm run check:site",
     "check:all": "bash scripts/check-all.sh",
+    "check:ci": "npm test && npm run check && npm run check:seo",
     "check:public-boundary": "python3 scripts/check-public-boundary.py",
     "check:site": "node scripts/check-site.mjs",
     "check:seo": "node scripts/seo-audit.mjs",
     "check:seo:update": "node scripts/seo-audit.mjs --update",
     "serve": "python3 -m http.server 4173",
-    "deploy:prod": "vercel deploy --prod",
+    "deploy:prod": "npm run check:all && vercel deploy --prod",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
   }
 }

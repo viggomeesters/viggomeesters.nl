@@ -14,9 +14,7 @@ snapshot_worktree() {
 
 snapshot_worktree > "$before_snapshot"
 
-npm test
-npm run check
-npm run check:seo
+npm run check:ci
 git diff --check
 
 snapshot_worktree > "$after_snapshot"

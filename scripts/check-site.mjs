@@ -255,6 +255,8 @@ assert(robots.includes("Disallow: /reports/"), "robots.txt: internal reports are
 assert(!/^Disallow:\s*\/skills\/?/mi.test(robots), "robots.txt: skills must remain crawlable so page-level noindex can be observed");
 
 const vercel = JSON.parse(read("vercel.json"));
+assert(vercel.buildCommand === "npm run check:ci", "vercel.json: deployments must run the provider-independent CI gate");
+assert(vercel.outputDirectory === ".", "vercel.json: static root output directory must remain explicit");
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");
 assert(Array.isArray(vercel.redirects), "vercel.json: redirects must be configured");
 for (const host of ["www.viggomeesters.com", "viggomeesters.nl", "www.viggomeesters.nl"]) {

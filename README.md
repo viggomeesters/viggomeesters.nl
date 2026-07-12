@@ -58,7 +58,7 @@ Run the complete production-relevant gate:
 npm run check:all
 ```
 
-This runs behavior tests, the fail-closed public-boundary check, static HTML/accessibility and local-link checks, the read-only SEO regression check, and `git diff --check`. It also verifies that the command leaves the working tree exactly as it found it.
+This runs the provider-independent `npm run check:ci` gate—behavior tests, the fail-closed public-boundary check, static HTML/accessibility and local-link checks, and the read-only SEO regression check—plus `git diff --check`. It also verifies that the command leaves the working tree exactly as it found it.
 
 `npm run check:seo` never writes tracked reports. When an SEO baseline change is intentional, review and update it explicitly:
 
@@ -78,7 +78,7 @@ For public repo-readiness and fresh-clone validation, the shell wrapper runs the
 scripts/check.sh
 ```
 
-Pushes to `main` and pull requests also run `npm run check:all` through `.github/workflows/quality.yml` with read-only repository permissions.
+Vercel runs `npm run check:ci` as its configured build command for every preview or production deployment. A failed gate therefore produces a failed build instead of a deployable artifact. `npm run deploy:prod` first runs the stricter local mutation check and then repeats the provider-independent gate in Vercel's remote build environment.
 
 Submit the deployed sitemap to IndexNow after a production deploy:
 

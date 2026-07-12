@@ -183,20 +183,24 @@ class ContinuousIntegrationContract(unittest.TestCase):
             self.assertIn("short_title", regression.stdout + regression.stderr)
             self.assertEqual(snapshot(root / "reports"), reports_before_failure)
 
-    def test_github_actions_runs_the_documented_full_gate(self) -> None:
+    def test_vercel_runs_the_documented_provider_independent_gate(self) -> None:
         package = json.loads((REPO_ROOT / "package.json").read_text(encoding="utf-8"))
-        workflow = (REPO_ROOT / ".github" / "workflows" / "quality.yml").read_text(
-            encoding="utf-8"
-        )
+        vercel = json.loads((REPO_ROOT / "vercel.json").read_text(encoding="utf-8"))
         readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
 
         self.assertEqual(package["scripts"]["check:all"], "bash scripts/check-all.sh")
-        self.assertIn("pull_request:", workflow)
-        self.assertIn("workflow_dispatch:", workflow)
-        self.assertIn("branches: [main]", workflow)
-        self.assertIn("contents: read", workflow)
-        self.assertIn("run: npm run check:all", workflow)
+        self.assertEqual(
+            package["scripts"]["check:ci"],
+            "npm test && npm run check && npm run check:seo",
+        )
+        self.assertEqual(vercel["buildCommand"], "npm run check:ci")
+        self.assertEqual(vercel["outputDirectory"], ".")
+        self.assertEqual(
+            package["scripts"]["deploy:prod"],
+            "npm run check:all && vercel deploy --prod",
+        )
         self.assertIn("npm run check:all", readme)
+        self.assertIn("npm run check:ci", readme)
         self.assertIn("npm run check:seo:update", readme)
 
 
