@@ -192,6 +192,7 @@ class ContinuousIntegrationContract(unittest.TestCase):
 
         self.assertEqual(package["scripts"]["check:all"], "bash scripts/check-all.sh")
         self.assertIn("pull_request:", workflow)
+        self.assertIn("workflow_dispatch:", workflow)
         self.assertIn("branches: [main]", workflow)
         self.assertIn("contents: read", workflow)
         self.assertIn("run: npm run check:all", workflow)
