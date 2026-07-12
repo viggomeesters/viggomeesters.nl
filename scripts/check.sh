@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 set -euo pipefail
-npm run check
-npm run check:seo
+npm run check:all

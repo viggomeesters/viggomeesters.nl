@@ -3,6 +3,13 @@ import path from "node:path";
 
 const root = process.cwd();
 const baseUrl = "https://viggomeesters.com";
+const cliArgs = process.argv.slice(2);
+const unknownArgs = cliArgs.filter((arg) => arg !== "--update");
+if (unknownArgs.length > 0) {
+  console.error(`Unknown SEO audit argument(s): ${unknownArgs.join(", ")}`);
+  process.exit(2);
+}
+const updateBaseline = cliArgs.includes("--update");
 
 function read(file) {
   return fs.readFileSync(path.join(root, file), "utf8");
@@ -224,12 +231,10 @@ const result = {
     clusters: byCluster,
     issueCounts,
   },
+  issues,
   priorityPages,
   pages: rows,
 };
-
-fs.mkdirSync(path.join(root, "reports", "seo"), { recursive: true });
-fs.writeFileSync(path.join(root, "reports", "seo", "baseline.json"), JSON.stringify(result, null, 2));
 
 const topIssues = Object.entries(issueCounts).sort((a, b) => b[1] - a[1]);
 const clusterRows = Object.entries(byCluster).sort((a, b) => b[1].issues - a[1].issues);
@@ -270,9 +275,48 @@ const md = [
   "",
 ].join("\n");
 
-fs.writeFileSync(path.join(root, "reports", "seo", "baseline.md"), md);
+const reportDir = path.join(root, "reports", "seo");
+const baselineJson = path.join(reportDir, "baseline.json");
+const baselineMarkdown = path.join(reportDir, "baseline.md");
 
-console.log(`SEO audit complete: ${publicPages.length} pages, ${issues.length} issue occurrences.`);
-console.log(`Wrote reports/seo/baseline.json and reports/seo/baseline.md`);
-console.log("Top issues:");
-for (const [issue, count] of topIssues.slice(0, 12)) console.log(`- ${issue}: ${count}`);
+if (updateBaseline) {
+  fs.mkdirSync(reportDir, { recursive: true });
+  fs.writeFileSync(baselineJson, `${JSON.stringify(result, null, 2)}\n`);
+  fs.writeFileSync(baselineMarkdown, md);
+  console.log(`SEO baseline updated: ${publicPages.length} pages, ${issues.length} issue occurrences.`);
+  console.log("Wrote reports/seo/baseline.json and reports/seo/baseline.md");
+  process.exit(0);
+}
+
+if (!fs.existsSync(baselineJson)) {
+  console.error("SEO check failed: reports/seo/baseline.json is missing; run npm run check:seo:update after review.");
+  process.exit(1);
+}
+
+let baseline;
+try {
+  baseline = JSON.parse(fs.readFileSync(baselineJson, "utf8"));
+} catch {
+  console.error("SEO check failed: reports/seo/baseline.json is invalid JSON.");
+  process.exit(1);
+}
+
+const issueKey = (item) => `${item.route}\t${item.issue}`;
+const baselineIssues = Array.isArray(baseline.issues)
+  ? baseline.issues
+  : (baseline.pages || []).flatMap((page) =>
+      (page.issues || []).map((issue) => ({ route: page.route, issue })),
+    );
+const allowedIssueKeys = new Set(baselineIssues.map(issueKey));
+const regressions = issues.filter((item) => !allowedIssueKeys.has(issueKey(item)));
+
+if (regressions.length > 0) {
+  console.error(`SEO check failed with ${regressions.length} new issue(s):`);
+  for (const item of regressions) console.error(`- ${item.route}: ${item.issue}`);
+  console.error("Fix the regressions, or review and run npm run check:seo:update intentionally.");
+  process.exit(1);
+}
+
+console.log(
+  `SEO check passed: ${publicPages.length} pages, ${issues.length} known issue occurrence(s), 0 regressions.`,
+);

@@ -52,12 +52,19 @@ npm run serve
 
 Open <http://localhost:4173>.
 
-Run the normal site checks:
+Run the complete production-relevant gate:
 
 ```sh
-npm test
-npm run check
-npm run check:seo
+npm run check:all
+```
+
+This runs behavior tests, the fail-closed public-boundary check, static HTML/accessibility and local-link checks, the read-only SEO regression check, and `git diff --check`. It also verifies that the command leaves the working tree exactly as it found it.
+
+`npm run check:seo` never writes tracked reports. When an SEO baseline change is intentional, review and update it explicitly:
+
+```sh
+npm run check:seo:update
+git diff -- reports/seo/
 ```
 
 The skills registry is fail-closed: `scripts/public-skills.json` is the only
@@ -65,13 +72,13 @@ publication manifest and contains reviewed public copy. Runtime-only skills and
 their descriptions are ignored. `scripts/public-boundary.json` keeps removed
 routes and hashed private-text markers out of deployable output.
 
-For public repo-readiness and fresh-clone validation, use the local wrapper instead of GitHub Actions:
+For public repo-readiness and fresh-clone validation, the shell wrapper runs the same checks:
 
 ```sh
 scripts/check.sh
 ```
 
-This repository intentionally uses local-only validation because the site is static and has no dependency install/build step.
+Pushes to `main` and pull requests also run `npm run check:all` through `.github/workflows/quality.yml` with read-only repository permissions.
 
 Submit the deployed sitemap to IndexNow after a production deploy:
 
@@ -86,7 +93,7 @@ Follow `AGENTS.md` before editing. Keep changes small and static:
 1. inspect `git status --short --branch`;
 2. edit the relevant HTML/CSS/data file directly;
 3. update `sitemap.xml`, canonical URLs, and `scripts/check-site.mjs` expectations when adding public pages;
-4. run `npm run check`;
+4. run `npm run check:all`;
 5. commit and push scoped changes.
 
 For visible layout changes, run a local server and inspect desktop/mobile before shipping.

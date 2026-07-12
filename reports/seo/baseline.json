@@ -90,6 +90,50 @@
       "short_title": 1
     }
   },
+  "issues": [
+    {
+      "route": "/go-project-template/",
+      "file": "go-project-template/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/go-workflow-stack/",
+      "file": "go-workflow-stack/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/guides/",
+      "file": "guides/index.html",
+      "cluster": "guides_articles",
+      "issue": "short_title"
+    },
+    {
+      "route": "/jsonl-vault-spike/",
+      "file": "jsonl-vault-spike/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/methodologies/",
+      "file": "methodologies/index.html",
+      "cluster": "methodologies",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/nederlandse-huizenkoop-agent-context/",
+      "file": "nederlandse-huizenkoop-agent-context/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/tech-news/",
+      "file": "tech-news/index.html",
+      "cluster": "signal_dashboards",
+      "issue": "thin_under_250_words"
+    }
+  ],
   "priorityPages": [
     {
       "route": "/go-project-template/",

@@ -122,6 +122,17 @@ function stripMarkup(html) {
     .trim();
 }
 
+function attribute(tag, name) {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return tag.match(new RegExp(`\\b${escaped}=["']([^"']*)["']`, "i"))?.[1] ?? null;
+}
+
+function hasLabel(html, id) {
+  if (!id) return false;
+  const escaped = id.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`<label\\b[^>]*\\bfor=["']${escaped}["']`, "i").test(html);
+}
+
 for (const file of htmlFiles) {
   const html = read(file);
   for (const match of html.matchAll(/\b(?:href|src)=["']([^"']+)["']/g)) {
@@ -159,6 +170,29 @@ for (const file of publicPages) {
   const route = routeForIndex(file);
   const expected = canonicalForRoute(route);
   const html = read(file);
+  assert(/<html\b[^>]*\blang=["'][a-z]{2}(?:-[a-z0-9-]+)?["']/i.test(html), `${file}: missing document language`);
+  assert((html.match(/<h1\b/gi) || []).length === 1, `${file}: expected exactly one h1`);
+
+  for (const image of html.match(/<img\b[^>]*>/gi) || []) {
+    assert(attribute(image, "alt") !== null, `${file}: image missing alt attribute`);
+  }
+
+  for (const match of html.matchAll(/<button\b([^>]*)>([\s\S]*?)<\/button>/gi)) {
+    const opening = `<button${match[1]}>`;
+    const name = attribute(opening, "aria-label") || stripMarkup(match[2]);
+    assert(Boolean(name), `${file}: button missing accessible name`);
+  }
+
+  for (const control of html.match(/<(?:input|textarea|select)\b[^>]*>/gi) || []) {
+    if (/^<input\b/i.test(control) && attribute(control, "type")?.toLowerCase() === "hidden") continue;
+    if ((attribute(control, "style") || "").replace(/\s/g, "").toLowerCase().includes("display:none")) continue;
+    const labelled =
+      Boolean(attribute(control, "aria-label")) ||
+      Boolean(attribute(control, "aria-labelledby")) ||
+      Boolean(attribute(control, "title")) ||
+      hasLabel(html, attribute(control, "id"));
+    assert(labelled, `${file}: form control missing accessible label`);
+  }
   assert(
     html.includes(`<link rel="canonical" href="${expected}">`),
     `${file}: missing canonical ${expected}`,
