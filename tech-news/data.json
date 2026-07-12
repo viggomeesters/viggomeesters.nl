@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-11T07:05:53+02:00",
+  "generatedAt": "2026-07-12T07:05:38+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 82,
+  "usefulOpen": 79,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -632,71 +632,33 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "26fd8d290565e674",
-      "title": "OpenAI says GPT 5.6 is the ‘preferred model’ for Microsoft Copilot 365 amid breakup chatter",
-      "url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T02:16:54+02:00",
-      "summary": "OpenAI's new family of models will continue to power Microsoft's suite of workplace and productivity apps.",
+      "id": "9226497d31b489a2",
+      "title": "Show HN: Learn by rebuilding Redis, Git, a database from scratch",
+      "url": "https://shipthatcode.com",
+      "source": "Hacker News",
+      "published": "2026-07-11T15:40:27+02:00",
+      "summary": "Comments",
       "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
+        "data-platforms",
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
         "developer-tools": [
-          "copilot"
+          "git"
         ],
-        "enterprise-ai": [
-          "microsoft"
+        "data-platforms": [
+          "data",
+          "database"
         ]
       },
       "scores": {
-        "relevance": 4,
-        "leverage": 0,
+        "relevance": 3,
+        "leverage": 1,
         "novelty": 4,
-        "urgency": 3,
+        "urgency": 2,
         "risk": 0
       },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "952dec05674dfd97",
-      "title": "OpenAI wants its new tool to do your work for you and with you",
-      "url": "https://arstechnica.com/ai/2026/07/openai-wants-its-new-tool-to-do-your-work-for-you-and-with-you/",
-      "source": "Ars Technica",
-      "published": "2026-07-09T23:25:55+02:00",
-      "summary": "Rebranded Codex promises independent workflows that can run \"for hours if needed.\"",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "codex"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 93,
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -715,40 +677,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "ide"
-        ],
-        "enterprise-ai": [
-          "aws"
-        ],
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "c89802fd483e27cc",
-      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
-      "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
-      "source": "The Verge",
-      "published": "2026-07-10T17:36:51-04:00",
-      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of Apple's trade secrets by OpenAI employees who were formerly at Apple.\" In addition to OpenAI, the lawsuit also names IO Products - Jony Ive's hardware startup, […]",
-      "areas": [
-        "enterprise-ai",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
         ],
         "enterprise-ai": [
           "aws"
@@ -1075,37 +1003,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "ac508c7f632c24a2",
-      "title": "What's new in Claude Sonnet 5",
-      "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-06-30T21:23:02+00:00",
-      "summary": "What's new in Claude Sonnet 5 Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post. Anthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they w",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
-        ],
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "0724a0d575b1ab08",
       "title": "How ChatGPT adoption has expanded",
       "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded",
@@ -1319,21 +1216,20 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "f3ba3d7c0317607d",
-      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
-      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
-      "source": "TechCrunch",
-      "published": "2026-07-11T03:01:28+02:00",
-      "summary": "Independent cybersecurity journalist Brian Krebs reported in May that a security researcher with cyber firm GitGuardian alerted him to reams of exposed passwords stored in a publicly accessible GitHub repository, which an employee of a CISA contractor had uploaded.",
+      "id": "7844fcfd55bbdf07",
+      "title": "ICE are heavily armed killers. They’re also huge losers",
+      "url": "https://www.theverge.com/policy/964302/ice-donald-trump-killings",
+      "source": "The Verge",
+      "published": "2026-07-11T09:00:00-04:00",
+      "summary": "Donald Trump's Homeland Security regime has been at the center of two critical stories in the past two weeks. In the first, federal agents shot and killed a man and quickly got to work justifying the use of force under the flimsiest of pretenses. In the other, it made house calls to people who said […]",
       "areas": [
-        "developer-tools",
+        "ai-agents",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "git",
-          "ide"
+        "ai-agents": [
+          "agent",
+          "agents"
         ],
         "privacy-risk": [
           "security"
@@ -1351,20 +1247,21 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "4ee70ce657780dc1",
-      "title": "ICE is threatening to deport witnesses of its latest shooting",
-      "url": "https://www.theverge.com/policy/964294/ice-shooting-houston-lorenzo-salgado-araujo",
-      "source": "The Verge",
-      "published": "2026-07-10T15:20:00-04:00",
-      "summary": "Advocates are demanding that the Department of Homeland Security release bodycam footage of the fatal shooting of Lorenzo Salgado Araujo, a Mexican immigrant who was killed by ICE officers in Houston during a traffic stop earlier this week. But DHS claims the agents involved in the shooting weren't wearing body cameras because of the lengthy […]",
+      "id": "f3ba3d7c0317607d",
+      "title": "US cybersecurity agency CISA had to build its incident playbook during the incident, agency reveals",
+      "url": "https://techcrunch.com/2026/07/10/us-cyber-agency-cisa-had-to-build-its-incident-playbook-during-the-incident-agency-reveals/",
+      "source": "TechCrunch",
+      "published": "2026-07-11T03:01:28+02:00",
+      "summary": "Independent cybersecurity journalist Brian Krebs reported in May that a security researcher with cyber firm GitGuardian alerted him to reams of exposed passwords stored in a publicly accessible GitHub repository, which an employee of a CISA contractor had uploaded.",
       "areas": [
-        "ai-agents",
+        "developer-tools",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
+        "developer-tools": [
+          "github",
+          "git",
+          "ide"
         ],
         "privacy-risk": [
           "security"
@@ -1530,40 +1427,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "8604524b91472814",
-      "title": "Patch for Windows Defender 0-day could allow attackers to fill hard disk",
-      "url": "https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/",
-      "source": "Ars Technica",
-      "published": "2026-07-09T22:52:55+02:00",
-      "summary": "The feud between NightmareEclipse and Microsoft shows no signs of resolving soon.",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "fdd6c60bdccad393",
       "title": "How GitHub gave every repository a durable owner",
       "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
@@ -1703,6 +1566,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "e315bcf135e3dde4",
+      "title": "Full-Pipeline Inference Optimization for MiMo-V2.5 Series",
+      "url": "https://mimo.xiaomi.com/blog/mimo-v2-5-inference",
+      "source": "Lobsters",
+      "published": "2026-07-12T01:22:20+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "inference"
+        ],
+        "data-platforms": [
+          "pipeline"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "ad3d989588d4eb53",
       "title": "Microsoft Reports a Massive 25 Percent Jump in Emissions",
       "url": "https://www.wired.com/story/microsoft-25-percent-jump-in-carbon-emissions/",
@@ -1752,37 +1645,6 @@
         ],
         "developer-tools": [
           "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "24bf4d6ae0708e30",
-      "title": "Fidji Simo steps down from OpenAI’s No. 2 role",
-      "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
-      "source": "TechCrunch",
-      "published": "2026-07-10T01:38:00+02:00",
-      "summary": "OpenAI's No. 2 executive, Fidji Simo, is stepping down from her full-time role after her medical leave proved longer than expected — a leadership vacuum that comes at a tricky time as the company eyes a possible IPO and races to catch Anthropic in the enterprise market.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "enterprise-ai": [
-          "enterprise"
         ]
       },
       "scores": {
@@ -1885,6 +1747,32 @@
         "risk": 1
       },
       "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "6e36b4e0cf4762fd",
+      "title": "sqlite-utils 4.1",
+      "url": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-11T23:50:20+00:00",
+      "summary": "Release: sqlite-utils 4.1 The first dot-release since 4.0 a few days ago , introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a fi",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2516,18 +2404,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a4c1159390a9c85d",
-      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
-      "url": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "id": "714d5cb84d45c511",
+      "title": "What xAI's Grok Build CLI Actually Sends to xAI",
+      "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
       "source": "Hacker News",
-      "published": "2026-07-10T22:47:09+02:00",
+      "published": "2026-07-12T03:09:50+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "developer-tools": [
+          "cli"
         ]
       },
       "scores": {
@@ -2542,11 +2430,63 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "7a9eac7da3ba92f2",
-      "title": "An update on residential proxies and the scraper situation",
-      "url": "https://lwn.net/SubscriberLink/1080822/990a8a5e2d379085/",
+      "id": "e02dd5872f423186",
+      "title": "Mesh LLM: distributed AI computing on iroh",
+      "url": "https://www.iroh.computer/blog/mesh-llm",
       "source": "Hacker News",
-      "published": "2026-07-10T21:38:34+02:00",
+      "published": "2026-07-12T00:38:57+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8edf70ed54f0f4c7",
+      "title": "Prefer strict tables in SQLite",
+      "url": "https://evanhahn.com/prefer-strict-tables-in-sqlite/",
+      "source": "Hacker News",
+      "published": "2026-07-11T19:33:55+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b517c56273a7d594",
+      "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
+      "url": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
+      "source": "Hacker News",
+      "published": "2026-07-11T19:21:49+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2568,38 +2508,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9569969f89767be3",
-      "title": "GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf]",
-      "url": "https://cdn.openai.com/pdf/04d1d1e4-bc75-476a-97cf-49055cd98d31/cdc_proof.pdf",
-      "source": "Hacker News",
-      "published": "2026-07-10T20:29:19+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "e8bcc76cc4698b2a",
-      "title": "Snails' teeth beats spider silk as nature's strongest material (2015)",
-      "url": "https://www.smithsonianmag.com/smart-news/spider-silk-loses-top-spot-natures-strongest-material-snails-teeth-180954346/",
-      "source": "Hacker News",
-      "published": "2026-07-10T18:37:52+02:00",
-      "summary": "Comments",
+      "id": "4f59476906fe1693",
+      "title": "The perfect kit for all your tiny repairs",
+      "url": "https://www.theverge.com/tech/964169/ifixit-repairs-kit-nothing-3a-installer",
+      "source": "The Verge",
+      "published": "2026-07-11T08:00:00-04:00",
+      "summary": "Hi, friends! Welcome to Installer No. 135, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, crank the AC, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about cold plunges and Colson Whitehead and the food truck mafia, […]",
       "areas": [
         "developer-tools"
       ],
@@ -2704,6 +2618,58 @@
       "source": "MIT Technology Review",
       "published": "2026-07-09T14:10:00+02:00",
       "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Four nuclear reactors hit a big milestone in the US —Casey Crownhart I was really looking forward to July 4, and not just because I love a poolside barbecue. This year…",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "947b270c57731488",
+      "title": "Four nuclear reactors hit a big milestone in the US",
+      "url": "https://www.technologyreview.com/2026/07/09/1140235/nuclear-reactor-milestone-criticality/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-09T10:00:00+02:00",
+      "summary": "I was really looking forward to July 4, and not just because I love a poolside barbecue. This year the American holiday also marked a big symbolic deadline for US nuclear power. Last year the Trump administration set a goal to see three new microreactors achieve criticality, a technical milestone establishing that a reactor can…",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "ide"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "851ad44764f57435",
+      "title": "The Download: worms fight pollution, and geoengineering faces reality",
+      "url": "https://www.technologyreview.com/2026/07/08/1140216/the-download-worms-manure-pollution-geoengineering-reality-check/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-08T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Why worms (and microbes) are catching on as a manure pollution solution Anthony Agueda, a third-generation California dairy farmer, pulls a rake through a bed of dark, wet wood chips to…",
       "areas": [
         "developer-tools"
       ],
