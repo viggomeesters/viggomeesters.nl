@@ -13,7 +13,7 @@
     "check:seo": "node scripts/seo-audit.mjs",
     "check:seo:update": "node scripts/seo-audit.mjs --update",
     "serve": "python3 -m http.server 4173",
-    "deploy:prod": "npm run check:all && vercel deploy --prod",
+    "deploy:prod": "npm run check:all && npx --yes vercel@55.0.0 deploy --prod",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
   }
 }

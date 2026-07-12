@@ -197,7 +197,7 @@ class ContinuousIntegrationContract(unittest.TestCase):
         self.assertEqual(vercel["outputDirectory"], ".")
         self.assertEqual(
             package["scripts"]["deploy:prod"],
-            "npm run check:all && vercel deploy --prod",
+            "npm run check:all && npx --yes vercel@55.0.0 deploy --prod",
         )
         self.assertIn("npm run check:all", readme)
         self.assertIn("npm run check:ci", readme)
