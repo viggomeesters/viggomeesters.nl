@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work &amp; Build Timeline — Viggo Meesters</title>
-  <meta name="description" content="A selected, proof-linked timeline of Viggo Meesters&apos; projects, repositories, agent systems, data migration work, and writing.">
+  <meta name="description" content="The complete, connected timeline of Viggo Meesters&apos; professional projects, products, repositories, agent systems, data migration work, and writing since 2014.">
   <link rel="canonical" href="https://viggomeesters.com/timeline/">
   <meta property="og:title" content="Work &amp; Build Timeline — Viggo Meesters">
-  <meta property="og:description" content="Projects, repositories, systems, and writing—newest first.">
+  <meta property="og:description" content="Professional projects, products, repositories, systems, and writing since 2014—newest first.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://viggomeesters.com/timeline/">
   <meta property="og:image" content="https://viggomeesters.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Work &amp; Build Timeline — Viggo Meesters">
-  <meta name="twitter:description" content="Projects, repositories, systems, and writing—newest first.">
+  <meta name="twitter:description" content="Professional projects, products, repositories, systems, and writing since 2014—newest first.">
   <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
   <meta name="theme-color" content="#090b10">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -59,7 +59,7 @@
     .timeline-entry.featured{padding-top:50px;padding-bottom:58px}.timeline-entry.featured::before{top:58px;width:13px;height:13px;left:177px}
     .timeline-entry.featured .entry-body{padding:clamp(24px,4vw,42px);border:1px solid color-mix(in srgb,var(--entry) 18%,var(--line));background:linear-gradient(145deg,color-mix(in srgb,var(--entry) 8%,var(--surface)),rgba(15,19,27,.72));box-shadow:0 24px 80px rgba(0,0,0,.18)}
     .timeline-entry.featured .entry-number{color:color-mix(in srgb,var(--entry) 68%,#4c566a)}
-    .timeline-entry[data-type="repository"]{--entry:#a99bff}.timeline-entry[data-type="workflow"]{--entry:#ffbc75}.timeline-entry[data-type="writing"]{--entry:#8ee6b1}
+    .timeline-entry[data-type="repository"]{--entry:#a99bff}.timeline-entry[data-type="workflow"]{--entry:#ffbc75}.timeline-entry[data-type="writing"]{--entry:#8ee6b1}.timeline-entry[data-type="career"]{--entry:#f5a524}
     .closing{display:grid;grid-template-columns:184px 1fr;margin-top:18px}.closing-copy{grid-column:2;padding:46px 0 10px 68px}.closing-label{color:var(--accent);font:500 .66rem var(--mono);letter-spacing:.14em;text-transform:uppercase}.closing h2{max-width:700px;margin:13px 0 14px;color:var(--bright);font-size:clamp(2rem,5vw,4.2rem);line-height:1;letter-spacing:-.06em}.closing p{max-width:560px;margin:0;color:var(--muted)}
     .footer{display:flex;justify-content:space-between;gap:24px;margin-top:80px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font:400 .68rem var(--mono)}.footer a{text-underline-offset:4px}
     @media(max-width:760px){.page{width:min(100% - 24px,1180px);padding-top:16px}.hero{grid-template-columns:1fr;padding:64px 0 70px}.hero-aside{max-width:360px}.controls{align-items:flex-start;flex-direction:column}.filters{justify-content:flex-start}.status-row{justify-content:flex-start}.timeline::before{left:15px}.timeline-entry,.timeline-entry.featured{grid-template-columns:1fr;gap:12px;padding:32px 0 42px 42px}.timeline-entry::before,.timeline-entry.featured::before{top:39px;left:10px;width:11px;height:11px}.entry-meta{text-align:left}.entry-date,.entry-type{display:inline-block}.entry-type{margin:0 0 0 10px}.timeline-entry.featured .entry-body{padding:22px}.closing{display:block;padding-left:42px}.closing-copy{padding:40px 0}.footer{flex-direction:column}}
@@ -79,31 +79,37 @@
       <div>
         <div class="eyebrow">Work / build / learn</div>
         <h1>Things I’ve made move.</h1>
-        <p class="hero-lede">A selected timeline of projects, repositories, systems, and ideas. Newest first; every entry points to something you can inspect.</p>
+        <p class="hero-lede">The complete connected record: professional projects, products, repositories, systems, and ideas from 2014 to now. Newest first.</p>
       </div>
       <aside class="hero-aside" aria-label="Timeline editorial note">
-        <span class="aside-label">Current thread</span>
-        <strong>Making complex data and agent work visible, testable, and easier to operate.</strong>
-        <p>This is a curated work log—not an automatic activity feed.</p>
+        <span class="aside-label">Through-line</span>
+        <strong>From process improvement and delivery work to data migration, tooling, and agent systems.</strong>
+        <p>Public builds link to source or a working product. Professional work links to its public career record without exposing private client material.</p>
       </aside>
     </header>
 
     <section class="controls" aria-labelledby="timeline-heading">
       <div class="controls-copy">
-        <h2 id="timeline-heading">Selected milestones</h2>
-        <p>2025—now · public evidence only</p>
+        <h2 id="timeline-heading">Complete timeline</h2>
+        <p>2014—now · connected public record</p>
       </div>
       <div class="filters" aria-label="Filter timeline">
         <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-filter="career" aria-pressed="false">Professional</button>
         <button class="filter" type="button" data-filter="project" aria-pressed="false">Projects</button>
         <button class="filter" type="button" data-filter="repository" aria-pressed="false">Repositories</button>
         <button class="filter" type="button" data-filter="workflow" aria-pressed="false">Workflow</button>
         <button class="filter" type="button" data-filter="writing" aria-pressed="false">Writing</button>
       </div>
     </section>
-    <div class="status-row"><span id="filter-status" role="status" aria-live="polite">15 milestones shown</span></div>
+    <div class="status-row"><span id="filter-status" role="status" aria-live="polite">58 milestones shown</span></div>
 
     <section class="timeline" aria-label="Work and build timeline">
+      <article class="timeline-entry" data-date="2026-07-13" data-type="repository">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-07-13">13 Jul 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">Context / ETM.next</span><h3>ETM.next Agent Context</h3><p>A source-backed product context pack that makes ETM.next concepts, terminology, and evidence usable by both people and AI agents.</p><div class="proof-links"><a href="https://github.com/viggomeesters/etm-next-agent-context" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+      </article>
+
       <article class="timeline-entry featured" data-date="2026-07-12" data-type="project">
         <div class="entry-meta"><time class="entry-date" datetime="2026-07-12">12 Jul 2026</time><span class="entry-type">Project</span></div>
         <div class="entry-body"><span class="entry-number">01 / Portfolio</span><h3>viggomeesters.com becomes an evidence-first portfolio.</h3><p>The site is reorganised around working software, public source, explicit proof, and a clearer professional through-line: data migration plus agent systems.</p><div class="proof-links"><a href="/">Open the site &rarr;</a><a href="https://github.com/viggomeesters/viggomeesters.nl" target="_blank" rel="noopener">Inspect the source &nearr;</a></div></div>
@@ -124,6 +130,11 @@
         <div class="entry-body"><span class="entry-number">04 / Delivery system</span><h3>Go Workflow Stack</h3><p>A public reference implementation for turning goals into bounded tasks, gates, ledgers, and verifiable shipping evidence.</p><div class="proof-links"><a href="/go-workflow-stack/">Explore the system &rarr;</a><a href="https://github.com/viggomeesters/go-workflow-stack" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2026-07-02" data-type="repository">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-07-02">02 Jul 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">Starting point / Delivery</span><h3>Go Project Template</h3><p>A minimal public repository contract for beginning agent-assisted projects with goals, tasks, gates, and workflow state close to the code.</p><div class="proof-links"><a href="/go-project-template/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/go-project-template" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2026-06-24" data-type="writing">
         <div class="entry-meta"><time class="entry-date" datetime="2026-06-24">24 Jun 2026</time><span class="entry-type">Writing</span></div>
         <div class="entry-body"><span class="entry-number">05 / Architecture</span><h3>Database types for agent-first systems</h3><p>A decision guide for choosing storage by access pattern, auditability, and operational constraints instead of defaulting to one fashionable database.</p><div class="proof-links"><a href="/database-types-agent-first-systems/">Read the guide &rarr;</a></div></div>
@@ -132,6 +143,11 @@
       <article class="timeline-entry" data-date="2026-06-24" data-type="repository">
         <div class="entry-meta"><time class="entry-date" datetime="2026-06-24">24 Jun 2026</time><span class="entry-type">Repository</span></div>
         <div class="entry-body"><span class="entry-number">06 / Data structures</span><h3>JSONL Vault Spike</h3><p>A bounded experiment in append-friendly, inspectable data structures for agent-first knowledge systems.</p><div class="proof-links"><a href="/jsonl-vault-spike/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/jsonl-vault-spike" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="workflow">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Workflow</span></div>
+        <div class="entry-body"><span class="entry-number">Knowledge / Read model</span><h3>Personal Knowledge System and VaultLayer become one inspectable stack.</h3><p>The system map explains capture, structure, validation, retrieval, and agent interfaces; VaultLayer adds a local-first read model over Markdown.</p><div class="proof-links"><a href="/personal-knowledge-system/">Explore the system &rarr;</a><a href="/vault-layer/">Open VaultLayer &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry featured" data-date="2026-06-22" data-type="project">
@@ -144,6 +160,11 @@
         <div class="entry-body"><span class="entry-number">08 / Knowledge tooling</span><h3>Mega Vault Viewer</h3><p>A read-only browser for large markdown vaults, designed to make structure and content navigable without turning the viewer into another editor.</p><div class="proof-links"><a href="/mega-vault-viewer/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/mega-vault-viewer" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2026-06-19" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-19">19 Jun 2026</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">App / Compensation</span><h3>Normalized Salary Calculator</h3><p>A focused browser calculator for comparing compensation packages on consistent yearly, monthly, and hourly terms.</p><div class="proof-links"><a href="https://normalized-salary-calculator.vercel.app" target="_blank" rel="noopener">Open the calculator &nearr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2026-06-08" data-type="project">
         <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Project</span></div>
         <div class="entry-body"><span class="entry-number">09 / Obsidian</span><h3>Complex files become inspectable inside the vault.</h3><p>A family of read-only Obsidian viewers for Alteryx, XML, YAML, CSV, JSONL, EML, and other structured formats.</p><div class="proof-links"><a href="/obsidian-plugins/">Browse the viewer suite &rarr;</a><a href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">Inspect Alteryx Viewer &nearr;</a></div></div>
@@ -151,7 +172,17 @@
 
       <article class="timeline-entry featured" data-date="2026-05-29" data-type="workflow">
         <div class="entry-meta"><time class="entry-date" datetime="2026-05-29">29 May 2026</time><span class="entry-type">Workflow</span></div>
-        <div class="entry-body"><span class="entry-number">10 / Agent workflow</span><h3>The workflow becomes routable, reusable, and multi-agent.</h3><p>Hermes, Codex, and reusable skills connect a command bus to repo context, durable procedures, and proof-first completion gates.</p><div class="proof-links"><a href="/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/">See the workflow stage &rarr;</a><a href="https://github.com/viggomeesters/hermes-agent" target="_blank" rel="noopener">View Hermes Agent &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">10 / Agent workflow</span><h3>The workflow becomes routable, reusable, and multi-agent.</h3><p>Hermes, Codex, and reusable skills connect a command bus to repo context, durable procedures, and proof-first completion gates.</p><div class="proof-links"><a href="/agent-workflow/">Explore the full evolution &rarr;</a><a href="/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/">See this workflow stage &rarr;</a><a href="/skills/">Browse reviewed skills &rarr;</a><a href="https://github.com/viggomeesters/hermes-agent" target="_blank" rel="noopener">View Hermes Agent &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry featured" data-date="2026-05-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-05-01">May 2026—now</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Creator &amp; tooling developer</span><h3>Alteryx Flow Agent Toolkit</h3><p>An internal reusable toolkit for agent-assisted Alteryx flow development, combining generation, validation, templates, documentation, and agent procedures.</p><div class="proof-links"><a href="/systems/">See related public systems &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-04-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-04-01">Apr—May 2026</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Hitachi Construction Machinery Europe</h3><p>S/4HANA data migration and load validation for HCME, delivered as an external McCoy engagement.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-03-17" data-type="repository">
@@ -159,9 +190,29 @@
         <div class="entry-body"><span class="entry-number">11 / Starter</span><h3>Life OS Starter</h3><p>A plug-and-play Obsidian vault that gives people a practical starting point for markdown-first knowledge work with agent support.</p><div class="proof-links"><a href="https://github.com/viggomeesters/life-os-starter" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2026-03-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-03-01">Mar 2026—now</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Tooling developer</span><h3>SDP Dashboard</h3><p>An internal browser-based dashboard that makes the Smart Data Platform methodology, steps, and supporting material easier to navigate.</p><div class="proof-links"><a href="/systems/">See related public systems &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2026-02-27" data-type="repository">
         <div class="entry-meta"><time class="entry-date" datetime="2026-02-27">27 Feb 2026</time><span class="entry-type">Repository</span></div>
         <div class="entry-body"><span class="entry-number">12 / Contract</span><h3>Vault Schema</h3><p>A machine-readable schema contract, template set, and validation guard for keeping structured Obsidian vaults dependable.</p><div class="proof-links"><a href="https://github.com/viggomeesters/vault-schema" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-02-19" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-02-19">19 Feb 2026</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">App / Visualizer</span><h3>Money Shower</h3><p>A real-time salary visualizer that makes the passing value of working time tangible.</p><div class="proof-links"><a href="https://money-shower.vercel.app" target="_blank" rel="noopener">Open the app &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-02-18" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-02-18">18 Feb 2026</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">App / Health</span><h3>Dimma</h3><p>A mobile-first migraine tracker designed to capture an event with as little friction as possible.</p><div class="proof-links"><a href="https://getdimma.vercel.app" target="_blank" rel="noopener">Open the preview &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-01-22" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-01-22">22 Jan 2026</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">App / Planning</span><h3>Visual PM</h3><p>A visual project-management surface for making work, ownership, and progress easier to scan.</p><div class="proof-links"><a href="https://visual-pm-app.vercel.app" target="_blank" rel="noopener">Open the app &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-01-10" data-type="workflow">
@@ -171,12 +222,177 @@
 
       <article class="timeline-entry" data-date="2025-11-30" data-type="repository">
         <div class="entry-meta"><time class="entry-date" datetime="2025-11-30">30 Nov 2025</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">14 / Capture</span><h3>Obsidian meets Raycast.</h3><p>A focused extension for capturing and retrieving Obsidian notes without breaking flow to navigate the vault manually.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">14 / Capture</span><h3>Obsidian meets Raycast.</h3><p>A focused extension for capturing and retrieving Obsidian notes without breaking flow to navigate the vault manually.</p><div class="proof-links"><a href="/raycast-life-os/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—now</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Tooling developer</span><h3>Alteryx Template Flows</h3><p>Reusable Alteryx transformation-flow templates for SAP data migration delivery.</p><div class="proof-links"><a href="/systems/">See related public systems &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—now</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Contributor &amp; tooling developer</span><h3>Smart Data Platform</h3><p>Contribution to McCoy’s SAP data migration methodology and internal documentation hub, with an emphasis on making delivery knowledge usable in tools.</p><div class="proof-links"><a href="/systems/">See related public systems &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—May 2026</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Gemeente Groningen</h3><p>Financial migration from DaFinci to S/4HANA, including subsidy objects, delivered as an external McCoy engagement.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—May 2026</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Universiteit Utrecht</h3><p>S/4HANA HR data migration delivered as an external McCoy engagement.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry featured" data-date="2025-10-20" data-type="project">
         <div class="entry-meta"><time class="entry-date" datetime="2025-10-20">Oct 2025</time><span class="entry-type">Project</span></div>
         <div class="entry-body"><span class="entry-number">15 / Data migration</span><h3>Minimal ETL Modeler starts with one stubborn idea.</h3><p>Data mapping and validation should be understandable to the people doing the migration. The project grows into a browser-local workbench for visual transforms, QA, and accepted/rejected exports.</p><div class="proof-links"><a href="https://minimal-etl-modeler.vercel.app" target="_blank" rel="noopener">Open the live workbench &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-09-11" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-09-11">11 Sep 2025</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">App / Family planning</span><h3>Kraamweek</h3><p>A focused browser planner for coordinating the practical details of a newborn week.</p><div class="proof-links"><a href="https://kraamweek.vercel.app" target="_blank" rel="noopener">Open the planner &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-06-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-06-01">Jun—Oct 2025</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Cramo Fleet</h3><p>Migration from IBS to S/4HANA Private Cloud across materials, assets, and related fleet objects for Boels Cramo.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-04-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-04-01">Apr—Oct 2025</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>LC Packaging NL</h3><p>S/4HANA on-premise to S/4HANA Private Cloud migration for LC Packaging.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-01-01">Jan—Mar 2025</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Authorization Consultant</span><h3>Mepal</h3><p>Authorization consulting for an S/4HANA Public Cloud implementation.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2024-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2024-11-01">Nov 2024—May 2025</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Cramo Baltics</h3><p>Financial-object migration from IBS to S/4HANA Private Cloud for Boels Cramo in the Baltic region.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2024-04-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2024-04-01">Apr—Dec 2024</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Cramo Sweden &amp; Norway</h3><p>Financial-object migration from IBS to S/4HANA Private Cloud for Boels Cramo in Sweden and Norway.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2023-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2023-11-01">Nov 2023—Dec 2024</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / OKR Coach</span><h3>OKR Coaching</h3><p>Coaching and supporting the second implementation phase of Objectives and Key Results within Aiden.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2023-06-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2023-06-01">Jun 2023—Aug 2024</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Boels Fleet NL</h3><p>Migration from Infor InSpHire to S/4HANA Private Cloud across materials and assets for the Dutch Boels fleet.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2023-06-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2023-06-01">Jun 2023—Apr 2024</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Cramo Finland</h3><p>Financial-object migration from IBS to S/4HANA Private Cloud for Boels Cramo in Finland.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2023-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2023-01-01">Jan—May 2023</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / iRPA Developer</span><h3>RPA Invoicing for LiveKindly</h3><p>Implementation of SAP Intelligent Robotic Process Automation for invoicing.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-12-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-12-01">Dec 2022—Jun 2023</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Initiator &amp; designer</span><h3>Traineeship 2.0</h3><p>Initiated and redesigned Aiden’s traineeship, evolving its first version into a more deliberate second programme.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-04-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-04-01">Apr—Aug 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Brandsom / Developer</span><h3>Automated Content Generator</h3><p>Developed an internal generator for automating product-content creation at Brandsom.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-01-01">Jan—Jul 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">GGZ Ecademy / Developer</span><h3>Learning Technology Vision</h3><p>Developed a future vision and development roadmap for the GGZ Ecademy learning-management environment.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-08-04" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-08-04">Aug 2021—Jan 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Project lead &amp; Mendix developer</span><h3>Warehouse Management System — part 2</h3><p>Led the second development phase of a Mendix warehouse-management system, adding new operational features.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-08-03" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-08-03">Aug 2021—Jan 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Designer</span><h3>Veilig Op Reis tas</h3><p>Designed a practical physical product—the VORtas—around an explicit value-creation brief.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-08-02" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-08-02">Aug 2021—Jan 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Designer</span><h3>Special Events for Withlocals</h3><p>Designed a new “Special Events” event format for Withlocals.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-08-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-08-01">Aug 2021—Jan 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Researcher</span><h3>ZES Battery Container</h3><p>Researched whether a Wärtsilä battery container could be used effectively at a construction site.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-02-02" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-02-02">Feb—Jul 2021</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Designer</span><h3>Value Proposition Design for De Uitvindfabriek</h3><p>Created a Value Proposition Design for a new service at De Uitvindfabriek.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-02-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-02-01">Feb—Jul 2021</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Data analyst</span><h3>Customer Satisfaction Analysis</h3><p>Analysed which attributes most strongly influenced customer satisfaction for Algorithmic Perfumery.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2020-09-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2020-09-01">Sep 2020—Feb 2021</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Brabant Water / Researcher &amp; innovator</span><h3>Serious Game for Agile Working</h3><p>Researched and developed a serious-game approach for increasing awareness of agile development at Brabant Water.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2020-02-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2020-02-01">Feb—Jul 2020</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Scrum master &amp; Mendix developer</span><h3>Warehouse Management System — part 1</h3><p>Scrum-led and developed the first phase of a Mendix warehouse-management system.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2019-09-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2019-09-01">Sep 2019—Feb 2020</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Avans / Project lead &amp; researcher</span><h3>Culture Research at Oriëntal Green House</h3><p>Researched organisational culture, structure, and processes at Oriëntal Green House.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2018-02-02" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2018-02-02">Feb—Jul 2018</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Fontys / Event organiser</span><h3>Business Academy Event</h3><p>Organised the Business Academy Event as an internal Fontys project.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2018-02-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2018-02-01">Feb—Mar 2018</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Versteijnen Logistics / Developer</span><h3>Optimize Data Entry at Versteijnen Logistics</h3><p>Improved data-processing speed and consistency with AutoHotkey automation.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2018-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2018-01-01">Jan—Jul 2018</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Fontys / Developer</span><h3>Handlefy Storage Application Database</h3><p>Designed the relational database for the Handlefy 1.0 storage application.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2017-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2017-11-01">Nov 2017—Jan 2018</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Fontys / Process analyst</span><h3>BPMN Goods Documents at Versteijnen Logistics</h3><p>Mapped and improved the goods-received document flow using BPMN.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2016-02-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2016-02-01">Feb—Aug 2016</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Gors / Developer</span><h3>Optimize Banking Process at Gors</h3><p>Developed AutoHotkey automation for the organisation’s banking process.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2015-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2015-01-01">Jan—Jul 2015</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Scalda / Researcher</span><h3>ProActive Banking Implementation Research</h3><p>Researched the implementation of the ProActive banking module at Gors.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2014-06-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2014-06-01">Jun—Sep 2014</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Gors / Developer</span><h3>Optimize Creditor Process at Gors</h3><p>Improved the creditor process with ProActive templates.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
     </section>
 
