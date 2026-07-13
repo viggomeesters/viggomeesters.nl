@@ -4,6 +4,7 @@ All notable changes to this project are documented here.
 
 ## Unreleased
 
+- Replaced the long portfolio homepage with four focused gateways and added dedicated Apps and Systems hubs.
 - Enforced a reviewed public allowlist and fail-closed privacy checks.
 - Hardened Tech News collection and agent-topic classification.
 - Curated and temporarily de-indexed generated Skills detail pages.

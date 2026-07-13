@@ -30,13 +30,6 @@ class WatcherExperienceContract(unittest.TestCase):
             self.assertIn("params.set('filter'", html)
         self.assertIn("params.set('sort'", trend)
 
-    def test_homepage_uses_small_status_snapshots(self) -> None:
-        html = (ROOT / "index.html").read_text(encoding="utf-8")
-        self.assertIn("fetch('/trendwatch/status.json'", html)
-        self.assertIn("fetch('/tech-news/status.json'", html)
-        self.assertNotIn("fetch('/trendwatch/data.json'", html)
-        self.assertNotIn("fetch('/tech-news/data.json'", html)
-
     def test_status_snapshots_match_full_feed_metadata(self) -> None:
         for directory in ("trendwatch", "tech-news"):
             with self.subTest(feed=directory):
@@ -46,13 +39,6 @@ class WatcherExperienceContract(unittest.TestCase):
                     self.assertEqual(status[key], data[key])
                 self.assertNotIn("items", status)
                 self.assertLess((ROOT / directory / "status.json").stat().st_size, 512)
-
-    def test_contact_form_announces_and_focuses_success_and_errors(self) -> None:
-        html = (ROOT / "index.html").read_text(encoding="utf-8")
-        self.assertIn('id="form-status" role="status" aria-live="polite" tabindex="-1"', html)
-        self.assertGreaterEqual(html.count("formStatus.focus()"), 3)
-        self.assertIn("Your message could not be sent", html)
-
 
 if __name__ == "__main__":
     unittest.main()

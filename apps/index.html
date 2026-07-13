@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apps &amp; Software — Viggo Meesters</title>
+  <meta name="description" content="Try browser-based tools by Viggo Meesters, or inspect installable macOS applications, Obsidian plugins, and Raycast software.">
+  <link rel="canonical" href="https://viggomeesters.com/apps/">
+  <meta name="theme-color" content="#090b10">
+  <meta property="og:title" content="Apps &amp; Software — Viggo Meesters">
+  <meta property="og:description" content="Browser tools to try, plus installable apps and plugins to inspect.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viggomeesters.com/apps/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Apps &amp; Software — Viggo Meesters">
+  <meta name="twitter:description" content="Browser tools to try, plus installable apps and plugins to inspect.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--bg:#090b10;--surface:#0e1219;--line:#242b36;--line-strong:#374252;--text:#c8d0dd;--muted:#7e899b;--bright:#f4f7fb;--accent:#63dcff;--accent-soft:rgba(99,220,255,.08);--sans:system-ui,-apple-system,'Segoe UI',sans-serif;--mono:ui-monospace,'SFMono-Regular','Cascadia Code',monospace}
+    html{background:var(--bg);color-scheme:dark;-webkit-font-smoothing:antialiased}body{min-width:320px;margin:0;background:radial-gradient(ellipse 62% 30% at 75% -10%,rgba(58,137,180,.13),transparent 72%),var(--bg);color:var(--text);font:15px/1.65 var(--sans)}
+    a{color:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.page{width:min(1160px,calc(100% - 40px));margin:auto;padding:26px 0 76px}.topbar{display:flex;justify-content:space-between;align-items:center;min-height:46px}.back,.timeline-link{display:inline-flex;min-height:44px;align-items:center;color:var(--muted);font:500 .68rem var(--mono);text-decoration:none}.back:hover,.timeline-link:hover{color:var(--bright)}
+    .hero{padding:clamp(54px,9vw,110px) 0 clamp(58px,8vw,92px);border-bottom:1px solid var(--line)}.hero h1{margin:0;color:var(--bright);font-size:clamp(4.2rem,12vw,9.4rem);font-weight:650;line-height:.82;letter-spacing:-.09em}.hero p{max-width:600px;margin:28px 0 0;color:#98a3b5;font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.7;text-wrap:pretty}
+    .section{padding:58px 0 18px}.section-head{display:grid;grid-template-columns:180px minmax(0,1fr);gap:38px;margin-bottom:26px}.section-head h2{margin:0;color:var(--bright);font-size:1rem}.section-head p{max-width:580px;margin:0;color:var(--muted);font-size:.86rem}
+    .live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .app-card{position:relative;display:grid;min-width:0;padding:clamp(24px,3vw,36px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(14,18,25,.36);text-decoration:none;transition:background-color .2s,border-color .2s}.app-card::after{position:absolute;right:28px;top:28px;color:var(--muted);font-size:1.2rem;content:"↗";transition:color .2s,transform .25s cubic-bezier(.22,1,.36,1)}.app-card:hover{border-color:var(--line-strong);background:var(--accent-soft)}.app-card:hover::after{color:var(--accent);transform:translate(3px,-3px)}
+    .app-mode{color:var(--accent);font:500 .62rem var(--mono);letter-spacing:.09em;text-transform:uppercase}.app-card h3{max-width:82%;margin:34px 0 12px;color:var(--bright);font-size:clamp(1.35rem,2.7vw,2.25rem);font-weight:620;line-height:1.05;letter-spacing:-.04em}.app-card p{max-width:480px;margin:0;color:#8d98aa;font-size:.84rem}.app-tech{align-self:end;margin-top:30px;color:#667184;font:500 .61rem var(--mono)}
+    .inspect-list{border-top:1px solid var(--line)}.inspect-list .app-card{grid-template-columns:180px minmax(0,1fr) auto;align-items:center;gap:38px;min-height:150px;padding:28px 38px;border-left:0;border-right:0}.inspect-list .app-card::after{position:static;grid-column:3;grid-row:1}.inspect-list .app-mode{grid-column:1;grid-row:1}.inspect-list .app-copy{grid-column:2;grid-row:1}.inspect-list .app-card h3{margin:0 0 8px}.inspect-list .app-tech{margin-top:12px}
+    .footer{display:flex;justify-content:space-between;gap:24px;margin-top:64px;padding-top:22px;border-top:1px solid var(--line);color:#687386;font:400 .65rem var(--mono)}.footer a{display:inline-flex;min-height:44px;align-items:center;text-underline-offset:4px}.footer a:hover{color:var(--bright)}
+    @media(max-width:700px){.page{width:min(100% - 24px,1160px);padding-top:14px}.timeline-link{display:none}.hero{padding:48px 0 58px}.section{padding-top:44px}.section-head{grid-template-columns:1fr;gap:8px}.live-grid{grid-template-columns:1fr}.app-card{min-height:220px;padding:24px}.inspect-list .app-card{grid-template-columns:1fr auto;gap:8px;min-height:190px;padding:26px}.inspect-list .app-mode{grid-column:1;grid-row:1}.inspect-list .app-copy{grid-column:1 / -1;grid-row:2}.inspect-list .app-card::after{grid-column:2;grid-row:1}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Page navigation"><a class="back" href="/">&larr; viggomeesters.com</a><a class="timeline-link" href="/timeline/">View timeline &rarr;</a></nav>
+    <header class="hero"><h1>Apps.</h1><p>Software with a surface. Try the browser tools directly, or inspect the applications and plugins that belong on a local machine.</p></header>
+
+    <section class="section" aria-labelledby="try-now">
+      <div class="section-head"><h2 id="try-now">Try now</h2><p>Working browser builds. Each link opens the actual application, not a marketing mock-up.</p></div>
+      <div class="live-grid">
+        <a class="app-card" data-kind="live" href="https://minimal-etl-modeler.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Data workbench</span><h3>Minimal ETL Modeler</h3><p>Build visual transforms, validate CSV/XLSX mappings, and export accepted and rejected records locally in the browser.</p><span class="app-tech">ETL · migration QA · browser-local</span></a>
+        <a class="app-card" data-kind="live" href="https://visual-pm-app.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Project tool</span><h3>Visual PM</h3><p>A visual project-management surface for making work, ownership, and progress easier to scan.</p><span class="app-tech">Projects · visual planning</span></a>
+        <a class="app-card" data-kind="live" href="https://normalized-salary-calculator.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Calculator</span><h3>Normalized Salary Calculator</h3><p>Compare compensation packages on consistent yearly, monthly, and hourly terms.</p><span class="app-tech">Compensation · comparison</span></a>
+        <a class="app-card" data-kind="live" href="https://money-shower.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Visualizer</span><h3>Money Shower</h3><p>Turn salary into a real-time visual stream to make the passing value of time tangible.</p><span class="app-tech">Salary · real-time</span></a>
+        <a class="app-card" data-kind="live" href="https://getdimma.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Health preview</span><h3>Dimma</h3><p>A low-friction migraine tracker designed to capture an event in a few deliberate taps.</p><span class="app-tech">Migraine · mobile-first · preview</span></a>
+        <a class="app-card" data-kind="live" href="https://kraamweek.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Planner</span><h3>Kraamweek</h3><p>A focused planner for coordinating the small, practical details of a newborn week.</p><span class="app-tech">Planning · family</span></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="install-inspect">
+      <div class="section-head"><h2 id="install-inspect">Install or inspect</h2><p>Software that needs access to local files or another host application. The project pages expose behavior, boundaries, and source.</p></div>
+      <div class="inspect-list">
+        <a class="app-card" data-kind="inspect" href="/mega-vault-viewer/"><span class="app-mode">macOS</span><span class="app-copy"><h3>Mega Vault Viewer</h3><p>Read-only navigation for large, mixed-format Markdown vaults on a local machine.</p><span class="app-tech">Local-first · Swift · Markdown</span></span></a>
+        <a class="app-card" data-kind="inspect" href="/obsidian-plugins/"><span class="app-mode">Obsidian</span><span class="app-copy"><h3>Obsidian Plugins</h3><p>Viewer plugins and small utilities for structured and less familiar file formats.</p><span class="app-tech">Alteryx · CSV · XML · YAML · utilities</span></span></a>
+        <a class="app-card" data-kind="inspect" href="/raycast-life-os/"><span class="app-mode">Raycast</span><span class="app-copy"><h3>Raycast Life OS</h3><p>Fast capture and retrieval commands that connect Raycast to a markdown-first knowledge workflow.</p><span class="app-tech">Capture · commands · Obsidian</span></span></a>
+      </div>
+    </section>
+
+    <footer class="footer"><span>&copy; 2026 Viggo Meesters</span><span><a href="/systems/">Systems</a> · <a href="/guides/">Writing</a> · <a href="/timeline/">Timeline</a></span></footer>
+  </main>
+</body>
+</html>

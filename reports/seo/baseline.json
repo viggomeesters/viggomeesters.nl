@@ -2,8 +2,8 @@
   "generatedAt": "current working tree",
   "baseUrl": "https://viggomeesters.com",
   "summary": {
-    "publicPages": 62,
-    "sitemapEntries": 48,
+    "publicPages": 65,
+    "sitemapEntries": 51,
     "issueTypes": 2,
     "totalIssueOccurrences": 7,
     "clusters": {
@@ -21,6 +21,13 @@
         "missingOgImage": 0,
         "missingJsonLd": 6
       },
+      "other": {
+        "pages": 8,
+        "issues": 3,
+        "thin": 3,
+        "missingOgImage": 0,
+        "missingJsonLd": 8
+      },
       "seo_evergreen": {
         "pages": 2,
         "issues": 0,
@@ -35,13 +42,6 @@
         "missingOgImage": 0,
         "missingJsonLd": 5
       },
-      "other": {
-        "pages": 5,
-        "issues": 3,
-        "thin": 3,
-        "missingOgImage": 0,
-        "missingJsonLd": 5
-      },
       "methodologies": {
         "pages": 6,
         "issues": 1,
@@ -51,8 +51,8 @@
       },
       "homepage": {
         "pages": 1,
-        "issues": 0,
-        "thin": 0,
+        "issues": 1,
+        "thin": 1,
         "missingOgImage": 0,
         "missingJsonLd": 0
       },
@@ -72,8 +72,8 @@
       },
       "signal_dashboards": {
         "pages": 2,
-        "issues": 1,
-        "thin": 1,
+        "issues": 0,
+        "thin": 0,
         "missingOgImage": 0,
         "missingJsonLd": 2
       },
@@ -110,6 +110,12 @@
       "issue": "short_title"
     },
     {
+      "route": "/",
+      "file": "index.html",
+      "cluster": "homepage",
+      "issue": "thin_under_250_words"
+    },
+    {
       "route": "/jsonl-vault-spike/",
       "file": "jsonl-vault-spike/index.html",
       "cluster": "project_pages",
@@ -125,12 +131,6 @@
       "route": "/nederlandse-huizenkoop-agent-context/",
       "file": "nederlandse-huizenkoop-agent-context/index.html",
       "cluster": "other",
-      "issue": "thin_under_250_words"
-    },
-    {
-      "route": "/tech-news/",
-      "file": "tech-news/index.html",
-      "cluster": "signal_dashboards",
       "issue": "thin_under_250_words"
     }
   ],
@@ -196,16 +196,16 @@
       "score": 5
     },
     {
-      "route": "/tech-news/",
-      "cluster": "signal_dashboards",
-      "words": 249,
-      "titleLength": 33,
+      "route": "/",
+      "cluster": "homepage",
+      "words": 120,
+      "titleLength": 48,
       "descriptionLength": 125,
-      "jsonLdCount": 0,
+      "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
       ],
-      "score": 5
+      "score": 4
     },
     {
       "route": "/guides/",
@@ -285,6 +285,16 @@
       "words": 252,
       "titleLength": 65,
       "descriptionLength": 134,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/apps/",
+      "cluster": "other",
+      "words": 267,
+      "titleLength": 36,
+      "descriptionLength": 125,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -490,6 +500,26 @@
       "score": 1
     },
     {
+      "route": "/systems/",
+      "cluster": "other",
+      "words": 274,
+      "titleLength": 40,
+      "descriptionLength": 126,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
+      "route": "/tech-news/",
+      "cluster": "signal_dashboards",
+      "words": 255,
+      "titleLength": 33,
+      "descriptionLength": 125,
+      "jsonLdCount": 0,
+      "issues": [],
+      "score": 1
+    },
+    {
       "route": "/tech-stack/",
       "cluster": "tech_stack",
       "words": 288,
@@ -515,36 +545,6 @@
       "words": 287,
       "titleLength": 28,
       "descriptionLength": 102,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/tech-stack/hardware/",
-      "cluster": "tech_stack",
-      "words": 306,
-      "titleLength": 54,
-      "descriptionLength": 132,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/tech-stack/hosting-automation/",
-      "cluster": "tech_stack",
-      "words": 280,
-      "titleLength": 65,
-      "descriptionLength": 141,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/tech-stack/software/",
-      "cluster": "tech_stack",
-      "words": 300,
-      "titleLength": 55,
-      "descriptionLength": 121,
       "jsonLdCount": 0,
       "issues": [],
       "score": 1
@@ -704,6 +704,29 @@
       "jsonLdCount": 0,
       "lastmod": "2026-06-23",
       "priority": 0.7,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": []
+    },
+    {
+      "file": "apps/index.html",
+      "route": "/apps/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/apps/",
+      "title": "Apps &amp; Software — Viggo Meesters",
+      "titleLength": 36,
+      "description": "Try browser-based tools by Viggo Meesters, or inspect installable macOS applications, Obsidian plugins, and Raycast software.",
+      "descriptionLength": 125,
+      "h1": "Apps.",
+      "h1Count": 1,
+      "words": 267,
+      "jsonLdCount": 0,
+      "lastmod": "2026-07-13",
+      "priority": 0.8,
       "hasOgTitle": true,
       "hasOgDescription": true,
       "hasOgImage": true,
@@ -976,15 +999,15 @@
       "route": "/",
       "cluster": "homepage",
       "url": "https://viggomeesters.com/",
-      "title": "Viggo Meesters — SAP Data Migration, ETL &amp; AI Systems",
-      "titleLength": 57,
-      "description": "Viggo Meesters builds auditable SAP data migration and ETL workflows, Alteryx tooling, and source-backed AI systems for complex delivery work.",
-      "descriptionLength": 142,
-      "h1": "Viggo Meesters",
+      "title": "Viggo Meesters — Data Migration &amp; AI Systems",
+      "titleLength": 48,
+      "description": "Viggo Meesters builds inspectable data migration tools, reusable AI systems, source-backed workflows, and practical software.",
+      "descriptionLength": 125,
+      "h1": "Data migration AI systems builder.",
       "h1Count": 1,
-      "words": 568,
+      "words": 120,
       "jsonLdCount": 1,
-      "lastmod": "2026-06-24",
+      "lastmod": "2026-07-13",
       "priority": 1,
       "hasOgTitle": true,
       "hasOgDescription": true,
@@ -992,7 +1015,9 @@
       "hasTwitterCard": true,
       "hasAnalytics": true,
       "noindex": false,
-      "issues": []
+      "issues": [
+        "thin_under_250_words"
+      ]
     },
     {
       "file": "jsonl-agent-first-data-structures/index.html",
@@ -1519,7 +1544,7 @@
       "h1Count": 1,
       "words": 331,
       "jsonLdCount": 0,
-      "lastmod": "2026-06-23",
+      "lastmod": "2026-07-12",
       "priority": 0.8,
       "hasOgTitle": true,
       "hasOgDescription": true,
@@ -1737,6 +1762,29 @@
       "issues": []
     },
     {
+      "file": "systems/index.html",
+      "route": "/systems/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/systems/",
+      "title": "Systems &amp; Workflows — Viggo Meesters",
+      "titleLength": 40,
+      "description": "Explore the delivery workflows, agent infrastructure, context layers, and knowledge systems behind the work of Viggo Meesters.",
+      "descriptionLength": 126,
+      "h1": "Systems.",
+      "h1Count": 1,
+      "words": 274,
+      "jsonLdCount": 0,
+      "lastmod": "2026-07-13",
+      "priority": 0.8,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": []
+    },
+    {
       "file": "tech-news/index.html",
       "route": "/tech-news/",
       "cluster": "signal_dashboards",
@@ -1747,9 +1795,9 @@
       "descriptionLength": 125,
       "h1": "Tech Newswatcher",
       "h1Count": 1,
-      "words": 249,
+      "words": 255,
       "jsonLdCount": 0,
-      "lastmod": "2026-06-24",
+      "lastmod": "2026-07-12",
       "priority": 0.7,
       "hasOgTitle": true,
       "hasOgDescription": true,
@@ -1757,9 +1805,7 @@
       "hasTwitterCard": true,
       "hasAnalytics": true,
       "noindex": false,
-      "issues": [
-        "thin_under_250_words"
-      ]
+      "issues": []
     },
     {
       "file": "tech-stack/ai-agents/index.html",
@@ -1900,6 +1946,29 @@
       "issues": []
     },
     {
+      "file": "timeline/index.html",
+      "route": "/timeline/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/timeline/",
+      "title": "Work &amp; Build Timeline — Viggo Meesters",
+      "titleLength": 42,
+      "description": "A selected, proof-linked timeline of Viggo Meesters&apos; projects, repositories, agent systems, data migration work, and writing.",
+      "descriptionLength": 130,
+      "h1": "Things I’ve made move.",
+      "h1Count": 1,
+      "words": 633,
+      "jsonLdCount": 0,
+      "lastmod": "2026-07-13",
+      "priority": 0.8,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": []
+    },
+    {
       "file": "trendwatch/index.html",
       "route": "/trendwatch/",
       "cluster": "signal_dashboards",
@@ -1910,9 +1979,9 @@
       "descriptionLength": 124,
       "h1": "Repo Trendwatcher",
       "h1Count": 1,
-      "words": 254,
+      "words": 260,
       "jsonLdCount": 0,
-      "lastmod": "2026-06-30",
+      "lastmod": "2026-07-12",
       "priority": 0.7,
       "hasOgTitle": true,
       "hasOgDescription": true,

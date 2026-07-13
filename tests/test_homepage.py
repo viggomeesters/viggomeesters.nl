@@ -6,8 +6,8 @@ import unittest
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[1]
-HOMEPAGE = REPO_ROOT / "index.html"
+ROOT = Path(__file__).resolve().parents[1]
+HOMEPAGE = ROOT / "index.html"
 
 
 def visible_text(markup: str) -> str:
@@ -16,56 +16,38 @@ def visible_text(markup: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(text)).strip()
 
 
-class HomepagePortfolioContract(unittest.TestCase):
+class HomepageGatewayContract(unittest.TestCase):
     def setUp(self) -> None:
         self.markup = HOMEPAGE.read_text(encoding="utf-8")
-        self.text = visible_text(self.markup.split("<body>", 1)[1])
+        self.text = visible_text(self.markup)
 
-    def test_hero_leads_with_audience_value_and_one_primary_cta(self) -> None:
-        selected_work = self.markup.index('id="selected-work"')
-        hero = self.markup[:selected_work]
-
-        self.assertEqual(hero.count('class="hero-cta"'), 1)
-        self.assertIn('href="#selected-work"', hero)
-        for term in ("delivery teams", "auditable workflows", "SAP", "ETL", "Alteryx"):
-            self.assertIn(term, visible_text(hero))
-
-    def test_four_flagship_cases_have_problem_result_proof_and_public_evidence(self) -> None:
-        cases = re.findall(
-            r'<article class="tile flagship-card"[\s\S]*?</article>',
+    def test_homepage_is_a_four_gateway_front_door(self) -> None:
+        gateways = re.findall(
+            r'<a class="gateway" href="([^"]+)">[\s\S]*?<h2>([^<]+)</h2>',
             self.markup,
         )
-        self.assertEqual(len(cases), 4)
-
-        names = []
-        for case in cases:
-            name_match = re.search(r"<h3>([^<]+)</h3>", case)
-            self.assertIsNotNone(name_match)
-            names.append(html.unescape(name_match.group(1)))
-            for label in ("Problem", "Result", "Proof"):
-                self.assertIn(f"<dt>{label}</dt>", case)
-            self.assertRegex(case, r'<a href="[^"]+"')
-
         self.assertEqual(
-            names,
+            gateways,
             [
-                "Minimal ETL Modeler",
-                "SAP Agent Context",
-                "Alteryx Viewer",
-                "Mega Vault Viewer",
+                ("/timeline/", "Timeline"),
+                ("/apps/", "Apps"),
+                ("/systems/", "Systems"),
+                ("/guides/", "Writing"),
             ],
         )
-        for href in (
-            "https://minimal-etl-modeler.vercel.app",
-            "https://github.com/viggomeesters/sap-agent-context",
-            "https://github.com/viggomeesters/obsidian-alteryx-viewer",
-            "https://github.com/viggomeesters/mega-vault-viewer",
-        ):
-            self.assertIn(f'href="{href}"', self.markup)
+        self.assertEqual(self.markup.count("<h1"), 1)
+        for term in ("Viggo Meesters", "data migration", "AI systems"):
+            self.assertIn(term.casefold(), self.text.casefold())
 
-    def test_professional_data_expertise_is_visible(self) -> None:
-        for term in ("sap migration", "data migration", "etl", "alteryx", "csv/xlsx", "field mapping"):
-            self.assertIn(term, self.text.casefold())
+    def test_homepage_no_longer_duplicates_the_catalogs(self) -> None:
+        for legacy in (
+            'class="tile flagship-card"',
+            'id="selected-work"',
+            'id="contact-form"',
+            "trendwatch/status.json",
+            "tech-news/status.json",
+        ):
+            self.assertNotIn(legacy, self.markup)
 
 
 if __name__ == "__main__":
