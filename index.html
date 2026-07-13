@@ -53,7 +53,7 @@
     *,*::before,*::after{box-sizing:border-box}
     :root{--bg:#090b10;--surface:#0d1118;--line:#242b36;--line-strong:#343e4d;--text:#c8d0dd;--muted:#7f899a;--bright:#f4f7fb;--accent:#63dcff;--accent-soft:rgba(99,220,255,.09);--sans:system-ui,-apple-system,'Segoe UI',sans-serif;--mono:ui-monospace,'SFMono-Regular','Cascadia Code',monospace}
     html{background:var(--bg);color-scheme:dark;-webkit-font-smoothing:antialiased}
-    body{min-width:320px;min-height:100vh;margin:0;background:radial-gradient(ellipse 62% 36% at 70% -14%,rgba(60,137,177,.13),transparent 72%),var(--bg);color:var(--text);font:15px/1.65 var(--sans)}
+    body{min-width:320px;min-height:100vh;margin:0;background:radial-gradient(ellipse 48% 32% at 8% -10%,rgba(56,189,248,.075),transparent 72%),radial-gradient(ellipse 42% 30% at 96% 5%,rgba(167,139,250,.065),transparent 72%),radial-gradient(ellipse 44% 34% at 0% 92%,rgba(74,222,128,.045),transparent 72%),radial-gradient(ellipse 42% 32% at 100% 100%,rgba(245,158,11,.045),transparent 72%),var(--bg);color:var(--text);font:15px/1.65 var(--sans)}
     body::before{position:fixed;z-index:-1;inset:0;content:"";opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
     a{color:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
     .shell{display:grid;grid-template-rows:auto auto 1fr auto;width:min(1240px,calc(100% - 48px));min-height:100dvh;margin:auto}
@@ -64,11 +64,15 @@
     h1{max-width:800px;margin:0;color:var(--bright);font-size:clamp(2rem,4.8vw,4.4rem);font-weight:650;line-height:.98;letter-spacing:-.06em;text-wrap:balance}
     .intro p{max-width:690px;margin:18px 0 0;color:#98a3b5;font-size:clamp(.95rem,1.45vw,1.1rem);line-height:1.7;text-wrap:pretty}
     .gateway-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .gateway{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr auto;min-width:0;min-height:clamp(210px,25vh,270px);padding:clamp(24px,3.6vw,44px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(13,17,24,.28);text-decoration:none;overflow:hidden;transition:background-color .25s,border-color .25s}
-    .gateway::before{position:absolute;inset:0 auto 0 0;width:2px;background:var(--accent);transform:scaleY(0);transform-origin:bottom;content:"";transition:transform .3s cubic-bezier(.22,1,.36,1)}
-    .gateway:hover{border-color:var(--line-strong);background:var(--accent-soft)}.gateway:hover::before,.gateway:focus-visible::before{transform:scaleY(1)}
-    .gateway-kind{color:var(--muted);font:500 .65rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
-    .arrow{grid-column:2;grid-row:1 / 3;align-self:start;color:var(--muted);font-size:1.5rem;line-height:1;transition:color .2s,transform .25s cubic-bezier(.22,1,.36,1)}.gateway:hover .arrow{color:var(--accent);transform:translate(4px,-4px)}
+    [data-route="timeline"]{--route-accent:#38bdf8;--route-rgb:56,189,248}
+    [data-route="apps"]{--route-accent:#a78bfa;--route-rgb:167,139,250}
+    [data-route="systems"]{--route-accent:#4ade80;--route-rgb:74,222,128}
+    [data-route="writing"]{--route-accent:#f59e0b;--route-rgb:245,158,11}
+    .gateway{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr auto;min-width:0;min-height:clamp(210px,25vh,270px);padding:clamp(24px,3.6vw,44px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(13,17,24,.34);box-shadow:inset 0 0 42px rgba(var(--route-rgb),.012);text-decoration:none;overflow:hidden;transition:background-color .25s,border-color .25s,box-shadow .25s}
+    .gateway::before{position:absolute;inset:0 auto 0 0;width:2px;background:var(--route-accent);box-shadow:0 0 18px rgba(var(--route-rgb),.34);transform:scaleY(.22);transform-origin:bottom;content:"";transition:transform .3s cubic-bezier(.22,1,.36,1)}
+    .gateway:hover{border-color:var(--line-strong);background:rgba(var(--route-rgb),.055);box-shadow:inset 0 0 54px rgba(var(--route-rgb),.025),0 0 34px rgba(var(--route-rgb),.035)}.gateway:hover::before,.gateway:focus-visible::before{transform:scaleY(1)}.gateway:focus-visible{outline-color:var(--route-accent)}
+    .gateway-kind{color:var(--route-accent);opacity:.72;font:500 .65rem var(--mono);letter-spacing:.1em;text-transform:uppercase}
+    .arrow{grid-column:2;grid-row:1 / 3;align-self:start;color:var(--route-accent);opacity:.72;font-size:1.5rem;line-height:1;transition:opacity .2s,transform .25s cubic-bezier(.22,1,.36,1)}.gateway:hover .arrow{color:var(--route-accent);opacity:1;transform:translate(4px,-4px)}
     .gateway h2{grid-column:1;align-self:end;margin:34px 0 12px;color:var(--bright);font-size:clamp(2.1rem,4.4vw,4.15rem);font-weight:620;line-height:.95;letter-spacing:-.06em}
     .gateway p{grid-column:1;max-width:470px;margin:0;color:#8e99ab;font-size:.88rem;line-height:1.65;text-wrap:pretty}
     .gateway-meta{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin-top:28px;color:#687386;font:500 .62rem var(--mono)}
@@ -100,28 +104,28 @@
     </header>
 
     <section class="gateway-grid" aria-label="Explore the work">
-      <a class="gateway" href="/timeline/">
+      <a class="gateway" data-route="timeline" href="/timeline/">
         <span class="gateway-kind">The sequence</span><span class="arrow" aria-hidden="true">&nearr;</span>
         <h2>Timeline</h2>
         <p>Projects, releases, repositories, and meaningful career milestones. Newest first.</p>
         <span class="gateway-meta">Work in context · 2025 to now</span>
       </a>
 
-      <a class="gateway" href="/apps/">
+      <a class="gateway" data-route="apps" href="/apps/">
         <span class="gateway-kind">The software</span><span class="arrow" aria-hidden="true">&nearr;</span>
         <h2>Apps</h2>
         <p>Browser tools you can try, plus installable apps and plugins you can inspect.</p>
         <span class="gateway-meta">Live demos · macOS · Obsidian</span>
       </a>
 
-      <a class="gateway" href="/systems/">
+      <a class="gateway" data-route="systems" href="/systems/">
         <span class="gateway-kind">The operating layer</span><span class="arrow" aria-hidden="true">&nearr;</span>
         <h2>Systems</h2>
         <p>Agent workflows, context layers, and knowledge infrastructure behind the work.</p>
         <span class="gateway-meta">Go Workflow · vault-first · <span class="card-tag" data-public-skill-count>14 skills</span></span>
       </a>
 
-      <a class="gateway" href="/guides/">
+      <a class="gateway" data-route="writing" href="/guides/">
         <span class="gateway-kind">The thinking</span><span class="arrow" aria-hidden="true">&nearr;</span>
         <h2>Writing</h2>
         <p>Guides, working methods, and technical notes about data, knowledge, and agents.</p>
