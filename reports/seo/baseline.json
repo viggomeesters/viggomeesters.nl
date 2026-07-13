@@ -2,10 +2,10 @@
   "generatedAt": "current working tree",
   "baseUrl": "https://viggomeesters.com",
   "summary": {
-    "publicPages": 102,
-    "sitemapEntries": 88,
+    "publicPages": 139,
+    "sitemapEntries": 125,
     "issueTypes": 2,
-    "totalIssueOccurrences": 43,
+    "totalIssueOccurrences": 79,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -22,9 +22,9 @@
         "missingJsonLd": 6
       },
       "other": {
-        "pages": 8,
-        "issues": 3,
-        "thin": 3,
+        "pages": 45,
+        "issues": 39,
+        "thin": 39,
         "missingOgImage": 0,
         "missingJsonLd": 8
       },
@@ -86,11 +86,227 @@
       }
     },
     "issueCounts": {
-      "thin_under_250_words": 42,
+      "thin_under_250_words": 78,
       "short_title": 1
     }
   },
   "issues": [
+    {
+      "route": "/certifications/building-tomorrows-erp-with-sap-s-4hana/",
+      "file": "certifications/building-tomorrows-erp-with-sap-s-4hana/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/conflictoplossing/",
+      "file": "certifications/conflictoplossing/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/data-preparation-in-alteryx/",
+      "file": "certifications/data-preparation-in-alteryx/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/data-science-methodology/",
+      "file": "certifications/data-science-methodology/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/data-science-orientation/",
+      "file": "certifications/data-science-orientation/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/data-transformation-in-alteryx/",
+      "file": "certifications/data-transformation-in-alteryx/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/feedback-geven-en-ontvangen/",
+      "file": "certifications/feedback-geven-en-ontvangen/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/focusing-skills/",
+      "file": "certifications/focusing-skills/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/foundations-of-project-management/",
+      "file": "certifications/foundations-of-project-management/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/guide-your-sap-s-4hana-project-to-success/",
+      "file": "certifications/guide-your-sap-s-4hana-project-to-success/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/information-security-management-in-a-nutshell/",
+      "file": "certifications/information-security-management-in-a-nutshell/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/innovation-award-2022/",
+      "file": "certifications/innovation-award-2022/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/intermediate-python/",
+      "file": "certifications/intermediate-python/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/intermediate-sql/",
+      "file": "certifications/intermediate-sql/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/introduction-to-alteryx/",
+      "file": "certifications/introduction-to-alteryx/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/introduction-to-python/",
+      "file": "certifications/introduction-to-python/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/introduction-to-sql/",
+      "file": "certifications/introduction-to-sql/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/introduction-to-statistics/",
+      "file": "certifications/introduction-to-statistics/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/lean-management-green-belt/",
+      "file": "certifications/lean-management-green-belt/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/lean-management-orange-belt/",
+      "file": "certifications/lean-management-orange-belt/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/lean-management-yellow-belt/",
+      "file": "certifications/lean-management-yellow-belt/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/mendix-rapid-developer/",
+      "file": "certifications/mendix-rapid-developer/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/microsoft-excel-specialist-2013/",
+      "file": "certifications/microsoft-excel-specialist-2013/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/nederlands-b2/",
+      "file": "certifications/nederlands-b2/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/new-employee-business-partner-model-in-sap-s-4hana/",
+      "file": "certifications/new-employee-business-partner-model-in-sap-s-4hana/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/okr-basics/",
+      "file": "certifications/okr-basics/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/python-for-data-science-ai-and-development/",
+      "file": "certifications/python-for-data-science-ai-and-development/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/sap-analytics-cloud/",
+      "file": "certifications/sap-analytics-cloud/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/sap-s4hana-cloud-public-edition-sales-2023/",
+      "file": "certifications/sap-s4hana-cloud-public-edition-sales-2023/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/technical-support-fundamentals/",
+      "file": "certifications/technical-support-fundamentals/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-cloud-computing/",
+      "file": "certifications/understanding-cloud-computing/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-data-engineering/",
+      "file": "certifications/understanding-data-engineering/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-data-science/",
+      "file": "certifications/understanding-data-science/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-data-topics/",
+      "file": "certifications/understanding-data-topics/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-data-visualization/",
+      "file": "certifications/understanding-data-visualization/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/certifications/understanding-machine-learning/",
+      "file": "certifications/understanding-machine-learning/index.html",
+      "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
     {
       "route": "/go-project-template/",
       "file": "go-project-template/index.html",
@@ -424,131 +640,11 @@
       "score": 4
     },
     {
-      "route": "/projects/alteryx-flow-agent-toolkit/",
-      "cluster": "project_pages",
-      "words": 156,
-      "titleLength": 43,
-      "descriptionLength": 128,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/alteryx-template-flows/",
-      "cluster": "project_pages",
-      "words": 153,
-      "titleLength": 39,
-      "descriptionLength": 119,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/automated-content-generator/",
-      "cluster": "project_pages",
-      "words": 140,
-      "titleLength": 44,
-      "descriptionLength": 90,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/boels-fleet-nl/",
-      "cluster": "project_pages",
-      "words": 147,
-      "titleLength": 31,
-      "descriptionLength": 95,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/bpmn-goods-documents-at-versteijnen-logistics/",
-      "cluster": "project_pages",
-      "words": 154,
-      "titleLength": 62,
-      "descriptionLength": 108,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/business-academy-event/",
-      "cluster": "project_pages",
-      "words": 149,
-      "titleLength": 39,
-      "descriptionLength": 157,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/cramo-baltics/",
-      "cluster": "project_pages",
-      "words": 145,
-      "titleLength": 30,
-      "descriptionLength": 90,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/cramo-finland/",
-      "cluster": "project_pages",
-      "words": 148,
-      "titleLength": 30,
-      "descriptionLength": 90,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/cramo-fleet/",
-      "cluster": "project_pages",
-      "words": 150,
-      "titleLength": 28,
-      "descriptionLength": 91,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/cramo-sweden-norway/",
-      "cluster": "project_pages",
-      "words": 147,
-      "titleLength": 42,
-      "descriptionLength": 102,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/culture-research-at-oriental-green-house/",
-      "cluster": "project_pages",
-      "words": 158,
+      "route": "/certifications/building-tomorrows-erp-with-sap-s-4hana/",
+      "cluster": "other",
+      "words": 119,
       "titleLength": 57,
-      "descriptionLength": 129,
+      "descriptionLength": 109,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -556,142 +652,58 @@
       "score": 4
     },
     {
-      "route": "/projects/customer-satisfaction-analysis/",
-      "cluster": "project_pages",
-      "words": 156,
+      "route": "/certifications/conflictoplossing/",
+      "cluster": "other",
+      "words": 132,
+      "titleLength": 34,
+      "descriptionLength": 96,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/data-preparation-in-alteryx/",
+      "cluster": "other",
+      "words": 120,
+      "titleLength": 44,
+      "descriptionLength": 101,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/data-science-methodology/",
+      "cluster": "other",
+      "words": 117,
+      "titleLength": 41,
+      "descriptionLength": 93,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/data-science-orientation/",
+      "cluster": "other",
+      "words": 114,
+      "titleLength": 41,
+      "descriptionLength": 93,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/data-transformation-in-alteryx/",
+      "cluster": "other",
+      "words": 115,
       "titleLength": 47,
-      "descriptionLength": 124,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/gemeente-groningen/",
-      "cluster": "project_pages",
-      "words": 149,
-      "titleLength": 35,
-      "descriptionLength": 111,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/handlefy-storage-application-database/",
-      "cluster": "project_pages",
-      "words": 154,
-      "titleLength": 54,
-      "descriptionLength": 112,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/hitachi-construction-machinery-europe/",
-      "cluster": "project_pages",
-      "words": 152,
-      "titleLength": 54,
-      "descriptionLength": 115,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/lc-packaging-nl/",
-      "cluster": "project_pages",
-      "words": 145,
-      "titleLength": 32,
-      "descriptionLength": 92,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/learning-technology-vision/",
-      "cluster": "project_pages",
-      "words": 155,
-      "titleLength": 43,
-      "descriptionLength": 111,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/mepal/",
-      "cluster": "project_pages",
-      "words": 137,
-      "titleLength": 30,
-      "descriptionLength": 152,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/minimal-etl-modeler/",
-      "cluster": "project_pages",
-      "words": 151,
-      "titleLength": 36,
-      "descriptionLength": 122,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/okr-coaching/",
-      "cluster": "project_pages",
-      "words": 147,
-      "titleLength": 29,
-      "descriptionLength": 83,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/optimize-banking-process-at-gors/",
-      "cluster": "project_pages",
-      "words": 151,
-      "titleLength": 49,
-      "descriptionLength": 100,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/optimize-creditor-process-at-gors/",
-      "cluster": "project_pages",
-      "words": 148,
-      "titleLength": 50,
-      "descriptionLength": 102,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/optimize-data-entry-at-versteijnen-logistics/",
-      "cluster": "project_pages",
-      "words": 150,
-      "titleLength": 61,
       "descriptionLength": 104,
       "jsonLdCount": 1,
       "issues": [
@@ -700,11 +712,11 @@
       "score": 4
     },
     {
-      "route": "/projects/proactive-banking-implementation-research/",
-      "cluster": "project_pages",
-      "words": 149,
-      "titleLength": 58,
-      "descriptionLength": 113,
+      "route": "/certifications/feedback-geven-en-ontvangen/",
+      "cluster": "other",
+      "words": 137,
+      "titleLength": 44,
+      "descriptionLength": 106,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -712,9 +724,141 @@
       "score": 4
     },
     {
-      "route": "/projects/rpa-invoicing-for-livekindly/",
-      "cluster": "project_pages",
-      "words": 147,
+      "route": "/certifications/focusing-skills/",
+      "cluster": "other",
+      "words": 127,
+      "titleLength": 32,
+      "descriptionLength": 94,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/foundations-of-project-management/",
+      "cluster": "other",
+      "words": 133,
+      "titleLength": 50,
+      "descriptionLength": 125,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/guide-your-sap-s-4hana-project-to-success/",
+      "cluster": "other",
+      "words": 123,
+      "titleLength": 58,
+      "descriptionLength": 110,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/information-security-management-in-a-nutshell/",
+      "cluster": "other",
+      "words": 123,
+      "titleLength": 54,
+      "descriptionLength": 114,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/innovation-award-2022/",
+      "cluster": "other",
+      "words": 123,
+      "titleLength": 38,
+      "descriptionLength": 102,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/intermediate-python/",
+      "cluster": "other",
+      "words": 115,
+      "titleLength": 36,
+      "descriptionLength": 93,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/intermediate-sql/",
+      "cluster": "other",
+      "words": 118,
+      "titleLength": 33,
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/introduction-to-alteryx/",
+      "cluster": "other",
+      "words": 117,
+      "titleLength": 40,
+      "descriptionLength": 97,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/introduction-to-python/",
+      "cluster": "other",
+      "words": 112,
+      "titleLength": 39,
+      "descriptionLength": 96,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/introduction-to-sql/",
+      "cluster": "other",
+      "words": 120,
+      "titleLength": 36,
+      "descriptionLength": 93,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/introduction-to-statistics/",
+      "cluster": "other",
+      "words": 122,
+      "titleLength": 43,
+      "descriptionLength": 100,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/lean-management-green-belt/",
+      "cluster": "other",
+      "words": 136,
       "titleLength": 45,
       "descriptionLength": 107,
       "jsonLdCount": 1,
@@ -724,46 +868,82 @@
       "score": 4
     },
     {
-      "route": "/projects/sdp-dashboard/",
-      "cluster": "project_pages",
-      "words": 149,
-      "titleLength": 30,
-      "descriptionLength": 100,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/serious-game-for-agile-working/",
-      "cluster": "project_pages",
-      "words": 165,
-      "titleLength": 47,
-      "descriptionLength": 137,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/smart-data-platform/",
-      "cluster": "project_pages",
-      "words": 151,
-      "titleLength": 36,
-      "descriptionLength": 117,
-      "jsonLdCount": 1,
-      "issues": [
-        "thin_under_250_words"
-      ],
-      "score": 4
-    },
-    {
-      "route": "/projects/special-events-for-withlocals/",
-      "cluster": "project_pages",
-      "words": 147,
+      "route": "/certifications/lean-management-orange-belt/",
+      "cluster": "other",
+      "words": 136,
       "titleLength": 46,
+      "descriptionLength": 108,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/lean-management-yellow-belt/",
+      "cluster": "other",
+      "words": 134,
+      "titleLength": 45,
+      "descriptionLength": 107,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/mendix-rapid-developer/",
+      "cluster": "other",
+      "words": 110,
+      "titleLength": 32,
+      "descriptionLength": 87,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/microsoft-excel-specialist-2013/",
+      "cluster": "other",
+      "words": 107,
+      "titleLength": 38,
+      "descriptionLength": 96,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/nederlands-b2/",
+      "cluster": "other",
+      "words": 110,
+      "titleLength": 30,
+      "descriptionLength": 93,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/new-employee-business-partner-model-in-sap-s-4hana/",
+      "cluster": "other",
+      "words": 124,
+      "titleLength": 56,
+      "descriptionLength": 119,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/okr-basics/",
+      "cluster": "other",
+      "words": 114,
+      "titleLength": 27,
       "descriptionLength": 84,
       "jsonLdCount": 1,
       "issues": [
@@ -772,11 +952,11 @@
       "score": 4
     },
     {
-      "route": "/projects/traineeship-2-0/",
-      "cluster": "project_pages",
-      "words": 144,
-      "titleLength": 32,
-      "descriptionLength": 90,
+      "route": "/certifications/python-for-data-science-ai-and-development/",
+      "cluster": "other",
+      "words": 121,
+      "titleLength": 62,
+      "descriptionLength": 114,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -784,11 +964,11 @@
       "score": 4
     },
     {
-      "route": "/projects/universiteit-utrecht/",
-      "cluster": "project_pages",
-      "words": 141,
-      "titleLength": 37,
-      "descriptionLength": 81,
+      "route": "/certifications/sap-analytics-cloud/",
+      "cluster": "other",
+      "words": 135,
+      "titleLength": 53,
+      "descriptionLength": 126,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -796,11 +976,11 @@
       "score": 4
     },
     {
-      "route": "/projects/value-proposition-design-for-de-uitvindfabriek/",
-      "cluster": "project_pages",
-      "words": 155,
-      "titleLength": 63,
-      "descriptionLength": 112,
+      "route": "/certifications/sap-s4hana-cloud-public-edition-sales-2023/",
+      "cluster": "other",
+      "words": 131,
+      "titleLength": 48,
+      "descriptionLength": 145,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -808,11 +988,11 @@
       "score": 4
     },
     {
-      "route": "/projects/veilig-op-reis-tas/",
-      "cluster": "project_pages",
-      "words": 152,
-      "titleLength": 35,
-      "descriptionLength": 90,
+      "route": "/certifications/technical-support-fundamentals/",
+      "cluster": "other",
+      "words": 118,
+      "titleLength": 47,
+      "descriptionLength": 122,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -820,11 +1000,47 @@
       "score": 4
     },
     {
-      "route": "/projects/warehouse-management-system-part-1/",
-      "cluster": "project_pages",
-      "words": 163,
-      "titleLength": 52,
-      "descriptionLength": 135,
+      "route": "/certifications/understanding-cloud-computing/",
+      "cluster": "other",
+      "words": 117,
+      "titleLength": 46,
+      "descriptionLength": 103,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/understanding-data-engineering/",
+      "cluster": "other",
+      "words": 118,
+      "titleLength": 47,
+      "descriptionLength": 104,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/understanding-data-science/",
+      "cluster": "other",
+      "words": 117,
+      "titleLength": 43,
+      "descriptionLength": 100,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/certifications/understanding-data-topics/",
+      "cluster": "other",
+      "words": 119,
+      "titleLength": 42,
+      "descriptionLength": 99,
       "jsonLdCount": 1,
       "issues": [
         "thin_under_250_words"
@@ -1062,6 +1278,929 @@
       "hasAnalytics": true,
       "noindex": false,
       "issues": []
+    },
+    {
+      "file": "certifications/building-tomorrows-erp-with-sap-s-4hana/index.html",
+      "route": "/certifications/building-tomorrows-erp-with-sap-s-4hana/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/building-tomorrows-erp-with-sap-s-4hana/",
+      "title": "Building Tomorrow’s ERP with SAP S/4HANA — Viggo Meesters",
+      "titleLength": 57,
+      "description": "Building Tomorrow’s ERP with SAP S/4HANA credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 109,
+      "h1": "Building Tomorrow’s ERP with SAP S/4HANA",
+      "h1Count": 1,
+      "words": 119,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/conflictoplossing/index.html",
+      "route": "/certifications/conflictoplossing/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/conflictoplossing/",
+      "title": "Conflictoplossing — Viggo Meesters",
+      "titleLength": 34,
+      "description": "Conflictoplossing credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 96,
+      "h1": "Conflictoplossing",
+      "h1Count": 1,
+      "words": 132,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/data-preparation-in-alteryx/index.html",
+      "route": "/certifications/data-preparation-in-alteryx/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/data-preparation-in-alteryx/",
+      "title": "Data Preparation in Alteryx — Viggo Meesters",
+      "titleLength": 44,
+      "description": "Data Preparation in Alteryx credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 101,
+      "h1": "Data Preparation in Alteryx",
+      "h1Count": 1,
+      "words": 120,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/data-science-methodology/index.html",
+      "route": "/certifications/data-science-methodology/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/data-science-methodology/",
+      "title": "Data Science Methodology — Viggo Meesters",
+      "titleLength": 41,
+      "description": "Data Science Methodology credential issued by IBM, with locally hosted proof where available.",
+      "descriptionLength": 93,
+      "h1": "Data Science Methodology",
+      "h1Count": 1,
+      "words": 117,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/data-science-orientation/index.html",
+      "route": "/certifications/data-science-orientation/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/data-science-orientation/",
+      "title": "Data Science Orientation — Viggo Meesters",
+      "titleLength": 41,
+      "description": "Data Science Orientation credential issued by IBM, with locally hosted proof where available.",
+      "descriptionLength": 93,
+      "h1": "Data Science Orientation",
+      "h1Count": 1,
+      "words": 114,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/data-transformation-in-alteryx/index.html",
+      "route": "/certifications/data-transformation-in-alteryx/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/data-transformation-in-alteryx/",
+      "title": "Data Transformation in Alteryx — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Data Transformation in Alteryx credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 104,
+      "h1": "Data Transformation in Alteryx",
+      "h1Count": 1,
+      "words": 115,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/feedback-geven-en-ontvangen/index.html",
+      "route": "/certifications/feedback-geven-en-ontvangen/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/feedback-geven-en-ontvangen/",
+      "title": "Feedback geven en ontvangen — Viggo Meesters",
+      "titleLength": 44,
+      "description": "Feedback geven en ontvangen credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 106,
+      "h1": "Feedback geven en ontvangen",
+      "h1Count": 1,
+      "words": 137,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/focusing-skills/index.html",
+      "route": "/certifications/focusing-skills/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/focusing-skills/",
+      "title": "Focusing Skills — Viggo Meesters",
+      "titleLength": 32,
+      "description": "Focusing Skills credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 94,
+      "h1": "Focusing Skills",
+      "h1Count": 1,
+      "words": 127,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/foundations-of-project-management/index.html",
+      "route": "/certifications/foundations-of-project-management/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/foundations-of-project-management/",
+      "title": "Foundations of Project Management — Viggo Meesters",
+      "titleLength": 50,
+      "description": "Foundations of Project Management credential issued by Google Career Certificates, with locally hosted proof where available.",
+      "descriptionLength": 125,
+      "h1": "Foundations of Project Management",
+      "h1Count": 1,
+      "words": 133,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/guide-your-sap-s-4hana-project-to-success/index.html",
+      "route": "/certifications/guide-your-sap-s-4hana-project-to-success/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/guide-your-sap-s-4hana-project-to-success/",
+      "title": "Guide Your SAP S/4HANA Project to Success — Viggo Meesters",
+      "titleLength": 58,
+      "description": "Guide Your SAP S/4HANA Project to Success credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 110,
+      "h1": "Guide Your SAP S/4HANA Project to Success",
+      "h1Count": 1,
+      "words": 123,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/index.html",
+      "route": "/certifications/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/",
+      "title": "Certifications &amp; Credentials — Viggo Meesters",
+      "titleLength": 49,
+      "description": "A verified archive of 36 SAP, data, automation, process, and development credentials earned by Viggo Meesters since 2016.",
+      "descriptionLength": 121,
+      "h1": "Credentials, with receipts.",
+      "h1Count": 1,
+      "words": 1107,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.7,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": []
+    },
+    {
+      "file": "certifications/information-security-management-in-a-nutshell/index.html",
+      "route": "/certifications/information-security-management-in-a-nutshell/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/information-security-management-in-a-nutshell/",
+      "title": "Information Security Management in a… — Viggo Meesters",
+      "titleLength": 54,
+      "description": "Information Security Management in a Nutshell credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 114,
+      "h1": "Information Security Management in a Nutshell",
+      "h1Count": 1,
+      "words": 123,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/innovation-award-2022/index.html",
+      "route": "/certifications/innovation-award-2022/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/innovation-award-2022/",
+      "title": "Innovation Award 2022 — Viggo Meesters",
+      "titleLength": 38,
+      "description": "Innovation Award 2022 credential issued by Wärtsilä Voyage, with locally hosted proof where available.",
+      "descriptionLength": 102,
+      "h1": "Innovation Award 2022",
+      "h1Count": 1,
+      "words": 123,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/intermediate-python/index.html",
+      "route": "/certifications/intermediate-python/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/intermediate-python/",
+      "title": "Intermediate Python — Viggo Meesters",
+      "titleLength": 36,
+      "description": "Intermediate Python credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 93,
+      "h1": "Intermediate Python",
+      "h1Count": 1,
+      "words": 115,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/intermediate-sql/index.html",
+      "route": "/certifications/intermediate-sql/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/intermediate-sql/",
+      "title": "Intermediate SQL — Viggo Meesters",
+      "titleLength": 33,
+      "description": "Intermediate SQL credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 90,
+      "h1": "Intermediate SQL",
+      "h1Count": 1,
+      "words": 118,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/introduction-to-alteryx/index.html",
+      "route": "/certifications/introduction-to-alteryx/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/introduction-to-alteryx/",
+      "title": "Introduction to Alteryx — Viggo Meesters",
+      "titleLength": 40,
+      "description": "Introduction to Alteryx credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 97,
+      "h1": "Introduction to Alteryx",
+      "h1Count": 1,
+      "words": 117,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/introduction-to-python/index.html",
+      "route": "/certifications/introduction-to-python/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/introduction-to-python/",
+      "title": "Introduction to Python — Viggo Meesters",
+      "titleLength": 39,
+      "description": "Introduction to Python credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 96,
+      "h1": "Introduction to Python",
+      "h1Count": 1,
+      "words": 112,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/introduction-to-sql/index.html",
+      "route": "/certifications/introduction-to-sql/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/introduction-to-sql/",
+      "title": "Introduction to SQL — Viggo Meesters",
+      "titleLength": 36,
+      "description": "Introduction to SQL credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 93,
+      "h1": "Introduction to SQL",
+      "h1Count": 1,
+      "words": 120,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/introduction-to-statistics/index.html",
+      "route": "/certifications/introduction-to-statistics/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/introduction-to-statistics/",
+      "title": "Introduction to Statistics — Viggo Meesters",
+      "titleLength": 43,
+      "description": "Introduction to Statistics credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 100,
+      "h1": "Introduction to Statistics",
+      "h1Count": 1,
+      "words": 122,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/lean-management-green-belt/index.html",
+      "route": "/certifications/lean-management-green-belt/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/lean-management-green-belt/",
+      "title": "Lean Management - Green Belt — Viggo Meesters",
+      "titleLength": 45,
+      "description": "Lean Management - Green Belt credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 107,
+      "h1": "Lean Management - Green Belt",
+      "h1Count": 1,
+      "words": 136,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/lean-management-orange-belt/index.html",
+      "route": "/certifications/lean-management-orange-belt/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/lean-management-orange-belt/",
+      "title": "Lean Management - Orange Belt — Viggo Meesters",
+      "titleLength": 46,
+      "description": "Lean Management - Orange Belt credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 108,
+      "h1": "Lean Management - Orange Belt",
+      "h1Count": 1,
+      "words": 136,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/lean-management-yellow-belt/index.html",
+      "route": "/certifications/lean-management-yellow-belt/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/lean-management-yellow-belt/",
+      "title": "Lean Management: Yellow Belt — Viggo Meesters",
+      "titleLength": 45,
+      "description": "Lean Management: Yellow Belt credential issued by Aiden Academy, with locally hosted proof where available.",
+      "descriptionLength": 107,
+      "h1": "Lean Management: Yellow Belt",
+      "h1Count": 1,
+      "words": 134,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/mendix-rapid-developer/index.html",
+      "route": "/certifications/mendix-rapid-developer/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/mendix-rapid-developer/",
+      "title": "Rapid Developer — Viggo Meesters",
+      "titleLength": 32,
+      "description": "Rapid Developer credential issued by Mendix, with locally hosted proof where available.",
+      "descriptionLength": 87,
+      "h1": "Rapid Developer",
+      "h1Count": 1,
+      "words": 110,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/microsoft-excel-specialist-2013/index.html",
+      "route": "/certifications/microsoft-excel-specialist-2013/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/microsoft-excel-specialist-2013/",
+      "title": "Excel Specialist 2013 — Viggo Meesters",
+      "titleLength": 38,
+      "description": "Excel Specialist 2013 credential issued by Microsoft, with locally hosted proof where available.",
+      "descriptionLength": 96,
+      "h1": "Excel Specialist 2013",
+      "h1Count": 1,
+      "words": 107,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/nederlands-b2/index.html",
+      "route": "/certifications/nederlands-b2/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/nederlands-b2/",
+      "title": "Nederlands B2 — Viggo Meesters",
+      "titleLength": 30,
+      "description": "Nederlands B2 credential issued by Hogeschooltaal, with locally hosted proof where available.",
+      "descriptionLength": 93,
+      "h1": "Nederlands B2",
+      "h1Count": 1,
+      "words": 110,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/new-employee-business-partner-model-in-sap-s-4hana/index.html",
+      "route": "/certifications/new-employee-business-partner-model-in-sap-s-4hana/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/new-employee-business-partner-model-in-sap-s-4hana/",
+      "title": "New Employee Business Partner Model in… — Viggo Meesters",
+      "titleLength": 56,
+      "description": "New Employee Business Partner Model in SAP S/4HANA credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 119,
+      "h1": "New Employee Business Partner Model in SAP S/4HANA",
+      "h1Count": 1,
+      "words": 124,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/okr-basics/index.html",
+      "route": "/certifications/okr-basics/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/okr-basics/",
+      "title": "OKR Basics — Viggo Meesters",
+      "titleLength": 27,
+      "description": "OKR Basics credential issued by Workpath, with locally hosted proof where available.",
+      "descriptionLength": 84,
+      "h1": "OKR Basics",
+      "h1Count": 1,
+      "words": 114,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/python-for-data-science-ai-and-development/index.html",
+      "route": "/certifications/python-for-data-science-ai-and-development/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/python-for-data-science-ai-and-development/",
+      "title": "Python for Data Science, AI &amp; Development — Viggo Meesters",
+      "titleLength": 62,
+      "description": "Python for Data Science, AI &amp; Development credential issued by IBM, with locally hosted proof where available.",
+      "descriptionLength": 114,
+      "h1": "Python for Data Science, AI Development",
+      "h1Count": 1,
+      "words": 121,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/sap-analytics-cloud/index.html",
+      "route": "/certifications/sap-analytics-cloud/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/sap-analytics-cloud/",
+      "title": "SAP Analytics Cloud - SAP Certified… — Viggo Meesters",
+      "titleLength": 53,
+      "description": "SAP Analytics Cloud - SAP Certified Application Associate credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 126,
+      "h1": "SAP Analytics Cloud - SAP Certified Application Associate",
+      "h1Count": 1,
+      "words": 135,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/sap-s4hana-cloud-public-edition-sales-2023/index.html",
+      "route": "/certifications/sap-s4hana-cloud-public-edition-sales-2023/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/sap-s4hana-cloud-public-edition-sales-2023/",
+      "title": "Sales 2023 - SAP S/4HANA Cloud… — Viggo Meesters",
+      "titleLength": 48,
+      "description": "Sales 2023 - SAP S/4HANA Cloud - Public Edition - SAP Certified Application… credential issued by SAP, with locally hosted proof where available.",
+      "descriptionLength": 145,
+      "h1": "Sales 2023 - SAP S/4HANA Cloud - Public Edition - SAP Certified Application Associate",
+      "h1Count": 1,
+      "words": 131,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/technical-support-fundamentals/index.html",
+      "route": "/certifications/technical-support-fundamentals/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/technical-support-fundamentals/",
+      "title": "Technical Support Fundamentals — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Technical Support Fundamentals credential issued by Google Career Certificates, with locally hosted proof where available.",
+      "descriptionLength": 122,
+      "h1": "Technical Support Fundamentals",
+      "h1Count": 1,
+      "words": 118,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-cloud-computing/index.html",
+      "route": "/certifications/understanding-cloud-computing/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-cloud-computing/",
+      "title": "Understanding Cloud Computing — Viggo Meesters",
+      "titleLength": 46,
+      "description": "Understanding Cloud Computing credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 103,
+      "h1": "Understanding Cloud Computing",
+      "h1Count": 1,
+      "words": 117,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-data-engineering/index.html",
+      "route": "/certifications/understanding-data-engineering/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-data-engineering/",
+      "title": "Understanding Data Engineering — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Understanding Data Engineering credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 104,
+      "h1": "Understanding Data Engineering",
+      "h1Count": 1,
+      "words": 118,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-data-science/index.html",
+      "route": "/certifications/understanding-data-science/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-data-science/",
+      "title": "Understanding Data Science — Viggo Meesters",
+      "titleLength": 43,
+      "description": "Understanding Data Science credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 100,
+      "h1": "Understanding Data Science",
+      "h1Count": 1,
+      "words": 117,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-data-topics/index.html",
+      "route": "/certifications/understanding-data-topics/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-data-topics/",
+      "title": "Understanding Data Topics — Viggo Meesters",
+      "titleLength": 42,
+      "description": "Understanding Data Topics credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 99,
+      "h1": "Understanding Data Topics",
+      "h1Count": 1,
+      "words": 119,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-data-visualization/index.html",
+      "route": "/certifications/understanding-data-visualization/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-data-visualization/",
+      "title": "Understanding Data Visualization — Viggo Meesters",
+      "titleLength": 49,
+      "description": "Understanding Data Visualization credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 106,
+      "h1": "Understanding Data Visualization",
+      "h1Count": 1,
+      "words": 122,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "certifications/understanding-machine-learning/index.html",
+      "route": "/certifications/understanding-machine-learning/",
+      "cluster": "other",
+      "url": "https://viggomeesters.com/certifications/understanding-machine-learning/",
+      "title": "Understanding Machine Learning — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Understanding Machine Learning credential issued by DataCamp, with locally hosted proof where available.",
+      "descriptionLength": 104,
+      "h1": "Understanding Machine Learning",
+      "h1Count": 1,
+      "words": 118,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
     },
     {
       "file": "cli-agents-guide/index.html",
@@ -3157,11 +4296,11 @@
       "url": "https://viggomeesters.com/timeline/",
       "title": "Work &amp; Build Timeline — Viggo Meesters",
       "titleLength": 42,
-      "description": "The complete, connected timeline of Viggo Meesters&apos; professional projects, products, repositories, agent systems, data migration work, and writing since 2014.",
-      "descriptionLength": 163,
+      "description": "Explore Viggo Meesters&apos; projects, credentials, products, repositories, systems, and writing in one connected timeline since 2014.",
+      "descriptionLength": 134,
       "h1": "Things I’ve made move.",
       "h1Count": 1,
-      "words": 1909,
+      "words": 2684,
       "jsonLdCount": 0,
       "lastmod": "2026-07-13",
       "priority": 0.8,

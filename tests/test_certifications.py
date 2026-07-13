@@ -79,8 +79,40 @@ class CertificationArchiveContract(unittest.TestCase):
             with self.subTest(credential=item["slug"]):
                 self.assertIn(f'id="{item["slug"]}"', archive)
                 self.assertIn(item["title"], archive)
-                self.assertIn(f'/certifications/#{item["slug"]}', timeline)
+                self.assertIn(f'/certifications/{item["slug"]}/', timeline)
                 self.assertIn(f'data-certification="{item["slug"]}"', timeline)
+
+    def test_every_credential_has_a_first_party_detail_page_with_proof_state(self) -> None:
+        credentials = json.loads(CATALOG.read_text(encoding="utf-8"))
+        archive = (ROOT / "certifications" / "index.html").read_text(encoding="utf-8")
+        timeline = (ROOT / "timeline" / "index.html").read_text(encoding="utf-8")
+        sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+
+        for item in credentials:
+            with self.subTest(credential=item["slug"]):
+                route = f'/certifications/{item["slug"]}/'
+                page_path = ROOT / route.lstrip("/") / "index.html"
+                self.assertTrue(page_path.is_file(), page_path)
+                page = page_path.read_text(encoding="utf-8")
+
+                self.assertIn(f'https://viggomeesters.com{route}', page)
+                self.assertIn(item["title"], page)
+                self.assertIn(item["issuer"], page)
+                self.assertIn(item["verification_url"].replace("&", "&amp;"), page)
+                self.assertIn(f'href="{route}"', archive)
+                self.assertIn(f'href="{route}"', timeline)
+                self.assertIn(f'<loc>https://viggomeesters.com{route}</loc>', sitemap)
+
+                artifact = item["artifact"]
+                if artifact["status"] == "hosted":
+                    self.assertIn(artifact["path"], page)
+                    if artifact["mime_type"] == "application/pdf":
+                        self.assertIn('class="proof-frame proof-pdf"', page)
+                    else:
+                        self.assertIn('class="proof-image"', page)
+                else:
+                    self.assertIn('class="proof-missing"', page)
+                    self.assertIn(artifact["reason"], page)
 
 
 if __name__ == "__main__":
