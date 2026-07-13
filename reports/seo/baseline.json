@@ -2,10 +2,10 @@
   "generatedAt": "current working tree",
   "baseUrl": "https://viggomeesters.com",
   "summary": {
-    "publicPages": 65,
-    "sitemapEntries": 51,
+    "publicPages": 102,
+    "sitemapEntries": 88,
     "issueTypes": 2,
-    "totalIssueOccurrences": 7,
+    "totalIssueOccurrences": 43,
     "clusters": {
       "personal_knowledge_system": {
         "pages": 8,
@@ -57,11 +57,11 @@
         "missingJsonLd": 0
       },
       "project_pages": {
-        "pages": 5,
-        "issues": 1,
-        "thin": 1,
+        "pages": 42,
+        "issues": 37,
+        "thin": 37,
         "missingOgImage": 0,
-        "missingJsonLd": 5
+        "missingJsonLd": 6
       },
       "skills_registry": {
         "pages": 15,
@@ -86,7 +86,7 @@
       }
     },
     "issueCounts": {
-      "thin_under_250_words": 6,
+      "thin_under_250_words": 42,
       "short_title": 1
     }
   },
@@ -131,6 +131,222 @@
       "route": "/nederlandse-huizenkoop-agent-context/",
       "file": "nederlandse-huizenkoop-agent-context/index.html",
       "cluster": "other",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/alteryx-flow-agent-toolkit/",
+      "file": "projects/alteryx-flow-agent-toolkit/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/alteryx-template-flows/",
+      "file": "projects/alteryx-template-flows/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/automated-content-generator/",
+      "file": "projects/automated-content-generator/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/boels-fleet-nl/",
+      "file": "projects/boels-fleet-nl/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/bpmn-goods-documents-at-versteijnen-logistics/",
+      "file": "projects/bpmn-goods-documents-at-versteijnen-logistics/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/business-academy-event/",
+      "file": "projects/business-academy-event/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/cramo-baltics/",
+      "file": "projects/cramo-baltics/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/cramo-finland/",
+      "file": "projects/cramo-finland/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/cramo-fleet/",
+      "file": "projects/cramo-fleet/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/cramo-sweden-norway/",
+      "file": "projects/cramo-sweden-norway/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/culture-research-at-oriental-green-house/",
+      "file": "projects/culture-research-at-oriental-green-house/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/customer-satisfaction-analysis/",
+      "file": "projects/customer-satisfaction-analysis/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/gemeente-groningen/",
+      "file": "projects/gemeente-groningen/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/handlefy-storage-application-database/",
+      "file": "projects/handlefy-storage-application-database/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/hitachi-construction-machinery-europe/",
+      "file": "projects/hitachi-construction-machinery-europe/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/lc-packaging-nl/",
+      "file": "projects/lc-packaging-nl/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/learning-technology-vision/",
+      "file": "projects/learning-technology-vision/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/mepal/",
+      "file": "projects/mepal/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/minimal-etl-modeler/",
+      "file": "projects/minimal-etl-modeler/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/okr-coaching/",
+      "file": "projects/okr-coaching/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/optimize-banking-process-at-gors/",
+      "file": "projects/optimize-banking-process-at-gors/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/optimize-creditor-process-at-gors/",
+      "file": "projects/optimize-creditor-process-at-gors/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/optimize-data-entry-at-versteijnen-logistics/",
+      "file": "projects/optimize-data-entry-at-versteijnen-logistics/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/proactive-banking-implementation-research/",
+      "file": "projects/proactive-banking-implementation-research/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/rpa-invoicing-for-livekindly/",
+      "file": "projects/rpa-invoicing-for-livekindly/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/sdp-dashboard/",
+      "file": "projects/sdp-dashboard/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/serious-game-for-agile-working/",
+      "file": "projects/serious-game-for-agile-working/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/smart-data-platform/",
+      "file": "projects/smart-data-platform/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/special-events-for-withlocals/",
+      "file": "projects/special-events-for-withlocals/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/traineeship-2-0/",
+      "file": "projects/traineeship-2-0/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/universiteit-utrecht/",
+      "file": "projects/universiteit-utrecht/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/value-proposition-design-for-de-uitvindfabriek/",
+      "file": "projects/value-proposition-design-for-de-uitvindfabriek/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/veilig-op-reis-tas/",
+      "file": "projects/veilig-op-reis-tas/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/warehouse-management-system-part-1/",
+      "file": "projects/warehouse-management-system-part-1/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/warehouse-management-system-part-2/",
+      "file": "projects/warehouse-management-system-part-2/index.html",
+      "cluster": "project_pages",
+      "issue": "thin_under_250_words"
+    },
+    {
+      "route": "/projects/zes-battery-container/",
+      "file": "projects/zes-battery-container/index.html",
+      "cluster": "project_pages",
       "issue": "thin_under_250_words"
     }
   ],
@@ -208,346 +424,412 @@
       "score": 4
     },
     {
-      "route": "/guides/",
-      "cluster": "guides_articles",
-      "words": 366,
-      "titleLength": 24,
-      "descriptionLength": 121,
-      "jsonLdCount": 0,
-      "issues": [
-        "short_title"
-      ],
-      "score": 2
-    },
-    {
-      "route": "/agent-brain/",
-      "cluster": "personal_knowledge_system",
-      "words": 395,
-      "titleLength": 55,
-      "descriptionLength": 105,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow-loop/",
-      "cluster": "agent_workflow",
-      "words": 292,
-      "titleLength": 33,
-      "descriptionLength": 117,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow/",
-      "cluster": "agent_workflow",
-      "words": 328,
-      "titleLength": 41,
-      "descriptionLength": 144,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow/2025-december-github-copilot-vscode/",
-      "cluster": "agent_workflow",
-      "words": 282,
-      "titleLength": 52,
-      "descriptionLength": 149,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow/2026-february-claude-code-life-os-x/",
-      "cluster": "agent_workflow",
-      "words": 269,
-      "titleLength": 54,
-      "descriptionLength": 137,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow/2026-january-claude-code-agent-brain/",
-      "cluster": "agent_workflow",
-      "words": 267,
-      "titleLength": 60,
-      "descriptionLength": 156,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/",
-      "cluster": "agent_workflow",
-      "words": 252,
-      "titleLength": 65,
-      "descriptionLength": 134,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/apps/",
-      "cluster": "other",
-      "words": 267,
-      "titleLength": 36,
-      "descriptionLength": 125,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/cli-agents-guide/",
-      "cluster": "guides_articles",
-      "words": 1621,
-      "titleLength": 40,
-      "descriptionLength": 106,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/database-types-agent-first-systems/",
-      "cluster": "guides_articles",
-      "words": 801,
-      "titleLength": 38,
-      "descriptionLength": 140,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/evidence-based-work/",
-      "cluster": "other",
-      "words": 682,
-      "titleLength": 36,
-      "descriptionLength": 139,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/foci-fear-of-choosing-incorrectly/",
-      "cluster": "guides_articles",
-      "words": 1146,
-      "titleLength": 34,
-      "descriptionLength": 126,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/helicopter-to-detail/",
-      "cluster": "methodologies",
-      "words": 649,
+      "route": "/projects/alteryx-flow-agent-toolkit/",
+      "cluster": "project_pages",
+      "words": 156,
       "titleLength": 43,
-      "descriptionLength": 113,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "descriptionLength": 128,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/hermes-telegram-wsl-starten/",
-      "cluster": "other",
-      "words": 1668,
-      "titleLength": 56,
-      "descriptionLength": 168,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/jsonl-agent-first-data-structures/",
-      "cluster": "guides_articles",
-      "words": 1155,
+      "route": "/projects/alteryx-template-flows/",
+      "cluster": "project_pages",
+      "words": 153,
       "titleLength": 39,
-      "descriptionLength": 133,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "descriptionLength": 119,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/knowledge-pyramid/",
-      "cluster": "methodologies",
-      "words": 968,
-      "titleLength": 40,
-      "descriptionLength": 133,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/mega-vault-viewer/",
+      "route": "/projects/automated-content-generator/",
       "cluster": "project_pages",
-      "words": 261,
-      "titleLength": 34,
-      "descriptionLength": 118,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/obsidian-plugins/",
-      "cluster": "project_pages",
-      "words": 537,
-      "titleLength": 33,
-      "descriptionLength": 94,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/personal-knowledge-system/",
-      "cluster": "personal_knowledge_system",
-      "words": 278,
-      "titleLength": 53,
-      "descriptionLength": 169,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/personal-knowledge-system/agent-interfaces/",
-      "cluster": "personal_knowledge_system",
-      "words": 261,
+      "words": 140,
       "titleLength": 44,
-      "descriptionLength": 158,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/personal-knowledge-system/markdown-vault/",
-      "cluster": "personal_knowledge_system",
-      "words": 285,
-      "titleLength": 42,
-      "descriptionLength": 163,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/personal-knowledge-system/schema-and-frontmatter/",
-      "cluster": "personal_knowledge_system",
-      "words": 273,
-      "titleLength": 52,
-      "descriptionLength": 132,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/personal-knowledge-system/system-folder/",
-      "cluster": "personal_knowledge_system",
-      "words": 255,
-      "titleLength": 42,
-      "descriptionLength": 144,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/personal-knowledge-system/validation-and-indexing/",
-      "cluster": "personal_knowledge_system",
-      "words": 263,
-      "titleLength": 52,
-      "descriptionLength": 154,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/proof-first-delivery/",
-      "cluster": "methodologies",
-      "words": 267,
-      "titleLength": 34,
-      "descriptionLength": 120,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/raycast-life-os/",
-      "cluster": "personal_knowledge_system",
-      "words": 319,
-      "titleLength": 50,
-      "descriptionLength": 105,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/sap-agent-context/",
+      "route": "/projects/boels-fleet-nl/",
       "cluster": "project_pages",
-      "words": 258,
-      "titleLength": 34,
-      "descriptionLength": 106,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "words": 147,
+      "titleLength": 31,
+      "descriptionLength": 95,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/source-backed-synthesis/",
-      "cluster": "methodologies",
-      "words": 276,
-      "titleLength": 37,
-      "descriptionLength": 117,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "route": "/projects/bpmn-goods-documents-at-versteijnen-logistics/",
+      "cluster": "project_pages",
+      "words": 154,
+      "titleLength": 62,
+      "descriptionLength": 108,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/systems/",
-      "cluster": "other",
-      "words": 274,
-      "titleLength": 40,
-      "descriptionLength": 126,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "route": "/projects/business-academy-event/",
+      "cluster": "project_pages",
+      "words": 149,
+      "titleLength": 39,
+      "descriptionLength": 157,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/tech-news/",
-      "cluster": "signal_dashboards",
-      "words": 255,
-      "titleLength": 33,
-      "descriptionLength": 125,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "route": "/projects/cramo-baltics/",
+      "cluster": "project_pages",
+      "words": 145,
+      "titleLength": 30,
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/tech-stack/",
-      "cluster": "tech_stack",
-      "words": 288,
-      "titleLength": 27,
-      "descriptionLength": 92,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "route": "/projects/cramo-finland/",
+      "cluster": "project_pages",
+      "words": 148,
+      "titleLength": 30,
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     },
     {
-      "route": "/tech-stack/ai-agents/",
-      "cluster": "tech_stack",
-      "words": 301,
-      "titleLength": 57,
-      "descriptionLength": 116,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
-    },
-    {
-      "route": "/tech-stack/developer-tools/",
-      "cluster": "tech_stack",
-      "words": 287,
+      "route": "/projects/cramo-fleet/",
+      "cluster": "project_pages",
+      "words": 150,
       "titleLength": 28,
+      "descriptionLength": 91,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/cramo-sweden-norway/",
+      "cluster": "project_pages",
+      "words": 147,
+      "titleLength": 42,
       "descriptionLength": 102,
-      "jsonLdCount": 0,
-      "issues": [],
-      "score": 1
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/culture-research-at-oriental-green-house/",
+      "cluster": "project_pages",
+      "words": 158,
+      "titleLength": 57,
+      "descriptionLength": 129,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/customer-satisfaction-analysis/",
+      "cluster": "project_pages",
+      "words": 156,
+      "titleLength": 47,
+      "descriptionLength": 124,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/gemeente-groningen/",
+      "cluster": "project_pages",
+      "words": 149,
+      "titleLength": 35,
+      "descriptionLength": 111,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/handlefy-storage-application-database/",
+      "cluster": "project_pages",
+      "words": 154,
+      "titleLength": 54,
+      "descriptionLength": 112,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/hitachi-construction-machinery-europe/",
+      "cluster": "project_pages",
+      "words": 152,
+      "titleLength": 54,
+      "descriptionLength": 115,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/lc-packaging-nl/",
+      "cluster": "project_pages",
+      "words": 145,
+      "titleLength": 32,
+      "descriptionLength": 92,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/learning-technology-vision/",
+      "cluster": "project_pages",
+      "words": 155,
+      "titleLength": 43,
+      "descriptionLength": 111,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/mepal/",
+      "cluster": "project_pages",
+      "words": 137,
+      "titleLength": 30,
+      "descriptionLength": 152,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/minimal-etl-modeler/",
+      "cluster": "project_pages",
+      "words": 151,
+      "titleLength": 36,
+      "descriptionLength": 122,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/okr-coaching/",
+      "cluster": "project_pages",
+      "words": 147,
+      "titleLength": 29,
+      "descriptionLength": 83,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/optimize-banking-process-at-gors/",
+      "cluster": "project_pages",
+      "words": 151,
+      "titleLength": 49,
+      "descriptionLength": 100,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/optimize-creditor-process-at-gors/",
+      "cluster": "project_pages",
+      "words": 148,
+      "titleLength": 50,
+      "descriptionLength": 102,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/optimize-data-entry-at-versteijnen-logistics/",
+      "cluster": "project_pages",
+      "words": 150,
+      "titleLength": 61,
+      "descriptionLength": 104,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/proactive-banking-implementation-research/",
+      "cluster": "project_pages",
+      "words": 149,
+      "titleLength": 58,
+      "descriptionLength": 113,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/rpa-invoicing-for-livekindly/",
+      "cluster": "project_pages",
+      "words": 147,
+      "titleLength": 45,
+      "descriptionLength": 107,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/sdp-dashboard/",
+      "cluster": "project_pages",
+      "words": 149,
+      "titleLength": 30,
+      "descriptionLength": 100,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/serious-game-for-agile-working/",
+      "cluster": "project_pages",
+      "words": 165,
+      "titleLength": 47,
+      "descriptionLength": 137,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/smart-data-platform/",
+      "cluster": "project_pages",
+      "words": 151,
+      "titleLength": 36,
+      "descriptionLength": 117,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/special-events-for-withlocals/",
+      "cluster": "project_pages",
+      "words": 147,
+      "titleLength": 46,
+      "descriptionLength": 84,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/traineeship-2-0/",
+      "cluster": "project_pages",
+      "words": 144,
+      "titleLength": 32,
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/universiteit-utrecht/",
+      "cluster": "project_pages",
+      "words": 141,
+      "titleLength": 37,
+      "descriptionLength": 81,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/value-proposition-design-for-de-uitvindfabriek/",
+      "cluster": "project_pages",
+      "words": 155,
+      "titleLength": 63,
+      "descriptionLength": 112,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/veilig-op-reis-tas/",
+      "cluster": "project_pages",
+      "words": 152,
+      "titleLength": 35,
+      "descriptionLength": 90,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
+    },
+    {
+      "route": "/projects/warehouse-management-system-part-1/",
+      "cluster": "project_pages",
+      "words": 163,
+      "titleLength": 52,
+      "descriptionLength": 135,
+      "jsonLdCount": 1,
+      "issues": [
+        "thin_under_250_words"
+      ],
+      "score": 4
     }
   ],
   "pages": [
@@ -1325,6 +1607,929 @@
       "issues": []
     },
     {
+      "file": "projects/alteryx-flow-agent-toolkit/index.html",
+      "route": "/projects/alteryx-flow-agent-toolkit/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/alteryx-flow-agent-toolkit/",
+      "title": "Alteryx Flow Agent Toolkit — Viggo Meesters",
+      "titleLength": 43,
+      "description": "Alteryx Flow Agent Toolkit: Reusable toolkit for agent-assisted Alteryx flow development. Role: Creator &amp; tooling developer.",
+      "descriptionLength": 128,
+      "h1": "Alteryx Flow Agent Toolkit",
+      "h1Count": 1,
+      "words": 156,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/alteryx-template-flows/index.html",
+      "route": "/projects/alteryx-template-flows/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/alteryx-template-flows/",
+      "title": "Alteryx Template Flows — Viggo Meesters",
+      "titleLength": 39,
+      "description": "Alteryx Template Flows: Reusable Alteryx transformation flow templates for SAP data migration. Role: Tooling developer.",
+      "descriptionLength": 119,
+      "h1": "Alteryx Template Flows",
+      "h1Count": 1,
+      "words": 153,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/automated-content-generator/index.html",
+      "route": "/projects/automated-content-generator/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/automated-content-generator/",
+      "title": "Automated Content Generator — Viggo Meesters",
+      "titleLength": 44,
+      "description": "Automated Content Generator: Develop automated product content generator. Role: Developer.",
+      "descriptionLength": 90,
+      "h1": "Automated Content Generator",
+      "h1Count": 1,
+      "words": 140,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/boels-fleet-nl/index.html",
+      "route": "/projects/boels-fleet-nl/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/boels-fleet-nl/",
+      "title": "Boels Fleet NL — Viggo Meesters",
+      "titleLength": 31,
+      "description": "Boels Fleet NL: Insphire to S4HANA Private - material, assets. Role: Data Migration Consultant.",
+      "descriptionLength": 95,
+      "h1": "Boels Fleet NL",
+      "h1Count": 1,
+      "words": 147,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/bpmn-goods-documents-at-versteijnen-logistics/index.html",
+      "route": "/projects/bpmn-goods-documents-at-versteijnen-logistics/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/bpmn-goods-documents-at-versteijnen-logistics/",
+      "title": "BPMN Goods Documents at Versteijnen Logistics — Viggo Meesters",
+      "titleLength": 62,
+      "description": "BPMN Goods Documents at Versteijnen Logistics: Optimize goods received document flow. Role: Process analyst.",
+      "descriptionLength": 108,
+      "h1": "BPMN Goods Documents at Versteijnen Logistics",
+      "h1Count": 1,
+      "words": 154,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/business-academy-event/index.html",
+      "route": "/projects/business-academy-event/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/business-academy-event/",
+      "title": "Business Academy Event — Viggo Meesters",
+      "titleLength": 39,
+      "description": "Business Academy Event: Organize Business Academy Event. Role: Event organiser. This record covers the project scope, period, role, and professional context.",
+      "descriptionLength": 157,
+      "h1": "Business Academy Event",
+      "h1Count": 1,
+      "words": 149,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/cramo-baltics/index.html",
+      "route": "/projects/cramo-baltics/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/cramo-baltics/",
+      "title": "Cramo Baltics — Viggo Meesters",
+      "titleLength": 30,
+      "description": "Cramo Baltics: IBS to S4HANA Private - financial objects. Role: Data Migration Consultant.",
+      "descriptionLength": 90,
+      "h1": "Cramo Baltics",
+      "h1Count": 1,
+      "words": 145,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/cramo-finland/index.html",
+      "route": "/projects/cramo-finland/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/cramo-finland/",
+      "title": "Cramo Finland — Viggo Meesters",
+      "titleLength": 30,
+      "description": "Cramo Finland: IBS to S4HANA Private - financial objects. Role: Data Migration Consultant.",
+      "descriptionLength": 90,
+      "h1": "Cramo Finland",
+      "h1Count": 1,
+      "words": 148,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/cramo-fleet/index.html",
+      "route": "/projects/cramo-fleet/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/cramo-fleet/",
+      "title": "Cramo Fleet — Viggo Meesters",
+      "titleLength": 28,
+      "description": "Cramo Fleet: IBS to S4HANA Private - material, assets etc. Role: Data Migration Consultant.",
+      "descriptionLength": 91,
+      "h1": "Cramo Fleet",
+      "h1Count": 1,
+      "words": 150,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/cramo-sweden-norway/index.html",
+      "route": "/projects/cramo-sweden-norway/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/cramo-sweden-norway/",
+      "title": "Cramo Sweden &amp; Norway — Viggo Meesters",
+      "titleLength": 42,
+      "description": "Cramo Sweden &amp; Norway: IBS to S4HANA Private - financial objects. Role: Data Migration Consultant.",
+      "descriptionLength": 102,
+      "h1": "Cramo Sweden Norway",
+      "h1Count": 1,
+      "words": 147,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/culture-research-at-oriental-green-house/index.html",
+      "route": "/projects/culture-research-at-oriental-green-house/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/culture-research-at-oriental-green-house/",
+      "title": "Culture Research at Oriëntal Green House — Viggo Meesters",
+      "titleLength": 57,
+      "description": "Culture Research at Oriëntal Green House: Research company culture, structure and processes. Role: Project lead &amp; Researcher.",
+      "descriptionLength": 129,
+      "h1": "Culture Research at Oriëntal Green House",
+      "h1Count": 1,
+      "words": 158,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/customer-satisfaction-analysis/index.html",
+      "route": "/projects/customer-satisfaction-analysis/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/customer-satisfaction-analysis/",
+      "title": "Customer Satisfaction Analysis — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Customer Satisfaction Analysis: Identify most important attribute that influences customer satisfaction. Role: Data analyst.",
+      "descriptionLength": 124,
+      "h1": "Customer Satisfaction Analysis",
+      "h1Count": 1,
+      "words": 156,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/gemeente-groningen/index.html",
+      "route": "/projects/gemeente-groningen/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/gemeente-groningen/",
+      "title": "Gemeente Groningen — Viggo Meesters",
+      "titleLength": 35,
+      "description": "Gemeente Groningen: DaFinci to S/4HANA - financial migration, subsidy objects. Role: Data Migration Consultant.",
+      "descriptionLength": 111,
+      "h1": "Gemeente Groningen",
+      "h1Count": 1,
+      "words": 149,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/handlefy-storage-application-database/index.html",
+      "route": "/projects/handlefy-storage-application-database/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/handlefy-storage-application-database/",
+      "title": "Handlefy Storage Application Database — Viggo Meesters",
+      "titleLength": 54,
+      "description": "Handlefy Storage Application Database: Relational database design for Handlefy 1.0 application. Role: Developer.",
+      "descriptionLength": 112,
+      "h1": "Handlefy Storage Application Database",
+      "h1Count": 1,
+      "words": 154,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/hitachi-construction-machinery-europe/index.html",
+      "route": "/projects/hitachi-construction-machinery-europe/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/hitachi-construction-machinery-europe/",
+      "title": "Hitachi Construction Machinery Europe — Viggo Meesters",
+      "titleLength": 54,
+      "description": "Hitachi Construction Machinery Europe: S/4HANA data migration and load validation. Role: Data Migration Consultant.",
+      "descriptionLength": 115,
+      "h1": "Hitachi Construction Machinery Europe",
+      "h1Count": 1,
+      "words": 152,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/index.html",
+      "route": "/projects/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/",
+      "title": "Projects — Viggo Meesters",
+      "titleLength": 25,
+      "description": "A complete index of 36 professional and personal projects by Viggo Meesters, from 2014 to now.",
+      "descriptionLength": 94,
+      "h1": "Projects.",
+      "h1Count": 1,
+      "words": 549,
+      "jsonLdCount": 0,
+      "lastmod": "2026-07-13",
+      "priority": 0.8,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": []
+    },
+    {
+      "file": "projects/lc-packaging-nl/index.html",
+      "route": "/projects/lc-packaging-nl/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/lc-packaging-nl/",
+      "title": "LC Packaging NL — Viggo Meesters",
+      "titleLength": 32,
+      "description": "LC Packaging NL: S4HANA on-premise to S4HANA private cloud. Role: Data Migration Consultant.",
+      "descriptionLength": 92,
+      "h1": "LC Packaging NL",
+      "h1Count": 1,
+      "words": 145,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/learning-technology-vision/index.html",
+      "route": "/projects/learning-technology-vision/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/learning-technology-vision/",
+      "title": "Learning Technology Vision — Viggo Meesters",
+      "titleLength": 43,
+      "description": "Learning Technology Vision: Develop future vision and development roadmap for GGZ Ecademy LMS. Role: Developer.",
+      "descriptionLength": 111,
+      "h1": "Learning Technology Vision",
+      "h1Count": 1,
+      "words": 155,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/mepal/index.html",
+      "route": "/projects/mepal/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/mepal/",
+      "title": "Mepal project — Viggo Meesters",
+      "titleLength": 30,
+      "description": "Mepal: S4HANA Public Cloud implementation. Role: Authorization Consultant. This record covers the project scope, period, role, and professional context.",
+      "descriptionLength": 152,
+      "h1": "Mepal",
+      "h1Count": 1,
+      "words": 137,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/minimal-etl-modeler/index.html",
+      "route": "/projects/minimal-etl-modeler/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/minimal-etl-modeler/",
+      "title": "Minimal ETL Modeler — Viggo Meesters",
+      "titleLength": 36,
+      "description": "Minimal ETL Modeler: Browser-based drag-and-drop ETL pipeline designer inspired by Alteryx. Role: Creator &amp; developer.",
+      "descriptionLength": 122,
+      "h1": "Minimal ETL Modeler",
+      "h1Count": 1,
+      "words": 151,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/okr-coaching/index.html",
+      "route": "/projects/okr-coaching/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/okr-coaching/",
+      "title": "OKR Coaching — Viggo Meesters",
+      "titleLength": 29,
+      "description": "OKR Coaching: Implementation phase 2 - Objectives and Key Results. Role: OKR Coach.",
+      "descriptionLength": 83,
+      "h1": "OKR Coaching",
+      "h1Count": 1,
+      "words": 147,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/optimize-banking-process-at-gors/index.html",
+      "route": "/projects/optimize-banking-process-at-gors/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/optimize-banking-process-at-gors/",
+      "title": "Optimize Banking Process at Gors — Viggo Meesters",
+      "titleLength": 49,
+      "description": "Optimize Banking Process at Gors: Develop AutoHotkey automation for banking proces. Role: Developer.",
+      "descriptionLength": 100,
+      "h1": "Optimize Banking Process at Gors",
+      "h1Count": 1,
+      "words": 151,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/optimize-creditor-process-at-gors/index.html",
+      "route": "/projects/optimize-creditor-process-at-gors/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/optimize-creditor-process-at-gors/",
+      "title": "Optimize Creditor Process at Gors — Viggo Meesters",
+      "titleLength": 50,
+      "description": "Optimize Creditor Process at Gors: Optimize creditor proces with ProActive templates. Role: Developer.",
+      "descriptionLength": 102,
+      "h1": "Optimize Creditor Process at Gors",
+      "h1Count": 1,
+      "words": 148,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/optimize-data-entry-at-versteijnen-logistics/index.html",
+      "route": "/projects/optimize-data-entry-at-versteijnen-logistics/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/optimize-data-entry-at-versteijnen-logistics/",
+      "title": "Optimize Data Entry at Versteijnen Logistics — Viggo Meesters",
+      "titleLength": 61,
+      "description": "Optimize Data Entry at Versteijnen Logistics: Optimize data processing with AutoHotkey. Role: Developer.",
+      "descriptionLength": 104,
+      "h1": "Optimize Data Entry at Versteijnen Logistics",
+      "h1Count": 1,
+      "words": 150,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/proactive-banking-implementation-research/index.html",
+      "route": "/projects/proactive-banking-implementation-research/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/proactive-banking-implementation-research/",
+      "title": "ProActive Banking Implementation Research — Viggo Meesters",
+      "titleLength": 58,
+      "description": "ProActive Banking Implementation Research: Research implementation of ProActive banking module. Role: Researcher.",
+      "descriptionLength": 113,
+      "h1": "ProActive Banking Implementation Research",
+      "h1Count": 1,
+      "words": 149,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/rpa-invoicing-for-livekindly/index.html",
+      "route": "/projects/rpa-invoicing-for-livekindly/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/rpa-invoicing-for-livekindly/",
+      "title": "RPA Invoicing for LiveKindly — Viggo Meesters",
+      "titleLength": 45,
+      "description": "RPA Invoicing for LiveKindly: Implement SAP Robotic Process Automation for invoicing. Role: iRPA Developer.",
+      "descriptionLength": 107,
+      "h1": "RPA Invoicing for LiveKindly",
+      "h1Count": 1,
+      "words": 147,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/sdp-dashboard/index.html",
+      "route": "/projects/sdp-dashboard/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/sdp-dashboard/",
+      "title": "SDP Dashboard — Viggo Meesters",
+      "titleLength": 30,
+      "description": "SDP Dashboard: Browser-based dashboard for Smart Data Platform methodology. Role: Tooling developer.",
+      "descriptionLength": 100,
+      "h1": "SDP Dashboard",
+      "h1Count": 1,
+      "words": 149,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/serious-game-for-agile-working/index.html",
+      "route": "/projects/serious-game-for-agile-working/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/serious-game-for-agile-working/",
+      "title": "Serious Game for Agile Working — Viggo Meesters",
+      "titleLength": 47,
+      "description": "Serious Game for Agile Working: Research and develop method to increase awareness of agile development. Role: Researcher &amp; innovator.",
+      "descriptionLength": 137,
+      "h1": "Serious Game for Agile Working",
+      "h1Count": 1,
+      "words": 165,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/smart-data-platform/index.html",
+      "route": "/projects/smart-data-platform/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/smart-data-platform/",
+      "title": "Smart Data Platform — Viggo Meesters",
+      "titleLength": 36,
+      "description": "Smart Data Platform: SAP data migration methodology and documentation hub. Role: Contributor &amp; tooling developer.",
+      "descriptionLength": 117,
+      "h1": "Smart Data Platform",
+      "h1Count": 1,
+      "words": 151,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/special-events-for-withlocals/index.html",
+      "route": "/projects/special-events-for-withlocals/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/special-events-for-withlocals/",
+      "title": "Special Events for Withlocals — Viggo Meesters",
+      "titleLength": 46,
+      "description": "Special Events for Withlocals: Design new event type Special Events. Role: Designer.",
+      "descriptionLength": 84,
+      "h1": "Special Events for Withlocals",
+      "h1Count": 1,
+      "words": 147,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/traineeship-2-0/index.html",
+      "route": "/projects/traineeship-2-0/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/traineeship-2-0/",
+      "title": "Traineeship 2.0 — Viggo Meesters",
+      "titleLength": 32,
+      "description": "Traineeship 2.0: Rework Aiden Traineeship v1.0 -&gt; v2.0. Role: Initiator &amp; designer.",
+      "descriptionLength": 90,
+      "h1": "Traineeship 2.0",
+      "h1Count": 1,
+      "words": 144,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/universiteit-utrecht/index.html",
+      "route": "/projects/universiteit-utrecht/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/universiteit-utrecht/",
+      "title": "Universiteit Utrecht — Viggo Meesters",
+      "titleLength": 37,
+      "description": "Universiteit Utrecht: S/4HANA HR data migration. Role: Data Migration Consultant.",
+      "descriptionLength": 81,
+      "h1": "Universiteit Utrecht",
+      "h1Count": 1,
+      "words": 141,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/value-proposition-design-for-de-uitvindfabriek/index.html",
+      "route": "/projects/value-proposition-design-for-de-uitvindfabriek/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/value-proposition-design-for-de-uitvindfabriek/",
+      "title": "Value Proposition Design for De Uitvindfabriek — Viggo Meesters",
+      "titleLength": 63,
+      "description": "Value Proposition Design for De Uitvindfabriek: Create Value Proposition Design for new service. Role: Designer.",
+      "descriptionLength": 112,
+      "h1": "Value Proposition Design for De Uitvindfabriek",
+      "h1Count": 1,
+      "words": 155,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/veilig-op-reis-tas/index.html",
+      "route": "/projects/veilig-op-reis-tas/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/veilig-op-reis-tas/",
+      "title": "Veilig Op Reis tas — Viggo Meesters",
+      "titleLength": 35,
+      "description": "Veilig Op Reis tas: Design physical practical product that provides value. Role: Designer.",
+      "descriptionLength": 90,
+      "h1": "Veilig Op Reis tas",
+      "h1Count": 1,
+      "words": 152,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/warehouse-management-system-part-1/index.html",
+      "route": "/projects/warehouse-management-system-part-1/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/warehouse-management-system-part-1/",
+      "title": "Warehouse Management System: part 1 — Viggo Meesters",
+      "titleLength": 52,
+      "description": "Warehouse Management System: part 1: Develop Warehouse Management System (WMS) using Mendix. Role: Scrum Master &amp; Mendix Developer.",
+      "descriptionLength": 135,
+      "h1": "Warehouse Management System: part 1",
+      "h1Count": 1,
+      "words": 163,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/warehouse-management-system-part-2/index.html",
+      "route": "/projects/warehouse-management-system-part-2/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/warehouse-management-system-part-2/",
+      "title": "Warehouse Management System: part 2 — Viggo Meesters",
+      "titleLength": 52,
+      "description": "Warehouse Management System: part 2: Develop additional features Warehouse Management System (WMS) using Mendix. Role: Project lead &amp; Mendix developer.",
+      "descriptionLength": 155,
+      "h1": "Warehouse Management System: part 2",
+      "h1Count": 1,
+      "words": 163,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
+      "file": "projects/zes-battery-container/index.html",
+      "route": "/projects/zes-battery-container/",
+      "cluster": "project_pages",
+      "url": "https://viggomeesters.com/projects/zes-battery-container/",
+      "title": "ZES Battery Container — Viggo Meesters",
+      "titleLength": 38,
+      "description": "ZES Battery Container: Research possibility of using battery container at construction site. Role: Researcher.",
+      "descriptionLength": 110,
+      "h1": "ZES Battery Container",
+      "h1Count": 1,
+      "words": 151,
+      "jsonLdCount": 1,
+      "lastmod": "2026-07-13",
+      "priority": 0.6,
+      "hasOgTitle": true,
+      "hasOgDescription": true,
+      "hasOgImage": true,
+      "hasTwitterCard": true,
+      "hasAnalytics": true,
+      "noindex": false,
+      "issues": [
+        "thin_under_250_words"
+      ]
+    },
+    {
       "file": "proof-first-delivery/index.html",
       "route": "/proof-first-delivery/",
       "cluster": "methodologies",
@@ -1952,11 +3157,11 @@
       "url": "https://viggomeesters.com/timeline/",
       "title": "Work &amp; Build Timeline — Viggo Meesters",
       "titleLength": 42,
-      "description": "A selected, proof-linked timeline of Viggo Meesters&apos; projects, repositories, agent systems, data migration work, and writing.",
-      "descriptionLength": 130,
+      "description": "The complete, connected timeline of Viggo Meesters&apos; professional projects, products, repositories, agent systems, data migration work, and writing since 2014.",
+      "descriptionLength": 163,
       "h1": "Things I’ve made move.",
       "h1Count": 1,
-      "words": 633,
+      "words": 1909,
       "jsonLdCount": 0,
       "lastmod": "2026-07-13",
       "priority": 0.8,

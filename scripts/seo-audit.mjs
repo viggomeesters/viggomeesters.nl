@@ -72,7 +72,7 @@ function classify(route) {
   if (route.startsWith("/personal-knowledge-system/") || route === "/agent-brain/" || route === "/raycast-life-os/") return "personal_knowledge_system";
   if (route.startsWith("/tech-stack/") || route === "/uses/") return "tech_stack";
   if (route.startsWith("/skills/")) return "skills_registry";
-  if ([
+  if (route.startsWith("/projects/") || [
     "/sap-agent-context/",
     "/mega-vault-viewer/",
     "/obsidian-plugins/",

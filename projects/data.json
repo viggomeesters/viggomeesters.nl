@@ -1,0 +1,927 @@
+[
+  {
+    "slug": "alteryx-flow-agent-toolkit",
+    "title": "Alteryx Flow Agent Toolkit",
+    "timeline_heading": "Alteryx Flow Agent Toolkit",
+    "period": "May 2026 to now",
+    "start_date": "2026-05-01",
+    "linked_to": "McCoy",
+    "organization": "McCoy",
+    "context": "Internal project",
+    "role": "Creator & tooling developer",
+    "summary": "Reusable toolkit for agent-assisted Alteryx flow development",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Explore related public systems",
+        "href": "/systems/",
+        "external": false
+      },
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "hitachi-construction-machinery-europe",
+    "title": "Hitachi Construction Machinery Europe",
+    "timeline_heading": "Hitachi Construction Machinery Europe",
+    "period": "Apr 2026 to May 2026",
+    "start_date": "2026-04-01",
+    "linked_to": "McCoy",
+    "organization": "Hitachi Construction Machinery Europe",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "S/4HANA data migration and load validation",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "sdp-dashboard",
+    "title": "SDP Dashboard",
+    "timeline_heading": "SDP Dashboard",
+    "period": "Mar 2026 to now",
+    "start_date": "2026-03-01",
+    "linked_to": "McCoy",
+    "organization": "McCoy",
+    "context": "Internal project",
+    "role": "Tooling developer",
+    "summary": "Browser-based dashboard for Smart Data Platform methodology",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Explore related public systems",
+        "href": "/systems/",
+        "external": false
+      },
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "alteryx-template-flows",
+    "title": "Alteryx Template Flows",
+    "timeline_heading": "Alteryx Template Flows",
+    "period": "Nov 2025 to now",
+    "start_date": "2025-11-01",
+    "linked_to": "McCoy",
+    "organization": "McCoy",
+    "context": "Internal project",
+    "role": "Tooling developer",
+    "summary": "Reusable Alteryx transformation flow templates for SAP data migration",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Explore related public systems",
+        "href": "/systems/",
+        "external": false
+      },
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "smart-data-platform",
+    "title": "Smart Data Platform",
+    "timeline_heading": "Smart Data Platform",
+    "period": "Nov 2025 to now",
+    "start_date": "2025-11-01",
+    "linked_to": "McCoy",
+    "organization": "McCoy",
+    "context": "Internal project",
+    "role": "Contributor & tooling developer",
+    "summary": "SAP data migration methodology and documentation hub",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Explore related public systems",
+        "href": "/systems/",
+        "external": false
+      },
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "gemeente-groningen",
+    "title": "Gemeente Groningen",
+    "timeline_heading": "Gemeente Groningen",
+    "period": "Nov 2025 to May 2026",
+    "start_date": "2025-11-01",
+    "linked_to": "McCoy",
+    "organization": "Gemeente Groningen",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "DaFinci to S/4HANA - financial migration, subsidy objects",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "universiteit-utrecht",
+    "title": "Universiteit Utrecht",
+    "timeline_heading": "Universiteit Utrecht",
+    "period": "Nov 2025 to May 2026",
+    "start_date": "2025-11-01",
+    "linked_to": "McCoy",
+    "organization": "Universiteit Utrecht",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "S/4HANA HR data migration",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "minimal-etl-modeler",
+    "title": "Minimal ETL Modeler",
+    "timeline_heading": "Minimal ETL Modeler starts with one stubborn idea.",
+    "period": "Oct 2025 to now",
+    "start_date": "2025-10-01",
+    "linked_to": "Independent",
+    "organization": "Independent",
+    "context": "Personal project",
+    "role": "Creator & developer",
+    "summary": "Browser-based drag-and-drop ETL pipeline designer inspired by Alteryx",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Open the live workbench",
+        "href": "https://minimal-etl-modeler.vercel.app",
+        "external": true
+      },
+      {
+        "label": "Browse all apps",
+        "href": "/apps/",
+        "external": false
+      }
+    ]
+  },
+  {
+    "slug": "cramo-fleet",
+    "title": "Cramo Fleet",
+    "timeline_heading": "Cramo Fleet",
+    "period": "Jun 2025 to Oct 2025",
+    "start_date": "2025-06-01",
+    "linked_to": "Aiden",
+    "organization": "Boels Cramo",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "IBS to S4HANA Private - material, assets etc",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "lc-packaging-nl",
+    "title": "LC Packaging NL",
+    "timeline_heading": "LC Packaging NL",
+    "period": "Apr 2025 to Oct 2025",
+    "start_date": "2025-04-01",
+    "linked_to": "Aiden",
+    "organization": "LC Packaging",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "S4HANA on-premise to S4HANA private cloud",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "mepal",
+    "title": "Mepal",
+    "timeline_heading": "Mepal",
+    "period": "Jan 2025 to Mar 2025",
+    "start_date": "2025-01-01",
+    "linked_to": "Aiden",
+    "organization": "Mepal",
+    "context": "Client project",
+    "role": "Authorization Consultant",
+    "summary": "S4HANA Public Cloud implementation",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "cramo-baltics",
+    "title": "Cramo Baltics",
+    "timeline_heading": "Cramo Baltics",
+    "period": "Nov 2024 to May 2025",
+    "start_date": "2024-11-01",
+    "linked_to": "Aiden",
+    "organization": "Boels",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "IBS to S4HANA Private - financial objects",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "cramo-sweden-norway",
+    "title": "Cramo Sweden & Norway",
+    "timeline_heading": "Cramo Sweden & Norway",
+    "period": "Apr 2024 to Dec 2024",
+    "start_date": "2024-04-01",
+    "linked_to": "Aiden",
+    "organization": "Boels",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "IBS to S4HANA Private - financial objects",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "okr-coaching",
+    "title": "OKR Coaching",
+    "timeline_heading": "OKR Coaching",
+    "period": "Nov 2023 to Dec 2024",
+    "start_date": "2023-11-01",
+    "linked_to": "Aiden",
+    "organization": "Aiden",
+    "context": "Internal project",
+    "role": "OKR Coach",
+    "summary": "Implementation phase 2 - Objectives and Key Results",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "boels-fleet-nl",
+    "title": "Boels Fleet NL",
+    "timeline_heading": "Boels Fleet NL",
+    "period": "Jun 2023 to Aug 2024",
+    "start_date": "2023-06-01",
+    "linked_to": "Aiden",
+    "organization": "Boels",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "Insphire to S4HANA Private - material, assets",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "cramo-finland",
+    "title": "Cramo Finland",
+    "timeline_heading": "Cramo Finland",
+    "period": "Jun 2023 to Apr 2024",
+    "start_date": "2023-06-01",
+    "linked_to": "Aiden",
+    "organization": "Boels",
+    "context": "Client project",
+    "role": "Data Migration Consultant",
+    "summary": "IBS to S4HANA Private - financial objects",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "rpa-invoicing-for-livekindly",
+    "title": "RPA Invoicing for LiveKindly",
+    "timeline_heading": "RPA Invoicing for LiveKindly",
+    "period": "Jan 2023 to May 2023",
+    "start_date": "2023-01-01",
+    "linked_to": "Aiden",
+    "organization": "LiveKindly",
+    "context": "Client project",
+    "role": "iRPA Developer",
+    "summary": "Implement SAP Robotic Process Automation for invoicing",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "traineeship-2-0",
+    "title": "Traineeship 2.0",
+    "timeline_heading": "Traineeship 2.0",
+    "period": "Dec 2022 to Jun 2023",
+    "start_date": "2022-12-01",
+    "linked_to": "Aiden",
+    "organization": "Aiden",
+    "context": "Internal project",
+    "role": "Initiator & designer",
+    "summary": "Rework Aiden Traineeship v1.0 -> v2.0",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "automated-content-generator",
+    "title": "Automated Content Generator",
+    "timeline_heading": "Automated Content Generator",
+    "period": "Apr 2022 to Aug 2022",
+    "start_date": "2022-04-01",
+    "linked_to": "Brandsom",
+    "organization": "Brandsom",
+    "context": "Internal project",
+    "role": "Developer",
+    "summary": "Develop automated product content generator",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "learning-technology-vision",
+    "title": "Learning Technology Vision",
+    "timeline_heading": "Learning Technology Vision",
+    "period": "Jan 2022 to Jul 2022",
+    "start_date": "2022-01-01",
+    "linked_to": "GGZ Ecademy Coöperatie U.A.",
+    "organization": "GGZ Ecademy",
+    "context": "Internal project",
+    "role": "Developer",
+    "summary": "Develop future vision and development roadmap for GGZ Ecademy LMS",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "zes-battery-container",
+    "title": "ZES Battery Container",
+    "timeline_heading": "ZES Battery Container",
+    "period": "Aug 2021 to Jan 2022",
+    "start_date": "2021-08-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Wartsila",
+    "context": "Client project",
+    "role": "Researcher",
+    "summary": "Research possibility of using battery container at construction site",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "special-events-for-withlocals",
+    "title": "Special Events for Withlocals",
+    "timeline_heading": "Special Events for Withlocals",
+    "period": "Aug 2021 to Jan 2022",
+    "start_date": "2021-08-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "WithLocals",
+    "context": "Client project",
+    "role": "Designer",
+    "summary": "Design new event type Special Events",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "veilig-op-reis-tas",
+    "title": "Veilig Op Reis tas",
+    "timeline_heading": "Veilig Op Reis tas",
+    "period": "Aug 2021 to Jan 2022",
+    "start_date": "2021-08-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Avans Minor",
+    "context": "Internal project",
+    "role": "Designer",
+    "summary": "Design physical practical product that provides value",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "warehouse-management-system-part-2",
+    "title": "Warehouse Management System: part 2",
+    "timeline_heading": "Warehouse Management System — part 2",
+    "period": "Aug 2021 to Jan 2022",
+    "start_date": "2021-08-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Fictional company Lunenburg",
+    "context": "Client project",
+    "role": "Project lead & Mendix developer",
+    "summary": "Develop additional features Warehouse Management System (WMS) using Mendix",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "customer-satisfaction-analysis",
+    "title": "Customer Satisfaction Analysis",
+    "timeline_heading": "Customer Satisfaction Analysis",
+    "period": "Feb 2021 to Jul 2021",
+    "start_date": "2021-02-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Algorithmic Perfumery",
+    "context": "Client project",
+    "role": "Data analyst",
+    "summary": "Identify most important attribute that influences customer satisfaction",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "value-proposition-design-for-de-uitvindfabriek",
+    "title": "Value Proposition Design for De Uitvindfabriek",
+    "timeline_heading": "Value Proposition Design for De Uitvindfabriek",
+    "period": "Feb 2021 to Jul 2021",
+    "start_date": "2021-02-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "De Uitvindfabriek",
+    "context": "Client project",
+    "role": "Designer",
+    "summary": "Create Value Proposition Design for new service",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "serious-game-for-agile-working",
+    "title": "Serious Game for Agile Working",
+    "timeline_heading": "Serious Game for Agile Working",
+    "period": "Sep 2020 to Feb 2021",
+    "start_date": "2020-09-01",
+    "linked_to": "Brabant Water N.V.",
+    "organization": "Brabant Water",
+    "context": "Internal project",
+    "role": "Researcher & innovator",
+    "summary": "Research and develop method to increase awareness of agile development",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "warehouse-management-system-part-1",
+    "title": "Warehouse Management System: part 1",
+    "timeline_heading": "Warehouse Management System — part 1",
+    "period": "Feb 2020 to Jul 2020",
+    "start_date": "2020-02-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Fictional company Lunenburg",
+    "context": "Client project",
+    "role": "Scrum Master & Mendix Developer",
+    "summary": "Develop Warehouse Management System (WMS) using Mendix",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "culture-research-at-oriental-green-house",
+    "title": "Culture Research at Oriëntal Green House",
+    "timeline_heading": "Culture Research at Oriëntal Green House",
+    "period": "Sep 2019 to Feb 2020",
+    "start_date": "2019-09-01",
+    "linked_to": "Avans Hogeschool",
+    "organization": "Oriëntal Green House",
+    "context": "Client project",
+    "role": "Project lead & Researcher",
+    "summary": "Research company culture, structure and processes",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "business-academy-event",
+    "title": "Business Academy Event",
+    "timeline_heading": "Business Academy Event",
+    "period": "Feb 2018 to Jul 2018",
+    "start_date": "2018-02-01",
+    "linked_to": "Fontys Hogescholen",
+    "organization": "Fontys Hogescholen",
+    "context": "Internal project",
+    "role": "Event organiser",
+    "summary": "Organize Business Academy Event",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "optimize-data-entry-at-versteijnen-logistics",
+    "title": "Optimize Data Entry at Versteijnen Logistics",
+    "timeline_heading": "Optimize Data Entry at Versteijnen Logistics",
+    "period": "Feb 2018 to Mar 2018",
+    "start_date": "2018-02-01",
+    "linked_to": "Versteijnen Logistics",
+    "organization": "Versteijnen Logistics",
+    "context": "Internal project",
+    "role": "Developer",
+    "summary": "Optimize data processing with AutoHotkey",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "handlefy-storage-application-database",
+    "title": "Handlefy Storage Application Database",
+    "timeline_heading": "Handlefy Storage Application Database",
+    "period": "Jan 2018 to Jul 2018",
+    "start_date": "2018-01-01",
+    "linked_to": "Fontys Hogescholen",
+    "organization": "Handlefy",
+    "context": "Client project",
+    "role": "Developer",
+    "summary": "Relational database design for Handlefy 1.0 application",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "bpmn-goods-documents-at-versteijnen-logistics",
+    "title": "BPMN Goods Documents at Versteijnen Logistics",
+    "timeline_heading": "BPMN Goods Documents at Versteijnen Logistics",
+    "period": "Nov 2017 to Jan 2018",
+    "start_date": "2017-11-01",
+    "linked_to": "Fontys Hogescholen",
+    "organization": "Versteijnen Logistics",
+    "context": "Client project",
+    "role": "Process analyst",
+    "summary": "Optimize goods received document flow",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "optimize-banking-process-at-gors",
+    "title": "Optimize Banking Process at Gors",
+    "timeline_heading": "Optimize Banking Process at Gors",
+    "period": "Feb 2016 to Aug 2016",
+    "start_date": "2016-02-01",
+    "linked_to": "Gors",
+    "organization": "Gors",
+    "context": "Internal project",
+    "role": "Developer",
+    "summary": "Develop AutoHotkey automation for banking proces",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "proactive-banking-implementation-research",
+    "title": "ProActive Banking Implementation Research",
+    "timeline_heading": "ProActive Banking Implementation Research",
+    "period": "Jan 2015 to Jul 2015",
+    "start_date": "2015-01-01",
+    "linked_to": "Scalda",
+    "organization": "Gors",
+    "context": "Internal project",
+    "role": "Researcher",
+    "summary": "Research implementation of ProActive banking module",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  },
+  {
+    "slug": "optimize-creditor-process-at-gors",
+    "title": "Optimize Creditor Process at Gors",
+    "timeline_heading": "Optimize Creditor Process at Gors",
+    "period": "Jun 2014 to Sep 2014",
+    "start_date": "2014-06-01",
+    "linked_to": "Gors",
+    "organization": "Gors",
+    "context": "Internal project",
+    "role": "Developer",
+    "summary": "Optimize creditor proces with ProActive templates",
+    "detail_gaps": [
+      "The concrete starting situation and constraints",
+      "Your specific approach and decisions",
+      "The result, impact, or lesson",
+      "Shareable tools, screenshots, or artifacts"
+    ],
+    "links": [
+      {
+        "label": "Professional record",
+        "href": "https://www.linkedin.com/in/viggomeesters/",
+        "external": true
+      }
+    ]
+  }
+]
