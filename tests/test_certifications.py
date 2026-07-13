@@ -65,11 +65,22 @@ class CertificationArchiveContract(unittest.TestCase):
         self.assertIn("6 source files still needed", visible_text)
         self.assertIn("https://viggomeesters.com/certifications/", sitemap)
 
+        learning_cards = re.findall(
+            r'<article class="timeline-entry"[^>]+data-type="certificate"[^>]*>',
+            timeline,
+        )
+        self.assertEqual(
+            len(learning_cards),
+            36,
+            "every credential should have its own timeline card",
+        )
+
         for item in credentials:
             with self.subTest(credential=item["slug"]):
                 self.assertIn(f'id="{item["slug"]}"', archive)
                 self.assertIn(item["title"], archive)
                 self.assertIn(f'/certifications/#{item["slug"]}', timeline)
+                self.assertIn(f'data-certification="{item["slug"]}"', timeline)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,6 @@ import html
 import json
 import re
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 
@@ -23,15 +22,6 @@ SITEMAP_END = "  <!-- END GENERATED CERTIFICATIONS -->"
 MONTHS = {
     "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr", "05": "May", "06": "Jun",
     "07": "Jul", "08": "Aug", "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec",
-}
-
-GROUP_TITLES = {
-    "2025-11": "Alteryx learning sprint",
-    "2022-11": "SAP, SQL, and professional practice",
-    "2022-10": "Delivery foundations across SAP, data, and Lean",
-    "2022-09": "The Aiden learning sprint begins",
-    "2022-08": "Data foundations",
-    "2021-04": "IBM data science foundations",
 }
 
 IMAGE_DIMENSIONS = {
@@ -141,18 +131,11 @@ def render_index(credentials: list[dict]) -> str:
 
 
 def render_timeline_entries(credentials: list[dict]) -> list[str]:
-    groups: dict[str, list[dict]] = defaultdict(list)
-    for item in credentials:
-        groups[item["issued"]].append(item)
     entries = []
-    for issued, items in groups.items():
-        issuers = ", ".join(sorted({item["issuer"] for item in items}))
-        title = GROUP_TITLES.get(issued, items[0]["title"] if len(items) == 1 else f'{len(items)} credentials completed')
-        links = "".join(f'<a href="/certifications/#{e(item["slug"])}">{e(item["title"])} &rarr;</a>' for item in items)
-        count = f'{len(items)} credentials' if len(items) != 1 else "Credential"
-        entries.append(f'''<article class="timeline-entry" data-date="{issued}-01" data-type="certificate" data-certification-group="{issued}">
-        <div class="entry-meta"><time class="entry-date" datetime="{issued}">{display_date(issued)}</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">{e(count)} / {e(issuers)}</span><h3>{e(title)}</h3><p>{'A focused learning milestone connecting ' + e(len(items)) + ' verified credentials.' if len(items) > 1 else 'A verified credential added to the professional learning record.'}</p><div class="proof-links">{links}</div></div>
+    for item in credentials:
+        entries.append(f'''<article class="timeline-entry" data-date="{item["issued"]}-01" data-type="certificate" data-certification="{e(item["slug"])}">
+        <div class="entry-meta"><time class="entry-date" datetime="{item["issued"]}">{display_date(item["issued"])}</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / {e(item["issuer"])}</span><h3>{e(item["title"])}</h3><p>{e(item["category"])} credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/#{e(item["slug"])}">View credential &rarr;</a></div></div>
       </article>''')
     return entries
 
@@ -168,7 +151,7 @@ def sync_timeline(content: str, credentials: list[dict]) -> str:
     if not section_match:
         raise ValueError("Timeline section not found")
     existing = re.findall(r'<article class="timeline-entry[^>]*>[\s\S]*?</article>', section_match.group(2))
-    existing = [entry for entry in existing if 'data-certification-group=' not in entry]
+    existing = [entry for entry in existing if 'data-type="certificate"' not in entry]
     combined = existing + render_timeline_entries(credentials)
     combined.sort(key=lambda entry: re.search(r'data-date="([^"]+)"', entry).group(1), reverse=True)
     replacement = section_match.group(1) + "\n      " + "\n\n      ".join(entry.strip() for entry in combined) + section_match.group(3)
@@ -216,7 +199,7 @@ def main() -> int:
     INDEX.write_text(expected_index, encoding="utf-8")
     TIMELINE.write_text(expected_timeline, encoding="utf-8")
     SITEMAP.write_text(expected_sitemap, encoding="utf-8")
-    print(f"Generated certification archive and {len({item['issued'] for item in credentials})} timeline milestones.")
+    print(f"Generated certification archive and {len(credentials)} timeline credential cards.")
     return 0
 
 
