@@ -5,10 +5,11 @@
   "description": "Static personal landing page hosted on Vercel.",
   "scripts": {
     "test": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
-    "check": "npm run check:projects && npm run check:public-boundary && npm run check:feeds && npm run check:site",
+    "check": "npm run check:projects && npm run check:certifications && npm run check:public-boundary && npm run check:feeds && npm run check:site",
     "check:all": "bash scripts/check-all.sh",
     "check:ci": "npm test && npm run check && npm run check:seo",
     "check:projects": "python3 scripts/generate-project-pages.py --check",
+    "check:certifications": "python3 scripts/generate-certification-pages.py --check",
     "check:public-boundary": "python3 scripts/check-public-boundary.py",
     "check:feeds": "python3 scripts/check-feed-links.py",
     "check:site": "node scripts/check-site.mjs",

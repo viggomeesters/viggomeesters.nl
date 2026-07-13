@@ -1,0 +1,590 @@
+[
+  {
+    "slug": "data-transformation-in-alteryx",
+    "title": "Data Transformation in Alteryx",
+    "issuer": "DataCamp",
+    "issued": "2025-11",
+    "credential_id": "131191f19b4ff7a2062b70dfb8c2990a4d6143d3",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/131191f19b4ff7a2062b70dfb8c2990a4d6143d3?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/data-transformation-in-alteryx.pdf",
+      "sha256": "48e9aa0310535937f4ff2b457d67997e280622e5443c2b42f7c61db17aae5cc1",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/48e9aa0310535937f4ff2b457d67997e280622e5443c2b42f7c61db17aae5cc1"
+    }
+  },
+  {
+    "slug": "data-preparation-in-alteryx",
+    "title": "Data Preparation in Alteryx",
+    "issuer": "DataCamp",
+    "issued": "2025-11",
+    "credential_id": "993661c846ced728e2963a73fafec00e9f8d5fbc",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/993661c846ced728e2963a73fafec00e9f8d5fbc?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/data-preparation-in-alteryx.pdf",
+      "sha256": "26b425efdd2ee60d7c9152f3166ed4c8c0e43570838657cb206974fd86fedf78",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/26b425efdd2ee60d7c9152f3166ed4c8c0e43570838657cb206974fd86fedf78"
+    }
+  },
+  {
+    "slug": "introduction-to-alteryx",
+    "title": "Introduction to Alteryx",
+    "issuer": "DataCamp",
+    "issued": "2025-11",
+    "credential_id": "759c6f63277b5fcff22fe52cd746ca770d835e2",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/a759c6f63277b5fcff22fe52cd746ca770d835e2?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/introduction-to-alteryx.pdf",
+      "sha256": "a951b0c6555878c49b516f3cc57e34ae775321b6c6ff79bc827cb07560741ed1",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/a951b0c6555878c49b516f3cc57e34ae775321b6c6ff79bc827cb07560741ed1"
+    }
+  },
+  {
+    "slug": "intermediate-python",
+    "title": "Intermediate Python",
+    "issuer": "DataCamp",
+    "issued": "2025-07",
+    "credential_id": "d4a02cdc3a9dfab76c64dbc2fd3a02c444c6a95f",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/d4a02cdc3a9dfab76c64dbc2fd3a02c444c6a95f?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/intermediate-python.pdf",
+      "sha256": "e9f14214f50fb89e35b1e8281f8b06fb9e6807149e47c5c5dcd7ed0131df35ad",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/e9f14214f50fb89e35b1e8281f8b06fb9e6807149e47c5c5dcd7ed0131df35ad"
+    }
+  },
+  {
+    "slug": "introduction-to-python",
+    "title": "Introduction to Python",
+    "issuer": "DataCamp",
+    "issued": "2024-05",
+    "credential_id": "e8fbb111224fa630a91ae49da443c72d4d5d04fa",
+    "verification_url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/e8fbb111224fa630a91ae49da443c72d4d5d04fa",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/introduction-to-python.png",
+      "sha256": "855af0e5dbc1959d007e93bc654fe0faf03646c003eeae06cff468ed798eafd0",
+      "mime_type": "image/png",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/855af0e5dbc1959d007e93bc654fe0faf03646c003eeae06cff468ed798eafd0"
+    }
+  },
+  {
+    "slug": "okr-basics",
+    "title": "OKR Basics",
+    "issuer": "Workpath",
+    "issued": "2023-11",
+    "credential_id": "65410f03546ad7a0260c4ed",
+    "verification_url": "https://onlinetrainings.workpath.com/certificate_v2/65410f03546ad7a0260c4ed5/user/6553283af635a6e02e0e69af",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/okr-basics.pdf",
+      "sha256": "a821e49ecb9bbaf9292fd844b73c215372996a34be1a21443ef96c4a2af23762",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/a821e49ecb9bbaf9292fd844b73c215372996a34be1a21443ef96c4a2af23762"
+    }
+  },
+  {
+    "slug": "foundations-of-project-management",
+    "title": "Foundations of Project Management",
+    "issuer": "Google Career Certificates",
+    "issued": "2023-10",
+    "credential_id": "SSRGTREDV6TC",
+    "verification_url": "https://www.coursera.org/account/accomplishments/verify/SSRGTREDV6TC",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/foundations-of-project-management.pdf",
+      "sha256": "2acd7ac0e6d580683f3da6185746e0f46797ee70b24dbd96b4068a2289f02015",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/2acd7ac0e6d580683f3da6185746e0f46797ee70b24dbd96b4068a2289f02015"
+    }
+  },
+  {
+    "slug": "sap-s4hana-cloud-public-edition-sales-2023",
+    "title": "Sales 2023 - SAP S/4HANA Cloud - Public Edition - SAP Certified Application Associate",
+    "issuer": "SAP",
+    "issued": "2023-04",
+    "credential_id": "C_S4CS_2302",
+    "verification_url": "https://www.credly.com/badges/144f0cd6-3fc1-406b-838b-2be7f165cdd3/public_url",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/sap-s4hana-cloud-public-edition-sales-2023.png",
+      "sha256": "968c59f0cda2bc8d4cfe6007c622749f321332a9c858321c74770f9c3ccf7127",
+      "mime_type": "image/png",
+      "provenance": "official_verification_page",
+      "provenance_ref": "https://images.credly.com/images/16c321da-79bc-4fd4-b932-e2c7f174bf66/linkedin_thumb_image.png"
+    }
+  },
+  {
+    "slug": "sap-analytics-cloud",
+    "title": "SAP Analytics Cloud - SAP Certified Application Associate",
+    "issuer": "SAP",
+    "issued": "2023-03",
+    "credential_id": "C_SAC_2302",
+    "verification_url": "https://www.credly.com/badges/9c3e6463-5fb5-4b93-9af0-ff54227d377a/public_url",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/sap-analytics-cloud.png",
+      "sha256": "a62fa846bf778558502dd6685b80a41c5386e09432464ca86422f20877b60151",
+      "mime_type": "image/png",
+      "provenance": "official_verification_page",
+      "provenance_ref": "https://images.credly.com/images/e576bed5-1c89-41a0-88d1-cd21d6df479b/linkedin_thumb_image.png"
+    }
+  },
+  {
+    "slug": "new-employee-business-partner-model-in-sap-s-4hana",
+    "title": "New Employee Business Partner Model in SAP S/4HANA",
+    "issuer": "SAP",
+    "issued": "2022-11",
+    "credential_id": "s4h29",
+    "verification_url": "https://open.sap.com/verify/xirac-lasuf-lazam-nupun-horyg",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/new-employee-business-partner-model-in-sap-s-4hana.pdf",
+      "sha256": "2680660dcca98df4a755a95862161d1939fd0c224b6e44a7dff7e38c8ef40063",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/2680660dcca98df4a755a95862161d1939fd0c224b6e44a7dff7e38c8ef40063"
+    }
+  },
+  {
+    "slug": "conflictoplossing",
+    "title": "Conflictoplossing",
+    "issuer": "Aiden Academy",
+    "issued": "2022-11",
+    "credential_id": "bmwaLtpk",
+    "verification_url": "https://certificate.studytube.nl/bmwaLtpk",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "focusing-skills",
+    "title": "Focusing Skills",
+    "issuer": "Aiden Academy",
+    "issued": "2022-11",
+    "credential_id": "lKeuJMKQ",
+    "verification_url": "https://certificate.studytube.nl/lKeuJMKQ",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "intermediate-sql",
+    "title": "Intermediate SQL",
+    "issuer": "DataCamp",
+    "issued": "2022-11",
+    "credential_id": "#26,312,590",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/2f085e30654b5433a5091c8a92fe5a332a2b192a?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/intermediate-sql.pdf",
+      "sha256": "7e3c6005cabda8b1923cc5982e0a717d40e2172ca9d5a9b7ce56eb52eec1bb06",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/7e3c6005cabda8b1923cc5982e0a717d40e2172ca9d5a9b7ce56eb52eec1bb06"
+    }
+  },
+  {
+    "slug": "guide-your-sap-s-4hana-project-to-success",
+    "title": "Guide Your SAP S/4HANA Project to Success",
+    "issuer": "SAP",
+    "issued": "2022-10",
+    "credential_id": "s4h19-1",
+    "verification_url": "https://1drv.ms/b/s!ArTubdTGb2NyjMI-eprue9Rypy0SEg?e=Ypeo5i",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/guide-your-sap-s-4hana-project-to-success.pdf",
+      "sha256": "ee4cf6012a06f7e8bb7fe02f78308cb503a3c4501cfd7e9e185d6b7421c18a9b",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/ee4cf6012a06f7e8bb7fe02f78308cb503a3c4501cfd7e9e185d6b7421c18a9b"
+    }
+  },
+  {
+    "slug": "information-security-management-in-a-nutshell",
+    "title": "Information Security Management in a Nutshell",
+    "issuer": "SAP",
+    "issued": "2022-10",
+    "credential_id": "ism1-tl",
+    "verification_url": "https://1drv.ms/b/s!ArTubdTGb2NyjMI9Rw1oFGbQV-TDAQ?e=pPEy0y",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/information-security-management-in-a-nutshell.pdf",
+      "sha256": "e6324247ebb471636f6aa963b68794411717b8eb7bea17216968e9e6b9233f48",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/e6324247ebb471636f6aa963b68794411717b8eb7bea17216968e9e6b9233f48"
+    }
+  },
+  {
+    "slug": "feedback-geven-en-ontvangen",
+    "title": "Feedback geven en ontvangen",
+    "issuer": "Aiden Academy",
+    "issued": "2022-10",
+    "credential_id": "bRbnGqaa",
+    "verification_url": "https://certificate.studytube.nl/bRbnGqaa",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "introduction-to-sql",
+    "title": "Introduction to SQL",
+    "issuer": "DataCamp",
+    "issued": "2022-10",
+    "credential_id": "#26,272,847",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/83d70b09d78de988d25faddb3dbd31630796ab1f",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/introduction-to-sql.pdf",
+      "sha256": "734a469f2448b17e5c3ff0ea62b8d4a5c138d8445effe55df1e001d28d59a1c8",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/734a469f2448b17e5c3ff0ea62b8d4a5c138d8445effe55df1e001d28d59a1c8"
+    }
+  },
+  {
+    "slug": "lean-management-green-belt",
+    "title": "Lean Management - Green Belt",
+    "issuer": "Aiden Academy",
+    "issued": "2022-10",
+    "credential_id": "dcaQKoaN",
+    "verification_url": "https://certificate.studytube.nl/dcaQKoaN",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "introduction-to-statistics",
+    "title": "Introduction to Statistics",
+    "issuer": "DataCamp",
+    "issued": "2022-10",
+    "credential_id": "#25,924,139",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/daec49be40150b3fe664954965daaaaf088c8da0?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/introduction-to-statistics.pdf",
+      "sha256": "d775c9338bcf36b87830fcb897d604b7324d48cd3bdc311344b1af78a6057237",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/d775c9338bcf36b87830fcb897d604b7324d48cd3bdc311344b1af78a6057237"
+    }
+  },
+  {
+    "slug": "building-tomorrows-erp-with-sap-s-4hana",
+    "title": "Building Tomorrow’s ERP with SAP S/4HANA",
+    "issuer": "SAP",
+    "issued": "2022-09",
+    "credential_id": "s4hintro1a",
+    "verification_url": "https://1drv.ms/b/s!ArTubdTGb2NyjMI_XzHhrXwWuqu27w?e=gZ0XdP",
+    "category": "SAP",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/building-tomorrows-erp-with-sap-s-4hana.pdf",
+      "sha256": "dd9febc8198b82e2276bac2ff4cec77975bd9c20682bfd4b3d264e4a98626daf",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/dd9febc8198b82e2276bac2ff4cec77975bd9c20682bfd4b3d264e4a98626daf"
+    }
+  },
+  {
+    "slug": "understanding-data-visualization",
+    "title": "Understanding Data Visualization",
+    "issuer": "DataCamp",
+    "issued": "2022-09",
+    "credential_id": "#25,896,291",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/3e24f9506fa532aa12889706cfe83429be2f3d89?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-data-visualization.pdf",
+      "sha256": "f447ea9f35082e6dc247e7201bd4e63336b26bb7a00000e8c14f94b26e507522",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/f447ea9f35082e6dc247e7201bd4e63336b26bb7a00000e8c14f94b26e507522"
+    }
+  },
+  {
+    "slug": "lean-management-orange-belt",
+    "title": "Lean Management - Orange Belt",
+    "issuer": "Aiden Academy",
+    "issued": "2022-09",
+    "credential_id": "Lidn1sAM",
+    "verification_url": "https://certificate.studytube.nl/Lidn1sAM",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "understanding-data-topics",
+    "title": "Understanding Data Topics",
+    "issuer": "DataCamp",
+    "issued": "2022-09",
+    "credential_id": "#312,206",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/track/33c5b239d71704e390315484b5dab89b651f28f0?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-data-topics.pdf",
+      "sha256": "ae9a6f6e145431a05445e7a5771df9ac39ae656499e47511605cbcdbb0cebe8a",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/ae9a6f6e145431a05445e7a5771df9ac39ae656499e47511605cbcdbb0cebe8a"
+    }
+  },
+  {
+    "slug": "understanding-cloud-computing",
+    "title": "Understanding Cloud Computing",
+    "issuer": "DataCamp",
+    "issued": "2022-09",
+    "credential_id": "#25,897,052",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/519ee7bc8179e36fcc8d716ecc7ce39423d140bd?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-cloud-computing.pdf",
+      "sha256": "e68de8053d3e624d22eb224f68ae83768003fd694341297bc69a1e048d1022cf",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/e68de8053d3e624d22eb224f68ae83768003fd694341297bc69a1e048d1022cf"
+    }
+  },
+  {
+    "slug": "understanding-machine-learning",
+    "title": "Understanding Machine Learning",
+    "issuer": "DataCamp",
+    "issued": "2022-09",
+    "credential_id": "#25,547,628",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/e0d29047607762a1a480d2c40596bbea724f007c?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-machine-learning.pdf",
+      "sha256": "852171c14c9b814d6800adf7a68600d9bdf20bea967a37c4029454a931cf1a5f",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/852171c14c9b814d6800adf7a68600d9bdf20bea967a37c4029454a931cf1a5f"
+    }
+  },
+  {
+    "slug": "lean-management-yellow-belt",
+    "title": "Lean Management: Yellow Belt",
+    "issuer": "Aiden Academy",
+    "issued": "2022-09",
+    "credential_id": "NnU9UGUJ",
+    "verification_url": "https://certificate.studytube.nl/NnU9UGUJ",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "source_unavailable",
+      "reason": "The former StudyTube verification URL now requires authentication; no original file is present in the active vault."
+    }
+  },
+  {
+    "slug": "understanding-data-engineering",
+    "title": "Understanding Data Engineering",
+    "issuer": "DataCamp",
+    "issued": "2022-08",
+    "credential_id": "#25,469,343",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/82cde895b73d267ef2e83a218b08d84210925189?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-data-engineering.pdf",
+      "sha256": "1920a74a8304016565fa626d3ff0b8c55d4c454bc5e50f769370777228111096",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/1920a74a8304016565fa626d3ff0b8c55d4c454bc5e50f769370777228111096"
+    }
+  },
+  {
+    "slug": "understanding-data-science",
+    "title": "Understanding Data Science",
+    "issuer": "DataCamp",
+    "issued": "2022-08",
+    "credential_id": "#25,345,124",
+    "verification_url": "https://www.datacamp.com/statement-of-accomplishment/course/738f2ebd84fa5e349625cab7b9e76de7944d09d7?raw=1",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/understanding-data-science.pdf",
+      "sha256": "e49e9419d857c1ce599fc9fbe774e46318171ff775b42102045628e132bdb8b5",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/e49e9419d857c1ce599fc9fbe774e46318171ff775b42102045628e132bdb8b5"
+    }
+  },
+  {
+    "slug": "innovation-award-2022",
+    "title": "Innovation Award 2022",
+    "issuer": "Wärtsilä Voyage",
+    "issued": "2022-01",
+    "credential_id": "Minor Innovatiemanagement 2022",
+    "verification_url": "https://1drv.ms/b/s!ArTubdTGb2NyjKxoag-lENlld-rX7g",
+    "category": "Foundations",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/innovation-award-2022.pdf",
+      "sha256": "6d17d5e7f521119f0994cd5f56cf638bb29f5311931bdcc01b9eedc0d178ff6a",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/6d17d5e7f521119f0994cd5f56cf638bb29f5311931bdcc01b9eedc0d178ff6a"
+    }
+  },
+  {
+    "slug": "python-for-data-science-ai-and-development",
+    "title": "Python for Data Science, AI & Development",
+    "issuer": "IBM",
+    "issued": "2021-05",
+    "credential_id": "3EC8T69C5PUE",
+    "verification_url": "https://www.coursera.org/account/accomplishments/verify/3EC8T69C5PUE",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/python-for-data-science-ai-and-development.jpg",
+      "sha256": "f66db2d81b0ee0a8384f74d8fc7ad1a6fc16756f4b30b7cced4100542fec9907",
+      "mime_type": "image/jpeg",
+      "provenance": "official_verification_page",
+      "provenance_ref": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~3EC8T69C5PUE/CERTIFICATE_LANDING_PAGE~3EC8T69C5PUE.jpeg"
+    }
+  },
+  {
+    "slug": "data-science-methodology",
+    "title": "Data Science Methodology",
+    "issuer": "IBM",
+    "issued": "2021-04",
+    "credential_id": "SMUAZL2W4XSB",
+    "verification_url": "https://www.coursera.org/account/accomplishments/verify/SMUAZL2W4XSB",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/data-science-methodology.png",
+      "sha256": "44e757f6e0bf7302e0c2b44a1ef52decee91facf60c09e7fb3e499ba80670a20",
+      "mime_type": "image/png",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/44e757f6e0bf7302e0c2b44a1ef52decee91facf60c09e7fb3e499ba80670a20"
+    }
+  },
+  {
+    "slug": "data-science-orientation",
+    "title": "Data Science Orientation",
+    "issuer": "IBM",
+    "issued": "2021-04",
+    "credential_id": "C5YED6T8KH5F",
+    "verification_url": "https://www.coursera.org/account/accomplishments/verify/C5YED6T8KH5F",
+    "category": "Data and automation",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/data-science-orientation.jpg",
+      "sha256": "12b4032623dcb2f72a4fed4b133737faca4f4f518eaccbf25c6282e3ec617c6c",
+      "mime_type": "image/jpeg",
+      "provenance": "official_verification_page",
+      "provenance_ref": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~C5YED6T8KH5F/CERTIFICATE_LANDING_PAGE~C5YED6T8KH5F.jpeg"
+    }
+  },
+  {
+    "slug": "mendix-rapid-developer",
+    "title": "Rapid Developer",
+    "issuer": "Mendix",
+    "issued": "2019-08",
+    "credential_id": "16646",
+    "verification_url": "https://i.imgur.com/Jelt2k5.png",
+    "category": "Foundations",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/mendix-rapid-developer.pdf",
+      "sha256": "4ebf98e1a964cfac4bf1a3788920e0051caa104064b9d57517ece0a3108d4760",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/4ebf98e1a964cfac4bf1a3788920e0051caa104064b9d57517ece0a3108d4760"
+    }
+  },
+  {
+    "slug": "nederlands-b2",
+    "title": "Nederlands B2",
+    "issuer": "Hogeschooltaal",
+    "issued": "2018-03",
+    "credential_id": "3082083",
+    "verification_url": "https://drive.google.com/file/d/1I0VazDVsnr8LTpnVBRj5LpdNPiQWe94S/view?usp=sharing",
+    "category": "Foundations",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/nederlands-b2.pdf",
+      "sha256": "4dfc29d2b769332a76a1e35a90be98cd65749b32631a56cc95588154ebdd0542",
+      "mime_type": "application/pdf",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/4dfc29d2b769332a76a1e35a90be98cd65749b32631a56cc95588154ebdd0542"
+    }
+  },
+  {
+    "slug": "technical-support-fundamentals",
+    "title": "Technical Support Fundamentals",
+    "issuer": "Google Career Certificates",
+    "issued": "2018-02",
+    "credential_id": "ZCRJR53HXCWN",
+    "verification_url": "https://www.coursera.org/account/accomplishments/verify/ZCRJR53HXCWN",
+    "category": "Professional practice",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/technical-support-fundamentals.jpg",
+      "sha256": "e936527588c1308f50413f60f1179c749168b0c6434440e2c7c1118c2b9953f7",
+      "mime_type": "image/jpeg",
+      "provenance": "official_verification_page",
+      "provenance_ref": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZCRJR53HXCWN/CERTIFICATE_LANDING_PAGE~ZCRJR53HXCWN.jpeg"
+    }
+  },
+  {
+    "slug": "microsoft-excel-specialist-2013",
+    "title": "Excel Specialist 2013",
+    "issuer": "Microsoft",
+    "issued": "2016-03",
+    "credential_id": "",
+    "verification_url": "https://www.youracclaim.com/badges/bfb6d063-b0f5-47eb-96da-85d3028262b8/email",
+    "category": "Foundations",
+    "artifact": {
+      "status": "hosted",
+      "path": "/certifications/assets/microsoft-excel-specialist-2013.png",
+      "sha256": "e71cff5725486b315782e02ea7a96d480639c3e24e66392fc8f38867a24ba9da",
+      "mime_type": "image/png",
+      "provenance": "vault_cas",
+      "provenance_ref": "blob://sha256/e71cff5725486b315782e02ea7a96d480639c3e24e66392fc8f38867a24ba9da"
+    }
+  }
+]

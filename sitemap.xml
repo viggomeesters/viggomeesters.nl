@@ -442,4 +442,11 @@
     <priority>0.6</priority>
   </url>
   <!-- END GENERATED PROJECT PAGES -->
+  <!-- BEGIN GENERATED CERTIFICATIONS -->
+  <url>
+    <loc>https://viggomeesters.com/certifications/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <!-- END GENERATED CERTIFICATIONS -->
 </urlset>
