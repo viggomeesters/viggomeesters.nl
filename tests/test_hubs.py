@@ -30,6 +30,7 @@ class PortfolioHubContract(unittest.TestCase):
         self.assertEqual(
             live,
             [
+                ("https://sap-data-readiness.vercel.app", "SAP Data Readiness"),
                 ("https://minimal-etl-modeler.vercel.app", "Minimal ETL Modeler"),
                 ("https://visual-pm-app.vercel.app", "Visual PM"),
                 ("https://normalized-salary-calculator.vercel.app", "Normalized Salary Calculator"),
