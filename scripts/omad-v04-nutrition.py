@@ -695,6 +695,9 @@ USDA_SR28.update({
   '11246': {'description': 'Leeks, (bulb and lower leaf-portion), raw', 'nutrients': {'protein_g': 1.5, 'fat_g': 0.3, 'carbs_g': 14.15, 'kcal': 61.0, 'fiber_g': 1.8, 'calcium_mg': 59.0, 'iron_mg': 2.1, 'magnesium_mg': 28.0, 'phosphorus_mg': 35.0, 'potassium_mg': 180.0, 'sodium_mg': 20.0, 'zinc_mg': 0.12, 'copper_mg': 0.12, 'manganese_mg': 0.481, 'selenium_mcg': 1.0, 'vitamin_a_rae_mcg': 83.0, 'vitamin_e_mg': 0.92, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 12.0, 'thiamin_mg': 0.06, 'riboflavin_mg': 0.03, 'niacin_mg': 0.4, 'pantothenic_mg': 0.14, 'vitamin_b6_mg': 0.233, 'vitamin_b12_mcg': 0.0, 'choline_mg': 9.5, 'vitamin_k_mcg': 47.0, 'folate_mcg': 64.0, 'saturated_fat_g': 0.04}},
 })
 
+# Cooked asparagus proxy for Muscle Meat's blanched, IQF green asparagus.
+USDA_SR28['11012'] = {'description': 'Asparagus, cooked, boiled, drained', 'nutrients': {'protein_g': 2.4, 'fat_g': 0.22, 'carbs_g': 4.11, 'kcal': 22.0, 'fiber_g': 2.0, 'calcium_mg': 23.0, 'iron_mg': 0.91, 'magnesium_mg': 14.0, 'phosphorus_mg': 54.0, 'potassium_mg': 224.0, 'sodium_mg': 14.0, 'zinc_mg': 0.6, 'copper_mg': 0.165, 'manganese_mg': 0.154, 'selenium_mcg': 6.1, 'vitamin_a_rae_mcg': 50.0, 'vitamin_e_mg': 1.5, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 7.7, 'thiamin_mg': 0.162, 'riboflavin_mg': 0.139, 'niacin_mg': 1.084, 'pantothenic_mg': 0.225, 'vitamin_b6_mg': 0.079, 'vitamin_b12_mcg': 0.0, 'choline_mg': 26.1, 'vitamin_k_mcg': 50.6, 'folate_mcg': 149.0, 'saturated_fat_g': 0.048}}
+
 TARGETS = {
     "kcal": (2000, "kcal", "Reference energy"),
     "protein_g": (56, "g", "Protein RDA"),
@@ -766,20 +769,20 @@ PRODUCTS = {
     "evidence":"Primary AH API label for drained amount/macros; USDA canned drained/rinsed chickpeas proxy for wider micros"
   },
   "broccoli": {
-    "name":"AH frozen broccoli florets", "grams":225,
-    "package":"450 g bag / 2 meals", "package_price":1.49, "cost":1.49/2,
-    "url":"https://www.ah.nl/producten/product/wi226367/ah-broccoliroosjes",
-    "components":[(11092,225)],
-    "overrides":{"kcal":29*2.25,"protein_g":3*2.25,"carbs_g":1.8*2.25,"fat_g":0.4*2.25,"saturated_fat_g":0.1*2.25,"fiber_g":3*2.25,"sodium_mg":0},
-    "evidence":"Primary AH API label; USDA frozen broccoli proxy for wider micros"
+    "name":"Muscle Meat precooked broccoli florets", "grams":250,
+    "package":"2.5 kg IQF bag / 10 meals", "package_price":7.95, "cost":7.95/10,
+    "url":"https://musclemeat.nl/product/broccoliroosjes/",
+    "components":[(11092,250)],
+    "overrides":{"kcal":38*2.5,"protein_g":3.3*2.5,"carbs_g":2.3*2.5,"fat_g":0.9*2.5,"saturated_fat_g":0.1*2.5,"fiber_g":3.6*2.5,"sodium_mg":0.013*2.5*1000},
+    "evidence":"Muscle Meat product label; USDA frozen broccoli proxy for wider micros"
   },
-  "italian_veg": {
-    "name":"AH frozen Italian stir-fry vegetables", "grams":225,
-    "package":"450 g bag / 2 meals", "package_price":1.49, "cost":1.49/2,
-    "url":"https://www.ah.nl/producten/product/wi582314",
-    "components":[(11246,63),(11124,40.5),(11282,40.5),(11477,40.5),(11821,40.5)],
-    "overrides":{"kcal":24*2.25,"protein_g":1.1*2.25,"carbs_g":3.2*2.25,"fat_g":0.3*2.25,"saturated_fat_g":0.1*2.25,"fiber_g":1.9*2.25,"sodium_mg":0.05*2.25*1000/2.54},
-    "evidence":"Primary AH API label and declared 28/18/18/18/18% composition; USDA component proxies for wider micros"
+  "asparagus": {
+    "name":"Muscle Meat precooked green asparagus", "grams":100,
+    "package":"1 kg IQF bag / 10 meals", "package_price":12.45, "cost":12.45/10,
+    "url":"https://musclemeat.nl/product/groene-asperges/",
+    "components":[(11012,100)],
+    "overrides":{"kcal":28,"protein_g":2.9,"carbs_g":2,"fat_g":0.6,"saturated_fat_g":0.1,"fiber_g":1.7,"sodium_mg":0.003*1000/2.54},
+    "evidence":"Muscle Meat product label; USDA cooked drained asparagus proxy for wider micros"
   },
   "avocado": {
     "name":"AH frozen avocado chunks", "grams":125,
@@ -804,11 +807,11 @@ PRODUCTS = {
     "evidence":"Primary AH API label; minor micros not modelled"
   },
   "skyr": {
-    "name":"Arla Skyr natural 0%", "grams":500,
-    "package":"1 kg tub", "package_price":3.99, "cost":3.99/2,
+    "name":"Arla Skyr natural 0%", "grams":333,
+    "package":"1 kg tub / 3 meals", "package_price":3.99, "cost":3.99/3,
     "url":"https://www.ah.nl/producten/product/wi457983/arla-skyr-naturel-yoghurt-0-vet-xl",
-    "components":[(1256,500)],
-    "overrides":{"kcal":300,"protein_g":50,"carbs_g":20,"fat_g":0,"saturated_fat_g":0,"sodium_mg":0.14*5*1000/2.54},
+    "components":[(1256,333)],
+    "overrides":{"kcal":60*3.33,"protein_g":10*3.33,"carbs_g":4*3.33,"fat_g":0,"saturated_fat_g":0,"sodium_mg":0.14*3.33*1000/2.54},
     "evidence":"Primary AH API Arla label for macros/salt; USDA non-fat plain Greek yoghurt proxy for wider micros"
   },
   "berries": {
@@ -821,7 +824,7 @@ PRODUCTS = {
   }
 }
 
-COMMON = ["chickpeas","broccoli","italian_veg","avocado","olive_oil","crispy_chili","skyr","berries"]
+COMMON = ["chickpeas","broccoli","asparagus","avocado","olive_oil","crispy_chili","skyr","berries"]
 
 def add_scaled(total, values, grams):
     for key, value in values.items():

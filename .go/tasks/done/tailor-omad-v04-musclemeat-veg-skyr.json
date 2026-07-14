@@ -1,0 +1,34 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "tailor-omad-v04-musclemeat-veg-skyr",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Tailor OMAD V04 to Muscle Meat broccoli, asparagus and 333g Skyr",
+  "description": "Replace AH broccoli and Italian/grilled vegetables with Muscle Meat 250g broccoli plus 100g green asparagus, giving a clean 10-meal package rhythm and removing the disliked €1.70 grilled-vegetable portion. Reduce Skyr from 500g to 333g, regenerate all costs and nutrient totals, update the article, verify, deploy and read back live.",
+  "scope": {
+    "read": [
+      "omad-fallback-meal/index.html,omad-fallback-meal/nutrition-data.json,scripts/omad-v04-nutrition.py"
+    ],
+    "modify": [
+      "omad-fallback-meal/index.html,omad-fallback-meal/nutrition-data.json,scripts/omad-v04-nutrition.py"
+    ]
+  },
+  "acceptance": [
+    "No AH broccoli/Italian/grilled vegetable remains in V04; Muscle Meat broccoli 250g and green asparagus 100g are source-linked; Skyr is 333g; generated costs/macros/micros and live UI agree."
+  ],
+  "verification": [
+    "python3 scripts/omad-v04-nutrition.py --check && npm test && npm run check && npm run check:seo && git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-14T10:01:08+02:00"
+  },
+  "evidence": [
+    {
+      "created_at": "2026-07-14T12:22:55+02:00",
+      "agent": "hermes",
+      "summary": "Muscle Meat broccoli 250g (€0.80) and green asparagus 100g (€1.25) replace AH veg; both packs yield exactly ten meals; Skyr 333g; generated totals/costs refreshed; no stale grilled/Italian/AH broccoli strings; 55 tests, site, SEO and browser render with zero overflow green."
+    }
+  ]
+}
