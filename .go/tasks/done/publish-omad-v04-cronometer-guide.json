@@ -1,0 +1,57 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "publish-omad-v04-cronometer-guide",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Publish OMAD V04 dump-tray timeline guide with costs and micronutrients",
+  "description": "Research the exact MuscleMeat lean chicken, AH ingredients and salmon rotation; compute a transparent Cronometer-inspired macro/micronutrient model; rebuild the existing OMAD guide as an English V04 evolution/timeline article; expose it in guides and timeline; deploy and verify live.",
+  "scope": {
+    "read": [
+      "omad-fallback-meal/index.html",
+      "guides/index.html",
+      "timeline/index.html",
+      "sitemap.xml",
+      "package.json",
+      "scripts/check-site.mjs",
+      "scripts/public-boundary.json",
+      "tests/test_hubs.py",
+      "tests/test_timeline.py",
+      "trendwatch/data.json",
+      "trendwatch/status.json",
+      "tech-news/status.json"
+    ],
+    "modify": [
+      "omad-fallback-meal/index.html",
+      "omad-fallback-meal/nutrition-data.json",
+      "scripts/omad-v04-nutrition.py",
+      "scripts/public-boundary.json",
+      "guides/index.html",
+      "timeline/index.html",
+      "sitemap.xml",
+      "scripts/check-site.mjs",
+      "tests/test_hubs.py",
+      "tests/test_timeline.py",
+      "trendwatch/data.json",
+      "trendwatch/status.json",
+      "tech-news/status.json"
+    ]
+  },
+  "acceptance": [
+    "Existing OMAD route becomes a polished public-safe V04 dump-and-bake article with exact ingredient amounts, product links, dated prices, package rhythm, chicken and salmon variants, one-shot cold-oven method, evolution timeline, macro totals, micronutrient totals and %DV, source/proxy caveats, sodium/iodine/vitamin D gaps, and a Cronometer-inspired visual section."
+  ],
+  "verification": [
+    "python3 scripts/omad-v04-nutrition.py --check && npm test && npm run check && npm run check:seo && git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-14T09:03:37+02:00"
+  },
+  "evidence": [
+    {
+      "created_at": "2026-07-14T09:38:20+02:00",
+      "agent": "hermes",
+      "summary": "Nutrition artifact check green; 55 unit tests green; site/public-boundary/feed/timeline checks green across 140 pages; SEO 0 regressions; desktop and 390px mobile browser proof; chicken/salmon dashboard toggle and 10-row cost table exercised."
+    }
+  ]
+}

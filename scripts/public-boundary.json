@@ -3,7 +3,6 @@
   "blocked_routes": [
     "/agent-brain-personas/",
     "/funnel-analysis/",
-    "/omad-fallback-meal/",
     "/skills/aankoopmakelaar-biedcoach/",
     "/skills/bertus-email-gateway-ops/"
   ],

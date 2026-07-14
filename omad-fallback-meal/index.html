@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMAD V04 — The Frozen Dump-Tray System | Viggo Meesters</title>
+  <meta name="description" content="OMAD V04: exact frozen dump-tray ingredients, cold-oven method, costs, chicken/salmon rotation and a Cronometer-inspired nutrient model.">
+  <link rel="canonical" href="https://viggomeesters.com/omad-fallback-meal/">
+  <meta name="theme-color" content="#0b0d0c">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:title" content="OMAD V04 — The Frozen Dump-Tray System">
+  <meta property="og:description" content="One tray, no preheating, no mid-cook steps. Exact ingredients, costs and a transparent micronutrient model.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.com/omad-fallback-meal/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OMAD V04 — The Frozen Dump-Tray System">
+  <meta name="twitter:description" content="A source-backed OMAD recipe with live macro, micronutrient and cost views.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "OMAD V04 — The Frozen Dump-Tray System",
+    "description": "A source-backed evolution from fallback meal to frozen dump tray with exact ingredients, costs and a transparent micronutrient model.",
+    "datePublished": "2026-07-13",
+    "dateModified": "2026-07-13",
+    "author": { "@type": "Person", "name": "Viggo Meesters", "url": "https://viggomeesters.com/" },
+    "mainEntityOfPage": "https://viggomeesters.com/omad-fallback-meal/",
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#f4f0e8;--paper:#0b0d0c;--surface:#111513;--surface-2:#171c19;--line:#29312c;
+      --muted:#8f9b93;--quiet:#667168;--lime:#b7f36b;--lime-soft:rgba(183,243,107,.11);
+      --heat:#ff7b4a;--heat-soft:rgba(255,123,74,.11);--blue:#67d7ee;--amber:#f6c85f;
+      --red:#ff6b6b;--sans:'DM Sans',system-ui,sans-serif;--serif:'Newsreader',Georgia,serif;
+      --mono:'DM Mono',ui-monospace,monospace;--radius:18px
+    }
+    html{background:var(--paper);color-scheme:dark;scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{min-width:320px;background:
+      radial-gradient(circle at 8% 0%,rgba(183,243,107,.07),transparent 24rem),
+      radial-gradient(circle at 100% 18%,rgba(255,123,74,.06),transparent 26rem),var(--paper);
+      color:#cbd2cd;font:15px/1.68 var(--sans)}
+    a{color:inherit}a:focus-visible,button:focus-visible{outline:2px solid var(--lime);outline-offset:4px}
+    .shell{width:min(1120px,calc(100% - 40px));margin:auto;padding:28px 0 88px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;min-height:54px;border-bottom:1px solid var(--line);font:500 .72rem var(--mono);color:var(--muted)}
+    .topbar a{text-decoration:none}.topbar a:hover{color:var(--ink)}.crumb{display:flex;gap:9px;align-items:center}.crumb span{color:var(--quiet)}
+    .hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.55fr);gap:clamp(36px,7vw,90px);align-items:end;padding:clamp(58px,9vw,112px) 0 66px}
+    .kicker{display:flex;align-items:center;gap:10px;margin-bottom:18px;color:var(--lime);font:500 .73rem var(--mono);letter-spacing:.12em;text-transform:uppercase}.kicker::before{width:28px;height:1px;background:currentColor;content:''}
+    h1{max-width:790px;color:var(--ink);font:650 clamp(3.4rem,8.2vw,7.4rem)/.84 var(--serif);letter-spacing:-.055em;text-wrap:balance}
+    .dek{max-width:680px;margin-top:26px;color:#aeb8b1;font-size:clamp(1.02rem,1.7vw,1.23rem);line-height:1.62;text-wrap:pretty}
+    .hero-contract{border-top:1px solid var(--line)}.contract-row{display:grid;grid-template-columns:70px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}.contract-row dt{color:var(--quiet);font:.68rem var(--mono);text-transform:uppercase}.contract-row dd{color:var(--ink);font-size:.91rem}
+    .verdict{display:grid;grid-template-columns:auto 1fr;gap:18px;margin:0 0 70px;padding:24px 26px;border:1px solid rgba(183,243,107,.22);border-radius:var(--radius);background:linear-gradient(135deg,var(--lime-soft),transparent 70%)}
+    .grade{display:grid;place-items:center;width:62px;height:62px;border:1px solid rgba(183,243,107,.28);border-radius:50%;color:var(--lime);font:600 1.4rem var(--mono)}
+    .verdict h2{color:var(--ink);font-size:1.08rem}.verdict p{margin-top:4px;color:#9eaaa2;font-size:.9rem}
+    .section{padding:72px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:180px minmax(0,1fr);gap:30px;margin-bottom:34px}.section-index{color:var(--heat);font:.7rem var(--mono);letter-spacing:.1em;text-transform:uppercase}.section-copy h2{color:var(--ink);font:600 clamp(2.1rem,4.6vw,3.8rem)/.98 var(--serif);letter-spacing:-.035em}.section-copy p{max-width:660px;margin-top:13px;color:var(--muted)}
+    .timeline{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.version{min-height:240px;padding:22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(17,21,19,.46)}.version-id{color:var(--lime);font:.7rem var(--mono)}.version h3{margin-top:44px;color:var(--ink);font-size:1.02rem}.version p{margin-top:10px;color:var(--muted);font-size:.82rem;line-height:1.55}.version.current{background:linear-gradient(150deg,var(--lime-soft),rgba(17,21,19,.8));box-shadow:inset 0 2px 0 var(--lime)}
+    .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stack{position:relative;min-height:300px;padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}.stack-letter{color:var(--heat);font:500 .72rem var(--mono)}.stack h3{margin:45px 0 15px;color:var(--ink);font:600 1.55rem var(--serif)}.stack ul{list-style:none}.stack li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid rgba(255,255,255,.055);color:#aab4ad;font-size:.82rem}.stack li span:last-child{color:var(--ink);font-family:var(--mono);font-size:.72rem}.stack-note{position:absolute;right:18px;bottom:16px;color:var(--quiet);font:.62rem var(--mono)}
+    .protein-switch{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.protein-card{padding:22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}.protein-card strong{display:block;color:var(--ink);font-size:1rem}.protein-card p{margin-top:7px;color:var(--muted);font-size:.82rem}.protein-card a{display:inline-block;margin-top:14px;color:var(--blue);font:.7rem var(--mono);text-underline-offset:4px}
+    .method{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:34px}.method-steps{counter-reset:step}.method-step{position:relative;padding:22px 20px 22px 70px;border-top:1px solid var(--line);counter-increment:step}.method-step::before{position:absolute;left:12px;top:22px;color:var(--heat);font:.78rem var(--mono);content:'0' counter(step)}.method-step h3{color:var(--ink);font-size:1rem}.method-step p{margin-top:5px;color:var(--muted);font-size:.86rem}.timer{align-self:start;padding:28px;border:1px solid rgba(255,123,74,.22);border-radius:var(--radius);background:var(--heat-soft)}.timer-label{color:var(--heat);font:.68rem var(--mono);text-transform:uppercase}.timer-value{margin-top:15px;color:var(--ink);font:600 3.2rem/.9 var(--serif)}.timer p{margin-top:18px;color:#a8958d;font-size:.82rem}.safety{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,123,74,.2);color:#d5b5a9!important}
+    .cost-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-bottom:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--line);overflow:hidden}.cost-metric{padding:22px;background:var(--surface)}.cost-metric span{display:block;color:var(--quiet);font:.64rem var(--mono);text-transform:uppercase}.cost-metric strong{display:block;margin-top:8px;color:var(--ink);font:600 1.6rem var(--serif)}
+    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius)}table{width:100%;border-collapse:collapse;min-width:760px;background:var(--surface)}th,td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--quiet);font:500 .65rem var(--mono);letter-spacing:.07em;text-transform:uppercase}td{color:#aeb7b0;font-size:.81rem}td:first-child{color:var(--ink);font-weight:600}td.num{font-family:var(--mono);text-align:right}td a{color:var(--blue);text-underline-offset:4px}.table-note{margin-top:12px;color:var(--quiet);font-size:.75rem}
+    .crono{padding:clamp(20px,4vw,42px);border:1px solid #303a34;border-radius:24px;background:#0e1210;box-shadow:0 30px 80px rgba(0,0,0,.26)}
+    .crono-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.crono-brand{color:var(--lime);font:500 .69rem var(--mono);letter-spacing:.13em;text-transform:uppercase}.crono h3{margin-top:8px;color:var(--ink);font:600 2rem var(--serif)}.data-status{display:flex;align-items:center;gap:7px;color:var(--muted);font:.65rem var(--mono)}.data-status::before{width:7px;height:7px;border-radius:50%;background:var(--amber);content:''}.data-status.ready::before{background:var(--lime);box-shadow:0 0 12px var(--lime)}
+    .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0}.tab{min-height:42px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font:500 .72rem var(--mono);cursor:pointer}.tab[aria-selected='true']{border-color:rgba(183,243,107,.36);background:var(--lime-soft);color:var(--lime)}
+    .macro-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:24px}.macro{padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.macro span{display:block;color:var(--quiet);font:.58rem var(--mono);text-transform:uppercase}.macro strong{display:block;margin-top:6px;color:var(--ink);font:500 1rem var(--mono)}
+    .nutrient-groups{display:grid;grid-template-columns:1fr 1fr;gap:12px}.nutrient-group{padding:18px;border:1px solid var(--line);border-radius:14px;background:rgba(17,21,19,.56)}.nutrient-group h4{margin-bottom:10px;color:var(--quiet);font:.65rem var(--mono);letter-spacing:.09em;text-transform:uppercase}.nutrient{display:grid;grid-template-columns:minmax(110px,1fr) minmax(110px,1.3fr) 72px;gap:12px;align-items:center;padding:9px 0;border-top:1px solid rgba(255,255,255,.045)}.nutrient-name{color:#c9d0cb;font-size:.76rem}.track{height:7px;border-radius:99px;background:#252c28;overflow:hidden}.fill{display:block;width:0;height:100%;border-radius:inherit;background:var(--lime);transition:width .45s ease}.fill.watch{background:var(--amber)}.fill.low{background:var(--heat)}.fill.high{background:var(--red)}.fill.unknown{background:var(--quiet)}.nutrient-value{text-align:right;color:var(--muted);font:.62rem var(--mono)}.nutrient-value strong{display:block;color:var(--ink);font-size:.68rem}.model-note{margin-top:20px;padding:16px;border-left:2px solid var(--amber);background:rgba(246,200,95,.05);color:var(--muted);font-size:.78rem}.model-note strong{color:var(--ink)}
+    .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.gap{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}.gap small{color:var(--heat);font:.63rem var(--mono);text-transform:uppercase}.gap h4{margin-top:12px;color:var(--ink);font-size:.95rem}.gap p{margin-top:8px;color:var(--muted);font-size:.78rem}
+    details{margin-top:22px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}summary{padding:17px 20px;color:var(--ink);font:500 .78rem var(--mono);cursor:pointer}.details-body{padding:0 20px 20px;color:var(--muted);font-size:.79rem}.details-body ul{padding-left:18px}.details-body li{margin-top:8px}.details-body a{color:var(--blue)}
+    .closing{display:grid;grid-template-columns:1fr 1fr;gap:40px}.closing blockquote{color:var(--ink);font:500 clamp(2rem,4vw,3.3rem)/1.05 var(--serif);letter-spacing:-.03em}.closing-copy p{margin-bottom:16px;color:var(--muted)}.closing-copy strong{color:var(--ink)}
+    .footer{display:flex;justify-content:space-between;gap:24px;padding-top:30px;border-top:1px solid var(--line);color:var(--quiet);font:.66rem var(--mono)}
+    @media(max-width:900px){.timeline{grid-template-columns:repeat(2,1fr)}.version:last-child{grid-column:1/-1}.stack-grid{grid-template-columns:1fr 1fr}.macro-grid{grid-template-columns:repeat(3,1fr)}.nutrient-groups{grid-template-columns:1fr}.method{grid-template-columns:1fr}.timer{width:100%}.cost-strip{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.shell{width:min(100% - 24px,1120px)}.topbar{font-size:.65rem}.hero{grid-template-columns:1fr;padding:48px 0}.hero-contract{margin-top:0}.verdict{grid-template-columns:1fr}.section{padding:54px 0}.section-head{grid-template-columns:1fr;gap:10px}.timeline,.stack-grid,.protein-switch,.gaps,.closing{grid-template-columns:1fr}.version:last-child{grid-column:auto}.stack{min-height:250px}.cost-strip{grid-template-columns:1fr 1fr}.crono{padding:18px 12px}.crono-top{flex-direction:column}.macro-grid{grid-template-columns:repeat(2,1fr)}.nutrient{grid-template-columns:minmax(95px,1fr) minmax(80px,1fr) 58px;gap:8px}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar" aria-label="Breadcrumb">
+      <div class="crumb"><a href="/">Viggo Meesters</a><span>/</span><a href="/guides/">Writing</a><span>/</span><strong>OMAD V04</strong></div>
+      <span>13 Jul 2026</span>
+    </nav>
+
+    <header class="hero">
+      <div>
+        <div class="kicker">Personal systems / food</div>
+        <h1>The meal became a system.</h1>
+        <p class="dek">OMAD V04 is a deliberately oversized hot tray built around one operational rule: load it frozen, put it in a cold oven, start the oven and leave it alone. No preheating. No stirring. No ingredient added halfway through.</p>
+      </div>
+      <dl class="hero-contract">
+        <div class="contract-row"><dt>Input</dt><dd>Loose frozen ingredients</dd></div>
+        <div class="contract-row"><dt>Action</dt><dd>One cold-oven start</dd></div>
+        <div class="contract-row"><dt>Output</dt><dd>Hot tray + cold skyr stack</dd></div>
+        <div class="contract-row"><dt>Loop</dt><dd>6 chicken / 1 salmon</dd></div>
+      </dl>
+    </header>
+
+    <aside class="verdict" aria-label="Verdict">
+      <div class="grade">A+</div>
+      <div><h2>S-tier operationally. A-tier nutritionally — with the gaps visible.</h2><p>Protein, fibre, vegetables, repeatability and cost control are strong. The salmon rotation fixes EPA/DHA and gives one vitamin-D-heavy day. Vitamin A, choline and measured iodine remain the honest gaps; the dashboard below does not paint them green.</p></div>
+    </aside>
+
+    <section class="section" id="evolution">
+      <div class="section-head"><div class="section-index">01 / Evolution</div><div class="section-copy"><h2>Four versions of removing friction.</h2><p>The recipe did not evolve by adding gourmet steps. It improved by deleting decisions until the meal became easy enough to repeat.</p></div></div>
+      <div class="timeline">
+        <article class="version"><div class="version-id">V00</div><h3>The fallback</h3><p>Chicken, skyr and rye bread covered the basics. Trackable, but the bread was tolerated rather than wanted.</p></article>
+        <article class="version"><div class="version-id">V01</div><h3>Warm wins</h3><p>The centre moved to a roasting tray. A genuinely hot meal proved easier to sustain than a theoretically tidy food list.</p></article>
+        <article class="version"><div class="version-id">V02</div><h3>Chickpea upgrade</h3><p>Roasted chickpeas replaced rye bread: more enjoyable, still measurable, and naturally integrated into the tray.</p></article>
+        <article class="version"><div class="version-id">V03</div><h3>The stacks</h3><p>A became protein, B became hot fibre, C became fat and fire, D stayed skyr and berries. The flexible E stack was removed.</p></article>
+        <article class="version current"><div class="version-id">V04 / NOW</div><h3>Frozen dump tray</h3><p>Every hot ingredient goes in at once. Avocado is allowed to collapse. Convenience is part of the nutrition design.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="recipe">
+      <div class="section-head"><div class="section-index">02 / Exact build</div><div class="section-copy"><h2>The fixed four-stack contract.</h2><p>No permanent E stack. No feta. No separate sauce. Crispy chilli oil does the flavour work; avocado is intentionally used as a soft, fatty binder.</p></div></div>
+      <div class="stack-grid">
+        <article class="stack"><div class="stack-letter">STACK A / PROTEIN</div><h3>Lean chicken</h3><ul><li><span>Roasted chicken strips</span><span>250 g</span></li><li><span>Natural flavour</span><span>IQF</span></li><li><span>Salt</span><span>0.8 g/100 g</span></li></ul><div class="stack-note">swap entire A on fish day</div></article>
+        <article class="stack"><div class="stack-letter">STACK B / HOT FIBRE</div><h3>Legumes + veg</h3><ul><li><span>Drained chickpeas</span><span>240 g</span></li><li><span>Frozen broccoli</span><span>250 g</span></li><li><span>Grilled veg mix</span><span>375 g</span></li></ul><div class="stack-note">865 g before protein</div></article>
+        <article class="stack"><div class="stack-letter">STACK C / FAT + FIRE</div><h3>Collapse on purpose</h3><ul><li><span>Frozen avocado</span><span>125 g</span></li><li><span>Mild olive oil</span><span>15 g</span></li><li><span>Crispy chilli oil</span><span>10 g</span></li></ul><div class="stack-note">soft avocado coats the tray</div></article>
+        <article class="stack"><div class="stack-letter">STACK D / COLD</div><h3>Skyr finish</h3><ul><li><span>Arla Skyr 0%</span><span>500 g</span></li><li><span>Frozen summer fruit</span><span>150 g</span></li><li><span>Separate bowl</span><span>after tray</span></li></ul><div class="stack-note">half a tub · calcium to 93%</div></article>
+      </div>
+      <div class="protein-switch">
+        <article class="protein-card"><strong>Chicken day — the default</strong><p>The proposed lean strips are the better buy: 115 kcal, 23.4 g protein, 1.8 g fat and 0.8 g salt per 100 g. At 250 g, the chicken costs about €3.00.</p><a href="https://musclemeat.nl/product/kant-en-klare-roasted-kipfiletreepjes-naturel/" target="_blank" rel="noopener">Open Muscle Meat chicken ↗</a></article>
+        <article class="protein-card"><strong>Salmon day — replace, do not stack</strong><p>One frozen 200 g fillet replaces the chicken. The five-pack costs €20.95; one portion costs €4.19 and supplies the EPA/DHA and vitamin D the chicken day lacks.</p><a href="https://musclemeat.nl/product/noorse-zalmfilets/" target="_blank" rel="noopener">Open Muscle Meat salmon ↗</a></article>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="section-head"><div class="section-index">03 / Execution</div><div class="section-copy"><h2>Cold oven. One action. Done.</h2><p>This is deliberately not the crispiest possible culinary method. It is the lowest-friction method that still produces a large hot meal.</p></div></div>
+      <div class="method">
+        <div class="method-steps">
+          <article class="method-step"><h3>Use a wide, shallow metal tray</h3><p>Aluminium or stainless steel is ideal. Spread loose pieces rather than freezing the tray into one solid brick. Use baking paper when cooking acidic ingredients in bare aluminium.</p></article>
+          <article class="method-step"><h3>Dump the complete hot stack</h3><p>Protein, drained chickpeas, frozen vegetables, frozen avocado, olive oil, crispy chilli oil and dry spices all go in together. No later additions.</p></article>
+          <article class="method-step"><h3>Start the cold oven at 200°C fan</h3><p>Do not preheat. A small shallow tray may be ready sooner, but this V04 hot stack weighs roughly 1.27 kg and needs a longer unattended window.</p></article>
+          <article class="method-step"><h3>Calibrate once, then automate</h3><p>Start checking at 45 minutes. Record the actual time for your tray and oven. Future runs use that proven number, normally around 45–55 minutes.</p></article>
+        </div>
+        <aside class="timer"><div class="timer-label">Expected full-tray window</div><div class="timer-value">45–55</div><p>minutes from a cold oven at 200°C fan. More crowding means more steaming and a longer run.</p><p class="safety"><strong>Salmon safety:</strong> the salmon is raw. On the first run, verify the thickest part reaches 63°C before eating. The chicken strips are already cooked but should be piping hot.</p></aside>
+      </div>
+    </section>
+
+    <section class="section" id="costs">
+      <div class="section-head"><div class="section-index">04 / Cost</div><div class="section-copy"><h2>Package-aware, not fantasy-per-gram.</h2><p>Meal costs use the amount actually eaten. The starter basket is higher because the chicken, salmon, oils and chilli jar carry into later meals.</p></div></div>
+      <div class="cost-strip">
+        <div class="cost-metric"><span>Chicken day</span><strong id="cost-chicken">€10.67</strong></div>
+        <div class="cost-metric"><span>Salmon day</span><strong id="cost-salmon">€11.87</strong></div>
+        <div class="cost-metric"><span>6 + 1 week</span><strong id="cost-week">€75.89</strong></div>
+        <div class="cost-metric"><span>30-day run-rate</span><strong id="cost-month">€325.24</strong></div>
+        <div class="cost-metric"><span>Starter basket</span><strong id="cost-basket">€77.28</strong></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Item</th><th>Pack</th><th class="num">Pack price</th><th class="num">Used</th><th class="num">Meal cost</th><th>Source</th></tr></thead>
+          <tbody id="cost-body"><tr><td colspan="6">Loading source-backed product data…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-note">Chicken and salmon are alternatives; do not add both meal-cost cells together. Price snapshot: 13 July 2026. Muscle Meat prices were read from the product pages. AH list prices were checked against current product/search listings and a supermarket price tracker where AH blocked direct automated access. No delivery cost or promotion is included.</p>
+    </section>
+
+    <section class="section" id="micronutrients">
+      <div class="section-head"><div class="section-index">05 / Nutrition model</div><div class="section-copy"><h2>Cronometer-inspired, with provenance.</h2><p>Branded labels control calories, macros and salt. USDA SR28 whole-food records provide the wider micronutrient proxy. Unknowns remain unknown instead of being filled with decorative precision.</p></div></div>
+      <div class="crono">
+        <div class="crono-top"><div><div class="crono-brand">Daily nutrition report</div><h3 id="profile-name">Chicken day</h3></div><div class="data-status" id="data-status">Loading nutrition-data.json</div></div>
+        <div class="tabs" role="tablist" aria-label="Nutrition profile">
+          <button class="tab" type="button" role="tab" aria-selected="true" data-profile="chicken">Chicken day</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-profile="salmon">Salmon day</button>
+          <button class="tab" type="button" role="tab" aria-selected="false" data-profile="rotation">6 + 1 average</button>
+        </div>
+        <div class="macro-grid" id="macro-grid" aria-live="polite"></div>
+        <div class="nutrient-groups">
+          <section class="nutrient-group"><h4>Vitamins</h4><div id="vitamin-rows"></div></section>
+          <section class="nutrient-group"><h4>Minerals</h4><div id="mineral-rows"></div></section>
+          <section class="nutrient-group"><h4>Fats + performance</h4><div id="other-rows"></div></section>
+          <section class="nutrient-group"><h4>Energy + macros</h4><div id="macro-rows"></div></section>
+        </div>
+        <div class="model-note"><strong>Read the bars correctly.</strong> Green means the model meets the displayed RDA/AI, not that “more is always better”. Sodium and saturated fat are limit-style bars. Vitamin C is especially sensitive to heat; the raw/frozen proxy likely overstates the amount left after a long oven cycle.</div>
+      </div>
+      <div class="gaps">
+        <article class="gap"><small>Persistent gap</small><h4>Vitamin D</h4><p>The salmon day is strong, but a 6 + 1 weekly average still does not reach the daily reference. Sun exposure, fortified foods and personal supplementation sit outside this recipe model.</p></article>
+        <article class="gap"><small>Near miss</small><h4>Vitamin A + choline</h4><p>The tray is vegetable-heavy but not carrot-heavy. Chicken day models at about 30% vitamin A and 68% choline. A future V05 could swap part of the grilled mix for carrot and solve choline elsewhere.</p></article>
+        <article class="gap"><small>Unmeasured</small><h4>Iodine + biotin</h4><p>SR28 and the supplied brand labels do not support a defensible total here. Gejodeerd salt can make iodine intentional, but the current calculation refuses to guess.</p></article>
+      </div>
+      <details><summary>Methodology, targets and source limitations</summary><div class="details-body"><ul><li>Targets are for an adult man aged 31–50: US National Academies/NIH RDA or AI where available. Sodium uses a 2,300 mg upper limit. EPA + DHA uses a 250 mg display reference.</li><li>Muscle Meat, Arla, AH and Old Mother labels override calories, macros and salt where available. Generic USDA SR28 foods act as micronutrient proxies.</li><li>The grilled vegetable mix is reconstructed from its declared percentages. The summer-fruit mix uses equal shares because the manufacturer does not publish proportions.</li><li>No cooking-retention factor, absorption factor or lab measurement is applied. Long heating will reduce some heat-sensitive vitamins.</li><li>This is a planning estimate, not medical advice or a substitute for a dietitian. See <a href="https://ods.od.nih.gov/factsheets/list-all/" target="_blank" rel="noopener">NIH nutrient fact sheets ↗</a>, <a href="https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/sr28_doc.pdf" target="_blank" rel="noopener">USDA SR28 documentation ↗</a> and <a href="https://www.voedingscentrum.nl/encyclopedie/vis.aspx" target="_blank" rel="noopener">Voedingscentrum on fish ↗</a>.</li></ul></div></details>
+    </section>
+
+    <section class="section closing">
+      <blockquote>“The best meal is not the one with the prettiest nutrient chart. It is the one I will still make when I do not feel like cooking.”</blockquote>
+      <div class="closing-copy"><p>V04 is intentionally opinionated: fixed stacks, one default chicken, one complete salmon swap, one oven action, and no permanent miscellaneous calories.</p><p><strong>The lean natural chicken is the right buy.</strong> It cuts the salt problem from the flavoured strips while keeping the frozen, already-cooked convenience that makes this system work.</p><p>The next evidence should come from reality: actual tray time, texture after freezing, fullness, energy and whether the routine survives a normal week.</p></div>
+    </section>
+
+    <footer class="footer"><span>© 2026 Viggo Meesters</span><span>Source-backed personal systems · V04</span></footer>
+  </main>
+
+  <script>
+    const groups = {
+      vitamins:['vitamin_a_rae_mcg','vitamin_c_mg','vitamin_d_mcg','vitamin_e_mg','vitamin_k_mcg','thiamin_mg','riboflavin_mg','niacin_mg','pantothenic_mg','vitamin_b6_mg','biotin_mcg','folate_mcg','vitamin_b12_mcg'],
+      minerals:['calcium_mg','iron_mg','magnesium_mg','phosphorus_mg','potassium_mg','zinc_mg','copper_mg','manganese_mg','selenium_mcg','sodium_mg','iodine_mcg'],
+      other:['saturated_fat_g','choline_mg','omega3_ala_g','omega3_epa_dha_mg'],
+      macros:['kcal','protein_g','carbs_g','fiber_g','fat_g']
+    };
+    let nutritionData;
+    const euro = value => new Intl.NumberFormat('en-NL',{style:'currency',currency:'EUR'}).format(value);
+    const format = row => row.value == null ? 'not modelled' : `${new Intl.NumberFormat('en-NL',{maximumFractionDigits:row.value<10?2:0}).format(row.value)} ${row.unit}`;
+
+    function nutrientRow(row){
+      const width = row.pct == null ? 14 : Math.min(row.pct,140)/1.4;
+      const aria = row.pct == null ? `${row.label}: not modelled` : `${row.label}: ${row.pct}% of ${row.basis}`;
+      return `<div class="nutrient" title="${row.basis}"><span class="nutrient-name">${row.label}</span><span class="track" role="progressbar" aria-label="${aria}" aria-valuemin="0" aria-valuemax="140" aria-valuenow="${row.pct ?? 0}"><span class="fill ${row.status}" style="width:${width}%"></span></span><span class="nutrient-value"><strong>${row.pct == null ? '—' : row.pct+'%'}</strong>${format(row)}</span></div>`;
+    }
+    function renderProfile(key){
+      const profile=nutritionData.profiles[key];
+      document.getElementById('profile-name').textContent=profile.name;
+      document.querySelectorAll('.tab').forEach(button=>button.setAttribute('aria-selected',String(button.dataset.profile===key)));
+      const s=profile.summary;
+      const macros=[['Energy',`${Math.round(s.kcal)} kcal`],['Protein',`${s.protein_g} g`],['Carbs',`${s.carbs_g} g`],['Fibre',`${s.fiber_g} g`],['Fat',`${s.fat_g} g`],['Cost',euro(profile.cost_eur)]];
+      document.getElementById('macro-grid').innerHTML=macros.map(([label,value])=>`<div class="macro"><span>${label}</span><strong>${value}</strong></div>`).join('');
+      const rows=Object.fromEntries(profile.nutrients.map(row=>[row.key,row]));
+      document.getElementById('vitamin-rows').innerHTML=groups.vitamins.map(key=>nutrientRow(rows[key])).join('');
+      document.getElementById('mineral-rows').innerHTML=groups.minerals.map(key=>nutrientRow(rows[key])).join('');
+      document.getElementById('other-rows').innerHTML=groups.other.map(key=>nutrientRow(rows[key])).join('');
+      document.getElementById('macro-rows').innerHTML=groups.macros.map(key=>nutrientRow(rows[key])).join('');
+    }
+    function renderCosts(){
+      const products=nutritionData.products;
+      const body=document.getElementById('cost-body');
+      body.innerHTML=products.map((product,index)=>`<tr><td>${product.name}</td><td>${product.package}</td><td class="num">${euro(product.package_price)}</td><td class="num">${product.grams} g</td><td class="num">${euro(product.cost)}</td><td data-source-index="${index}"></td></tr>`).join('');
+      products.forEach((product,index)=>{
+        const link=document.createElement('a');
+        link.href=product.url; link.target='_blank'; link.rel='noopener'; link.textContent='product ↗';
+        body.querySelector(`[data-source-index="${index}"]`).appendChild(link);
+      });
+      document.getElementById('cost-chicken').textContent=euro(nutritionData.profiles.chicken.cost_eur);
+      document.getElementById('cost-salmon').textContent=euro(nutritionData.profiles.salmon.cost_eur);
+      document.getElementById('cost-week').textContent=euro(nutritionData.rotation.weekly_cost_eur);
+      document.getElementById('cost-month').textContent=euro(nutritionData.rotation.thirty_day_eur);
+      document.getElementById('cost-basket').textContent=euro(nutritionData.rotation.starter_basket_eur);
+    }
+    document.querySelectorAll('.tab').forEach(button=>button.addEventListener('click',()=>nutritionData&&renderProfile(button.dataset.profile)));
+    fetch('./nutrition-data.json',{cache:'no-store'})
+      .then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json()})
+      .then(data=>{nutritionData=data;renderCosts();renderProfile('chicken');const status=document.getElementById('data-status');status.textContent=`Model ${data.meta.generated} · ${data.products.length} products`;status.classList.add('ready')})
+      .catch(error=>{document.getElementById('data-status').textContent=`Data unavailable: ${error.message}`;document.getElementById('macro-grid').innerHTML='<div class="model-note">The generated nutrition artifact could not be loaded. The article and source links remain available.</div>'});
+  </script>
+</body>
+</html>

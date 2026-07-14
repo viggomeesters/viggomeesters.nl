@@ -2,41 +2,49 @@
   "schema": "go-workflow.repo-local.hierarchy.v1",
   "kind": "hierarchy",
   "project": "viggomeesters-site",
-  "feature_groups": [
+  "epics": [
     {
       "id": "public-site",
+      "title": "Public site",
       "name": "Public site",
       "features": [
         {
           "id": "homepage",
+          "title": "Homepage and navigation",
           "name": "Homepage and navigation",
           "tasks": []
         },
         {
           "id": "project-pages",
+          "title": "Project/system pages",
           "name": "Project/system pages",
           "tasks": []
         },
         {
           "id": "guides-indexes",
+          "title": "Guides, indexes, and generated public snapshots",
           "name": "Guides, indexes, and generated public snapshots",
           "tasks": [
-            "reduce-seo-metadata-issue-baseline"
+            "reduce-seo-metadata-issue-baseline",
+            "publish-omad-v04-cronometer-guide"
           ]
         }
       ]
     },
     {
       "id": "site-operations",
+      "title": "Site operations",
       "name": "Site operations",
       "features": [
         {
           "id": "checks",
+          "title": "Static checks and SEO checks",
           "name": "Static checks and SEO checks",
           "tasks": []
         },
         {
           "id": "repo-local-workflow",
+          "title": "Repo-local agent workflow pilot",
           "name": "Repo-local agent workflow pilot",
           "tasks": [
             "document-repo-local-workflow-pilot",
