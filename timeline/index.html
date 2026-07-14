@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work &amp; Build Timeline — Viggo Meesters</title>
-  <meta name="description" content="Explore Viggo Meesters&apos; projects, credentials, products, repositories, systems, and writing in one connected timeline since 2014.">
+  <meta name="description" content="Explore Viggo Meesters&apos; work, education, projects, credentials, products, repositories, systems, and writing in one connected timeline since 2006.">
   <link rel="canonical" href="https://viggomeesters.com/timeline/">
   <meta property="og:title" content="Work &amp; Build Timeline — Viggo Meesters">
-  <meta property="og:description" content="Professional projects, products, repositories, systems, and writing since 2014—newest first.">
+  <meta property="og:description" content="Work, education, professional projects, products, repositories, systems, and writing since 2006—newest first.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://viggomeesters.com/timeline/">
   <meta property="og:image" content="https://viggomeesters.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Work &amp; Build Timeline — Viggo Meesters">
-  <meta name="twitter:description" content="Professional projects, products, repositories, systems, and writing since 2014—newest first.">
+  <meta name="twitter:description" content="Work, education, professional projects, products, repositories, systems, and writing since 2006—newest first.">
   <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
   <meta name="theme-color" content="#090b10">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -59,7 +59,7 @@
     .timeline-entry.featured{padding-top:50px;padding-bottom:58px}.timeline-entry.featured::before{top:58px;width:13px;height:13px;left:177px}
     .timeline-entry.featured .entry-body{padding:clamp(24px,4vw,42px);border:1px solid color-mix(in srgb,var(--entry) 18%,var(--line));background:linear-gradient(145deg,color-mix(in srgb,var(--entry) 8%,var(--surface)),rgba(15,19,27,.72));box-shadow:0 24px 80px rgba(0,0,0,.18)}
     .timeline-entry.featured .entry-number{color:color-mix(in srgb,var(--entry) 68%,#4c566a)}
-    .timeline-entry[data-type="repository"]{--entry:#a99bff}.timeline-entry[data-type="workflow"]{--entry:#ffbc75}.timeline-entry[data-type="writing"]{--entry:#8ee6b1}.timeline-entry[data-type="career"]{--entry:#f5a524}.timeline-entry[data-type="certificate"]{--entry:#ffd166}
+    .timeline-entry[data-type="repository"]{--entry:#a99bff}.timeline-entry[data-type="workflow"]{--entry:#ffbc75}.timeline-entry[data-type="writing"]{--entry:#8ee6b1}.timeline-entry[data-type="career"]{--entry:#f5a524}.timeline-entry[data-type="certificate"]{--entry:#ffd166}.timeline-entry[data-type="employment"]{--entry:#ff7b72}.timeline-entry[data-type="education"]{--entry:#4fd1a1}
     .closing{display:grid;grid-template-columns:184px 1fr;margin-top:18px}.closing-copy{grid-column:2;padding:46px 0 10px 68px}.closing-label{color:var(--accent);font:500 .66rem var(--mono);letter-spacing:.14em;text-transform:uppercase}.closing h2{max-width:700px;margin:13px 0 14px;color:var(--bright);font-size:clamp(2rem,5vw,4.2rem);line-height:1;letter-spacing:-.06em}.closing p{max-width:560px;margin:0;color:var(--muted)}
     .footer{display:flex;justify-content:space-between;gap:24px;margin-top:80px;padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font:400 .68rem var(--mono)}.footer a{text-underline-offset:4px}
     @media(max-width:760px){.page{width:min(100% - 24px,1180px);padding-top:16px}.hero{grid-template-columns:1fr;padding:64px 0 70px}.hero-aside{max-width:360px}.controls{align-items:flex-start;flex-direction:column}.filters{justify-content:flex-start}.status-row{justify-content:flex-start}.timeline::before{left:15px}.timeline-entry,.timeline-entry.featured{grid-template-columns:1fr;gap:12px;padding:32px 0 42px 42px}.timeline-entry::before,.timeline-entry.featured::before{top:39px;left:10px;width:11px;height:11px}.entry-meta{text-align:left}.entry-date,.entry-type{display:inline-block}.entry-type{margin:0 0 0 10px}.timeline-entry.featured .entry-body{padding:22px}.closing{display:block;padding-left:42px}.closing-copy{padding:40px 0}.footer{flex-direction:column}}
@@ -79,7 +79,7 @@
       <div>
         <div class="eyebrow">Work / build / learn</div>
         <h1>Things I’ve made move.</h1>
-        <p class="hero-lede">The complete connected record: professional projects, credentials, products, repositories, systems, and ideas from 2014 to now. Newest first.</p>
+        <p class="hero-lede">The complete connected record: work, education, professional projects, credentials, products, repositories, systems, and ideas from 2006 to now. Newest first.</p>
       </div>
       <aside class="hero-aside" aria-label="Timeline editorial note">
         <span class="aside-label">Through-line</span>
@@ -91,11 +91,13 @@
     <section class="controls" aria-labelledby="timeline-heading">
       <div class="controls-copy">
         <h2 id="timeline-heading">Complete timeline</h2>
-        <p>2014—now · connected public record</p>
+        <p>2006—now · connected public record</p>
       </div>
       <div class="filters" aria-label="Filter timeline">
         <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
         <button class="filter" type="button" data-filter="career" aria-pressed="false">Professional</button>
+        <button class="filter" type="button" data-filter="employment" aria-pressed="false">Work</button>
+        <button class="filter" type="button" data-filter="education" aria-pressed="false">Education</button>
         <button class="filter" type="button" data-filter="project" aria-pressed="false">Projects</button>
         <button class="filter" type="button" data-filter="repository" aria-pressed="false">Repositories</button>
         <button class="filter" type="button" data-filter="workflow" aria-pressed="false">Workflow</button>
@@ -103,7 +105,7 @@
         <button class="filter" type="button" data-filter="certificate" aria-pressed="false">Learning</button>
       </div>
     </section>
-    <div class="status-row"><span id="filter-status" role="status" aria-live="polite">95 milestones shown</span></div>
+    <div class="status-row"><span id="filter-status" role="status" aria-live="polite">166 milestones shown</span></div>
 
     <section class="timeline" aria-label="Work and build timeline">
       <article class="timeline-entry featured" data-date="2026-07-14" data-type="project">
@@ -111,9 +113,9 @@
         <div class="entry-body"><span class="entry-number">App / SAP data quality</span><h3>SAP Data Readiness turns table extracts into process-readiness findings.</h3><p>A Fiori-inspired, browser-local checker that loads SAP-shaped CSV and XLSX tables, tests material master data against purchase-readiness rules, and explains what will break before the process does.</p><div class="proof-links"><a href="https://sap-data-readiness.vercel.app" target="_blank" rel="noopener">Open the live app &nearr;</a><a href="/apps/">See all apps &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-07-13" data-type="repository">
+      <article class="timeline-entry" data-date="2026-07-13" data-type="repository" data-coverage="repository-etm-next-agent-context">
         <div class="entry-meta"><time class="entry-date" datetime="2026-07-13">13 Jul 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">Context / ETM.next</span><h3>ETM.next Agent Context</h3><p>A source-backed product context pack that makes ETM.next concepts, terminology, and evidence usable by both people and AI agents.</p><div class="proof-links"><a href="https://github.com/viggomeesters/etm-next-agent-context" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>etm-next-agent-context</h3><p>Source-backed ETM.next product context for people and AI agents</p><div class="proof-links"><a href="https://github.com/viggomeesters/etm-next-agent-context" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry featured" data-date="2026-07-12" data-type="project">
@@ -126,19 +128,49 @@
         <div class="entry-body"><span class="entry-number">02 / Method</span><h3>Evidence-Based Work</h3><p>A practical argument for treating screenshots, tests, readbacks, and source links as part of delivery—not as decoration after the fact.</p><div class="proof-links"><a href="/evidence-based-work/">Read the article &rarr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2026-07-07" data-type="writing" data-coverage="writing-hermes-telegram-wsl-starten">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-07-07">07 Jul 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Hermes via Telegram and WSL</h3><p>A practical setup guide for running Hermes through Telegram and WSL.</p><div class="proof-links"><a href="/hermes-telegram-wsl-starten/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-07-06" data-type="repository" data-coverage="repository-nederlandse-huizenkoop-agent-context">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-07-06">06 Jul 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>nederlandse-huizenkoop-agent-context</h3><p>Nederlands Markdown-first contextpakket voor koper-side AI-agenten bij huizen kopen: bezichtigen, bieden, voorwaarden, kosten en hypotheek.</p><div class="proof-links"><a href="https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
       <article class="timeline-entry featured" data-date="2026-07-06" data-type="project">
         <div class="entry-meta"><time class="entry-date" datetime="2026-07-06">06 Jul 2026</time><span class="entry-type">Project</span></div>
         <div class="entry-body"><span class="entry-number">03 / Agent context</span><h3>A source-backed context pack for buying a home in the Netherlands.</h3><p>The Nederlandse Huizenkoop Agent Context turns a fragmented process into versioned, reviewable guidance with explicit source and freshness metadata.</p><div class="proof-links"><a href="/nederlandse-huizenkoop-agent-context/">Read the case &rarr;</a><a href="https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-07-03" data-type="repository">
+      <article class="timeline-entry" data-date="2026-07-03" data-type="repository" data-coverage="repository-go-workflow-stack">
         <div class="entry-meta"><time class="entry-date" datetime="2026-07-03">03 Jul 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">04 / Delivery system</span><h3>Go Workflow Stack</h3><p>A public reference implementation for turning goals into bounded tasks, gates, ledgers, and verifiable shipping evidence.</p><div class="proof-links"><a href="/go-workflow-stack/">Explore the system &rarr;</a><a href="https://github.com/viggomeesters/go-workflow-stack" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>go-workflow-stack</h3><p>Reusable CLI and schemas for repo-local .go agent workflow state.</p><div class="proof-links"><a href="/go-workflow-stack/">Open project page →</a><a href="https://github.com/viggomeesters/go-workflow-stack" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-07-02" data-type="repository">
+      <article class="timeline-entry" data-date="2026-07-03" data-type="repository" data-coverage="repository-go-project-template">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-07-03">03 Jul 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>go-project-template</h3><p>Minimal .go template repository for repo-local agent workflows.</p><div class="proof-links"><a href="/go-project-template/">Open project page →</a><a href="https://github.com/viggomeesters/go-project-template" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-07-02" data-type="repository" data-coverage="repository-viggomeesters.github.io">
         <div class="entry-meta"><time class="entry-date" datetime="2026-07-02">02 Jul 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">Starting point / Delivery</span><h3>Go Project Template</h3><p>A minimal public repository contract for beginning agent-assisted projects with goals, tasks, gates, and workflow state close to the code.</p><div class="proof-links"><a href="/go-project-template/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/go-project-template" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>viggomeesters.github.io</h3><p>Public schemas and agent-facing contracts for personally maintained tooling.</p><div class="proof-links"><a href="https://github.com/viggomeesters/viggomeesters.github.io" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-30" data-type="repository" data-coverage="repository-minimal-ai-vault-starter">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-30">30 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>minimal-ai-vault-starter</h3><p>Public-safe starter for a minimal AI-enabled Obsidian/JSONL vault</p><div class="proof-links"><a href="https://github.com/viggomeesters/minimal-ai-vault-starter" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-29" data-type="workflow" data-coverage="system-vault-layer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-29">29 Jun 2026</time><span class="entry-type">System</span></div>
+        <div class="entry-body"><span class="entry-number">Knowledge / Read model</span><h3>VaultLayer</h3><p>A local-first read layer for Markdown search, vectors, structured metadata, and provenance.</p><div class="proof-links"><a href="/vault-layer/">Explore VaultLayer →</a><a href="https://github.com/viggomeesters/vault-layer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-25" data-type="repository" data-coverage="repository-viggomeesters-assets">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-25">25 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>viggomeesters-assets</h3><p>Public-safe visual style and prompt references for viggomeesters.com.</p><div class="proof-links"><a href="https://github.com/viggomeesters/viggomeesters-assets" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-06-24" data-type="writing">
@@ -146,9 +178,39 @@
         <div class="entry-body"><span class="entry-number">05 / Architecture</span><h3>Database types for agent-first systems</h3><p>A decision guide for choosing storage by access pattern, auditability, and operational constraints instead of defaulting to one fashionable database.</p><div class="proof-links"><a href="/database-types-agent-first-systems/">Read the guide &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-06-24" data-type="repository">
+      <article class="timeline-entry" data-date="2026-06-24" data-type="writing" data-coverage="writing-jsonl-agent-first-data-structures">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-24">24 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>JSONL for Agent-First Data Structures</h3><p>Why append-friendly JSONL is a useful substrate for inspectable, agent-readable systems.</p><div class="proof-links"><a href="/jsonl-agent-first-data-structures/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-24" data-type="writing" data-coverage="writing-foci-fear-of-choosing-incorrectly">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-24">24 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>FOCI: Fear of Choosing Incorrectly</h3><p>A working model for recognising and reducing decision paralysis.</p><div class="proof-links"><a href="/foci-fear-of-choosing-incorrectly/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-24" data-type="repository" data-coverage="repository-jsonl-vault-spike">
         <div class="entry-meta"><time class="entry-date" datetime="2026-06-24">24 Jun 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">06 / Data structures</span><h3>JSONL Vault Spike</h3><p>A bounded experiment in append-friendly, inspectable data structures for agent-first knowledge systems.</p><div class="proof-links"><a href="/jsonl-vault-spike/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/jsonl-vault-spike" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>jsonl-vault-spike</h3><p>Synthetic JSONL-first vault/context proof of concept for agent-readable personal knowledge systems</p><div class="proof-links"><a href="https://github.com/viggomeesters/jsonl-vault-spike" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="writing" data-coverage="writing-vault-first-operating-model">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Vault-First Operating Model</h3><p>A local-first model for durable context, task state, and agent collaboration.</p><div class="proof-links"><a href="/vault-first-operating-model/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="writing" data-coverage="writing-source-backed-synthesis">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Source-Backed Synthesis</h3><p>A method for turning evidence into useful synthesis without losing provenance.</p><div class="proof-links"><a href="/source-backed-synthesis/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="writing" data-coverage="writing-proof-first-delivery">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Proof-First Delivery</h3><p>A delivery approach where verification evidence is part of the work itself.</p><div class="proof-links"><a href="/proof-first-delivery/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="writing" data-coverage="writing-agent-workflow-loop">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>The Agent Workflow Loop</h3><p>A bounded loop for planning, executing, checking, and finishing agent work.</p><div class="proof-links"><a href="/agent-workflow-loop/">Read the article →</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-06-23" data-type="workflow">
@@ -156,9 +218,34 @@
         <div class="entry-body"><span class="entry-number">Knowledge / Read model</span><h3>Personal Knowledge System and VaultLayer become one inspectable stack.</h3><p>The system map explains capture, structure, validation, retrieval, and agent interfaces; VaultLayer adds a local-first read model over Markdown.</p><div class="proof-links"><a href="/personal-knowledge-system/">Explore the system &rarr;</a><a href="/vault-layer/">Open VaultLayer &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry featured" data-date="2026-06-22" data-type="project">
-        <div class="entry-meta"><time class="entry-date" datetime="2026-06-22">22 Jun 2026</time><span class="entry-type">Project</span></div>
-        <div class="entry-body"><span class="entry-number">07 / SAP delivery</span><h3>SAP knowledge becomes typed, sourced agent context.</h3><p>SAP Agent Context packages functional design, field mapping, migration, workflow, integrations, and analytics guidance without customer content.</p><div class="proof-links"><a href="/sap-agent-context/">Read the case &rarr;</a><a href="https://github.com/viggomeesters/sap-agent-context" target="_blank" rel="noopener">Inspect the source &nearr;</a></div></div>
+      <article class="timeline-entry" data-date="2026-06-23" data-type="workflow" data-coverage="system-reviewed-skills">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">System</span></div>
+        <div class="entry-body"><span class="entry-number">Procedural memory / Reviewed public set</span><h3>Reviewed Skills</h3><p>Public summaries of reusable capabilities, with purpose, provenance, maintenance state, and boundaries visible.</p><div class="proof-links"><a href="/skills/">Explore reviewed skills →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="repository" data-coverage="repository-vault-layer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>vault-layer</h3><p>Local-first database and retrieval layer for huge Markdown/Obsidian vaults</p><div class="proof-links"><a href="/vault-layer/">Open project page →</a><a href="https://github.com/viggomeesters/vault-layer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-23" data-type="repository" data-coverage="repository-reisplanner-agent">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-23">23 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>reisplanner-agent</h3><p>Local-first agent-ready travel planning toolkit with optional Vercel publishing</p><div class="proof-links"><a href="https://github.com/viggomeesters/reisplanner-agent" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-22" data-type="repository" data-coverage="repository-sap-field-atlas">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-22">22 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Archived</span><h3>sap-field-atlas</h3><p>Archived legacy seed; canonical successor: viggomeesters/sap-agent-context</p><div class="proof-links"><a href="https://github.com/viggomeesters/sap-field-atlas" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-22" data-type="repository" data-coverage="repository-sap-agent-context">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-22">22 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>sap-agent-context</h3><p>Source-backed SAP context bundles for AI agents, functional design, field mapping, and SAP delivery workflows.</p><div class="proof-links"><a href="/sap-agent-context/">Open project page →</a><a href="https://github.com/viggomeesters/sap-agent-context" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-22" data-type="repository" data-coverage="repository-mega-vault-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-22">22 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>mega-vault-viewer</h3><p>Local-first macOS viewer for large mixed-format Markdown knowledge vaults.</p><div class="proof-links"><a href="/mega-vault-viewer/">Open project page →</a><a href="https://github.com/viggomeesters/mega-vault-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-06-22" data-type="project">
@@ -166,9 +253,109 @@
         <div class="entry-body"><span class="entry-number">08 / Knowledge tooling</span><h3>Mega Vault Viewer</h3><p>A read-only browser for large markdown vaults, designed to make structure and content navigable without turning the viewer into another editor.</p><div class="proof-links"><a href="/mega-vault-viewer/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/mega-vault-viewer" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry featured" data-date="2026-06-22" data-type="project">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-22">22 Jun 2026</time><span class="entry-type">Project</span></div>
+        <div class="entry-body"><span class="entry-number">07 / SAP delivery</span><h3>SAP knowledge becomes typed, sourced agent context.</h3><p>SAP Agent Context packages functional design, field mapping, migration, workflow, integrations, and analytics guidance without customer content.</p><div class="proof-links"><a href="/sap-agent-context/">Read the case &rarr;</a><a href="https://github.com/viggomeesters/sap-agent-context" target="_blank" rel="noopener">Inspect the source &nearr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2026-06-19" data-type="project">
         <div class="entry-meta"><time class="entry-date" datetime="2026-06-19">19 Jun 2026</time><span class="entry-type">Project</span></div>
         <div class="entry-body"><span class="entry-number">App / Compensation</span><h3>Normalized Salary Calculator</h3><p>A focused browser calculator for comparing compensation packages on consistent yearly, monthly, and hourly terms.</p><div class="proof-links"><a href="https://normalized-salary-calculator.vercel.app" target="_blank" rel="noopener">Open the calculator &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-16" data-type="repository" data-coverage="repository-macos-save-to-obsidian">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-16">16 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>macos-save-to-obsidian</h3><p>Standalone macOS Mail to Obsidian workflow</p><div class="proof-links"><a href="https://github.com/viggomeesters/macos-save-to-obsidian" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-14" data-type="repository" data-coverage="repository-obsidian-releases">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-14">14 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-releases</h3><p>Community plugins list, theme list, and releases of Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-releases" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-13" data-type="repository" data-coverage="repository-obsidian-folder-sort-view">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-13">13 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-folder-sort-view</h3><p>Public-API Obsidian folder view sorted Z-to-A</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-folder-sort-view" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-12" data-type="repository" data-coverage="repository-obsidian-test-vault">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-12">12 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-test-vault</h3><p>Public repository retained as part of the complete build history.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-test-vault" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-12" data-type="repository" data-coverage="repository-obsidian-newest-files">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-12">12 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-newest-files</h3><p>Public repository retained as part of the complete build history.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-newest-files" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-12" data-type="repository" data-coverage="repository-obsidian-folder-sort-z-to-a">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-12">12 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-folder-sort-z-to-a</h3><p>Spike plugin for Z-to-A folder ordering in Obsidian&#x27;s native File Explorer</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-folder-sort-z-to-a" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-12" data-type="repository" data-coverage="repository-obsidian-diff-patch-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-12">12 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-diff-patch-viewer</h3><p>Read-only .diff and .patch viewer for Obsidian</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-diff-patch-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-09" data-type="repository" data-coverage="repository-obsidian-word-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-09">09 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-word-viewer</h3><p>Read-only DOCX document viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-word-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-09" data-type="repository" data-coverage="repository-obsidian-slide-deck-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-09">09 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-slide-deck-viewer</h3><p>Read-only PPTX slide inspection view for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-slide-deck-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-vcf-contacts-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-vcf-contacts-viewer</h3><p>Read-only VCF contact card viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-vcf-contacts-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-sql-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-sql-viewer</h3><p>Read-only SQLite database viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-sql-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-script-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-script-viewer</h3><p>Read-only script source, outline, and safety-hint viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-script-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-plist-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-plist-viewer</h3><p>Read-only Apple plist and mobileconfig viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-plist-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-minimal-hidden-files">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-minimal-hidden-files</h3><p>Reveal safe dotfiles and dotfolders in Obsidian&#x27;s native File Explorer.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-minimal-hidden-files" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-ics-calendar-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-ics-calendar-viewer</h3><p>Public repository retained as part of the complete build history.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-ics-calendar-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-git-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-git-viewer</h3><p>Lightweight read-only Git status viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-git-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-eml-email-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-eml-email-viewer</h3><p>Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-eml-email-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-archive-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-archive-viewer</h3><p>Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-archive-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-08" data-type="repository" data-coverage="repository-obsidian-alteryx-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-08">08 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-alteryx-viewer</h3><p>Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-06-08" data-type="project">
@@ -176,9 +363,74 @@
         <div class="entry-body"><span class="entry-number">09 / Obsidian</span><h3>Complex files become inspectable inside the vault.</h3><p>A family of read-only Obsidian viewers for Alteryx, XML, YAML, CSV, JSONL, EML, and other structured formats.</p><div class="proof-links"><a href="/obsidian-plugins/">Browse the viewer suite &rarr;</a><a href="https://github.com/viggomeesters/obsidian-alteryx-viewer" target="_blank" rel="noopener">Inspect Alteryx Viewer &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-xml-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-xml-viewer</h3><p>Read-only XML tree and source viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-xml-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-xlsx-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-xlsx-viewer</h3><p>Read-only XLSX workbook value viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-xlsx-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-txt-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-txt-viewer</h3><p>Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-txt-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-toml-ini-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-toml-ini-viewer</h3><p>Public repository retained as part of the complete build history.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-toml-ini-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-python-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-python-viewer</h3><p>Read-only Python source and structure viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-python-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-log-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-log-viewer</h3><p>Read-only log file viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-log-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-json-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-json-viewer</h3><p>Read-only JSON and JSONL tree viewer for Obsidian</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-json-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-html-page-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-html-page-viewer</h3><p>Read-only sandboxed HTML page viewer for Obsidian.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-html-page-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-csv-tsv-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-csv-tsv-viewer</h3><p>Read-only CSV and TSV table viewer.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-csv-tsv-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-07" data-type="repository" data-coverage="repository-obsidian-ango-companion">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-07">07 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-ango-companion</h3><p>Public repository retained as part of the complete build history.</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-ango-companion" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-06-06" data-type="repository" data-coverage="repository-obsidian-yaml-viewer">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-06-06">06 Jun 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>obsidian-yaml-viewer</h3><p>Read-only YAML tree viewer for Obsidian</p><div class="proof-links"><a href="https://github.com/viggomeesters/obsidian-yaml-viewer" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-05-29" data-type="repository" data-coverage="repository-hermes-agent">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-05-29">29 May 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>hermes-agent</h3><p>The agent that grows with you</p><div class="proof-links"><a href="https://github.com/viggomeesters/hermes-agent" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
       <article class="timeline-entry featured" data-date="2026-05-29" data-type="workflow">
         <div class="entry-meta"><time class="entry-date" datetime="2026-05-29">29 May 2026</time><span class="entry-type">Workflow</span></div>
         <div class="entry-body"><span class="entry-number">10 / Agent workflow</span><h3>The workflow becomes routable, reusable, and multi-agent.</h3><p>Hermes, Codex, and reusable skills connect a command bus to repo context, durable procedures, and proof-first completion gates.</p><div class="proof-links"><a href="/agent-workflow/">Explore the full evolution &rarr;</a><a href="/agent-workflow/2026-may-hermes-codex-viggo-agent-skills/">See this workflow stage &rarr;</a><a href="/skills/">Browse reviewed skills &rarr;</a><a href="https://github.com/viggomeesters/hermes-agent" target="_blank" rel="noopener">View Hermes Agent &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-05-27" data-type="repository" data-coverage="repository-11mhz-mcp">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-05-27">27 May 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>11mhz-mcp</h3><p>MCP server for the 11MHz API</p><div class="proof-links"><a href="https://github.com/viggomeesters/11mhz-mcp" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry featured" data-date="2026-05-01" data-type="career">
@@ -191,9 +443,14 @@
         <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Hitachi Construction Machinery Europe</h3><p>S/4HANA data migration and load validation for HCME, delivered as an external McCoy engagement.</p><div class="proof-links"><a href="/projects/hitachi-construction-machinery-europe/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-03-17" data-type="repository">
+      <article class="timeline-entry" data-date="2026-03-17" data-type="repository" data-coverage="repository-life-os-starter">
         <div class="entry-meta"><time class="entry-date" datetime="2026-03-17">17 Mar 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">11 / Starter</span><h3>Life OS Starter</h3><p>A plug-and-play Obsidian vault that gives people a practical starting point for markdown-first knowledge work with agent support.</p><div class="proof-links"><a href="https://github.com/viggomeesters/life-os-starter" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>life-os-starter</h3><p>Plug &amp; play Obsidian vault with AI agent support. Clone, install, start.</p><div class="proof-links"><a href="https://github.com/viggomeesters/life-os-starter" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-03-10" data-type="writing" data-coverage="writing-cli-agents-guide">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-03-10">10 Mar 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>CLI Agents Guide</h3><p>A practical guide to working with command-line agents and repository context.</p><div class="proof-links"><a href="/cli-agents-guide/">Read the article →</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-03-01" data-type="career">
@@ -201,9 +458,24 @@
         <div class="entry-body"><span class="entry-number">McCoy / Tooling developer</span><h3>SDP Dashboard</h3><p>An internal browser-based dashboard that makes the Smart Data Platform methodology, steps, and supporting material easier to navigate.</p><div class="proof-links"><a href="/projects/sdp-dashboard/">Open project page &rarr;</a><a href="/systems/">See related public systems &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2026-02-27" data-type="repository">
+      <article class="timeline-entry" data-date="2026-02-28" data-type="writing" data-coverage="writing-knowledge-pyramid">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-02-28">28 Feb 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Knowledge Pyramid</h3><p>A model for structuring raw information into increasingly useful knowledge.</p><div class="proof-links"><a href="/knowledge-pyramid/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-02-28" data-type="writing" data-coverage="writing-helicopter-to-detail">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-02-28">28 Feb 2026</time><span class="entry-type">Writing</span></div>
+        <div class="entry-body"><span class="entry-number">Guide / Method</span><h3>Helicopter to Detail</h3><p>A method for moving deliberately between system overview and implementation detail.</p><div class="proof-links"><a href="/helicopter-to-detail/">Read the article →</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-02-27" data-type="repository" data-coverage="repository-viggomeesters.nl">
         <div class="entry-meta"><time class="entry-date" datetime="2026-02-27">27 Feb 2026</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">12 / Contract</span><h3>Vault Schema</h3><p>A machine-readable schema contract, template set, and validation guard for keeping structured Obsidian vaults dependable.</p><div class="proof-links"><a href="https://github.com/viggomeesters/vault-schema" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>viggomeesters.nl</h3><p>Viggo Meesters’ static personal site: projects, systems, guides, and proof-first agent workflow notes.</p><div class="proof-links"><a href="/">Open project page →</a><a href="https://github.com/viggomeesters/viggomeesters.nl" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2026-02-27" data-type="repository" data-coverage="repository-vault-schema">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-02-27">27 Feb 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Public</span><h3>vault-schema</h3><p>Machine-readable vault schema contract, templates, and validation guard for structured Obsidian vaults</p><div class="proof-links"><a href="https://github.com/viggomeesters/vault-schema" target="_blank" rel="noopener">View repository ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2026-02-19" data-type="project">
@@ -226,9 +498,39 @@
         <div class="entry-body"><span class="entry-number">13 / Shared tools</span><h3>Agent Scripts</h3><p>Repeated agent operations move out of individual repositories and into a shared, inspectable toolkit.</p><div class="proof-links"><a href="https://github.com/viggomeesters/agent-scripts" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2025-11-30" data-type="repository">
+      <article class="timeline-entry" data-date="2026-01-10" data-type="repository" data-coverage="repository-agent-scripts">
+        <div class="entry-meta"><time class="entry-date" datetime="2026-01-10">10 Jan 2026</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Archived</span><h3>agent-scripts</h3><p>Scripts for agents, shared between my repositories.</p><div class="proof-links"><a href="https://github.com/viggomeesters/agent-scripts" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-30" data-type="repository" data-coverage="repository-obsidian-raycast">
         <div class="entry-meta"><time class="entry-date" datetime="2025-11-30">30 Nov 2025</time><span class="entry-type">Repository</span></div>
-        <div class="entry-body"><span class="entry-number">14 / Capture</span><h3>Obsidian meets Raycast.</h3><p>A focused extension for capturing and retrieving Obsidian notes without breaking flow to navigate the vault manually.</p><div class="proof-links"><a href="/raycast-life-os/">Open the project page &rarr;</a><a href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">View repository &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Archived</span><h3>obsidian-raycast</h3><p>Raycast extension with commands for the note taking app Obsidian.</p><div class="proof-links"><a href="/raycast-life-os/">Open project page →</a><a href="https://github.com/viggomeesters/obsidian-raycast" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-25" data-type="repository" data-coverage="repository-raycast-quick-event">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-25">25 Nov 2025</time><span class="entry-type">Repository</span></div>
+        <div class="entry-body"><span class="entry-number">GitHub / Archived</span><h3>raycast-quick-event</h3><p>Create a calendar event using natural language in Raycast</p><div class="proof-links"><a href="https://github.com/viggomeesters/raycast-quick-event" target="_blank" rel="noopener">View repository ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="employment" data-coverage="employment-mccoy">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—present</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Full-time</span><h3>SAP Data Consultant</h3><p>Full-time SAP data consultancy role in Eindhoven, delivered in a hybrid working model.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="introduction-to-alteryx">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Introduction to Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/introduction-to-alteryx/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="data-transformation-in-alteryx">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Data Transformation in Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-transformation-in-alteryx/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="data-preparation-in-alteryx">
+        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Data Preparation in Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-preparation-in-alteryx/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2025-11-01" data-type="career">
@@ -243,27 +545,12 @@
 
       <article class="timeline-entry" data-date="2025-11-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—May 2026</time><span class="entry-type">Professional</span></div>
-        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Gemeente Groningen</h3><p>Financial migration from DaFinci to S/4HANA, including subsidy objects, delivered as an external McCoy engagement.</p><div class="proof-links"><a href="/projects/gemeente-groningen/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Universiteit Utrecht</h3><p>S/4HANA HR data migration delivered as an external McCoy engagement.</p><div class="proof-links"><a href="/projects/universiteit-utrecht/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2025-11-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2025-11-01">Nov 2025—May 2026</time><span class="entry-type">Professional</span></div>
-        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Universiteit Utrecht</h3><p>S/4HANA HR data migration delivered as an external McCoy engagement.</p><div class="proof-links"><a href="/projects/universiteit-utrecht/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="data-transformation-in-alteryx">
-        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Data Transformation in Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-transformation-in-alteryx/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="data-preparation-in-alteryx">
-        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Data Preparation in Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-preparation-in-alteryx/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2025-11-01" data-type="certificate" data-certification="introduction-to-alteryx">
-        <div class="entry-meta"><time class="entry-date" datetime="2025-11">Nov 2025</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Introduction to Alteryx</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/introduction-to-alteryx/">View credential &rarr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">McCoy / Data Migration Consultant</span><h3>Gemeente Groningen</h3><p>Financial migration from DaFinci to S/4HANA, including subsidy objects, delivered as an external McCoy engagement.</p><div class="proof-links"><a href="/projects/gemeente-groningen/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry featured" data-date="2025-10-20" data-type="project">
@@ -311,14 +598,14 @@
         <div class="entry-body"><span class="entry-number">Aiden / Data Migration Consultant</span><h3>Cramo Sweden &amp; Norway</h3><p>Financial-object migration from IBS to S/4HANA Private Cloud for Boels Cramo in Sweden and Norway.</p><div class="proof-links"><a href="/projects/cramo-sweden-norway/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2023-11-01" data-type="career">
-        <div class="entry-meta"><time class="entry-date" datetime="2023-11-01">Nov 2023—Dec 2024</time><span class="entry-type">Professional</span></div>
-        <div class="entry-body"><span class="entry-number">Aiden / OKR Coach</span><h3>OKR Coaching</h3><p>Coaching and supporting the second implementation phase of Objectives and Key Results within Aiden.</p><div class="proof-links"><a href="/projects/okr-coaching/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
-      </article>
-
       <article class="timeline-entry" data-date="2023-11-01" data-type="certificate" data-certification="okr-basics">
         <div class="entry-meta"><time class="entry-date" datetime="2023-11">Nov 2023</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / Workpath</span><h3>OKR Basics</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/okr-basics/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2023-11-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2023-11-01">Nov 2023—Dec 2024</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / OKR Coach</span><h3>OKR Coaching</h3><p>Coaching and supporting the second implementation phase of Objectives and Key Results within Aiden.</p><div class="proof-links"><a href="/projects/okr-coaching/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2023-10-01" data-type="certificate" data-certification="foundations-of-project-management">
@@ -361,9 +648,9 @@
         <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>New Employee Business Partner Model in SAP S/4HANA</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/new-employee-business-partner-model-in-sap-s-4hana/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-11-01" data-type="certificate" data-certification="conflictoplossing">
+      <article class="timeline-entry" data-date="2022-11-01" data-type="certificate" data-certification="intermediate-sql">
         <div class="entry-meta"><time class="entry-date" datetime="2022-11">Nov 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Conflictoplossing</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/conflictoplossing/">View credential &rarr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Intermediate SQL</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/intermediate-sql/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-11-01" data-type="certificate" data-certification="focusing-skills">
@@ -371,29 +658,9 @@
         <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Focusing Skills</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/focusing-skills/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-11-01" data-type="certificate" data-certification="intermediate-sql">
+      <article class="timeline-entry" data-date="2022-11-01" data-type="certificate" data-certification="conflictoplossing">
         <div class="entry-meta"><time class="entry-date" datetime="2022-11">Nov 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Intermediate SQL</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/intermediate-sql/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="guide-your-sap-s-4hana-project-to-success">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Guide Your SAP S/4HANA Project to Success</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/guide-your-sap-s-4hana-project-to-success/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="information-security-management-in-a-nutshell">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Information Security Management in a Nutshell</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/information-security-management-in-a-nutshell/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="feedback-geven-en-ontvangen">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Feedback geven en ontvangen</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/feedback-geven-en-ontvangen/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="introduction-to-sql">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Introduction to SQL</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/introduction-to-sql/">View credential &rarr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Conflictoplossing</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/conflictoplossing/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="lean-management-green-belt">
@@ -406,19 +673,39 @@
         <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Introduction to Statistics</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/introduction-to-statistics/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="building-tomorrows-erp-with-sap-s-4hana">
+      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="introduction-to-sql">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Introduction to SQL</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/introduction-to-sql/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="information-security-management-in-a-nutshell">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Information Security Management in a Nutshell</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/information-security-management-in-a-nutshell/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="guide-your-sap-s-4hana-project-to-success">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Guide Your SAP S/4HANA Project to Success</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/guide-your-sap-s-4hana-project-to-success/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-10-01" data-type="certificate" data-certification="feedback-geven-en-ontvangen">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-10">Oct 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Feedback geven en ontvangen</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/feedback-geven-en-ontvangen/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-09-01" data-type="employment" data-coverage="employment-aiden">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-09-01">Sep 2022—Oct 2025</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Aiden / Full-time</span><h3>SAP Data Migration Consultant</h3><p>Full-time SAP data migration consultancy role based in Den Bosch, delivered in a hybrid working model.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="understanding-machine-learning">
         <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Building Tomorrow’s ERP with SAP S/4HANA</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/building-tomorrows-erp-with-sap-s-4hana/">View credential &rarr;</a></div></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Machine Learning</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-machine-learning/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="understanding-data-visualization">
         <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Data Visualization</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-data-visualization/">View credential &rarr;</a></div></div>
-      </article>
-
-      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="lean-management-orange-belt">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Lean Management - Orange Belt</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/lean-management-orange-belt/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="understanding-data-topics">
@@ -431,19 +718,19 @@
         <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Cloud Computing</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-cloud-computing/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="understanding-machine-learning">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Machine Learning</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-machine-learning/">View credential &rarr;</a></div></div>
-      </article>
-
       <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="lean-management-yellow-belt">
         <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Lean Management: Yellow Belt</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/lean-management-yellow-belt/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-08-01" data-type="certificate" data-certification="understanding-data-engineering">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-08">Aug 2022</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Data Engineering</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-data-engineering/">View credential &rarr;</a></div></div>
+      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="lean-management-orange-belt">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / Aiden Academy</span><h3>Lean Management - Orange Belt</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/lean-management-orange-belt/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-09-01" data-type="certificate" data-certification="building-tomorrows-erp-with-sap-s-4hana">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-09">Sep 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / SAP</span><h3>Building Tomorrow’s ERP with SAP S/4HANA</h3><p>SAP credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/building-tomorrows-erp-with-sap-s-4hana/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-08-01" data-type="certificate" data-certification="understanding-data-science">
@@ -451,19 +738,29 @@
         <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Data Science</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-data-science/">View credential &rarr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2022-08-01" data-type="certificate" data-certification="understanding-data-engineering">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-08">Aug 2022</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / DataCamp</span><h3>Understanding Data Engineering</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/understanding-data-engineering/">View credential &rarr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2022-04-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2022-04-01">Apr—Aug 2022</time><span class="entry-type">Professional</span></div>
         <div class="entry-body"><span class="entry-number">Brandsom / Developer</span><h3>Automated Content Generator</h3><p>Developed an internal generator for automating product-content creation at Brandsom.</p><div class="proof-links"><a href="/projects/automated-content-generator/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2022-01-01" data-type="career">
-        <div class="entry-meta"><time class="entry-date" datetime="2022-01-01">Jan—Jul 2022</time><span class="entry-type">Professional</span></div>
-        <div class="entry-body"><span class="entry-number">GGZ Ecademy / Developer</span><h3>Learning Technology Vision</h3><p>Developed a future vision and development roadmap for the GGZ Ecademy learning-management environment.</p><div class="proof-links"><a href="/projects/learning-technology-vision/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      <article class="timeline-entry" data-date="2022-01-01" data-type="employment" data-coverage="employment-ggz-ecademy">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-01-01">Jan—Jul 2022</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">GGZ Ecademy / Internship</span><h3>Graduate Intern, Learning Technology</h3><p>Graduation internship in learning technology in Tilburg.</p><div class="proof-links"><a href="/projects/learning-technology-vision/">Related project →</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2022-01-01" data-type="certificate" data-certification="innovation-award-2022">
         <div class="entry-meta"><time class="entry-date" datetime="2022-01">Jan 2022</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / Wärtsilä Voyage</span><h3>Innovation Award 2022</h3><p>Foundations credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/innovation-award-2022/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2022-01-01" data-type="career">
+        <div class="entry-meta"><time class="entry-date" datetime="2022-01-01">Jan—Jul 2022</time><span class="entry-type">Professional</span></div>
+        <div class="entry-body"><span class="entry-number">GGZ Ecademy / Developer</span><h3>Learning Technology Vision</h3><p>Developed a future vision and development roadmap for the GGZ Ecademy learning-management environment.</p><div class="proof-links"><a href="/projects/learning-technology-vision/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2021-08-04" data-type="career">
@@ -486,19 +783,24 @@
         <div class="entry-body"><span class="entry-number">Avans / Researcher</span><h3>ZES Battery Container</h3><p>Researched whether a Wärtsilä battery container could be used effectively at a construction site.</p><div class="proof-links"><a href="/projects/zes-battery-container/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2021-07-01" data-type="employment" data-coverage="employment-brandsom">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-07-01">Jul 2021—Aug 2022</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Brandsom / Part-time</span><h3>Marketplace Specialist</h3><p>Part-time marketplace role based in Utrecht and carried out remotely.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2021-05-01" data-type="certificate" data-certification="python-for-data-science-ai-and-development">
         <div class="entry-meta"><time class="entry-date" datetime="2021-05">May 2021</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / IBM</span><h3>Python for Data Science, AI &amp; Development</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/python-for-data-science-ai-and-development/">View credential &rarr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2021-04-01" data-type="certificate" data-certification="data-science-methodology">
-        <div class="entry-meta"><time class="entry-date" datetime="2021-04">Apr 2021</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / IBM</span><h3>Data Science Methodology</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-science-methodology/">View credential &rarr;</a></div></div>
-      </article>
-
       <article class="timeline-entry" data-date="2021-04-01" data-type="certificate" data-certification="data-science-orientation">
         <div class="entry-meta"><time class="entry-date" datetime="2021-04">Apr 2021</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / IBM</span><h3>Data Science Orientation</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-science-orientation/">View credential &rarr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-04-01" data-type="certificate" data-certification="data-science-methodology">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-04">Apr 2021</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / IBM</span><h3>Data Science Methodology</h3><p>Data and automation credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/data-science-methodology/">View credential &rarr;</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2021-02-02" data-type="career">
@@ -509,6 +811,16 @@
       <article class="timeline-entry" data-date="2021-02-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2021-02-01">Feb—Jul 2021</time><span class="entry-type">Professional</span></div>
         <div class="entry-body"><span class="entry-number">Avans / Data analyst</span><h3>Customer Satisfaction Analysis</h3><p>Analysed which attributes most strongly influenced customer satisfaction for Algorithmic Perfumery.</p><div class="proof-links"><a href="/projects/customer-satisfaction-analysis/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2021-01-01" data-type="education" data-coverage="education-avans-innovation">
+        <div class="entry-meta"><time class="entry-date" datetime="2021-01-01">2021—2022</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Avans University of Applied Sciences</span><h3>Minor Innovation Management</h3><p>Minor focused on innovation management.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2020-09-01" data-type="employment" data-coverage="employment-brabant-water">
+        <div class="entry-meta"><time class="entry-date" datetime="2020-09-01">Sep 2020—Feb 2021</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Brabant Water / Internship</span><h3>Information Management Intern</h3><p>Information-management internship in Den Bosch, delivered in a hybrid working model.</p><div class="proof-links"><a href="/projects/serious-game-for-agile-working/">Related project →</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2020-09-01" data-type="career">
@@ -541,14 +853,19 @@
         <div class="entry-body"><span class="entry-number">Fontys / Event organiser</span><h3>Business Academy Event</h3><p>Organised the Business Academy Event as an internal Fontys project.</p><div class="proof-links"><a href="/projects/business-academy-event/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2018-02-01" data-type="certificate" data-certification="technical-support-fundamentals">
+        <div class="entry-meta"><time class="entry-date" datetime="2018-02">Feb 2018</time><span class="entry-type">Learning</span></div>
+        <div class="entry-body"><span class="entry-number">Credential / Google Career Certificates</span><h3>Technical Support Fundamentals</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/technical-support-fundamentals/">View credential &rarr;</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2018-02-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2018-02-01">Feb—Mar 2018</time><span class="entry-type">Professional</span></div>
         <div class="entry-body"><span class="entry-number">Versteijnen Logistics / Developer</span><h3>Optimize Data Entry at Versteijnen Logistics</h3><p>Improved data-processing speed and consistency with AutoHotkey automation.</p><div class="proof-links"><a href="/projects/optimize-data-entry-at-versteijnen-logistics/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
-      <article class="timeline-entry" data-date="2018-02-01" data-type="certificate" data-certification="technical-support-fundamentals">
-        <div class="entry-meta"><time class="entry-date" datetime="2018-02">Feb 2018</time><span class="entry-type">Learning</span></div>
-        <div class="entry-body"><span class="entry-number">Credential / Google Career Certificates</span><h3>Technical Support Fundamentals</h3><p>Professional practice credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/technical-support-fundamentals/">View credential &rarr;</a></div></div>
+      <article class="timeline-entry" data-date="2018-01-01" data-type="education" data-coverage="education-avans-bitm">
+        <div class="entry-meta"><time class="entry-date" datetime="2018-01-01">2018—2022</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Avans University of Applied Sciences</span><h3>Bachelor Business IT &amp; Management</h3><p>Bachelor programme completed with a graduation grade of 9.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
       </article>
 
       <article class="timeline-entry" data-date="2018-01-01" data-type="career">
@@ -561,6 +878,11 @@
         <div class="entry-body"><span class="entry-number">Fontys / Process analyst</span><h3>BPMN Goods Documents at Versteijnen Logistics</h3><p>Mapped and improved the goods-received document flow using BPMN.</p><div class="proof-links"><a href="/projects/bpmn-goods-documents-at-versteijnen-logistics/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2017-06-01" data-type="employment" data-coverage="employment-versteijnen">
+        <div class="entry-meta"><time class="entry-date" datetime="2017-06-01">Jun 2017—Mar 2018</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Versteijnen Logistics / Part-time</span><h3>Administrative Assistant</h3><p>Part-time administrative role at Versteijnen Logistics.</p><div class="proof-links"><a href="/projects/optimize-data-entry-at-versteijnen-logistics/">Related project →</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2016-03-01" data-type="certificate" data-certification="microsoft-excel-specialist-2013">
         <div class="entry-meta"><time class="entry-date" datetime="2016-03">Mar 2016</time><span class="entry-type">Learning</span></div>
         <div class="entry-body"><span class="entry-number">Credential / Microsoft</span><h3>Excel Specialist 2013</h3><p>Foundations credential, preserved in the public learning record.</p><div class="proof-links"><a href="/certifications/microsoft-excel-specialist-2013/">View credential &rarr;</a></div></div>
@@ -571,6 +893,21 @@
         <div class="entry-body"><span class="entry-number">Gors / Developer</span><h3>Optimize Banking Process at Gors</h3><p>Developed AutoHotkey automation for the organisation’s banking process.</p><div class="proof-links"><a href="/projects/optimize-banking-process-at-gors/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
       </article>
 
+      <article class="timeline-entry" data-date="2016-01-01" data-type="education" data-coverage="education-fontys-ict">
+        <div class="entry-meta"><time class="entry-date" datetime="2016-01-01">2016—2018</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Fontys University of Applied Sciences</span><h3>Bachelor ICT</h3><p>Bachelor-level study in information and communication technology.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2015-10-01" data-type="employment" data-coverage="employment-media-markt">
+        <div class="entry-meta"><time class="entry-date" datetime="2015-10-01">Oct 2015—Apr 2016</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Media Markt / Part-time</span><h3>Computer Department Sales Associate</h3><p>Part-time sales role in the computer department in Middelburg.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2015-09-01" data-type="education" data-coverage="education-hz-business-economics">
+        <div class="entry-meta"><time class="entry-date" datetime="2015-09-01">Sep 2015—Jan 2016</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">HZ University of Applied Sciences</span><h3>Bachelor Business Economics</h3><p>Bachelor-level study in business economics.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
+      </article>
+
       <article class="timeline-entry" data-date="2015-01-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2015-01-01">Jan—Jul 2015</time><span class="entry-type">Professional</span></div>
         <div class="entry-body"><span class="entry-number">Scalda / Researcher</span><h3>ProActive Banking Implementation Research</h3><p>Researched the implementation of the ProActive banking module at Gors.</p><div class="proof-links"><a href="/projects/proactive-banking-implementation-research/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
@@ -579,6 +916,26 @@
       <article class="timeline-entry" data-date="2014-06-01" data-type="career">
         <div class="entry-meta"><time class="entry-date" datetime="2014-06-01">Jun—Sep 2014</time><span class="entry-type">Professional</span></div>
         <div class="entry-body"><span class="entry-number">Gors / Developer</span><h3>Optimize Creditor Process at Gors</h3><p>Improved the creditor process with ProActive templates.</p><div class="proof-links"><a href="/projects/optimize-creditor-process-at-gors/">Open project page &rarr;</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record &nearr;</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2013-09-01" data-type="employment" data-coverage="employment-gors">
+        <div class="entry-meta"><time class="entry-date" datetime="2013-09-01">Sep 2013—Aug 2016</time><span class="entry-type">Work</span></div>
+        <div class="entry-body"><span class="entry-number">Gors</span><h3>Administrative Assistant</h3><p>Administrative role at Gors in Goes.</p><div class="proof-links"><a href="/projects/optimize-creditor-process-at-gors/">Related project →</a><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Professional record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2012-01-01" data-type="education" data-coverage="education-scalda-administration">
+        <div class="entry-meta"><time class="entry-date" datetime="2012-01-01">2012—2015</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Scalda</span><h3>MBO Business Administrator</h3><p>Vocational programme in business administration.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2010-01-01" data-type="education" data-coverage="education-de-ruyter-nautical">
+        <div class="entry-meta"><time class="entry-date" datetime="2010-01-01">2010—2012</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Maritime Institute De Ruyter</span><h3>MBO Nautical Officer</h3><p>Vocational maritime programme for nautical officers.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
+      </article>
+
+      <article class="timeline-entry" data-date="2006-01-01" data-type="education" data-coverage="education-ostrea-mavo">
+        <div class="entry-meta"><time class="entry-date" datetime="2006-01-01">2006—2010</time><span class="entry-type">Education</span></div>
+        <div class="entry-body"><span class="entry-number">Ostrea Lyceum</span><h3>MAVO</h3><p>Secondary education at Ostrea Lyceum.</p><div class="proof-links"><a href="https://www.linkedin.com/in/viggomeesters/" target="_blank" rel="noopener">Education record ↗</a></div></div>
       </article>
     </section>
 

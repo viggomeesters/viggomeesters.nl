@@ -1,0 +1,1368 @@
+{
+  "snapshot_date": "2026-07-14",
+  "entries": [
+    {
+      "id": "employment-mccoy",
+      "date": "2025-11-01",
+      "date_label": "Nov 2025—present",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "McCoy / Full-time",
+      "title": "SAP Data Consultant",
+      "description": "Full-time SAP data consultancy role in Eindhoven, delivered in a hybrid working model.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-aiden",
+      "date": "2022-09-01",
+      "date_label": "Sep 2022—Oct 2025",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Aiden / Full-time",
+      "title": "SAP Data Migration Consultant",
+      "description": "Full-time SAP data migration consultancy role based in Den Bosch, delivered in a hybrid working model.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-brandsom",
+      "date": "2021-07-01",
+      "date_label": "Jul 2021—Aug 2022",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Brandsom / Part-time",
+      "title": "Marketplace Specialist",
+      "description": "Part-time marketplace role based in Utrecht and carried out remotely.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-ggz-ecademy",
+      "date": "2022-01-01",
+      "date_label": "Jan—Jul 2022",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "GGZ Ecademy / Internship",
+      "title": "Graduate Intern, Learning Technology",
+      "description": "Graduation internship in learning technology in Tilburg.",
+      "links": [
+        {
+          "href": "/projects/learning-technology-vision/",
+          "label": "Related project →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-brabant-water",
+      "date": "2020-09-01",
+      "date_label": "Sep 2020—Feb 2021",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Brabant Water / Internship",
+      "title": "Information Management Intern",
+      "description": "Information-management internship in Den Bosch, delivered in a hybrid working model.",
+      "links": [
+        {
+          "href": "/projects/serious-game-for-agile-working/",
+          "label": "Related project →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-versteijnen",
+      "date": "2017-06-01",
+      "date_label": "Jun 2017—Mar 2018",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Versteijnen Logistics / Part-time",
+      "title": "Administrative Assistant",
+      "description": "Part-time administrative role at Versteijnen Logistics.",
+      "links": [
+        {
+          "href": "/projects/optimize-data-entry-at-versteijnen-logistics/",
+          "label": "Related project →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-media-markt",
+      "date": "2015-10-01",
+      "date_label": "Oct 2015—Apr 2016",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Media Markt / Part-time",
+      "title": "Computer Department Sales Associate",
+      "description": "Part-time sales role in the computer department in Middelburg.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "employment-gors",
+      "date": "2013-09-01",
+      "date_label": "Sep 2013—Aug 2016",
+      "type": "employment",
+      "type_label": "Work",
+      "number_label": "Gors",
+      "title": "Administrative Assistant",
+      "description": "Administrative role at Gors in Goes.",
+      "links": [
+        {
+          "href": "/projects/optimize-creditor-process-at-gors/",
+          "label": "Related project →"
+        },
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Professional record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-avans-bitm",
+      "date": "2018-01-01",
+      "date_label": "2018—2022",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Avans University of Applied Sciences",
+      "title": "Bachelor Business IT & Management",
+      "description": "Bachelor programme completed with a graduation grade of 9.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-avans-innovation",
+      "date": "2021-01-01",
+      "date_label": "2021—2022",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Avans University of Applied Sciences",
+      "title": "Minor Innovation Management",
+      "description": "Minor focused on innovation management.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-fontys-ict",
+      "date": "2016-01-01",
+      "date_label": "2016—2018",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Fontys University of Applied Sciences",
+      "title": "Bachelor ICT",
+      "description": "Bachelor-level study in information and communication technology.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-hz-business-economics",
+      "date": "2015-09-01",
+      "date_label": "Sep 2015—Jan 2016",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "HZ University of Applied Sciences",
+      "title": "Bachelor Business Economics",
+      "description": "Bachelor-level study in business economics.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-scalda-administration",
+      "date": "2012-01-01",
+      "date_label": "2012—2015",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Scalda",
+      "title": "MBO Business Administrator",
+      "description": "Vocational programme in business administration.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-de-ruyter-nautical",
+      "date": "2010-01-01",
+      "date_label": "2010—2012",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Maritime Institute De Ruyter",
+      "title": "MBO Nautical Officer",
+      "description": "Vocational maritime programme for nautical officers.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "education-ostrea-mavo",
+      "date": "2006-01-01",
+      "date_label": "2006—2010",
+      "type": "education",
+      "type_label": "Education",
+      "number_label": "Ostrea Lyceum",
+      "title": "MAVO",
+      "description": "Secondary education at Ostrea Lyceum.",
+      "links": [
+        {
+          "href": "https://www.linkedin.com/in/viggomeesters/",
+          "label": "Education record ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "writing-hermes-telegram-wsl-starten",
+      "date": "2026-07-07",
+      "date_label": "07 Jul 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Hermes via Telegram and WSL",
+      "description": "A practical setup guide for running Hermes through Telegram and WSL.",
+      "links": [
+        {
+          "href": "/hermes-telegram-wsl-starten/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-jsonl-agent-first-data-structures",
+      "date": "2026-06-24",
+      "date_label": "24 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "JSONL for Agent-First Data Structures",
+      "description": "Why append-friendly JSONL is a useful substrate for inspectable, agent-readable systems.",
+      "links": [
+        {
+          "href": "/jsonl-agent-first-data-structures/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-foci-fear-of-choosing-incorrectly",
+      "date": "2026-06-24",
+      "date_label": "24 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "FOCI: Fear of Choosing Incorrectly",
+      "description": "A working model for recognising and reducing decision paralysis.",
+      "links": [
+        {
+          "href": "/foci-fear-of-choosing-incorrectly/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-source-backed-synthesis",
+      "date": "2026-06-23",
+      "date_label": "23 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Source-Backed Synthesis",
+      "description": "A method for turning evidence into useful synthesis without losing provenance.",
+      "links": [
+        {
+          "href": "/source-backed-synthesis/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-proof-first-delivery",
+      "date": "2026-06-23",
+      "date_label": "23 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Proof-First Delivery",
+      "description": "A delivery approach where verification evidence is part of the work itself.",
+      "links": [
+        {
+          "href": "/proof-first-delivery/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-vault-first-operating-model",
+      "date": "2026-06-23",
+      "date_label": "23 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Vault-First Operating Model",
+      "description": "A local-first model for durable context, task state, and agent collaboration.",
+      "links": [
+        {
+          "href": "/vault-first-operating-model/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-agent-workflow-loop",
+      "date": "2026-06-23",
+      "date_label": "23 Jun 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "The Agent Workflow Loop",
+      "description": "A bounded loop for planning, executing, checking, and finishing agent work.",
+      "links": [
+        {
+          "href": "/agent-workflow-loop/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-cli-agents-guide",
+      "date": "2026-03-10",
+      "date_label": "10 Mar 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "CLI Agents Guide",
+      "description": "A practical guide to working with command-line agents and repository context.",
+      "links": [
+        {
+          "href": "/cli-agents-guide/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-helicopter-to-detail",
+      "date": "2026-02-28",
+      "date_label": "28 Feb 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Helicopter to Detail",
+      "description": "A method for moving deliberately between system overview and implementation detail.",
+      "links": [
+        {
+          "href": "/helicopter-to-detail/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "writing-knowledge-pyramid",
+      "date": "2026-02-28",
+      "date_label": "28 Feb 2026",
+      "type": "writing",
+      "type_label": "Writing",
+      "number_label": "Guide / Method",
+      "title": "Knowledge Pyramid",
+      "description": "A model for structuring raw information into increasingly useful knowledge.",
+      "links": [
+        {
+          "href": "/knowledge-pyramid/",
+          "label": "Read the article →"
+        }
+      ]
+    },
+    {
+      "id": "system-reviewed-skills",
+      "date": "2026-06-23",
+      "date_label": "23 Jun 2026",
+      "type": "workflow",
+      "type_label": "System",
+      "number_label": "Procedural memory / Reviewed public set",
+      "title": "Reviewed Skills",
+      "description": "Public summaries of reusable capabilities, with purpose, provenance, maintenance state, and boundaries visible.",
+      "links": [
+        {
+          "href": "/skills/",
+          "label": "Explore reviewed skills →"
+        }
+      ]
+    },
+    {
+      "id": "system-vault-layer",
+      "date": "2026-06-29",
+      "date_label": "29 Jun 2026",
+      "type": "workflow",
+      "type_label": "System",
+      "number_label": "Knowledge / Read model",
+      "title": "VaultLayer",
+      "description": "A local-first read layer for Markdown search, vectors, structured metadata, and provenance.",
+      "links": [
+        {
+          "href": "/vault-layer/",
+          "label": "Explore VaultLayer →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/vault-layer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-viggomeesters.nl",
+      "date": "2026-02-27",
+      "date_label": "2026-02-27",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "viggomeesters.nl",
+      "description": "Viggo Meesters’ static personal site: projects, systems, guides, and proof-first agent workflow notes.",
+      "links": [
+        {
+          "href": "/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/viggomeesters.nl",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-etm-next-agent-context",
+      "date": "2026-07-13",
+      "date_label": "2026-07-13",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "etm-next-agent-context",
+      "description": "Source-backed ETM.next product context for people and AI agents",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/etm-next-agent-context",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-nederlandse-huizenkoop-agent-context",
+      "date": "2026-07-06",
+      "date_label": "2026-07-06",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "nederlandse-huizenkoop-agent-context",
+      "description": "Nederlands Markdown-first contextpakket voor koper-side AI-agenten bij huizen kopen: bezichtigen, bieden, voorwaarden, kosten en hypotheek.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-go-workflow-stack",
+      "date": "2026-07-03",
+      "date_label": "2026-07-03",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "go-workflow-stack",
+      "description": "Reusable CLI and schemas for repo-local .go agent workflow state.",
+      "links": [
+        {
+          "href": "/go-workflow-stack/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/go-workflow-stack",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-go-project-template",
+      "date": "2026-07-03",
+      "date_label": "2026-07-03",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "go-project-template",
+      "description": "Minimal .go template repository for repo-local agent workflows.",
+      "links": [
+        {
+          "href": "/go-project-template/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/go-project-template",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-mega-vault-viewer",
+      "date": "2026-06-22",
+      "date_label": "2026-06-22",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "mega-vault-viewer",
+      "description": "Local-first macOS viewer for large mixed-format Markdown knowledge vaults.",
+      "links": [
+        {
+          "href": "/mega-vault-viewer/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/mega-vault-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-hermes-agent",
+      "date": "2026-05-29",
+      "date_label": "2026-05-29",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "hermes-agent",
+      "description": "The agent that grows with you",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/hermes-agent",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-sap-agent-context",
+      "date": "2026-06-22",
+      "date_label": "2026-06-22",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "sap-agent-context",
+      "description": "Source-backed SAP context bundles for AI agents, functional design, field mapping, and SAP delivery workflows.",
+      "links": [
+        {
+          "href": "/sap-agent-context/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/sap-agent-context",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-viggomeesters.github.io",
+      "date": "2026-07-02",
+      "date_label": "2026-07-02",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "viggomeesters.github.io",
+      "description": "Public schemas and agent-facing contracts for personally maintained tooling.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/viggomeesters.github.io",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-minimal-ai-vault-starter",
+      "date": "2026-06-30",
+      "date_label": "2026-06-30",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "minimal-ai-vault-starter",
+      "description": "Public-safe starter for a minimal AI-enabled Obsidian/JSONL vault",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/minimal-ai-vault-starter",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-vault-layer",
+      "date": "2026-06-23",
+      "date_label": "2026-06-23",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "vault-layer",
+      "description": "Local-first database and retrieval layer for huge Markdown/Obsidian vaults",
+      "links": [
+        {
+          "href": "/vault-layer/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/vault-layer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-jsonl-vault-spike",
+      "date": "2026-06-24",
+      "date_label": "2026-06-24",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "jsonl-vault-spike",
+      "description": "Synthetic JSONL-first vault/context proof of concept for agent-readable personal knowledge systems",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/jsonl-vault-spike",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-viggomeesters-assets",
+      "date": "2026-06-25",
+      "date_label": "2026-06-25",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "viggomeesters-assets",
+      "description": "Public-safe visual style and prompt references for viggomeesters.com.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/viggomeesters-assets",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-reisplanner-agent",
+      "date": "2026-06-23",
+      "date_label": "2026-06-23",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "reisplanner-agent",
+      "description": "Local-first agent-ready travel planning toolkit with optional Vercel publishing",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/reisplanner-agent",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-vault-schema",
+      "date": "2026-02-27",
+      "date_label": "2026-02-27",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "vault-schema",
+      "description": "Machine-readable vault schema contract, templates, and validation guard for structured Obsidian vaults",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/vault-schema",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-sap-field-atlas",
+      "date": "2026-06-22",
+      "date_label": "2026-06-22",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Archived",
+      "title": "sap-field-atlas",
+      "description": "Archived legacy seed; canonical successor: viggomeesters/sap-agent-context",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/sap-field-atlas",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-minimal-hidden-files",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-minimal-hidden-files",
+      "description": "Reveal safe dotfiles and dotfolders in Obsidian's native File Explorer.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-minimal-hidden-files",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-macos-save-to-obsidian",
+      "date": "2026-06-16",
+      "date_label": "2026-06-16",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "macos-save-to-obsidian",
+      "description": "Standalone macOS Mail to Obsidian workflow",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/macos-save-to-obsidian",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-newest-files",
+      "date": "2026-06-12",
+      "date_label": "2026-06-12",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-newest-files",
+      "description": "Public repository retained as part of the complete build history.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-newest-files",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-slide-deck-viewer",
+      "date": "2026-06-09",
+      "date_label": "2026-06-09",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-slide-deck-viewer",
+      "description": "Read-only PPTX slide inspection view for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-slide-deck-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-folder-sort-view",
+      "date": "2026-06-13",
+      "date_label": "2026-06-13",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-folder-sort-view",
+      "description": "Public-API Obsidian folder view sorted Z-to-A",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-folder-sort-view",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-word-viewer",
+      "date": "2026-06-09",
+      "date_label": "2026-06-09",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-word-viewer",
+      "description": "Read-only DOCX document viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-word-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-diff-patch-viewer",
+      "date": "2026-06-12",
+      "date_label": "2026-06-12",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-diff-patch-viewer",
+      "description": "Read-only .diff and .patch viewer for Obsidian",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-diff-patch-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-releases",
+      "date": "2026-06-14",
+      "date_label": "2026-06-14",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-releases",
+      "description": "Community plugins list, theme list, and releases of Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-releases",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-sql-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-sql-viewer",
+      "description": "Read-only SQLite database viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-sql-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-folder-sort-z-to-a",
+      "date": "2026-06-12",
+      "date_label": "2026-06-12",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-folder-sort-z-to-a",
+      "description": "Spike plugin for Z-to-A folder ordering in Obsidian's native File Explorer",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-test-vault",
+      "date": "2026-06-12",
+      "date_label": "2026-06-12",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-test-vault",
+      "description": "Public repository retained as part of the complete build history.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-test-vault",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-git-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-git-viewer",
+      "description": "Lightweight read-only Git status viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-git-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-ics-calendar-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-ics-calendar-viewer",
+      "description": "Public repository retained as part of the complete build history.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-ics-calendar-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-script-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-script-viewer",
+      "description": "Read-only script source, outline, and safety-hint viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-script-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-eml-email-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-eml-email-viewer",
+      "description": "Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-eml-email-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-vcf-contacts-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-vcf-contacts-viewer",
+      "description": "Read-only VCF contact card viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-archive-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-archive-viewer",
+      "description": "Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-archive-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-alteryx-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-alteryx-viewer",
+      "description": "Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-alteryx-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-plist-viewer",
+      "date": "2026-06-08",
+      "date_label": "2026-06-08",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-plist-viewer",
+      "description": "Read-only Apple plist and mobileconfig viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-plist-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-log-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-log-viewer",
+      "description": "Read-only log file viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-log-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-python-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-python-viewer",
+      "description": "Read-only Python source and structure viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-python-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-xlsx-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-xlsx-viewer",
+      "description": "Read-only XLSX workbook value viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-xlsx-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-txt-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-txt-viewer",
+      "description": "Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-txt-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-toml-ini-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-toml-ini-viewer",
+      "description": "Public repository retained as part of the complete build history.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-toml-ini-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-xml-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-xml-viewer",
+      "description": "Read-only XML tree and source viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-xml-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-ango-companion",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-ango-companion",
+      "description": "Public repository retained as part of the complete build history.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-ango-companion",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-csv-tsv-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-csv-tsv-viewer",
+      "description": "Read-only CSV and TSV table viewer.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-csv-tsv-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-html-page-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-html-page-viewer",
+      "description": "Read-only sandboxed HTML page viewer for Obsidian.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-html-page-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-json-viewer",
+      "date": "2026-06-07",
+      "date_label": "2026-06-07",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-json-viewer",
+      "description": "Read-only JSON and JSONL tree viewer for Obsidian",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-json-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-yaml-viewer",
+      "date": "2026-06-06",
+      "date_label": "2026-06-06",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-yaml-viewer",
+      "description": "Read-only YAML tree viewer for Obsidian",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/obsidian-yaml-viewer",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-11mhz-mcp",
+      "date": "2026-05-27",
+      "date_label": "2026-05-27",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "11mhz-mcp",
+      "description": "MCP server for the 11MHz API",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/11mhz-mcp",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-life-os-starter",
+      "date": "2026-03-17",
+      "date_label": "2026-03-17",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "life-os-starter",
+      "description": "Plug & play Obsidian vault with AI agent support. Clone, install, start.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/life-os-starter",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-agent-scripts",
+      "date": "2026-01-10",
+      "date_label": "2026-01-10",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Archived",
+      "title": "agent-scripts",
+      "description": "Scripts for agents, shared between my repositories.",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/agent-scripts",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-raycast-quick-event",
+      "date": "2025-11-25",
+      "date_label": "2025-11-25",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Archived",
+      "title": "raycast-quick-event",
+      "description": "Create a calendar event using natural language in Raycast",
+      "links": [
+        {
+          "href": "https://github.com/viggomeesters/raycast-quick-event",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-raycast",
+      "date": "2025-11-30",
+      "date_label": "2025-11-30",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Archived",
+      "title": "obsidian-raycast",
+      "description": "Raycast extension with commands for the note taking app Obsidian.",
+      "links": [
+        {
+          "href": "/raycast-life-os/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/obsidian-raycast",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    }
+  ]
+}

@@ -229,7 +229,10 @@ def sync_timeline(content: str, credentials: list[dict]) -> str:
     existing = re.findall(r'<article class="timeline-entry[^>]*>[\s\S]*?</article>', section_match.group(2))
     existing = [entry for entry in existing if 'data-type="certificate"' not in entry]
     combined = existing + render_timeline_entries(credentials)
-    combined.sort(key=lambda entry: re.search(r'data-date="([^"]+)"', entry).group(1), reverse=True)
+    combined.sort(
+        key=lambda entry: (re.search(r'data-date="([^"]+)"', entry).group(1), entry),
+        reverse=True,
+    )
     replacement = section_match.group(1) + "\n      " + "\n\n      ".join(entry.strip() for entry in combined) + section_match.group(3)
     content = content[:section_match.start()] + replacement + content[section_match.end():]
     content = re.sub(r'>\d+ milestones shown</span>', f'>{len(combined)} milestones shown</span>', content, count=1)

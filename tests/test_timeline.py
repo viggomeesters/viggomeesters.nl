@@ -100,6 +100,25 @@ class TimelineContract(unittest.TestCase):
         self.assertIn("history.replaceState", self.markup)
         self.assertIn("popstate", self.markup)
 
+    def test_timeline_covers_the_complete_public_and_personal_record(self) -> None:
+        entries = re.findall(r'<article class="timeline-entry[^>]*>[\s\S]*?</article>', self.markup)
+        counts = {
+            kind: sum(f'data-type="{kind}"' in entry for entry in entries)
+            for kind in ("employment", "education", "writing", "repository")
+        }
+
+        self.assertEqual(counts["employment"], 8)
+        self.assertEqual(counts["education"], 7)
+        self.assertEqual(counts["writing"], 12)
+        self.assertEqual(counts["repository"], 51)
+        self.assertIn('data-date="2006-01-01" data-type="education"', self.markup)
+        self.assertIn("SAP Data Consultant", self.markup)
+        self.assertIn("Bachelor Business IT &amp; Management", self.markup)
+        self.assertIn("Reviewed Skills", self.markup)
+        self.assertIn("VaultLayer", self.markup)
+        for kind in ("employment", "education"):
+            self.assertIn(f'data-filter="{kind}"', self.markup)
+
 
 if __name__ == "__main__":
     unittest.main()
