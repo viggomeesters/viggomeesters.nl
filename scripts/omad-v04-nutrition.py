@@ -697,6 +697,7 @@ USDA_SR28.update({
 
 # Cooked asparagus proxy for Muscle Meat's blanched, IQF green asparagus.
 USDA_SR28['11012'] = {'description': 'Asparagus, cooked, boiled, drained', 'nutrients': {'protein_g': 2.4, 'fat_g': 0.22, 'carbs_g': 4.11, 'kcal': 22.0, 'fiber_g': 2.0, 'calcium_mg': 23.0, 'iron_mg': 0.91, 'magnesium_mg': 14.0, 'phosphorus_mg': 54.0, 'potassium_mg': 224.0, 'sodium_mg': 14.0, 'zinc_mg': 0.6, 'copper_mg': 0.165, 'manganese_mg': 0.154, 'selenium_mcg': 6.1, 'vitamin_a_rae_mcg': 50.0, 'vitamin_e_mg': 1.5, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 7.7, 'thiamin_mg': 0.162, 'riboflavin_mg': 0.139, 'niacin_mg': 1.084, 'pantothenic_mg': 0.225, 'vitamin_b6_mg': 0.079, 'vitamin_b12_mcg': 0.0, 'choline_mg': 26.1, 'vitamin_k_mcg': 50.6, 'folate_mcg': 149.0, 'saturated_fat_g': 0.048}}
+USDA_SR28['11053'] = {'description': 'Beans, snap, green, cooked, boiled, drained, without salt', 'nutrients': {'protein_g': 1.89, 'fat_g': 0.28, 'carbs_g': 7.88, 'kcal': 35.0, 'fiber_g': 3.2, 'calcium_mg': 44.0, 'iron_mg': 0.65, 'magnesium_mg': 18.0, 'phosphorus_mg': 29.0, 'potassium_mg': 146.0, 'sodium_mg': 1.0, 'zinc_mg': 0.25, 'copper_mg': 0.057, 'manganese_mg': 0.285, 'selenium_mcg': 0.2, 'vitamin_a_rae_mcg': 32.0, 'vitamin_e_mg': 0.46, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 9.7, 'thiamin_mg': 0.074, 'riboflavin_mg': 0.097, 'niacin_mg': 0.614, 'pantothenic_mg': 0.074, 'vitamin_b6_mg': 0.056, 'vitamin_b12_mcg': 0.0, 'choline_mg': 16.9, 'vitamin_k_mcg': 47.9, 'folate_mcg': 33.0, 'saturated_fat_g': 0.064}}
 
 TARGETS = {
     "kcal": (2000, "kcal", "Reference energy"),
@@ -784,6 +785,14 @@ PRODUCTS = {
     "overrides":{"kcal":28,"protein_g":2.9,"carbs_g":2,"fat_g":0.6,"saturated_fat_g":0.1,"fiber_g":1.7,"sodium_mg":0.003*1000/2.54},
     "evidence":"Muscle Meat product label; USDA cooked drained asparagus proxy for wider micros"
   },
+  "euromix": {
+    "name":"Muscle Meat precooked Euromix", "grams":250,
+    "package":"2.5 kg IQF bag / 10 meals", "package_price":6.00, "cost":6.00/10,
+    "url":"https://musclemeat.nl/product/euromix/",
+    "components":[(11124,125),(11053,62.5),(11092,62.5)],
+    "overrides":{"kcal":34*2.5,"protein_g":2*2.5,"carbs_g":4*2.5,"fat_g":0.3*2.5,"saturated_fat_g":0.1*2.5,"fiber_g":3.4*2.5,"sodium_mg":0.04*2.5*1000/2.54},
+    "evidence":"Muscle Meat label and declared equal carrot/romano-bean/broccoli composition; USDA component proxies for wider micros"
+  },
   "avocado": {
     "name":"AH frozen avocado chunks", "grams":125,
     "package":"250 g bag / 2 meals", "package_price":1.99, "cost":1.99/2,
@@ -824,7 +833,7 @@ PRODUCTS = {
   }
 }
 
-COMMON = ["chickpeas","broccoli","asparagus","avocado","olive_oil","crispy_chili","skyr","berries"]
+COMMON = ["chickpeas","broccoli","avocado","olive_oil","crispy_chili","skyr","berries"]
 
 def add_scaled(total, values, grams):
     for key, value in values.items():
@@ -839,7 +848,8 @@ def calculate_item(product):
     return total
 
 def profile(protein_key):
-    keys=[protein_key,*COMMON]
+    # Cheap Euromix is the default; asparagus stays as a once-weekly salmon-day treat.
+    keys=[protein_key,*COMMON,"euromix" if protein_key=="chicken" else "asparagus"]
     total={}
     for key in keys:
         for nutrient,value in calculate_item(PRODUCTS[key]).items():

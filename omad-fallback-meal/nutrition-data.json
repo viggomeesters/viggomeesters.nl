@@ -60,6 +60,16 @@
       "key": "asparagus"
     },
     {
+      "name": "Muscle Meat precooked Euromix",
+      "grams": 250,
+      "package": "2.5 kg IQF bag / 10 meals",
+      "package_price": 6.0,
+      "cost": 0.6,
+      "url": "https://musclemeat.nl/product/euromix/",
+      "evidence": "Muscle Meat label and declared equal carrot/romano-bean/broccoli composition; USDA component proxies for wider micros",
+      "key": "euromix"
+    },
+    {
       "name": "AH frozen avocado chunks",
       "grams": 125,
       "package": "250 g bag / 2 meals",
@@ -118,34 +128,34 @@
         "chicken",
         "chickpeas",
         "broccoli",
-        "asparagus",
         "avocado",
         "olive_oil",
         "crispy_chili",
         "skyr",
-        "berries"
+        "berries",
+        "euromix"
       ],
-      "weight_g": 1473,
-      "cost_eur": 9.4,
+      "weight_g": 1623,
+      "cost_eur": 8.76,
       "summary": {
-        "kcal": 1423.1,
-        "protein_g": 125.6,
-        "carbs_g": 80.6,
-        "fat_g": 57.7,
-        "fiber_g": 33.3,
-        "saturated_fat_g": 10.1,
-        "sodium_mg": 1217.5,
-        "salt_g": 3.1,
+        "kcal": 1480.1,
+        "protein_g": 127.7,
+        "carbs_g": 88.6,
+        "fat_g": 57.9,
+        "fiber_g": 40.1,
+        "saturated_fat_g": 10.3,
+        "sodium_mg": 1255.7,
+        "salt_g": 3.2,
         "omega3_epa_dha_mg": 75.0
       },
       "nutrients": [
         {
           "key": "kcal",
           "label": "Energy",
-          "value": 1423.1,
+          "value": 1480.1,
           "unit": "kcal",
           "target": 2000,
-          "pct": 71,
+          "pct": 74,
           "status": "low",
           "basis": "Reference energy",
           "is_limit": false
@@ -153,10 +163,10 @@
         {
           "key": "protein_g",
           "label": "Protein",
-          "value": 125.58,
+          "value": 127.67,
           "unit": "g",
           "target": 56,
-          "pct": 224,
+          "pct": 228,
           "status": "good",
           "basis": "Protein RDA",
           "is_limit": false
@@ -164,10 +174,10 @@
         {
           "key": "carbs_g",
           "label": "Carbohydrate",
-          "value": 80.63,
+          "value": 88.63,
           "unit": "g",
           "target": 130,
-          "pct": 62,
+          "pct": 68,
           "status": "low",
           "basis": "Carbohydrate RDA",
           "is_limit": false
@@ -175,18 +185,18 @@
         {
           "key": "fiber_g",
           "label": "Fibre",
-          "value": 33.27,
+          "value": 40.06,
           "unit": "g",
           "target": 38,
-          "pct": 88,
-          "status": "watch",
+          "pct": 105,
+          "status": "good",
           "basis": "Fibre AI",
           "is_limit": false
         },
         {
           "key": "fat_g",
           "label": "Fat",
-          "value": 57.71,
+          "value": 57.86,
           "unit": "g",
           "target": 78,
           "pct": 74,
@@ -197,7 +207,7 @@
         {
           "key": "saturated_fat_g",
           "label": "Saturated fat",
-          "value": 10.14,
+          "value": 10.29,
           "unit": "g",
           "target": 20,
           "pct": 51,
@@ -208,21 +218,21 @@
         {
           "key": "vitamin_a_rae_mcg",
           "label": "Vitamin A",
-          "value": 215.86,
+          "value": 1262.11,
           "unit": "µg RAE",
           "target": 900,
-          "pct": 24,
-          "status": "low",
+          "pct": 140,
+          "status": "good",
           "basis": "Vitamin A RDA",
           "is_limit": false
         },
         {
           "key": "vitamin_c_mg",
           "label": "Vitamin C",
-          "value": 241.23,
+          "value": 282.21,
           "unit": "mg",
           "target": 90,
-          "pct": 268,
+          "pct": 314,
           "status": "good",
           "basis": "Vitamin C RDA",
           "is_limit": false
@@ -241,10 +251,10 @@
         {
           "key": "vitamin_e_mg",
           "label": "Vitamin E",
-          "value": 11.5,
+          "value": 11.87,
           "unit": "mg",
           "target": 15,
-          "pct": 77,
+          "pct": 79,
           "status": "watch",
           "basis": "Vitamin E RDA",
           "is_limit": false
@@ -252,10 +262,10 @@
         {
           "key": "vitamin_k_mcg",
           "label": "Vitamin K",
-          "value": 308.75,
+          "value": 355.28,
           "unit": "µg",
           "target": 120,
-          "pct": 257,
+          "pct": 296,
           "status": "good",
           "basis": "Vitamin K AI",
           "is_limit": false
@@ -274,10 +284,10 @@
         {
           "key": "riboflavin_mg",
           "label": "Riboflavin (B2)",
-          "value": 1.85,
+          "value": 1.9,
           "unit": "mg",
           "target": 1.3,
-          "pct": 142,
+          "pct": 146,
           "status": "good",
           "basis": "Riboflavin RDA",
           "is_limit": false
@@ -285,10 +295,10 @@
         {
           "key": "niacin_mg",
           "label": "Niacin (B3)",
-          "value": 40.29,
+          "value": 41.11,
           "unit": "mg",
           "target": 16,
-          "pct": 252,
+          "pct": 257,
           "status": "good",
           "basis": "Niacin RDA",
           "is_limit": false
@@ -296,10 +306,10 @@
         {
           "key": "pantothenic_mg",
           "label": "Pantothenic acid (B5)",
-          "value": 6.41,
+          "value": 6.75,
           "unit": "mg",
           "target": 5,
-          "pct": 128,
+          "pct": 135,
           "status": "good",
           "basis": "Pantothenic acid AI",
           "is_limit": false
@@ -307,10 +317,10 @@
         {
           "key": "vitamin_b6_mg",
           "label": "Vitamin B6",
-          "value": 2.81,
+          "value": 3.02,
           "unit": "mg",
           "target": 1.3,
-          "pct": 216,
+          "pct": 233,
           "status": "good",
           "basis": "Vitamin B6 RDA",
           "is_limit": false
@@ -318,10 +328,10 @@
         {
           "key": "folate_mcg",
           "label": "Folate (B9)",
-          "value": 573.27,
+          "value": 510.52,
           "unit": "µg",
           "target": 400,
-          "pct": 143,
+          "pct": 128,
           "status": "good",
           "basis": "Folate RDA",
           "is_limit": false
@@ -340,21 +350,21 @@
         {
           "key": "calcium_mg",
           "label": "Calcium",
-          "value": 732.52,
+          "value": 813.27,
           "unit": "mg",
           "target": 1000,
-          "pct": 73,
-          "status": "low",
+          "pct": 81,
+          "status": "watch",
           "basis": "Calcium RDA",
           "is_limit": false
         },
         {
           "key": "iron_mg",
           "label": "Iron",
-          "value": 10.24,
+          "value": 10.62,
           "unit": "mg",
           "target": 8,
-          "pct": 128,
+          "pct": 133,
           "status": "good",
           "basis": "Iron RDA",
           "is_limit": false
@@ -362,10 +372,10 @@
         {
           "key": "magnesium_mg",
           "label": "Magnesium",
-          "value": 286.86,
+          "value": 310.36,
           "unit": "mg",
           "target": 420,
-          "pct": 68,
+          "pct": 74,
           "status": "low",
           "basis": "Magnesium RDA",
           "is_limit": false
@@ -373,10 +383,10 @@
         {
           "key": "phosphorus_mg",
           "label": "Phosphorus",
-          "value": 1516.55,
+          "value": 1555.67,
           "unit": "mg",
           "target": 700,
-          "pct": 217,
+          "pct": 222,
           "status": "good",
           "basis": "Phosphorus RDA",
           "is_limit": false
@@ -384,21 +394,21 @@
         {
           "key": "potassium_mg",
           "label": "Potassium",
-          "value": 3005.59,
+          "value": 3405.34,
           "unit": "mg",
           "target": 3400,
-          "pct": 88,
-          "status": "watch",
+          "pct": 100,
+          "status": "good",
           "basis": "Potassium AI",
           "is_limit": false
         },
         {
           "key": "zinc_mg",
           "label": "Zinc",
-          "value": 8.64,
+          "value": 8.8,
           "unit": "mg",
           "target": 11,
-          "pct": 79,
+          "pct": 80,
           "status": "watch",
           "basis": "Zinc RDA",
           "is_limit": false
@@ -406,10 +416,10 @@
         {
           "key": "copper_mg",
           "label": "Copper",
-          "value": 1.43,
+          "value": 1.38,
           "unit": "mg",
           "target": 0.9,
-          "pct": 159,
+          "pct": 154,
           "status": "good",
           "basis": "Copper RDA",
           "is_limit": false
@@ -417,10 +427,10 @@
         {
           "key": "manganese_mg",
           "label": "Manganese",
-          "value": 3.69,
+          "value": 4.08,
           "unit": "mg",
           "target": 2.3,
-          "pct": 160,
+          "pct": 177,
           "status": "good",
           "basis": "Manganese AI",
           "is_limit": false
@@ -428,10 +438,10 @@
         {
           "key": "selenium_mcg",
           "label": "Selenium",
-          "value": 123.53,
+          "value": 119.43,
           "unit": "µg",
           "target": 55,
-          "pct": 225,
+          "pct": 217,
           "status": "good",
           "basis": "Selenium RDA",
           "is_limit": false
@@ -439,10 +449,10 @@
         {
           "key": "sodium_mg",
           "label": "Sodium",
-          "value": 1217.52,
+          "value": 1255.71,
           "unit": "mg",
           "target": 2300,
-          "pct": 53,
+          "pct": 55,
           "status": "good",
           "basis": "Sodium upper limit",
           "is_limit": true
@@ -450,10 +460,10 @@
         {
           "key": "choline_mg",
           "label": "Choline",
-          "value": 351.11,
+          "value": 355.88,
           "unit": "mg",
           "target": 550,
-          "pct": 64,
+          "pct": 65,
           "status": "low",
           "basis": "Choline AI",
           "is_limit": false
@@ -461,10 +471,10 @@
         {
           "key": "omega3_ala_g",
           "label": "Omega-3 ALA",
-          "value": 0.77,
+          "value": 0.84,
           "unit": "g",
           "target": 1.6,
-          "pct": 48,
+          "pct": 52,
           "status": "low",
           "basis": "ALA AI",
           "is_limit": false
@@ -511,12 +521,12 @@
         "salmon",
         "chickpeas",
         "broccoli",
-        "asparagus",
         "avocado",
         "olive_oil",
         "crispy_chili",
         "skyr",
-        "berries"
+        "berries",
+        "asparagus"
       ],
       "weight_g": 1473,
       "cost_eur": 11.36,
@@ -904,38 +914,38 @@
         "6 × chicken day",
         "1 × salmon day"
       ],
-      "weight_g": 1473,
-      "cost_eur": 9.68,
+      "weight_g": 1602,
+      "cost_eur": 9.13,
       "summary": {
-        "kcal": 1446.0,
-        "protein_g": 124.4,
-        "carbs_g": 80.2,
-        "fat_g": 61.0,
-        "fiber_g": 33.3,
-        "saturated_fat_g": 10.6,
-        "sodium_mg": 1119.1,
-        "salt_g": 2.8,
+        "kcal": 1494.8,
+        "protein_g": 126.2,
+        "carbs_g": 87.0,
+        "fat_g": 61.2,
+        "fiber_g": 39.1,
+        "saturated_fat_g": 10.7,
+        "sodium_mg": 1151.8,
+        "salt_g": 2.9,
         "omega3_epa_dha_mg": 669.6
       },
       "nutrients": [
         {
           "key": "kcal",
           "label": "Energy",
-          "value": 1445.96,
+          "value": 1494.81,
           "unit": "kcal",
           "target": 2000,
-          "pct": 72,
-          "status": "low",
+          "pct": 75,
+          "status": "watch",
           "basis": "Reference energy",
           "is_limit": false
         },
         {
           "key": "protein_g",
           "label": "Protein",
-          "value": 124.37,
+          "value": 126.16,
           "unit": "g",
           "target": 56,
-          "pct": 222,
+          "pct": 225,
           "status": "good",
           "basis": "Protein RDA",
           "is_limit": false
@@ -943,10 +953,10 @@
         {
           "key": "carbs_g",
           "label": "Carbohydrate",
-          "value": 80.2,
+          "value": 87.06,
           "unit": "g",
           "target": 130,
-          "pct": 62,
+          "pct": 67,
           "status": "low",
           "basis": "Carbohydrate RDA",
           "is_limit": false
@@ -954,18 +964,18 @@
         {
           "key": "fiber_g",
           "label": "Fibre",
-          "value": 33.27,
+          "value": 39.09,
           "unit": "g",
           "target": 38,
-          "pct": 88,
-          "status": "watch",
+          "pct": 103,
+          "status": "good",
           "basis": "Fibre AI",
           "is_limit": false
         },
         {
           "key": "fat_g",
           "label": "Fat",
-          "value": 61.0,
+          "value": 61.12,
           "unit": "g",
           "target": 78,
           "pct": 78,
@@ -976,10 +986,10 @@
         {
           "key": "saturated_fat_g",
           "label": "Saturated fat",
-          "value": 10.6,
+          "value": 10.73,
           "unit": "g",
           "target": 20,
-          "pct": 53,
+          "pct": 54,
           "status": "good",
           "basis": "Upper display limit",
           "is_limit": true
@@ -987,21 +997,21 @@
         {
           "key": "vitamin_a_rae_mcg",
           "label": "Vitamin A",
-          "value": 234.43,
+          "value": 1131.22,
           "unit": "µg RAE",
           "target": 900,
-          "pct": 26,
-          "status": "low",
+          "pct": 126,
+          "status": "good",
           "basis": "Vitamin A RDA",
           "is_limit": false
         },
         {
           "key": "vitamin_c_mg",
           "label": "Vitamin C",
-          "value": 242.62,
+          "value": 277.75,
           "unit": "mg",
           "target": 90,
-          "pct": 270,
+          "pct": 309,
           "status": "good",
           "basis": "Vitamin C RDA",
           "is_limit": false
@@ -1020,10 +1030,10 @@
         {
           "key": "vitamin_e_mg",
           "label": "Vitamin E",
-          "value": 12.67,
+          "value": 12.99,
           "unit": "mg",
           "target": 15,
-          "pct": 84,
+          "pct": 87,
           "status": "watch",
           "basis": "Vitamin E RDA",
           "is_limit": false
@@ -1031,10 +1041,10 @@
         {
           "key": "vitamin_k_mcg",
           "label": "Vitamin K",
-          "value": 308.82,
+          "value": 348.7,
           "unit": "µg",
           "target": 120,
-          "pct": 257,
+          "pct": 291,
           "status": "good",
           "basis": "Vitamin K AI",
           "is_limit": false
@@ -1053,10 +1063,10 @@
         {
           "key": "riboflavin_mg",
           "label": "Riboflavin (B2)",
-          "value": 1.86,
+          "value": 1.91,
           "unit": "mg",
           "target": 1.3,
-          "pct": 143,
+          "pct": 147,
           "status": "good",
           "basis": "Riboflavin RDA",
           "is_limit": false
@@ -1064,10 +1074,10 @@
         {
           "key": "niacin_mg",
           "label": "Niacin (B3)",
-          "value": 38.49,
+          "value": 39.19,
           "unit": "mg",
           "target": 16,
-          "pct": 241,
+          "pct": 245,
           "status": "good",
           "basis": "Niacin RDA",
           "is_limit": false
@@ -1075,10 +1085,10 @@
         {
           "key": "pantothenic_mg",
           "label": "Pantothenic acid (B5)",
-          "value": 6.62,
+          "value": 6.91,
           "unit": "mg",
           "target": 5,
-          "pct": 132,
+          "pct": 138,
           "status": "good",
           "basis": "Pantothenic acid AI",
           "is_limit": false
@@ -1086,10 +1096,10 @@
         {
           "key": "vitamin_b6_mg",
           "label": "Vitamin B6",
-          "value": 2.82,
+          "value": 3.0,
           "unit": "mg",
           "target": 1.3,
-          "pct": 217,
+          "pct": 231,
           "status": "good",
           "basis": "Vitamin B6 RDA",
           "is_limit": false
@@ -1097,10 +1107,10 @@
         {
           "key": "folate_mcg",
           "label": "Folate (B9)",
-          "value": 581.13,
+          "value": 527.34,
           "unit": "µg",
           "target": 400,
-          "pct": 145,
+          "pct": 132,
           "status": "good",
           "basis": "Folate RDA",
           "is_limit": false
@@ -1119,21 +1129,21 @@
         {
           "key": "calcium_mg",
           "label": "Calcium",
-          "value": 730.38,
+          "value": 799.59,
           "unit": "mg",
           "target": 1000,
-          "pct": 73,
-          "status": "low",
+          "pct": 80,
+          "status": "watch",
           "basis": "Calcium RDA",
           "is_limit": false
         },
         {
           "key": "iron_mg",
           "label": "Iron",
-          "value": 9.99,
+          "value": 10.32,
           "unit": "mg",
           "target": 8,
-          "pct": 125,
+          "pct": 129,
           "status": "good",
           "basis": "Iron RDA",
           "is_limit": false
@@ -1141,10 +1151,10 @@
         {
           "key": "magnesium_mg",
           "label": "Magnesium",
-          "value": 286.15,
+          "value": 306.29,
           "unit": "mg",
           "target": 420,
-          "pct": 68,
+          "pct": 73,
           "status": "low",
           "basis": "Magnesium RDA",
           "is_limit": false
@@ -1152,10 +1162,10 @@
         {
           "key": "phosphorus_mg",
           "label": "Phosphorus",
-          "value": 1520.84,
+          "value": 1554.37,
           "unit": "mg",
           "target": 700,
-          "pct": 217,
+          "pct": 222,
           "status": "good",
           "basis": "Phosphorus RDA",
           "is_limit": false
@@ -1163,21 +1173,21 @@
         {
           "key": "potassium_mg",
           "label": "Potassium",
-          "value": 3043.8,
+          "value": 3386.45,
           "unit": "mg",
           "target": 3400,
-          "pct": 90,
-          "status": "watch",
+          "pct": 100,
+          "status": "good",
           "basis": "Potassium AI",
           "is_limit": false
         },
         {
           "key": "zinc_mg",
           "label": "Zinc",
-          "value": 8.41,
+          "value": 8.55,
           "unit": "mg",
           "target": 11,
-          "pct": 76,
+          "pct": 78,
           "status": "watch",
           "basis": "Zinc RDA",
           "is_limit": false
@@ -1185,10 +1195,10 @@
         {
           "key": "copper_mg",
           "label": "Copper",
-          "value": 1.43,
+          "value": 1.39,
           "unit": "mg",
           "target": 0.9,
-          "pct": 159,
+          "pct": 154,
           "status": "good",
           "basis": "Copper RDA",
           "is_limit": false
@@ -1196,10 +1206,10 @@
         {
           "key": "manganese_mg",
           "label": "Manganese",
-          "value": 3.69,
+          "value": 4.02,
           "unit": "mg",
           "target": 2.3,
-          "pct": 160,
+          "pct": 175,
           "status": "good",
           "basis": "Manganese AI",
           "is_limit": false
@@ -1207,10 +1217,10 @@
         {
           "key": "selenium_mcg",
           "label": "Selenium",
-          "value": 122.24,
+          "value": 118.73,
           "unit": "µg",
           "target": 55,
-          "pct": 222,
+          "pct": 216,
           "status": "good",
           "basis": "Selenium RDA",
           "is_limit": false
@@ -1218,10 +1228,10 @@
         {
           "key": "sodium_mg",
           "label": "Sodium",
-          "value": 1119.1,
+          "value": 1151.83,
           "unit": "mg",
           "target": 2300,
-          "pct": 49,
+          "pct": 50,
           "status": "good",
           "basis": "Sodium upper limit",
           "is_limit": true
@@ -1229,10 +1239,10 @@
         {
           "key": "choline_mg",
           "label": "Choline",
-          "value": 348.68,
+          "value": 352.77,
           "unit": "mg",
           "target": 550,
-          "pct": 63,
+          "pct": 64,
           "status": "low",
           "basis": "Choline AI",
           "is_limit": false
@@ -1240,10 +1250,10 @@
         {
           "key": "omega3_ala_g",
           "label": "Omega-3 ALA",
-          "value": 0.81,
+          "value": 0.87,
           "unit": "g",
           "target": 1.6,
-          "pct": 51,
+          "pct": 54,
           "status": "low",
           "basis": "ALA AI",
           "is_limit": false
@@ -1286,10 +1296,10 @@
   },
   "rotation": {
     "pattern": "6 chicken + 1 salmon",
-    "weekly_cost_eur": 67.76,
-    "average_day_eur": 9.68,
-    "thirty_day_eur": 290.4,
-    "starter_basket_eur": 81.7
+    "weekly_cost_eur": 63.92,
+    "average_day_eur": 9.13,
+    "thirty_day_eur": 273.94,
+    "starter_basket_eur": 87.7
   },
   "sources": [
     {
@@ -1392,6 +1402,9 @@
     },
     "11012": {
       "description": "Asparagus, cooked, boiled, drained"
+    },
+    "11053": {
+      "description": "Beans, snap, green, cooked, boiled, drained, without salt"
     }
   }
 }
