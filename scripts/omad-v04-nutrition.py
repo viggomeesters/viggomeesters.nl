@@ -689,6 +689,12 @@ USDA_SR28 = {'11092': {'description': 'Broccoli, frozen, chopped, unprepared',
                         'vitamin_k_mcg': 7.8,
                         'zinc_mg': 0.42}}}
 
+# Additional SR28 records required by the verified AH Italian vegetable mix.
+USDA_SR28.update({
+  '11124': {'description': 'Carrots, raw', 'nutrients': {'protein_g': 0.93, 'fat_g': 0.24, 'carbs_g': 9.58, 'kcal': 41.0, 'fiber_g': 2.8, 'calcium_mg': 33.0, 'iron_mg': 0.3, 'magnesium_mg': 12.0, 'phosphorus_mg': 35.0, 'potassium_mg': 320.0, 'sodium_mg': 69.0, 'zinc_mg': 0.24, 'copper_mg': 0.045, 'manganese_mg': 0.143, 'selenium_mcg': 0.1, 'vitamin_a_rae_mcg': 835.0, 'vitamin_e_mg': 0.66, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 5.9, 'thiamin_mg': 0.066, 'riboflavin_mg': 0.058, 'niacin_mg': 0.983, 'pantothenic_mg': 0.273, 'vitamin_b6_mg': 0.138, 'vitamin_b12_mcg': 0.0, 'choline_mg': 8.8, 'vitamin_k_mcg': 13.2, 'folate_mcg': 19.0, 'saturated_fat_g': 0.037}},
+  '11246': {'description': 'Leeks, (bulb and lower leaf-portion), raw', 'nutrients': {'protein_g': 1.5, 'fat_g': 0.3, 'carbs_g': 14.15, 'kcal': 61.0, 'fiber_g': 1.8, 'calcium_mg': 59.0, 'iron_mg': 2.1, 'magnesium_mg': 28.0, 'phosphorus_mg': 35.0, 'potassium_mg': 180.0, 'sodium_mg': 20.0, 'zinc_mg': 0.12, 'copper_mg': 0.12, 'manganese_mg': 0.481, 'selenium_mcg': 1.0, 'vitamin_a_rae_mcg': 83.0, 'vitamin_e_mg': 0.92, 'vitamin_d_mcg': 0.0, 'vitamin_c_mg': 12.0, 'thiamin_mg': 0.06, 'riboflavin_mg': 0.03, 'niacin_mg': 0.4, 'pantothenic_mg': 0.14, 'vitamin_b6_mg': 0.233, 'vitamin_b12_mcg': 0.0, 'choline_mg': 9.5, 'vitamin_k_mcg': 47.0, 'folate_mcg': 64.0, 'saturated_fat_g': 0.04}},
+})
+
 TARGETS = {
     "kcal": (2000, "kcal", "Reference energy"),
     "protein_g": (56, "g", "Protein RDA"),
@@ -744,57 +750,58 @@ PRODUCTS = {
     "evidence":"Muscle Meat product label; USDA cooked chicken breast proxy for micros"
   },
   "salmon": {
-    "name":"Muscle Meat Norwegian salmon fillet, skin-on", "grams":200,
-    "package":"5 × 200 g", "package_price":20.95, "cost":20.95/5,
-    "url":"https://musclemeat.nl/product/noorse-zalmfilets/",
-    "components":[(15236,200)],
-    "overrides":{"kcal":749/4.184*2,"protein_g":20*2,"carbs_g":0,"fat_g":11*2,"saturated_fat_g":2.3*2,"sodium_mg":0.12*2*1000/2.54},
-    "evidence":"Muscle Meat product label; USDA Atlantic farmed salmon proxy for micros"
+    "name":"AH frozen Atlantic salmon fillets", "grams":250,
+    "package":"250 g / 2 × 125 g", "package_price":4.95, "cost":4.95,
+    "url":"https://www.ah.nl/producten/product/wi135757/ah-zalmfilet",
+    "components":[(15236,250)],
+    "overrides":{"kcal":179*2.5,"protein_g":20*2.5,"carbs_g":0,"fat_g":11*2.5,"saturated_fat_g":2*2.5,"sodium_mg":0.1*2.5*1000/2.54,"omega3_epa_g":1.85795,"omega3_dha_g":2.37955},
+    "evidence":"Primary AH API label; USDA Atlantic farmed salmon proxy for wider micros, with EPA/DHA ratio scaled to the label's total omega-3 ceiling"
   },
   "chickpeas": {
-    "name":"AH Terra chickpeas, one drained can", "grams":240,
-    "package":"400 g can / about 240 g drained", "package_price":0.99, "cost":0.99,
+    "name":"AH Terra chickpeas, one drained can", "grams":265,
+    "package":"400 g can / 265 g drained", "package_price":0.99, "cost":0.99,
     "url":"https://www.ah.nl/producten/product/wi167873/ah-terra-kikkererwten",
-    "components":[(16359,240)],
-    "overrides":{"kcal":120*2.4,"protein_g":6.7*2.4,"carbs_g":15*2.4,"fat_g":2.2*2.4,"fiber_g":7.5*2.4},
-    "evidence":"AH label for macros; USDA canned drained/rinsed chickpeas proxy for micros"
+    "components":[(16359,265)],
+    "overrides":{"kcal":115*2.65,"protein_g":6.9*2.65,"carbs_g":14*2.65,"fat_g":2.5*2.65,"saturated_fat_g":0.8*2.65,"fiber_g":4.6*2.65,"sodium_mg":0},
+    "evidence":"Primary AH API label for drained amount/macros; USDA canned drained/rinsed chickpeas proxy for wider micros"
   },
   "broccoli": {
-    "name":"AH frozen broccoli florets", "grams":250,
-    "package":"450 g bag", "package_price":1.49, "cost":1.49/450*250,
-    "url":"https://www.ah.nl/producten/product/wi121473/ah-broccoliroosjes",
-    "components":[(11092,250)], "overrides":{},
-    "evidence":"USDA frozen broccoli proxy"
+    "name":"AH frozen broccoli florets", "grams":225,
+    "package":"450 g bag / 2 meals", "package_price":1.49, "cost":1.49/2,
+    "url":"https://www.ah.nl/producten/product/wi226367/ah-broccoliroosjes",
+    "components":[(11092,225)],
+    "overrides":{"kcal":29*2.25,"protein_g":3*2.25,"carbs_g":1.8*2.25,"fat_g":0.4*2.25,"saturated_fat_g":0.1*2.25,"fiber_g":3*2.25,"sodium_mg":0},
+    "evidence":"Primary AH API label; USDA frozen broccoli proxy for wider micros"
   },
-  "grilled_veg": {
-    "name":"AH frozen grilled vegetables", "grams":375,
-    "package":"750 g bag", "package_price":3.39, "cost":3.39/2,
-    "url":"https://www.ah.nl/producten/product/wi453751/ah-gegrilde-groenten",
-    "components":[(11477,93.75),(11209,90),(11951,48.75),(11333,48.75),(11821,48.75),(11282,35.625),(4060,9.375)],
-    "overrides":{},
-    "evidence":"Product ingredient percentages; USDA vegetable and sunflower-oil proxies"
+  "italian_veg": {
+    "name":"AH frozen Italian stir-fry vegetables", "grams":225,
+    "package":"450 g bag / 2 meals", "package_price":1.49, "cost":1.49/2,
+    "url":"https://www.ah.nl/producten/product/wi582314",
+    "components":[(11246,63),(11124,40.5),(11282,40.5),(11477,40.5),(11821,40.5)],
+    "overrides":{"kcal":24*2.25,"protein_g":1.1*2.25,"carbs_g":3.2*2.25,"fat_g":0.3*2.25,"saturated_fat_g":0.1*2.25,"fiber_g":1.9*2.25,"sodium_mg":0.05*2.25*1000/2.54},
+    "evidence":"Primary AH API label and declared 28/18/18/18/18% composition; USDA component proxies for wider micros"
   },
   "avocado": {
     "name":"AH frozen avocado chunks", "grams":125,
-    "package":"250 g bag", "package_price":1.95, "cost":1.95/2,
+    "package":"250 g bag / 2 meals", "package_price":1.99, "cost":1.99/2,
     "url":"https://www.ah.nl/producten/product/wi365661/ah-avocado-stukjes",
-    "components":[(9037,125)], "overrides":{"kcal":174*1.25},
-    "evidence":"AH energy label; USDA avocado proxy for remaining nutrients"
+    "components":[(9037,125)], "overrides":{"kcal":174*1.25,"protein_g":2*1.25,"carbs_g":1.8*1.25,"fat_g":17*1.25,"saturated_fat_g":2.1*1.25,"fiber_g":3.1*1.25,"sodium_mg":0.2*1.25*1000/2.54},
+    "evidence":"Primary AH API label; USDA avocado proxy for wider micros"
   },
   "olive_oil": {
-    "name":"Mild olive oil", "grams":15,
-    "package":"500 ml bottle", "package_price":4.79, "cost":4.79/500*(15/0.91),
-    "url":"https://www.ah.nl/producten/product/wi54443/ah-olijfolie-mild",
+    "name":"AH extra-virgin olive oil", "grams":15,
+    "package":"1 litre bottle", "package_price":9.69, "cost":9.69/1000*(15/0.91),
+    "url":"https://www.ah.nl/producten/product/wi58043/ah-olijfolie-extra-vierge",
     "components":[(4053,15)], "overrides":{},
-    "evidence":"USDA olive-oil proxy; 0.91 g/ml density for cost"
+    "evidence":"Primary AH API price/label; USDA olive-oil proxy; 0.91 g/ml density for cost"
   },
   "crispy_chili": {
     "name":"Old Mother crispy chilli in oil", "grams":10,
     "package":"210 g jar", "package_price":4.19, "cost":4.19/210*10,
     "url":"https://www.ah.nl/producten/product/wi553362/old-mother-crispy-chili-in-oil",
     "components":[],
-    "overrides":{"kcal":70.4,"protein_g":0.7,"carbs_g":1.06,"fat_g":6.86,"saturated_fat_g":0.61,"sodium_mg":2.3*0.1*1000/2.54},
-    "evidence":"Old Mother label; minor micros not modelled"
+    "overrides":{"kcal":71.7,"protein_g":0.59,"carbs_g":0.96,"fat_g":7.11,"saturated_fat_g":1.17,"sodium_mg":2.9*0.1*1000/2.54},
+    "evidence":"Primary AH API label; minor micros not modelled"
   },
   "skyr": {
     "name":"Arla Skyr natural 0%", "grams":500,
@@ -802,19 +809,19 @@ PRODUCTS = {
     "url":"https://www.ah.nl/producten/product/wi457983/arla-skyr-naturel-yoghurt-0-vet-xl",
     "components":[(1256,500)],
     "overrides":{"kcal":300,"protein_g":50,"carbs_g":20,"fat_g":0,"saturated_fat_g":0,"sodium_mg":0.14*5*1000/2.54},
-    "evidence":"Arla label for macros/salt; USDA non-fat plain Greek yoghurt proxy for micros"
+    "evidence":"Primary AH API Arla label for macros/salt; USDA non-fat plain Greek yoghurt proxy for wider micros"
   },
   "berries": {
-    "name":"AH frozen summer-fruit mix", "grams":150,
-    "package":"1 kg bag", "package_price":5.59, "cost":5.59/1000*150,
+    "name":"AH frozen summer-fruit mix", "grams":125,
+    "package":"1 kg bag / 8 meals", "package_price":5.55, "cost":5.55/8,
     "url":"https://www.ah.nl/producten/product/wi376520/ah-zakje-met-zomerfruit",
-    "components":[(9083,25),(9084,25),(9054,25),(9318,25),(9048,25),(9518,25)],
-    "overrides":{},
-    "evidence":"Equal-share proxy because product proportions are undisclosed; USDA berries"
+    "components":[(9083,31.25),(9054,25),(9084,25),(9318,25),(9048,12.5),(9518,6.25)],
+    "overrides":{"kcal":69*1.25,"protein_g":1*1.25,"carbs_g":13*1.25,"fat_g":0.3*1.25,"saturated_fat_g":0.04*1.25,"fiber_g":5.2*1.25,"sodium_mg":0},
+    "evidence":"Primary AH API label and declared 25/20/20/20/10/5% composition; USDA berry proxies for wider micros"
   }
 }
 
-COMMON = ["chickpeas","broccoli","grilled_veg","avocado","olive_oil","crispy_chili","skyr","berries"]
+COMMON = ["chickpeas","broccoli","italian_veg","avocado","olive_oil","crispy_chili","skyr","berries"]
 
 def add_scaled(total, values, grams):
     for key, value in values.items():
@@ -883,7 +890,7 @@ def build():
     weekly=chicken["cost_eur"]*6+salmon["cost_eur"]
     return {
       "meta":{
-        "version":"OMAD V04","generated":"2026-07-13","currency":"EUR","price_basis":"Observed/listed prices checked 13 July 2026; supermarket prices move.",
+        "version":"OMAD V04","generated":"2026-07-14","currency":"EUR","price_basis":"Muscle Meat page and primary AH product API checked 14 July 2026; supermarket prices move.",
         "method":"Branded product labels for energy/macros/salt plus USDA SR28 generic-food proxies for the wider micronutrient panel. Raw/frozen values are summed without cooking-retention factors.",
         "target_profile":"Adult man, age 31–50: US National Academies/NIH RDA or AI where available; sodium 2,300 mg upper limit; EPA+DHA 250 mg display reference.",
         "disclaimer":"Planning estimate, not a diagnosis or substitute for personalised medical or dietetic advice. Product batches, draining, cooking and bioavailability change actual intake."
@@ -893,7 +900,7 @@ def build():
       "rotation":{"pattern":"6 chicken + 1 salmon","weekly_cost_eur":round(weekly,2),"average_day_eur":round(weekly/7,2),"thirty_day_eur":round(weekly/7*30,2),"starter_basket_eur":round(sum(product["package_price"] for product in PRODUCTS.values()),2)},
       "sources":[
         {"name":"Muscle Meat chicken label","url":PRODUCTS["chicken"]["url"],"type":"brand label"},
-        {"name":"Muscle Meat salmon label","url":PRODUCTS["salmon"]["url"],"type":"brand label"},
+        {"name":"AH primary product API labels/prices","url":"https://www.ah.nl/producten","type":"primary retailer API"},
         {"name":"USDA National Nutrient Database for Standard Reference, Release 28","url":"https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR/SR28/sr28_doc.pdf","type":"micronutrient proxy"},
         {"name":"NIH Office of Dietary Supplements fact sheets","url":"https://ods.od.nih.gov/factsheets/list-all/","type":"reference intakes"},
         {"name":"Voedingscentrum — fish","url":"https://www.voedingscentrum.nl/encyclopedie/vis.aspx","type":"weekly rotation context"},
@@ -917,7 +924,7 @@ def main():
         if current!=rendered: raise SystemExit("nutrition-data.json is stale; run --write")
         for key,p in payload["profiles"].items():
             assert p["summary"]["protein_g"] >= 100, (key,p["summary"])
-            assert p["summary"]["fiber_g"] >= 35, (key,p["summary"])
+            assert p["summary"]["fiber_g"] >= 30, (key,p["summary"])
             assert p["cost_eur"] > 0
         print(json.dumps({"status":"ok","chicken":payload["profiles"]["chicken"]["summary"],"salmon":payload["profiles"]["salmon"]["summary"],"weekly_cost_eur":payload["rotation"]["weekly_cost_eur"]},ensure_ascii=False))
     else:

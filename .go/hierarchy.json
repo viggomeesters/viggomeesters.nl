@@ -26,7 +26,8 @@
           "name": "Guides, indexes, and generated public snapshots",
           "tasks": [
             "reduce-seo-metadata-issue-baseline",
-            "publish-omad-v04-cronometer-guide"
+            "publish-omad-v04-cronometer-guide",
+            "align-omad-v04-primary-product-data"
           ]
         }
       ]
