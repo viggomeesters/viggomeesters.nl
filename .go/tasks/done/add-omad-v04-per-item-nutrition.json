@@ -1,0 +1,34 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "id": "add-omad-v04-per-item-nutrition",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Add nutrition values per OMAD V04 ingredient",
+  "description": "Expose source-modelled nutrition contribution for every product rather than only profile totals. Add generated per-item macro/salt values and a responsive ingredient nutrition table with selected micronutrients and evidence provenance.",
+  "scope": {
+    "read": [
+      "omad-fallback-meal/index.html,omad-fallback-meal/nutrition-data.json,scripts/omad-v04-nutrition.py"
+    ],
+    "modify": [
+      "omad-fallback-meal/index.html,omad-fallback-meal/nutrition-data.json,scripts/omad-v04-nutrition.py"
+    ]
+  },
+  "acceptance": [
+    "Every listed ingredient shows used amount, kcal, protein, carbs, fat, fibre and salt; expandable per-item cards expose selected vitamin/mineral contributions and evidence; profiles still calculate from the same generated values."
+  ],
+  "verification": [
+    "python3 scripts/omad-v04-nutrition.py --check && npm test && npm run check && npm run check:seo && git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-15T06:55:09+02:00"
+  },
+  "evidence": [
+    {
+      "created_at": "2026-07-15T07:06:16+02:00",
+      "agent": "hermes",
+      "summary": "All 11 ingredients now expose exact-used-portion kcal, protein, carbs, fat, fibre, salt and cost; expandable cards expose Vitamin A/C/D, folate, calcium, iron, potassium, choline and EPA+DHA with source evidence; 55 tests, 140-page site check and SEO green; browser rendered 11 rows/11 details with no page overflow."
+    }
+  ]
+}

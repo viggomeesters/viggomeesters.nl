@@ -898,6 +898,18 @@ def blend_profiles(chicken, salmon):
       "summary":summary, "nutrients":rows
     }
 
+def public_product(key, product):
+    """Serialize one ingredient with the nutrient contribution of its used amount."""
+    values=calculate_item(product)
+    values["salt_g"]=values.get("sodium_mg",0)*2.54/1000
+    values["omega3_epa_dha_mg"]=(values.get("omega3_epa_g",0)+values.get("omega3_dha_g",0))*1000
+    nutrition={nutrient:round(value,2) for nutrient,value in values.items() if isinstance(value,(int,float))}
+    return {k:v for k,v in product.items() if k not in {"components","overrides"}} | {
+      "key":key,
+      "cost":round(product["cost"],2),
+      "nutrition":nutrition,
+    }
+
 def build():
     chicken=profile("chicken"); salmon=profile("salmon"); rotation=blend_profiles(chicken,salmon)
     weekly=chicken["cost_eur"]*6+salmon["cost_eur"]
@@ -908,7 +920,7 @@ def build():
         "target_profile":"Adult man, age 31–50: US National Academies/NIH RDA or AI where available; sodium 2,300 mg upper limit; EPA+DHA 250 mg display reference.",
         "disclaimer":"Planning estimate, not a diagnosis or substitute for personalised medical or dietetic advice. Product batches, draining, cooking and bioavailability change actual intake."
       },
-      "products":[{k:v for k,v in product.items() if k not in {"components","overrides"}} | {"key":key,"cost":round(product["cost"],2)} for key,product in PRODUCTS.items()],
+      "products":[public_product(key,product) for key,product in PRODUCTS.items()],
       "profiles":{"chicken":chicken,"salmon":salmon,"rotation":rotation},
       "rotation":{"pattern":"6 chicken + 1 salmon","weekly_cost_eur":round(weekly,2),"average_day_eur":round(weekly/7,2),"thirty_day_eur":round(weekly/7*30,2),"starter_basket_eur":round(sum(product["package_price"] for product in PRODUCTS.values()),2)},
       "sources":[

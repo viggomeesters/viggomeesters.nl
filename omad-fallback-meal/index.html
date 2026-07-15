@@ -70,6 +70,7 @@
     .method{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:34px}.method-steps{counter-reset:step}.method-step{position:relative;padding:22px 20px 22px 70px;border-top:1px solid var(--line);counter-increment:step}.method-step::before{position:absolute;left:12px;top:22px;color:var(--heat);font:.78rem var(--mono);content:'0' counter(step)}.method-step h3{color:var(--ink);font-size:1rem}.method-step p{margin-top:5px;color:var(--muted);font-size:.86rem}.timer{align-self:start;padding:28px;border:1px solid rgba(255,123,74,.22);border-radius:var(--radius);background:var(--heat-soft)}.timer-label{color:var(--heat);font:.68rem var(--mono);text-transform:uppercase}.timer-value{margin-top:15px;color:var(--ink);font:600 3.2rem/.9 var(--serif)}.timer p{margin-top:18px;color:#a8958d;font-size:.82rem}.safety{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,123,74,.2);color:#d5b5a9!important}
     .cost-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin-bottom:24px;border:1px solid var(--line);border-radius:var(--radius);background:var(--line);overflow:hidden}.cost-metric{padding:22px;background:var(--surface)}.cost-metric span{display:block;color:var(--quiet);font:.64rem var(--mono);text-transform:uppercase}.cost-metric strong{display:block;margin-top:8px;color:var(--ink);font:600 1.6rem var(--serif)}
     .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius)}table{width:100%;border-collapse:collapse;min-width:760px;background:var(--surface)}th,td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--quiet);font:500 .65rem var(--mono);letter-spacing:.07em;text-transform:uppercase}td{color:#aeb7b0;font-size:.81rem}td:first-child{color:var(--ink);font-weight:600}td.num{font-family:var(--mono);text-align:right}td a{color:var(--blue);text-underline-offset:4px}.table-note{margin-top:12px;color:var(--quiet);font-size:.75rem}
+    .item-details{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.item-detail{margin:0}.item-detail summary{display:flex;justify-content:space-between;gap:18px;align-items:center}.item-detail summary span:last-child{flex:none;color:var(--lime);font-size:.66rem}.item-micros{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 16px 16px}.item-micro{padding:11px;border:1px solid rgba(255,255,255,.055);border-radius:10px;background:#0d100f}.item-micro span{display:block;color:var(--quiet);font:.58rem var(--mono);text-transform:uppercase}.item-micro strong{display:block;margin-top:4px;color:var(--ink);font:500 .76rem var(--mono)}.item-evidence{grid-column:1/-1;margin-top:4px;color:var(--quiet);font-size:.68rem;line-height:1.45}
     .crono{padding:clamp(20px,4vw,42px);border:1px solid #303a34;border-radius:24px;background:#0e1210;box-shadow:0 30px 80px rgba(0,0,0,.26)}
     .crono-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.crono-brand{color:var(--lime);font:500 .69rem var(--mono);letter-spacing:.13em;text-transform:uppercase}.crono h3{margin-top:8px;color:var(--ink);font:600 2rem var(--serif)}.data-status{display:flex;align-items:center;gap:7px;color:var(--muted);font:.65rem var(--mono)}.data-status::before{width:7px;height:7px;border-radius:50%;background:var(--amber);content:''}.data-status.ready::before{background:var(--lime);box-shadow:0 0 12px var(--lime)}
     .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0}.tab{min-height:42px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);font:500 .72rem var(--mono);cursor:pointer}.tab[aria-selected='true']{border-color:rgba(183,243,107,.36);background:var(--lime-soft);color:var(--lime)}
@@ -80,7 +81,7 @@
     .closing{display:grid;grid-template-columns:1fr 1fr;gap:40px}.closing blockquote{color:var(--ink);font:500 clamp(2rem,4vw,3.3rem)/1.05 var(--serif);letter-spacing:-.03em}.closing-copy p{margin-bottom:16px;color:var(--muted)}.closing-copy strong{color:var(--ink)}
     .footer{display:flex;justify-content:space-between;gap:24px;padding-top:30px;border-top:1px solid var(--line);color:var(--quiet);font:.66rem var(--mono)}
     @media(max-width:900px){.timeline{grid-template-columns:repeat(2,1fr)}.version:last-child{grid-column:1/-1}.stack-grid{grid-template-columns:1fr 1fr}.macro-grid{grid-template-columns:repeat(3,1fr)}.nutrient-groups{grid-template-columns:1fr}.method{grid-template-columns:1fr}.timer{width:100%}.cost-strip{grid-template-columns:1fr 1fr}}
-    @media(max-width:650px){.shell{width:min(100% - 24px,1120px)}.topbar{font-size:.65rem}.hero{grid-template-columns:1fr;padding:48px 0}.hero-contract{margin-top:0}.verdict{grid-template-columns:1fr}.section{padding:54px 0}.section-head{grid-template-columns:1fr;gap:10px}.timeline,.stack-grid,.protein-switch,.gaps,.closing{grid-template-columns:1fr}.version:last-child{grid-column:auto}.stack{min-height:250px}.cost-strip{grid-template-columns:1fr 1fr}.crono{padding:18px 12px}.crono-top{flex-direction:column}.macro-grid{grid-template-columns:repeat(2,1fr)}.nutrient{grid-template-columns:minmax(95px,1fr) minmax(80px,1fr) 58px;gap:8px}.footer{flex-direction:column}}
+    @media(max-width:650px){.shell{width:min(100% - 24px,1120px)}.topbar{font-size:.65rem}.hero{grid-template-columns:1fr;padding:48px 0}.hero-contract{margin-top:0}.verdict{grid-template-columns:1fr}.section{padding:54px 0}.section-head{grid-template-columns:1fr;gap:10px}.timeline,.stack-grid,.protein-switch,.gaps,.closing,.item-details{grid-template-columns:1fr}.item-micros{grid-template-columns:1fr 1fr}.version:last-child{grid-column:auto}.stack{min-height:250px}.cost-strip{grid-template-columns:1fr 1fr}.crono{padding:18px 12px}.crono-top{flex-direction:column}.macro-grid{grid-template-columns:repeat(2,1fr)}.nutrient{grid-template-columns:minmax(95px,1fr) minmax(80px,1fr) 58px;gap:8px}.footer{flex-direction:column}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
   </style>
   <script defer src="/_vercel/insights/script.js"></script>
@@ -167,8 +168,20 @@
       <p class="table-note">Chicken and salmon are alternatives; do not add both protein costs together. Euromix belongs to the six chicken days; asparagus belongs only to the salmon day. The larger starter basket buys both bulk bags, but the 30-day run-rate falls. Price snapshot: 14 July 2026; no delivery cost or promotion is included.</p>
     </section>
 
+    <section class="section" id="ingredient-nutrition">
+      <div class="section-head"><div class="section-index">05 / Per ingredient</div><div class="section-copy"><h2>Every item earns its place.</h2><p>These are the nutrients contributed by the exact amount used in one meal — not generic values per 100 g. Chicken/Euromix and salmon/asparagus are alternative day-specific rows.</p></div></div>
+      <div class="table-wrap">
+        <table style="min-width:980px">
+          <thead><tr><th>Item</th><th>Day</th><th class="num">Used</th><th class="num">kcal</th><th class="num">Protein</th><th class="num">Carbs</th><th class="num">Fat</th><th class="num">Fibre</th><th class="num">Salt</th><th class="num">Cost</th></tr></thead>
+          <tbody id="item-nutrition-body"><tr><td colspan="10">Loading per-item nutrition…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="table-note">Open an ingredient below for its selected micronutrients and evidence basis. A dash means the source data does not support a defensible number.</p>
+      <div class="item-details" id="item-details"></div>
+    </section>
+
     <section class="section" id="micronutrients">
-      <div class="section-head"><div class="section-index">05 / Nutrition model</div><div class="section-copy"><h2>Cronometer-inspired, with provenance.</h2><p>Branded labels control calories, macros and salt. USDA SR28 whole-food records provide the wider micronutrient proxy. Unknowns remain unknown instead of being filled with decorative precision.</p></div></div>
+      <div class="section-head"><div class="section-index">06 / Nutrition model</div><div class="section-copy"><h2>Cronometer-inspired, with provenance.</h2><p>Branded labels control calories, macros and salt. USDA SR28 whole-food records provide the wider micronutrient proxy. Unknowns remain unknown instead of being filled with decorative precision.</p></div></div>
       <div class="crono">
         <div class="crono-top"><div><div class="crono-brand">Daily nutrition report</div><h3 id="profile-name">Chicken day</h3></div><div class="data-status" id="data-status">Loading nutrition-data.json</div></div>
         <div class="tabs" role="tablist" aria-label="Nutrition profile">
@@ -211,6 +224,13 @@
     let nutritionData;
     const euro = value => new Intl.NumberFormat('en-NL',{style:'currency',currency:'EUR'}).format(value);
     const format = row => row.value == null ? 'not modelled' : `${new Intl.NumberFormat('en-NL',{maximumFractionDigits:row.value<10?2:0}).format(row.value)} ${row.unit}`;
+    const itemUsage={chicken:'Chicken',euromix:'Chicken',salmon:'Salmon',asparagus:'Salmon'};
+    const itemMicros=[
+      ['vitamin_a_rae_mcg','Vitamin A','µg'],['vitamin_c_mg','Vitamin C','mg'],['vitamin_d_mcg','Vitamin D','µg'],
+      ['folate_mcg','Folate','µg'],['calcium_mg','Calcium','mg'],['iron_mg','Iron','mg'],
+      ['potassium_mg','Potassium','mg'],['choline_mg','Choline','mg'],['omega3_epa_dha_mg','EPA + DHA','mg']
+    ];
+    const itemNumber=(value,unit='',digits=1)=>value==null?'—':`${new Intl.NumberFormat('en-NL',{maximumFractionDigits:digits}).format(value)}${unit?' '+unit:''}`;
 
     function nutrientRow(row){
       const width = row.pct == null ? 14 : Math.min(row.pct,140)/1.4;
@@ -230,6 +250,17 @@
       document.getElementById('other-rows').innerHTML=groups.other.map(key=>nutrientRow(rows[key])).join('');
       document.getElementById('macro-rows').innerHTML=groups.macros.map(key=>nutrientRow(rows[key])).join('');
     }
+    function renderItemNutrition(){
+      const products=nutritionData.products;
+      document.getElementById('item-nutrition-body').innerHTML=products.map(product=>{
+        const n=product.nutrition;
+        return `<tr><td>${product.name}</td><td>${itemUsage[product.key]||'Both'}</td><td class="num">${product.grams} g</td><td class="num">${itemNumber(n.kcal,'',0)}</td><td class="num">${itemNumber(n.protein_g,'g')}</td><td class="num">${itemNumber(n.carbs_g,'g')}</td><td class="num">${itemNumber(n.fat_g,'g')}</td><td class="num">${itemNumber(n.fiber_g,'g')}</td><td class="num">${itemNumber(n.salt_g,'g',2)}</td><td class="num">${euro(product.cost)}</td></tr>`;
+      }).join('');
+      document.getElementById('item-details').innerHTML=products.map(product=>{
+        const chips=itemMicros.map(([key,label,unit])=>`<div class="item-micro"><span>${label}</span><strong>${itemNumber(product.nutrition[key],unit,key==='iron_mg'?2:1)}</strong></div>`).join('');
+        return `<details class="item-detail"><summary><span>${product.name}</span><span>${product.grams} g · ${itemUsage[product.key]||'both days'}</span></summary><div class="item-micros">${chips}<p class="item-evidence"><strong>Evidence:</strong> ${product.evidence}</p></div></details>`;
+      }).join('');
+    }
     function renderCosts(){
       const products=nutritionData.products;
       const body=document.getElementById('cost-body');
@@ -248,7 +279,7 @@
     document.querySelectorAll('.tab').forEach(button=>button.addEventListener('click',()=>nutritionData&&renderProfile(button.dataset.profile)));
     fetch('./nutrition-data.json',{cache:'no-store'})
       .then(response=>{if(!response.ok)throw new Error(`HTTP ${response.status}`);return response.json()})
-      .then(data=>{nutritionData=data;renderCosts();renderProfile('chicken');const status=document.getElementById('data-status');status.textContent=`Model ${data.meta.generated} · ${data.products.length} products`;status.classList.add('ready')})
+      .then(data=>{nutritionData=data;renderCosts();renderItemNutrition();renderProfile('chicken');const status=document.getElementById('data-status');status.textContent=`Model ${data.meta.generated} · ${data.products.length} products`;status.classList.add('ready')})
       .catch(error=>{document.getElementById('data-status').textContent=`Data unavailable: ${error.message}`;document.getElementById('macro-grid').innerHTML='<div class="model-note">The generated nutrition artifact could not be loaded. The article and source links remain available.</div>'});
   </script>
 </body>
