@@ -37,6 +37,7 @@ class PortfolioHubContract(unittest.TestCase):
                 ("https://money-shower.vercel.app", "Money Shower"),
                 ("https://getdimma.vercel.app", "Dimma"),
                 ("https://kraamweek.vercel.app", "Kraamweek"),
+                ("https://dayline-seven.vercel.app", "Dayline"),
             ],
         )
         inspectable = re.findall(

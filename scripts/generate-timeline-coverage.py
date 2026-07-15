@@ -111,7 +111,7 @@ def sync_timeline(content: str, entries: list[dict]) -> str:
 
 def sync_sitemap(content: str) -> str:
     pattern = r'(<loc>https://viggomeesters\.com/timeline/</loc>\s*<lastmod>)[^<]+(</lastmod>)'
-    return re.sub(pattern, r'\g<1>2026-07-14\g<2>', content, count=1)
+    return re.sub(pattern, r'\g<1>2026-07-15\g<2>', content, count=1)
 
 
 def main() -> int:
