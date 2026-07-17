@@ -314,6 +314,10 @@ assert(homepage.includes('"@id": "https://viggomeesters.com/#person"'), "index.h
 assert(homepage.includes('"publisher": {'), "index.html: WebSite JSON-LD should link to Person publisher");
 assert(homepage.includes('id="chat-panel"'), "index.html: missing on-site chat panel");
 assert(homepage.includes('Real person'), "index.html: chat must disclose that Viggo is a real person");
+assert(homepage.includes('class="chat-kicker">Direct channel'), "index.html: chat should use the current homepage's mono-label hierarchy");
+assert(homepage.includes('border-radius:3px;background:#090d13'), "index.html: chat panel should use current square hairline-grid styling");
+assert(!homepage.includes('chat-avatar-wrap'), "index.html: chat must not revive the legacy rounded avatar/support-widget styling");
+assert(!homepage.includes('class="chat-badge"'), "index.html: real-person state should not use the legacy pill badge");
 assert(homepage.includes("fetch('/api/chat/message/'"), "index.html: chat must send through the on-site API");
 assert(!homepage.includes('href="https://t.me/viggomeesters"'), "index.html: chat launcher must not redirect to Telegram");
 for (const chatPath of ["api/chat/message.js", "api/chat/messages.js", "api/chat/reply.js", "lib/chat.js", "chat-reply/index.html"]) assert(exists(chatPath), `missing ${chatPath}`);

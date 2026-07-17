@@ -1,7 +1,10 @@
 # Design Manifest — viggomeesters.com
 
-This document is the single source of truth for all design decisions on this site.
-Every change must be checked against these principles. If it conflicts, the change loses.
+> **Status: historical design archive.** The detailed bento/tile rules below describe the previous homepage and are not the current visual source of truth.
+
+For current UI work, inspect `index.html` and the live production page first. The active homepage language is: a wide near-black canvas, large system-sans typography, hairline grid/divider geometry, restrained mono metadata, square or near-square surfaces, and sparse route accents. Do not revive the old rounded tiles, aurora materials, multicolour avatar rings, pill badges, or glow-heavy support-widget styling when extending the current page.
+
+The current homepage source and a user-supplied reference screenshot override legacy rules in this archive.
 
 ---
 

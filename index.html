@@ -83,35 +83,32 @@
     @media(max-width:700px){.shell{width:min(100% - 24px,1240px)}.topbar{min-height:62px}.toplinks{gap:14px}.toplinks a:nth-child(2){display:none}.intro{grid-template-columns:1fr;gap:18px;padding:42px 0 50px}.portrait{width:62px;height:62px}.gateway-grid{grid-template-columns:1fr}.gateway{min-height:235px;padding:26px}.gateway h2{font-size:3rem}.footer{flex-direction:column;padding-bottom:max(88px,calc(24px + env(safe-area-inset-bottom)))}.chat-launcher{right:18px;bottom:max(18px,env(safe-area-inset-bottom))}.chat-panel{right:12px;bottom:max(82px,calc(76px + env(safe-area-inset-bottom)));width:calc(100vw - 24px);height:min(590px,calc(100dvh - 105px));border-radius:20px}}
     @media(max-width:390px){.toplinks a:first-child{display:none}.gateway h2{font-size:2.65rem}}
 
-    /* The chat is part of the portfolio, not a pasted-on support widget. */
-    .chat-launcher{isolation:isolate;width:60px;height:60px;border:1px solid var(--line-strong);border-radius:19px;background:linear-gradient(145deg,rgba(22,29,40,.98),rgba(10,14,20,.98));color:var(--accent);box-shadow:inset 0 1px 0 rgba(255,255,255,.055),0 18px 48px rgba(0,0,0,.5),0 0 30px rgba(99,220,255,.07)}
-    .chat-launcher::before{position:absolute;z-index:-1;inset:0;border-radius:inherit;background:radial-gradient(circle at 20% 10%,rgba(99,220,255,.16),transparent 48%),radial-gradient(circle at 90% 90%,rgba(167,139,250,.13),transparent 48%);content:""}
-    .chat-launcher::after{position:absolute;top:9px;right:9px;width:7px;height:7px;border:2px solid #111722;border-radius:50%;background:#4ade80;box-shadow:0 0 11px rgba(74,222,128,.72);content:""}
-    .chat-launcher:hover{border-color:rgba(99,220,255,.5);background:linear-gradient(145deg,rgba(27,37,50,.99),rgba(11,16,23,.99));color:#d8f8ff;box-shadow:inset 0 1px 0 rgba(255,255,255,.075),0 22px 54px rgba(0,0,0,.56),0 0 38px rgba(99,220,255,.12)}
-    .chat-launcher svg{width:25px;height:25px}
+    /* Match the current homepage: quiet geometry, hairline borders, one accent. */
+    .chat-launcher{isolation:isolate;width:50px;height:50px;border:1px solid #2a3240;border-radius:14px;background:#11161f;color:#38bdf8;box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 12px 34px rgba(0,0,0,.42)}
+    .chat-launcher::after{position:absolute;top:8px;right:8px;width:5px;height:5px;border-radius:50%;background:#fb7185;box-shadow:0 0 7px rgba(251,113,133,.55);content:""}
+    .chat-launcher:hover{border-color:#3c4859;background:#151b25;color:#63dcff;box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 15px 38px rgba(0,0,0,.48)}
+    .chat-launcher svg{width:22px;height:22px}
 
-    .chat-panel{grid-template-rows:auto minmax(210px,1fr) auto;border:1px solid var(--line-strong);border-radius:20px 20px 8px 20px;background:rgba(10,14,20,.985);color:var(--text);box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 30px 90px rgba(0,0,0,.68),0 0 50px rgba(99,220,255,.045);backdrop-filter:blur(18px)}
-    .chat-panel::before{position:absolute;z-index:-1;inset:0;border-radius:inherit;background:radial-gradient(circle at 0 0,rgba(99,220,255,.07),transparent 36%),radial-gradient(circle at 100% 0,rgba(167,139,250,.055),transparent 34%);pointer-events:none;content:""}
-    .chat-header{gap:13px;padding:17px 18px;border-bottom:1px solid var(--line);background:rgba(13,17,24,.8)}
-    .chat-avatar-wrap{position:relative;flex:0 0 auto;width:40px;height:40px;padding:2px;border-radius:50%;background:conic-gradient(from 220deg,#38bdf8,#a78bfa,#4ade80,#f59e0b,#38bdf8);box-shadow:0 0 22px rgba(99,220,255,.1)}
-    .chat-avatar{display:block;width:100%;height:100%;border:2px solid #0d1118;border-radius:50%;object-fit:cover;filter:saturate(.82) contrast(1.03)}
-    .chat-presence{position:absolute;right:0;bottom:1px;width:10px;height:10px;border:2px solid #0d1118;background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.66)}
-    .chat-title-row{gap:9px}.chat-title{color:var(--bright);font-size:.94rem;font-weight:680;letter-spacing:-.015em}
-    .chat-badge{padding:3px 7px;border:1px solid rgba(74,222,128,.19);border-radius:6px;background:rgba(74,222,128,.075);color:#8ceca9;font:600 .56rem var(--mono);letter-spacing:.09em}
-    .chat-subtitle{margin-top:4px;color:#748094;font:500 .62rem/1.35 var(--mono)}
-    .chat-messages{padding:18px;background:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.01) 1px,transparent 1px);background-size:34px 34px}
-    .chat-bubble{margin-bottom:10px;padding:11px 13px;border:1px solid transparent;border-radius:15px;font-size:.84rem;line-height:1.55;box-shadow:0 8px 22px rgba(0,0,0,.12)}
-    .chat-bubble.operator,.chat-intro{border-color:#222b37;border-top-left-radius:4px;background:#111722;color:#b9c4d3}
-    .chat-bubble.visitor{border-color:rgba(99,220,255,.2);border-bottom-right-radius:4px;background:linear-gradient(145deg,rgba(99,220,255,.13),rgba(167,139,250,.08));color:#e9faff}
-    .chat-intro{max-width:94%;color:#9daabc}
-    .chat-compose{padding:13px 14px calc(14px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#0d1118}
-    .chat-input-row{gap:7px;padding:6px 7px 6px 13px;border:1px solid #27313e;border-radius:13px;background:#090d13;box-shadow:inset 0 1px 8px rgba(0,0,0,.22);transition:border-color .2s,box-shadow .2s}
-    .chat-input-row:focus-within{border-color:rgba(99,220,255,.42);box-shadow:0 0 0 3px rgba(99,220,255,.07),inset 0 1px 8px rgba(0,0,0,.22)}
-    .chat-input-row input,.chat-input-row textarea{color:var(--bright);font-size:.84rem}.chat-input-row input::placeholder,.chat-input-row textarea::placeholder{color:#596578}
-    .chat-send{border:1px solid rgba(99,220,255,.2);background:var(--accent-soft);color:var(--accent);box-shadow:none}.chat-send:hover{border-color:rgba(99,220,255,.42);background:rgba(99,220,255,.15);color:#d9f9ff}
-    .chat-skip{color:#778397;font:500 .62rem var(--mono)}.chat-skip:hover{color:var(--accent)}
-    .chat-status{color:#748094;font:500 .6rem var(--mono)}
-    @media(max-width:700px){.chat-launcher{width:57px;height:57px;border-radius:18px}.chat-panel{right:12px;border-radius:18px 18px 7px 18px}.chat-messages{padding:16px}.chat-header{padding:15px 16px}}
+    .chat-panel{grid-template-rows:auto minmax(210px,1fr) auto;border:1px solid var(--line-strong);border-radius:3px;background:#090d13;color:var(--text);box-shadow:0 28px 80px rgba(0,0,0,.62)}
+    .chat-header{display:block;padding:22px 22px 20px;border-bottom:1px solid var(--line);background:#0b0f15}
+    .chat-kicker{display:block;margin-bottom:13px;color:#38bdf8;font:500 .58rem var(--mono);letter-spacing:.12em;text-transform:uppercase}
+    .chat-title-row{display:flex;gap:9px;align-items:center}.chat-title{margin:0;color:var(--bright);font-size:1.55rem;font-weight:620;line-height:1;letter-spacing:-.045em}
+    .chat-presence{position:static;width:6px;height:6px;flex:0 0 auto;border:0;border-radius:50%;background:#4ade80;box-shadow:0 0 8px rgba(74,222,128,.5)}
+    .chat-person{color:#788396;font:500 .57rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .chat-subtitle{margin:11px 0 0;color:#748094;font-size:.75rem;line-height:1.5}
+    .chat-messages{padding:20px 22px;background:#090d13;scrollbar-color:#2b3441 transparent}
+    .chat-bubble{max-width:88%;margin-bottom:12px;padding:11px 13px;border:1px solid #252d38;border-radius:0;background:#0d1219;color:#aab5c5;font-size:.82rem;line-height:1.58;box-shadow:none}
+    .chat-bubble.operator,.chat-intro{margin-right:auto;border-left:2px solid #38bdf8;border-top-left-radius:0;background:#0d1219;color:#aab5c5}
+    .chat-bubble.visitor{margin-left:auto;border-right:2px solid #a78bfa;border-bottom-right-radius:0;background:#10151d;color:#e3e8ef}
+    .chat-intro{max-width:96%}
+    .chat-compose{padding:16px 18px calc(17px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#0b0f15}
+    .chat-input-row{gap:0;padding:0;border:1px solid #2a3340;border-radius:0;background:#090d13;box-shadow:none;transition:border-color .2s}
+    .chat-input-row:focus-within{border-color:#465366;box-shadow:none}
+    .chat-input-row input,.chat-input-row textarea{padding-left:13px;color:var(--bright);font-size:.82rem}.chat-input-row input::placeholder,.chat-input-row textarea::placeholder{color:#596578}
+    .chat-send{flex-basis:42px;width:42px;height:42px;border:0;border-left:1px solid #2a3340;border-radius:0;background:transparent;color:#38bdf8;box-shadow:none}.chat-send:hover{border-color:#3c4859;background:rgba(56,189,248,.045);color:#63dcff}
+    .chat-skip{color:#727d8e;font:500 .59rem var(--mono);letter-spacing:.04em}.chat-skip:hover{color:#aab5c5}
+    .chat-status{color:#687386;font:500 .58rem var(--mono)}
+    @media(max-width:700px){.chat-launcher{width:50px;height:50px;border-radius:14px}.chat-panel{right:12px;border-radius:2px}.chat-header{padding:19px 18px 18px}.chat-messages{padding:18px}.chat-compose{padding:14px 14px calc(15px + env(safe-area-inset-bottom))}.chat-title{font-size:1.4rem}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
   </style>
   <script defer src="/_vercel/insights/script.js"></script>
@@ -168,7 +165,7 @@
     <footer class="footer"><span>&copy; 2026 Viggo Meesters</span><span>Builds · systems · writing</span></footer>
   </main>
   <section class="chat-panel" id="chat-panel" aria-label="Chat with Viggo" hidden>
-    <header class="chat-header"><div class="chat-avatar-wrap" aria-hidden="true"><img class="chat-avatar" src="/profile.jpg" alt="" width="40" height="40"><span class="chat-presence"></span></div><div class="chat-heading"><div class="chat-title-row"><h2 class="chat-title">Viggo Meesters</h2><span class="chat-badge">Real person</span></div><p class="chat-subtitle">Direct chat · usually replies during the day</p></div></header>
+    <header class="chat-header"><span class="chat-kicker">Direct channel</span><div class="chat-heading"><div class="chat-title-row"><h2 class="chat-title">Chat with Viggo</h2><span class="chat-presence" aria-hidden="true"></span><span class="chat-person">Real person</span></div><p class="chat-subtitle">Send a message here. Replies appear in this window.</p></div></header>
     <div class="chat-messages" id="chat-messages" role="log" aria-live="polite"><div class="chat-bubble chat-intro">Hi there. You're messaging me directly, not a bot. Ask me anything and I'll reply asap.</div></div>
     <div class="chat-compose">
       <div id="chat-name-step" hidden><div class="chat-input-row"><input id="chat-name" type="text" maxlength="80" autocomplete="name" placeholder="What's your name? (optional)" aria-label="Your name, optional"><button class="chat-send" id="chat-name-next" type="button" aria-label="Continue"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 18 6-6-6-6"/></svg></button></div><div class="chat-name-actions"><button class="chat-skip" id="chat-name-skip" type="button">Skip</button></div></div>
