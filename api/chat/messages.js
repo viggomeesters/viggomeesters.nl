@@ -1,2 +1,2 @@
-import {json,readMessages,validOrigin,validToken} from '../lib/chat.js';
+import {json,readMessages,validOrigin,validToken} from '../../lib/chat.js';
 export default async function handler(request,response){if(request.method!=='GET')return json(response,405,{error:'method_not_allowed'});if(!validOrigin(request))return json(response,403,{error:'origin_not_allowed'});const token=request.query?.token;if(!validToken(token))return json(response,400,{error:'invalid_token'});try{return json(response,200,{messages:await readMessages(token)})}catch{return json(response,503,{error:'chat_unavailable'})}}
