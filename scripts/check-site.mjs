@@ -312,8 +312,11 @@ assert(homepage.includes('"@type": "Person"'), "index.html: missing Person JSON-
 assert(homepage.includes('"@type": "WebSite"'), "index.html: missing WebSite JSON-LD");
 assert(homepage.includes('"@id": "https://viggomeesters.com/#person"'), "index.html: missing Person @id JSON-LD");
 assert(homepage.includes('"publisher": {'), "index.html: WebSite JSON-LD should link to Person publisher");
-assert(homepage.includes('href="https://t.me/viggomeesters"'), "index.html: missing Telegram chat link");
-assert(homepage.includes('aria-label="Chat with Viggo on Telegram"'), "index.html: Telegram chat link needs an accessible label");
+assert(homepage.includes('id="chat-panel"'), "index.html: missing on-site chat panel");
+assert(homepage.includes('Real person'), "index.html: chat must disclose that Viggo is a real person");
+assert(homepage.includes("fetch('/api/chat/message/'"), "index.html: chat must send through the on-site API");
+assert(!homepage.includes('href="https://t.me/viggomeesters"'), "index.html: chat launcher must not redirect to Telegram");
+for (const chatPath of ["api/chat/message.js", "api/chat/messages.js", "api/chat/reply.js", "api/lib/chat.js", "chat-reply/index.html"]) assert(exists(chatPath), `missing ${chatPath}`);
 
 if (errors.length > 0) {
   console.error(`Site check failed with ${errors.length} issue(s):`);

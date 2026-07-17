@@ -139,22 +139,22 @@ for (const file of publicPages) {
 
   const pageIssues = [];
   if (!title) pageIssues.push("missing_title");
-  if (title && title.length < 25) pageIssues.push("short_title");
-  if (title && title.length > 65) pageIssues.push("long_title");
-  if (!description) pageIssues.push("missing_description");
-  if (description && description.length < 80) pageIssues.push("short_description");
-  if (description && description.length > 170) pageIssues.push("long_description");
+  if (!noindex && title && title.length < 25) pageIssues.push("short_title");
+  if (!noindex && title && title.length > 65) pageIssues.push("long_title");
+  if (!noindex && !description) pageIssues.push("missing_description");
+  if (!noindex && description && description.length < 80) pageIssues.push("short_description");
+  if (!noindex && description && description.length > 170) pageIssues.push("long_description");
   if (canonical !== url) pageIssues.push("canonical_mismatch");
   if (h1s.length !== 1) pageIssues.push(`h1_count_${h1s.length}`);
-  if (words < 250 && !route.startsWith("/skills/")) pageIssues.push("thin_under_250_words");
+  if (!noindex && words < 250 && !route.startsWith("/skills/")) pageIssues.push("thin_under_250_words");
   if (!noindex && !sitemap) pageIssues.push("missing_sitemap_entry");
   if (noindex && sitemap) pageIssues.push("noindex_in_sitemap");
   if (!hasAnalytics) pageIssues.push("missing_analytics_script");
-  if (!hasOgTitle) pageIssues.push("missing_og_title");
-  if (!hasOgDescription) pageIssues.push("missing_og_description");
-  if (!hasOgImage) pageIssues.push("missing_og_image");
-  if (ogUrl && ogUrl !== canonical) pageIssues.push("og_url_mismatch");
-  if (!hasTwitterCard) pageIssues.push("missing_twitter_card");
+  if (!noindex && !hasOgTitle) pageIssues.push("missing_og_title");
+  if (!noindex && !hasOgDescription) pageIssues.push("missing_og_description");
+  if (!noindex && !hasOgImage) pageIssues.push("missing_og_image");
+  if (!noindex && ogUrl && ogUrl !== canonical) pageIssues.push("og_url_mismatch");
+  if (!noindex && !hasTwitterCard) pageIssues.push("missing_twitter_card");
 
   rows.push({
     file,

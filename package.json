@@ -2,6 +2,7 @@
   "name": "viggomeesters.nl",
   "version": "1.3.0",
   "private": true,
+  "type": "module",
   "description": "Static personal landing page hosted on Vercel.",
   "scripts": {
     "test": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
@@ -19,5 +20,8 @@
     "serve": "python3 -m http.server 4173",
     "deploy:prod": "npm run check:all && npx --yes vercel@55.0.0 deploy --prod",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.6.1"
   }
 }

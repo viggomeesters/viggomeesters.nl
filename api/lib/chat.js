@@ -1,0 +1,16 @@
+import crypto from 'node:crypto';
+import { get, list, put } from '@vercel/blob';
+
+const TOKEN_PATTERN=/^[A-Za-z0-9_-]{32,64}$/;
+const ALLOWED_ORIGINS=new Set(['https://viggomeesters.com','https://www.viggomeesters.com','http://localhost:4173','http://127.0.0.1:4173']);
+export function json(response,status,payload){response.status(status).setHeader('Content-Type','application/json; charset=utf-8');response.setHeader('Cache-Control','no-store');response.end(JSON.stringify(payload))}
+export function validOrigin(request){const origin=request.headers.origin;return !origin||ALLOWED_ORIGINS.has(origin)}
+export function validToken(token){return typeof token==='string'&&TOKEN_PATTERN.test(token)}
+export function parseBody(request){if(request.body&&typeof request.body==='object')return request.body;if(typeof request.body==='string')return JSON.parse(request.body||'{}');return {}}
+function prefix(token){return `chat/${crypto.createHash('sha256').update(token).digest('hex')}/`}
+export async function readMessages(token){const {blobs}=await list({prefix:prefix(token),limit:200});const records=await Promise.all(blobs.map(async({pathname})=>{const result=await get(pathname,{access:'private',useCache:false});return result?new Response(result.stream).json():null}));return records.filter(Boolean).sort((a,b)=>a.createdAt.localeCompare(b.createdAt))}
+export async function storeMessage(token,sender,body,name=''){const createdAt=new Date().toISOString(),id=`${Date.now()}-${crypto.randomUUID()}`,message={id,sender,body,name,createdAt};await put(`${prefix(token)}${id}.json`,JSON.stringify(message),{access:'private',addRandomSuffix:false,contentType:'application/json'});return message}
+export function operatorSignature(token,expires){return crypto.createHmac('sha256',process.env.CHAT_OPERATOR_SECRET||'').update(`${token}.${expires}`).digest('base64url')}
+export function validOperatorSignature(token,expires,signature){if(!process.env.CHAT_OPERATOR_SECRET||!validToken(token)||!/^\d{10}$/.test(String(expires))||Number(expires)<Math.floor(Date.now()/1000))return false;const expected=operatorSignature(token,expires);return typeof signature==='string'&&signature.length===expected.length&&crypto.timingSafeEqual(Buffer.from(signature),Buffer.from(expected))}
+function escapeHtml(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
+export async function notifyViggo(token,body,name){const botToken=process.env.CHAT_TELEGRAM_BOT_TOKEN,chatId=process.env.CHAT_TELEGRAM_CHAT_ID;if(!botToken||!chatId||!process.env.CHAT_OPERATOR_SECRET)return false;const expires=Math.floor(Date.now()/1000)+604800,signature=operatorSignature(token,expires),replyUrl=`https://viggomeesters.com/chat-reply/?token=${encodeURIComponent(token)}&expires=${expires}&signature=${encodeURIComponent(signature)}`,text=`<b>Website chat</b> · ${escapeHtml(name||'Anonymous')}\n\n${escapeHtml(body)}\n\n<a href="${replyUrl}">Reply as Viggo</a>`;const response=await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:chatId,text,parse_mode:'HTML',disable_web_page_preview:true})});return response.ok}

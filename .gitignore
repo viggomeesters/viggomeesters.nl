@@ -2,3 +2,7 @@
 .vercel/
 .vercel
 .mcp.json
+node_modules/
+.env.local
+**/__pycache__/
+.env*
