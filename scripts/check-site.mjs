@@ -312,6 +312,8 @@ assert(homepage.includes('"@type": "Person"'), "index.html: missing Person JSON-
 assert(homepage.includes('"@type": "WebSite"'), "index.html: missing WebSite JSON-LD");
 assert(homepage.includes('"@id": "https://viggomeesters.com/#person"'), "index.html: missing Person @id JSON-LD");
 assert(homepage.includes('"publisher": {'), "index.html: WebSite JSON-LD should link to Person publisher");
+assert(homepage.includes('href="https://t.me/viggomeesters"'), "index.html: missing Telegram chat link");
+assert(homepage.includes('aria-label="Chat with Viggo on Telegram"'), "index.html: Telegram chat link needs an accessible label");
 
 if (errors.length > 0) {
   console.error(`Site check failed with ${errors.length} issue(s):`);

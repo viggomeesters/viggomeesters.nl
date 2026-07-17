@@ -56,7 +56,7 @@ class ProductionOperationsContract(unittest.TestCase):
         self.assertIn("version-v1.3", readme)
         self.assertIn("## 1.3.0", changelog)
         sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
-        marker = "<loc>https://viggomeesters.com/</loc>\n    <lastmod>2026-07-13</lastmod>"
+        marker = "<loc>https://viggomeesters.com/</loc>\n    <lastmod>2026-07-17</lastmod>"
         self.assertIn(marker, sitemap)
         for route in ("/skills/", "/tech-news/", "/trendwatch/"):
             marker = f"<loc>https://viggomeesters.com{route}</loc>\n    <lastmod>2026-07-12</lastmod>"
