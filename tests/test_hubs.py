@@ -78,6 +78,24 @@ class PortfolioHubContract(unittest.TestCase):
             self.assertNotIn(private_marker, markup)
         self.assertNotRegex(markup, r"\b\d{8,}:[A-Za-z0-9_-]{20,}\b")
 
+    def test_family_bertus_shows_a_synthetic_interaction_example(self) -> None:
+        markup = (ROOT / "family-bertus" / "index.html").read_text(encoding="utf-8")
+
+        for expected in (
+            "Synthetic example",
+            "not a real family conversation",
+            "Goedemorgen.",
+            "Agenda",
+            "Acties",
+            "Boodschappen",
+            "Bertus:</strong> zet zaterdag boodschappen doen om 10:00 in de agenda.",
+            "Bertus:</strong> voeg melk, bananen en kattenvoer toe aan de boodschappen.",
+            "Actie <strong>2. Pakket ophalen</strong> is toegevoegd.",
+        ):
+            self.assertIn(expected, markup)
+        self.assertGreaterEqual(markup.count("<ol>"), 3)
+        self.assertIn('class="example-grid" lang="nl"', markup)
+
     def test_systems_hub_separates_delivery_from_knowledge_infrastructure(self) -> None:
         page = ROOT / "systems" / "index.html"
         self.assertTrue(page.is_file())

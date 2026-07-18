@@ -19,7 +19,8 @@
           "title": "Project/system pages",
           "name": "Project/system pages",
           "tasks": [
-            "publish-family-bertus-case-study"
+            "publish-family-bertus-case-study",
+            "add-family-bertus-interaction-example"
           ]
         },
         {

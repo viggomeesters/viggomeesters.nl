@@ -1,0 +1,44 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "id": "add-family-bertus-interaction-example",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Add a synthetic Family Bertus interaction example",
+  "description": "Extend the public Family Bertus case study with a clearly labelled synthetic Dutch example showing the morning briefing, numbered actions, grocery list, and natural-language commands such as adding a 10:00 calendar item. Keep all names, messages, schedules, identifiers, and infrastructure fictional and public-safe.",
+  "scope": {
+    "read": [
+      "AGENTS.md",
+      "family-bertus/index.html",
+      "tests/test_hubs.py"
+    ],
+    "modify": [
+      ".go/**",
+      "family-bertus/index.html",
+      "tests/test_hubs.py"
+    ]
+  },
+  "acceptance": [
+    "The case study visibly demonstrates a Dutch Goedemorgen briefing with agenda, numbered actions, and a grocery list.",
+    "The example shows how a person addresses Bertus to add a 10:00 calendar item and household items.",
+    "The example is explicitly synthetic and contains no real names, conversations, schedules, IDs, tokens, endpoints, or infrastructure details.",
+    "The section matches the current square near-black site style and remains accessible and overflow-free on desktop and 390px mobile."
+  ],
+  "verification": [
+    "npm test",
+    "npm run check:ci",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-07-18T10:08:45+02:00"
+  },
+  "evidence": [
+    {
+      "created_at": "2026-07-18T10:14:28+02:00",
+      "agent": "hermes",
+      "summary": "npm test: 57 passed; npm run check:ci: passed (142 pages, 0 SEO regressions); git diff --check: passed; desktop browser: no console errors or horizontal overflow; mobile 390px screenshot: no clipping or horizontal overflow; public boundary scan: no credentials, chat IDs, or private markers"
+    }
+  ]
+}
