@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Family Bertus — Private Family Operations Assistant</title>
+  <meta name="description" content="Family Bertus is a private WhatsApp-first assistant that turns family messages into plans, groceries, and actions with human control.">
+  <link rel="canonical" href="https://viggomeesters.com/family-bertus/">
+  <meta name="theme-color" content="#090b10">
+  <meta property="og:title" content="Family Bertus — Private Family Operations Assistant">
+  <meta property="og:description" content="A family operations assistant that works inside an existing conversation instead of demanding another app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viggomeesters.com/family-bertus/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Family Bertus — Private Family Operations Assistant">
+  <meta name="twitter:description" content="A private WhatsApp-first assistant for plans, groceries, and family actions.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--bg:#090b10;--surface:#0e1219;--line:#242b36;--line-strong:#374252;--text:#c8d0dd;--muted:#7e899b;--bright:#f4f7fb;--accent:#a78bfa;--accent-2:#63dcff;--accent-soft:rgba(167,139,250,.08);--sans:system-ui,-apple-system,'Segoe UI',sans-serif;--mono:ui-monospace,'SFMono-Regular','Cascadia Code',monospace}
+    html{background:var(--bg);color-scheme:dark;-webkit-font-smoothing:antialiased}body{min-width:320px;margin:0;background:radial-gradient(ellipse 62% 32% at 76% -8%,rgba(167,139,250,.12),transparent 70%),radial-gradient(ellipse 48% 28% at 4% 82%,rgba(99,220,255,.055),transparent 72%),var(--bg);color:var(--text);font:15px/1.7 var(--sans)}
+    a{color:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.page{width:min(1160px,calc(100% - 40px));margin:auto;padding:26px 0 76px}.topbar{display:flex;justify-content:space-between;align-items:center;min-height:46px}.back,.apps-link{display:inline-flex;min-height:44px;align-items:center;color:var(--muted);font:500 .68rem var(--mono);text-decoration:none}.back:hover,.apps-link:hover{color:var(--bright)}
+    .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:clamp(44px,8vw,110px);align-items:end;padding:clamp(54px,9vw,112px) 0 clamp(60px,8vw,94px);border-bottom:1px solid var(--line)}.eyebrow{display:block;margin-bottom:20px;color:var(--accent);font:500 .65rem var(--mono);letter-spacing:.11em;text-transform:uppercase}.hero h1{max-width:780px;margin:0;color:var(--bright);font-size:clamp(3.7rem,10vw,8.5rem);font-weight:650;line-height:.84;letter-spacing:-.085em;text-wrap:balance}.hero-copy{max-width:500px}.hero-copy p{margin:0;color:#99a4b6;font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.75;text-wrap:pretty}.status{display:grid;grid-template-columns:auto 1fr;gap:11px;align-items:center;margin-top:28px;padding-top:18px;border-top:1px solid var(--line);color:#6f7a8d;font:500 .63rem var(--mono)}.status-dot{width:7px;height:7px;background:var(--accent);box-shadow:0 0 14px rgba(167,139,250,.52)}
+    .section{padding:clamp(54px,8vw,88px) 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:190px minmax(0,1fr);gap:42px;margin-bottom:36px}.section-head h2{margin:0;color:var(--bright);font-size:1rem}.section-head p{max-width:650px;margin:0;color:var(--muted);font-size:.9rem}
+    .flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}.flow-step{position:relative;min-width:0;min-height:190px;padding:27px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(14,18,25,.38)}.flow-step:not(:last-child)::after{position:absolute;z-index:2;right:-8px;top:31px;color:var(--accent);font:500 .8rem var(--mono);content:"→"}.step-number{color:var(--accent);font:500 .62rem var(--mono)}.flow-step h3{margin:38px 0 10px;color:var(--bright);font-size:1.18rem;font-weight:620}.flow-step p{margin:0;color:#8792a5;font-size:.82rem;line-height:1.62}
+    .capabilities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}.capability{min-width:0;padding:clamp(25px,3.5vw,38px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(14,18,25,.3)}.capability span{color:var(--accent-2);font:500 .62rem var(--mono);letter-spacing:.08em;text-transform:uppercase}.capability h3{margin:28px 0 11px;color:var(--bright);font-size:clamp(1.25rem,2.4vw,2rem);font-weight:620;line-height:1.05;letter-spacing:-.035em}.capability p{max-width:490px;margin:0;color:#8792a5;font-size:.84rem}
+    .principle{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.7fr);gap:clamp(40px,8vw,110px);align-items:start}.principle blockquote{margin:0;color:var(--bright);font-size:clamp(1.65rem,4vw,3.65rem);font-weight:610;line-height:1.08;letter-spacing:-.055em;text-wrap:balance}.principle-copy{padding-top:6px}.principle-copy p{margin:0 0 18px;color:#929daf}.principle-copy p:last-child{margin-bottom:0}.boundary{padding:24px 0 0;border-top:1px solid var(--line);color:#6f7a8d;font:.68rem/1.65 var(--mono)}.boundary strong{color:var(--accent);font-weight:500}
+    .footer{display:flex;justify-content:space-between;gap:24px;margin-top:64px;color:#687386;font:400 .65rem var(--mono)}.footer a{display:inline-flex;min-height:44px;align-items:center;text-underline-offset:4px}.footer a:hover{color:var(--bright)}
+    @media(max-width:760px){.page{width:min(100% - 24px,1160px);padding-top:14px}.apps-link{display:none}.hero{grid-template-columns:1fr;gap:34px;padding:48px 0 58px}.hero h1{font-size:clamp(3.4rem,18vw,5.6rem)}.section{padding:48px 0}.section-head{grid-template-columns:1fr;gap:8px}.flow{grid-template-columns:1fr}.flow-step{min-height:0}.flow-step:not(:last-child)::after{right:24px;top:auto;bottom:-9px;transform:rotate(90deg)}.capabilities{grid-template-columns:1fr}.principle{grid-template-columns:1fr;gap:34px}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <main class="page">
+    <nav class="topbar" aria-label="Page navigation"><a class="back" href="/apps/">&larr; Apps</a><a class="apps-link" href="/systems/">View systems &rarr;</a></nav>
+
+    <header class="hero">
+      <div><span class="eyebrow">Private deployment</span><h1>Family Bertus.</h1></div>
+      <div class="hero-copy"><p>A WhatsApp-first operations assistant that turns ordinary family conversation into shared plans without forcing anyone to learn another app.</p><div class="status"><span class="status-dot" aria-hidden="true"></span><span>Used privately · no public bot or demo</span></div></div>
+    </header>
+
+    <section class="section" aria-labelledby="interaction-model">
+      <div class="section-head"><h2 id="interaction-model">Interaction model</h2><p>The assistant lives where the conversation already happens. It interprets useful intent, routes it to the right family workflow, and reports exactly what changed.</p></div>
+      <div class="flow">
+        <article class="flow-step"><span class="step-number">01</span><h3>Message</h3><p>A family member writes naturally in the shared conversation.</p></article>
+        <article class="flow-step"><span class="step-number">02</span><h3>Understand</h3><p>The assistant extracts the practical intent, timing, and relevant context.</p></article>
+        <article class="flow-step"><span class="step-number">03</span><h3>Route</h3><p>The request becomes a plan, grocery item, reminder, or concrete action.</p></article>
+        <article class="flow-step"><span class="step-number">04</span><h3>Read back</h3><p>The conversation receives a compact confirmation of what was recorded.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="useful-work">
+      <div class="section-head"><h2 id="useful-work">Useful work</h2><p>The product is deliberately narrow: remove coordination friction while keeping the family conversation human.</p></div>
+      <div class="capabilities">
+        <article class="capability"><span>Planning</span><h3>Conversation into calendar</h3><p>Dates and time windows can become shared plans with a readable summary before the conversation moves on.</p></article>
+        <article class="capability"><span>Household</span><h3>Groceries without a second inbox</h3><p>Shopping intent is captured and deduplicated from the same chat people already use.</p></article>
+        <article class="capability"><span>Follow-through</span><h3>Messages into actions</h3><p>Concrete requests become trackable actions instead of disappearing into chat history.</p></article>
+        <article class="capability"><span>Control</span><h3>Fail closed when unclear</h3><p>Ambiguous, sensitive, or consequential requests stay visible for human judgement rather than being silently guessed.</p></article>
+      </div>
+    </section>
+
+    <section class="section principle" aria-labelledby="design-principle">
+      <div><h2 id="design-principle" class="eyebrow">Design principle</h2><blockquote>An agent should fit into family life, not force family life into another system.</blockquote></div>
+      <div class="principle-copy"><p>Adoption is treated as a product constraint. The best interface is often the one that already exists, provided the automation remains explicit and reversible.</p><p>Family Bertus therefore optimizes for short confirmations, predictable routing, and human control instead of exposing an administrative dashboard to every participant.</p><p class="boundary"><strong>What stays private:</strong> this page describes the interaction model only. Conversations, identities, schedules, credentials, routing details, and operational infrastructure remain private.</p></div>
+    </section>
+
+    <footer class="footer"><span>&copy; 2026 Viggo Meesters</span><span><a href="/apps/">Apps</a> · <a href="/systems/">Systems</a> · <a href="/timeline/">Timeline</a></span></footer>
+  </main>
+</body>
+</html>

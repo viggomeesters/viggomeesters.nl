@@ -51,6 +51,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://viggomeesters.com/family-bertus/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://viggomeesters.com/foci-fear-of-choosing-incorrectly/</loc>
     <lastmod>2026-06-24</lastmod>
     <priority>0.7</priority>
@@ -257,7 +262,7 @@
   </url>
   <url>
     <loc>https://viggomeesters.com/timeline/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <priority>0.8</priority>
   </url>
   <!-- BEGIN GENERATED PROJECT PAGES -->

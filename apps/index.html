@@ -27,7 +27,8 @@
     a{color:inherit}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.page{width:min(1160px,calc(100% - 40px));margin:auto;padding:26px 0 76px}.topbar{display:flex;justify-content:space-between;align-items:center;min-height:46px}.back,.timeline-link{display:inline-flex;min-height:44px;align-items:center;color:var(--muted);font:500 .68rem var(--mono);text-decoration:none}.back:hover,.timeline-link:hover{color:var(--bright)}
     .hero{padding:clamp(54px,9vw,110px) 0 clamp(58px,8vw,92px);border-bottom:1px solid var(--line)}.hero h1{margin:0;color:var(--bright);font-size:clamp(4.2rem,12vw,9.4rem);font-weight:650;line-height:.82;letter-spacing:-.09em}.hero p{max-width:600px;margin:28px 0 0;color:#98a3b5;font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.7;text-wrap:pretty}
     .section{padding:58px 0 18px}.section-head{display:grid;grid-template-columns:180px minmax(0,1fr);gap:38px;margin-bottom:26px}.section-head h2{margin:0;color:var(--bright);font-size:1rem}.section-head p{max-width:580px;margin:0;color:var(--muted);font-size:.86rem}
-    .live-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .live-grid,.private-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+    .private-grid{grid-template-columns:1fr}
     .app-card{position:relative;display:grid;min-width:0;padding:clamp(24px,3vw,36px);border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(14,18,25,.36);text-decoration:none;transition:background-color .2s,border-color .2s}.app-card::after{position:absolute;right:28px;top:28px;color:var(--muted);font-size:1.2rem;content:"↗";transition:color .2s,transform .25s cubic-bezier(.22,1,.36,1)}.app-card:hover{border-color:var(--line-strong);background:var(--accent-soft)}.app-card:hover::after{color:var(--accent);transform:translate(3px,-3px)}
     .app-mode{color:var(--accent);font:500 .62rem var(--mono);letter-spacing:.09em;text-transform:uppercase}.app-card h3{max-width:82%;margin:34px 0 12px;color:var(--bright);font-size:clamp(1.35rem,2.7vw,2.25rem);font-weight:620;line-height:1.05;letter-spacing:-.04em}.app-card p{max-width:480px;margin:0;color:#8d98aa;font-size:.84rem}.app-tech{align-self:end;margin-top:30px;color:#667184;font:500 .61rem var(--mono)}
     .inspect-list{border-top:1px solid var(--line)}.inspect-list .app-card{grid-template-columns:180px minmax(0,1fr) auto;align-items:center;gap:38px;min-height:150px;padding:28px 38px;border-left:0;border-right:0}.inspect-list .app-card::after{position:static;grid-column:3;grid-row:1}.inspect-list .app-mode{grid-column:1;grid-row:1}.inspect-list .app-copy{grid-column:2;grid-row:1}.inspect-list .app-card h3{margin:0 0 8px}.inspect-list .app-tech{margin-top:12px}
@@ -53,6 +54,13 @@
         <a class="app-card" data-kind="live" href="https://getdimma.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Health preview</span><h3>Dimma</h3><p>A low-friction migraine tracker designed to capture an event in a few deliberate taps.</p><span class="app-tech">Migraine · mobile-first · preview</span></a>
         <a class="app-card" data-kind="live" href="https://kraamweek.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Planner</span><h3>Kraamweek</h3><p>A focused planner for coordinating the small, practical details of a newborn week.</p><span class="app-tech">Planning · family</span></a>
         <a class="app-card" data-kind="live" href="https://dayline-seven.vercel.app" target="_blank" rel="noopener"><span class="app-mode">Daily planner</span><h3>Dayline</h3><p>Plan the day in calm half-hour blocks or a precise ten-minute grid, with clear categories and browser-local storage.</p><span class="app-tech">Planning · local-first · browser</span></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="private-deployments">
+      <div class="section-head"><h2 id="private-deployments">Private deployments</h2><p>Software used in real environments where the interaction model can be shown, but the data and operational surface stay private.</p></div>
+      <div class="private-grid">
+        <a class="app-card" data-kind="private" href="/family-bertus/"><span class="app-mode">Private family assistant</span><h3>Family Bertus</h3><p>A WhatsApp-first operations assistant that turns ordinary family messages into calendar plans, groceries, and actions with clear readback and human control.</p><span class="app-tech">WhatsApp · calendar · automation · human-in-the-loop</span></a>
       </div>
     </section>
 

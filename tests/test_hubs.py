@@ -52,6 +52,31 @@ class PortfolioHubContract(unittest.TestCase):
                 ("/raycast-life-os/", "Raycast Life OS"),
             ],
         )
+        private = re.findall(
+            r'<a class="app-card" data-kind="private" href="([^"]+)"[\s\S]*?<h3>([^<]+)</h3>',
+            markup,
+        )
+        self.assertEqual(private, [("/family-bertus/", "Family Bertus")])
+
+    def test_family_bertus_case_study_is_public_safe(self) -> None:
+        page = ROOT / "family-bertus" / "index.html"
+        self.assertTrue(page.is_file())
+        markup = page.read_text(encoding="utf-8")
+        sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+
+        self.assertIn('<link rel="canonical" href="https://viggomeesters.com/family-bertus/">', markup)
+        self.assertIn("https://viggomeesters.com/family-bertus/", sitemap)
+        self.assertEqual(markup.count("<h1"), 1)
+        for expected in (
+            "WhatsApp-first operations assistant",
+            "Groceries without a second inbox",
+            "Fail closed when unclear",
+            "Conversations, identities, schedules, credentials",
+        ):
+            self.assertIn(expected, markup)
+        for private_marker in ("chat_id", "bot_token", "webhook_secret"):
+            self.assertNotIn(private_marker, markup)
+        self.assertNotRegex(markup, r"\b\d{8,}:[A-Za-z0-9_-]{20,}\b")
 
     def test_systems_hub_separates_delivery_from_knowledge_infrastructure(self) -> None:
         page = ROOT / "systems" / "index.html"

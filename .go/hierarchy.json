@@ -18,7 +18,9 @@
           "id": "project-pages",
           "title": "Project/system pages",
           "name": "Project/system pages",
-          "tasks": []
+          "tasks": [
+            "publish-family-bertus-case-study"
+          ]
         },
         {
           "id": "guides-indexes",
