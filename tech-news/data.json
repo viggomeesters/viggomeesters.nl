@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-19T16:42:44+02:00",
+  "generatedAt": "2026-07-20T07:05:49+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 64,
+  "usefulOpen": 63,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -837,36 +837,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "89448c2bc71ed4b7",
-      "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
-      "url": "https://github.com/openai/codex/pull/33972/files",
-      "source": "Hacker News",
-      "published": "2026-07-19T09:54:39+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "developer-tools": [
-          "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "0cc33b55e04e099d",
       "title": "The US is advancing AI safety through state and federal action",
       "url": "https://openai.com/index/advancing-ai-safety-through-state-and-federal-action",
@@ -989,12 +959,39 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a66f4bb0381f4591",
-      "title": "How Apple’s big lawsuit could disrupt OpenAI’s IPO plans",
-      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+      "id": "0983967d4b1a1363",
+      "title": "Quoting Sam Altman",
+      "url": "https://simonwillison.net/2026/Jul/20/sam-altman/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-20T03:47:59+00:00",
+      "summary": "We have been having extensive discussions around open source strategy. We will discuss it more at our next board meeting, but one thing we’d like to do soon is to create a language model with the approximate capability of GPT-3 that can run locally on consumer hardware and release that. We’d like to do it soon, before Stability or someone else does. In gener",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "language model",
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "5526a38f76f6d037",
+      "title": "Can an Apple lawsuit derail OpenAI’s hardware plans?",
+      "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
       "source": "TechCrunch",
-      "published": "2026-07-17T19:45:46+02:00",
-      "summary": "Apple filed a trade secrets lawsuit against OpenAI last Friday, and it’s not messing around. The complaint alleges a pattern of misconduct reaching all the way up to OpenAI’s chief hardware officer and claims more than 400 former Apple employees now work at the company. OpenAI’s response so far has been carefully hedged, and the timing couldn’t be worse with",
+      "published": "2026-07-19T21:24:45+02:00",
+      "summary": "On the latest episode of Equity, we debate whether Apple's lawsuit will cast over OpenAi's much-discussed plans to get into hardware and go public.",
       "areas": [
         "models",
         "privacy-risk"
@@ -1057,32 +1054,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "6e36b4e0cf4762fd",
-      "title": "sqlite-utils 4.1",
-      "url": "https://simonwillison.net/2026/Jul/11/sqlite-utils/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-11T23:50:20+00:00",
-      "summary": "Release: sqlite-utils 4.1 The first dot-release since 4.0 a few days ago , introducing a number of minor new features. sqlite-utils insert and sqlite-utils upsert now accept a --code option for providing a block of Python code (or a path to a .py file) that defines a rows() function or rows iterable of rows to insert, as an alternative to importing from a fi",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite"
         ]
       },
       "scores": {
@@ -1950,6 +1921,84 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
+      "id": "d833b8603e235d1a",
+      "title": "Power companies are using eminent domain to seize land for data centers",
+      "url": "https://fortune.com/2026/07/19/data-center-eminent-domain-public-use/",
+      "source": "Hacker News",
+      "published": "2026-07-20T06:19:22+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b3bf3a15a0bdea4a",
+      "title": "Claude Fable produced a counterexample to the Jacobian Conjecture",
+      "url": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+      "source": "Hacker News",
+      "published": "2026-07-20T04:51:16+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "15ba194008dd875e",
+      "title": "Big Tech Is Now Targeting Native American Land for Data Centers",
+      "url": "https://www.nytimes.com/2026/07/09/us/data-centers-native-american-tribes.html",
+      "source": "Hacker News",
+      "published": "2026-07-20T04:34:18+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "aa2a1559123ae317",
       "title": "Git email patch review addon for Thunderbird",
       "url": "https://mccd.space/git/thunderbird-patch-review/file/README.html.html",
@@ -2002,45 +2051,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5b22bb35560623d0",
-      "title": "Codex Resets",
-      "url": "https://codex-resets.com/",
+      "id": "29e8876d30390955",
+      "title": "Claude Code uses Bun written in Rust now",
+      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
       "source": "Hacker News",
-      "published": "2026-07-19T01:24:26+02:00",
+      "published": "2026-07-19T12:03:23+02:00",
       "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "dfab4eb60b532f9c",
-      "title": "Dave Eggers told OpenAI staff that ChatGPT was ‘silencing an entire generation’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
-      "source": "The Verge",
-      "published": "2026-07-18T16:54:42-04:00",
-      "summary": "Last year, Sam Altman invited author Dave Eggers to give a talk to around 200 OpenAI staffers. The man has written countless novels, screenplays, pieces of journalism, started McSweeney's, and founded multiple schools and nonprofits that support writers and the arts more broadly. So one might expect he'd roll into the company's offices and offer […]",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "chatgpt"
+          "claude"
         ]
       },
       "scores": {
@@ -2213,32 +2235,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d746ab6df0dc4f85",
-      "title": "Using self-hosted Umami for iOS app analytics",
-      "url": "https://hjerpbakk.com/blog/2026/07/14/umami-for-apps",
-      "source": "Hacker News",
-      "published": "2026-07-14T14:34:41+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "analytics"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "2ac575945e1b337f",
       "title": "PsiQuantum has a plan to make a massive quantum computer out of light",
       "url": "https://www.technologyreview.com/2026/07/14/1140356/psiquantum-plan-massive-quantum-computer-out-of-light/",
@@ -2287,37 +2283,6 @@
         "risk": 0
       },
       "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "6ee3049df3e07033",
-      "title": "It's official: EU will force Google to share search data and open up AI on Android",
-      "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/",
-      "source": "Ars Technica",
-      "published": "2026-07-16T22:41:45+02:00",
-      "summary": "Google says these changes could endanger user privacy and security.",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "privacy",
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 3
-      },
-      "priority": 62,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2422,32 +2387,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "d7a8ba6e637fe2ec",
-      "title": "Enterprise Haskell at H-E-B",
-      "url": "https://blog.haskell.org/enterprise-haskell-at-h-e-b/",
-      "source": "Lobsters",
-      "published": "2026-07-17T23:51:07+02:00",
-      "summary": "Comments",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "eba5a13dfe2aab73",
       "title": "AWS Billing Glitch Hits Customers With Billion-Dollar Fees",
       "url": "https://www.wired.com/story/amazon-web-services-glitch-oh-no/",
@@ -2474,28 +2413,28 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "c08c5444c82eb03e",
-      "title": "Amazon fixing bug that billed some AWS customers billions of dollars",
-      "url": "https://techcrunch.com/2026/07/17/amazon-fixing-bug-that-billed-some-aws-customers-billions-of-dollars/",
-      "source": "TechCrunch",
-      "published": "2026-07-17T17:29:21+02:00",
-      "summary": "Some Amazon customers logged on Friday to a surprise bill estimate claiming that they owed the tech and cloud giant billions in fees.",
+      "id": "d91e295552cac796",
+      "title": "Your Period Tracker Is (Probably) Spying on You",
+      "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+      "source": "Wired",
+      "published": "2026-07-18T12:30:00+02:00",
+      "summary": "Plus: Russian cyberspies turn to infrastructure hacking, DHS repeatedly fails to realize it’d been hacked, a breach exposes an AI music generator’s scraping ways, and more.",
       "areas": [
-        "enterprise-ai"
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "aws"
+        "privacy-risk": [
+          "breach"
         ]
       },
       "scores": {
         "relevance": 1,
         "leverage": 0,
         "novelty": 3,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
-      "priority": 56,
+      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2522,6 +2461,46 @@
         "risk": 1
       },
       "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "a2655a9c3579b803",
+      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
+      "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
+      "source": "Ars Technica",
+      "published": "2026-07-20T00:11:21+02:00",
+      "summary": "\"On the first attempt, reaching orbit, I never thought it was possible.\"",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "4c3fb48820442b91",
+      "title": "A new Intel Itanium (IA-64) emulator that boots Windows",
+      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
+      "source": "Hacker News",
+      "published": "2026-07-19T22:50:42+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
