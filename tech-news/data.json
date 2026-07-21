@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-20T07:05:49+02:00",
+  "generatedAt": "2026-07-21T07:05:45+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 63,
+  "usefulOpen": 65,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -506,36 +506,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "2c68d8ab847bfab5",
-      "title": "sqlite-utils 4.1.1",
-      "url": "https://simonwillison.net/2026/Jul/12/sqlite-utils/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-12T20:55:30+00:00",
-      "summary": "Release: sqlite-utils 4.1.1 Mainly a fix for an edge case that regular Claude chat spotted while experimenting with the 4.1 release to answer a question about ON DELETE. table.transform() now raises a TransactionError if called while a transaction is open with PRAGMA foreign_keys enabled and the table is referenced by foreign keys with destructive ON DELETE ",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "data-platforms": [
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "2e81fa4581a546ef",
       "title": "ChatGPT is now a partner for your most ambitious work",
       "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
@@ -749,37 +719,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "79426d8d2d8569e2",
-      "title": "Vertu wants executives to pay $6,880 for an AI agent — here’s how it actually performs",
-      "url": "https://techcrunch.com/2026/07/17/vertu-wants-executives-to-pay-6880-for-an-ai-agent-heres-how-it-actually-performs/",
-      "source": "TechCrunch",
-      "published": "2026-07-18T00:55:09+02:00",
-      "summary": "From AI workflows to battery life and security, here's what it's really like to live with Vertu's luxury foldable every day.",
-      "areas": [
-        "ai-agents",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "898c4b57882a836f",
       "title": "Quoting GitHub Changelog",
       "url": "https://simonwillison.net/2026/Jul/14/github-changeling/#atom-everything",
@@ -833,6 +772,36 @@
         "risk": 0
       },
       "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a2e9b5fda30614f5",
+      "title": "Safety and alignment in an era of long-horizon models",
+      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
+      "source": "OpenAI News",
+      "published": "2026-07-20T12:00:00+02:00",
+      "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 80,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -929,32 +898,28 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "05f5412af05e6b45",
-      "title": "Helping build shared standards for advanced AI",
-      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
-      "source": "OpenAI News",
-      "published": "2026-06-23T15:00:00+02:00",
-      "summary": "OpenAI helps build shared standards for advanced AI, supporting evaluation frameworks, safety practices, and global cooperation through the Appia Foundation.",
+      "id": "6d8b34fc09e77196",
+      "title": "$100 million for open source: A milestone built by the community",
+      "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+      "source": "GitHub Blog",
+      "published": "2026-07-20T18:00:00+02:00",
+      "summary": "Celebrating $100 million contributed by the community to the people who build and sustain open source every day. The post $100 million for open source: A milestone built by the community appeared first on The GitHub Blog .",
       "areas": [
-        "models",
-        "privacy-risk"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety"
+        "developer-tools": [
+          "github"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 80,
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -991,7 +956,7 @@
       "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/",
       "source": "TechCrunch",
       "published": "2026-07-19T21:24:45+02:00",
-      "summary": "On the latest episode of Equity, we debate whether Apple's lawsuit will cast over OpenAi's much-discussed plans to get into hardware and go public.",
+      "summary": "On the latest episode of Equity, we debate whether Apple's lawsuit will cast a shadow over OpenAi's much-discussed plans to get into hardware and go public.",
       "areas": [
         "models",
         "privacy-risk"
@@ -1152,33 +1117,109 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "718f9d2be6bc9bd3",
-      "title": "6 security settings every GitHub maintainer should enable this week",
-      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
-      "source": "GitHub Blog",
-      "published": "2026-07-01T17:59:29+02:00",
-      "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before. The post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog .",
+      "id": "e024c3111fc6fc9b",
+      "title": "Natural raises $30M to reinvent payments for AI agents — and take on Stripe",
+      "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T21:11:25+02:00",
+      "summary": "The one-year-old startup aims to reinvent financial architecture for autonomous AI transactions.",
       "areas": [
-        "developer-tools",
-        "privacy-risk"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ],
-        "privacy-risk": [
-          "security",
-          "attack"
+        "ai-agents": [
+          "ai agents",
+          "agents",
+          "autonomous"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 78,
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "144cf79920f62aed",
+      "title": "Reverse-engineering is cheap now",
+      "url": "https://simonwillison.net/2026/Jul/20/cheap-reverse-engineering/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-20T19:24:05+00:00",
+      "summary": "I keep hearing anecdotes from people who used coding agents to reverse-engineer and automate devices in their homes. I think this is an interesting illustration of the impact of the reduced cost of writing code. Prior to agents, it was entirely possible to reverse-engineer home devices. The problem was the ROI - was it really worth all of that effort? More i",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "8a749ef40bb106ac",
+      "title": "Who’s Afraid of Chinese Models?",
+      "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-20T17:09:19+00:00",
+      "summary": "Who’s Afraid of Chinese Models? Interesting proposal from Ben Thompson that both addresses the hypocrisy of labs outlawing distillation against their models despite training on unlicensed data, and could help US open models compete more effectively with their Chinese counterparts: The U.S. should pass a law that (1) makes explicit that collecting data for tr",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "d467f85e7e7f9273",
+      "title": "7 Sandbox Escape Vulnerabilities Across 4 Coding Agent Vendors",
+      "url": "https://www.pillar.security/blog/the-week-of-sandbox-escapes",
+      "source": "Lobsters",
+      "published": "2026-07-20T16:33:55+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "coding agent"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1319,7 +1360,7 @@
       "url": "https://simonwillison.net/2026/Jul/18/quixote/#atom-everything",
       "source": "Simon Willison",
       "published": "2026-07-18T05:27:49+00:00",
-      "summary": "nascheme/quixote A certain vintage if Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was six hours ago . The oldest commit in that repo is from 21 years ago, and that was the initial import of Quixote 2.4 from Subversion into Git. Tags: computer-history , python , web-frameworks",
+      "summary": "nascheme/quixote A certain vintage of Python web nerd might be delighted to learn that the most recent commit to the Quixote web framework was six hours ago . The oldest commit in that repo is from 21 years ago, and that was the initial import of Quixote 2.4 from Subversion into Git. Tags: computer-history , python , web-frameworks",
       "areas": [
         "developer-tools"
       ],
@@ -1575,34 +1616,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "999abf30568860fb",
-      "title": "Fable gets another bump",
-      "url": "https://simonwillison.net/2026/Jul/12/bump/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-12T21:20:07+00:00",
-      "summary": "One of the consequences of GPT-5.6 Sol being clearly a Fable/Mythos class model is that Anthropic have, once again, bumped the date that Fable stops being available in their Claude Max plans: We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19. As before, you can use up to h",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "618c64669efb34cf",
       "title": "How Deutsche Telekom is rewiring telecommunications with AI",
       "url": "https://openai.com/index/deutsche-telekom",
@@ -1681,18 +1694,17 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "45d63905e99d737b",
-      "title": "GPT-5.5 Bio Bug Bounty",
-      "url": "https://openai.com/index/bio-bug-bounty",
+      "id": "ef8a6c2337cc8887",
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6",
       "source": "OpenAI News",
       "published": "2026-07-09T12:00:00+02:00",
-      "summary": "Details about the OpenAI Bio Bounty program",
+      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
           "gpt"
         ]
       },
@@ -1708,17 +1720,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ef8a6c2337cc8887",
-      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-      "url": "https://openai.com/index/gpt-5-6",
+      "id": "45d63905e99d737b",
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/bio-bug-bounty",
       "source": "OpenAI News",
       "published": "2026-07-09T12:00:00+02:00",
-      "summary": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work.",
+      "summary": "Details about the OpenAI Bio Bounty program",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
+          "openai",
           "gpt"
         ]
       },
@@ -1840,6 +1853,88 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "5b99cd010f185a8f",
+      "title": "Anthropic’s landmark $1.5B copyright settlement is approved",
+      "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+      "source": "TechCrunch",
+      "published": "2026-07-21T02:12:24+02:00",
+      "summary": "The final approval settles one case, but it doesn't resolve the broader issue of using copyrighted works to train AI models.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "copyright"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "0a8de00f0ac89d0a",
+      "title": "Google is working on a new AI chip designed to make Gemini more efficient",
+      "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T23:21:15+02:00",
+      "summary": "Alphabet, Google's parent company, is reportedly working on a new chip designed to make its Gemini models run much more efficiently.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f150b8c37675f753",
+      "title": "AI is more likely than humans to form biases when hiring",
+      "url": "https://www.technologyreview.com/2026/07/20/1140655/ai-biases-hiring-humans/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-20T10:39:01+02:00",
+      "summary": "The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s good reason to question whether AI will judge you fairly. Researchers already know that LLMs pick up human biases from their training data. New research suggests that LLMs can also develop their own biases from…",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "4ad3bd2cc100954c",
       "title": "How Google’s New Gemini Rates Work and How to Track Your Usage",
       "url": "https://www.wired.com/story/how-googles-new-gemini-rates-work-and-how-to-track-your-usage/",
@@ -1894,39 +1989,66 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "22663ec0af21f599",
-      "title": "The Download: Claude’s inner workings, and the future of world models",
-      "url": "https://www.technologyreview.com/2026/07/14/1140391/the-download-anthropic-claude-internal-thoughts-world-models/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-14T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. What Anthropic’s latest AI discovery does—and doesn’t—show —James O’Donnell When Anthropic announced last week that it had found a new window into its models’ “internal thoughts” as they reason through answers,…",
+      "id": "7338055feef44aa0",
+      "title": "OpenAI is scared of open-weight models. Should the US be?",
+      "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T21:33:25+02:00",
+      "summary": "Talk of banning Chinese-made open-weight LLMs reveals the challenge of turning AI into a business.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "d01523040875bf5f",
+      "title": "Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers",
+      "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T17:15:00+02:00",
+      "summary": "AI infrastructure company Infinity announced Monday a $15 million raise at a $100 million valuation from investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
           "anthropic",
-          "claude"
+          "inference"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d833b8603e235d1a",
-      "title": "Power companies are using eminent domain to seize land for data centers",
-      "url": "https://fortune.com/2026/07/19/data-center-eminent-domain-public-use/",
-      "source": "Hacker News",
-      "published": "2026-07-20T06:19:22+02:00",
-      "summary": "Comments",
+      "id": "2a5234946efb9e1d",
+      "title": "Hackers stole ‘significant’ amount of data from tech firm relied on by thousands of US hospitals and pharmacies",
+      "url": "https://techcrunch.com/2026/07/20/hackers-stole-significant-amount-of-data-from-tech-firm-relied-on-by-thousands-of-us-hospitals-and-pharmacies/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T17:01:20+02:00",
+      "summary": "Edinburgh-based tech firm Craneware said customer data was stolen during a cyberattack. The company makes software that thousands of U.S. hospitals, pharmacies, and clinics rely on for billing patients, potentially exposing health data.",
       "areas": [
         "data-platforms"
       ],
@@ -1947,18 +2069,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b3bf3a15a0bdea4a",
-      "title": "Claude Fable produced a counterexample to the Jacobian Conjecture",
-      "url": "https://xcancel.com/__alpoge__/status/2079028340955197566",
+      "id": "b45c9d137e254e33",
+      "title": "Hacker wipes Romania's land registry database",
+      "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/",
       "source": "Hacker News",
-      "published": "2026-07-20T04:51:16+02:00",
+      "published": "2026-07-20T15:28:33+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "claude"
+        "data-platforms": [
+          "database"
         ]
       },
       "scores": {
@@ -1973,12 +2095,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "15ba194008dd875e",
-      "title": "Big Tech Is Now Targeting Native American Land for Data Centers",
-      "url": "https://www.nytimes.com/2026/07/09/us/data-centers-native-american-tribes.html",
-      "source": "Hacker News",
-      "published": "2026-07-20T04:34:18+02:00",
-      "summary": "Comments",
+      "id": "1238ec6f48d331e9",
+      "title": "The Download: AI hiring biases, and weather data sabotage",
+      "url": "https://www.technologyreview.com/2026/07/20/1140664/the-download-ai-hiring-biases-weather-data-sabotage/",
+      "source": "MIT Technology Review",
+      "published": "2026-07-20T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI is more likely than humans to form biases when hiring The next time you apply for a job, AI may screen your résumé before any human sees it. But there’s…",
       "areas": [
         "data-platforms"
       ],
@@ -1999,11 +2121,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "aa2a1559123ae317",
-      "title": "Git email patch review addon for Thunderbird",
-      "url": "https://mccd.space/git/thunderbird-patch-review/file/README.html.html",
+      "id": "914950a6d565ba59",
+      "title": "Minimal Git CI using hooks",
+      "url": "https://mccd.space/posts/26-06-29/simple-git-ci",
       "source": "Lobsters",
-      "published": "2026-07-19T16:02:59+02:00",
+      "published": "2026-07-20T10:28:45+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2051,58 +2173,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "29e8876d30390955",
-      "title": "Claude Code uses Bun written in Rust now",
-      "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/",
-      "source": "Hacker News",
-      "published": "2026-07-19T12:03:23+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "340b9ee6ea52aa57",
-      "title": "A 600-mile road trip (and data) proves EV charging doesn’t suck anymore",
-      "url": "https://techcrunch.com/2026/07/18/a-600-mile-road-trip-and-data-proves-ev-charging-doesnt-suck-anymore/",
-      "source": "TechCrunch",
-      "published": "2026-07-18T16:32:00+02:00",
-      "summary": "A recent road trip in an EV revealed just how much faster and more reliable DC Fast charging has become in the U.S.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "38b8489dbc7ff9c2",
       "title": "ICE Is Using Data Broker Tools to ‘Identify Unaccompanied Minors’ and ‘Fraud’",
       "url": "https://www.wired.com/story/ice-unaccompanied-minors-fraud-suspects-trss-contract/",
@@ -2115,32 +2185,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "c5fbab5a8d2bb0b7",
-      "title": "5 Best Smart Speakers (2026): Alexa, Google, Apple",
-      "url": "https://www.wired.com/story/best-smart-speakers/",
-      "source": "Wired",
-      "published": "2026-07-17T14:01:00+02:00",
-      "summary": "Looking to add a smart speaker to your house? Here’s which to choose, whether you’re an Alexa, Siri, or Gemini fan.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
         ]
       },
       "scores": {
@@ -2221,58 +2265,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "2ac575945e1b337f",
-      "title": "PsiQuantum has a plan to make a massive quantum computer out of light",
-      "url": "https://www.technologyreview.com/2026/07/14/1140356/psiquantum-plan-massive-quantum-computer-out-of-light/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-14T10:00:00+02:00",
-      "summary": "The machine that could change the world will be housed in a room that looks like a data center crossed with an ice cream factory. Inside will be some 100 stainless-steel cabinets, each about six feet tall and connected to a supply of liquid helium that keeps them only a few degrees above absolute zero.…",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5ac468313677b57f",
-      "title": "What Anthropic’s latest AI discovery does—and doesn’t—show",
-      "url": "https://www.technologyreview.com/2026/07/13/1140343/what-anthropics-latest-ai-discovery-does-and-doesnt-show/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-13T20:00:00+02:00",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Anthropic—currently the world’s most valuable AI company, with a nearly $1 trillion valuation—has a reputation for publishing strange and heady research. It’s looking into whether AI models can feel pain, for example,…",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
         ]
       },
       "scores": {
@@ -2413,6 +2405,84 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "b276831f916338da",
+      "title": "Judge pauses $110B Paramount-Warner Bros. merger",
+      "url": "https://techcrunch.com/2026/07/20/judge-pauses-110b-paramount-warner-bros-merger/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T19:58:50+02:00",
+      "summary": "The lawsuit from the states alleges that the deal would harm movie theaters, basic cable distributors, and audiences.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "efa6bb1bc3bd3faa",
+      "title": "Hackers are exploiting recently patched WordPress bugs, putting millions of websites at risk",
+      "url": "https://techcrunch.com/2026/07/20/hackers-are-exploiting-recently-patched-wordpress-bugs-putting-millions-of-websites-at-risk/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T17:35:37+02:00",
+      "summary": "Two critical security flaws in WordPress’ software have given hackers the chance to remotely take over tens of millions of websites, according to an estimate by a cybersecurity researcher.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "97a18fa39f55af73",
+      "title": "Hugging Face confirms breach affected internal datasets and credentials, urges users to take action",
+      "url": "https://techcrunch.com/2026/07/20/hugging-face-confirms-breach-affected-internal-datasets-and-credentials-urges-users-to-take-action/",
+      "source": "TechCrunch",
+      "published": "2026-07-20T14:39:28+02:00",
+      "summary": "Hugging Face is urging users to rotate any access tokens stored on the platform and review account activity.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
       "id": "d91e295552cac796",
       "title": "Your Period Tracker Is (Probably) Spying on You",
       "url": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
@@ -2435,72 +2505,6 @@
         "risk": 1
       },
       "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "82c766e360acf318",
-      "title": "The Best Motion Sensors and Home Security Gadgets Without Cameras",
-      "url": "https://www.wired.com/story/best-motion-sensors-private-alternatives-security/",
-      "source": "Wired",
-      "published": "2026-07-18T12:30:00+02:00",
-      "summary": "If you prefer not to have cameras in and around your home, try one of these more private, WIRED-tested security devices.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "a2655a9c3579b803",
-      "title": "India's first privately-developed rocket reaches orbit on dramatic debut launch",
-      "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/",
-      "source": "Ars Technica",
-      "published": "2026-07-20T00:11:21+02:00",
-      "summary": "\"On the first attempt, reaching orbit, I never thought it was possible.\"",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "4c3fb48820442b91",
-      "title": "A new Intel Itanium (IA-64) emulator that boots Windows",
-      "url": "https://raymii.org/s/blog/Intel_Itanium_IA-64-Emulator_that_boots_Windows.html",
-      "source": "Hacker News",
-      "published": "2026-07-19T22:50:42+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
