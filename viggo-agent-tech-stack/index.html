@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Default Stack for Agent-Built Client Apps</title>
+  <meta name="description" content="Why I chose Next.js, Vercel, Supabase, and Resend as the boring default stack for client apps built and operated by agents through Telegram.">
+  <link rel="canonical" href="https://viggomeesters.com/viggo-agent-tech-stack/">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:title" content="My Default Stack for Agent-Built Client Apps">
+  <meta property="og:description" content="A deliberately boring stack for building, testing, deploying, and operating client dashboards through a Telegram-connected coding agent.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://viggomeesters.com/viggo-agent-tech-stack/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Default Stack for Agent-Built Client Apps">
+  <meta name="twitter:description" content="Why I chose Next.js, Vercel, Supabase, and Resend for agent-built client dashboards.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "My Default Stack for Agent-Built Client Apps",
+    "description": "Why I chose Next.js, Vercel, Supabase, and Resend as the default stack for client apps built and operated by agents through Telegram.",
+    "author": {"@type": "Person", "name": "Viggo Meesters", "url": "https://viggomeesters.com/"},
+    "datePublished": "2026-07-23",
+    "dateModified": "2026-07-23",
+    "mainEntityOfPage": "https://viggomeesters.com/viggo-agent-tech-stack/"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bg:#0c0c0f;--surface:#141418;--raised:#1a1a20;--border:rgba(255,255,255,.10);--sub:rgba(255,255,255,.055);--text:#c8cbd5;--secondary:#8a90a6;--muted:#53586b;--bright:#eeeff4;--orange:#f97316;--purple:#a855f7;--blue:#3b82f6;--green:#22c55e;--amber:#eab308;--cyan:#06b6d4;--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px}
+    html{background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:15px;line-height:1.72;min-height:100vh;overflow-x:hidden}
+    .aurora{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+    .aurora::before{content:'';position:absolute;width:140%;height:140%;top:-20%;left:-20%;background:radial-gradient(ellipse 600px 400px at 15% 10%,rgba(249,115,22,.07),transparent 70%),radial-gradient(ellipse 500px 500px at 78% 24%,rgba(59,130,246,.06),transparent 62%),radial-gradient(ellipse 700px 350px at 50% 70%,rgba(34,197,94,.04),transparent 65%)}
+    .page{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:60px 20px 80px}
+    .back{display:inline-flex;align-items:center;gap:6px;font-size:.82em;color:var(--muted);text-decoration:none;margin-bottom:40px;padding:6px 14px;background:var(--surface);border:1px solid var(--sub);border-radius:10px;transition:.2s}
+    .back:hover{color:var(--secondary);border-color:var(--border);transform:translateX(-3px)}
+    .hero{margin-bottom:42px}.hero h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:700;color:var(--bright);letter-spacing:-.045em;line-height:1.05;text-wrap:balance}.subtitle{font-size:1.02em;color:var(--secondary);line-height:1.65;margin-top:16px}.meta{margin-top:18px;font-size:.78em;color:var(--muted)}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.chip{display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border:1px solid var(--sub);border-radius:10px;font-family:var(--mono);font-size:.72em}.dot{width:6px;height:6px;border-radius:50%;background:currentColor}.blue{color:var(--blue);background:rgba(59,130,246,.10)}.green{color:var(--green);background:rgba(34,197,94,.10)}.purple{color:var(--purple);background:rgba(168,85,247,.10)}.orange{color:var(--orange);background:rgba(249,115,22,.10)}.cyan{color:var(--cyan);background:rgba(6,182,212,.10)}.amber{color:var(--amber);background:rgba(234,179,8,.10)}
+    .stack{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:34px 0 42px}.stack-card{background:var(--surface);border:1px solid var(--sub);border-radius:var(--radius);padding:18px}.stack-card strong{display:block;color:var(--bright);font-size:.96em;margin-bottom:5px}.stack-card span{color:var(--secondary);font-size:.84em}
+    .toc{background:var(--surface);border:1px solid var(--sub);border-radius:var(--radius);padding:22px 26px;margin-bottom:42px}.toc-title{font-family:var(--mono);font-size:.68em;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:12px}.toc ol{list-style:none;counter-reset:toc}.toc li{counter-increment:toc;margin:6px 0}.toc li::before{content:counter(toc) '.';display:inline-block;width:25px;color:var(--muted);font-family:var(--mono);font-size:.76em}.toc a{color:var(--secondary);text-decoration:none}.toc a:hover{color:var(--bright)}
+    article h2{font-size:1.45em;color:var(--bright);letter-spacing:-.025em;margin:50px 0 16px}article h3{font-size:1.04em;color:#e0e1e8;margin:28px 0 10px}article p{margin-bottom:17px}article ul{padding-left:20px;margin-bottom:18px}article li{margin-bottom:8px}article strong{color:#e0e1e8}article a{color:var(--orange);text-decoration:none;border-bottom:1px solid rgba(249,115,22,.35)}article a:hover{border-color:var(--orange)}
+    .num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:9px;font-size:.7em;margin-right:10px;vertical-align:middle}
+    .callout{border:1px solid rgba(34,197,94,.18);background:rgba(34,197,94,.08);border-radius:var(--radius);padding:20px 22px;margin:22px 0}.callout strong{display:block;color:var(--green);font-family:var(--mono);font-size:.72em;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}.callout p{margin:0;font-size:.93em}
+    table{width:100%;border-collapse:separate;border-spacing:0;margin:22px 0 26px;font-size:.86em}th{text-align:left;padding:12px 14px;background:var(--raised);color:var(--secondary);font-size:.78em;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border)}td{padding:12px 14px;border-bottom:1px solid var(--sub);vertical-align:top}td:first-child{color:#e0e1e8;font-weight:500;white-space:nowrap}
+    pre{background:var(--surface);border:1px solid var(--sub);border-radius:var(--radius);padding:20px 22px;overflow-x:auto;margin:20px 0 24px;line-height:1.55}code{font-family:var(--mono);font-size:.82em;color:var(--text)}
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:46px 0}.footer{margin-top:60px;text-align:center;color:var(--muted);font-size:.72em}.footer a{color:var(--muted);text-decoration:none}.footer a:hover{color:var(--secondary)}
+    @media(max-width:640px){.page{padding:40px 14px 60px}.stack{grid-template-columns:1fr}.stack-card{padding:16px}table{display:block;overflow-x:auto}th,td{min-width:130px}.toc{padding:20px}.hero h1{font-size:2em}pre{padding:16px 14px}pre code{font-size:.72em}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <div class="aurora"></div>
+  <main class="page">
+    <a class="back" href="/guides/">&larr; Writing</a>
+    <header class="hero">
+      <h1>My default stack for agent-built client apps</h1>
+      <p class="subtitle">I want to describe an app in Telegram and let my Hermes profile build, test, deploy, and maintain it. That changes what “best stack” means. I am optimizing for fewer decisions and fewer integration seams, not theoretical purity.</p>
+      <div class="chips">
+        <span class="chip blue"><span class="dot"></span>Next.js</span>
+        <span class="chip orange"><span class="dot"></span>Vercel</span>
+        <span class="chip green"><span class="dot"></span>Supabase</span>
+        <span class="chip purple"><span class="dot"></span>Resend</span>
+      </div>
+      <p class="meta">By Viggo Meesters &middot; 23 July 2026</p>
+    </header>
+
+    <section class="stack" aria-label="Chosen stack">
+      <div class="stack-card"><strong>Next.js</strong><span>One TypeScript codebase for the interface and server logic.</span></div>
+      <div class="stack-card"><strong>Vercel</strong><span>Builds, previews, logs, environment variables, and production deployment.</span></div>
+      <div class="stack-card"><strong>Supabase</strong><span>Postgres, login, project permissions, storage, and database policies.</span></div>
+      <div class="stack-card"><strong>Resend</strong><span>Invites, password emails, notifications, and transactional mail.</span></div>
+    </section>
+
+    <nav class="toc" aria-label="Contents">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#decision">The decision</a></li>
+        <li><a href="#why-me">Why it fits how I work</a></li>
+        <li><a href="#authorization">The authorization model</a></li>
+        <li><a href="#alternatives">Why I rejected the alternatives</a></li>
+        <li><a href="#agent-contract">The agent contract matters more than the logos</a></li>
+        <li><a href="#cost">Where free tiers end</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <h2 id="decision"><span class="num orange">1</span>The decision</h2>
+      <p>My default stack for small client portals and operational dashboards is <strong>Next.js on Vercel, backed by Supabase, with Resend for email</strong>. GitHub is the source repository. Hermes, reached through Telegram, is the developer and operator.</p>
+      <p>This is a default, not a religion. I can replace a component when an app has a real reason. The point is that a new project no longer starts with another week of framework comparison.</p>
+      <div class="callout">
+        <strong>Default route</strong>
+        <p>Telegram request &rarr; Hermes edits the GitHub repo &rarr; tests run &rarr; Vercel deploys &rarr; Supabase enforces data access &rarr; Hermes verifies the live app.</p>
+      </div>
+
+      <h2 id="why-me"><span class="num blue">2</span>Why it fits how I work</h2>
+      <p>I am not trying to become a full-time maintainer of five bespoke web stacks. I build data products, SAP tools, client dashboards, and internal systems. The interesting part is the domain model and the workflow, not whether I can save a few euros by stitching together a more exotic deployment setup.</p>
+      <p>The stack fits my operating model for four reasons:</p>
+      <ul>
+        <li><strong>Agents know the terrain.</strong> Next.js, TypeScript, Postgres, and the Supabase and Vercel CLIs have large documentation surfaces and predictable project structures.</li>
+        <li><strong>Everything is scriptable.</strong> Hermes can create migrations, run tests, manage environment-variable names, deploy, inspect logs, and verify the live URL without needing me to click through every dashboard.</li>
+        <li><strong>The backend is mostly assembled.</strong> Supabase supplies the database, authentication, file storage, and row-level authorization. That removes a lot of custom infrastructure.</li>
+        <li><strong>Production is close to development.</strong> The same repository contains the interface and the small amount of server logic. Vercel turns a pushed commit into a preview or production deployment.</li>
+      </ul>
+      <p>That last point matters. A cheaper platform that creates more deployment edge cases is not actually cheaper when every issue turns into another Telegram debugging session.</p>
+
+      <h2 id="authorization"><span class="num green">3</span>The authorization model</h2>
+      <p>My typical app has consultants and customers who may access different projects. That is not a global role problem. It is a membership problem.</p>
+      <pre><code>users
+  └── project_members
+        ├── project_id
+        ├── user_id
+        └── role: consultant | client_admin | client_viewer
+
+projects
+  ├── project A
+  ├── project B
+  └── project C</code></pre>
+      <p>Every project-owned row carries a <code>project_id</code>. Supabase Row Level Security checks whether the current user has membership of that project. The frontend may hide buttons, but the database remains the final authority.</p>
+      <p>This is the main reason I choose <a href="https://supabase.com/docs/guides/auth" rel="noopener">Supabase Auth</a> rather than adding Better Auth by default. Supabase Auth already connects user identity to Postgres policies. Adding a separate authentication system would give me another session model while leaving project authorization to solve separately.</p>
+
+      <h2 id="alternatives"><span class="num purple">4</span>Why I rejected the alternatives</h2>
+      <table>
+        <thead><tr><th>Alternative</th><th>Why it is not my default</th></tr></thead>
+        <tbody>
+          <tr><td>Better Auth</td><td>Good product, but redundant when Supabase already owns authentication and database authorization. I would use it if I moved away from Supabase or needed auth-provider independence.</td></tr>
+          <tr><td>React + Vite</td><td>Simpler for a pure browser dashboard, but I routinely need invites, privileged actions, webhooks, exports, or server-only integrations. Next.js keeps those in the same repo.</td></tr>
+          <tr><td>Cloudflare</td><td>Potentially cheaper hosting, but Next.js compatibility and platform differences add another seam. I would choose it for a high-volume edge workload, not as the boring default.</td></tr>
+          <tr><td>Firebase</td><td>Fast to start, but my work is relational: clients, projects, memberships, datasets, mappings, and audit trails. Postgres is a more natural model.</td></tr>
+          <tr><td>Custom API backend</td><td>More control, but also more code, deployment, authentication plumbing, and operational ownership before the product has earned it.</td></tr>
+        </tbody>
+      </table>
+      <p>The critical correction is that I am not selecting the cheapest individual services. I am selecting the lowest-friction complete route from idea to a verified production app.</p>
+
+      <h2 id="agent-contract"><span class="num cyan">5</span>The agent contract matters more than the logos</h2>
+      <p>Calling a stack “agent-first” because it uses popular tools is too easy. The repository must make the desired behavior obvious and verifiable.</p>
+      <pre><code>app/                 # screens and server routes
+components/          # reusable interface parts
+lib/supabase/        # typed clients and auth helpers
+supabase/migrations/ # canonical schema and RLS changes
+supabase/seed.sql    # consultant, customer, and project fixtures
+tests/               # authorization and behavior tests
+AGENTS.md            # build, test, deploy, and safety rules</code></pre>
+      <p>For every project-owned table, the baseline is simple:</p>
+      <ul>
+        <li>a project identifier;</li>
+        <li>a Row Level Security policy;</li>
+        <li>a negative test proving another customer cannot read it;</li>
+        <li>generated TypeScript types from the real database schema;</li>
+        <li>a live deployment check after push.</li>
+      </ul>
+      <p>Configuration should live in migrations and repository files, not only in web dashboards. Secrets stay in provider environment stores. Hermes receives tooling and scoped credentials, not a license to dump production keys into logs.</p>
+
+      <h2 id="cost"><span class="num amber">6</span>Where free tiers end</h2>
+      <p>This stack is cheap to start, but I do not pretend that a real client system should remain free forever. Vercel's Hobby plan is for personal, non-commercial use. Supabase free projects have limits and may pause after inactivity. Those are fine constraints during development, not a production reliability strategy.</p>
+      <p>My rule is:</p>
+      <ul>
+        <li><strong>Prototype:</strong> use the free tiers.</li>
+        <li><strong>Internal experiment:</strong> stay free while the consequences of downtime are small.</li>
+        <li><strong>Client dependency:</strong> move to paid plans, backups, monitoring, and a tested restore path.</li>
+      </ul>
+      <p>The first paid bill is not failure. It means the app has become important enough that reliability is worth buying. I would rather pay predictable platform costs than spend my own time maintaining a clever free stack.</p>
+      <p>The relevant provider boundaries are documented by <a href="https://vercel.com/docs/plans/hobby" rel="noopener">Vercel's Hobby plan</a>, <a href="https://supabase.com/docs/guides/platform/going-into-prod" rel="noopener">Supabase's production checklist</a>, and <a href="https://resend.com/pricing" rel="noopener">Resend's pricing model</a>.</p>
+
+      <div class="divider"></div>
+      <p><strong>Final choice:</strong> Next.js + Vercel + Supabase + Resend, with GitHub as the source and Hermes/Bertus as the Telegram-controlled developer. Boring on purpose. The architecture should leave my attention for project authorization, data quality, and the actual client problem.</p>
+    </article>
+
+    <footer class="footer"><a href="/guides/">Writing</a> &middot; <a href="/tech-stack/">Tech Stack</a> &middot; <a href="/projects/sdp-dashboard/">SDP Dashboard</a></footer>
+  </main>
+</body>
+</html>
