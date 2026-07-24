@@ -156,6 +156,9 @@ for (const file of htmlFiles) {
 }
 
 const homepage = read("index.html");
+for (const route of ["/trendwatch/", "/tech-news/"]) {
+  assert(homepage.includes(`href="${route}"`), `index.html: missing subtle watcher link ${route}`);
+}
 for (const match of homepage.matchAll(/<a\b([^>]*)>[\s\S]*?<\/a>/g)) {
   const attrs = match[1];
   if (!/class=["'][^"']*\btile\s+card\b[^"']*["']/.test(attrs)) continue;
