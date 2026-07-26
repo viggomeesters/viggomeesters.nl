@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-25T07:05:10+02:00",
+  "generatedAt": "2026-07-26T07:05:11+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 67,
+  "usefulOpen": 63,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -179,40 +179,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "0e0687ae7bfa771d",
-      "title": "xai-org/grok-build, now open source",
-      "url": "https://simonwillison.net/2026/Jul/15/grok-build/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-15T23:59:30+00:00",
-      "summary": "xai-org/grok-build, now open source xAI's grok CLI tool faced severe community backlash yesterday when it became apparent that running the command in a directory could upload that entire directory to xAI's Google Cloud buckets. One user reported running it in their home directory and seeing it upload \"my SSH keys, my password manager database, my documents, ",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cli"
-        ],
-        "data-platforms": [
-          "database"
-        ],
-        "enterprise-ai": [
-          "google cloud"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "d8d03c38248c31c1",
       "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
       "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
@@ -233,6 +199,40 @@
         ],
         "enterprise-ai": [
           "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "8f4f45e7c3488d04",
+      "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
+      "url": "https://openai.com/index/australian-payments-plus",
+      "source": "OpenAI News",
+      "published": "2026-07-07T02:00:00+02:00",
+      "summary": "See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and keeps human judgment central.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ],
+        "enterprise-ai": [
+          "enterprise"
         ]
       },
       "scores": {
@@ -461,36 +461,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "4fe3660ca0d9486e",
-      "title": "How data science teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "source": "OpenAI News",
-      "published": "2026-07-14T02:00:00+02:00",
-      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "chatgpt"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "8642d9ec0569f6d5",
       "title": "How sales teams use ChatGPT Work",
       "url": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
@@ -507,6 +477,36 @@
         ],
         "data-platforms": [
           "pipeline"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4fe3660ca0d9486e",
+      "title": "How data science teams use ChatGPT Work",
+      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
+      "source": "OpenAI News",
+      "published": "2026-07-14T02:00:00+02:00",
+      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -567,37 +567,6 @@
         ],
         "developer-tools": [
           "github"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "014d667490cafe87",
-      "title": "MUFG aims to become AI-native with OpenAI",
-      "url": "https://openai.com/index/mufg",
-      "source": "OpenAI News",
-      "published": "2026-07-07T02:00:00+02:00",
-      "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
-        ],
-        "enterprise-ai": [
-          "enterprise"
         ]
       },
       "scores": {
@@ -700,37 +669,6 @@
       "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "66c9d4c5bc16c2d8",
-      "title": "OpenAI’s new voice mode makes it to the ChatGPT desktop app",
-      "url": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/",
-      "source": "TechCrunch",
-      "published": "2026-07-24T15:36:42+02:00",
-      "summary": "ChatGPT Voice on desktop can work with both ChatGPT Work and Codex to complete tasks and control agents.",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
-        ],
-        "developer-tools": [
-          "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
     },
     {
       "id": "a2e9b5fda30614f5",
@@ -845,68 +783,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "d03395537fe58cc7",
-      "title": "My security camera shipped a GitHub admin token in its login page",
-      "url": "https://hhh.hn/hanwha-github-token/",
-      "source": "Hacker News",
-      "published": "2026-07-24T13:54:41+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "d2310faf5a52934a",
-      "title": "Anthropic releases Opus 5 with ‘close’ to Fable 5’s capabilities",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
-      "source": "The Verge",
-      "published": "2026-07-24T13:00:00-04:00",
-      "summary": "Weeks after Anthropic's latest toe-to-toe with the US government, and days after an OpenAI security incident that dominated tech industry discussions, Anthropic on Thursday released its newest model, Claude Opus 5. The company said in a release that Opus 5 \"comes close to the capabilities of Claude Fable 5 in many domains\" and is much […]",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic",
-          "claude"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -1942,6 +1818,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "957fa6dfe0cd5b1b",
+      "title": "The new rules of context engineering for Claude 5 generation models",
+      "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+      "source": "Hacker News",
+      "published": "2026-07-25T22:42:35+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "603e7d8702d0318c",
       "title": "I tried out OpenAI’s new AI keypad — which will be fun for some coders and slightly mystifying to everyone else",
       "url": "https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/",
@@ -1962,37 +1864,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "72178a8f73455469",
-      "title": "OpenAI’s own model went rogue before Kimi had Wall Street sweating",
-      "url": "https://techcrunch.com/video/openais-own-model-went-rogue-before-kimi-had-wall-street-sweating/",
-      "source": "TechCrunch",
-      "published": "2026-07-24T18:50:08+02:00",
-      "summary": "Chinese AI lab Moonshot’s open model Kimi went viral this week for reasons that had less to do with the model itself and more to do with how the U.S. AI industry reacted to it. Meanwhile, an unreleased OpenAI model wandered outside its test environment and ended up connected to a real security breach at Hugging Face — a reminder […]",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "security",
-          "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
       },
       "priority": 70,
       "action": "Ledger",
@@ -2051,12 +1922,90 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "8be7b1b7d13bcbc4",
-      "title": "Microformats – building blocks for data-rich web pages",
-      "url": "https://microformats.org/",
+      "id": "9518f3b514c8cb6e",
+      "title": "Himalaya v2.0.0: CLI to manage emails",
+      "url": "https://fosstodon.org/@pimalaya/116983467890532240",
       "source": "Lobsters",
-      "published": "2026-07-25T03:34:26+02:00",
+      "published": "2026-07-26T02:45:08+02:00",
       "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "904daa2672f633c7",
+      "title": "LLM Usage in Debian: Three Proposals",
+      "url": "https://www.debian.org/vote/2026/vote_002",
+      "source": "Hacker News",
+      "published": "2026-07-25T21:44:39+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9a0ac0f6bd958140",
+      "title": "Running a 28.9M parameter LLM on an $8 microcontroller",
+      "url": "https://github.com/slvDev/esp32-ai",
+      "source": "Hacker News",
+      "published": "2026-07-25T20:59:50+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fbae780cd142b6c9",
+      "title": "One fallen power line exposed a growing AI data center problem. Here’s how to fix it.",
+      "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/",
+      "source": "TechCrunch",
+      "published": "2026-07-25T15:05:00+02:00",
+      "summary": "A close call in Northern Virginia revealed just how poorly data centers respond to grid disruptions. Here's how to fix the problem.",
       "areas": [
         "data-platforms"
       ],
@@ -2077,18 +2026,122 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "760a72653fd779d3",
-      "title": "2026 Stack Overflow Developer Survey",
-      "url": "https://take.survey.stackoverflow.co/jfe/form/SV_4GHunpL3IfJ3rRc",
-      "source": "Lobsters",
-      "published": "2026-07-25T02:23:02+02:00",
-      "summary": "Comments",
+      "id": "7e648018c0658472",
+      "title": "With help from data, art museums are reframing the visitor experience",
+      "url": "https://arstechnica.com/culture/2026/07/with-help-from-data-art-museums-are-reframing-the-visitor-experience/",
+      "source": "Ars Technica",
+      "published": "2026-07-25T13:00:32+02:00",
+      "summary": "Museums are embracing data-driven curation and a shifting technology landscape.",
       "areas": [
-        "developer-tools"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "developer"
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a8ac0ca92137160f",
+      "title": "Big Tech accused of stonewalling European social media researchers",
+      "url": "https://arstechnica.com/tech-policy/2026/07/big-tech-accused-of-stonewalling-european-social-media-researchers/",
+      "source": "Ars Technica",
+      "published": "2026-07-25T12:45:32+02:00",
+      "summary": "Researchers say TikTok, X, and Meta aren't providing data they're legally required to.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2162c87c587be2d4",
+      "title": "The OpenAI Models That Hacked Hugging Face Were ‘Active on the Internet’ for Days",
+      "url": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
+      "source": "Wired",
+      "published": "2026-07-25T12:30:00+02:00",
+      "summary": "Plus: Russian hackers are trying to steal US nuclear scientists’ emails, the State Department bans known scammers from entering the United States, and more.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fe28bc031c2337fb",
+      "title": "stinkpot: sqlite-backed shell history",
+      "url": "https://tangled.org/oppi.li/stinkpot",
+      "source": "Lobsters",
+      "published": "2026-07-25T11:10:12+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "95ad19141a3daafc",
+      "title": "the perils of parsing type inference declarations in c",
+      "url": "https://sebsite.pw/w/20260725-auto.html",
+      "source": "Lobsters",
+      "published": "2026-07-25T08:07:49+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "inference"
         ]
       },
       "scores": {
@@ -2208,32 +2261,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "33c54cae04775311",
-      "title": "git rebase -i is not that scary",
-      "url": "https://cachebag.sh/journal/interactive-rebasing/",
-      "source": "Lobsters",
-      "published": "2026-07-24T19:41:20+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "5c94877cd8c294a3",
       "title": "Anthropic launches Opus 5",
       "url": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/",
@@ -2260,168 +2287,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "50c33b3bd8589c2c",
-      "title": "Claude Opus 5",
-      "url": "https://www.anthropic.com/news/claude-opus-5",
-      "source": "Hacker News",
-      "published": "2026-07-24T18:57:41+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "60b42f969f805cc4",
-      "title": "Be skeptical of OpenAI's rogue hacker agent story",
-      "url": "https://www.theguardian.com/technology/2026/jul/24/openai-rogue-hacker",
-      "source": "Hacker News",
-      "published": "2026-07-24T18:33:31+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "3e6aad670ef6e566",
-      "title": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
-      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
-      "source": "TechCrunch",
-      "published": "2026-07-24T17:51:49+02:00",
-      "summary": "AI companies, including Nvidia and Mistral, urge policymakers to avoid broad restrictions on open-weight AI models as Washington debates responses to Chinese AI and alleged model distillation.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "mistral"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "620d03d2264f200f",
-      "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat: Jack Dorsey",
-      "url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece",
-      "source": "Hacker News",
-      "published": "2026-07-24T16:41:59+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "2ec5699cc9c30ee0",
       "title": "AI firms want more data centers; Trump's EPA may give neighbors less say",
       "url": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say/",
       "source": "Ars Technica",
       "published": "2026-07-24T15:49:38+02:00",
       "summary": "Rule would allow states to decide how much—if any—public input there can be.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "70aeb549c9662150",
-      "title": "You can’t ignore Google Zero anymore",
-      "url": "https://www.theverge.com/podcast/970735/google-zero-reddit-ai-publishers-vergecast",
-      "source": "The Verge",
-      "published": "2026-07-24T13:29:48-04:00",
-      "summary": "The web and Google once had a deal: Google collects data and indexes webpages and in exchange sends oceans of traffic to websites. The deal wasn't perfect and certainly made Google more money than it made the websites, but it worked for a long time. Now, however, the deal seems to be dead. And the […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "564de019a7ea8ce6",
-      "title": "IRGC claims it destroyed Amazon's Bahrain data center",
-      "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/",
-      "source": "Hacker News",
-      "published": "2026-07-24T11:52:58+02:00",
-      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -2468,38 +2339,32 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d9c8a8e5b8f78772",
-      "title": "FreeBSD ports frozen after someone commits the entire 150MB Linux Copilot binary",
-      "url": "https://www.osnews.com/story/145593/freebsd-ports-frozen-after-someone-commits-the-entire-150mb-linux-copilot-binary/",
-      "source": "Lobsters",
-      "published": "2026-07-24T07:05:03+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "copilot"
-        ]
-      },
+      "id": "8c1e8b9815cb94e3",
+      "title": "Ruff v0.16.0",
+      "url": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-25T22:44:05+00:00",
+      "summary": "Ruff v0.16.0 Astral shipped a significant new version of their Ruff Python linting tool a few days ago on July 23rd. I noticed today because my various CI jobs all started failing thanks to new default Ruff checks and my unpinned \"ruff\" dev dependency. From Brent Westbrook's announcement post: Ruff now enables 413 rules by default, up from 59 in previous ver",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "07eaefa72d03ff3b",
-      "title": "Show HN: I simulated closing the Strait of Hormuz on real oil trade data",
-      "url": "https://globaloilnetwork.staffinganalytics.io/",
-      "source": "Hacker News",
-      "published": "2026-07-23T14:31:21+02:00",
-      "summary": "Comments",
+      "id": "1f8808bdb20620ee",
+      "title": "Google basically confirms the Pixel 11 is getting a price hike",
+      "url": "https://www.theverge.com/tech/971041/google-confirms-pixel-11-price-hike",
+      "source": "The Verge",
+      "published": "2026-07-25T14:13:36-04:00",
+      "summary": "Google's Vice President of Devices and Services, Shakil Barkat, all but confirmed in an interview with 9to5 Google that its next Pixel phone would cost more than the Pixel 10. Considering the ongoing RAM supply issues due to the explosion of AI data centers, the rumored price hike is not a complete surprise. Companies from […]",
       "areas": [
         "data-platforms"
       ],
@@ -2513,19 +2378,19 @@
         "leverage": 0,
         "novelty": 3,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 66,
+      "priority": 58,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "8acd13f2950da78a",
-      "title": "The Trump Administration Wants to Change Public Engagement Rules for Polluters",
-      "url": "https://www.wired.com/story/trump-administration-change-polluter-public-engagement-rules/",
-      "source": "Wired",
-      "published": "2026-07-23T13:00:00+02:00",
-      "summary": "The EPA has proposed a rule change that would let states decide how much input the public has on air pollution permits. It would be a huge boon for data centers increasingly reliant on fossil fuels.",
+      "id": "d42c9a595a2b5a1c",
+      "title": "US accuses American of allegedly wiping his phone using a ‘duress’ password during border search",
+      "url": "https://techcrunch.com/2026/07/24/us-accuses-american-of-allegedly-wiping-his-phone-using-a-duress-password-during-border-search/",
+      "source": "TechCrunch",
+      "published": "2026-07-24T19:53:30+02:00",
+      "summary": "A U.S. citizen has asked a court to throw out the government's claim that he gave over a passcode to border authorities that wiped his phone's data, opening up fresh questions about a person's constitutional rights at the U.S. border.",
       "areas": [
         "data-platforms"
       ],
@@ -2539,11 +2404,97 @@
         "leverage": 0,
         "novelty": 3,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 66,
+      "priority": 58,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "3cf1d9fbd7b67345",
+      "title": "Quoting Seth Larson",
+      "url": "https://simonwillison.net/2026/Jul/23/seth-larson/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-23T04:50:36+00:00",
+      "summary": "The Python Package Index (PyPI) now rejects new files being uploaded to releases that are older than 14 days. This restriction was put in place to prevent old and long-stable releases from being poisoned in case publishing tokens or workflows of PyPI projects were compromised. As far as we are aware this has not yet been abused, but there is no technical rea",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "e4c1c7b6ae76d33a",
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-16T20:19:30+00:00",
+      "summary": "Chinese AI lab Moonshot AI announced Kimi K3 this morning, describing it as their \"most capable model to date, with 2.8 trillion parameters\". It's currently available via their website and API, but an open weight release is promised \"by July 27, 2026\". Moonshot are calling this the first \"open 3T-class model\" (I guess they're rounding 2.8 trillion up to 3 tr",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "7dce6b744f982112",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Jul/16/linus-torvalds/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-07-16T13:26:10+00:00",
+      "summary": "I realize that some people really dislike AI, but this is an area where I'm willing to absolutely put my foot down as the top-level maintainer. Linux is not one of those anti-AI projects, and if somebody has issues with that, they can do the open-source thing and fork it. Or just walk away. AI is a tool, just like other tools we use. And it's clearly a usefu",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "f699f91cf19a7924",
+      "title": "Microsoft responds to LG monitors installing McAfee ads on Windows",
+      "url": "https://arstechnica.com/gadgets/2026/07/microsoft-responds-to-lg-monitors-installing-mcafee-ads-on-windows/",
+      "source": "Ars Technica",
+      "published": "2026-07-23T22:47:33+02:00",
+      "summary": "App is installed through Windows Update when certain LG monitors connect to a PC.",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     }
   ]
 }
