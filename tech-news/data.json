@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-02T07:05:33+02:00",
+  "generatedAt": "2026-08-03T07:05:42+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 64,
+  "usefulOpen": 63,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -891,6 +891,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "dda30645d62628f3",
+      "title": "These App Store hidden gems prove there’s still room for great software in the AI era",
+      "url": "https://techcrunch.com/2026/08/02/these-app-store-hidden-gems-prove-theres-still-room-for-great-software-in-the-ai-era/",
+      "source": "TechCrunch",
+      "published": "2026-08-02T17:23:19+02:00",
+      "summary": "Despite predictions that AI agents could make traditional apps obsolete, developers are shipping new software faster than ever. From smarter bookmarking tools and neighborhood marketplaces to digital pen pals and nature journals, here are the latest App Store finds worth adding to your Home Screen.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "88f8f7f28987d03c",
       "title": "datasette-apps 0.2a0",
       "url": "https://simonwillison.net/2026/Aug/1/datasette-apps/#atom-everything",
@@ -1164,32 +1191,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "fca5dbacecec465d",
-      "title": "sqlite-utils 3.39.1",
-      "url": "https://simonwillison.net/2026/Jul/26/sqlite-utils/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-26T04:38:46+00:00",
-      "summary": "Release: sqlite-utils 3.39.1 I back-ported a fix for table.delete_where() that shipped in version 4. Tags: sqlite-utils",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "6474d9d54a872168",
       "title": "A scorecard for the AI age",
       "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
@@ -1311,33 +1312,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "da8d8b8d4f9f6636",
-      "title": "This AI Assistant Wants to Make Up for Your Boyfriend’s Incompetence",
-      "url": "https://www.wired.com/story/this-ai-assistants-whole-pitch-is-making-up-for-your-boyfriends-incompetence/",
-      "source": "Wired",
-      "published": "2026-07-31T16:47:26+02:00",
-      "summary": "An ad for Orchid suggests the AI agent can fix relationship problems by simply doing everything for inconsiderate partners.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
         ]
       },
       "scores": {
@@ -1857,6 +1831,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "1d6f9bb8fbfdf32c",
+      "title": "The James Webb Telescope Is Changing Astronomers’ Understanding of the Ancient Cosmos",
+      "url": "https://www.wired.com/story/james-webb-space-telescope-changing-astronomers-universe/",
+      "source": "Wired",
+      "published": "2026-08-02T13:00:00+02:00",
+      "summary": "From how galaxies form to the beginnings of the universe, the images from the space telescope are giving cosmologists new data to explore—and theories to build out.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "05089894631d53ec",
       "title": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
       "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
@@ -1884,43 +1884,64 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "4633aad4392b19c2",
-      "title": "Sam Altman isn’t the only one who wants to pump the brakes on AI",
-      "url": "https://techcrunch.com/video/sam-altman-isnt-the-only-one-who-wants-to-pump-the-brakes-on-ai/",
-      "source": "TechCrunch",
-      "published": "2026-07-31T19:26:32+02:00",
-      "summary": "After years of pushing full speed ahead on AI, OpenAI CEO Sam Altman says maybe it’s time for the AI industry to “pace” itself. The comments came just days after one of OpenAI’s own models broke out of its test environment and got tangled up in a breach at Hugging Face — though as Equity’s hosts point out, sloppy security seems to have […]",
+      "id": "67e066ea9b1ec2a9",
+      "title": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
+      "url": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
+      "source": "Hacker News",
+      "published": "2026-08-03T04:30:30+02:00",
+      "summary": "Comments",
       "areas": [
-        "models",
-        "privacy-risk"
+        "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai"
-        ],
-        "privacy-risk": [
-          "security",
-          "breach"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5f32277a25e23e1d",
-      "title": "GM and Ford are talking less and less about EVs",
-      "url": "https://techcrunch.com/2026/07/31/gm-and-ford-are-talking-less-and-less-about-evs/",
-      "source": "TechCrunch",
-      "published": "2026-07-31T17:47:46+02:00",
-      "summary": "The leading U.S. automakers are mentioning EVs on their investor calls at pre-pandemic rates, according to new data from TechCrunch and Hudson Labs.",
+      "id": "93284552138f2192",
+      "title": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
+      "url": "https://github.com/pg83/shitty",
+      "source": "Hacker News",
+      "published": "2026-08-03T01:05:41+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "terminal"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4473b0639158d091",
+      "title": "Californians' data deletion requests, DROP, become enforceable Aug. 1",
+      "url": "https://www.nbcsandiego.com/nbc-7-responds-2/californians-data-deletion-requests-drop-become-enforceable-aug-1/4054771/",
+      "source": "Hacker News",
+      "published": "2026-08-03T00:16:34+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -1932,20 +1953,20 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9ad47b0276c2a161",
-      "title": "Don't credit the LLM",
-      "url": "https://isaacsu.com/2026/08/dont-credit-the-llm/",
-      "source": "Hacker News",
-      "published": "2026-08-02T06:07:46+02:00",
+      "id": "35f43b5c4f46a64f",
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "source": "Lobsters",
+      "published": "2026-08-02T12:31:38+02:00",
       "summary": "Comments",
       "areas": [
         "models"
@@ -1980,32 +2001,6 @@
         "models": [
           "openai",
           "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "f264573fba116a7b",
-      "title": "The Mermaid Mask is a perfect vacation murder mystery",
-      "url": "https://www.theverge.com/games/971660/the-mermaid-mask-review",
-      "source": "The Verge",
-      "published": "2026-08-01T09:00:00-04:00",
-      "summary": "The Mermaid Mask, the next point-and-click game from Tangle Tower developer SFB Games, has everything you could ask for in a great murder mystery. It starts with a compelling setup: The captain of a submarine is found dead in a locked room, his body next to a mysterious cauldron with blood trickling across the floor. […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
         ]
       },
       "scores": {
@@ -2072,45 +2067,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "50686cab28a0dd8c",
-      "title": "Accepting a messy git history",
-      "url": "https://beza1e1.tuxen.de/git_two_users.html",
-      "source": "Lobsters",
-      "published": "2026-07-31T20:27:28+02:00",
+      "id": "5841ed7c4d0d594d",
+      "title": "Autoregressive Language Model on the 6502 Processor",
+      "url": "https://mattbeton.com/blog/bitnet-6502.html",
+      "source": "Hacker News",
+      "published": "2026-07-31T15:08:30+02:00",
       "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "4e58efa66f4516f3",
-      "title": "Chinese AI Researchers Are Finding Their Voice on X",
-      "url": "https://www.wired.com/story/chinese-ai-researchers-are-finding-their-voice-on-x/",
-      "source": "Wired",
-      "published": "2026-07-31T20:14:43+02:00",
-      "summary": "As OpenAI and Anthropic employees grow quieter online, researchers at Chinese AI labs are flocking to X to explain their work, recruit talent, and shape the global conversation on AI.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "anthropic"
+          "language model"
         ]
       },
       "scores": {
@@ -2130,7 +2098,7 @@
       "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
       "source": "Simon Willison",
       "published": "2026-08-02T04:16:52+00:00",
-      "summary": "Open letters about AI development I wrote this summary of the past few weeks of open letters as a section of my sponsors-only newsletter but I've decided to share it here as well. Open Weights and American AI Leadership was shepherded by Microsoft, dated July 24th, and signed by 235 AI-adjacent companies including NVIDIA, Amazon, Y Combinator, The Linux Foun",
+      "summary": "Open letters about AI development I wrote this summary of the past few weeks of open letters as a section of my sponsors-only newsletter but I've decided to share it here as well. Open Weights and American AI Leadership was shepherded by Microsoft, dated July 24th, and signed by 235 AI-adjacent companies including NVIDIA (see Jensen's first ever tweet ), Ama",
       "areas": [
         "enterprise-ai"
       ],
@@ -2147,6 +2115,32 @@
         "risk": 0
       },
       "priority": 64,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "2b4426f86496a238",
+      "title": "Xbox prices are increasing by up to €200 or £170",
+      "url": "https://www.theverge.com/games/974253/xbox-prices-increasing-200-euros",
+      "source": "The Verge",
+      "published": "2026-08-02T12:14:20-04:00",
+      "summary": "When Microsoft announced its latest round of Xbox price bumps in June, it only gave US pricing. Now we know the pricing increases for the EU and UK, and they're dramatic. Depending on the model, Xbox prices are increasing by up to €200 or £170. The 1TB Xbox Series X with a disc drive is […]",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 0
+      },
+      "priority": 62,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2175,6 +2169,26 @@
       "priority": 62,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "ea4c19c3b2d61048",
+      "title": "condense-json 1.0",
+      "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-02T22:19:59+00:00",
+      "summary": "Release: condense-json 1.0 I'm trying to get braver at releasing 1.0 versions. This little library is a year and a half old now - I've applied some sensible and non-disruptive fixes and shipped the big 1.0 for it. Here's an example of what it can do, lifted from the README: { \"foo\" : { \"bar\" : { \"string\" : \" This is a string with foxes in it \" , \"nested\" : {",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "98397f6e414a4deb",
@@ -2289,32 +2303,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "7545d6046452f6b4",
-      "title": "Trump blames Tim Walz for water hacks even though it’s probably Iran",
-      "url": "https://www.theverge.com/policy/974197/trump-tim-walz-minnesota-water-hacks-iran",
-      "source": "The Verge",
-      "published": "2026-08-01T11:23:35-04:00",
-      "summary": "The FBI, the EPA, and the Cybersecurity and Infrastructure Security Agency (CISA) have stopped short of officially blaming Iran for a spate of cyberattacks on Minnesota's water systems, but consensus is that Iran is likely behind them. That, of course, hasn't stopped Donald Trump from sharing his own theory - that Governor Tim Walz is […]",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "2376ad6ba7b52698",
       "title": "Reddit keeps its strange DMCA fight over Google search results alive",
       "url": "https://arstechnica.com/tech-policy/2026/07/reddit-keeps-weird-dmca-lawsuit-against-web-scraper-alive-despite-googles-loss/",
@@ -2337,6 +2325,86 @@
         "risk": 1
       },
       "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "fdc5d01f5e4c937a",
+      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "source": "Hacker News",
+      "published": "2026-08-03T04:16:09+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "9ef80cbf041c5c3f",
+      "title": "Faster floating point math with Rust’s new API",
+      "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
+      "source": "Lobsters",
+      "published": "2026-08-02T22:27:23+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "2b2109b13b4e704e",
+      "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
+      "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
+      "source": "Wired",
+      "published": "2026-08-02T12:00:00+02:00",
+      "summary": "New EU rules stipulate that people must be told when they’re interacting with AI or looking at AI-generated or -edited content, leading to fear of “disclosure fatigue.”",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "4364f03af3b762fa",
+      "title": "Skylight’s smart calendars are up to $90 off during its back-to-school sale",
+      "url": "https://www.theverge.com/gadgets/973789/skylight-calendar-2-max-back-to-school-deal-sale",
+      "source": "The Verge",
+      "published": "2026-08-02T11:00:00-04:00",
+      "summary": "The start of a new school year can feel hectic, as parents juggle their kids’ classes, extracurriculars and sports on top of work, appointments, and other responsibilities. It’s easy for things to slip through the cracks, but Skylight’s shared smart calendars can help keep everyone on track, and from August 2nd through August 9th they’re […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2381,92 +2449,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "3a1d10e2af1829d5",
-      "title": "Spider-Man: Brand New Day leak racks up millions of views",
-      "url": "https://www.theverge.com/entertainment/974199/spider-man-brand-new-day-leak-box-office-records",
-      "source": "The Verge",
-      "published": "2026-08-01T13:00:12-04:00",
-      "summary": "A bootleg of Spider-Man: Brand New Day was up on X for over seven hours before eventually being pulled. During that time, it reached over 5.9 million accounts and accumulated over 143,000 likes. Other accounts have reposted the leaked film, but none have lasted particularly long, as Disney now seems to be on top of […]",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "f5f3e063d252671e",
       "title": "China’s EV Market Is Booming. There’s Just One Problem",
       "url": "https://www.wired.com/story/china-millions-of-evs-battery-recycling/",
       "source": "Wired",
       "published": "2026-08-01T13:00:00+02:00",
       "summary": "More EVs reaching the end of their life means more batteries to recycle. But waste management companies have yet to catch up to the new reality.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "23fe019c11c65128",
-      "title": "Boroux vs. Rorra vs. Culligan: Water Filters, Tested Head to Head",
-      "url": "https://www.wired.com/story/steel-water-filters-head-to-head/",
-      "source": "Wired",
-      "published": "2026-08-01T12:30:00+02:00",
-      "summary": "In a world of plasticky water filter pitchers, I tested three new-generation stainless steel filter systems.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "17bcbfcd4af8ce7a",
-      "title": "The Verge’s 2026 back-to-school shopping guide",
-      "url": "https://www.theverge.com/gadgets/968645/back-to-school-shopping-guide-gifts",
-      "source": "The Verge",
-      "published": "2026-08-01T10:00:00-04:00",
-      "summary": "Knowing exactly what your student needs for the school year ahead is next to impossible. Sure, you'll probably nail the essentials, but there will likely be a few items you forgot to buy, or didn't think they'd need to have. We're pulling our weight during the back-to-school season with a new shopping guide that's a […]",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "0ed980932efc4227",
-      "title": "The OG reading app just got a big update",
-      "url": "https://www.theverge.com/tech/973929/instapaper-app-pastebot-spiderman-movie-installer",
-      "source": "The Verge",
-      "published": "2026-08-01T08:00:00-04:00",
-      "summary": "Hi, friends! Welcome to Installer No. 138, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy August, and also you can read all the old editions at the Installer homepage.) This week, I've been reading about microwave sounds and Meta glasses and Alex vs. Alix, testing the […]",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
