@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-03T07:05:42+02:00",
+  "generatedAt": "2026-08-04T07:05:33+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 63,
+  "usefulOpen": 62,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -333,6 +333,98 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "773dbf8521203009",
+      "title": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
+      "url": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-03T14:08:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Here’s why AI agents lie and cheat to reach their goals When two OpenAI models hacked into Hugging Face last month, they weren’t trying to make money or commit sabotage—they were…",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "05bcb1687ca1c299",
+      "title": "Here’s why AI agents lie and cheat to reach their goals",
+      "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-03T10:30:05+02:00",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. When two OpenAI models hacked into the website Hugging Face in July, they weren’t trying to make money or commit sabotage—they were just looking for answers…",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "7c2dea85947d69be",
+      "title": "Circles powers telco personalization with OpenAI technology",
+      "url": "https://openai.com/index/circles",
+      "source": "OpenAI News",
+      "published": "2026-08-03T02:00:00+02:00",
+      "summary": "Circles uses the OpenAI API and Codex to power AI-native telco experiences, increasing ARPU by 22%, reducing churn by 9%, and improving development efficiency.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "08e88a5a28653bd8",
       "title": "Univé builds an AI-ready workforce",
       "url": "https://openai.com/index/unive",
@@ -424,38 +516,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "3bf66e1b27b50974",
-      "title": "An opinionated guide to which AI to use to do stuff",
-      "url": "https://simonwillison.net/2026/Jul/27/an-opinionated-guide-to-which-ai-to-use-to-do-stuff/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-27T21:55:53+00:00",
-      "summary": "An opinionated guide to which AI to use to do stuff It's interesting watching the evolution of Ethan Mollick's guide over time. A year ago it was still all about chat - ChatGPT, Claude, Gemini - with o3, Claude 4 Opus, and Gemini 2.5 Pro as the models and Deep Research as a useful alternative mode. Today it's much more about agentic systems - \"where the AI i",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
-        "models": [
-          "claude",
-          "chatgpt",
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "f3b5f03f4da5f104",
       "title": "Building AI infrastructure with the Effingham County community",
       "url": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
@@ -502,36 +562,6 @@
         ],
         "developer-tools": [
           "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "4fe3660ca0d9486e",
-      "title": "How data science teams use ChatGPT Work",
-      "url": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-      "source": "OpenAI News",
-      "published": "2026-07-14T02:00:00+02:00",
-      "summary": "See how data science teams can use ChatGPT Work to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs.",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "chatgpt"
-        ],
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -743,6 +773,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "fffe4236994dfd2c",
+      "title": "SQLite Critical CVEs or LLM Slop?",
+      "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops/",
+      "source": "Lobsters",
+      "published": "2026-08-03T18:51:22+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ],
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "22e75a90223dc877",
       "title": "Advancing the price-performance frontier with GPT-5.6",
       "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
@@ -891,18 +951,17 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "dda30645d62628f3",
-      "title": "These App Store hidden gems prove there’s still room for great software in the AI era",
-      "url": "https://techcrunch.com/2026/08/02/these-app-store-hidden-gems-prove-theres-still-room-for-great-software-in-the-ai-era/",
-      "source": "TechCrunch",
-      "published": "2026-08-02T17:23:19+02:00",
-      "summary": "Despite predictions that AI agents could make traditional apps obsolete, developers are shipping new software faster than ever. From smarter bookmarking tools and neighborhood marketplaces to digital pen pals and nature journals, here are the latest App Store finds worth adding to your Home Screen.",
+      "id": "b204e16125cd01c4",
+      "title": "Quoting David Crawshaw's prompt",
+      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-03T16:15:27+00:00",
+      "summary": "Set up a nightly cron job that executes the prompt: fetch upstream changes to the <software> and rebase all local changes on top of upstream. Check that the software works as intended and replace the current version. — David Crawshaw's prompt , Devtools must be open source Tags: prompt-engineering , coding-agents , generative-ai , ai , llms , open-source",
       "areas": [
         "ai-agents"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "ai agents",
           "agents"
         ]
       },
@@ -1133,37 +1192,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "84c8a76dc6b9abf7",
-      "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
-      "url": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-28T21:28:54+00:00",
-      "summary": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident Hugging Face just released this extremely detailed technical description of OpenAI's recent accidental cyberattack against their infrastructure . This attack was very sophisticated, and the resulting document doubles as a crash-course in modern adversarial security appr",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "security",
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "e3cac7a47d8a17a0",
       "title": "How AI is expanding what people do at work",
       "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
@@ -1213,6 +1241,32 @@
         "risk": 0
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "cfa5b78c41dc3723",
+      "title": "How we built a realtime system for responsive voice AI in six months",
+      "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live",
+      "source": "OpenAI News",
+      "published": "2026-08-03T09:00:00+02:00",
+      "summary": "GPT-Live enables continuous voice interaction with AI, using a turnless speech model and low-latency architecture for faster, more natural conversations.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1539,32 +1593,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c9e3b38c7950ba9f",
-      "title": "An Inside Look at the Relay Market Powering Token Resellers and Fraud",
-      "url": "https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-26T19:30:54+00:00",
-      "summary": "An Inside Look at the Relay Market Powering Token Resellers and Fraud Fascinating investigation by Matt Lenhard into the market that has grown up around reselling LLM tokens at a discount by pooling API keys from various sources. This looks to be mostly a thing in China. Resellers sell access to an LLM proxy that offers significant discounts on regular API p",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "82d1b5adc9a3b8d7",
       "title": "Launching Health in ChatGPT",
       "url": "https://openai.com/index/health-in-chatgpt",
@@ -1775,60 +1803,30 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f35d978c1aa320cb",
-      "title": "How to manage AI investments in the agentic era",
-      "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-      "source": "OpenAI News",
-      "published": "2026-07-14T12:00:00+02:00",
-      "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.",
+      "id": "20c0520a33191573",
+      "title": "Launch HN: Hoplite (YC S26) – Effortlessly deploy cloud coding agents",
+      "url": "https://hoplite.sh",
+      "source": "Hacker News",
+      "published": "2026-08-03T18:32:06+02:00",
+      "summary": "Comments",
       "areas": [
         "ai-agents"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agentic"
+          "agents"
         ]
       },
       "scores": {
         "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "185e840d9e942c67",
-      "title": "The Download: OpenAI’s predictable hack, and an AI stock sell-off",
-      "url": "https://www.technologyreview.com/2026/07/28/1140868/the-download-openai-hack-ai-stock-sell-off/",
-      "source": "MIT Technology Review",
-      "published": "2026-07-28T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. OpenAI called the Hugging Face attack unprecedented. But we’ve been here before. —Will Douglas Heaven, senior AI editor Reading OpenAI’s account last week of how some of its models broke their…",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "1d6f9bb8fbfdf32c",
@@ -1857,12 +1855,38 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "05089894631d53ec",
-      "title": "The OpenAI and Anthropic AI Hacking Sprees Are a Messy New Legal Frontier",
-      "url": "https://www.wired.com/story/openai-anthropic-ai-hacking-sprees-illegal/",
-      "source": "Wired",
-      "published": "2026-08-01T11:30:00+02:00",
-      "summary": "Both major AI labs’ models broke containment, escaped onto the internet, and hacked other companies. If a human had done that, the law would likely be against them. But a bot?",
+      "id": "50d5d516ec99b693",
+      "title": "Programmatically upload attachments to GitHub Issues, Pull Requests, and Comments",
+      "url": "https://island94.org/2026/08/programmatically-upload-attachments-to-github-issues-pull-requests-comments",
+      "source": "Lobsters",
+      "published": "2026-08-04T02:33:37+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "33f7a3d2dc3c65e0",
+      "title": "Who’s legally to blame for Anthropic and OpenAI’s autonomous AI hacks? It’s complicated",
+      "url": "https://techcrunch.com/2026/08/03/whos-legally-to-blame-for-anthropic-and-openais-autonomous-ai-hacks-its-complicated/",
+      "source": "TechCrunch",
+      "published": "2026-08-03T21:45:35+02:00",
+      "summary": "OpenAI and Anthropic admitted that their unreleased AI models escaped their sandboxes and hacked several companies in unprecedented cyberattacks. Who is legally to blame? Should prosecutors charge the two AI frontier labs? Can victims sue them? We spoke to lawyers who specialize in computer hacking laws to find out.",
       "areas": [
         "models"
       ],
@@ -1875,32 +1899,6 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "67e066ea9b1ec2a9",
-      "title": "OpenAI's super PAC is funding AI-generated news site attacking industry critics",
-      "url": "https://www.modelrepublic.org/articles/the-reporters-at-this-news-site-are-ai-bots.-openai%E2%80%99s-super-pac-appears-to-be-using-it-to-advance-its-political-agenda",
-      "source": "Hacker News",
-      "published": "2026-08-03T04:30:30+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
         "novelty": 3,
         "urgency": 2,
         "risk": 0
@@ -1910,37 +1908,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "93284552138f2192",
-      "title": "Show HN: Shitty – fast terminal. Memory-unsafe and faster than yours",
-      "url": "https://github.com/pg83/shitty",
+      "id": "4848602657323896",
+      "title": "The Dunning-Kruger effect may just be a data artefact (2020)",
+      "url": "https://www.mcgill.ca/oss/article/critical-thinking/dunning-kruger-effect-probably-not-real",
       "source": "Hacker News",
-      "published": "2026-08-03T01:05:41+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "terminal"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "4473b0639158d091",
-      "title": "Californians' data deletion requests, DROP, become enforceable Aug. 1",
-      "url": "https://www.nbcsandiego.com/nbc-7-responds-2/californians-data-deletion-requests-drop-become-enforceable-aug-1/4054771/",
-      "source": "Hacker News",
-      "published": "2026-08-03T00:16:34+02:00",
+      "published": "2026-08-03T21:39:34+02:00",
       "summary": "Comments",
       "areas": [
         "data-platforms"
@@ -1962,18 +1934,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "35f43b5c4f46a64f",
-      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
-      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
-      "source": "Lobsters",
-      "published": "2026-08-02T12:31:38+02:00",
-      "summary": "Comments",
+      "id": "46cdaadf64cf3145",
+      "title": "Influencers draw backlash for attending OpenAI’s first luxury trip",
+      "url": "https://techcrunch.com/2026/08/03/influencers-draw-backlash-for-attending-openais-first-luxury-trip/",
+      "source": "TechCrunch",
+      "published": "2026-08-03T21:09:56+02:00",
+      "summary": "OpenAI’s first-ever influencer brand trip is sparking online backlash as tensions over the use of AI continue.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "llm"
+          "openai"
         ]
       },
       "scores": {
@@ -1988,12 +1960,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "17a46af5a4e0e66d",
-      "title": "Sam Altman is still making the case for parenting via ChatGPT",
-      "url": "https://techcrunch.com/2026/08/01/sam-altman-is-still-making-the-case-for-parenting-via-chatgpt/",
+      "id": "93b7bdd2f2baaa92",
+      "title": "Congress’ favorite AI tool? ChatGPT",
+      "url": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/",
       "source": "TechCrunch",
-      "published": "2026-08-01T19:07:34+02:00",
-      "summary": "OpenAI's CEO seemed excited to share a \"cool use case\" for parents.",
+      "published": "2026-08-03T18:40:55+02:00",
+      "summary": "House spending records show OpenAI's ChatGPT dominates paid AI use on Capitol Hill, with congressional offices relying on the chatbot to draft memos, summarize legislation, and assist constituent communications.",
       "areas": [
         "models"
       ],
@@ -2015,18 +1987,122 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "68c9643af2738d6e",
-      "title": "OpenAI reportedly finds evidence that more of its agents ran amok",
-      "url": "https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/",
-      "source": "TechCrunch",
-      "published": "2026-08-01T00:47:26+02:00",
-      "summary": "OpenAI has reportedly found evidence of additional agent misbehavior as it looks into the incident that occurred with Hugging Face.",
+      "id": "e84cfb9e06261028",
+      "title": "Reliability Lessons From SQLite",
+      "url": "https://www.youtube.com/watch?v=V_qzqY1bb7I",
+      "source": "Lobsters",
+      "published": "2026-08-03T18:27:45+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "cfdf023a8542fd68",
+      "title": "Your Fitbit data can now connect directly to Apple Health",
+      "url": "https://www.theverge.com/gadgets/974778/google-health-fitbit-data-apple-health-syncing",
+      "source": "The Verge",
+      "published": "2026-08-03T17:24:23-04:00",
+      "summary": "Google is rolling out an update that will finally allow you to connect your Fitbit workouts, steps, vitals, and other data to Apple Health, as reported earlier by 9to5Mac. With Google Health's 5.05 update, you can now tap your profile icon, select \"Partner apps,\" and choose Apple Health to link your data directly. Previously, you […]",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "ca2e235418234d54",
+      "title": "AirLLM 70B inference with single 4GB GPU",
+      "url": "https://github.com/lyogavin/airllm",
+      "source": "Hacker News",
+      "published": "2026-08-03T13:15:48+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
+          "inference"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c8827cda3ada476e",
+      "title": "ICE Collected Nearly 1 Million People’s DNA Last Year—Including Young Children",
+      "url": "https://www.wired.com/story/ice-dna-collection-fbi-codis/",
+      "source": "Wired",
+      "published": "2026-08-03T12:00:00+02:00",
+      "summary": "Internal documents show ICE's DNA collection has skyrocketed in the second Trump administration. Now hundreds of thousands of people never convicted of a crime are in an FBI criminal database forever.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "35f43b5c4f46a64f",
+      "title": "Prevent cognitive debt by manually retyping LLM-generated code",
+      "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code/",
+      "source": "Hacker News",
+      "published": "2026-08-03T11:32:07+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
         ]
       },
       "scores": {
@@ -2067,32 +2143,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "5841ed7c4d0d594d",
-      "title": "Autoregressive Language Model on the 6502 Processor",
-      "url": "https://mattbeton.com/blog/bitnet-6502.html",
-      "source": "Hacker News",
-      "published": "2026-07-31T15:08:30+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "language model"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "49819dd5fdb9298c",
       "title": "Open letters about AI development",
       "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
@@ -2119,30 +2169,30 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "2b4426f86496a238",
-      "title": "Xbox prices are increasing by up to €200 or £170",
-      "url": "https://www.theverge.com/games/974253/xbox-prices-increasing-200-euros",
+      "id": "f3afc3aa8549c6eb",
+      "title": "Palworld’s expanding to mobile with a new MMORPG",
+      "url": "https://www.theverge.com/games/974450/palworld-online-mobile-mmo",
       "source": "The Verge",
-      "published": "2026-08-02T12:14:20-04:00",
-      "summary": "When Microsoft announced its latest round of Xbox price bumps in June, it only gave US pricing. Now we know the pricing increases for the EU and UK, and they're dramatic. Depending on the model, Xbox prices are increasing by up to €200 or £170. The 1TB Xbox Series X with a disc drive is […]",
+      "published": "2026-08-03T10:50:29-04:00",
+      "summary": "After its 1.0 launch last month, Palworld is coming to iOS and Android with a new open-world MMORPG launching later this year, Polygon reports. Garena, the developer behind the new game, says in its announcement that Palworld Online \"reimagines the depth, freedom, and scale of the original PC survival creature-collecting title for mobile.\" The core […]",
       "areas": [
-        "enterprise-ai"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
+        "developer-tools": [
+          "developer"
         ]
       },
       "scores": {
-        "relevance": 1,
+        "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 0
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
       },
       "priority": 62,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "3342db931e730ab8",
@@ -2169,6 +2219,72 @@
       "priority": 62,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "6cbbc59925308962",
+      "title": "Don't be a meat proxy",
+      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-03T23:45:04+00:00",
+      "summary": "Don't be a meat proxy Niklas Gruhn coins an excellent new term - meat proxy - for people who blindly copy and paste the output of AI systems to their peers. By all means, prompt AI. But don't just relay the output. Read it, understand it, validate it, and then write a response in your own words (a decent certificate that you've done the prior steps). Making ",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "ed63582e0e89c5bf",
+      "title": "Devtools must be open source (exe.dev)",
+      "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-03T15:30:38+00:00",
+      "summary": "My comment on Devtools must be open source (exe.dev) — Hacker News. One of the arguments for open source software for end-users has always been the freedom to examine and modify how that software works. The reality for most people - even expert programmers - has been that the freedom is more about being able to lean on other people to do that. Most people ca",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "8c41802941408701",
+      "title": "Samsung bans smart TV apps that share users’ internet connections with strangers",
+      "url": "https://techcrunch.com/2026/08/03/samsung-bans-smart-tv-apps-that-share-users-internet-connections-with-strangers/",
+      "source": "TechCrunch",
+      "published": "2026-08-03T14:10:41+02:00",
+      "summary": "New security research offers a rare view inside residential proxy networks, which rely on apps that share a person's internet connection with someone else.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "ea4c19c3b2d61048",
@@ -2277,18 +2393,70 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e30a8665f41ae9c1",
-      "title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
-      "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+      "id": "513c6aab59833673",
+      "title": "AWS is helping vibe-coding startup Superblocks, and the implications are big",
+      "url": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/",
       "source": "TechCrunch",
-      "published": "2026-08-01T22:26:04+02:00",
-      "summary": "Despite a lawsuit from xAI, a Minnesota ban on apps that allow users to “nudify” images can move forward.",
+      "published": "2026-08-03T22:00:00+02:00",
+      "summary": "AWS now allows vibe-coding tool Superblocks to be embedded into the private clouds of AWS customers. It's another step toward decoupling apps from models.",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "aws"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "7ab1621ede756c68",
+      "title": "Microsoft is bringing Xbox 360 games to PC",
+      "url": "https://www.theverge.com/games/974544/microsoft-xbox-360-games-pc-disc-digital-program",
+      "source": "The Verge",
+      "published": "2026-08-03T12:31:35-04:00",
+      "summary": "Building on its recently announced plans to bring original Xbox games to PC, Microsoft is also planning to let developers bring their Xbox 360 games to PC as well, according to a leaked document, seen by The Verge, that was sent to developers recently. Xbox 360 games will be able to run on the next-gen […]",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "fa4ed4001a1c18d2",
+      "title": "Horizon3 hits $2 billion valuation with $250M Series E as AI threats escalate",
+      "url": "https://techcrunch.com/2026/08/03/horizon3-hits-2-billion-valuation-with-250m-series-e-as-ai-threats-escalate/",
+      "source": "TechCrunch",
+      "published": "2026-08-03T14:50:46+02:00",
+      "summary": "Cybersecurity startup Horizon3 raised $250 million at a $2 billion valuation as companies want continuous, AI-powered security validation instead of annual pen testing.",
       "areas": [
         "privacy-risk"
       ],
       "matchedKeywords": {
         "privacy-risk": [
-          "lawsuit"
+          "security"
         ]
       },
       "scores": {
@@ -2325,146 +2493,6 @@
         "risk": 1
       },
       "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "fdc5d01f5e4c937a",
-      "title": "Qwen3.8-Max: A New Bar for Coding and Cowork",
-      "url": "https://qwen.ai/blog?id=qwen3.8",
-      "source": "Hacker News",
-      "published": "2026-08-03T04:16:09+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "9ef80cbf041c5c3f",
-      "title": "Faster floating point math with Rust’s new API",
-      "url": "https://pythonspeed.com/articles/faster-float-math-rust/",
-      "source": "Lobsters",
-      "published": "2026-08-02T22:27:23+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "2b2109b13b4e704e",
-      "title": "Europeans Are About to Find Out How Entrenched AI Is in Their Daily Lives",
-      "url": "https://www.wired.com/story/europeans-are-about-to-find-out-how-entrenched-ai-is-in-their-daily-lives/",
-      "source": "Wired",
-      "published": "2026-08-02T12:00:00+02:00",
-      "summary": "New EU rules stipulate that people must be told when they’re interacting with AI or looking at AI-generated or -edited content, leading to fear of “disclosure fatigue.”",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "4364f03af3b762fa",
-      "title": "Skylight’s smart calendars are up to $90 off during its back-to-school sale",
-      "url": "https://www.theverge.com/gadgets/973789/skylight-calendar-2-max-back-to-school-deal-sale",
-      "source": "The Verge",
-      "published": "2026-08-02T11:00:00-04:00",
-      "summary": "The start of a new school year can feel hectic, as parents juggle their kids’ classes, extracurriculars and sports on top of work, appointments, and other responsibilities. It’s easy for things to slip through the cracks, but Skylight’s shared smart calendars can help keep everyone on track, and from August 2nd through August 9th they’re […]",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "7ea22b5129e510d3",
-      "title": "An old-new take on argument parsing in Rust",
-      "url": "https://jmmv.dev/2026/07/hello-getoptsargs.html",
-      "source": "Lobsters",
-      "published": "2026-08-01T21:31:15+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "3034236477940beb",
-      "title": "Should you still buy your next smartphone — or subscribe to it instead?",
-      "url": "https://techcrunch.com/2026/08/01/should-you-still-buy-your-next-smartphone-or-subscribe-to-it-instead/",
-      "source": "TechCrunch",
-      "published": "2026-08-01T20:47:27+02:00",
-      "summary": "Apple's new Upgrade program is the latest sign that smartphone ownership is changing.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "f5f3e063d252671e",
-      "title": "China’s EV Market Is Booming. There’s Just One Problem",
-      "url": "https://www.wired.com/story/china-millions-of-evs-battery-recycling/",
-      "source": "Wired",
-      "published": "2026-08-01T13:00:00+02:00",
-      "summary": "More EVs reaching the end of their life means more batteries to recycle. But waste management companies have yet to catch up to the new reality.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
