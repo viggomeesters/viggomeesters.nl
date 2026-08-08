@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T07:05:53+02:00",
+  "generatedAt": "2026-08-08T07:05:19+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 64,
+  "usefulOpen": 67,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -298,6 +298,98 @@
         "risk": 0
       },
       "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "ac516377a36495cb",
+      "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
+      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-07T19:18:09+00:00",
+      "summary": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra) On Wednesday I wrote about One-shotting a Raccoon Heist game using Claude Fable 5 , where I had Claude Fable 5 build a full working game from a premise I generated with GPT-3 and DALL-E four years ago . I decided to pose the exact same prompt to Codex Desktop running GPT-5.6 Sol Ultra - the mode",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude",
+          "gpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "8d2dd74f835a814c",
+      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "source": "TechCrunch",
+      "published": "2026-08-07T18:16:09+02:00",
+      "summary": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
+      "areas": [
+        "ai-agents",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "enterprise-ai": [
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "b7d2981f9d572cb8",
+      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+      "url": "https://openai.com/index/hsp-gruppe",
+      "source": "OpenAI News",
+      "published": "2026-08-07T11:00:00+02:00",
+      "summary": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -607,6 +699,36 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "db0b7333333d96bd",
+      "title": "Responding to the next frontier of critical cyber capabilities",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "source": "OpenAI News",
+      "published": "2026-08-07T17:20:00+02:00",
+      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "07a8d570c9d7773f",
       "title": "datasette 1.0a38",
       "url": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
@@ -753,41 +875,6 @@
         "risk": 1
       },
       "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "0f3e9797b950880b",
-      "title": "Anthropic’s AI used fake identities, malware in rogue attack on GitHub project",
-      "url": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project/",
-      "source": "Ars Technica",
-      "published": "2026-08-05T22:47:11+02:00",
-      "summary": "Anthropic and OpenAI models’ unprompted actions forced halt to UK cyber tests.",
-      "areas": [
-        "developer-tools",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "developer-tools": [
-          "github"
-        ],
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -985,12 +1072,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a2e9b5fda30614f5",
-      "title": "Safety and alignment in an era of long-horizon models",
-      "url": "https://openai.com/index/safety-alignment-long-horizon-models",
-      "source": "OpenAI News",
-      "published": "2026-07-20T12:00:00+02:00",
-      "summary": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment.",
+      "id": "afa2dae1e4e834ae",
+      "title": "OpenAI says it slowed Astra model development over security concerns",
+      "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+      "source": "TechCrunch",
+      "published": "2026-08-08T00:48:24+02:00",
+      "summary": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
       "areas": [
         "models",
         "privacy-risk"
@@ -1000,17 +1087,79 @@
           "openai"
         ],
         "privacy-risk": [
-          "safety"
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "4e205626368a5023",
+      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-07T23:55:58+00:00",
+      "summary": "OpenAI gave a last-minute presentation at the Black Hat security on Wednesday about \"the Hugging Face Incident\" ( previously on this blog). The video was published yesterday. It's short and information dense and well worth watching, in particular because it provides full details of what happened and how things played out inside OpenAI. I've used the video to",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "security",
+          "attack"
         ]
       },
       "scores": {
         "relevance": 3,
         "leverage": 1,
         "novelty": 4,
-        "urgency": 2,
+        "urgency": 4,
+        "risk": 2
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "9db48e05c0c71733",
+      "title": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
+      "source": "The Verge",
+      "published": "2026-08-07T14:40:34-04:00",
+      "summary": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have also since admitted that they had AI models that went rogue […",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
         "risk": 1
       },
-      "priority": 80,
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1039,33 +1188,6 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e03b54056feb5d22",
-      "title": "Cloudflare open-sources vibe-coding platform for people who aren't coders",
-      "url": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders/",
-      "source": "Ars Technica",
-      "published": "2026-08-06T18:15:30+02:00",
-      "summary": "Cloudflare built an AI agent workspace for its employees. Now it’s open source.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
       },
       "priority": 78,
       "action": "Watch",
@@ -1314,32 +1436,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7e72e27b01126385",
-      "title": "datasette-agent 0.4a0",
-      "url": "https://simonwillison.net/2026/Jul/31/datasette-agent/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-31T14:14:23+00:00",
-      "summary": "Release: datasette-agent 0.4a0 New await context.browser_task() mechanism allowing agent tools to run code directly in the user's browser. #33 This is an exciting new capability: it makes it easy for Datasette Agent plugins to provide tools that execute custom JavaScript in the user's browser . I used this to add a debug loop to Datasette Apps in datasette-a",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "debug"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "e3cac7a47d8a17a0",
       "title": "How AI is expanding what people do at work",
       "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
@@ -1367,19 +1463,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "8522b90b7475e03c",
-      "title": "Why Normal People Aren’t Using AI Agents",
-      "url": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/",
-      "source": "Wired",
-      "published": "2026-08-06T21:55:45+02:00",
-      "summary": "The tech industry is realizing it needs to build agents based on what regular consumers want, not just what its AI models can do.",
+      "id": "ec574b1bcd7da8a9",
+      "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
+      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-07T16:18:51+00:00",
+      "summary": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI There's a fun anecdote from Accenture (apparently via leaked meeting audio recordings) in this 404 Media piece from June 24th: “We’re seeing from some of the data internally at least that it’s actually not our engineers that are driving the token consumption. It’s a lot of th",
       "areas": [
-        "ai-agents"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1394,19 +1489,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2346eeb21cea5a25",
-      "title": "Humans missed 1 in 3 threats approving AI agent commands across 40k game runs",
-      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/",
-      "source": "Hacker News",
-      "published": "2026-08-06T13:58:07+02:00",
-      "summary": "Comments",
+      "id": "8522b90b7475e03c",
+      "title": "Why Normal People Aren’t Using AI Agents",
+      "url": "https://www.wired.com/story/why-normal-people-arent-using-ai-agents/",
+      "source": "Wired",
+      "published": "2026-08-06T21:55:45+02:00",
+      "summary": "The tech industry is realizing it needs to build agents based on what regular consumers want, not just what its AI models can do.",
       "areas": [
         "ai-agents"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "ai agent",
-          "agent"
+          "ai agents",
+          "agents"
         ]
       },
       "scores": {
@@ -1821,28 +1916,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "63f237e2125e1d65",
-      "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
-      "url": "https://openai.com/index/david-velez-robin-vince-join-openai-boards",
-      "source": "OpenAI News",
-      "published": "2026-07-21T02:00:00+02:00",
-      "summary": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC, bringing global leadership in finance, technology, and governance.",
+      "id": "e1b89b2f61e6dc59",
+      "title": "AI chatbots have failed people in crisis. Can that be fixed?",
+      "url": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
+      "source": "Ars Technica",
+      "published": "2026-08-07T15:49:37+02:00",
+      "summary": "Clinicians and researchers say AI companies need to open up their safety data.",
       "areas": [
-        "models"
+        "data-platforms",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 74,
+      "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1878,6 +1977,63 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "a47dad85f5f90c23",
+      "title": "Computer maker Framework notifies ‘all customers’ of a data breach",
+      "url": "https://techcrunch.com/2026/08/07/computer-maker-framework-notifies-all-customers-of-a-data-breach/",
+      "source": "TechCrunch",
+      "published": "2026-08-07T18:09:04+02:00",
+      "summary": "Framework told \"all\" of its customers that hackers accessed their names, email addresses, phone numbers, and physical addresses in a data breach.",
+      "areas": [
+        "data-platforms",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 2
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b69629eb84bcbca5",
+      "title": "What’s behind the Google AI shake-up",
+      "url": "https://www.theverge.com/podcast/976784/google-deepmind-ai-race-vergecast",
+      "source": "The Verge",
+      "published": "2026-08-07T12:45:14-04:00",
+      "summary": "Some of the biggest names on Google's AI team got new jobs this week. In some cases, including for legendary Googler Jeff Dean, those jobs are no longer at Google. Given that Google's models seem to be behind the best of what's coming out of anthropic and OpenAI, is this a sign of Google in […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "18563366d6806aef",
       "title": "OpenAI’s new AI smart speaker will reportedly sell for between $300 and $400",
       "url": "https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/",
@@ -1904,70 +2060,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "1b97c2fc7f2c3feb",
-      "title": "ChatGPT brings unlimited text chats to free users",
-      "url": "https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/",
-      "source": "TechCrunch",
-      "published": "2026-08-06T19:34:42+02:00",
-      "summary": "OpenAI said that ChatGPT free and Go users are also getting a new think button for complex queries.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "43d9f161f078d0e7",
-      "title": "OpenAI says Apple’s own security practices undermine its trade secrets case",
-      "url": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/",
-      "source": "TechCrunch",
-      "published": "2026-08-06T17:10:32+02:00",
-      "summary": "Newly filed court exhibits show OpenAI’s legal strategy in Apple’s trade secrets lawsuit: argue that Apple’s own security and offboarding practices — including allowing an Apple manager to access a former engineer’s iCloud account after he left the company —undermine its claims that the allegedly stolen information was properly protected.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "security",
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5722b4b9b1fc28f6",
-      "title": "Jony Ive’s first OpenAI gadget is reportedly a hockey puck-sized smart speaker",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/976431/openai-chatgpt-battery-smart-speaker-rumor",
-      "source": "The Verge",
-      "published": "2026-08-06T16:55:39-04:00",
-      "summary": "The AI device OpenAI is developing with former Apple designer Jony Ive is \"essentially a smart speaker without a display\" that's battery-powered, doughnut-shaped and roughly the size of a hockey puck, according to Bloomberg reporter Mark Gurman. The device, expected to launch in 2027 for a price over $300, reportedly \"will have a unique look, […]",
+      "id": "6a3ea4789a8fbbde",
+      "title": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
+      "url": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+      "source": "Ars Technica",
+      "published": "2026-08-07T19:36:22+02:00",
+      "summary": "Gurman report claims OpenAI confirmed the speaker is not an Apple ripoff.",
       "areas": [
         "models"
       ],
@@ -1979,28 +2077,105 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "517b9706bc3b2204",
-      "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
-      "url": "https://www.aleksagordic.com/blog/vllm",
+      "id": "edabd2c50615e419",
+      "title": "ByteDance trains massive AI model in bid to rival Anthropic",
+      "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
+      "source": "Ars Technica",
+      "published": "2026-08-07T15:29:22+02:00",
+      "summary": "TikTok owner training a model with 10 trillion parameters.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "dfd13dc67e51cd69",
+      "title": "Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD",
+      "url": "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/",
       "source": "Hacker News",
-      "published": "2026-08-06T23:30:21+02:00",
+      "published": "2026-08-07T13:00:35+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "analytics"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2fb61d9132241de2",
+      "title": "Some ways to navigate through 'git blame' over time in GNU Emacs",
+      "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/EmacsGitBlameOverTime",
+      "source": "Lobsters",
+      "published": "2026-08-07T10:25:17+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b6c8b7b3ab531187",
+      "title": "I'm leaving OpenAI to build Jurassic Park",
+      "url": "https://taylor.town/leaving-openai",
+      "source": "Lobsters",
+      "published": "2026-08-07T06:26:26+02:00",
       "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "llm",
-          "inference"
+          "openai"
         ]
       },
       "scores": {
@@ -2095,85 +2270,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "a599798808a40fe1",
-      "title": "Improving GPT‑5.6 Sol in ChatGPT, expanding GPT‑5.6 Luna access for free users",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/",
-      "source": "Hacker News",
-      "published": "2026-08-06T19:02:04+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5988b0c2127a78b8",
-      "title": "Hacker pleads guilty to stealing data from more than 165 Snowflake customers",
-      "url": "https://techcrunch.com/2026/08/06/hacker-pleads-guilty-to-stealing-data-from-more-than-165-snowflake-customers/",
-      "source": "TechCrunch",
-      "published": "2026-08-06T18:42:40+02:00",
-      "summary": "Connor Moucka pled guilty to hacking and stealing data from more than 165 Snowflake customers, which net him and his accomplices more than $2.5 million in ransom payments.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1d2301e246328023",
-      "title": "DeepMind Says Its AI Can Predict Hurricanes Earlier Than Everyone Else",
-      "url": "https://www.wired.com/story/deepmind-ai-model-can-predict-hurricanes-earlier/",
-      "source": "Wired",
-      "published": "2026-08-06T18:23:04+02:00",
-      "summary": "Its WeatherNext model, which will be open-sourced, can accurately predict a storm’s track and intensity using lower-resolution weather data. Researchers don’t yet fully understand how it does this.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "7ab56344817f0a88",
       "title": "datasette 0.65.3",
       "url": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
@@ -2198,137 +2294,6 @@
       "priority": 66,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "3e037eb8090d6dce",
-      "title": "GitHub Actions and Pages are experiencing degraded availability",
-      "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
-      "source": "Hacker News",
-      "published": "2026-08-06T17:49:38+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "118c8de3744fd739",
-      "title": "OpenAI is giving ChatGPT free users unlimited text chats",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/976239/openai-chatgpt-free-go-text-chats",
-      "source": "The Verge",
-      "published": "2026-08-06T13:00:00-04:00",
-      "summary": "OpenAI is making a big change for ChatGPT users on its free and Go tiers: Starting next week, users on those tiers will be able to have unlimited text chats with the chatbot, according to OpenAI. Right now, you may run into rate limits if you do too many text chats on those tiers, but […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5c0466167622d6cc",
-      "title": "Two Fossil Fuel Companies Are Betting Big on Data Centers",
-      "url": "https://www.wired.com/story/chevron-williams-driving-data-center-boom/",
-      "source": "Wired",
-      "published": "2026-08-06T12:30:00+02:00",
-      "summary": "Chevron and Williams are big winners in the race to power artificial intelligence as they build out gas-fired power plants and pipelines.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1e798d73a2fed31e",
-      "title": "SoftBank donated $50 million to Trump’s library months before federal data center deal",
-      "url": "https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio",
-      "source": "The Verge",
-      "published": "2026-08-06T10:30:00-04:00",
-      "summary": "SoftBank contributed $50 million to the Trump Presidential Library in January, just months before announcing that it's leasing land from the federal government to build a sprawling data center in Ohio. The Japanese company revealed the timing in response to a June letter from Sen. Elizabeth Warren (D-MA), Sen. Richard Blumenthal (D-CT), and Rep. Melanie […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "81bc5a755869626c",
-      "title": "rust-lang/rust is adopting an LLM policy",
-      "url": "https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/",
-      "source": "Lobsters",
-      "published": "2026-08-05T08:55:36+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "49819dd5fdb9298c",
@@ -2383,30 +2348,30 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "067ea7c69cab309a",
-      "title": "Microsoft’s Quantum Chief Doesn’t Care That Scientists Don’t Believe His Results",
-      "url": "https://www.wired.com/story/microsoft-quantum-chief-majorana-results/",
-      "source": "Wired",
-      "published": "2026-08-06T13:00:00+02:00",
-      "summary": "Zulfi Alam thinks his team doesn’t need to “prove” they engineered a new state of matter in their bid to reinvent computing. Science would disagree.",
+      "id": "d42bca50d313d2b6",
+      "title": "SpaceX’s Terafab will rely on natural gas power plants, not Tesla solar panels",
+      "url": "https://techcrunch.com/2026/08/07/spacexs-terafab-will-rely-on-natural-gas-power-plants-not-tesla-solar-panels/",
+      "source": "TechCrunch",
+      "published": "2026-08-07T16:07:31+02:00",
+      "summary": "The fab is intended to build chips for data centers that will be run by SpaceX and its xAI subsidiary.",
       "areas": [
-        "enterprise-ai"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
-        "relevance": 1,
+        "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 60,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
+      "priority": 58,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "6cbbc59925308962",
@@ -2469,42 +2434,54 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "7ff48e3687cd6fc6",
-      "title": "smevals - a small eval suite for evaluating models, prompts, and harnesses",
-      "url": "https://simonwillison.net/2026/Jul/31/smevals/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-31T21:15:23+00:00",
-      "summary": "smevals - a small eval suite for evaluating models, prompts, and harnesses I've been working with Jesse Vincent's Prime Radiant applied AI research lab building out this evals framework to help answer questions about the capabilities of different models. The result is smevals , a new tool for running small eval suites across different model configurations an",
-      "areas": [],
-      "matchedKeywords": {},
+      "id": "ae51674ea57efab0",
+      "title": "Microsoft Edge is about to lock out older ad blockers, just like Chrome did",
+      "url": "https://www.theverge.com/tech/976880/microsoft-edge-extensions-ad-blockers-mv2-mv3",
+      "source": "The Verge",
+      "published": "2026-08-07T13:43:34-04:00",
+      "summary": "Microsoft Edge is ending support for the Manifest V2 extensions platform, which will cut off the uBlock Origin adblocker and others like it, just like Google Chrome did earlier this year. According to Microsoft, there are only 58 extensions on the Edge Add-On Store \"with any meaningful usage\" that still use MV2, and only three […]",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
       "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 58,
+      "priority": 56,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "3209ac5431618af0",
-      "title": "Slack Emoji Maker",
-      "url": "https://simonwillison.net/2026/Jul/31/slack-emoji-maker/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-07-31T20:18:05+00:00",
-      "summary": "Tool: Slack Emoji Maker I wanted to create a new Slack emoji, and their tool recommends a square that's 128x128 and has a transparent background... so I had Fable build me this simple image editor against those requirements. Tags: tools , slack",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+      "id": "1625023b1ec1d948",
+      "title": "Security researchers scanned the Polish web and found courts, hospitals, and airports at risk of hacks",
+      "url": "https://techcrunch.com/2026/08/07/security-researchers-scanned-the-polish-web-and-found-courts-hospitals-and-airports-at-risk-of-hacks/",
+      "source": "TechCrunch",
+      "published": "2026-08-07T23:00:08+02:00",
+      "summary": "Researchers found common points of failure, like software used to organize and display web content, could have allowed hackers to run riot through government websites.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
       },
-      "priority": 58,
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2531,6 +2508,58 @@
         "risk": 1
       },
       "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "6626c4c39367ccf2",
+      "title": "Hackers Stalked Me by Hijacking a Smartwatch for Kids",
+      "url": "https://www.wired.com/story/hackers-stalked-me-by-hijacking-a-smartwatch-for-kids/",
+      "source": "Wired",
+      "published": "2026-08-06T23:35:00+02:00",
+      "summary": "Security researchers tracked and eavesdropped on a WIRED reporter using vulnerabilities in a pink plastic smartwatch. It’s just one piece of a deeply insecure supply chain of GPS-enabled gadgets.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "982547650e0431d5",
+      "title": "Scientists Used AI to Create 16 New Viruses",
+      "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
+      "source": "Wired",
+      "published": "2026-08-07T16:13:57+02:00",
+      "summary": "The use of AI systems to create viruses opens up new possibilities for combating bacterial resistance. It also raises concerns about the pace at which technology is outstripping regulation.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "regulation"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 52,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
