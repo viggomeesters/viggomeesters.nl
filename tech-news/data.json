@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-11T07:05:51+02:00",
+  "generatedAt": "2026-08-12T07:05:46+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 62,
+  "usefulOpen": 60,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -32,6 +32,41 @@
   "retainedItems": 0,
   "errors": {},
   "items": [
+    {
+      "id": "ec7546818357cf6a",
+      "title": "Daybreak models are now available on AWS",
+      "url": "https://openai.com/index/daybreak-models-are-now-available-on-aws",
+      "source": "OpenAI News",
+      "published": "2026-08-11T12:00:00+02:00",
+      "summary": "OpenAI and AWS are making Daybreak cybersecurity capabilities available through Amazon Bedrock to support enterprise security workflows.",
+      "areas": [
+        "enterprise-ai",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "enterprise-ai": [
+          "enterprise",
+          "aws"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "ba078fe7dd8b7a5b",
       "title": "Using the GitHub Copilot SDK for Java",
@@ -155,37 +190,6 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 1
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "fdb70e9596f65723",
-      "title": "The harness is all you need (mostly)",
-      "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
-      "source": "GitHub Blog",
-      "published": "2026-07-27T20:00:00+02:00",
-      "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool. The post The harness is all you need (mostly) appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "copilot"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
       },
       "priority": 96,
       "action": "Read",
@@ -557,6 +561,33 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "c15f9917a7d844b4",
+      "title": "From coder to orchestrator: How agents shift the role of a developer",
+      "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+      "source": "GitHub Blog",
+      "published": "2026-08-11T20:38:17+02:00",
+      "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next. The post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "developer"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "db0b7333333d96bd",
       "title": "Responding to the next frontier of critical cyber capabilities",
       "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
@@ -680,33 +711,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "74344e01bfd7757a",
-      "title": "Scientific computing in the age of agentic AI",
-      "url": "https://openai.com/index/scientific-computing-agentic-ai",
-      "source": "OpenAI News",
-      "published": "2026-07-28T19:00:00+02:00",
-      "summary": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agents",
-          "agentic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "ae0e87c2f4b10aa9",
       "title": "Introducing Muse Code and Muse Spark 1.2",
       "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
@@ -790,30 +794,31 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "280b90a680786157",
-      "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-      "url": "https://cactuscompute.com/needle",
-      "source": "Hacker News",
-      "published": "2026-08-10T19:22:07+02:00",
-      "summary": "Comments",
+      "id": "e03d6d9dfc157c51",
+      "title": "Testing ads in ChatGPT",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "source": "OpenAI News",
+      "published": "2026-08-11T12:00:00+02:00",
+      "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
       "areas": [
-        "ai-agents",
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
         "models": [
-          "llm"
+          "openai",
+          "chatgpt"
+        ],
+        "privacy-risk": [
+          "privacy"
         ]
       },
       "scores": {
         "relevance": 3,
-        "leverage": 0,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
       "priority": 80,
       "action": "Watch",
@@ -903,36 +908,6 @@
         "risk": 1
       },
       "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5214199947bfa4b2",
-      "title": "A data breach at shipping giant Ceva Logistics is rippling across banks, retailers, Steam gamers, and beyond",
-      "url": "https://techcrunch.com/2026/08/10/a-data-breach-at-shipping-giant-ceva-logistics-is-rippling-across-banks-retailers-steam-gamers-and-beyond/",
-      "source": "TechCrunch",
-      "published": "2026-08-10T16:20:19+02:00",
-      "summary": "Companies that rely on Ceva Logistics for shipping their physical goods to customers say their personal data was taken during a recent cyberattack.",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1212,32 +1187,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "50f478775bcf6378",
-      "title": "condense-json 1.1",
-      "url": "https://simonwillison.net/2026/Aug/3/condense-json/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-08-03T04:56:26+00:00",
-      "summary": "Release: condense-json 1.1 After shipping condense-json 1.0 I started integrating it into LLM, and found there were some desirable new features already: Replacements object can now include values other than strings. These will be identified and used as structural replacements by condense_json() and uncondense_json() . #8 Objects can be used as the basis for ",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "5b965874fc94372d",
       "title": "Ten advances in mathematics and theoretical computer science",
       "url": "https://openai.com/index/ten-advances-in-mathematics",
@@ -1295,29 +1244,30 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "e3cac7a47d8a17a0",
-      "title": "How AI is expanding what people do at work",
-      "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
-      "source": "OpenAI News",
-      "published": "2026-07-27T05:30:00+02:00",
-      "summary": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
+      "id": "a637f9b8526bb764",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "source": "Simon Willison",
+      "published": "2026-08-11T22:40:45+00:00",
+      "summary": "Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models. We take a trace produced by a frontier model, replay it into a weaker sibling, jailbreak the weaker model",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
+          "llm",
           "openai",
-          "chatgpt"
+          "anthropic"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 1,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 78,
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1800,18 +1750,98 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ceeb995fad150672",
-      "title": "As AI-led attacks multiply, OpenAI launches a new cyber model",
-      "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
+      "id": "7b40368ccb6d600e",
+      "title": "Brad Lightcap, OpenAI’s longtime COO, is leaving to ‘start something new’",
+      "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
       "source": "TechCrunch",
-      "published": "2026-08-11T01:56:15+02:00",
-      "summary": "OpenAI is expanding its AI cybersecurity defense program Daybreak, and rolling out a new cyber-trained AI model with it.",
+      "published": "2026-08-11T19:41:34+02:00",
+      "summary": "One of OpenAI's longest-serving executives is headed out the door, although the longtime COO told staff that he was \"excited to help you all advance the mission from a different vantage point.\"",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "93f38667d668e308",
+      "title": "AI Could Help Fossil Fuel Companies Create More Emissions",
+      "url": "https://www.wired.com/story/ai-could-help-fossil-fuel-companies-create-more-emissions/",
+      "source": "Wired",
+      "published": "2026-08-11T15:45:02+02:00",
+      "summary": "New research finds that by making the fossil fuel industry more productive, AI could help increase carbon emissions by up to nearly 5 percent—vastly outpacing the impact of data centers.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2d98c90f52c73b2a",
+      "title": "Another OpenAI executive takes off",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
+      "source": "The Verge",
+      "published": "2026-08-11T13:50:01-04:00",
+      "summary": "Brad Lightcap, OpenAI's special projects lead and the company's former COO, announced his departure after an eight-year stint at the AI lab. In an internal memo he later posted to X, Lightcap told colleagues he'd be starting \"something new.\" \"Over the last few months, I've been focused on the next horizon and what would stand […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4f37c14ca99306e7",
+      "title": "A New Trick Reveals AI Models’ Inner Thoughts",
+      "url": "https://www.wired.com/story/a-new-trick-reveals-ai-models-inner-thoughts/",
+      "source": "Wired",
+      "published": "2026-08-11T13:00:00+02:00",
+      "summary": "Researchers devised a way to extract “reasoning traces” from Claude, GPT, and Gemini. What they found, they say, indicates that some Chinese AI may be trained on leading US models.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude",
+          "gpt",
+          "gemini"
         ]
       },
       "scores": {
@@ -1878,44 +1908,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "2a91e294a781d34e",
-      "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
-      "url": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
-      "source": "Ars Technica",
-      "published": "2026-08-08T13:05:50+02:00",
-      "summary": "Open source WeatherNext model can make accurate predictions with lower-resolution weather data.",
+      "id": "b4acf1972f3f31b5",
+      "title": "Who's Hiring? - Not-A-Coder Edition - Aug 2026",
+      "url": "https://lobste.rs/s/cnoaqr/who_s_hiring_not_coder_edition_aug_2026",
+      "source": "Lobsters",
+      "published": "2026-08-12T01:46:21+02:00",
+      "summary": "Welcome to the first official post of \"Who's Hiring? - Not-A-Coder Edition!\" This is a version of the original \"Who's Hiring?\" posts that targets roles other than Software Engineer such as customer support, data entry, field technician, technical writer, marketer, purchasers, heck, even sales can join the fun. The list is long, so we're not going to be too p",
       "areas": [
         "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1344f45b071e0a94",
-      "title": "H3-metal – Native MiniMax-H3 inference for Apple Silicon",
-      "url": "https://github.com/antirez/h3.c",
-      "source": "Hacker News",
-      "published": "2026-08-11T03:22:09+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "inference"
         ]
       },
       "scores": {
@@ -1930,12 +1934,275 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "cb53e65f6a23f5a9",
-      "title": "OpenAI reportedly completed a $7 billion employee tender offer",
-      "url": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/",
+      "id": "be0050c2c2555c62",
+      "title": "WorldClaw Agentic 3D open-world generation at scale",
+      "url": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/",
+      "source": "Hacker News",
+      "published": "2026-08-11T23:56:18+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agentic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "cf3908c06bca28bb",
+      "title": "Gemini becomes Google's fastest-growing product ever as it hits 1B users",
+      "url": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/",
+      "source": "Ars Technica",
+      "published": "2026-08-11T21:48:12+02:00",
+      "summary": "But will Gemini's surge survive slowing model releases?",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a2d725ca1e87887c",
+      "title": "OpenAI launches ChatGPT desktop app for Linux",
+      "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
       "source": "TechCrunch",
-      "published": "2026-08-11T02:03:18+02:00",
-      "summary": "San Francisco's housing market is in trouble again.",
+      "published": "2026-08-11T21:15:35+02:00",
+      "summary": "OpenAI is finally bringing a dedicated ChatGPT desktop app to Linux operating systems.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "dbaa4eceb6cc2ad0",
+      "title": "Google’s Gemini app surges to 1 billion users",
+      "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
+      "source": "TechCrunch",
+      "published": "2026-08-11T20:49:12+02:00",
+      "summary": "Google also shared numbers of how people are actually using the chatbot, with 63% of Gemini users talking directly to the assistant using the voice feature. Plus, Gemini now generates more than 150 million images every day, according to Google.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1320d4d2746f0183",
+      "title": "Saber denies replacing Rideshare Stimulator’s writers with ChatGPT",
+      "url": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
+      "source": "The Verge",
+      "published": "2026-08-11T20:39:26-04:00",
+      "summary": "After a former lead writer claimed Saber \"replaced me with ChatGPT,\" CEO Matthew Karch now claims, \"Neither Saber nor Unigine have replaced any writers with AI,\" for the Rideshare \"Stimulator\" game announced last month, developed by Unigine. The writer, Stella Sacco, says differently, however, posting on Bluesky that \"I was lead writer on this one! […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "190eb782bafbc100",
+      "title": "An unreleased Anthropic model made progress on one of math’s biggest unsolved problems",
+      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+      "source": "TechCrunch",
+      "published": "2026-08-11T18:25:20+02:00",
+      "summary": "For more than 150 years, the Riemann hypothesis has stood as one of the major unsolved problems in mathematics. Anthropic hasn't solved it — but the company's models made more progress than you might expect.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "00707efb32ed3be1",
+      "title": "FlightAware sues Kalshi over flight cancellation prediction markets",
+      "url": "https://techcrunch.com/2026/08/11/flightaware-sues-kalshi-over-flight-cancellation-prediction-markets/",
+      "source": "TechCrunch",
+      "published": "2026-08-11T17:23:58+02:00",
+      "summary": "FlightAware says that Kalshi used its name and data to offer bets on flight cancellations without the flight tracker's permission.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9df4abb1cb1e5ea7",
+      "title": "Show HN: Git-knife – Edit commit messages, authors, and dates like a spreadsheet",
+      "url": "https://github.com/TheRealYT/git-knife",
+      "source": "Hacker News",
+      "published": "2026-08-11T17:09:34+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0a12b8e16694ebaf",
+      "title": "ChatGPT and Gemini both just passed 1 billion users",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
+      "source": "The Verge",
+      "published": "2026-08-11T15:41:42-04:00",
+      "summary": "For the 14th time, a Google product has hit 1 billion users. Google CEO Sundar Pichai posted on X that a billion people are using Gemini every month, and that Gemini is Google's fastest-growing product ever. A billion users is a huge milestone, but Google isn't the first AI app to hit it. OpenAI's ChatGPT […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "chatgpt",
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0ed08d77e68783bc",
+      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+      "url": "https://stolen-thoughts.com/",
+      "source": "Hacker News",
+      "published": "2026-08-11T15:22:00+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1193ffcd4a041f80",
+      "title": "OpenAI’s head of ethics leaves less than a year after joining",
+      "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
+      "source": "Hacker News",
+      "published": "2026-08-11T14:23:07+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
@@ -1982,84 +2249,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "786cee402efe92ba",
-      "title": "Tech industry is buzzing after a Claude agent hacked into a gym",
-      "url": "https://techcrunch.com/2026/08/10/tech-industry-is-buzzing-after-a-claude-agent-hacked-into-a-gym/",
-      "source": "TechCrunch",
-      "published": "2026-08-10T22:04:24+02:00",
-      "summary": "An OpenClaw agent hacked into a gym's reservation system to bump its human boss higher on a class' waitlist. And the tech industry took notice.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "7e8516166c1a5e43",
-      "title": "What's the best programming language for coding agents?",
-      "url": "http://danluu.com/pl-tokens/",
-      "source": "Hacker News",
-      "published": "2026-08-10T18:28:58+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "b1da4c64d9bdde31",
-      "title": "Humanising LLM Outputs Is Dumb",
-      "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
-      "source": "Hacker News",
-      "published": "2026-08-10T15:35:40+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "2444a9959ebb546b",
       "title": "GitHub Actions needs OIDC audience constraints",
       "url": "https://blog.yossarian.net/2026/08/10/github-actions-needs-oidc-audience-constraints",
@@ -2072,85 +2261,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "f80cd3b0998f11e2",
-      "title": "Fast Haskell Scripts on GitHub Actions",
-      "url": "https://abhinavsarkar.net/posts/fast-haskell-scripts-on-github-actions/",
-      "source": "Lobsters",
-      "published": "2026-08-10T13:21:36+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "427c54737814d656",
-      "title": "Muse Glimmer: 30B-parameter model optimized for always-on local agent workflows",
-      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
-      "source": "Hacker News",
-      "published": "2026-08-10T12:10:02+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "578ea5a0412b64ff",
-      "title": "Anthropic is turning Claude Code’s auto mode on by default",
-      "url": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/",
-      "source": "TechCrunch",
-      "published": "2026-08-09T21:20:32+02:00",
-      "summary": "Programming with Claude Code will soon require even less human oversight.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
         ]
       },
       "scores": {
@@ -2191,12 +2301,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "6d97d1c2834da570",
-      "title": "Quoting OpenClaw",
+      "id": "70edc70865800a75",
+      "title": "Quoting OpenClaw (running Opus 4.6)",
       "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
       "source": "Simon Willison",
       "published": "2026-08-10T02:05:16+00:00",
-      "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already. — OpenClaw , hacking an Australian gym-booking website Tags: ai-ethics , generative-ai , openclaw , ai , ai-security-research , llms",
+      "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already. — OpenClaw (running Opus 4.6) , hacking an Australian gym-booking website Tags: ai-ethics , generative-ai , openclaw , ai , ai-security-research , llms",
       "areas": [
         "privacy-risk"
       ],
@@ -2283,38 +2393,17 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "ea4c19c3b2d61048",
-      "title": "condense-json 1.0",
-      "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-08-02T22:19:59+00:00",
-      "summary": "Release: condense-json 1.0 I'm trying to get braver at releasing 1.0 versions. This little library is a year and a half old now - I've applied some sensible and non-disruptive fixes and shipped the big 1.0 for it. Here's an example of what it can do, lifted from the README: { \"foo\" : { \"bar\" : { \"string\" : \" This is a string with foxes in it \" , \"nested\" : {",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 58,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "872f9c625a6e2d6f",
-      "title": "Microsoft Responds to Outcry After Quiet Enterprise Install of Beta 'Photos' App",
-      "url": "https://www.neowin.net/news/windows-11-admins-unhappy-as-microsoft-found-installing-unexpected-new-onedrive-photos-app/",
-      "source": "Hacker News",
-      "published": "2026-08-11T06:18:37+02:00",
-      "summary": "Comments",
+      "id": "8340ef17b87337fa",
+      "title": "Xbox Elite 3 prototype pad leaks with tiny built-in screen",
+      "url": "https://www.theverge.com/games/978374/xbox-elite-3-prototype-pad-leaks-with-tiny-built-in-screen",
+      "source": "The Verge",
+      "published": "2026-08-11T18:36:35-04:00",
+      "summary": "Did a prototype Microsoft gamepad fall off the back of a truck? We can't say, but a Redditor has legit-looking photos of a prototype Xbox controller that's almost certainly the Xbox Elite Series 3. Incredibly, they claim they bought the pad for $200 on OfferUp. In May, a Brazilian regulator's leaked images revealed that Xbox […]",
       "areas": [
         "enterprise-ai"
       ],
       "matchedKeywords": {
         "enterprise-ai": [
-          "enterprise",
           "microsoft"
         ]
       },
@@ -2330,18 +2419,18 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "a897d6c7bb530421",
-      "title": "Signed up for Klaviyo? Dozens of advertisers may have seen your password",
-      "url": "https://techcrunch.com/2026/08/10/signed-up-for-klaviyo-dozens-of-advertisers-may-have-seen-your-password/",
-      "source": "TechCrunch",
-      "published": "2026-08-10T16:14:43+02:00",
-      "summary": "A bug in the tech giant's website the logo of US marketing automation company Klaviyo Inc. is seen displayed on a smartphone in front of an abstract background on a computer screen..",
+      "id": "3b9ac5849f3683a0",
+      "title": "msword: Port of Microsoft Word 1.1a to x64",
+      "url": "https://github.com/jmarshall23/msword",
+      "source": "Lobsters",
+      "published": "2026-08-11T16:20:29+02:00",
+      "summary": "Comments",
       "areas": [
         "enterprise-ai"
       ],
       "matchedKeywords": {
         "enterprise-ai": [
-          "automation"
+          "microsoft"
         ]
       },
       "scores": {
@@ -2356,12 +2445,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "01c8e690deecd5b0",
-      "title": "Now Rippling is counter-suing tiny startup Runlayer",
-      "url": "https://techcrunch.com/2026/08/10/now-rippling-is-counter-suing-tiny-startup-runlayer/",
-      "source": "TechCrunch",
-      "published": "2026-08-11T00:26:54+02:00",
-      "summary": "This lawsuit follows one filed last month by Runlayer that accused Rippling of stealing its product ideas. It's a seller- and buyer-beware market warning.",
+      "id": "83f7ac0a08f96291",
+      "title": "Meta can't stop states' $1.4 trillion lawsuit from going to trial",
+      "url": "https://arstechnica.com/tech-policy/2026/08/meta-cant-stop-states-1-4-trillion-lawsuit-from-going-to-trial/",
+      "source": "Ars Technica",
+      "published": "2026-08-11T22:27:16+02:00",
+      "summary": "Judges tell Meta that Section 230 provides a defense, not immunity from lawsuits.",
       "areas": [
         "privacy-risk"
       ],
@@ -2382,98 +2471,38 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "ba492d1236784bfa",
-      "title": "Archer buys former rival Wisk Aero",
-      "url": "https://techcrunch.com/2026/08/10/archer-buys-former-rival-wisk-aero/",
-      "source": "TechCrunch",
-      "published": "2026-08-10T17:09:39+02:00",
-      "summary": "The two companies were once embroiled in a trade secret theft lawsuit. Now, Wisk is being absorbed into Archer.",
+      "id": "222a51af5698c0b3",
+      "title": "New Pass-ta-key attack reveals all the things we didn't know about passkeys",
+      "url": "https://arstechnica.com/security/2026/08/heres-why-the-new-pass-ta-key-attack-is-mostly-a-nothingburger/",
+      "source": "Ars Technica",
+      "published": "2026-08-11T13:30:08+02:00",
+      "summary": "Why passkey apps treat Windows differently than other operating systems.",
       "areas": [
         "privacy-risk"
       ],
       "matchedKeywords": {
         "privacy-risk": [
-          "lawsuit"
+          "attack"
         ]
       },
       "scores": {
         "relevance": 1,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
+        "novelty": 4,
+        "urgency": 2,
         "risk": 1
       },
-      "priority": 54,
+      "priority": 52,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "f74d37881d683a4b",
-      "title": "Best Buy Discount Codes: Up to 60% Off",
-      "url": "https://www.wired.com/story/best-buy-discount-code/",
-      "source": "Wired",
-      "published": "2026-08-11T07:00:00+02:00",
-      "summary": "Find the latest Best Buy promo codes and offers, including 10% back in rewards for new cardmembers and free 2-day shipping with My Best Buy Plus, here at WIRED.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "f3b5ab29af84bb3f",
-      "title": "With new open models, Meta pitches another reboot of its struggling AI strategy",
-      "url": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/",
-      "source": "Ars Technica",
-      "published": "2026-08-11T00:13:03+02:00",
-      "summary": "Meta has been trailing competitors. Zuckerberg thinks he's found a way forward.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "bd8e4bdc0d725d90",
-      "title": "AI professors are negotiating the new realities of academic research",
-      "url": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research/",
-      "source": "MIT Technology Review",
-      "published": "2026-08-10T22:00:00+02:00",
-      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Last week, I headed 30 miles south of San Francisco to a hotel in Mountain View, California, to join some of the most accomplished, and some of the most promising, AI…",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "b85c2da53cc1ff69",
-      "title": "Has Ford got cheap car fever? A $25K crossover is supposedly on the way.",
-      "url": "https://arstechnica.com/cars/2026/08/has-ford-got-cheap-car-fever-allegedly-a-25k-crossover-is-on-the-way/",
-      "source": "Ars Technica",
-      "published": "2026-08-10T19:07:47+02:00",
-      "summary": "Ford dealers were told about the new Escape-sized model; one of them spilled the beans.",
+      "id": "7c02363a349c6fa6",
+      "title": "India’s Yulu raises $93M as quick-commerce boom fuels e-bike demand",
+      "url": "https://techcrunch.com/2026/08/11/indias-yulu-raises-93m-as-quick-commerce-boom-fuels-e-bike-demand/",
+      "source": "TechCrunch",
+      "published": "2026-08-12T06:30:00+02:00",
+      "summary": "Yulu aims to have a fleet of 200,000 bikes in the next two years and faster electric two-wheelers, aiming at new logistics use cases.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
