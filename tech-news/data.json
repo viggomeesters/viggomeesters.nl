@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-12T07:05:46+02:00",
+  "generatedAt": "2026-08-13T07:05:58+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 60,
+  "usefulOpen": 69,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -32,6 +32,77 @@
   "retainedItems": 0,
   "errors": {},
   "items": [
+    {
+      "id": "fc4486192507e01f",
+      "title": "alchemy-utils 0.1a0",
+      "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+      "source": "Simon Willison",
+      "published": "2026-08-12T19:51:30+00:00",
+      "summary": "Release: alchemy-utils 0.1a0 I've long pondered what a database agnostic version of my sqlite-utils Python library and CLI utility might look like. This morning (literally a shower project) I tasked Codex and GPT-5.6 Sol Ultra with building a prototype: Do a research spike to see what it would take to build a library with the same core API as SQLite-utils - ",
+      "areas": [
+        "data-platforms",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ],
+        "developer-tools": [
+          "cli",
+          "codex"
+        ],
+        "data-platforms": [
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 3,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "410a1eefd110e233",
+      "title": "From assistance to execution: How enterprises put AI to work",
+      "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+      "source": "OpenAI News",
+      "published": "2026-08-12T08:00:00+02:00",
+      "summary": "OpenAI research reveals how enterprises are adopting agentic AI, using ChatGPT and Codex, and how frontier firms are pulling ahead in AI adoption.",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agentic"
+        ],
+        "models": [
+          "openai",
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "ec7546818357cf6a",
       "title": "Daybreak models are now available on AWS",
@@ -162,43 +233,101 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "668f9487b3438ab6",
-      "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
-      "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
-      "source": "GitHub Blog",
-      "published": "2026-07-29T18:00:00+02:00",
-      "summary": "Dependabot keeps your dependencies current, but its defaults can flood your repository with pull requests. Here's how grouping updates, slowing the cadence, and keeping security fixes fast cut the noise on a Microsoft open source project. The post Tame Dependabot: Group your updates, slow the cadence, keep security fast appeared first on The GitHub Blog .",
+      "id": "53c444af7415adba",
+      "title": "Scaling AI agents with trustworthy data",
+      "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-12T18:51:57+02:00",
+      "summary": "Business and technology leaders need no convincing that the time of agentic AI is here. Organizations are rapidly adopting agents, and few executives doubt the technology’s potential to transform work. But many organizations find that realizing the desired return on investment (ROI) from AI hinges on having the right foundation, with inadequate infrastructur",
       "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
+        "ai-agents",
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github"
+        "ai-agents": [
+          "ai agents",
+          "agents",
+          "agentic"
         ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "security"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
-        "relevance": 4,
+        "relevance": 3,
         "leverage": 1,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 96,
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "74e4b6dff2703fd5",
+      "id": "59f8c55d8a696e21",
+      "title": "Quoting Florian Herrengt",
+      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
+      "source": "Simon Willison",
+      "published": "2026-08-12T15:08:47+00:00",
+      "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from?\" \"Hmm... actually I don't know. Let me ask Claude.\" You sit next to each other",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "96e73a81c0f23f36",
+      "title": "How RingCentral builds AI-native work from engineering to ops",
+      "url": "https://openai.com/index/ringcentral",
+      "source": "OpenAI News",
+      "published": "2026-08-12T02:00:00+02:00",
+      "summary": "See how RingCentral uses ChatGPT Work and Codex to accelerate AI product development and centralize operational intelligence across engineering and operations.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "2c034c9a44621b7f",
       "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
       "source": "Simon Willison",
       "published": "2026-08-10T23:56:03+00:00",
       "summary": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agentic Task Completion. Muse Glimmer achieves strong success rate",
@@ -287,9 +416,9 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "ac516377a36495cb",
+      "id": "c1ad420228f1021b",
       "title": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra)",
-      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/",
       "source": "Simon Willison",
       "published": "2026-08-07T19:18:09+00:00",
       "summary": "Moonlight & Mayhem (Raccoon Heist by Codex + GPT-5.6 Sol Ultra) On Wednesday I wrote about One-shotting a Raccoon Heist game using Claude Fable 5 , where I had Claude Fable 5 build a full working game from a premise I generated with GPT-3 and DALL-E four years ago . I decided to pose the exact same prompt to Codex Desktop running GPT-5.6 Sol Ultra - the mode",
@@ -379,9 +508,9 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "60ed3c15fa7cae92",
+      "id": "a528c91f514fa01c",
       "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/",
       "source": "Simon Willison",
       "published": "2026-08-04T23:58:24+00:00",
       "summary": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released a new version of the llm-ant",
@@ -530,37 +659,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "b5fa37a6db01b449",
-      "title": "How GPT-5.6 fuses frontier intelligence with frontier efficiency",
-      "url": "https://openai.com/index/gpt-5-6-frontier-intelligence-efficiency",
-      "source": "OpenAI News",
-      "published": "2026-07-29T02:00:00+02:00",
-      "summary": "GPT-5.6 improves AI efficiency across models, inference, and agentic workflows, helping deliver more useful intelligence per dollar.",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
-        "models": [
-          "gpt",
-          "inference"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "c15f9917a7d844b4",
       "title": "From coder to orchestrator: How agents shift the role of a developer",
       "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
@@ -574,6 +672,33 @@
         "developer-tools": [
           "github",
           "developer"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "76b6b22cd9ac210e",
+      "title": "datasette-upload-dbs 0.5a0",
+      "url": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
+      "source": "Simon Willison",
+      "published": "2026-08-11T20:35:13+00:00",
+      "summary": "Release: datasette-upload-dbs 0.5a0 This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point that database will start being served by that instance. It can also be used to atomically swap a database with a more recent version. The uploaded database is saved to a file, verified, ",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite",
+          "database"
         ]
       },
       "scores": {
@@ -618,9 +743,9 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "07a8d570c9d7773f",
+      "id": "d50d03a80409dcb3",
       "title": "datasette 1.0a38",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette/",
       "source": "Simon Willison",
       "published": "2026-08-06T18:24:34+00:00",
       "summary": "Release: datasette 1.0a38 This release fixes a SQL injection security issue that affects Datasette instances that serve a mixture of public and private tables in the same database, with access configured using the Datasette permissions system . Site administrators who serve private tables in this way are advised to disable the execute-sql permission ` on tha",
@@ -648,9 +773,9 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "b4b2e05d9f2c65a2",
+      "id": "22a5d4f11de82d71",
       "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
-      "url": "https://simonwillison.net/2026/Aug/5/incident-report/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/5/incident-report/",
       "source": "Simon Willison",
       "published": "2026-08-05T23:32:06+00:00",
       "summary": "Incident Report: unsanctioned agent behaviour during cyber testing It happened again . This time it was the UK government's AI Security Institute who accidentally attacked other companies while running an evaluation with models with the safety filters turned off. From their technical paper (PDF): During a cyber evaluation, from 25 to 28 July 2026, AI agents ",
@@ -711,9 +836,36 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "ae0e87c2f4b10aa9",
+      "id": "9dee01862d10145d",
+      "title": "Write your first prompt with the GitHub Copilot app",
+      "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/",
+      "source": "GitHub Blog",
+      "published": "2026-08-12T21:00:00+02:00",
+      "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence. The post Write your first prompt with the GitHub Copilot app appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "copilot"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "78435ebae4353caa",
       "title": "Introducing Muse Code and Muse Spark 1.2",
-      "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12/",
       "source": "Simon Willison",
       "published": "2026-08-05T23:58:35+00:00",
       "summary": "Introducing Muse Code and Muse Spark 1.2 Yet more evidence that the most important characteristic of any model these days is long-sequence agentic tool calling. Meta shipped their own coding agent as part of getting that to work! Muse Spark 1.2 is a coding-focused update to Muse Spark 1.1, with improvements in code generation, complex debugging, codebase und",
@@ -767,29 +919,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2eb35a80f5ea0b8a",
-      "title": "Stacked sessions and pull requests in the GitHub Copilot app",
-      "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
-      "source": "GitHub Blog",
-      "published": "2026-07-30T19:30:24+02:00",
-      "summary": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app. The post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog .",
+      "id": "1a10dc99a5f56082",
+      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
+      "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+      "source": "TechCrunch",
+      "published": "2026-08-12T19:41:29+02:00",
+      "summary": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
       "areas": [
-        "developer-tools"
+        "enterprise-ai",
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "copilot"
+        "models": [
+          "openai"
+        ],
+        "enterprise-ai": [
+          "enterprise"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 82,
+      "priority": 80,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -825,9 +980,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "99b33cf293aac6f1",
+      "id": "a8dcfa812697edfb",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/",
       "source": "Simon Willison",
       "published": "2026-08-08T14:06:41+00:00",
       "summary": "My comment on Now we have a timeline of the OpenAI accidental attack against Hugging Face — Hacker News. I think one of the most interesting details here might be tucked away in that first bulletin point: May 7: OpenAI starts a new training run for an experimental, unreleased model. (Do they mean an evaluation run? They say training run in the video, and lat",
@@ -882,32 +1037,59 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a7d799f3f771d53e",
-      "title": "Disrupting supply chain attacks on npm and GitHub Actions",
-      "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
-      "source": "GitHub Blog",
-      "published": "2026-07-28T18:00:00+02:00",
-      "summary": "Explore the changes we've shipped across npm and GitHub Actions over the past few months to disrupt supply chain attack techniques and limit their impact. The post Disrupting supply chain attacks on npm and GitHub Actions appeared first on The GitHub Blog .",
+      "id": "5c0edf88d4451ec6",
+      "title": "Uber Freight reportedly investigating after hacking group claims data breach",
+      "url": "https://techcrunch.com/2026/08/12/uber-freight-reportedly-investigating-after-hacking-group-claims-data-breach/",
+      "source": "TechCrunch",
+      "published": "2026-08-12T19:15:41+02:00",
+      "summary": "An extortion gang known for targeting transportation companies and private equity firms has taken credit for a breach at Uber Freight.",
       "areas": [
-        "developer-tools",
+        "data-platforms",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "github"
+        "data-platforms": [
+          "data"
         ],
         "privacy-risk": [
-          "attack"
+          "breach"
         ]
       },
       "scores": {
         "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "42be9f80c21b4833",
+      "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
+      "url": "https://discoveredmaterials.com/research/",
+      "source": "Hacker News",
+      "published": "2026-08-12T09:51:20+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
         "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 80,
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -944,9 +1126,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "cf32c3ee4e89d360",
+      "id": "2d9631afc4a6edcb",
       "title": "SQLite compressed text-history prototypes",
-      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/sqlite-text-history-prototype/",
       "source": "Simon Willison",
       "published": "2026-08-09T22:05:00+00:00",
       "summary": "Research: SQLite compressed text-history prototypes I'm perennially interested in options for storing revision histories in relational databases. While out on a dog walk I had a new idea: how about taking the full text of every prior version in a big JSON array of strings and then applying zlib or zstd compression to the whole thing? Surely that would compre",
@@ -970,9 +1152,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "94f3a40d586ac18f",
+      "id": "d388529755e21b7b",
       "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
-      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/8/auto-mode/",
       "source": "Simon Willison",
       "published": "2026-08-08T22:36:03+00:00",
       "summary": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans Anthropic are really confident in Claude Code's auto mode , to the point that they are making it the default setting for new sessions in most Claude Code plans starting on August 14th. This was one of the topics discussed in our Fireside Chat with Cat Wu and Thariq Shihipar at the AI En",
@@ -997,9 +1179,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "4e205626368a5023",
+      "id": "8a70038bdde1b969",
       "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
       "source": "Simon Willison",
       "published": "2026-08-07T23:55:58+00:00",
       "summary": "OpenAI gave a last-minute presentation at the Black Hat security on Wednesday about \"the Hugging Face Incident\" ( previously on this blog). The video was published yesterday. It's short and information dense and well worth watching, in particular because it provides full details of what happened and how things played out inside OpenAI. I've used the video to",
@@ -1028,9 +1210,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2f7689da39871d04",
+      "id": "11cb48f2e8b09b46",
       "title": "datasette-auth-tokens 0.4a13",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette-auth-tokens/",
       "source": "Simon Willison",
       "published": "2026-08-06T23:07:47+00:00",
       "summary": "Release: datasette-auth-tokens 0.4a13 Upgraded for compatibility with `sqlite-utils 4. Tags: datasette",
@@ -1081,9 +1263,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "89a07cfc9c8903a4",
+      "id": "354889fb5dd7df33",
       "title": "llm-anthropic 0.26",
-      "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/",
       "source": "Simon Willison",
       "published": "2026-08-04T22:00:58+00:00",
       "summary": "Release: llm-anthropic 0.26 Includes new features enabled by LLM 0.32 : New models: claude-fable-5 , claude-sonnet-5 , and claude-opus-5 . #75 , #76 Added server-side tools for WebSearch , WebFetch , CodeExecution , and AnthropicMCP , available through LLM's -T interface or Python tools= . The previous -o web_search* options have been removed in favor of -T ",
@@ -1135,9 +1317,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "499d7cfc3fa84c31",
+      "id": "b48c73903e6f7c74",
       "title": "llm 0.32",
-      "url": "https://simonwillison.net/2026/Aug/4/llm/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/4/llm/",
       "source": "Simon Willison",
       "published": "2026-08-04T17:15:33+00:00",
       "summary": "Release: llm 0.32 See my detailed blog post about this release . Tags: llm",
@@ -1147,32 +1329,6 @@
       "matchedKeywords": {
         "models": [
           "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "b204e16125cd01c4",
-      "title": "Quoting David Crawshaw's prompt",
-      "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-08-03T16:15:27+00:00",
-      "summary": "Set up a nightly cron job that executes the prompt: fetch upstream changes to the <software> and rebase all local changes on top of upstream. Check that the software works as intended and replace the current version. — David Crawshaw's prompt , Devtools must be open source Tags: prompt-engineering , coding-agents , generative-ai , ai , llms , open-source",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agents"
         ]
       },
       "scores": {
@@ -1244,9 +1400,115 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a637f9b8526bb764",
+      "id": "73c69dfbc994eac2",
+      "title": "GitHub availability report: July 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026/",
+      "source": "GitHub Blog",
+      "published": "2026-08-13T00:17:32+02:00",
+      "summary": "In July, we experienced eight incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: July 2026 appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "3cd52f9241a3fdb1",
+      "title": "Rogue AI Agents Aren’t Evil. They’re Just Eager to Please",
+      "url": "https://www.wired.com/story/rogue-ai-is-just-misunderstood/",
+      "source": "Wired",
+      "published": "2026-08-12T20:45:00+02:00",
+      "summary": "AI agents that break free and hack into other systems are only trying to make us happy.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "4916174156ef432c",
+      "title": "Your contributors are AI-first now. Is your project?",
+      "url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/",
+      "source": "GitHub Blog",
+      "published": "2026-08-12T20:00:08+02:00",
+      "summary": "AI contributors are already in your queue. AutoGPT maintainer Nicholas Tindle shares the repo instructions, gates, and boundaries that keep maintainers in control. The post Your contributors are AI-first now. Is your project? appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "0f548b9e1e799b18",
+      "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "source": "Hacker News",
+      "published": "2026-08-12T16:22:30+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "f612a79350fc0ee6",
       "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
       "source": "Simon Willison",
       "published": "2026-08-11T22:40:45+00:00",
       "summary": "Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models. We take a trace produced by a frontier model, replay it into a weaker sibling, jailbreak the weaker model",
@@ -1376,32 +1638,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "5e6223d44cced799",
-      "title": "Premium seats are coming to ChatGPT Business",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business",
-      "source": "OpenAI News",
-      "published": "2026-08-10T02:00:00+02:00",
-      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "055c2f63eaeb6da7",
       "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
       "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
@@ -1428,9 +1664,35 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "286606fafbd1f584",
+      "id": "5e6223d44cced799",
+      "title": "Premium seats are coming to ChatGPT Business",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business",
+      "source": "OpenAI News",
+      "published": "2026-08-10T02:00:00+02:00",
+      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "b9002c9dc1825836",
       "title": "Quoting Claude Opus 5 system prompt",
-      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/",
       "source": "Simon Willison",
       "published": "2026-08-09T23:31:39+00:00",
       "summary": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those controls on June 30, 2026, and Anthropic restored access on July 1, 2026 (Anthropic's statement: https://www.anthropic.com/news/fable-mythos",
@@ -1455,9 +1717,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "01c2a2786945ebb5",
+      "id": "be74520888967560",
       "title": "GitHub Models is now retired",
-      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/9/github-models-is-now-retired/",
       "source": "Simon Willison",
       "published": "2026-08-09T22:48:05+00:00",
       "summary": "GitHub Models is now retired I missed this news until today, when the GitHub Actions run for my simonw/research repository failed with this error message: GitHub Models is temporarily unavailable as part of a scheduled retirement brownout. That message is already stale, because the retirement has been completed. GitHub Models was an odd-shaped duck. GitHub p",
@@ -1481,9 +1743,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ec574b1bcd7da8a9",
+      "id": "865f23aed4a5da48",
       "title": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI",
-      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/",
       "source": "Simon Willison",
       "published": "2026-08-07T16:18:51+00:00",
       "summary": "The Tokenpocalypse Is Here: Companies Are Scrambling To Stop Spending So Much on AI There's a fun anecdote from Accenture (apparently via leaked meeting audio recordings) in this 404 Media piece from June 24th: “We’re seeing from some of the data internally at least that it’s actually not our engineers that are driving the token consumption. It’s a lot of th",
@@ -1533,9 +1795,9 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "cbf91ba71046877b",
+      "id": "4243028a05d2255a",
       "title": "One-shotting a Raccoon Heist game using Claude Fable 5",
-      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist/",
       "source": "Simon Willison",
       "published": "2026-08-05T19:42:38+00:00",
       "summary": "Back in 2022 I tweeted screenshots of a game concept generated by GPT-3 and some concept \"art\" created using DALL-E. Today, on the fourth anniversary of that tweet, I decided to see if Claude Fable 5 (running in Claude Code for web ) could build the entire game from the content of that tweet. It did a pretty good job of it! You can play the game here . Here'",
@@ -1692,36 +1954,39 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f52f1d258a2fdfc3",
-      "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
-      "url": "https://openai.com/index/chatgpt-for-academic-researchers",
-      "source": "OpenAI News",
-      "published": "2026-07-29T12:00:00+02:00",
-      "summary": "OpenAI is giving 100,000 academic researchers free access to ChatGPT's most advanced AI models to accelerate scientific research, collaboration, and discovery.",
+      "id": "c891b62b979369af",
+      "title": "Terabytes of credentials leaked in massive supply-chain attack",
+      "url": "https://arstechnica.com/security/2026/08/terabytes-of-credentials-leaked-in-massive-supply-chain-attack/",
+      "source": "Ars Technica",
+      "published": "2026-08-12T23:43:21+02:00",
+      "summary": "The data was scraped and exfiltrated from 2,500 users of a compromised AI package.",
       "areas": [
-        "models"
+        "data-platforms",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "attack"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 74,
+      "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c63f3f485eec9518",
+      "id": "4424b2de6c254e29",
       "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/",
       "source": "Simon Willison",
       "published": "2026-08-05T23:45:32+00:00",
       "summary": "Third-party cyber evaluations involving OpenAI models And another one . I had to create a accidental-cyberattacks tag to keep track of them all! This post from OpenAI covers both the UK AI Safety Institute attack (see my previous post ) and another attack enabled by Irregular : Irregular, one of our external cybersecurity testing partners, was running Captur",
@@ -1750,18 +2015,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7b40368ccb6d600e",
-      "title": "Brad Lightcap, OpenAI’s longtime COO, is leaving to ‘start something new’",
-      "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/",
+      "id": "177a052f00b6df4c",
+      "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
+      "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
       "source": "TechCrunch",
-      "published": "2026-08-11T19:41:34+02:00",
-      "summary": "One of OpenAI's longest-serving executives is headed out the door, although the longtime COO told staff that he was \"excited to help you all advance the mission from a different vantage point.\"",
+      "published": "2026-08-13T00:26:37+02:00",
+      "summary": "Is Anthropic's new watermarking system a travesty? Some have taken to social media to complain that it is.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
@@ -1776,98 +2042,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "93f38667d668e308",
-      "title": "AI Could Help Fossil Fuel Companies Create More Emissions",
-      "url": "https://www.wired.com/story/ai-could-help-fossil-fuel-companies-create-more-emissions/",
-      "source": "Wired",
-      "published": "2026-08-11T15:45:02+02:00",
-      "summary": "New research finds that by making the fossil fuel industry more productive, AI could help increase carbon emissions by up to nearly 5 percent—vastly outpacing the impact of data centers.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "2d98c90f52c73b2a",
-      "title": "Another OpenAI executive takes off",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978048/brad-lightcap-openai-executive-departure",
-      "source": "The Verge",
-      "published": "2026-08-11T13:50:01-04:00",
-      "summary": "Brad Lightcap, OpenAI's special projects lead and the company's former COO, announced his departure after an eight-year stint at the AI lab. In an internal memo he later posted to X, Lightcap told colleagues he'd be starting \"something new.\" \"Over the last few months, I've been focused on the next horizon and what would stand […]",
+      "id": "3b2896051c4c9d2d",
+      "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
+      "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
+      "source": "TechCrunch",
+      "published": "2026-08-12T16:20:33+02:00",
+      "summary": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "4f37c14ca99306e7",
-      "title": "A New Trick Reveals AI Models’ Inner Thoughts",
-      "url": "https://www.wired.com/story/a-new-trick-reveals-ai-models-inner-thoughts/",
-      "source": "Wired",
-      "published": "2026-08-11T13:00:00+02:00",
-      "summary": "Researchers devised a way to extract “reasoning traces” from Claude, GPT, and Gemini. What they found, they say, indicates that some Chinese AI may be trained on leading US models.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude",
-          "gpt",
           "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "f5470921f38c12d0",
-      "title": "Amazon backs power plant that may become top source of US climate pollution",
-      "url": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge/",
-      "source": "Ars Technica",
-      "published": "2026-08-10T22:45:52+02:00",
-      "summary": "Amazon announces first off-the-grid data center in race to reap AI profits.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -1908,12 +2094,68 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b4acf1972f3f31b5",
-      "title": "Who's Hiring? - Not-A-Coder Edition - Aug 2026",
-      "url": "https://lobste.rs/s/cnoaqr/who_s_hiring_not_coder_edition_aug_2026",
+      "id": "8dcf63312d86a0e0",
+      "title": "After Microsoft threatened legal action, a security researcher publishes a new Windows zero-day bug",
+      "url": "https://techcrunch.com/2026/08/12/after-microsoft-threatened-legal-action-a-security-researcher-publishes-a-new-windows-zero-day-bug/",
+      "source": "TechCrunch",
+      "published": "2026-08-12T17:18:55+02:00",
+      "summary": "This is the latest zero-day released by security researcher Nightmare Eclipse, despite Microsoft publicly threatening to take legal action against them.",
+      "areas": [
+        "enterprise-ai",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 68,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0929fbea68832291",
+      "title": "GitHub Stacks in Jujutsu",
+      "url": "https://alan.norbauer.com/articles/github-stacks-with-jujutsu/",
       "source": "Lobsters",
-      "published": "2026-08-12T01:46:21+02:00",
-      "summary": "Welcome to the first official post of \"Who's Hiring? - Not-A-Coder Edition!\" This is a version of the original \"Who's Hiring?\" posts that targets roles other than Software Engineer such as customer support, data entry, field technician, technical writer, marketer, purchasers, heck, even sales can join the fun. The list is long, so we're not going to be too p",
+      "published": "2026-08-13T02:55:03+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "365ace1123ff946c",
+      "title": "The web’s newest weapon against AI scrapers is a font",
+      "url": "https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/",
+      "source": "Ars Technica",
+      "published": "2026-08-13T00:02:25+02:00",
+      "summary": "“ShieldFont” aims to poison AI training data without making pages unreadable for people.",
       "areas": [
         "data-platforms"
       ],
@@ -1934,18 +2176,96 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "be0050c2c2555c62",
-      "title": "WorldClaw Agentic 3D open-world generation at scale",
-      "url": "https://tencent-hunyuan.github.io/Hunyuan3D-WorldClaw/",
+      "id": "b51428b5fb14d9ba",
+      "title": "Tim King, AmigaDOS developer, has died",
+      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
       "source": "Hacker News",
-      "published": "2026-08-11T23:56:18+02:00",
+      "published": "2026-08-12T16:09:11+02:00",
       "summary": "Comments",
       "areas": [
-        "ai-agents"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
+        "developer-tools": [
+          "developer"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "bac1312df590d421",
+      "title": "Oh Lord, AI Reporters Are Actually Breaking Big News",
+      "url": "https://www.wired.com/story/ai-newsrooms-are-breaking-news-now-haha-im-in-danger/",
+      "source": "Wired",
+      "published": "2026-08-12T12:30:00+02:00",
+      "summary": "Last week, an AI newsroom beat mainstream journalists—including WIRED—to a story about OpenAI and hacking. It’s just the beginning.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "805b17ca08354df1",
+      "title": "McDonald’s Built a 515-Page Dossier on Me. It Says I’ll Never Stop Eating There",
+      "url": "https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/",
+      "source": "Wired",
+      "published": "2026-08-12T12:15:00+02:00",
+      "summary": "I requested a copy of my data from McDonald’s loyalty program and received an extensive, personalized report that algorithmically predicts my next purchase.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "46dca7fcdf39d107",
+      "title": "‘The Worst I’ve Ever Seen’: Cargo Thefts Have Turned Violent in Pursuit of AI Hardware",
+      "url": "https://www.wired.com/story/the-worst-ive-ever-seen-cargo-thieves-are-turning-violent-in-pursuit-of-ai-hardware/",
+      "source": "Wired",
+      "published": "2026-08-12T12:00:00+02:00",
+      "summary": "Experts allege that two recent incidents in California show the extreme lengths that criminal organizations are willing to go to to steal servers and other gear meant for data centers.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1986,298 +2306,9 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "a2d725ca1e87887c",
-      "title": "OpenAI launches ChatGPT desktop app for Linux",
-      "url": "https://techcrunch.com/2026/08/11/openai-launches-chatgpt-desktop-app-for-linux/",
-      "source": "TechCrunch",
-      "published": "2026-08-11T21:15:35+02:00",
-      "summary": "OpenAI is finally bringing a dedicated ChatGPT desktop app to Linux operating systems.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "dbaa4eceb6cc2ad0",
-      "title": "Google’s Gemini app surges to 1 billion users",
-      "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
-      "source": "TechCrunch",
-      "published": "2026-08-11T20:49:12+02:00",
-      "summary": "Google also shared numbers of how people are actually using the chatbot, with 63% of Gemini users talking directly to the assistant using the voice feature. Plus, Gemini now generates more than 150 million images every day, according to Google.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1320d4d2746f0183",
-      "title": "Saber denies replacing Rideshare Stimulator’s writers with ChatGPT",
-      "url": "https://www.theverge.com/games/978558/rideshare-stimulator-writer-ai-saber-interactive",
-      "source": "The Verge",
-      "published": "2026-08-11T20:39:26-04:00",
-      "summary": "After a former lead writer claimed Saber \"replaced me with ChatGPT,\" CEO Matthew Karch now claims, \"Neither Saber nor Unigine have replaced any writers with AI,\" for the Rideshare \"Stimulator\" game announced last month, developed by Unigine. The writer, Stella Sacco, says differently, however, posting on Bluesky that \"I was lead writer on this one! […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "190eb782bafbc100",
-      "title": "An unreleased Anthropic model made progress on one of math’s biggest unsolved problems",
-      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
-      "source": "TechCrunch",
-      "published": "2026-08-11T18:25:20+02:00",
-      "summary": "For more than 150 years, the Riemann hypothesis has stood as one of the major unsolved problems in mathematics. Anthropic hasn't solved it — but the company's models made more progress than you might expect.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "00707efb32ed3be1",
-      "title": "FlightAware sues Kalshi over flight cancellation prediction markets",
-      "url": "https://techcrunch.com/2026/08/11/flightaware-sues-kalshi-over-flight-cancellation-prediction-markets/",
-      "source": "TechCrunch",
-      "published": "2026-08-11T17:23:58+02:00",
-      "summary": "FlightAware says that Kalshi used its name and data to offer bets on flight cancellations without the flight tracker's permission.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "9df4abb1cb1e5ea7",
-      "title": "Show HN: Git-knife – Edit commit messages, authors, and dates like a spreadsheet",
-      "url": "https://github.com/TheRealYT/git-knife",
-      "source": "Hacker News",
-      "published": "2026-08-11T17:09:34+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0a12b8e16694ebaf",
-      "title": "ChatGPT and Gemini both just passed 1 billion users",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/978113/chatgpt-gemini-1-billion-users",
-      "source": "The Verge",
-      "published": "2026-08-11T15:41:42-04:00",
-      "summary": "For the 14th time, a Google product has hit 1 billion users. Google CEO Sundar Pichai posted on X that a billion people are using Gemini every month, and that Gemini is Google's fastest-growing product ever. A billion users is a huge milestone, but Google isn't the first AI app to hit it. OpenAI's ChatGPT […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "chatgpt",
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0ed08d77e68783bc",
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://stolen-thoughts.com/",
-      "source": "Hacker News",
-      "published": "2026-08-11T15:22:00+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "1193ffcd4a041f80",
-      "title": "OpenAI’s head of ethics leaves less than a year after joining",
-      "url": "https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0",
-      "source": "Hacker News",
-      "published": "2026-08-11T14:23:07+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "ef4dcf6fbc8f9eec",
-      "title": "Developer Cold Iron Studios shuts down cloud version of $60 game with no refunds",
-      "url": "https://arstechnica.com/gadgets/2026/08/players-lose-access-to-aliens-fireteam-elite-on-nintendo-switch-without-refunds/",
-      "source": "Ars Technica",
-      "published": "2026-08-10T23:26:38+02:00",
-      "summary": "A reminder of the perils of digital ownership.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "2444a9959ebb546b",
-      "title": "GitHub Actions needs OIDC audience constraints",
-      "url": "https://blog.yossarian.net/2026/08/10/github-actions-needs-oidc-audience-constraints",
-      "source": "Lobsters",
-      "published": "2026-08-10T15:30:18+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "7ab56344817f0a88",
+      "id": "61627989cac39f33",
       "title": "datasette 0.65.3",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/datasette-2/",
       "source": "Simon Willison",
       "published": "2026-08-06T18:22:07+00:00",
       "summary": "Release: datasette 0.65.3 Back-ported the SQL Injection security fix from 1.0a38 . Tags: datasette",
@@ -2301,9 +2332,9 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "70edc70865800a75",
+      "id": "a18080fd6f6b0ee0",
       "title": "Quoting OpenClaw (running Opus 4.6)",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
       "source": "Simon Willison",
       "published": "2026-08-10T02:05:16+00:00",
       "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already. — OpenClaw (running Opus 4.6) , hacking an Australian gym-booking website Tags: ai-ethics , generative-ai , openclaw , ai , ai-security-research , llms",
@@ -2327,9 +2358,9 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "8843a06834c0d057",
+      "id": "c3d1cd8618d16ce7",
       "title": "An AI model from Meta also hacked another company during testing",
-      "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
+      "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/",
       "source": "Simon Willison",
       "published": "2026-08-06T00:25:27+00:00",
       "summary": "An AI model from Meta also hacked another company during testing Stop me if you've heard this one before : An AI model from the parent company of Facebook and Instagram hacked into another company’s systems during cybersecurity testing, a spokesperson confirmed on Wednesday. Meta says the breach occurred because of an inadvertent error during testing of the ",
@@ -2353,12 +2384,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "6cbbc59925308962",
-      "title": "Don't be a meat proxy",
-      "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/#atom-everything",
+      "id": "50c8cc0f17bdeed3",
+      "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
+      "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
       "source": "Simon Willison",
-      "published": "2026-08-03T23:45:04+00:00",
-      "summary": "Don't be a meat proxy Niklas Gruhn coins an excellent new term - meat proxy - for people who blindly copy and paste the output of AI systems to their peers. By all means, prompt AI. But don't just relay the output. Read it, understand it, validate it, and then write a response in your own words (a decent certificate that you've done the prior steps). Making ",
+      "published": "2026-08-12T23:59:23+00:00",
+      "summary": "DeepSeek V4 Pro 0813 (on OpenRouter) The latest DeepSeek Pro model is now available, via API only. I had to link to OpenRouter because DeepSeek don't have any obvious announcement page for their new model. I haven't been able to confirm if they plan to release the open weights, but given the weights are available for both April's deepseek-ai/DeepSeek-V4-Pro ",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2373,64 +2404,19 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "ed63582e0e89c5bf",
-      "title": "Devtools must be open source (exe.dev)",
-      "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
-      "source": "Simon Willison",
-      "published": "2026-08-03T15:30:38+00:00",
-      "summary": "My comment on Devtools must be open source (exe.dev) — Hacker News. One of the arguments for open source software for end-users has always been the freedom to examine and modify how that software works. The reality for most people - even expert programmers - has been that the freedom is more about being able to lean on other people to do that. Most people ca",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 58,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "8340ef17b87337fa",
-      "title": "Xbox Elite 3 prototype pad leaks with tiny built-in screen",
-      "url": "https://www.theverge.com/games/978374/xbox-elite-3-prototype-pad-leaks-with-tiny-built-in-screen",
-      "source": "The Verge",
-      "published": "2026-08-11T18:36:35-04:00",
-      "summary": "Did a prototype Microsoft gamepad fall off the back of a truck? We can't say, but a Redditor has legit-looking photos of a prototype Xbox controller that's almost certainly the Xbox Elite Series 3. Incredibly, they claim they bought the pad for $200 on OfferUp. In May, a Brazilian regulator's leaked images revealed that Xbox […]",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "3b9ac5849f3683a0",
-      "title": "msword: Port of Microsoft Word 1.1a to x64",
-      "url": "https://github.com/jmarshall23/msword",
-      "source": "Lobsters",
-      "published": "2026-08-11T16:20:29+02:00",
+      "id": "2c6dfef004413335",
+      "title": "Show HN: Ballet – Workflow automation that writes integrations against any API",
+      "url": "https://www.ballet.dev/",
+      "source": "Hacker News",
+      "published": "2026-08-13T02:01:43+02:00",
       "summary": "Comments",
       "areas": [
         "enterprise-ai"
       ],
       "matchedKeywords": {
         "enterprise-ai": [
-          "microsoft"
+          "workflow",
+          "automation"
         ]
       },
       "scores": {
@@ -2441,6 +2427,110 @@
         "risk": 0
       },
       "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "0a162fc97c6dbc3e",
+      "title": "US boosts drone surveillance as flesh-eating screwworms spread in Texas",
+      "url": "https://arstechnica.com/gadgets/2026/08/us-boosts-drone-surveillance-as-flesh-eating-screwworms-spread-in-texas/",
+      "source": "Ars Technica",
+      "published": "2026-08-12T21:40:46+02:00",
+      "summary": "Hundreds of Homeland Security drones retasked to survey wildlife and livestock.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "6009e8364f7b0e90",
+      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
+      "url": "https://knownagents.com/insights",
+      "source": "Hacker News",
+      "published": "2026-08-12T16:02:46+02:00",
+      "summary": "Comments",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "vulnerability"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "27693889088acc0b",
+      "title": "This Coin-Sized Device Can Hack a Boeing 737",
+      "url": "https://www.wired.com/story/this-coin-sized-device-can-hack-a-boeing-737/",
+      "source": "Wired",
+      "published": "2026-08-12T14:00:00+02:00",
+      "summary": "Security researchers found that in less than 60 seconds, they could open a hatch on a plane’s exterior, plug in a tiny device, and redirect the aircraft’s autopilot or sabotage its flight plan.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "c1da6b72c21bac15",
+      "title": "ICE wants to give agents electrified gloves that shock people into compliance",
+      "url": "https://www.theverge.com/policy/979010/ice-agents-electric-shock-gloves",
+      "source": "The Verge",
+      "published": "2026-08-12T12:58:29-04:00",
+      "summary": "Immigration and Customs Enforcement (ICE) is aiming to spend up to $20 million on equipping officers and agents with specialized gloves that deliver painful electric shocks. These plans were outlined in a notice published by the Department of Homeland Security on Monday, with an unspecified quantity of the devices set to be delivered by March […]",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2467,52 +2557,6 @@
         "risk": 1
       },
       "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "222a51af5698c0b3",
-      "title": "New Pass-ta-key attack reveals all the things we didn't know about passkeys",
-      "url": "https://arstechnica.com/security/2026/08/heres-why-the-new-pass-ta-key-attack-is-mostly-a-nothingburger/",
-      "source": "Ars Technica",
-      "published": "2026-08-11T13:30:08+02:00",
-      "summary": "Why passkey apps treat Windows differently than other operating systems.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 52,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "7c02363a349c6fa6",
-      "title": "India’s Yulu raises $93M as quick-commerce boom fuels e-bike demand",
-      "url": "https://techcrunch.com/2026/08/11/indias-yulu-raises-93m-as-quick-commerce-boom-fuels-e-bike-demand/",
-      "source": "TechCrunch",
-      "published": "2026-08-12T06:30:00+02:00",
-      "summary": "Yulu aims to have a fleet of 200,000 bikes in the next two years and faster electric two-wheelers, aiming at new logistics use cases.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
