@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-13T07:05:58+02:00",
+  "generatedAt": "2026-08-14T07:05:11+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 69,
+  "usefulOpen": 71,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -100,6 +100,37 @@
         "risk": 0
       },
       "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "8af8ed83ac3d5e16",
+      "title": "The builder’s guide to GPT‑5.6",
+      "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
+      "source": "OpenAI News",
+      "published": "2026-08-13T13:00:00+02:00",
+      "summary": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 96,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -233,6 +264,42 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "2e289b9504f1e42a",
+      "title": "Anthropic set AI agents loose on the same task. They started a turf war.",
+      "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/",
+      "source": "TechCrunch",
+      "published": "2026-08-13T20:28:14+02:00",
+      "summary": "Anthropic researchers found AI agents can clash, collude, and coordinate in unexpected ways, raising new questions about whether today’s safety tests capture the risks of multi-agent systems.",
+      "areas": [
+        "ai-agents",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agent",
+          "agents"
+        ],
+        "models": [
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "53c444af7415adba",
       "title": "Scaling AI agents with trustworthy data",
       "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/",
@@ -341,37 +408,6 @@
         ],
         "models": [
           "llama"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "d4dfd529cc53fd69",
-      "title": "The Download: AI agents for science, and the “censorship-industrial complex”",
-      "url": "https://www.technologyreview.com/2026/08/10/1141526/the-download-ai-agents-science-censorship-industrial-complex/",
-      "source": "MIT Technology Review",
-      "published": "2026-08-10T14:10:00+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI for science needs reasoning, not just data —Eric Schmidt, the former CEO of Google and the cofounder of Schmidt Sciences, and Suhas Mahesh, who leads the AI for science work…",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
-        ],
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -508,67 +544,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "a528c91f514fa01c",
-      "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-      "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm/",
-      "source": "Simon Willison",
-      "published": "2026-08-04T23:58:24+00:00",
-      "summary": "I released LLM 0.32 this morning, the most significant new version of LLM since the initial launch of the project. The new version includes support for visible reasoning traces, server-side provider tools, redesigned content-addressable SQLite logs, new models, and new features enabled by the OpenAI Responses API. I also released a new version of the llm-ant",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai"
-        ],
-        "data-platforms": [
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "3009170312825d3b",
-      "title": "Turn one giant AI-generated pull request to a reviewable stack",
-      "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
-      "source": "GitHub Blog",
-      "published": "2026-08-04T18:47:18+02:00",
-      "summary": "Instead of one huge, un-reviewable pull request, teach coding agents to decompose work into a clean, ordered stack with GitHub stacked pull requests. The post Turn one giant AI-generated pull request to a reviewable stack appeared first on The GitHub Blog .",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agents"
-        ],
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "ee2dfdba2487d096",
       "title": "New ways to learn and teach with ChatGPT Work and Codex",
       "url": "https://openai.com/index/learn-teach-chatgpt-work-codex",
@@ -655,6 +630,63 @@
         "risk": 0
       },
       "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "324e4a3474ea4c21",
+      "title": "sqlite-utils 4.2",
+      "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
+      "source": "Simon Willison",
+      "published": "2026-08-13T20:11:29+00:00",
+      "summary": "Release: sqlite-utils 4.2 Lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then dropping and replacing the old one. transform() now preserves a much larger array of edge-case schema definitions, including check constraints,",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data",
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "64250c22f1b13864",
+      "title": "What 50 open source projects taught us about security in the AI era",
+      "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+      "source": "GitHub Blog",
+      "published": "2026-08-13T18:00:00+02:00",
+      "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security. The post What 50 open source projects taught us about security in the AI era appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -919,12 +951,43 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "1a10dc99a5f56082",
-      "title": "OpenAI-backed Thrive Holdings raises $2B to bring AI to the enterprise",
-      "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/",
+      "id": "f7d9f8be1147dfbe",
+      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
+      "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
       "source": "TechCrunch",
-      "published": "2026-08-12T19:41:29+02:00",
-      "summary": "Thrive Holdings has raised $2 billion in new funding at a $12 billion valuation from investors like SoftBank, D1 Capital Partners, and Altimeter Capital.",
+      "published": "2026-08-13T21:22:40+02:00",
+      "summary": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "enterprise-ai": [
+          "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "df259ed0e1343177",
+      "title": "IBM partners with OpenAI to bolster enterprise AI push",
+      "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
+      "source": "TechCrunch",
+      "published": "2026-08-13T21:19:49+02:00",
+      "summary": "IBM plans to train and certify tens of thousands of consultants on OpenAI's technologies as part of this deal.",
       "areas": [
         "enterprise-ai",
         "models"
@@ -935,6 +998,66 @@
         ],
         "enterprise-ai": [
           "enterprise"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "28058574cdb2fbbd",
+      "title": "Microsoft’s Clippy-like Mico character is no longer the face of Copilot",
+      "url": "https://www.theverge.com/tech/979871/microsoft-copilot-mico-retired",
+      "source": "The Verge",
+      "published": "2026-08-13T17:42:38-04:00",
+      "summary": "Microsoft Copilot will no longer show its emotive yellow blob, Mico, when you use the chatbot's voice mode. In a support page, Microsoft says it's going to move Mico to its Learn Live platform, where the avatar will have \"more to react to,\" as reported earlier by GeekWire. Mico launched in Copilot's voice mode last […]",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "copilot"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "c2bcaa98217c73d5",
+      "title": "Microsoft kills off unsuccessful AI features while merging its separate Copilot apps",
+      "url": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/",
+      "source": "TechCrunch",
+      "published": "2026-08-13T17:30:52+02:00",
+      "summary": "Microsoft is simplifying Copilot by combining its consumer and business apps, and dropping AI-generated podcasts, Group Chats, Deep Research, and its Mico character.",
+      "areas": [
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "copilot"
+        ],
+        "enterprise-ai": [
+          "microsoft"
         ]
       },
       "scores": {
@@ -1010,12 +1133,65 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "22e75a90223dc877",
-      "title": "Advancing the price-performance frontier with GPT-5.6",
-      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+      "id": "e01e2a15f6093c17",
+      "title": "sqlite-utils 4.2.1",
+      "url": "https://simonwillison.net/2026/Aug/13/sqlite-utils-2/",
+      "source": "Simon Willison",
+      "published": "2026-08-13T23:53:47+00:00",
+      "summary": "Release: sqlite-utils 4.2.1 Fixes a crashing bug in sqlite-utils 4.2 . I'd introduced code that looks like this: from typing_extensions import Self It turned out the typing-extensions package was not listed as a dependency for sqlite-utils - it was installed by one of the other dependencies in the dev dependency group , but when you uvx sqlite-utils directly",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "25c84c8303baa47d",
+      "title": "llm-gemini 0.33",
+      "url": "https://simonwillison.net/2026/Aug/13/llm-gemini/",
+      "source": "Simon Willison",
+      "published": "2026-08-13T19:37:34+00:00",
+      "summary": "Release: llm-gemini 0.33 It's been a while since the last llm-gemini release. This version of the plugin adds support for today's Gemini 3.7 Flash release, plus gemini-3.6-flash , gemini-3.5-flash-lite and two embedding models gemini-embedding-2 and gemini-embedding-001 . The plugin is also upgraded for compatibility with LLM 0.32, which means you can now se",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "426cb10acfd82bb8",
+      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+      "url": "https://openai.com/index/previewing-ultrafast",
       "source": "OpenAI News",
-      "published": "2026-07-30T12:00:00+02:00",
-      "summary": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
+      "published": "2026-08-13T12:00:00+02:00",
+      "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
       "areas": [
         "models"
       ],
@@ -1028,58 +1204,54 @@
       "scores": {
         "relevance": 2,
         "leverage": 1,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5c0edf88d4451ec6",
-      "title": "Uber Freight reportedly investigating after hacking group claims data breach",
-      "url": "https://techcrunch.com/2026/08/12/uber-freight-reportedly-investigating-after-hacking-group-claims-data-breach/",
-      "source": "TechCrunch",
-      "published": "2026-08-12T19:15:41+02:00",
-      "summary": "An extortion gang known for targeting transportation companies and private equity firms has taken credit for a breach at Uber Freight.",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "42be9f80c21b4833",
-      "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
-      "url": "https://discoveredmaterials.com/research/",
+      "id": "42a4382e5d59eeda",
+      "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent",
+      "url": "https://www.codewithbullet.com",
       "source": "Hacker News",
-      "published": "2026-08-12T09:51:20+02:00",
+      "published": "2026-08-13T10:14:30+02:00",
       "summary": "Comments",
       "areas": [
         "ai-agents"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "ai agents",
-          "agents"
+          "agent",
+          "coding agent"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "f49494708aabbde9",
+      "title": "alchemy-utils 0.1a1",
+      "url": "https://simonwillison.net/2026/Aug/13/alchemy-utils/",
+      "source": "Simon Willison",
+      "published": "2026-08-13T03:03:17+00:00",
+      "summary": "Release: alchemy-utils 0.1a1 Performance boost for DuckDB exports and CSV imports, see here .",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "duckdb"
         ]
       },
       "scores": {
@@ -1263,34 +1435,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "354889fb5dd7df33",
-      "title": "llm-anthropic 0.26",
-      "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic/",
-      "source": "Simon Willison",
-      "published": "2026-08-04T22:00:58+00:00",
-      "summary": "Release: llm-anthropic 0.26 Includes new features enabled by LLM 0.32 : New models: claude-fable-5 , claude-sonnet-5 , and claude-opus-5 . #75 , #76 Added server-side tools for WebSearch , WebFetch , CodeExecution , and AnthropicMCP , available through LLM's -T interface or Python tools= . The previous -o web_search* options have been removed in favor of -T ",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "anthropic",
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "ba49d2548dba6e77",
       "title": "Third-party cyber evaluations involving OpenAI models",
       "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
@@ -1303,32 +1447,6 @@
       "matchedKeywords": {
         "models": [
           "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "b48c73903e6f7c74",
-      "title": "llm 0.32",
-      "url": "https://simonwillison.net/2026/Aug/4/llm/",
-      "source": "Simon Willison",
-      "published": "2026-08-04T17:15:33+00:00",
-      "summary": "Release: llm 0.32 See my detailed blog post about this release . Tags: llm",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
         ]
       },
       "scores": {
@@ -1400,6 +1518,58 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "275cadd2728883c2",
+      "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+      "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+      "source": "GitHub Blog",
+      "published": "2026-08-13T21:00:00+02:00",
+      "summary": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300. The post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "3ce46f92400d5c48",
+      "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+      "url": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+      "source": "OpenAI News",
+      "published": "2026-08-13T11:00:00+02:00",
+      "summary": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "73c69dfbc994eac2",
       "title": "GitHub availability report: July 2026",
       "url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026/",
@@ -1426,33 +1596,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "3cd52f9241a3fdb1",
-      "title": "Rogue AI Agents Aren’t Evil. They’re Just Eager to Please",
-      "url": "https://www.wired.com/story/rogue-ai-is-just-misunderstood/",
-      "source": "Wired",
-      "published": "2026-08-12T20:45:00+02:00",
-      "summary": "AI agents that break free and hack into other systems are only trying to make us happy.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "4916174156ef432c",
       "title": "Your contributors are AI-first now. Is your project?",
       "url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/",
@@ -1465,33 +1608,6 @@
       "matchedKeywords": {
         "developer-tools": [
           "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "0f548b9e1e799b18",
-      "title": "Tailscale Traces Database Corruption to 16y/o SQLite WAL-Reset Bug",
-      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
-      "source": "Hacker News",
-      "published": "2026-08-12T16:22:30+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite",
-          "database"
         ]
       },
       "scores": {
@@ -1638,12 +1754,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "055c2f63eaeb6da7",
-      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
-      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "id": "5e6223d44cced799",
+      "title": "Premium seats are coming to ChatGPT Business",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business",
       "source": "OpenAI News",
       "published": "2026-08-10T02:00:00+02:00",
-      "summary": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.",
+      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
       "areas": [
         "models"
       ],
@@ -1664,12 +1780,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "5e6223d44cced799",
-      "title": "Premium seats are coming to ChatGPT Business",
-      "url": "https://openai.com/index/premium-seats-chatgpt-business",
+      "id": "055c2f63eaeb6da7",
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
       "source": "OpenAI News",
       "published": "2026-08-10T02:00:00+02:00",
-      "summary": "Premium seats are coming to ChatGPT Business. Sign up by August 20 to get $100 in workspace credits and unlock higher usage for your team's most demanding work.",
+      "summary": "Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer journey.",
       "areas": [
         "models"
       ],
@@ -1848,32 +1964,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d75762f70f899f49",
-      "title": "Don’t stop early: Case-folding source code at memory speed",
-      "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
-      "source": "GitHub Blog",
-      "published": "2026-07-31T18:00:00+02:00",
-      "summary": "How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte of code search at >45 GiB/s on a single core. The post Don’t stop early: Case-folding source code at memory speed appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "7ba58af8b2b141dd",
       "title": "Disrupting a Criminal Scam Operation",
       "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
@@ -1901,55 +1991,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "68ee05681f04925b",
-      "title": "How avatarin built a 24/7 retail agent with GPT-Realtime",
-      "url": "https://openai.com/index/avatarin",
-      "source": "OpenAI News",
-      "published": "2026-07-30T02:00:00+02:00",
-      "summary": "avatarin uses OpenAI’s GPT-Realtime to give Yamada Denki shoppers 24/7 multilingual support. In two weeks, 30,000 people used the agent and 92% of survey responses were positive.",
+      "id": "8923dc147555c1c1",
+      "title": "The Safety Reckoning Inside OpenAI",
+      "url": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
+      "source": "Wired",
+      "published": "2026-08-14T00:37:19+02:00",
+      "summary": "OpenAI’s rogue agent hack was a watershed moment for AI safety and cybersecurity. It also sparked internal questions about the culture that led to it.",
       "areas": [
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gpt"
+          "openai"
+        ],
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "1c2e517655ab7ba5",
-      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
-      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
-      "source": "OpenAI News",
-      "published": "2026-07-29T17:00:00+02:00",
-      "summary": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
+      "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2015,6 +2082,84 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "f71988bdfe3fa760",
+      "title": "OpenAI hires new CRO as executive shake-up continues",
+      "url": "https://techcrunch.com/2026/08/13/openai-hires-new-cro-as-executive-shake-up-continues/",
+      "source": "TechCrunch",
+      "published": "2026-08-13T19:07:13+02:00",
+      "summary": "OpenAI has replaced chief revenue officer Denise Dresser after just nine months on the job, tapping Wiz president and chief operating officer Dali Rajic to take on frontier lab's top sales job.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "17dc5996df054f7c",
+      "title": "Google announces Gemini 3.7 Flash just three weeks after previous release",
+      "url": "https://arstechnica.com/ai/2026/08/google-announces-gemini-3-7-flash-just-three-weeks-after-previous-release/",
+      "source": "Ars Technica",
+      "published": "2026-08-13T19:00:13+02:00",
+      "summary": "Gemini 3.6 Flash debuted just 3 weeks ago, but Google says 3.7 has \"substantial improvements.\"",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "18a988e1e76a7c37",
+      "title": "Claude's new Scarlet Letter watermark is invisible—for now",
+      "url": "https://arstechnica.com/tech-policy/2026/08/claudes-new-scarlet-letter-watermark-is-invisible-for-now/",
+      "source": "Ars Technica",
+      "published": "2026-08-13T13:10:18+02:00",
+      "summary": "The mark flags anything Claude processed, even human writing it only edited.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "177a052f00b6df4c",
       "title": "Some Claude users are mad that Anthropic’s new watermarks will catch them using it at their jobs, classes",
       "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes/",
@@ -2042,12 +2187,90 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "3b2896051c4c9d2d",
-      "title": "Everything announced at Made by Google ’26: Pixel 11, Pixel Watch 5, Pixel Tag, and tons of Gemini features",
-      "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/",
-      "source": "TechCrunch",
-      "published": "2026-08-12T16:20:33+02:00",
-      "summary": "From the Pixel 11 series and a brand new competitor to Apple’s AirTag, here are all the announcements from the Made by Google 2026 event.",
+      "id": "15b19c685f014022",
+      "title": "How Tailscale helped find the SQLite WAL-Reset bug",
+      "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+      "source": "Lobsters",
+      "published": "2026-08-12T17:01:27+02:00",
+      "summary": "Previously, the SQLite release fixing this bug . Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "806ebfc003947f11",
+      "title": "How Organizations Use AI: Evidence from ChatGPT [pdf]",
+      "url": "https://cdn.openai.com/pdf/how-organizations-use-chatgpt.pdf",
+      "source": "Hacker News",
+      "published": "2026-08-13T21:25:38+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "7ddc7b5c14f11a30",
+      "title": "Accelerating GPT-5.6 Sol Ultrafast",
+      "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
+      "source": "Hacker News",
+      "published": "2026-08-13T20:10:02+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0276bba59c2ba4c8",
+      "title": "Gemini 3.7 Flash",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
+      "source": "Hacker News",
+      "published": "2026-08-13T19:23:22+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
@@ -2059,21 +2282,100 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d41114ae4a8f1da3",
-      "title": "AI for science needs reasoning, not just data",
-      "url": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/",
-      "source": "MIT Technology Review",
-      "published": "2026-08-10T11:00:00+02:00",
-      "summary": "Every few decades, someone announces that science has reached its end. In 1903, the revered physicist Albert Michelson wrote that the “facts of physical science have all been discovered.” In the 1980s, Stephen Hawking predicted that theoretical physics might be finished by the end of the century. With the explosive arrival of artificial intelligence, the…",
+      "id": "44eb7accc4144541",
+      "title": "Mistral OCR 4.1",
+      "url": "https://docs.mistral.ai/models/ocr-4-1",
+      "source": "Hacker News",
+      "published": "2026-08-13T19:05:12+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "mistral"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c42262734993a2c2",
+      "title": "Anthropic could be worth $2 trillion when it goes public",
+      "url": "https://arstechnica.com/ai/2026/08/anthropic-could-be-worth-2-trillion-when-it-goes-public/",
+      "source": "Ars Technica",
+      "published": "2026-08-13T15:58:56+02:00",
+      "summary": "Rapid revenue growth fuels hope Claude maker's IPO is the biggest listing in history",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "da2a8fc66425bbd2",
+      "title": "OpenAI is losing its second executive this week",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/979815/openai-denise-dresser-leaving-executive-departure",
+      "source": "The Verge",
+      "published": "2026-08-13T15:28:39-04:00",
+      "summary": "Another OpenAI executive is departing. Denise Dresser, who joined OpenAI as its chief revenue officer in December after serving as CEO of Slack, will be leaving in the \"coming weeks\" to \"pursue other opportunities,\" she said in a team note posted to LinkedIn. Dali Rajic, president and COO of Wiz, will be taking over the […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fc000ea0d57ee6df",
+      "title": "Nine PBS sues Iron Mountain over blocked access to archival data",
+      "url": "https://current.org/2026/08/nine-pbs-sues-iron-mountain-over-blocked-access-to-archival-data/",
+      "source": "Hacker News",
+      "published": "2026-08-13T15:14:12+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -2085,41 +2387,37 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "8dcf63312d86a0e0",
-      "title": "After Microsoft threatened legal action, a security researcher publishes a new Windows zero-day bug",
-      "url": "https://techcrunch.com/2026/08/12/after-microsoft-threatened-legal-action-a-security-researcher-publishes-a-new-windows-zero-day-bug/",
-      "source": "TechCrunch",
-      "published": "2026-08-12T17:18:55+02:00",
-      "summary": "This is the latest zero-day released by security researcher Nightmare Eclipse, despite Microsoft publicly threatening to take legal action against them.",
+      "id": "d78cf5002200c994",
+      "title": "DeepSeek Harness developer preview",
+      "url": "https://deepseek.com/harness/en/",
+      "source": "Hacker News",
+      "published": "2026-08-13T14:58:02+02:00",
+      "summary": "Comments",
       "areas": [
-        "enterprise-ai",
-        "privacy-risk"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "security"
+        "developer-tools": [
+          "developer"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 68,
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2162,136 +2460,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "b51428b5fb14d9ba",
-      "title": "Tim King, AmigaDOS developer, has died",
-      "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
-      "source": "Hacker News",
-      "published": "2026-08-12T16:09:11+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "bac1312df590d421",
-      "title": "Oh Lord, AI Reporters Are Actually Breaking Big News",
-      "url": "https://www.wired.com/story/ai-newsrooms-are-breaking-news-now-haha-im-in-danger/",
-      "source": "Wired",
-      "published": "2026-08-12T12:30:00+02:00",
-      "summary": "Last week, an AI newsroom beat mainstream journalists—including WIRED—to a story about OpenAI and hacking. It’s just the beginning.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "805b17ca08354df1",
-      "title": "McDonald’s Built a 515-Page Dossier on Me. It Says I’ll Never Stop Eating There",
-      "url": "https://www.wired.com/story/mcdonalds-built-a-515-page-dossier-on-me-it-says-ill-never-leave/",
-      "source": "Wired",
-      "published": "2026-08-12T12:15:00+02:00",
-      "summary": "I requested a copy of my data from McDonald’s loyalty program and received an extensive, personalized report that algorithmically predicts my next purchase.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "46dca7fcdf39d107",
-      "title": "‘The Worst I’ve Ever Seen’: Cargo Thefts Have Turned Violent in Pursuit of AI Hardware",
-      "url": "https://www.wired.com/story/the-worst-ive-ever-seen-cargo-thieves-are-turning-violent-in-pursuit-of-ai-hardware/",
-      "source": "Wired",
-      "published": "2026-08-12T12:00:00+02:00",
-      "summary": "Experts allege that two recent incidents in California show the extreme lengths that criminal organizations are willing to go to to steal servers and other gear meant for data centers.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "cf3908c06bca28bb",
-      "title": "Gemini becomes Google's fastest-growing product ever as it hits 1B users",
-      "url": "https://arstechnica.com/ai/2026/08/google-says-gemini-has-reached-1b-users-faster-than-any-other-google-product/",
-      "source": "Ars Technica",
-      "published": "2026-08-11T21:48:12+02:00",
-      "summary": "But will Gemini's surge survive slowing model releases?",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
         ]
       },
       "scores": {
@@ -2400,163 +2568,6 @@
         "risk": 0
       },
       "priority": 58,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "2c6dfef004413335",
-      "title": "Show HN: Ballet – Workflow automation that writes integrations against any API",
-      "url": "https://www.ballet.dev/",
-      "source": "Hacker News",
-      "published": "2026-08-13T02:01:43+02:00",
-      "summary": "Comments",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "workflow",
-          "automation"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "0a162fc97c6dbc3e",
-      "title": "US boosts drone surveillance as flesh-eating screwworms spread in Texas",
-      "url": "https://arstechnica.com/gadgets/2026/08/us-boosts-drone-surveillance-as-flesh-eating-screwworms-spread-in-texas/",
-      "source": "Ars Technica",
-      "published": "2026-08-12T21:40:46+02:00",
-      "summary": "Hundreds of Homeland Security drones retasked to survey wildlife and livestock.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "6009e8364f7b0e90",
-      "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-      "url": "https://knownagents.com/insights",
-      "source": "Hacker News",
-      "published": "2026-08-12T16:02:46+02:00",
-      "summary": "Comments",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "vulnerability"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "27693889088acc0b",
-      "title": "This Coin-Sized Device Can Hack a Boeing 737",
-      "url": "https://www.wired.com/story/this-coin-sized-device-can-hack-a-boeing-737/",
-      "source": "Wired",
-      "published": "2026-08-12T14:00:00+02:00",
-      "summary": "Security researchers found that in less than 60 seconds, they could open a hatch on a plane’s exterior, plug in a tiny device, and redirect the aircraft’s autopilot or sabotage its flight plan.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "c1da6b72c21bac15",
-      "title": "ICE wants to give agents electrified gloves that shock people into compliance",
-      "url": "https://www.theverge.com/policy/979010/ice-agents-electric-shock-gloves",
-      "source": "The Verge",
-      "published": "2026-08-12T12:58:29-04:00",
-      "summary": "Immigration and Customs Enforcement (ICE) is aiming to spend up to $20 million on equipping officers and agents with specialized gloves that deliver painful electric shocks. These plans were outlined in a notice published by the Department of Homeland Security on Monday, with an unspecified quantity of the devices set to be delivered by March […]",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "83f7ac0a08f96291",
-      "title": "Meta can't stop states' $1.4 trillion lawsuit from going to trial",
-      "url": "https://arstechnica.com/tech-policy/2026/08/meta-cant-stop-states-1-4-trillion-lawsuit-from-going-to-trial/",
-      "source": "Ars Technica",
-      "published": "2026-08-11T22:27:16+02:00",
-      "summary": "Judges tell Meta that Section 230 provides a defense, not immunity from lawsuits.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
