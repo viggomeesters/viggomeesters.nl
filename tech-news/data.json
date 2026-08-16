@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-15T07:05:46+02:00",
+  "generatedAt": "2026-08-16T07:05:37+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 66,
+  "usefulOpen": 62,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -882,97 +882,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d8f28b2fb8ee64a6",
-      "title": "SlopScan: Displays a \"slop score\" when viewing public git repositories",
-      "url": "https://addons.mozilla.org/en-US/firefox/addon/slopscan/",
-      "source": "Lobsters",
-      "published": "2026-08-14T11:43:51+02:00",
-      "summary": "Uses https://slopscan.ava.pet internally (previously discussed at: https://lobste.rs/s/7s8fwa/repo_slopscore_detecting_ai_llm ) Comments",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ],
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "f7d9f8be1147dfbe",
-      "title": "OpenAI introduces ‘Ultrafast,’ a new mode that makes GPT-5.6 Sol work at 14x the speed",
-      "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/",
-      "source": "TechCrunch",
-      "published": "2026-08-13T21:22:40+02:00",
-      "summary": "OpenAI is launching a preview of a sped up version of its latest, most powerful model, in an effort to court enterprise users.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "df259ed0e1343177",
-      "title": "IBM partners with OpenAI to bolster enterprise AI push",
-      "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/",
-      "source": "TechCrunch",
-      "published": "2026-08-13T21:19:49+02:00",
-      "summary": "IBM plans to train and certify tens of thousands of consultants on OpenAI's technologies as part of this deal.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "e03d6d9dfc157c51",
       "title": "Testing ads in ChatGPT",
       "url": "https://openai.com/index/testing-ads-in-chatgpt",
@@ -1388,6 +1297,33 @@
         "risk": 2
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "128e4fab722bdeab",
+      "title": "CORS Chat",
+      "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
+      "source": "Simon Willison",
+      "published": "2026-08-15T14:49:54+00:00",
+      "summary": "Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1864,65 +1800,31 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "8923dc147555c1c1",
-      "title": "The Safety Reckoning Inside OpenAI",
-      "url": "https://www.wired.com/story/openai-safety-security-ai-agents-culture/",
-      "source": "Wired",
-      "published": "2026-08-14T00:37:19+02:00",
-      "summary": "OpenAI’s rogue agent hack was a watershed moment for AI safety and cybersecurity. It also sparked internal questions about the culture that led to it.",
+      "id": "1fa4c5387ae4a077",
+      "title": "Anthropic shares more details about how Claude’s new watermarks will work",
+      "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+      "source": "TechCrunch",
+      "published": "2026-08-15T20:58:39+02:00",
+      "summary": "How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?",
       "areas": [
-        "models",
-        "privacy-risk"
+        "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety"
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 0,
         "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "4424b2de6c254e29",
-      "title": "Third-party cyber evaluations involving OpenAI models",
-      "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations/",
-      "source": "Simon Willison",
-      "published": "2026-08-05T23:45:32+00:00",
-      "summary": "Third-party cyber evaluations involving OpenAI models And another one . I had to create a accidental-cyberattacks tag to keep track of them all! This post from OpenAI covers both the UK AI Safety Institute attack (see my previous post ) and another attack enabled by Irregular : Irregular, one of our external cybersecurity testing partners, was running Captur",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety",
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 2
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "8be58a7357a638c3",
@@ -2004,58 +1906,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "916f59e05e38e4ba",
-      "title": "Google’s best new camera feature is only for the Pixel 11 series",
-      "url": "https://www.theverge.com/tech/980467/google-pixel-11-camera-looks-older-phones",
-      "source": "The Verge",
-      "published": "2026-08-14T13:34:14-04:00",
-      "summary": "Arguably the coolest new photo feature for the Pixel 11 lineup is Google's new Camera Looks, which process image data differently at the sensor level to produce photos that don't have that \"smartphone\" look. The result is new styles like \"Digi,\" which mimics the style of photos taken by older digital cameras. But to use […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "8a8ebad6963bb086",
-      "title": "You can now turn off Google Gemini’s visible watermarks",
-      "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-      "source": "The Verge",
-      "published": "2026-08-14T12:39:32-04:00",
-      "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appears in the bottom-right corner of […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "4503108aab1f53d6",
       "title": "The Real Reason Data Center Gas Power Plants Are So Dirty",
       "url": "https://www.wired.com/story/real-reason-data-center-gas-power-plants-are-so-dirty/",
@@ -2082,18 +1932,70 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "7718f4c6db10327c",
-      "title": "Show HN: Mole – Deep research agent for your terminal",
-      "url": "https://github.com/lajosdeme/mole",
+      "id": "7d20b45df4a87576",
+      "title": "Tracking down a Zsh history data loss bug",
+      "url": "https://michael.stapelberg.ch/posts/2026-08-09-zsh-history-truncation-bug/",
       "source": "Hacker News",
-      "published": "2026-08-14T20:52:48+02:00",
+      "published": "2026-08-15T23:39:09+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "38e7944bff104c42",
+      "title": "SpaceX officially closes its Cursor acquisition",
+      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
+      "source": "TechCrunch",
+      "published": "2026-08-15T18:30:00+02:00",
+      "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4acabdde8c3d82d0",
+      "title": "Flirt: GitHub and Mailing List backends",
+      "url": "https://blog.buenzli.dev/flirt-github-and-mailing-list/",
+      "source": "Lobsters",
+      "published": "2026-08-15T14:37:40+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "terminal"
+          "github"
         ]
       },
       "scores": {
@@ -2134,18 +2036,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "81a888c79f87788c",
-      "title": "Maximizing the value of your Claude Code sessions",
-      "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+      "id": "1942b2b3738a2774",
+      "title": "A fortuitous decade as an indie software developer",
+      "url": "https://lapcatsoftware.com/articles/2026/8/3.html",
       "source": "Hacker News",
-      "published": "2026-08-14T18:15:21+02:00",
+      "published": "2026-08-10T17:20:25+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "claude"
+        "developer-tools": [
+          "developer"
         ]
       },
       "scores": {
@@ -2160,18 +2062,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9f7e8e375fe7d025",
-      "title": "5 Weird Tricks for Having a Brain",
-      "url": "https://www.wired.com/galaxy-brain/",
-      "source": "Wired",
-      "published": "2026-08-14T12:00:00+02:00",
-      "summary": "From the multibrained octopus to the bitty brain organoid, we’re all just inference engines making flawed bets on the future. Here are the five insights your brain will need to survive.",
+      "id": "bc53d51a4156ec59",
+      "title": "Asynchronous I/O in DuckDB: Work, Thread, Work",
+      "url": "https://duckdb.org/2026/07/31/asynchronous-io",
+      "source": "Hacker News",
+      "published": "2026-08-10T15:01:18+02:00",
+      "summary": "Comments",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "inference"
+        "data-platforms": [
+          "duckdb"
         ]
       },
       "scores": {
@@ -2284,6 +2186,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "b1f7946a6b3a728f",
+      "title": "Ironies of Automation (1983)",
+      "url": "https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf",
+      "source": "Lobsters",
+      "published": "2026-08-15T19:13:34+02:00",
+      "summary": "This paper discusses the ways in which automation of industrial processes may expand rather than eliminate problems with the human operator. Some comments will be made on methods of alleviating these problems within the \"classic' approach of leaving the operator with responsibility for abnormal conditions, and on the potential for continued use of the human ",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
       "id": "bd4a145bae9988a9",
       "title": "Vulnerability giving attackers full control of Macs is under active exploitation",
       "url": "https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/",
@@ -2362,31 +2290,11 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "545d104141af9750",
-      "title": "Talks to sell PayPal to Stripe and Advent are heating up",
-      "url": "https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/",
-      "source": "TechCrunch",
-      "published": "2026-08-15T00:43:24+02:00",
-      "summary": "PayPal is still reportedly negotiating a potential sale to Stripe and private equity firm Advent, as the fintech firm's new CEO attempts to turn the company around.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "abb4823d133d8eb9",
-      "title": "New Lower and Upper Bounds for the Grothendieck Constant",
-      "url": "https://arxiv.org/abs/2608.11158",
+      "id": "600d2e01b3cb0420",
+      "title": "Cultivating a state of mind where new ideas are born (2023)",
+      "url": "https://www.henrikkarlsson.xyz/p/good-ideas",
       "source": "Hacker News",
-      "published": "2026-08-14T21:41:42+02:00",
+      "published": "2026-08-15T22:54:11+02:00",
       "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
@@ -2402,12 +2310,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "9b260a6185af05f1",
-      "title": "Policy experts: Europe stuck between \"rock and a hard place\" on launch",
-      "url": "https://arstechnica.com/space/2026/08/policy-experts-europe-stuck-between-rock-and-a-hard-place-on-launch/",
-      "source": "Ars Technica",
-      "published": "2026-08-14T18:29:21+02:00",
-      "summary": "It turns out that the economics of rocket reuse are pretty, pretty good.",
+      "id": "53fa65d1a51f1415",
+      "title": "Super El Niño Keeps Growing as New Forecasts Reach Record Territory Ahead Winter",
+      "url": "https://www.severe-weather.eu/long-range-2/super-el-nino-growth-accelerating-to-record-strength-fall-winter-2026-2027-forecast-impact-united-states-canada-europe-fa/",
+      "source": "Hacker News",
+      "published": "2026-08-15T21:20:51+02:00",
+      "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2422,32 +2330,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "f1a838a4990fdd43",
-      "title": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
-      "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/",
-      "source": "TechCrunch",
-      "published": "2026-08-14T17:43:28+02:00",
-      "summary": "Meta released Glimmer this week, an open-weight AI model anyone can download and run on their own hardware — a contrast to Muse Spark, the company’s more powerful model that stays locked behind its own APIs. The release landed alongside a letter from Mark Zuckerberg arguing AI should be “for everyone” rather than controlled by a handful of labs, but as Equit",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "26a73cfc667f7e1a",
-      "title": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
-      "url": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
+      "id": "9d048dde1ac87be0",
+      "title": "Instapaper, the Original Read-It-Later App, Just Got a Huge Upgrade",
+      "url": "https://www.wired.com/story/instapaper-the-original-read-it-later-app-just-got-a-huge-upgrade/",
       "source": "Wired",
-      "published": "2026-08-14T17:00:00+02:00",
-      "summary": "Tim O’Reilly built a publishing empire that AI is helping to destroy. Yet he loves AI—as long as it’s open source.",
+      "published": "2026-08-15T12:30:00+02:00",
+      "summary": "New fonts, better customization, and a whole new layout all make it worth dusting off your Instapaper account.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2462,12 +2350,52 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "4141c88d40eec674",
-      "title": "Samsung has new Galaxy headphones in the works",
-      "url": "https://www.theverge.com/gadgets/980547/samsung-galaxy-h1-over-ear-headphones",
+      "id": "89f648d9e2172e29",
+      "title": "Auk Mini 2 Indoor Smart Garden Review: Better Where It Counts",
+      "url": "https://www.wired.com/review/auk-mini-2-indoor-smart-garden/",
+      "source": "Wired",
+      "published": "2026-08-15T12:01:00+02:00",
+      "summary": "Auk’s Mini 2 improves on the original model with better lights, a sleeker design, and fun new colors.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "63ddfec6ea070ee3",
+      "title": "Zyzz Was the Original Looksmaxxer. His Rise and Untimely Death Feel More Relevant Than Ever",
+      "url": "https://www.wired.com/story/a-young-bodybuilders-rise-preceded-the-looksmaxxing-movement-his-legacy-feels-more-relevant-than-ever/",
+      "source": "Wired",
+      "published": "2026-08-15T12:00:00+02:00",
+      "summary": "A new Apple documentary explores the life of Aziz “Zyzz” Shavershian, who rocketed to internet fame in an age before influencers, then died at age 22 in 2011.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "70a66401da1dad42",
+      "title": "Star Wars: Ahsoka season 2 and Starfighter get teased at D23",
+      "url": "https://www.theverge.com/entertainment/980666/star-wars-ahsoka-season-2-and-starfighter-get-teased-at-d23",
       "source": "The Verge",
-      "published": "2026-08-14T15:18:45-04:00",
-      "summary": "Strings of code in Samsung's Galaxy Wearable app hint at an upcoming pair of over-ear headphones that could compete with the AirPods Max, SamMobile reports. Samsung's reportedly referring to the headphones as the \"Galaxy H1,\" and SamMobile says they could launch sometime in 2027. That would make these the company's first pair of over-ear headphones […]",
+      "published": "2026-08-15T10:58:27-04:00",
+      "summary": "Season two of Star Wars: Ahsoka is still months away, but Lucasfilm still took the opportunity to tease it a bit at D23. The company dropped the first trailer for the new season ahead of its January 20th, 2027 debut. The clip shows a darker, witchcraft-filled take on the Star Wars universe, with Grand Admiral […]",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2482,12 +2410,52 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "86e5425f68b7919b",
-      "title": "The Download: Flock’s new rules, cloning’s future, and children’s cells",
-      "url": "https://www.technologyreview.com/2026/08/14/1142033/the-download-flock-new-rules-cloning-future/",
-      "source": "MIT Technology Review",
-      "published": "2026-08-14T14:17:21+02:00",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Flock is tightening its rules in response to a growing surveillance backlash The police-tech giant Flock is changing officers’ access to its nationwide network of license plate readers. The move comes…",
+      "id": "50f58c46296c12b6",
+      "title": "Disney D23 2026: Everything announced for Star Wars, Marvel, and more",
+      "url": "https://www.theverge.com/streaming/980633/x-men-marvel-star-wars-pixar-disney-d23",
+      "source": "The Verge",
+      "published": "2026-08-15T10:20:33-04:00",
+      "summary": "The annual Disney fan event showed off the cast of Marvel’s X-Men movie, plus a new trailer for Avengers: Doomsday, and our first look at the VisionQuest TV show for Disney Plus. For Star Wars fans, there was a teaser trailer for season two of Ahsoka, plus a special look at Star Wars: Starfighter with […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "3cf5de95a2bf3290",
+      "title": "Marvel reveals the new X-Men cast, including Inde Navarrette and Adam Driver",
+      "url": "https://www.theverge.com/entertainment/980635/marvel-new-x-men-movie-cast",
+      "source": "The Verge",
+      "published": "2026-08-15T10:03:14-04:00",
+      "summary": "With Spider-Man: Brand New Day behind us, and its reveal of Sadie Sink as Jean Grey, Marvel is finally ready to officially welcome the X-Men into the MCU. At the D23 event in Anaheim yesterday, the company revealed the cast for its upcoming, untitled X-Men film, which is scheduled to hit theaters on May 5th […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "545d104141af9750",
+      "title": "Talks to sell PayPal to Stripe and Advent are heating up",
+      "url": "https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/",
+      "source": "TechCrunch",
+      "published": "2026-08-15T00:43:24+02:00",
+      "summary": "PayPal is still reportedly negotiating a potential sale to Stripe and private equity firm Advent, as the fintech firm's new CEO attempts to turn the company around.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
