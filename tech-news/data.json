@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-17T07:05:11+02:00",
+  "generatedAt": "2026-08-18T07:05:38+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 64,
+  "usefulOpen": 66,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -32,6 +32,41 @@
   "retainedItems": 0,
   "errors": {},
   "items": [
+    {
+      "id": "fb10474b7ce53017",
+      "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+      "source": "GitHub Blog",
+      "published": "2026-08-17T18:00:00+02:00",
+      "summary": "Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible, steerable, and cost-efficient appeared first on The GitHub Blog .",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agentic"
+        ],
+        "developer-tools": [
+          "github"
+        ],
+        "enterprise-ai": [
+          "workflow"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "fc4486192507e01f",
       "title": "alchemy-utils 0.1a0",
@@ -232,44 +267,12 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "6460ce7b1e6ed380",
-      "title": "How we took malware advisories beyond npm",
-      "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
-      "source": "GitHub Blog",
-      "published": "2026-08-06T18:51:12+02:00",
-      "summary": "GitHub malware advisories no longer stop at npm. Here's how we wired OpenSSF's malicious-packages data into the Advisory Database, and why we built the pipeline paranoid. The post How we took malware advisories beyond npm appeared first on The GitHub Blog .",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
-        ],
-        "data-platforms": [
-          "data",
-          "database",
-          "pipeline"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "c9e3d0a610b96d1a",
-      "title": "ChatGPT’s Computer History tracks your clicks and keystrokes",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/980742/chatgpts-computer-history-tracks-your-clicks-and-keystrokes",
-      "source": "The Verge",
-      "published": "2026-08-16T10:56:40-04:00",
-      "summary": "ChatGPT's desktop app on macOS has a new feature called Computer History that turns your actions into training data, learning how you work, suggesting automations, and even picking up tasks you left half done. It uses your activity to build a timeline that ChatGPT and Codex can reference when you make a request. The feature […]",
+      "id": "a8bec70a2bba9a49",
+      "title": "Nvidia investing $1.5B in SoftBank data center developer behind OpenAI project",
+      "url": "https://techcrunch.com/2026/08/17/nvidia-investing-1-5b-in-softbank-data-center-developer-behind-openai-project/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T17:16:24+02:00",
+      "summary": "Nvidia's investment in SoftBank's data center developer will guarantee its chips power an OpenAI data center.",
       "areas": [
         "data-platforms",
         "developer-tools",
@@ -277,10 +280,10 @@
       ],
       "matchedKeywords": {
         "models": [
-          "chatgpt"
+          "openai"
         ],
         "developer-tools": [
-          "codex"
+          "developer"
         ],
         "data-platforms": [
           "data"
@@ -292,42 +295,6 @@
         "novelty": 4,
         "urgency": 3,
         "risk": 0
-      },
-      "priority": 93,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "8299f127ca60df8e",
-      "title": "Rogue AI aren’t science fiction anymore",
-      "url": "https://www.theverge.com/column/980337/rogue-ai-science-fiction-openai",
-      "source": "The Verge",
-      "published": "2026-08-16T08:00:00-04:00",
-      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on AI safety, follow Robert Hart. The Stepback arrives in our subscribers' inboxes at 8AM ET. Opt in for The Stepback here. How it started It all started in July, when one of OpenAI's autonomous AI agents […]",
-      "areas": [
-        "ai-agents",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents",
-          "autonomous"
-        ],
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
       },
       "priority": 93,
       "action": "Read",
@@ -636,32 +603,32 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "08e88a5a28653bd8",
-      "title": "Univé builds an AI-ready workforce",
-      "url": "https://openai.com/index/unive",
+      "id": "fc31cef31da27a94",
+      "title": "The Defender’s Window",
+      "url": "https://openai.com/index/the-defenders-window",
       "source": "OpenAI News",
-      "published": "2026-07-31T09:00:00+02:00",
-      "summary": "See how Univé built an AI-ready workforce with ChatGPT Enterprise by combining leadership, responsible governance, and employee-led innovation to transform work at scale.",
+      "published": "2026-08-17T07:30:00+02:00",
+      "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.",
       "areas": [
-        "enterprise-ai",
-        "models"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
         "models": [
-          "chatgpt"
+          "openai"
         ],
-        "enterprise-ai": [
-          "enterprise"
+        "privacy-risk": [
+          "security"
         ]
       },
       "scores": {
         "relevance": 3,
         "leverage": 1,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
-      "priority": 88,
+      "priority": 86,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -807,36 +774,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "d50d03a80409dcb3",
-      "title": "datasette 1.0a38",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette/",
-      "source": "Simon Willison",
-      "published": "2026-08-06T18:24:34+00:00",
-      "summary": "Release: datasette 1.0a38 This release fixes a SQL injection security issue that affects Datasette instances that serve a mixture of public and private tables in the same database, with access configured using the Datasette permissions system . Site administrators who serve private tables in this way are advised to disable the execute-sql permission ` on tha",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "database"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "799d21c6fbd55b24",
       "title": "Apple is getting this wrong",
       "url": "https://openai.com/index/apple-is-getting-this-wrong",
@@ -867,12 +804,12 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "9dee01862d10145d",
-      "title": "Write your first prompt with the GitHub Copilot app",
+      "id": "d96750ab6b834fa2",
+      "title": "GitHub Copilot app for Beginners: Write your first prompt",
       "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/",
       "source": "GitHub Blog",
       "published": "2026-08-12T21:00:00+02:00",
-      "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence. The post Write your first prompt with the GitHub Copilot app appeared first on The GitHub Blog .",
+      "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence. The post GitHub Copilot app for Beginners: Write your first prompt appeared first on The GitHub Blog .",
       "areas": [
         "developer-tools"
       ],
@@ -894,22 +831,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "49838ee7fcd8f79d",
-      "title": "Kog is going deeper to squeeze more inference out of GPUs",
-      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
-      "source": "TechCrunch",
-      "published": "2026-08-14T16:50:11+02:00",
-      "summary": "The idea that GPUs are poorly suited for agentic workflows may be a misconception, according to French startup Kog.",
+      "id": "db8c48f4591881e3",
+      "title": "A practical workflow for LLM-assisted development",
+      "url": "https://yogthos.net/posts/2026-08-17-llm-workflow.html",
+      "source": "Lobsters",
+      "published": "2026-08-17T23:45:53+02:00",
+      "summary": "Comments",
       "areas": [
-        "ai-agents",
+        "enterprise-ai",
         "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
         "models": [
-          "inference"
+          "llm"
+        ],
+        "enterprise-ai": [
+          "workflow"
         ]
       },
       "scores": {
@@ -981,6 +918,60 @@
         "risk": 1
       },
       "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "e855a328bc5ad455",
+      "title": "GitHub degradation affects Cursor Origin, its new Git platform",
+      "url": "https://status.cursor.com/incidents/l9h9vrd726jv",
+      "source": "Hacker News",
+      "published": "2026-08-17T22:13:27+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "git",
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "061452023174226c",
+      "title": "New policy ideas for the Intelligence Age",
+      "url": "https://openai.com/index/new-policy-ideas-for-the-intelligence-age",
+      "source": "OpenAI News",
+      "published": "2026-08-17T05:15:00+02:00",
+      "summary": "OpenAI funds 14 independent projects exploring new AI policy ideas to expand economic opportunity and strengthen societal resilience in the Intelligence Age.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1343,19 +1334,71 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "bc32531602e54624",
-      "title": "MathCode, Mathematical Coding Agent",
-      "url": "https://math-ai-org.github.io/mathcode/",
-      "source": "Hacker News",
-      "published": "2026-08-16T20:17:10+02:00",
-      "summary": "Comments",
+      "id": "ce073b2bb8ec3b27",
+      "title": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index",
+      "url": "https://simonwillison.net/2026/Aug/17/qwen-38-27b-scores-52/",
+      "source": "Simon Willison",
+      "published": "2026-08-17T23:58:14+00:00",
+      "summary": "Qwen 3.8 27B scores 52 on the Artificial Analysis Intelligence Index That's the same score as GPT-5.6 Luna (max), and just one point behind GLM-5.2 (max) and DeepSeek V4 Pro 0813 (max) - that GLM is 753B and that DeepSeek is 1.6B parameters, and Luna is size unknown but presumably a whole lot bigger than 27B. Qwen 3.8 27B is a truly astonishing model . Via H",
       "areas": [
-        "ai-agents"
+        "models"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "coding agent"
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "9a5a7c3e38e1f4fb",
+      "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake's Jira",
+      "url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+      "source": "Hacker News",
+      "published": "2026-08-17T16:18:38+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github",
+          "copilot"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a6082fc675f7d21b",
+      "title": "OpenAI joins PORTS-Pike project",
+      "url": "https://openai.com/index/openai-joins-ports-pike-project",
+      "source": "OpenAI News",
+      "published": "2026-08-17T07:00:00+02:00",
+      "summary": "OpenAI joins PORTS-Pike project, expanding community investment and supporting thousands of Southern Ohio jobs",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -1842,66 +1885,38 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "7ba58af8b2b141dd",
-      "title": "Disrupting a Criminal Scam Operation",
-      "url": "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation",
-      "source": "OpenAI News",
-      "published": "2026-07-31T02:00:00+02:00",
-      "summary": "OpenAI disrupted a Cambodia-based scam operation using ChatGPT to support investment, romance, gambling, and impersonation schemes.",
+      "id": "6befe93b56a45764",
+      "title": "GPT-5.6 Sol Pricing Cut by 50%",
+      "url": "https://openrouter.ai/openai/gpt-5.6-sol",
+      "source": "Hacker News",
+      "published": "2026-08-17T23:03:18+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "1fa4c5387ae4a077",
-      "title": "Anthropic shares more details about how Claude’s new watermarks will work",
-      "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
-      "source": "TechCrunch",
-      "published": "2026-08-15T20:58:39+02:00",
-      "summary": "How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
+          "gpt"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
+        "novelty": 3,
+        "urgency": 4,
         "risk": 0
       },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "8be58a7357a638c3",
-      "title": "Unforgetful is a new reminders app for people who can’t stop hitting snooze",
-      "url": "https://techcrunch.com/2026/08/14/unforgetful-is-a-new-reminders-app-for-people-who-cant-stop-hitting-snooze/",
-      "source": "TechCrunch",
-      "published": "2026-08-14T18:21:04+02:00",
-      "summary": "Unforgetful, the latest app from longtime indie developer Marco Arment, is designed to make reminders harder to ignore — or accidentally dismiss.",
+      "id": "b244dc051ad7eb9c",
+      "title": "Wordle meets Clippy in this new word game",
+      "url": "https://www.theverge.com/entertainment/981014/dartwords-clippy-word-game",
+      "source": "The Verge",
+      "published": "2026-08-17T15:03:41-04:00",
+      "summary": "Like many of us, Sam Rosenthal plays games like Wordle every day, chasing after good scores and sharing the results with friends and family. But he's also a game designer, the creative director at Blaseball developer The Game Band, and so this regular habit got him thinking about what else could be done in the […]",
       "areas": [
         "developer-tools"
       ],
@@ -1922,71 +1937,335 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "6f445c1a6cba32e4",
-      "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+      "id": "32cc9a5b12964975",
+      "title": "Crypto hardware wallet owners face fresh security risks after recent spate of personal data thefts",
+      "url": "https://techcrunch.com/2026/08/17/crypto-hardware-wallet-owners-face-fresh-security-risks-after-recent-spate-of-personal-data-thefts/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T15:00:19+02:00",
+      "summary": "The hacks at shipping companies used to mail out hardware wallets puts crypto owners at greater risk of real-world attacks.",
+      "areas": [
+        "data-platforms",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 2
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "00cf50a7ce845e64",
+      "title": "Anthropic’s annualized revenue surges to $65B",
+      "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/",
+      "source": "TechCrunch",
+      "published": "2026-08-18T01:56:26+02:00",
+      "summary": "The model maker added $18 billion in annualized revenue in two months.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "d51cc30eb210563a",
+      "title": "US vaccination rates fall again as exemptions continue to rise, CDC data shows",
+      "url": "https://arstechnica.com/health/2026/08/us-vaccination-rates-fall-again-as-exemptions-continue-to-rise-cdc-data-shows/",
       "source": "Ars Technica",
-      "published": "2026-08-14T16:27:14+02:00",
-      "summary": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
+      "published": "2026-08-18T00:08:47+02:00",
+      "summary": "Again, the CDC did not publish a full report and instead simply put the data online.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "34f3807e39514960",
+      "title": "Supreme Court rejects Verizon bid for $47 million refund of FCC fine",
+      "url": "https://arstechnica.com/tech-policy/2026/08/supreme-court-rejects-verizon-bid-for-47-million-refund-of-fcc-fine/",
+      "source": "Ars Technica",
+      "published": "2026-08-17T22:00:20+02:00",
+      "summary": "Despite loss, carriers still claim selling device-location data isn't illegal.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2f42e5a2947bd9c8",
+      "title": "GitHub has alternatives, but no replacement",
+      "url": "https://lalitm.com/post/github-alternatives/",
+      "source": "Lobsters",
+      "published": "2026-08-17T19:12:44+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b6bb8e4eb1224711",
+      "title": "Groq raises $350M to fuel its pivot from AI chips to neocloud",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T18:15:12+02:00",
+      "summary": "Groq raised $350 million at a $3.5 billion valuation as the former AI chipmaker pivots to a neocloud business and expands its Nvidia-powered data center footprint.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "26d1a23eac38f039",
+      "title": "A Preview of DuckDB v2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights.html",
+      "source": "Lobsters",
+      "published": "2026-08-17T18:13:25+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "duckdb"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "94158ccc2c93b213",
+      "title": "Judge sets framework for Nine PBS to retrieve archival data",
+      "url": "https://current.org/2026/08/judge-sets-framework-for-nine-pbs-to-retrieve-archival-data/",
+      "source": "Hacker News",
+      "published": "2026-08-17T18:11:37+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "63f1175b0875a11b",
+      "title": "Nvidia discloses $21B stake in SpaceX",
+      "url": "https://arstechnica.com/information-technology/2026/08/nvidia-discloses-21b-stake-in-spacex/",
+      "source": "Ars Technica",
+      "published": "2026-08-17T16:22:54+02:00",
+      "summary": "Filing comes after Elon Musk announced exclusive arrangement to kit out its data centers.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f9cd837b29916aa4",
+      "title": "Does it make sense to switch to a Github Alternative ?",
+      "url": "https://lobste.rs/s/0zdh32/does_it_make_sense_switch_github",
+      "source": "Lobsters",
+      "published": "2026-08-17T16:03:05+02:00",
+      "summary": "Github has been down consistently over the last few months - does it make sense to switch to alternatives now? When do you think majority will switch? Edit : My thoughts on this - https://dhruv2038.bearblog.dev/github-has-an-availability-problem-is-it-time-to-look-elsewhere/",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9e96f8b066bfd290",
+      "title": "Ask HN: Alternatives to GitHub",
+      "url": "https://news.ycombinator.com/item?id=49331033",
+      "source": "Hacker News",
+      "published": "2026-08-17T15:59:17+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8ad5dd9c927f3d59",
+      "title": "A Preview of DuckDB v2.0",
+      "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
+      "source": "Hacker News",
+      "published": "2026-08-17T15:46:27+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "duckdb"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "6b970f1c2286c79d",
+      "title": "GPT 5.6 Sol is the best \"vision\" model OpenAI ever released",
+      "url": "https://blog.roboflow.com/openai-gpt-5-6/",
+      "source": "Hacker News",
+      "published": "2026-08-17T14:09:42+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "167dd2cd65d1c895",
-      "title": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
-      "url": "https://techcrunch.com/2026/08/14/hyperscalers-might-regret-embracing-natural-gas-if-new-forecast-proves-correct/",
-      "source": "TechCrunch",
-      "published": "2026-08-14T16:05:00+02:00",
-      "summary": "Natural gas prices could triple in some parts of the U.S., which could saddle hyperscalers with massive bills to power their AI data centers.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "c5017d5ada0fae68",
-      "title": "AI Software Development – What Does The Data Say?",
-      "url": "https://codemanship.wordpress.com/2026/08/12/ai-software-development-what-does-the-data-say/",
-      "source": "Lobsters",
-      "published": "2026-08-17T02:08:04+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
+          "gpt"
         ]
       },
       "scores": {
@@ -1999,214 +2278,6 @@
       "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "c3246bc0cd6695de",
-      "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
-      "url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
-      "source": "Hacker News",
-      "published": "2026-08-16T23:07:10+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "2da4c38b56627969",
-      "title": "Tell HN: Cloudflare silently injects its analytics when you switch nameservers",
-      "url": "https://news.ycombinator.com/item?id=49322107",
-      "source": "Hacker News",
-      "published": "2026-08-16T19:49:46+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "analytics"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "83659884f892a2c2",
-      "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
-      "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
-      "source": "TechCrunch",
-      "published": "2026-08-16T18:53:51+02:00",
-      "summary": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5aac2c0311da2d98",
-      "title": "OpenAI reportedly disbanded its preparedness team",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/980817/openai-disbands-preparedness-team",
-      "source": "The Verge",
-      "published": "2026-08-16T17:32:56-04:00",
-      "summary": "According to the Financial Times, OpenAI disbanded its preparedness team at the end of last month. The job of the preparedness team was to assess if models posed serious risks and develop ways to mitigate those risks. (You know, like the possibility that it could go rogue and hack another company.) According to FT, responsibility […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "8f40cd39fd33d9e5",
-      "title": "Claude: System Prompts",
-      "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-      "source": "Hacker News",
-      "published": "2026-08-16T14:48:21+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "38e7944bff104c42",
-      "title": "SpaceX officially closes its Cursor acquisition",
-      "url": "https://techcrunch.com/2026/08/15/spacex-officially-closes-its-cursor-acquisition/",
-      "source": "TechCrunch",
-      "published": "2026-08-15T18:30:00+02:00",
-      "summary": "AI coding startup Cursor is now officially a part of SpaceX.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cursor"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "504cc9cfcb9795b6",
-      "title": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
-      "url": "https://arstechnica.com/information-technology/2026/08/pbs-station-fears-losing-50tb-of-data-after-being-ghosted-by-cloud-storage-provider/",
-      "source": "Ars Technica",
-      "published": "2026-08-14T19:03:54+02:00",
-      "summary": "\"We don't have access to the data on the hardware/servers,\" Iron Mountain told Ars.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "61627989cac39f33",
-      "title": "datasette 0.65.3",
-      "url": "https://simonwillison.net/2026/Aug/6/datasette-2/",
-      "source": "Simon Willison",
-      "published": "2026-08-06T18:22:07+00:00",
-      "summary": "Release: datasette 0.65.3 Back-ported the SQL Injection security fix from 1.0a38 . Tags: datasette",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 66,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "a18080fd6f6b0ee0",
@@ -2235,6 +2306,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "eef9581bd349a858",
+      "title": "Apple ordered to stop scaring iPhone and iPad users away from third-party apps",
+      "url": "https://www.theverge.com/tech/980977/apple-app-tracking-transparency-settlement-germany",
+      "source": "The Verge",
+      "published": "2026-08-17T11:10:25-04:00",
+      "summary": "Apple's changing its rules for data collection consent prompts after Germany's Federal Cartel Office accused Apple of giving the prompts a design that favored its own apps. Apple's App Tracking Transparency prompts reportedly cost social media apps nearly $10 billion when they launched with iOS 14.5, making cross-app tracking of users largely opt in. But […]",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 58,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "50c8cc0f17bdeed3",
       "title": "DeepSeek V4 Pro 0813 (on OpenRouter)",
       "url": "https://simonwillison.net/2026/Aug/12/deepseek-v4-pro-0813/",
@@ -2255,6 +2352,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "e2f7a824032ea293",
+      "title": "AI automation startup Relay shuts down, staff joins Google’s Chrome team",
+      "url": "https://techcrunch.com/2026/08/17/ai-automation-startup-relay-shuts-down-staff-joins-googles-chrome-team/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T23:27:05+02:00",
+      "summary": "\"We have some really ambitious plans to help you work with AI in Chrome to get things done, and I’ll have more to share soon,\" Jacob Bank, Relay founder and CEO, said.",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
       "id": "bd4a145bae9988a9",
       "title": "Vulnerability giving attackers full control of Macs is under active exploitation",
       "url": "https://arstechnica.com/security/2026/08/vulnerability-giving-attackers-full-control-of-macs-is-under-active-exploitation/",
@@ -2267,32 +2390,6 @@
       "matchedKeywords": {
         "privacy-risk": [
           "vulnerability"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "e3a51b51cdff32f9",
-      "title": "Private security firms will soon be allowed to hack overseas cybercriminals",
-      "url": "https://arstechnica.com/security/2026/08/white-house-recruits-security-firms-to-hack-overseas-cybercriminals/",
-      "source": "Ars Technica",
-      "published": "2026-08-13T21:38:58+02:00",
-      "summary": "Trump memo is first time gov't has authorized private sector to perform cyberattacks.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
         ]
       },
       "scores": {
@@ -2333,92 +2430,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "098eda7d43f49ca2",
-      "title": "Markdown SVG upgrades",
-      "url": "https://simonwillison.net/2026/Aug/16/markdown-svg-upgrades/",
-      "source": "Simon Willison",
-      "published": "2026-08-16T23:59:37+00:00",
-      "summary": "I started building my markdown-svg-renderer tool in May , but I've since added enough features to it that it's worth talking about here again. It's evolved into my ideal tool for sharing Markdown transcripts that include SVG documents. Given my proclivity for drawing pelicans riding bicycles this is a problem that I needed to solve! The tool is very simple. ",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 2,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "fc57d3bd8eee72f7",
-      "title": "Red queen hypothesis – a new way forward for self-improving AI",
-      "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-      "source": "Hacker News",
-      "published": "2026-08-16T22:01:13+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "f7e18f85df663a83",
-      "title": "nokia-dct3-emulator: Open-source emulator + analysis toolkit for Nokia DCT3 phones",
-      "url": "https://github.com/djr-747/nokia-dct3-emulator",
-      "source": "Lobsters",
-      "published": "2026-08-16T18:38:26+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "98099f05af82a3a5",
-      "title": "Quoting Dario Amodei",
-      "url": "https://simonwillison.net/2026/Aug/16/dario-amodei/",
-      "source": "Simon Willison",
-      "published": "2026-08-16T15:05:36+00:00",
-      "summary": "I do agree that the public has a negative view of AI (and that this is a big problem), but I don’t think it is primarily caused by me or any other AI leader warning about AI’s risks. I think it is fundamentally a crisis of trust. I think that ordinary people don’t trust companies, governments, or the tech industry and always suspect that we are cooking up so",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 2,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "9d048dde1ac87be0",
-      "title": "Instapaper, the Original Read-It-Later App, Just Got a Huge Upgrade",
-      "url": "https://www.wired.com/story/instapaper-the-original-read-it-later-app-just-got-a-huge-upgrade/",
+      "id": "694c794040789e66",
+      "title": "This R-Rated Film Studio Wants to Be the HBO of AI",
+      "url": "https://www.wired.com/story/this-r-rated-film-studio-wants-to-be-the-hbo-of-ai/",
       "source": "Wired",
-      "published": "2026-08-15T12:30:00+02:00",
-      "summary": "New fonts, better customization, and a whole new layout all make it worth dusting off your Instapaper account.",
+      "published": "2026-08-17T22:18:17+02:00",
+      "summary": "Rogue Studios, a new cinematic adult AI-generator, is betting big on the future of “sophisticated” spicy content.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2433,52 +2450,52 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "89f648d9e2172e29",
-      "title": "Auk Mini 2 Indoor Smart Garden Review: Better Where It Counts",
-      "url": "https://www.wired.com/review/auk-mini-2-indoor-smart-garden/",
-      "source": "Wired",
-      "published": "2026-08-15T12:01:00+02:00",
-      "summary": "Auk’s Mini 2 improves on the original model with better lights, a sleeker design, and fun new colors.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "63ddfec6ea070ee3",
-      "title": "Zyzz Was the Original Looksmaxxer. His Rise and Untimely Death Feel More Relevant Than Ever",
-      "url": "https://www.wired.com/story/a-young-bodybuilders-rise-preceded-the-looksmaxxing-movement-his-legacy-feels-more-relevant-than-ever/",
-      "source": "Wired",
-      "published": "2026-08-15T12:00:00+02:00",
-      "summary": "A new Apple documentary explores the life of Aziz “Zyzz” Shavershian, who rocketed to internet fame in an age before influencers, then died at age 22 in 2011.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "545d104141af9750",
-      "title": "Talks to sell PayPal to Stripe and Advent are heating up",
-      "url": "https://techcrunch.com/2026/08/14/talks-to-sell-paypal-to-stripe-and-advent-are-heating-up/",
+      "id": "7a64922f412cbed5",
+      "title": "Spotify’s new Playlist Notes let users and editors explain their song picks",
+      "url": "https://techcrunch.com/2026/08/17/spotifys-new-playlist-notes-let-users-and-editors-explain-their-song-picks/",
       "source": "TechCrunch",
-      "published": "2026-08-15T00:43:24+02:00",
-      "summary": "PayPal is still reportedly negotiating a potential sale to Stripe and private equity firm Advent, as the fintech firm's new CEO attempts to turn the company around.",
+      "published": "2026-08-17T21:24:43+02:00",
+      "summary": "Spotify launches a new feature that gives users a chance to explain the stories and reasoning behind their favorite music. Editors will be using the feature, too, on top playlists like RapCaviar and others.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "602fcc543637168a",
+      "title": "Reddit begins testing a new audio and video experience, similar to popular TikTok videos",
+      "url": "https://techcrunch.com/2026/08/17/reddit-begins-testing-a-new-audio-and-video-experience-similar-to-popular-tiktok-videos/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T20:42:30+02:00",
+      "summary": "Reddit is beginning to test video and audio versions of popular posts, allowing users to watch or listen to Reddit stories instead of just reading them.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "1958fe3b2a483350",
+      "title": "Sound-powered fire protection startup gets $15M to snuff out fires before they turn catastrophic",
+      "url": "https://techcrunch.com/2026/08/17/sound-powered-fire-protection-startup-gets-15m-to-snuff-out-fires-before-they-turn-catastrophic/",
+      "source": "TechCrunch",
+      "published": "2026-08-17T20:32:27+02:00",
+      "summary": "Sonic Fire Tech raised its new funding to help get its sound-powered fire protection system into everything from commercial kitchens to apartment buildings.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
