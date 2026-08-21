@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-20T07:06:08+02:00",
+  "generatedAt": "2026-08-21T07:05:11+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 67,
+  "usefulOpen": 65,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -205,84 +205,14 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "ba078fe7dd8b7a5b",
-      "title": "Using the GitHub Copilot SDK for Java",
-      "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
-      "source": "GitHub Blog",
-      "published": "2026-08-10T21:30:00+02:00",
-      "summary": "Enterprise Java developers have a new superpower—drive GitHub Copilot from idiomatic Java code with annotations, virtual threads, and more. The post Using the GitHub Copilot SDK for Java appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "copilot"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 96,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "099a773deeb8b2c5",
-      "title": "OpenAI seeks to one-up Anthropic with new customer privacy protections",
-      "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections/",
+      "id": "cababbd3c2783d14",
+      "title": "OpenAI is gaining on Anthropic with business users, new data indicates",
+      "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates/",
       "source": "TechCrunch",
-      "published": "2026-08-20T00:10:46+02:00",
-      "summary": "A competition is developing between OpenAI and Anthropic over who can provide the best privacy protections for enterprise customer data.",
+      "published": "2026-08-21T00:36:37+02:00",
+      "summary": "Businesses are willing to flop back and forth as each lab releases new models, volatility that should give both companies' investors pause about how \"sticky\" enterprise AI spending really is.",
       "areas": [
         "data-platforms",
-        "enterprise-ai",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ],
-        "privacy-risk": [
-          "privacy"
-        ]
-      },
-      "scores": {
-        "relevance": 5,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 95,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "36b95d55a4d60103",
-      "title": "Cognition CEO denies report that SpaceX tried to acquire the startup",
-      "url": "https://techcrunch.com/2026/08/19/cognition-ceo-denies-report-that-spacex-tried-to-acquire-the-startup/",
-      "source": "TechCrunch",
-      "published": "2026-08-19T23:51:23+02:00",
-      "summary": "SpaceX was reportedly in talks to buy AI coding startup Cognition. SpaceX has already acquired Cursor as it races to catch up to rivals like OpenAI and Anthropic in enterprise AI.",
-      "areas": [
-        "developer-tools",
         "enterprise-ai",
         "models"
       ],
@@ -291,8 +221,8 @@
           "openai",
           "anthropic"
         ],
-        "developer-tools": [
-          "cursor"
+        "data-platforms": [
+          "data"
         ],
         "enterprise-ai": [
           "enterprise"
@@ -306,6 +236,66 @@
         "risk": 0
       },
       "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "8ac58418c7f6ca03",
+      "title": "ChatGPT search now uses the site:operator at scale",
+      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "source": "Simon Willison",
+      "published": "2026-08-20T23:57:32+00:00",
+      "summary": "ChatGPT search now uses the site:operator at scale Promptwatch is part of the emerging \"GEO\" space, for Generative Engine Optimization - the chatbot version of SEO, where companies offer tools and consulting to help your site increase its presence in replies to prompts inside tools like ChatGPT. The Promptwatch product uses automation to track responses to p",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "enterprise-ai": [
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "5339040076f5fa58",
+      "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+      "url": "https://openai.com/index/stampli",
+      "source": "OpenAI News",
+      "published": "2026-08-20T02:00:00+02:00",
+      "summary": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -466,36 +456,6 @@
       "source": "OpenAI News",
       "published": "2026-08-10T02:00:00+02:00",
       "summary": "The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "chatgpt"
-        ],
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "b7d2981f9d572cb8",
-      "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
-      "url": "https://openai.com/index/hsp-gruppe",
-      "source": "OpenAI News",
-      "published": "2026-08-07T11:00:00+02:00",
-      "summary": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
       "areas": [
         "enterprise-ai",
         "models"
@@ -751,6 +711,40 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "42a1c7f0eb1a655a",
+      "title": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+      "source": "Ars Technica",
+      "published": "2026-08-20T15:00:35+02:00",
+      "summary": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
+      "areas": [
+        "data-platforms",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ],
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "1c268af12aebb9aa",
       "title": "Offering Zero Data Retention for frontier models",
       "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
@@ -840,22 +834,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "5dc08f3d5071fa5e",
-      "title": "‘Your Excel Skills Suck’: The Power Users Turning Spreadsheets Into a Spectator Sport",
-      "url": "https://www.wired.com/story/your-excel-skills-suck-the-power-users-turning-spreadsheets-into-a-spectator-sport/",
-      "source": "Wired",
-      "published": "2026-08-19T13:00:00+02:00",
-      "summary": "Data and finance professionals are competing in Excel obstacle courses—amassing huge followings and keeping the Microsoft program relevant.",
+      "id": "d3aaf33252146f4c",
+      "title": "Codex on AWS bedrock bug causing 10x charges",
+      "url": "https://github.com/openai/codex/issues/37674",
+      "source": "Hacker News",
+      "published": "2026-08-21T05:17:43+02:00",
+      "summary": "Comments",
       "areas": [
-        "data-platforms",
+        "developer-tools",
         "enterprise-ai"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "developer-tools": [
+          "codex"
         ],
         "enterprise-ai": [
-          "microsoft"
+          "aws"
         ]
       },
       "scores": {
@@ -870,30 +864,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "44cba083f1ebea9e",
-      "title": "What software do you use daily in 2026?",
-      "url": "https://lobste.rs/s/ttxwdz/what_software_do_you_use_daily_2026",
-      "source": "Lobsters",
-      "published": "2026-08-18T16:31:11+02:00",
-      "summary": "There was a similar thread here six years ago, and I'm curious how people's daily setups have changed since then. What does the software side of your daily setup look like in 2026? Operating system, desktop environment or window manager, terminal, shell, editor, browser, and any other tools you consider essential to your daily workflow. I'm especially intere",
+      "id": "04ae4582d770cfa7",
+      "title": "Debates over AI consciousness are a trap",
+      "url": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-20T17:42:39+02:00",
+      "summary": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis, Dario Amodei, and Sam Altman push for regulation of these seemingly “superhuman” systems, while a separate faction, led by policy organizatio",
       "areas": [
-        "developer-tools",
-        "enterprise-ai"
+        "ai-agents",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "terminal"
+        "ai-agents": [
+          "ai agents",
+          "agents",
+          "autonomous"
         ],
-        "enterprise-ai": [
-          "workflow"
+        "privacy-risk": [
+          "regulation"
         ]
       },
       "scores": {
         "relevance": 3,
-        "leverage": 0,
+        "leverage": 1,
         "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
       "priority": 80,
       "action": "Watch",
@@ -964,12 +960,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a8dcfa812697edfb",
-      "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-      "url": "https://simonwillison.net/2026/Aug/8/now-we-have-a-timeline-of-the-openai-accidental-attack-against-h/",
-      "source": "Simon Willison",
-      "published": "2026-08-08T14:06:41+00:00",
-      "summary": "My comment on Now we have a timeline of the OpenAI accidental attack against Hugging Face — Hacker News. I think one of the most interesting details here might be tucked away in that first bullet point: May 7: OpenAI starts a new training run for an experimental, unreleased model. (Do they mean an evaluation run? They say training run in the video, and later",
+      "id": "a32431dbaba08800",
+      "title": "It’s Greg Brockman’s OpenAI now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion",
+      "source": "The Verge",
+      "published": "2026-08-20T11:45:55-04:00",
+      "summary": "OpenAI has had a hell of a year. The company spent months battling former cofounder Elon Musk in a sensational jury trial, was hit with a high-profile trade secrets lawsuit from Apple, and faced widespread scrutiny after an unreleased model hacked another AI company. As it prepares for an IPO, a steady string of executives […]",
       "areas": [
         "models",
         "privacy-risk"
@@ -979,38 +975,7 @@
           "openai"
         ],
         "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "92198fa5678d7842",
-      "title": "OpenAI hit the brakes. Now what?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/982323/openai-hit-brakes-voluntary-pacing-ai",
-      "source": "The Verge",
-      "published": "2026-08-19T13:10:09-04:00",
-      "summary": "With a looming IPO, intense competition from Anthropic, and Chinese and open-weight rivals nipping at its heels, OpenAI has plenty of reasons to move fast. Instead, it hit the brakes. On Tuesday, the company said it had slowed the pace of some AI development while it tightened security and safeguards. That included a two-week pause […]",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "security"
+          "lawsuit"
         ]
       },
       "scores": {
@@ -1019,6 +984,32 @@
         "novelty": 4,
         "urgency": 4,
         "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "eb43f0cc8a6e5921",
+      "title": "Introducing AI Futures",
+      "url": "https://openai.com/index/introducing-ai-futures",
+      "source": "OpenAI News",
+      "published": "2026-08-20T09:00:00+02:00",
+      "summary": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 78,
       "action": "Watch",
@@ -1294,33 +1285,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2ffce8a5c81d3647",
-      "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
-      "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
-      "source": "OpenAI News",
-      "published": "2026-08-06T12:00:00+02:00",
-      "summary": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "86d9a113bd22dd29",
       "title": "smolmachines / smolvm as a sandbox for untrusted Python & JavaScript",
       "url": "https://simonwillison.net/2026/Aug/19/smolmachines-untrusted-sandbox/",
@@ -1359,33 +1323,6 @@
       "matchedKeywords": {
         "models": [
           "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "63905ca079c012c9",
-      "title": "fx :Tiny, open, native coding agent.",
-      "url": "https://fx.sh",
-      "source": "Hacker News",
-      "published": "2026-08-19T00:00:21+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "coding agent"
         ]
       },
       "scores": {
@@ -1950,19 +1887,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "54ff6f9a2ebf8406",
-      "title": "Google packs Search and Gemini with new AI study tools",
-      "url": "https://techcrunch.com/2026/08/19/google-launches-new-study-tools-for-students-across-search-and-gemini/",
+      "id": "c32cd0bdb8e79e3c",
+      "title": "ChatGPT can now send texts for you with new Apple Messages plug-in",
+      "url": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
       "source": "TechCrunch",
-      "published": "2026-08-19T21:00:00+02:00",
-      "summary": "The launch of the new study features marks Google's latest effort to make Gemini the AI assistant that students turn to when learning and studying, as it continues to compete with companies like OpenAI.",
+      "published": "2026-08-21T00:09:51+02:00",
+      "summary": "Ever wanted someone else to do your texting for you? ChatGPT is being offered up as an automated text scribe via a new Apple Messages integration.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai",
-          "gemini"
+          "chatgpt"
         ]
       },
       "scores": {
@@ -1977,19 +1913,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "dcefe71c28c054ff",
-      "title": "Coders Say They Already Found Workarounds to Claude’s Invisible Watermarks",
-      "url": "https://www.wired.com/story/coders-say-they-already-found-workarounds-to-claudes-invisible-watermarks/",
-      "source": "Wired",
-      "published": "2026-08-19T18:44:07+02:00",
-      "summary": "Anthropic announced last week it would include invisible watermarks in AI-generated content to comply with new EU rules. Within hours, overrides were being touted online.",
+      "id": "b76b2fc7e2cddd26",
+      "title": "A third of web pages published since ChatGPT’s launch show signs of AI authorship, study finds",
+      "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+      "source": "TechCrunch",
+      "published": "2026-08-20T19:18:58+02:00",
+      "summary": "ChatGPT and other AI models are now authoring and editing much of the new web.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "anthropic",
-          "claude"
+          "chatgpt"
         ]
       },
       "scores": {
@@ -2004,44 +1939,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "50f8e33035f9d30f",
-      "title": "Google Pixel Watch 5 Review: More Health, More AI",
-      "url": "https://www.wired.com/review/google-pixel-watch-5/",
-      "source": "Wired",
-      "published": "2026-08-19T18:34:24+02:00",
-      "summary": "With smarter gym tracking, new health alerts, and offline Gemini, the Pixel Watch 5 fine-tunes a winning formula—for a price.",
+      "id": "d271c91f4707f05e",
+      "title": "SpaceX’s orbital data centers would create a new category of e-waste",
+      "url": "https://arstechnica.com/science/2026/08/spacexs-orbital-data-centers-would-create-a-new-category-of-e-waste/",
+      "source": "Ars Technica",
+      "published": "2026-08-20T15:59:50+02:00",
+      "summary": "The yeetcycling math resembles asteroid mining in reverse.",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5b27f0d84b8603bf",
-      "title": "Google Gemini is getting a dedicated student hub",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/982425/google-gemini-student-hub",
-      "source": "The Verge",
-      "published": "2026-08-19T15:00:00-04:00",
-      "summary": "As we're gearing up for back-to-school season, Google is rolling out a new dedicated student hub in Gemini. It's a one-stop repository for collecting research in a study notebook, creating flashcards, taking practice quizzes, and more. Google is also enhancing its study notebooks with support for graphs and images. It can even add test dates […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -2079,6 +1988,163 @@
         "risk": 0
       },
       "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "656710eb832f9e43",
+      "title": "AI data startup Micro1 reaches $500M gross run rate amid AI training boom",
+      "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/",
+      "source": "TechCrunch",
+      "published": "2026-08-21T02:13:44+02:00",
+      "summary": "Surging demand for AI training data is driving rapid growth for the startup and its rivals.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8178f5f8b78e0df1",
+      "title": "Learn what VCs actually want, from a founder who’s raised $1B",
+      "url": "https://techcrunch.com/video/learn-what-vcs-actually-want-from-a-founder-whos-raised-1b/",
+      "source": "TechCrunch",
+      "published": "2026-08-21T01:32:27+02:00",
+      "summary": "Investors want founders who understand the financial reality of their business. Messy data, misunderstood metrics, or waiting until you’re nearly out of cash to start fundraising can cost founders leverage, valuation, and even a term sheet. In this episode of Build Mode, host Isabelle Johannessen sits down with Sasha Orloff, founder and CEO of Puzzle […]",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "83ddc9e9c718fc42",
+      "title": "OK, can we actually cool data centers with our pee?",
+      "url": "https://techcrunch.com/2026/08/20/ok-can-we-actually-cool-data-centers-with-our-pee/",
+      "source": "TechCrunch",
+      "published": "2026-08-20T22:53:13+02:00",
+      "summary": "Jason Kelce joked that people should cool data centers with their pee, rather than potable water -- but his suggestion is not completely ludicrous.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c3df7f20659b6c0f",
+      "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+      "url": "https://github.com/zachahn/vomit",
+      "source": "Hacker News",
+      "published": "2026-08-20T17:26:02+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0b0c9f4a765e47a1",
+      "title": "Reverse-lookup service exposed millions of photos of people’s faces",
+      "url": "https://arstechnica.com/gadgets/2026/08/reverse-lookup-service-exposed-millions-of-photos-of-peoples-faces/",
+      "source": "Ars Technica",
+      "published": "2026-08-20T15:29:54+02:00",
+      "summary": "People-search tool ClarityCheck left database containing more than 9M image files exposed.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "7f17cd92f29ef7c3",
+      "title": "If this is true, the hyperscalers are toast",
+      "url": "https://klementoninvesting.substack.com/p/if-this-is-true-the-hyperscalers",
+      "source": "Lobsters",
+      "published": "2026-08-20T13:53:16+02:00",
+      "summary": "The future of AI is not large language models (LLM), but small language models (SLM). Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2161,37 +2227,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "d930ed8027268a87",
-      "title": "Researchers say OpenAI revoked their access to limited cyber program",
-      "url": "https://techcrunch.com/2026/08/19/researchers-complain-that-openai-revoked-their-access-to-limited-cyber-program/",
-      "source": "TechCrunch",
-      "published": "2026-08-19T20:46:14+02:00",
-      "summary": "The idea behind OpenAI's Trusted Access for Cyber program is to give trusted defenders better models so they can report bugs and vulnerabilities to companies, with the aim of getting flaws patched faster.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "bd2d6605d16cfe19",
-      "title": "Google replaced Git tags for certain source code with obtaining via Google Drive",
-      "url": "https://grapheneos.social/@GrapheneOS/117057099753905023",
+      "id": "297f18bbb2928094",
+      "title": "Git at any scale",
+      "url": "https://cursor.com/blog/git-at-any-scale",
       "source": "Hacker News",
-      "published": "2026-08-19T19:47:29+02:00",
+      "published": "2026-08-18T18:26:56+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -2213,158 +2253,28 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "439d127000a70f0d",
-      "title": "Meet the startup helping Wall Street put a price on AI compute",
-      "url": "https://techcrunch.com/video/meet-the-startup-helping-wall-street-put-a-price-on-ai-compute/",
-      "source": "TechCrunch",
-      "published": "2026-08-19T19:26:48+02:00",
-      "summary": "The AI buildout shows no signs of slowing. And with hundreds of billions of dollars a year going into data centers and GPUs, compute has become the single biggest cost for anyone building AI products. But for all that spending, there still isn’t a straightforward way to put a price on compute — or for firms to hedge their exposure when the price changes. Sil",
+      "id": "421be938273c1481",
+      "title": "This app makes the Pixel 11’s HiLight feature actually useful",
+      "url": "https://www.theverge.com/tech/982791/this-app-makes-the-pixel-11s-hilight-feature-actually-useful",
+      "source": "The Verge",
+      "published": "2026-08-20T11:30:34-04:00",
+      "summary": "Google's new HiLight notification LED on the Pixel 11 Pro is nearly useless. Out of the box, the only two things it can glow for are when the phone is face down and you're interacting with Gemini, or when you get a call from a favorite contact. And even then, it can only glow one […]",
       "areas": [
-        "data-platforms"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "models": [
+          "gemini"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
-        "risk": 0
+        "risk": 1
       },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "19c6f97fa6b3c450",
-      "title": "capri: Type-safe, atomic Gleam bindings for Khepri, the modern distributed database for the BEAM",
-      "url": "https://capri.hexdocs.pm/",
-      "source": "Lobsters",
-      "published": "2026-08-19T19:07:12+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0a96d0b47df815d6",
-      "title": "TerraPower’s nuclear reactor has a secret weapon for powering AI data centers",
-      "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers/",
-      "source": "TechCrunch",
-      "published": "2026-08-19T17:44:53+02:00",
-      "summary": "TerraPower's nuclear power plant possesses a strategic advantage over competitors, especially when chasing after data center deals.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "d3ce7f3001dd6de3",
-      "title": "SQLite for Everything",
-      "url": "https://joecode.com/2026-08-19-sqlite3/",
-      "source": "Lobsters",
-      "published": "2026-08-19T17:17:39+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "b6f75c2cb5b30487",
-      "title": "Reverse-Lookup Service Exposed Millions of Photos of People’s Faces",
-      "url": "https://www.wired.com/story/reverse-lookup-service-exposed-millions-of-photos-of-peoples-faces/",
-      "source": "Wired",
-      "published": "2026-08-19T12:00:00+02:00",
-      "summary": "The people-search tool ClarityCheck says its reverse image search service is “private and secure”—but it left a database containing more than 9 million image files exposed.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "66eb4b49d2d0dd05",
-      "title": "AI’s recursive self-improvement might not come so quickly after all",
-      "url": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
-      "source": "MIT Technology Review",
-      "published": "2026-08-18T11:00:00+02:00",
-      "summary": "The AI industry’s boldest promise right now is that AI will soon improve itself, with almost no need for human oversight. LLMs can already write code, generate synthetic data for training, and optimize the computer chips they run on. Forecasts of explosive AI progress predict that what researchers call recursive self-improvement is on the horizon. …",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
+      "priority": 62,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2395,30 +2305,24 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e46e384d50c391e3",
-      "title": "Nielsen is leaning more on wearables to hear what people are watching",
-      "url": "https://www.theverge.com/entertainment/982358/nielsen-ratings-ppm-smart-watch-cowatching-big-data",
-      "source": "The Verge",
-      "published": "2026-08-19T15:53:09-04:00",
-      "summary": "In order to beef up its ability to accurately measure viewership data in the streaming era, Nielsen is moving forward with a plan to use more information gathered from its partners' wearable devices. Today, Nielsen announced \"a number of key enhancements\" that are being added to its data capturing process ahead of the upcoming fall […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
+      "id": "34e6e834f4779d34",
+      "title": "A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView",
+      "url": "https://simonwillison.net/2026/Aug/20/bun-webview-json-api/",
+      "source": "Simon Willison",
+      "published": "2026-08-20T15:37:00+00:00",
+      "summary": "Research: A shot-scraper-style JSON API on Bun 1.4's new Bun.WebView Today saw the long awaited release of Bun 1.4 , the first stable version since the infamous Rust rewrite a few months ago . Interestingly, the Rust rewrite was downplayed in the release notes, which introduced a bewildering array of new features and claimed 2,900 additional bug fixes: Bun 1",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
         "urgency": 2,
-        "risk": 1
+        "risk": 0
       },
       "priority": 58,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "ec53fde0e2f5d24b",
@@ -2461,12 +2365,52 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "88a14572133b7a56",
-      "title": "Travis Kalanick kicks off another round of VC bashing: ‘1% are helpful’",
-      "url": "https://techcrunch.com/2026/08/19/travis-kalanick-kicks-off-another-round-of-vc-bashing-1-are-helpful/",
+      "id": "833befa2f71948e9",
+      "title": "Europe cancels planned upgrades for Ariane 6 rocket",
+      "url": "https://arstechnica.com/space/2026/08/europe-cancels-planned-upgrades-for-ariane-6-rocket/",
+      "source": "Ars Technica",
+      "published": "2026-08-20T23:40:52+02:00",
+      "summary": "Arianespace hasn’t publicly disclosed the cost for an Ariane 6 launch.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "11cec72d5d7ec8c4",
+      "title": "Genki’s new customizable controller has a big screen and adjustable buttons",
+      "url": "https://www.theverge.com/tech/981536/genki-manta-wireless-customizable-controller-tmr-screen",
+      "source": "The Verge",
+      "published": "2026-08-20T22:00:00-04:00",
+      "summary": "After collaborating with 8BitDo on a gamepad two years ago, Genki launched the first controller the company designed from the ground up today. With an unorthodox design that positions its thumbsticks and buttons above a large 2.9-inch LCD screen, the Manta looks a lot chunkier than competing controllers. But what really sets it apart is […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "541f6382a12b2c44",
+      "title": "Google gives publishers a new way to fight AI-driven traffic losses",
+      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/",
       "source": "TechCrunch",
-      "published": "2026-08-19T23:48:24+02:00",
-      "summary": "After raising $1.7 billion for his new robotics company Atoms, Travis Kalanick is introspective about the role VCs have played in his career.",
+      "published": "2026-08-20T21:18:21+02:00",
+      "summary": "Google is giving publishers a new button that lets readers make them a preferred source across Search, Discover, and Google News, potentially boosting their traffic as AI search sends fewer clicks to the web.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2481,12 +2425,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "611cd306d5a9ea5f",
-      "title": "Go 1.27 Release Notes",
-      "url": "https://go.dev/doc/go1.27",
+      "id": "f505ca07ff042fc3",
+      "title": "Emacs 31.1 will release on 8/24",
+      "url": "https://github.com/emacs-mirror/emacs/blob/062dcd2aead00c3b47c14ff5b6c40313f7a775f5/etc/HISTORY#L246",
       "source": "Lobsters",
-      "published": "2026-08-19T20:15:04+02:00",
-      "summary": "Interactive tour of go 1.27 https://victoriametrics.com/blog/go-1-27 Comments",
+      "published": "2026-08-20T18:58:11+02:00",
+      "summary": "Biggest thing for me is that tree-sitter's ABI is being bumped to 15 -- fixes compatibility issues with several upstream grammars. For the impatient, RC1 has been posted: https://lists.gnu.org/archive/html/emacs-devel/2026-08/msg00599.html Comments",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2501,12 +2445,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "0a90e14c7a332a3f",
-      "title": "Launch HN: OneCLI (YC S26) – OSS sandboxed agent harness for teams",
-      "url": "https://github.com/onecli/onecli",
-      "source": "Hacker News",
-      "published": "2026-08-19T18:29:02+02:00",
-      "summary": "Comments",
+      "id": "c5bc6e354364367e",
+      "title": "Google Discover is getting an AI chatbot-tuned feed",
+      "url": "https://www.theverge.com/tech/983088/google-discover-ai-chatbot-feed",
+      "source": "The Verge",
+      "published": "2026-08-20T17:50:22-04:00",
+      "summary": "Google will soon allow you to customize your Discover feed by describing what you want to see. The new feature, rolling out to the Google app in the \"coming days,\" will use AI to automatically tweak your feed and \"remember\" your preferences for future visits. You'll find the option within the three-dot menu on your […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "32edf3b5536193c3",
+      "title": "Genesis joins the giant electric SUV club with new GV90",
+      "url": "https://arstechnica.com/cars/2026/08/genesis-joins-the-giant-electric-suv-club-with-new-gv90/",
+      "source": "Ars Technica",
+      "published": "2026-08-20T16:35:58+02:00",
+      "summary": "A retractable screen, a huge heads-up display, and an optional 4-seat VIP interior.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
