@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-22T07:05:39+02:00",
+  "generatedAt": "2026-08-23T07:05:16+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 65,
+  "usefulOpen": 67,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -205,6 +205,38 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "d3e59e53f6c583c8",
+      "title": "Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research",
+      "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+      "source": "TechCrunch",
+      "published": "2026-08-22T21:00:00+02:00",
+      "summary": "Built by DeepMind alumni, British AI lab Inherent released Faraday, an AI agent whose ability to replicate scientific papers could be a stepping stone for innovation.",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agent",
+          "agent"
+        ],
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "8ac58418c7f6ca03",
       "title": "ChatGPT search now uses the site:operator at scale",
       "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
@@ -371,36 +403,6 @@
         ],
         "developer-tools": [
           "codex"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "2c034c9a44621b7f",
-      "title": "Introducing Muse Glimmer",
-      "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer/",
-      "source": "Simon Willison",
-      "published": "2026-08-10T23:56:03+00:00",
-      "summary": "Introducing Muse Glimmer Meta are back in the open weights game! Muse Glimmer is a brand new 30B model under a clean Apache 2.0 license (a step up from the janky Llama licenses of old). They claim to have optimized it for exactly the kind of things I'm looking for in a local model: End-to-end Agentic Task Completion. Muse Glimmer achieves strong success rate",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
-        "models": [
-          "llama"
         ]
       },
       "scores": {
@@ -619,33 +621,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "76b6b22cd9ac210e",
-      "title": "datasette-upload-dbs 0.5a0",
-      "url": "https://simonwillison.net/2026/Aug/11/datasette-upload-dbs/",
-      "source": "Simon Willison",
-      "published": "2026-08-11T20:35:13+00:00",
-      "summary": "Release: datasette-upload-dbs 0.5a0 This plugin has been around for a while - it lets users upload a brand new SQLite database to a hosted Datasette instance, at which point that database will start being served by that instance. It can also be used to atomically swap a database with a more recent version. The uploaded database is saved to a file, verified, ",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "db0b7333333d96bd",
       "title": "Responding to the next frontier of critical cyber capabilities",
       "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
@@ -672,40 +647,6 @@
         "risk": 1
       },
       "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "42a1c7f0eb1a655a",
-      "title": "Grok exfiltrates user data when malicious instructions are encrypted",
-      "url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
-      "source": "Ars Technica",
-      "published": "2026-08-20T15:00:35+02:00",
-      "summary": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
-      "areas": [
-        "data-platforms",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -829,6 +770,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "a5f4115f36d47e59",
+      "title": "A week of using Codex more than Claude",
+      "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
+      "source": "Hacker News",
+      "published": "2026-08-21T21:51:48+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "04ae4582d770cfa7",
       "title": "Debates over AI consciousness are a trap",
       "url": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
@@ -892,6 +863,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "edb0c81b18e93136",
+      "title": "llm 0.33",
+      "url": "https://simonwillison.net/2026/Aug/22/llm/",
+      "source": "Simon Willison",
+      "published": "2026-08-22T17:01:16+00:00",
+      "summary": "Release: llm 0.33 My highlights from this release: Upgraded to the OpenAI Python library 3.x and switched the HTTP client dependency from httpx to httpx2 . #1608 , #1631 I shipped a quick 0.32.1 fix for this yesterday, but this is the more comprehensive fix. llm embed and llm embed-multi now accept --key . The Python EmbeddingModel.embed() , EmbeddingModel.e",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "8270e60980e21188",
       "title": "llm 0.32.1",
       "url": "https://simonwillison.net/2026/Aug/21/llm/",
@@ -939,36 +937,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "cb515e6f1816a9bb",
-      "title": "Private equity firm Apollo confirms data breach amid hacking wave targeting financial giants",
-      "url": "https://techcrunch.com/2026/08/21/private-equity-firm-apollo-confirms-data-breach-amid-hacking-wave-targeting-financial-giants/",
-      "source": "TechCrunch",
-      "published": "2026-08-21T15:35:23+02:00",
-      "summary": "The private equity giant confirms a breach, weeks after Google researchers said hackers were targeting financial companies.",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -1213,6 +1181,58 @@
         "risk": 2
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "740ce5e55e505b73",
+      "title": "Quoting Linus Torvalds",
+      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+      "source": "Simon Willison",
+      "published": "2026-08-22T21:04:26+00:00",
+      "summary": "And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work. I'd like to call it my tireless helper, but the AI several times stated flat out that this was impossible and unsolvable and that we should just write a report about it. I suspect those things have been trained by people who may not be quite as stubborn as I am. ",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "debug"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "83a3b544708f7a70",
+      "title": "More than just code review",
+      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
+      "source": "Simon Willison",
+      "published": "2026-08-22T15:56:54+00:00",
+      "summary": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way. Sometimes this involves reviewing every line of code they have written, but there are other ways to achieve that goal. Eyeballing every line of co",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1871,6 +1891,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "b31a03cfede473d5",
+      "title": "OpenAI says California should strengthen its AI safety bill",
+      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
+      "source": "TechCrunch",
+      "published": "2026-08-22T18:30:34+02:00",
+      "summary": "OpenAI is calling for California to strengthen SB 53, an AI safety bill that the company previously opposed.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 72,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "22ce5ff34a73768e",
       "title": "TikTok will pay $400 million to settle DOJ child privacy lawsuit",
       "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
@@ -1902,12 +1952,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "475a7a92870c2cff",
-      "title": "Starcloud raises $250 million for orbital data centers as launch options dry up",
-      "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
-      "source": "TechCrunch",
-      "published": "2026-08-21T16:00:00+02:00",
-      "summary": "There's about to be a big fight to secure access to space.",
+      "id": "4c468db29ef40b2a",
+      "title": "ATProto spaces: A new extension to ATProto that enables non-public data",
+      "url": "https://atproto.com/blog/atproto-spaces-alpha",
+      "source": "Hacker News",
+      "published": "2026-08-20T22:22:35+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -1950,6 +2000,84 @@
         "risk": 0
       },
       "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "3f8b1c476206091b",
+      "title": "Why your local LLM feels dumber than it is",
+      "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
+      "source": "Hacker News",
+      "published": "2026-08-22T20:14:16+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c9c4646d1f619d4e",
+      "title": "Linus Torvalds uses AI to debug an Intel GPU driver bug",
+      "url": "https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c",
+      "source": "Lobsters",
+      "published": "2026-08-22T18:04:51+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "debug"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4e3761f8fe7d3684",
+      "title": "Robot comment classifier",
+      "url": "https://entropicthoughts.com/ai-comment-classifier",
+      "source": "Lobsters",
+      "published": "2026-08-22T12:18:39+02:00",
+      "summary": "(I used both AI and vibecoding tags because the article describes training a logistic regression/SVM on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!) Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -2007,37 +2135,11 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "7598c692998439ce",
-      "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
-      "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+      "id": "aa2ce0c38f03413d",
+      "title": "One night in Uzbekistan: Why was this one data point so influential?",
+      "url": "https://statmodeling.stat.columbia.edu/2026/08/20/we-couldnt-reproduce-their-findings-and-realized-that-it-was-all-driven-by-weird-data-from-uzbekistan/",
       "source": "Hacker News",
-      "published": "2026-08-21T16:31:52+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "432592ddddb46a39",
-      "title": "Data races and the memory model in Go",
-      "url": "https://func25.dev/posts/go-memory-visibility/",
-      "source": "Lobsters",
-      "published": "2026-08-21T15:11:08+02:00",
+      "published": "2026-08-21T21:05:50+02:00",
       "summary": "Comments",
       "areas": [
         "data-platforms"
@@ -2045,32 +2147,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "ea3575a124ddd89f",
-      "title": "GitHub, autoscaling, and the component substitution fallacy",
-      "url": "https://surfingcomplexity.blog/2026/08/19/github-autoscaling-and-the-component-substitution-fallacy/",
-      "source": "Hacker News",
-      "published": "2026-08-20T21:28:18+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github"
         ]
       },
       "scores": {
@@ -2137,32 +2213,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "a18080fd6f6b0ee0",
-      "title": "Quoting OpenClaw (running Opus 4.6)",
-      "url": "https://simonwillison.net/2026/Aug/10/openclaw/",
-      "source": "Simon Willison",
-      "published": "2026-08-10T02:05:16+00:00",
-      "summary": "The API has zero authorisations checks on cancelling other people's reservations … I tested this with the person in waitlist position #1 — and it actually went through. So you've moved from #4 to #3 already. — OpenClaw (running Opus 4.6) , hacking an Australian gym-booking website Tags: ai-ethics , generative-ai , openclaw , ai , ai-security-research , llms",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 62,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "c56c4e5d243a6416",
       "title": "Hidden Zillow listings created fake supply shock, raising NYC rents, lawsuit says",
       "url": "https://arstechnica.com/tech-policy/2026/08/class-action-accuses-brokers-of-hiding-zillow-listings-driving-up-nyc-rents/",
@@ -2187,32 +2237,6 @@
       "priority": 58,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "68c19939ed94ac56",
-      "title": "Felony charges for citizen deleting phone data at US Border",
-      "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
-      "source": "Hacker News",
-      "published": "2026-08-21T14:10:13+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 58,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "34e6e834f4779d34",
@@ -2275,32 +2299,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "3dc5387f5f8436bd",
-      "title": "Microsoft and Discord subpoenaed over GTA VI gameplay leaks",
-      "url": "https://www.theverge.com/games/983323/grand-theft-auto-vi-gta-leaks-microsoft-discord-subpoenaed",
-      "source": "The Verge",
-      "published": "2026-08-21T12:52:56-04:00",
-      "summary": "Following several apparent video leaks of Grand Theft Auto VI, Take-Two Interactive has subpoenaed Microsoft and Discord over content that \"infringes copyrights\" held for the game, Kotaku reports. In the subpoenas, filed on Thursday, Take-Two says copyrighted material includes \"audiovisual content, artwork, images, dialogue, or other creative elements\" and i",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "f639cdc774b40de4",
       "title": "Japanese space tech startup Letara expands beyond satellite thrusters with $16M",
       "url": "https://techcrunch.com/2026/08/21/japanese-space-tech-startup-letara-expands-beyond-satellite-thrusters-with-16m/",
@@ -2353,54 +2351,82 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "86ee060ecedefd3c",
-      "title": "US government lab is probing Chinese lidar for security vulnerabilities",
-      "url": "https://techcrunch.com/2026/08/21/us-government-lab-is-probing-chinese-lidar-for-security-vulnerabilities/",
+      "id": "af5687185221f460",
+      "title": "Two years after launch, Walmart’s Flipkart is closing in on India’s quick-commerce leaders",
+      "url": "https://techcrunch.com/2026/08/22/two-years-after-launch-walmarts-flipkart-is-closing-in-on-indias-quick-commerce-leaders/",
       "source": "TechCrunch",
-      "published": "2026-08-21T18:01:54+02:00",
-      "summary": "The security review is being performed by the Idaho National Laboratory, and the research is being funded by a company -- or a group of companies -- in the electric and autonomous vehicle industries.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
+      "published": "2026-08-23T05:00:00+02:00",
+      "summary": "Flipkart's quick-commerce venture is delivering 1.1 million to 1.2 million orders a day, nearly triple its November volume.",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 1,
+        "relevance": 0,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 54,
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "1133e25869529249",
-      "title": "Oura faces lawsuit accusing it of misleading consumers about sleep-tracking accuracy",
-      "url": "https://techcrunch.com/2026/08/21/oura-faces-lawsuit-accusing-it-of-misleading-consumers-about-sleep-tracking-accuracy/",
+      "id": "ba8ca26c43be71fc",
+      "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
+      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
       "source": "TechCrunch",
-      "published": "2026-08-21T16:39:24+02:00",
-      "summary": "The lawsuit alleges that Oura rings are unable to measure any of the physiological signals needed to assess sleep quality or determine sleep stages.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
+      "published": "2026-08-22T18:00:00+02:00",
+      "summary": "A new study finds leading AI labs have few publicly documented plans for containing rogue models, raising questions about preparedness as AI systems increasingly demonstrate unexpected and potentially dangerous behavior.",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 1,
+        "relevance": 0,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 54,
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "40de052206b0f85d",
+      "title": "Two great new repairable gadgets",
+      "url": "https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2",
+      "source": "The Verge",
+      "published": "2026-08-22T08:00:00-04:00",
+      "summary": "Hi, friends! Welcome to Installer No. 141, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, I'm newish here too, and also you can read all the old editions at the Installer homepage.) This week, I've been getting back into the Installer groove, trying out some ergonomic Switch […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "484f5465d0df8eac",
+      "title": "Roomy is generally available",
+      "url": "https://blog.roomy.space/3mplw6vvw4s23",
+      "source": "Lobsters",
+      "published": "2026-08-22T07:19:19+02:00",
+      "summary": "Roomy is an open-source Discord alternative for the decentralized web, built around public, forum-like community spaces rather than private messaging. It uses Bluesky's AT Protocol for identity and social discovery. Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2431,46 +2457,6 @@
       "source": "Ars Technica",
       "published": "2026-08-22T01:32:17+02:00",
       "summary": "\"We probably need another site that's capable of heavy and super heavy launch capability.\"",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "bc05fe3c92dba8ac",
-      "title": "Scientists release biggest 2D map of the universe",
-      "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
-      "source": "Hacker News",
-      "published": "2026-08-21T20:36:34+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "538cb84ba473ebed",
-      "title": "New Worlds: We are living in the future of J.G. Ballard or William Gibson",
-      "url": "https://precastreinforced.co.uk/2026/08/16/new-worlds/",
-      "source": "Hacker News",
-      "published": "2026-08-21T15:07:26+02:00",
-      "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
