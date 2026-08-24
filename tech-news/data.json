@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-23T07:05:16+02:00",
+  "generatedAt": "2026-08-24T07:05:14+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 67,
+  "usefulOpen": 66,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -740,6 +740,36 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "3d4c4462f51daa25",
+      "title": "Over 170k Nonprofits Lost All Their Data. Is Microsoft to Blame?",
+      "url": "https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html",
+      "source": "Hacker News",
+      "published": "2026-08-23T20:55:54+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms",
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "5d44bd32699ddd38",
       "title": "Nvidia partners with data center developer Cloverleaf",
       "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
@@ -756,36 +786,6 @@
         ],
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "a5f4115f36d47e59",
-      "title": "A week of using Codex more than Claude",
-      "url": "https://allaboutcoding.ghinda.com/a-week-of-using-codex-more-than-claude/",
-      "source": "Hacker News",
-      "published": "2026-08-21T21:51:48+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "developer-tools": [
-          "codex"
         ]
       },
       "scores": {
@@ -1185,6 +1185,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "2bc26709368c49d8",
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "source": "Simon Willison",
+      "published": "2026-08-23T20:24:52+00:00",
+      "summary": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\": Anthropic's \"annualized revenue\" for July is up to $65bn - it was $47bn in May, and I collected more historic numbers here . Anthropic expect Q3 to be profitable according to the same mod",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "740ce5e55e505b73",
       "title": "Quoting Linus Torvalds",
       "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
@@ -1222,33 +1248,6 @@
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "b6ca302c5f30c249",
-      "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-      "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-      "source": "TechCrunch",
-      "published": "2026-08-21T21:43:39+02:00",
-      "summary": "Nvidia research shows that AI agents can perform well, and not go off the deep end, through fine-tuning, even if the AI model isn't that great at the task.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
           "agents"
         ]
       },
@@ -1707,34 +1706,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f612a79350fc0ee6",
-      "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
-      "url": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/",
-      "source": "Simon Willison",
-      "published": "2026-08-11T22:40:45+00:00",
-      "summary": "Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed across sessions, users, and models. We take a trace produced by a frontier model, replay it into a weaker sibling, jailbreak the weaker model",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai",
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "9bea87b9d577a7c8",
       "title": "What building an AI-native finance function taught me",
       "url": "https://openai.com/index/building-an-ai-native-finance-function",
@@ -1921,6 +1892,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "101ac0e5df342ccf",
+      "title": "GTA VI: all the news on Rockstar’s next entry in the Grand Theft Auto series",
+      "url": "https://www.theverge.com/23987993/gta-6-news-trailers-rockstar-games",
+      "source": "The Verge",
+      "published": "2026-08-23T15:14:37-04:00",
+      "summary": "It’s been over a decade and two console generations since GTA V came out, and its sequel is still a work in progress. GTA VI has faced multiple delays, with developer Rockstar Games bumping back its predicted release date twice, first to May 26th, 2026, then again to November 19th, 2026, a full year after […]",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "developer"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
       "id": "22ce5ff34a73768e",
       "title": "TikTok will pay $400 million to settle DOJ child privacy lawsuit",
       "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
@@ -1952,96 +1949,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "4c468db29ef40b2a",
-      "title": "ATProto spaces: A new extension to ATProto that enables non-public data",
-      "url": "https://atproto.com/blog/atproto-spaces-alpha",
+      "id": "6f52dd642bb6cbe1",
+      "title": "Parallel development without the headaches using Git worktree",
+      "url": "https://barrd.dev/article/parallel-development-without-the-headaches-using-git-worktree/",
       "source": "Hacker News",
-      "published": "2026-08-20T22:22:35+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "d271c91f4707f05e",
-      "title": "SpaceX’s orbital data centers would create a new category of e-waste",
-      "url": "https://arstechnica.com/science/2026/08/spacexs-orbital-data-centers-would-create-a-new-category-of-e-waste/",
-      "source": "Ars Technica",
-      "published": "2026-08-20T15:59:50+02:00",
-      "summary": "The yeetcycling math resembles asteroid mining in reverse.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "3f8b1c476206091b",
-      "title": "Why your local LLM feels dumber than it is",
-      "url": "https://forum.level1techs.com/t/why-your-local-llm-feels-dumber-than-it-is/253917",
-      "source": "Hacker News",
-      "published": "2026-08-22T20:14:16+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "c9c4646d1f619d4e",
-      "title": "Linus Torvalds uses AI to debug an Intel GPU driver bug",
-      "url": "https://github.com/torvalds/linux/commit/818bebeb63dd6bf5f4e07e145f6cdbace520a34c",
-      "source": "Lobsters",
-      "published": "2026-08-22T18:04:51+02:00",
+      "published": "2026-08-24T00:06:14+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "debug"
+          "git"
         ]
       },
       "scores": {
@@ -2056,12 +1975,90 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "4e3761f8fe7d3684",
-      "title": "Robot comment classifier",
-      "url": "https://entropicthoughts.com/ai-comment-classifier",
-      "source": "Lobsters",
-      "published": "2026-08-22T12:18:39+02:00",
-      "summary": "(I used both AI and vibecoding tags because the article describes training a logistic regression/SVM on LLM output. I thought there was a statistics tag that would have been appropriate but apparently not!) Comments",
+      "id": "3bc67d04ddda2b16",
+      "title": "Implementation of GPT-2 in pure CMake",
+      "url": "https://github.com/AlpinDale/gpt2.cmake",
+      "source": "Hacker News",
+      "published": "2026-08-23T23:41:17+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f88a3ef3b422dd22",
+      "title": "Uber faces fine of nearly $1B over automated driver suspensions",
+      "url": "https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/",
+      "source": "TechCrunch",
+      "published": "2026-08-23T21:30:00+02:00",
+      "summary": "The Dutch Data Protection Authority is fining Uber €825 million in the second largest penalty issued under Europe’s GDPR.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e5506245222f686c",
+      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
+      "source": "Hacker News",
+      "published": "2026-08-23T20:16:37+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a22badccdd39ad8b",
+      "title": "My agent.md to improve LLM-assisted code quality",
+      "url": "https://fabiensanglard.net/agent.md/index.html",
+      "source": "Hacker News",
+      "published": "2026-08-23T19:59:52+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
@@ -2135,58 +2132,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "aa2ce0c38f03413d",
-      "title": "One night in Uzbekistan: Why was this one data point so influential?",
-      "url": "https://statmodeling.stat.columbia.edu/2026/08/20/we-couldnt-reproduce-their-findings-and-realized-that-it-was-all-driven-by-weird-data-from-uzbekistan/",
-      "source": "Hacker News",
-      "published": "2026-08-21T21:05:50+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0b0c9f4a765e47a1",
-      "title": "Reverse-lookup service exposed millions of photos of people’s faces",
-      "url": "https://arstechnica.com/gadgets/2026/08/reverse-lookup-service-exposed-millions-of-photos-of-peoples-faces/",
-      "source": "Ars Technica",
-      "published": "2026-08-20T15:29:54+02:00",
-      "summary": "People-search tool ClarityCheck left database containing more than 9M image files exposed.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "acb263357b6b0ede",
       "title": "Quoting Jeremy Morrell",
       "url": "https://simonwillison.net/2026/Aug/19/jeremy-morrell/",
@@ -2209,6 +2154,26 @@
         "risk": 1
       },
       "priority": 66,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "6437449a8f8f8c43",
+      "title": "Quoting Drew Breunig",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "source": "Simon Willison",
+      "published": "2026-08-23T19:55:30+00:00",
+      "summary": "Prior to Fable, it felt silly to waste too much time improving your coding harness or context strategies. A new model would arrive at the same price (or cheaper!) and paper over most of your problems. But then Fable landed. It was (and still is!) incredible . But the cost was so high and Opus was good enough (as was 5.6, K3, and even GLM) for most of the cod",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2351,6 +2316,66 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "c4f21f426d508ac6",
+      "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+      "source": "TechCrunch",
+      "published": "2026-08-23T22:01:36+02:00",
+      "summary": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "da32d6fa40f2af24",
+      "title": "A website for debloated open source alternatives",
+      "url": "https://debloat.dev/",
+      "source": "Hacker News",
+      "published": "2026-08-23T18:54:10+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "c7e0319d6d221358",
+      "title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
+      "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
+      "source": "Ars Technica",
+      "published": "2026-08-23T16:30:16+02:00",
+      "summary": "\"The Chang’e 7 mission does not meet the conditions for launch.\"",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
       "id": "af5687185221f460",
       "title": "Two years after launch, Walmart’s Flipkart is closing in on India’s quick-commerce leaders",
       "url": "https://techcrunch.com/2026/08/22/two-years-after-launch-walmarts-flipkart-is-closing-in-on-indias-quick-commerce-leaders/",
@@ -2411,52 +2436,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "484f5465d0df8eac",
-      "title": "Roomy is generally available",
-      "url": "https://blog.roomy.space/3mplw6vvw4s23",
-      "source": "Lobsters",
-      "published": "2026-08-22T07:19:19+02:00",
-      "summary": "Roomy is an open-source Discord alternative for the decentralized web, built around public, forum-like community spaces rather than private messaging. It uses Bluesky's AT Protocol for identity and social discovery. Comments",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "f41987cafff61556",
       "title": "Michael Polansky is training an AI model on skin that’s still alive",
       "url": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/",
       "source": "TechCrunch",
       "published": "2026-08-22T03:31:04+02:00",
       "summary": "Michael Polansky — better known publicly as Lady Gaga's partner and a former top deputy to Sean Parker — has quietly spent years building an AI-driven startup that keeps living human skin tissue alive for weeks outside the body to discover new skincare compounds, and is only now going public about it.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "60c6eb0b1110277c",
-      "title": "Trump's space transportation policy calls for new spaceport on federal land",
-      "url": "https://arstechnica.com/space/2026/08/trump-admin-calls-for-more-spaceports-to-handle-surge-in-launches/",
-      "source": "Ars Technica",
-      "published": "2026-08-22T01:32:17+02:00",
-      "summary": "\"We probably need another site that's capable of heavy and super heavy launch capability.\"",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
