@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:05:14+02:00",
+  "generatedAt": "2026-08-25T07:06:24+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
   "usefulOpen": 66,
@@ -59,42 +59,6 @@
       "scores": {
         "relevance": 4,
         "leverage": 2,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "fc4486192507e01f",
-      "title": "alchemy-utils 0.1a0",
-      "url": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
-      "source": "Simon Willison",
-      "published": "2026-08-12T19:51:30+00:00",
-      "summary": "Release: alchemy-utils 0.1a0 I've long pondered what a database agnostic version of my sqlite-utils Python library and CLI utility might look like. This morning (literally a shower project) I tasked Codex and GPT-5.6 Sol Ultra with building a prototype: Do a research spike to see what it would take to build a library with the same core API as SQLite-utils - ",
-      "areas": [
-        "data-platforms",
-        "developer-tools",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ],
-        "developer-tools": [
-          "cli",
-          "codex"
-        ],
-        "data-platforms": [
-          "sqlite",
-          "database"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 3,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -205,24 +169,23 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "d3e59e53f6c583c8",
-      "title": "Inherent, founded by DeepMind alumni, says its AI ‘teammate’ just outperformed Anthropic and OpenAI at replicating research",
-      "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/",
+      "id": "d52862ca8d787136",
+      "title": "OpenAI is building AI agents for everything. Will everyone use them?",
+      "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
       "source": "TechCrunch",
-      "published": "2026-08-22T21:00:00+02:00",
-      "summary": "Built by DeepMind alumni, British AI lab Inherent released Faraday, an AI agent whose ability to replicate scientific papers could be a stepping stone for innovation.",
+      "published": "2026-08-24T17:00:00+02:00",
+      "summary": "Inside the frontier lab’s push to bring AI agents from software engineers to the masses.",
       "areas": [
         "ai-agents",
         "models"
       ],
       "matchedKeywords": {
         "ai-agents": [
-          "ai agent",
-          "agent"
+          "ai agents",
+          "agents"
         ],
         "models": [
-          "openai",
-          "anthropic"
+          "openai"
         ]
       },
       "scores": {
@@ -343,36 +306,6 @@
         ],
         "enterprise-ai": [
           "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "59f8c55d8a696e21",
-      "title": "Quoting Florian Herrengt",
-      "url": "https://simonwillison.net/2026/Aug/12/florian-herrengt/",
-      "source": "Simon Willison",
-      "published": "2026-08-12T15:08:47+00:00",
-      "summary": "But then users start to report a weird bug. It's the 4th time your team has been trying to fix it. I mean... asking AI to fix it. Unfortunately, it seems like not even Fable can figure it out. You go talk to the person who worked on this feature. \"So where does the data come from?\" \"Hmm... actually I don't know. Let me ask Claude.\" You sit next to each other",
-      "areas": [
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ],
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -594,63 +527,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "c15f9917a7d844b4",
-      "title": "From coder to orchestrator: How agents shift the role of a developer",
-      "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
-      "source": "GitHub Blog",
-      "published": "2026-08-11T20:38:17+02:00",
-      "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next. The post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog .",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "github",
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "db0b7333333d96bd",
-      "title": "Responding to the next frontier of critical cyber capabilities",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "source": "OpenAI News",
-      "published": "2026-08-07T17:20:00+02:00",
-      "summary": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "1c268af12aebb9aa",
       "title": "Offering Zero Data Retention for frontier models",
       "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
@@ -684,6 +560,33 @@
       "priority": 85,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4233d9949cc3d8e2",
+      "title": "Your executable is a SQLite database",
+      "url": "https://simonwillison.net/2026/Aug/24/your-executable-is-a-sqlite-database/",
+      "source": "Simon Willison",
+      "published": "2026-08-24T11:38:15+00:00",
+      "summary": "Your executable is a SQLite database Farid Zakaria describes a neat Linux pattern for creating a SQLite database file that can be directly used as an executable binary. The trick sets the SQLite file format's 4-byte application ID (68 bytes into the file) to SELF, standing for Structured Executable & Linkable Format. The various components of the ELF executa",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 2,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
       "id": "88996490b92da6eb",
@@ -740,49 +643,19 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "3d4c4462f51daa25",
-      "title": "Over 170k Nonprofits Lost All Their Data. Is Microsoft to Blame?",
-      "url": "https://slate.com/technology/2026/08/microsoft-software-nonprofit-data-delete.html",
-      "source": "Hacker News",
-      "published": "2026-08-23T20:55:54+02:00",
-      "summary": "Comments",
+      "id": "6ffef6390e8d974f",
+      "title": "The Download: kids outlearning AI, and space travel agents",
+      "url": "https://www.technologyreview.com/2026/08/24/1142863/the-download-kids-outlearning-ai-space-travel-agents/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-24T14:10:00+02:00",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Kids outlearn AI—and we still don’t know why Teaching a computer to use human language requires an inhuman amount of data. An LLM can easily churn through a hundred thousand times…",
       "areas": [
         "data-platforms",
-        "enterprise-ai"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5d44bd32699ddd38",
-      "title": "Nvidia partners with data center developer Cloverleaf",
-      "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T00:37:38+02:00",
-      "summary": "Nvidia continues to pour money into data center development — just as AI data centers bring lots of money into Nvidia.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
+        "models": [
+          "llm"
         ],
         "data-platforms": [
           "data"
@@ -859,6 +732,62 @@
         "risk": 1
       },
       "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "712b9ee9cfb64ecf",
+      "title": "Valor, Point72 back General Intuition at $6B valuation as AI startup pushes into robotics",
+      "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/",
+      "source": "TechCrunch",
+      "published": "2026-08-24T17:24:18+02:00",
+      "summary": "General Intuition, the startup building a foundation model that trains generalized AI agents how to move through space and time, is in talks to raise at a $6 billion pre-money valuation from new investors including Valor Ventures, Point72 Ventures, and Seven Seven Six.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a80370fa0d6abc37",
+      "title": "llm-anthropic 0.27",
+      "url": "https://simonwillison.net/2026/Aug/24/llm-anthropic/",
+      "source": "Simon Willison",
+      "published": "2026-08-24T16:27:04+00:00",
+      "summary": "Release: llm-anthropic 0.27 This release of the Anthropic plugin for LLM mainly provides compatibility with the recently released anthropic v1.0.0 Python library, which switches from httpx to httpx2 . OpenAI made the same change in their v3.0.0 release two weeks ago. Anthropic provide this migration guide for upgrading to 1.0, so I prompted Fable 5 in Claude",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm",
+          "openai",
+          "anthropic",
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1181,6 +1110,85 @@
         "risk": 2
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "233fe443796e40ad",
+      "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
+      "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
+      "source": "GitHub Blog",
+      "published": "2026-08-24T22:56:32+02:00",
+      "summary": "We built a plugin for the GitHub Accessibility Scanner to make sure your alt text is actually accessible. Here's how it works. The post Your alt text passes automated checks. That doesn’t mean it’s any good. appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "66558d82e5245ef4",
+      "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+      "url": "https://openai.com/index/gpt-5-6-in-kiro",
+      "source": "OpenAI News",
+      "published": "2026-08-24T14:00:00+02:00",
+      "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "6174efb2054e1554",
+      "title": "Your executable is a SQLite database",
+      "url": "https://fzakaria.com/2026/08/23/your-executable-is-a-sqlite-database",
+      "source": "Lobsters",
+      "published": "2026-08-24T09:32:45+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1862,48 +1870,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b31a03cfede473d5",
-      "title": "OpenAI says California should strengthen its AI safety bill",
-      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T18:30:34+02:00",
-      "summary": "OpenAI is calling for California to strengthen SB 53, an AI safety bill that the company previously opposed.",
+      "id": "95e04de9b05d2ba9",
+      "title": "Data centers become \"killer application\" for new power transformer tech",
+      "url": "https://arstechnica.com/gadgets/2026/08/energy-hungry-ai-data-centers-spur-new-power-transformer-technology/",
+      "source": "Ars Technica",
+      "published": "2026-08-24T23:32:16+02:00",
+      "summary": "Solid-state transformers could also benefit EV charging and someday households.",
       "areas": [
-        "models",
-        "privacy-risk"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "101ac0e5df342ccf",
-      "title": "GTA VI: all the news on Rockstar’s next entry in the Grand Theft Auto series",
-      "url": "https://www.theverge.com/23987993/gta-6-news-trailers-rockstar-games",
-      "source": "The Verge",
-      "published": "2026-08-23T15:14:37-04:00",
-      "summary": "It’s been over a decade and two console generations since GTA V came out, and its sequel is still a work in progress. GTA VI has faced multiple delays, with developer Rockstar Games bumping back its predicted release date twice, first to May 26th, 2026, then again to November 19th, 2026, a full year after […]",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1918,42 +1896,115 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "22ce5ff34a73768e",
-      "title": "TikTok will pay $400 million to settle DOJ child privacy lawsuit",
-      "url": "https://www.theverge.com/tech/983531/tiktok-settle-doj-lawsuit-coppa",
-      "source": "The Verge",
-      "published": "2026-08-21T18:13:34-04:00",
-      "summary": "The US Department of Justice announced on Friday that TikTok will pay $400 million to settle a lawsuit filed in 2024 over allegedly violating the Children's Online Privacy Protection Act (COPPA). In the lawsuit, the DOJ alleged that TikTok collected data from children without notifying parents or obtaining consent and did not delete the accounts […]",
+      "id": "b46758bfc2544822",
+      "title": "Kids outlearn AI—and we still don’t know why",
+      "url": "https://www.technologyreview.com/2026/08/24/1141740/kids-machines-language-learning/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-24T11:00:00+02:00",
+      "summary": "People have been talking to each other for at least 100,000 years, as best we can tell. And in all that time, there has been only one thing in the world that could learn a human language to perfect fluency: a human child. Now there are two. Four short years after the release of ChatGPT,…",
       "areas": [
-        "data-platforms",
-        "privacy-risk"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "privacy",
-          "lawsuit"
+        "models": [
+          "chatgpt"
         ]
       },
       "scores": {
-        "relevance": 3,
+        "relevance": 2,
         "leverage": 0,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 2
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "6f52dd642bb6cbe1",
-      "title": "Parallel development without the headaches using Git worktree",
-      "url": "https://barrd.dev/article/parallel-development-without-the-headaches-using-git-worktree/",
+      "id": "a24d33ca2a1903b0",
+      "title": "Data Centers Are Driving an Alarming Gas Power Expansion in the US",
+      "url": "https://www.wired.com/story/us-data-centers-drive-gas-power-expansion/",
+      "source": "Wired",
+      "published": "2026-08-25T06:01:00+02:00",
+      "summary": "There’s no clearer sign of the data center boom than rampant gas projects that have been proposed or that are already under construction.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "9c1684d1926ecaea",
+      "title": "Alabama launches investigation into OpenAI’s hack of Hugging Face",
+      "url": "https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/",
+      "source": "TechCrunch",
+      "published": "2026-08-24T21:58:17+02:00",
+      "summary": "Weeks after OpenAI disclosed that one of its cybersecurity models had gone rogue and hacked AI dataset company Hugging Face, Alabama’s attorney general announced an investigation into the incident.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "286cc6f4bcabfb3e",
+      "title": "LLMs could control their host machines by exploiting inference engines",
+      "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines",
       "source": "Hacker News",
-      "published": "2026-08-24T00:06:14+02:00",
+      "published": "2026-08-24T21:03:06+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "inference"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "145d9196169de610",
+      "title": "Walgit – a Git server that is one binary in front of an object store",
+      "url": "https://github.com/tobi/walgit",
+      "source": "Hacker News",
+      "published": "2026-08-24T16:49:49+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
@@ -1975,96 +2026,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "3bc67d04ddda2b16",
-      "title": "Implementation of GPT-2 in pure CMake",
-      "url": "https://github.com/AlpinDale/gpt2.cmake",
-      "source": "Hacker News",
-      "published": "2026-08-23T23:41:17+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "f88a3ef3b422dd22",
       "title": "Uber faces fine of nearly $1B over automated driver suspensions",
       "url": "https://techcrunch.com/2026/08/23/uber-faces-fine-of-nearly-1b-over-automated-driver-suspensions/",
       "source": "TechCrunch",
       "published": "2026-08-23T21:30:00+02:00",
-      "summary": "The Dutch Data Protection Authority is fining Uber €825 million in the second largest penalty issued under Europe’s GDPR.",
+      "summary": "The Dutch Data Protection Authority is fining Uber €825 million in the second-largest penalty issued under Europe’s GDPR.",
       "areas": [
         "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "e5506245222f686c",
-      "title": "Anthropic's best AI model struggles to attract users as cheaper tools thrive",
-      "url": "https://www.ft.com/content/5ee49718-c258-4f01-aa32-7e5b76ae5245",
-      "source": "Hacker News",
-      "published": "2026-08-23T20:16:37+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a22badccdd39ad8b",
-      "title": "My agent.md to improve LLM-assisted code quality",
-      "url": "https://fabiensanglard.net/agent.md/index.html",
-      "source": "Hacker News",
-      "published": "2026-08-23T19:59:52+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
         ]
       },
       "scores": {
@@ -2091,33 +2064,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "cc2c967706f28b8a",
-      "title": "Anthropic’s Opus 4.6 is a smut-machine",
-      "url": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T01:07:25+02:00",
-      "summary": "Anthropic forbids its Claude models from generating sexually explicit content. But a series of tests conducted by TechCrunch found that it didn't take much to get past the restriction.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
         ]
       },
       "scores": {
@@ -2264,32 +2210,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "f639cdc774b40de4",
-      "title": "Japanese space tech startup Letara expands beyond satellite thrusters with $16M",
-      "url": "https://techcrunch.com/2026/08/21/japanese-space-tech-startup-letara-expands-beyond-satellite-thrusters-with-16m/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T03:03:06+02:00",
-      "summary": "Japanese space startup Letara is betting its hybrid rocket technology can move beyond small satellite thrusters into a broader market for space, defense and security, after raising ¥2.6 billion ($16 million).",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "e93e54d14056056f",
       "title": "Lawsuit demands Logitech hand tariff refunds over to customers",
       "url": "https://arstechnica.com/tech-policy/2026/08/lawsuit-demands-logitech-hand-tariff-refunds-over-to-customers/",
@@ -2316,12 +2236,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "c4f21f426d508ac6",
-      "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
-      "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-      "source": "TechCrunch",
-      "published": "2026-08-23T22:01:36+02:00",
-      "summary": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation.",
+      "id": "18ad0dfad73ae718",
+      "title": "I cannot survive from burnout",
+      "url": "https://lobste.rs/s/0typpq/i_cannot_survive_from_burnout",
+      "source": "Lobsters",
+      "published": "2026-08-24T18:04:45+02:00",
+      "summary": "I burned out two years ago, went through a divorce, and relocated to a new city. I live alone now and care for seven cats. Over the last two years, I’ve tried forcing discipline, making detailed plans, and restarting over and over. Despite this, I’m still carrying significant debt. My main struggle is staying focused on paid work. I’m constantly building and",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2336,11 +2256,11 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "da32d6fa40f2af24",
-      "title": "A website for debloated open source alternatives",
-      "url": "https://debloat.dev/",
+      "id": "d699c520491add7a",
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "url": "https://twitter.com/lemire/status/2091894299289874926",
       "source": "Hacker News",
-      "published": "2026-08-23T18:54:10+02:00",
+      "published": "2026-08-24T17:08:17+02:00",
       "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
@@ -2356,12 +2276,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "c7e0319d6d221358",
-      "title": "Due to need for 'absolute success,' China delays critical Moon launch to 2027",
-      "url": "https://arstechnica.com/space/2026/08/due-to-need-for-absolute-success-china-delays-critical-moon-launch-to-2027/",
-      "source": "Ars Technica",
-      "published": "2026-08-23T16:30:16+02:00",
-      "summary": "\"The Chang’e 7 mission does not meet the conditions for launch.\"",
+      "id": "370046cf34e0faae",
+      "title": "How to encourage smarter AI use in the classroom",
+      "url": "https://www.technologyreview.com/2026/08/24/1142630/ai-school-classroom-policies/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-24T16:20:19+02:00",
+      "summary": "This article is from Making AI Work, MIT Technology Review’s limited-run newsletter examining how to apply LLMs across industries. To receive it in your inbox, sign up here. Chatbots took many schools by surprise upon their release a few years ago. Suddenly, students carried an app in their phones that could magically answer almost any…",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2376,12 +2296,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "af5687185221f460",
-      "title": "Two years after launch, Walmart’s Flipkart is closing in on India’s quick-commerce leaders",
-      "url": "https://techcrunch.com/2026/08/22/two-years-after-launch-walmarts-flipkart-is-closing-in-on-indias-quick-commerce-leaders/",
+      "id": "11e877fe575aa186",
+      "title": "US nutrition startup Berry Street merges with India’s Healthify as GLP-1 trends upwards",
+      "url": "https://techcrunch.com/2026/08/24/us-nutrition-startup-berry-street-merges-with-indias-healthify-as-glp-1-trends-upwards/",
       "source": "TechCrunch",
-      "published": "2026-08-23T05:00:00+02:00",
-      "summary": "Flipkart's quick-commerce venture is delivering 1.1 million to 1.2 million orders a day, nearly triple its November volume.",
+      "published": "2026-08-24T15:45:15+02:00",
+      "summary": "Berry Street founder Noah Kotlove and Healthify founder Tushar Vashisht will act as co-CEOs of the new entity.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2396,12 +2316,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "ba8ca26c43be71fc",
-      "title": "Frontier AI labs still won’t say how they’d contain a rogue model",
-      "url": "https://techcrunch.com/2026/08/22/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T18:00:00+02:00",
-      "summary": "A new study finds leading AI labs have few publicly documented plans for containing rogue models, raising questions about preparedness as AI systems increasingly demonstrate unexpected and potentially dangerous behavior.",
+      "id": "f678462b4de6faf5",
+      "title": "What's new in Emacs 31.1",
+      "url": "https://www.masteringemacs.org/article/whats-new-in-emacs-311",
+      "source": "Hacker News",
+      "published": "2026-08-24T15:07:22+02:00",
+      "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2416,12 +2336,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "40de052206b0f85d",
-      "title": "Two great new repairable gadgets",
-      "url": "https://www.theverge.com/tech/983375/fairphone-6-plus-framework-12-laptop-mutiny-mortal-shell-2",
+      "id": "a305b0648e227f25",
+      "title": "Robotaxis are real now — so is the pushback",
+      "url": "https://www.theverge.com/transportation/983765/robotaxi-waymo-zoox-tesla-rules-pushback-nhtsa",
       "source": "The Verge",
-      "published": "2026-08-22T08:00:00-04:00",
-      "summary": "Hi, friends! Welcome to Installer No. 141, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, I'm newish here too, and also you can read all the old editions at the Installer homepage.) This week, I've been getting back into the Installer groove, trying out some ergonomic Switch […]",
+      "published": "2026-08-24T12:42:37-04:00",
+      "summary": "Robotaxis are expanding. So is the fight over the rules governing them. In New York, Gov. Kathy Hochul withdrew a proposal earlier this year that would have opened the door to driverless robotaxis outside New York City after taxi drivers, unions, and state lawmakers opposed it. Six months later, commercial driverless service remains illegal in […]",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2436,12 +2356,52 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "f41987cafff61556",
-      "title": "Michael Polansky is training an AI model on skin that’s still alive",
-      "url": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/",
-      "source": "TechCrunch",
-      "published": "2026-08-22T03:31:04+02:00",
-      "summary": "Michael Polansky — better known publicly as Lady Gaga's partner and a former top deputy to Sean Parker — has quietly spent years building an AI-driven startup that keeps living human skin tissue alive for weeks outside the body to discover new skincare compounds, and is only now going public about it.",
+      "id": "7592c667699f8d96",
+      "title": "The Witcher 4 developers target a 2028 release",
+      "url": "https://www.theverge.com/games/983822/the-witcher-4-release-window-gamescom",
+      "source": "The Verge",
+      "published": "2026-08-24T11:48:53-04:00",
+      "summary": "CD Projekt Red is aiming to launch The Witcher 4 sometime in 2028, joint CEO Michał Nowakowski says in a new video. CD Projekt Red has been working on its next mainline Witcher title for years and has shown videos of it, but now the studio is providing a target release window for when the […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "45d1c9c8a93ea3f9",
+      "title": "NASA’s New Space Telescope Is Poised to Discover Hidden Facets of the Universe",
+      "url": "https://www.wired.com/story/nasa-nancy-grace-roman-space-telescope-hidden-facets-of-universe/",
+      "source": "Wired",
+      "published": "2026-08-24T11:00:00+02:00",
+      "summary": "The Nancy Grace Roman Space Telescope is expected to discover as many as 200,000 new planets and reveal details about the elusive nature of dark matter and dark energy.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "95be140f50284bfe",
+      "title": "How GoFundMe became America’s backup plan",
+      "url": "https://www.theverge.com/podcast/982901/gofundme-ceo-tim-cadogan-fundraising-healthcare-medical-expenses",
+      "source": "The Verge",
+      "published": "2026-08-24T10:00:00-04:00",
+      "summary": "Today on Decoder, I’m talking with Tim Cadogan, the CEO of GoFundMe. You know GoFundMe — it’s a major fundraising platform where you can donate to help people with everything from medical expenses to Little League uniforms to starting a new business. Tim took over as CEO in March 2020 — a fascinating and chaotic […]",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
