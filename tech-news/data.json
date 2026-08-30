@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-29T07:05:55+02:00",
+  "generatedAt": "2026-08-30T07:05:33+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 66,
+  "usefulOpen": 68,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -167,37 +167,6 @@
       "source": "Ars Technica",
       "published": "2026-08-28T00:15:43+02:00",
       "summary": "Standardized driver interface aims to let devices talk to AI and each other.",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
-        ],
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "2c1e9d4f32a7c94e",
-      "title": "This Is How Anthropic Thinks AI Agents Should Navigate the Physical World",
-      "url": "https://www.wired.com/story/anthropic-standard-ai-agents-coming-to-the-physical-world/",
-      "source": "Wired",
-      "published": "2026-08-27T20:06:52+02:00",
-      "summary": "The potential for AI to automate scientific research and manufacturing must be balanced with new risks, Anthropic says.",
       "areas": [
         "ai-agents",
         "models"
@@ -553,6 +522,74 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "59d7560b7b7b14f0",
+      "title": "Sony Music and Warner Chappell are suing Anthropic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
+      "source": "The Verge",
+      "published": "2026-08-29T14:19:53-04:00",
+      "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, the […]",
+      "areas": [
+        "data-platforms",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "copyright"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "a4c0be81ac4f286a",
+      "title": "How to Run a Chatbot on Your Own Computer",
+      "url": "https://www.wired.com/story/how-to-run-your-own-local-llm/",
+      "source": "Wired",
+      "published": "2026-08-29T12:00:00+02:00",
+      "summary": "Installing a large language model on your personal computer gives you a handy digital assistant that won’t compromise your data privacy.",
+      "areas": [
+        "data-platforms",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "language model"
+        ],
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "privacy"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "1c268af12aebb9aa",
       "title": "Offering Zero Data Retention for frontier models",
       "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
@@ -669,6 +706,62 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "a225253f60131b37",
+      "title": "Introducing Hy4 Preview",
+      "url": "https://simonwillison.net/2026/Aug/29/hy4/",
+      "source": "Simon Willison",
+      "published": "2026-08-29T23:53:13+00:00",
+      "summary": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size increase from their previous Hy3 in July, which was 295B, 21B active, 256,000 context, 598GB. I recently started using model chat templates to",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a09dcbe6f7da8fec",
+      "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+      "source": "TechCrunch",
+      "published": "2026-08-29T20:41:59+02:00",
+      "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "adaab1d8b2fb6e26",
       "title": "Anthropic gets its first court win over the Pentagon’s supply-chain risk label",
       "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
@@ -749,36 +842,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "9901ac0d61aff537",
-      "title": "Anthropic was illegally blacklisted by the Trump administration, court rules",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/985947/anthropic-supply-chain-risk-lawsuit-judge-ruling",
-      "source": "The Verge",
-      "published": "2026-08-27T23:14:06-04:00",
-      "summary": "On Thursday, a judge ruled that the Pentagon's blacklisting of Anthropic earlier this year was unconstitutional, delivering the AI lab a win in a monthslong rollercoaster of a battle with the Trump administration. The lawsuit, filed in March in a California district court, accused the Trump administration of unlawfully retaliating against Anthropic for setti",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -1340,6 +1403,33 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "f2cba8e26720289e",
+      "title": "SQLite as a Document Database (2020)",
+      "url": "https://dgl.cx/2020/06/sqlite-json-support",
+      "source": "Hacker News",
+      "published": "2026-08-25T01:00:10+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "sqlite",
+          "database"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "233fe443796e40ad",
       "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
       "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
@@ -1783,32 +1873,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "ad1972ffb40d23e1",
-      "title": "Don't classify. Hallucinate!",
-      "url": "https://simonwillison.net/2026/Aug/14/dont-classify-hallucinate/",
-      "source": "Simon Willison",
-      "published": "2026-08-14T21:54:35+00:00",
-      "summary": "Don't classify. Hallucinate! I still have quite a bit of older content on my blog that I never got round to tagging. My blog has 1,856 tags - likely too many to feed to an LLM in one go and say \"which of these tags match the following content\". Doug Turnbull has a neat solution. Tell the model to output tags without any details of the existing vocabulary, th",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "275cadd2728883c2",
       "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
       "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
@@ -1835,12 +1899,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f5491ed7c61e8690",
-      "title": "Buried in Meta’s $18B settlement is a legal pass on kids’ data",
-      "url": "https://techcrunch.com/2026/08/27/buried-in-metas-18b-settlement-is-a-legal-pass-on-kids-data/",
-      "source": "TechCrunch",
-      "published": "2026-08-27T22:04:26+02:00",
-      "summary": "Meta’s settlement with 29 states allows it to retain certain data from children under 13 to train and test age-detection models, highlighting a privacy trade-off built into the deal.",
+      "id": "5fda708f87757f6a",
+      "title": "I asked 100 companies for my data. Some deleted it instead.",
+      "url": "https://arstechnica.com/tech-policy/2026/08/i-asked-100-companies-for-my-data-some-deleted-it-instead/",
+      "source": "Ars Technica",
+      "published": "2026-08-29T12:50:31+02:00",
+      "summary": "Testing 100 companies found privacy requests often led to confusion and dead ends.",
       "areas": [
         "data-platforms",
         "privacy-risk"
@@ -1865,18 +1929,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "06a12ced0fae3f5c",
-      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
-      "url": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
+      "id": "364c8f0778f53115",
+      "title": "Nvidia’s AI advantage is moving beyond the GPU",
+      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
       "source": "TechCrunch",
-      "published": "2026-08-28T14:21:06+02:00",
-      "summary": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
+      "published": "2026-08-29T15:00:00+02:00",
+      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1891,18 +1955,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "a6b133585eb45d1b",
-      "title": "Trump’s EPA wants to let data centers hide their air pollution",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/986176/data-center-pollution-epa-rule-change-air-permit",
-      "source": "The Verge",
-      "published": "2026-08-28T12:28:40-04:00",
-      "summary": "Just as new data centers face growing backlash from neighboring communities, the US Environmental Protection Agency (EPA) is about to make it harder for people to weigh in on any pollution those centers create. The EPA plans to toss out a federal rule requiring public notice and an opportunity to comment when certain industrial sites […]",
+      "id": "06a12ced0fae3f5c",
+      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
+      "url": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
+      "source": "TechCrunch",
+      "published": "2026-08-28T14:21:06+02:00",
+      "summary": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
       "areas": [
-        "data-platforms"
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -1943,64 +2007,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "f39113e137343399",
-      "title": "Our decision on Cursor following its acquisition by SpaceX",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "source": "Hacker News",
-      "published": "2026-08-29T03:47:53+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "cursor"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "e40599301a2c6a2d",
       "title": "LLM usage in Debian neither endorsed nor prohibited",
       "url": "https://www.debian.org/vote/2026/vote_002#texte",
       "source": "Lobsters",
       "published": "2026-08-29T03:40:59+02:00",
       "summary": "The official announcement with the breakdown of votes is here , but option 5 has won. Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "ccd0414c4768b449",
-      "title": "I accidentally turned LLM memory into program analysis",
-      "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-      "source": "Hacker News",
-      "published": "2026-08-29T01:27:45+02:00",
-      "summary": "Comments",
       "areas": [
         "models"
       ],
@@ -2177,19 +2189,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "0cc37fe92f667bae",
-      "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
-      "source": "TechCrunch",
-      "published": "2026-08-28T01:16:45+02:00",
-      "summary": "At TechCrunch Disrupt 2026, the AI Stage is back to dig into the single hottest topic in the community for the past few years, presented by Google for Startups.",
+      "id": "cb5fad3e4e10916d",
+      "title": "6 Takeaways From the GTA VI Extended Look",
+      "url": "https://www.wired.com/story/5-takeaways-from-the-gta-vi-extended-look/",
+      "source": "Wired",
+      "published": "2026-08-27T23:30:28+02:00",
+      "summary": "Grand Theft Auto VI is nigh. Here’s what the developer revealed about its highly anticipated game.",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
+        "developer-tools": [
+          "developer"
         ]
       },
       "scores": {
@@ -2204,18 +2215,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "cb5fad3e4e10916d",
-      "title": "6 Takeaways From the GTA VI Extended Look",
-      "url": "https://www.wired.com/story/5-takeaways-from-the-gta-vi-extended-look/",
-      "source": "Wired",
-      "published": "2026-08-27T23:30:28+02:00",
-      "summary": "Grand Theft Auto VI is nigh. Here’s what the developer revealed about its highly anticipated game.",
+      "id": "91181f5707430bb3",
+      "title": "Benchmarking Pocket-Scale Inference",
+      "url": "https://artificialanalysis.ai/hardware-inference-stack/mobile-phones",
+      "source": "Hacker News",
+      "published": "2026-08-27T21:12:03+02:00",
+      "summary": "Comments",
       "areas": [
-        "developer-tools"
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "developer"
+        "models": [
+          "inference"
         ]
       },
       "scores": {
@@ -2440,25 +2451,19 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "369db4085a13df5f",
-      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
-      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
-      "source": "TechCrunch",
-      "published": "2026-08-28T22:24:11+02:00",
-      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
+      "id": "f5fd6d8c9750edcc",
+      "title": "Algorithmic Rent-Pricing Litigation Expands Under New State and Local Laws",
+      "url": "https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws",
+      "source": "Hacker News",
+      "published": "2026-08-30T04:25:32+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 1,
+        "relevance": 0,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
+        "novelty": 4,
+        "urgency": 4,
         "risk": 0
       },
       "priority": 56,
