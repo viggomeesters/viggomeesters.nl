@@ -1,0 +1,92 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "mechanical",
+  "shareable_delivery": "auto",
+  "id": "exclude-go-workflow-state-from-public-site",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Exclude repo-local Go workflow state from the public static site",
+  "description": "Treat .go as internal repository state: exclude it from site, SEO, and project-link inventories; exclude it from Vercel upload; prove production does not serve restricted workflow deliveries.",
+  "scope": {
+    "read": [
+      "AGENTS.md",
+      "package.json",
+      "vercel.json",
+      "scripts/**",
+      "tests/**",
+      ".go/**"
+    ],
+    "modify": [
+      ".go/**",
+      ".vercelignore",
+      "vercel.json",
+      "scripts/check-site.mjs",
+      "scripts/seo-audit.mjs",
+      "scripts/check-public-project-coverage.py",
+      "tests/**"
+    ]
+  },
+  "acceptance": [
+    "Internal .go HTML never enters public page, SEO, sitemap, or project-link inventories.",
+    ".go is excluded from Vercel deployment input and a deployed .go delivery URL returns 404.",
+    "Regression tests prove synthetic .go HTML does not alter public counts or checks.",
+    "Full checks, critic review, final deployment, and production readback pass."
+  ],
+  "verification": [
+    "npm run check:all",
+    "git diff --check",
+    "curl production .go route returns 404"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-08-31T19:12:23+02:00"
+  },
+  "work_status": "completed",
+  "review_status": "approved",
+  "review_history": [
+    {
+      "created_at": "2026-08-31T19:22:18+02:00",
+      "agent": "devil:deleg_973687a7",
+      "status": "approved",
+      "evidence": "Verdict A on exact hash 51a6d85e8f4b8a83d7653a117ce72c7aee4660a72671285a29cf3856a677a967; synthetic .go exclusion, diff, Go validation and scope passed; parent full gate and production 404 evidence passed.",
+      "transaction_id": "0337de440a984c16a604a2d02767f038"
+    }
+  ],
+  "evidence": [
+    {
+      "schema": "go-workflow.finish-evidence.v1",
+      "created_at": "2026-08-31T19:22:18+02:00",
+      "task_id": "exclude-go-workflow-state-from-public-site",
+      "agent": "hermes",
+      "summary": "task_id=exclude-go-workflow-state-from-public-site; summary=internal Go workflow state excluded from public inventories and Vercel upload; no_diff=true; verification_command=npm run deploy:prod plus production boundary readback; verification_result=passed 75 tests, deployment dpl_7ZMvWSEVd71ufsadeoLdabV3PhNc READY, public routes 200, .go delivery task and project routes 404; critic=Verdict A by devil deleg_973687a7 on exact hash 51a6d85e8f4b8a83d7653a117ce72c7aee4660a72671285a29cf3856a677a967; runtime=hermes-agent; model=gpt-5.6-sol; billing_mode=subscription",
+      "changed_files": [],
+      "no_diff": true,
+      "verification": {
+        "command": "npm run deploy:prod plus production boundary readback",
+        "result": "passed 75 tests, deployment dpl_7ZMvWSEVd71ufsadeoLdabV3PhNc READY, public routes 200, .go delivery task and project routes 404"
+      },
+      "runtime": {
+        "agent": "hermes",
+        "runtime": "hermes-agent",
+        "model": "gpt-5.6-sol",
+        "billing_mode": "subscription"
+      },
+      "usage": {
+        "schema": "go-workflow.usage-attribution.v1",
+        "runtime_kind": "hermes-agent",
+        "billing_mode": "subscription",
+        "owner": "hermes",
+        "model": "gpt-5.6-sol",
+        "token_estimate": null,
+        "api_equivalent_cost_usd": null,
+        "provider_invoice_cost_usd": null,
+        "cost_label": "api_equivalent_not_invoice_cost"
+      },
+      "review": {
+        "outcome": "Verdict A by devil deleg_973687a7 on exact hash 51a6d85e8f4b8a83d7653a117ce72c7aee4660a72671285a29cf3856a677a967",
+        "skip_reason": null
+      }
+    }
+  ]
+}
