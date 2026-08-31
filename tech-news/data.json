@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-30T07:05:33+02:00",
+  "generatedAt": "2026-08-31T07:05:55+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 68,
+  "usefulOpen": 64,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -522,12 +522,12 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "59d7560b7b7b14f0",
-      "title": "Sony Music and Warner Chappell are suing Anthropic",
+      "id": "d1086593fb437ac6",
+      "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
       "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
       "source": "The Verge",
       "published": "2026-08-29T14:19:53-04:00",
-      "summary": "Sony Music and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, the […]",
+      "summary": "Sony Music Publishing and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, […]",
       "areas": [
         "data-platforms",
         "models",
@@ -748,66 +748,6 @@
         ],
         "privacy-risk": [
           "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "adaab1d8b2fb6e26",
-      "title": "Anthropic gets its first court win over the Pentagon’s supply-chain risk label",
-      "url": "https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/",
-      "source": "TechCrunch",
-      "published": "2026-08-28T14:46:12+02:00",
-      "summary": "A federal judge ruled the Trump administration illegally labeled Anthropic a supply-chain risk, handing the AI company a victory as its second Pentagon lawsuit continues in Washington.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "7493b846def00565",
-      "title": "A Judge Has Blocked the Pentagon’s Attempt to Blacklist Anthropic",
-      "url": "https://www.wired.com/story/a-judge-has-blocked-the-pentagons-attempt-to-blacklist-anthropic/",
-      "source": "Wired",
-      "published": "2026-08-28T05:04:14+02:00",
-      "summary": "A federal judge has called the Department of Defense’s designation of Anthropic as a national security supply-chain risk “illegal and baseless.”",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "security"
         ]
       },
       "scores": {
@@ -1167,33 +1107,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "30940088e82571a6",
-      "title": "AI Agents Are Hacking Systems. Could That Push the US and China to Cooperate?",
-      "url": "https://www.wired.com/story/ai-agents-hacking-systems-could-push-the-us-and-china-to-cooperate/",
-      "source": "Wired",
-      "published": "2026-08-27T23:08:34+02:00",
-      "summary": "This week on “Uncanny Valley,” senior writer Will Knight talks his recent visit to China and the future of AI collaboration.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "f58b450998062d94",
       "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
       "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
@@ -1389,33 +1302,6 @@
         "models": [
           "openai",
           "inference"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "f2cba8e26720289e",
-      "title": "SQLite as a Document Database (2020)",
-      "url": "https://dgl.cx/2020/06/sqlite-json-support",
-      "source": "Hacker News",
-      "published": "2026-08-25T01:00:10+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "sqlite",
-          "database"
         ]
       },
       "scores": {
@@ -1929,12 +1815,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "364c8f0778f53115",
-      "title": "Nvidia’s AI advantage is moving beyond the GPU",
-      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-      "source": "TechCrunch",
-      "published": "2026-08-29T15:00:00+02:00",
-      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
+      "id": "466bd2742727a79f",
+      "title": "Why the Hottest New Wearables Want to Be Ignored",
+      "url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
+      "source": "Wired",
+      "published": "2026-08-30T12:30:00+02:00",
+      "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
       "areas": [
         "data-platforms"
       ],
@@ -1955,18 +1841,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "06a12ced0fae3f5c",
-      "title": "Meta executive leaves for OpenAI as the social media giant faces growing scrutiny in India",
-      "url": "https://techcrunch.com/2026/08/28/meta-executive-leaves-for-openai-as-the-social-media-giant-faces-growing-scrutiny-in-india/",
+      "id": "364c8f0778f53115",
+      "title": "Nvidia’s AI advantage is moving beyond the GPU",
+      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
       "source": "TechCrunch",
-      "published": "2026-08-28T14:21:06+02:00",
-      "summary": "Sandhya Devanathan will oversee some OpenAI operations across Southeast Asia and Australia in her new role.",
+      "published": "2026-08-29T15:00:00+02:00",
+      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -2007,18 +1893,122 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e40599301a2c6a2d",
-      "title": "LLM usage in Debian neither endorsed nor prohibited",
-      "url": "https://www.debian.org/vote/2026/vote_002#texte",
-      "source": "Lobsters",
-      "published": "2026-08-29T03:40:59+02:00",
-      "summary": "The official announcement with the breakdown of votes is here , but option 5 has won. Comments",
+      "id": "860f4b8e93227318",
+      "title": "Understanding ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "source": "Hacker News",
+      "published": "2026-08-31T03:28:22+02:00",
+      "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "llm"
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "3c27adc9d18bc729",
+      "title": "How to build a diffusion language model",
+      "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+      "source": "Hacker News",
+      "published": "2026-08-31T01:41:32+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "language model"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e8b243f0f4cb864d",
+      "title": "Enormous 12TB Steam leak includes abandoned Half-Life 2: Episode 3 assets",
+      "url": "https://www.theverge.com/games/986552/12tb-steam-leak-half-life-2-episode-3",
+      "source": "The Verge",
+      "published": "2026-08-30T15:14:08-04:00",
+      "summary": "Over 12 terabytes of data, containing builds of every game uploaded to Steam between 2003 and 2013, has been leaked. We don't know everything in the archives yet because of its massive size. But people have already dug up assets related to the canceled Half-Life 2: Episode 3, content cut from Portal 2, and a […]",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "f477d5a724f7dbcd",
+      "title": "Inside Meta’s push to put robots to work in data centers",
+      "url": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
+      "source": "Ars Technica",
+      "published": "2026-08-30T13:03:47+02:00",
+      "summary": "The company is testing robots on tasks that can performed by technicians.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "072c44e8387fc688",
+      "title": "Prompt Injection in Claude Code Opus 5 Auto Mode",
+      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
+      "source": "Lobsters",
+      "published": "2026-08-30T07:36:51+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "claude"
         ]
       },
       "scores": {
@@ -2175,58 +2165,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "cb5fad3e4e10916d",
-      "title": "6 Takeaways From the GTA VI Extended Look",
-      "url": "https://www.wired.com/story/5-takeaways-from-the-gta-vi-extended-look/",
-      "source": "Wired",
-      "published": "2026-08-27T23:30:28+02:00",
-      "summary": "Grand Theft Auto VI is nigh. Here’s what the developer revealed about its highly anticipated game.",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "91181f5707430bb3",
-      "title": "Benchmarking Pocket-Scale Inference",
-      "url": "https://artificialanalysis.ai/hardware-inference-stack/mobile-phones",
-      "source": "Hacker News",
-      "published": "2026-08-27T21:12:03+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "inference"
         ]
       },
       "scores": {
@@ -2451,22 +2389,81 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "f5fd6d8c9750edcc",
-      "title": "Algorithmic Rent-Pricing Litigation Expands Under New State and Local Laws",
-      "url": "https://www.morganlewis.com/pubs/2026/08/algorithmic-rent-pricing-litigation-expands-under-new-state-and-local-laws",
-      "source": "Hacker News",
-      "published": "2026-08-30T04:25:32+02:00",
-      "summary": "Comments",
-      "areas": [],
-      "matchedKeywords": {},
+      "id": "369db4085a13df5f",
+      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
+      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "source": "TechCrunch",
+      "published": "2026-08-28T22:24:11+02:00",
+      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
       "scores": {
-        "relevance": 0,
+        "relevance": 1,
         "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
+        "novelty": 3,
+        "urgency": 2,
         "risk": 0
       },
       "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "6c83fc3e31e18d24",
+      "title": "Microsoft Teams Has Become a Haven for Scammers in China",
+      "url": "https://www.wired.com/story/microsoft-teams-is-becoming-a-haven-for-chinese-scammers/",
+      "source": "Wired",
+      "published": "2026-08-28T20:23:17+02:00",
+      "summary": "Fraudsters are exploiting enterprise chat apps like Teams and Webex to trick Chinese victims into transferring large sums of money, fueling a wave of complaints.",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "enterprise",
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "56f4daaebb39b1b0",
+      "title": "Rootless Docker and Its Hidden Security Trade-Offs",
+      "url": "https://www.kenmuse.com/blog/rootless-docker-and-its-hidden-security-trade-offs/",
+      "source": "Lobsters",
+      "published": "2026-08-31T05:12:07+02:00",
+      "summary": "Comments",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
