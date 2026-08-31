@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CallerSignal — Viggo Meesters</title>
+  <meta name="description" content="Evidence-backed international phone-number intelligence with explicit sources, gaps, confidence, and residual uncertainty.">
+  <link rel="canonical" href="https://viggomeesters.com/callersignal/">
+  <meta property="og:title" content="CallerSignal — Viggo Meesters">
+  <meta property="og:description" content="Evidence-backed international phone-number intelligence with explicit sources, gaps, confidence, and residual uncertainty.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://viggomeesters.com/callersignal/">
+  <meta property="og:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CallerSignal — Viggo Meesters">
+  <meta name="twitter:description" content="Evidence-backed international phone-number intelligence with explicit sources, gaps, confidence, and residual uncertainty.">
+  <meta name="twitter:image" content="https://viggomeesters.com/og-image.png">
+  <meta name="theme-color" content="#0c0c0f">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{--bg:#0c0c0f;--surface:#141418;--border:rgba(255,255,255,.10);--border-subtle:rgba(255,255,255,.055);--text:#c8cbd5;--text-secondary:#9aa1b6;--text-muted:#686e82;--accent:#38bdf8;--accent-soft:color-mix(in srgb,var(--accent) 10%,transparent);--font:'Sora',system-ui,-apple-system,sans-serif;--mono:'JetBrains Mono','SF Mono',monospace;--radius:16px;--ease:cubic-bezier(.22,1,.36,1)}
+    html{background:var(--bg);color-scheme:dark;scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{min-width:320px;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse 70% 38% at 16% -8%,var(--accent-soft),transparent 68%),var(--bg);color:var(--text);font:15px/1.65 var(--font)}
+    body::after{position:fixed;z-index:9999;inset:0;pointer-events:none;content:"";opacity:.025;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+    a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.page{position:relative;z-index:1;max-width:920px;margin:auto;padding:60px 20px}
+    .back{display:inline-flex;align-items:center;min-height:44px;margin-bottom:34px;padding:0 14px;border:1px solid var(--border-subtle);border-radius:10px;background:var(--surface);color:var(--text-muted);font-size:.82em;text-decoration:none;transition:color .2s,border-color .2s,transform .3s var(--ease)}.back:hover{color:var(--text-secondary);border-color:var(--border);transform:translateX(-3px)}
+    .hero{max-width:800px;margin-bottom:28px}.eyebrow{margin-bottom:11px;color:var(--accent);font:500 .72em var(--mono);letter-spacing:.14em;text-transform:uppercase}.title{color:#f1f3f7;font-size:clamp(2.25rem,6vw,4.2rem);font-weight:700;line-height:.98;letter-spacing:-.055em;text-wrap:balance}.subtitle{max-width:720px;margin-top:17px;color:var(--text-secondary);font-size:clamp(.98rem,1.7vw,1.12rem)}
+    .topics{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.topics span{padding:5px 9px;border:1px solid var(--border-subtle);border-radius:999px;background:rgba(255,255,255,.025);color:var(--text-secondary);font:.7em var(--mono)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:30px 0}.stat{padding:19px 15px;border:1px solid var(--border-subtle);border-radius:var(--radius);background:rgba(20,20,24,.76)}.stat-num{color:#f1f3f7;font:500 1em var(--mono)}.stat-label{margin-top:5px;color:var(--text-muted);font-size:.7em;letter-spacing:.08em;text-transform:uppercase}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 36px}.cta{display:inline-flex;min-height:44px;align-items:center;padding:0 16px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:999px;background:var(--accent-soft);color:#f1f3f7;text-decoration:none;transition:transform .3s var(--ease),border-color .2s}.cta:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .section-label{display:flex;align-items:center;gap:8px;padding:22px 0 13px;color:var(--text-muted);font-size:.7em;font-weight:500;letter-spacing:.15em;text-transform:uppercase}.section-label::before{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 9px var(--accent);content:""}
+    .info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.info-card{min-height:165px;padding:21px;border:1px solid var(--border-subtle);border-radius:var(--radius);background:rgba(20,20,24,.72);box-shadow:inset 0 1px rgba(255,255,255,.026),0 16px 42px rgba(0,0,0,.14)}.info-card h2{margin-bottom:8px;color:#f1f3f7;font-size:1em}.info-card p{color:var(--text-secondary);font-size:.89em}
+    .note{margin-top:18px;padding:17px;border:1px solid var(--border-subtle);border-radius:var(--radius);background:var(--accent-soft);color:var(--text-secondary);font-size:.87em}.footer{margin-top:42px;color:var(--text-muted);font-size:.72em;text-align:center;opacity:.65}
+    .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:720px){.page{padding:38px 14px}.stats,.info-grid{grid-template-columns:1fr}.title{font-size:2.35rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="/">&larr; viggomeesters.com</a>
+    <header class="hero"><div class="eyebrow">Open-source product · v0.4.0</div><h1 class="title">Phone-number evidence without identity theatre.</h1><p class="subtitle">CallerSignal normalizes a displayed number with explicit country context, checks lawful evidence, and returns sources, gaps, confidence, and residual uncertainty instead of guessing who called.</p><div class="topics"><span>phone intelligence</span> <span>MCP</span> <span>CLI</span> <span>HTTP</span> <span>evidence</span></div></header>
+    <section class="stats" aria-label="Project summary"><div class="stat"><div class="stat-num">3</div><div class="stat-label">country wedges</div></div><div class="stat"><div class="stat-num">4</div><div class="stat-label">interfaces</div></div><div class="stat"><div class="stat-num">Read-only</div><div class="stat-label">product boundary</div></div></section>
+    <div class="cta-row"><a class="cta" href="https://callersignal.vercel.app/" target="_blank" rel="noopener">Try CallerSignal ↗</a><a class="cta" href="https://github.com/viggomeesters/callersignal" target="_blank" rel="noopener">Inspect the source →</a><a class="cta" href="/apps/">Back to apps</a></div>
+    <section aria-labelledby="project-notes"><div class="section-label" id="project-notes">Project notes</div><div class="info-grid"><article class="info-card"><h2>What it is</h2><p>One versioned lookup contract exposed through web, CLI, MCP, and HTTP for Netherlands, United Kingdom, and United States number context.</p></article><article class="info-card"><h2>What it refuses to claim</h2><p>A displayed number is not proof of the caller, subscriber, provider, safety, or reachability. Unknown remains unknown when evidence cannot support more.</p></article><article class="info-card"><h2>Evidence model</h2><p>Official numbering evidence comes first. Complaint aggregates remain explicitly unverified, source-scoped signals rather than automatic caller identity or guilt.</p></article><article class="info-card"><h2>Four risk states</h2><p>Results distinguish official warning, elevated signals, no risk evidence, and insufficient evidence. No risk evidence never means a number is safe.</p></article><article class="info-card"><h2>Operational boundary</h2><p>The public service is read-only: it does not accept reports, persist watches, query live subscriber data, or publish unsupported organisation declarations.</p></article><article class="info-card"><h2>Agent-first surface</h2><p>The same machine-readable semantics drive CLI, MCP, HTTP, coverage endpoints, and the website so agents do not receive a weaker or more ambiguous contract.</p></article><article class="info-card"><h2>Coverage transparency</h2><p>The service publishes which sources are eligible, current, queried, unavailable, or unable to support a risk conclusion. Corpus size and freshness remain inspectable instead of becoming invisible product authority.</p></article><article class="info-card"><h2>Deployment reality</h2><p>The hosted v0.4.0 wedge covers NL, GB, and US through one versioned contract. Additional countries or community observations require explicit source rights, privacy controls, correction paths, and abuse gates.</p></article></div></section>
+    <p class="note">The website gives a usable lookup surface; GitHub remains the source for corpus transparency, versioned contracts, implementation details, and current release state.</p>
+    <div class="footer">&copy; 2026 Viggo Meesters</div>
+  </main>
+  <script>const observer=new IntersectionObserver((entries)=>{for(const entry of entries)if(entry.isIntersecting)entry.target.classList.add('visible')},{threshold:.08});document.querySelectorAll('.reveal').forEach((el)=>observer.observe(el));</script>
+</body>
+</html>

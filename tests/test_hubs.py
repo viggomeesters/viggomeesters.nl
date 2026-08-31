@@ -30,6 +30,7 @@ class PortfolioHubContract(unittest.TestCase):
         self.assertEqual(
             live,
             [
+                ("https://callersignal.vercel.app/", "CallerSignal"),
                 ("https://sap-data-readiness.vercel.app", "SAP Data Readiness"),
                 ("https://minimal-etl-modeler.vercel.app", "Minimal ETL Modeler"),
                 ("https://visual-pm-app.vercel.app", "Visual PM"),
@@ -113,6 +114,8 @@ class PortfolioHubContract(unittest.TestCase):
                 ("/go-workflow-stack/", "Go Workflow Stack"),
                 ("/go-project-template/", "Go Project Template"),
                 ("/agent-workflow/", "Agent Workflow"),
+                ("/arr-orchestrator/", "Arr Orchestrator"),
+                ("/toolbox-auth-v2-starter/", "Toolbox Auth v2"),
                 ("/skills/", "Reviewed Skills"),
             ],
         )
@@ -127,8 +130,47 @@ class PortfolioHubContract(unittest.TestCase):
                 ("/vault-layer/", "VaultLayer"),
                 ("/sap-agent-context/", "SAP Agent Context"),
                 ("/nederlandse-huizenkoop-agent-context/", "Homebuying Agent Context"),
+                ("/nl-zuiver/", "NL Zuiver"),
             ],
         )
+
+    def test_new_public_project_pages_are_linked_and_bounded(self) -> None:
+        sitemap = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+        cases = {
+            "nl-zuiver": (
+                "https://github.com/viggomeesters/nl-zuiver",
+                ("Nederlandser schrijven, zonder taalpolitie.", "281", "210", "48"),
+            ),
+            "callersignal": (
+                "https://github.com/viggomeesters/callersignal",
+                ("Phone-number evidence without identity theatre.", "No risk evidence never means a number is safe."),
+            ),
+            "arr-orchestrator": (
+                "https://github.com/viggomeesters/arr-orchestrator",
+                ("Foundation", "Service adapters and remote mutations remain deliberately unimplemented"),
+            ),
+            "toolbox-auth-v2-starter": (
+                "https://github.com/viggomeesters/toolbox-auth-v2-starter",
+                ("A missing secret is not permission.", "does not provide individual identity"),
+            ),
+        }
+        for slug, (repo_url, required_copy) in cases.items():
+            with self.subTest(project=slug):
+                page = ROOT / slug / "index.html"
+                self.assertTrue(page.is_file())
+                markup = page.read_text(encoding="utf-8")
+                self.assertEqual(markup.count("<h1"), 1)
+                self.assertIn(f'<link rel="canonical" href="https://viggomeesters.com/{slug}/">', markup)
+                self.assertIn(repo_url, markup)
+                self.assertIn(f"https://viggomeesters.com/{slug}/", sitemap)
+                for expected in required_copy:
+                    self.assertIn(expected, markup)
+
+    def test_obsidian_portfolio_includes_attachment_link_rules(self) -> None:
+        markup = (ROOT / "obsidian-plugins" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('<div class="stat-num">29</div><div class="stat-label">public plugin repos</div>', markup)
+        self.assertIn("obsidian-attachment-link-rules", markup)
+        self.assertIn("https://github.com/viggomeesters/obsidian-attachment-link-rules", markup)
 
 
 if __name__ == "__main__":

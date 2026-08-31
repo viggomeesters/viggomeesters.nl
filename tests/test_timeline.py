@@ -110,7 +110,7 @@ class TimelineContract(unittest.TestCase):
         self.assertEqual(counts["employment"], 8)
         self.assertEqual(counts["education"], 7)
         self.assertEqual(counts["writing"], 13)
-        self.assertEqual(counts["repository"], 51)
+        self.assertEqual(counts["repository"], 56)
         self.assertIn('data-date="2006-01-01" data-type="education"', self.markup)
         self.assertIn("SAP Data Consultant", self.markup)
         self.assertIn("Bachelor Business IT &amp; Management", self.markup)

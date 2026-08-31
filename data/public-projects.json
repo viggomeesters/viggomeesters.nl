@@ -1,0 +1,547 @@
+{
+  "account": "viggomeesters",
+  "snapshot_date": "2026-08-31",
+  "scope": "Active public source repositories; archived repositories and forks are excluded.",
+  "repositories": [
+    {
+      "name": "11mhz-mcp",
+      "url": "https://github.com/viggomeesters/11mhz-mcp",
+      "description": "MCP server for the 11MHz API",
+      "created_at": "2026-05-27T13:00:59Z",
+      "pushed_at": "2026-05-27T15:07:35Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "arr-orchestrator",
+      "url": "https://github.com/viggomeesters/arr-orchestrator",
+      "description": "Agent-first, Telegram-operated control plane for diagnosing, configuring, and verifying self-hosted media automation stacks.",
+      "created_at": "2026-08-16T09:08:52Z",
+      "pushed_at": "2026-08-22T08:04:06Z",
+      "site_evidence": [
+        "arr-orchestrator/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "callersignal",
+      "url": "https://github.com/viggomeesters/callersignal",
+      "description": "Evidence-backed international phone-number intelligence for agents, CLIs, MCP clients, and the web.",
+      "created_at": "2026-08-26T12:27:29Z",
+      "pushed_at": "2026-08-31T13:03:24Z",
+      "site_evidence": [
+        "callersignal/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "etm-next-agent-context",
+      "url": "https://github.com/viggomeesters/etm-next-agent-context",
+      "description": "Source-backed ETM.next product context for people and AI agents",
+      "created_at": "2026-07-13T13:48:19Z",
+      "pushed_at": "2026-07-13T13:52:13Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "go-project-template",
+      "url": "https://github.com/viggomeesters/go-project-template",
+      "description": "Minimal .go template repository for repo-local agent workflows.",
+      "created_at": "2026-07-03T04:16:11Z",
+      "pushed_at": "2026-08-27T12:17:00Z",
+      "site_evidence": [
+        "go-project-template/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "go-workflow-stack",
+      "url": "https://github.com/viggomeesters/go-workflow-stack",
+      "description": "Reusable CLI and schemas for repo-local .go agent workflow state.",
+      "created_at": "2026-07-03T04:16:05Z",
+      "pushed_at": "2026-08-27T12:25:49Z",
+      "site_evidence": [
+        "go-workflow-stack/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "jsonl-vault-spike",
+      "url": "https://github.com/viggomeesters/jsonl-vault-spike",
+      "description": "Synthetic JSONL-first vault/context proof of concept for agent-readable personal knowledge systems",
+      "created_at": "2026-06-24T18:28:47Z",
+      "pushed_at": "2026-06-30T18:39:34Z",
+      "site_evidence": [
+        "jsonl-vault-spike/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "life-os-starter",
+      "url": "https://github.com/viggomeesters/life-os-starter",
+      "description": "Plug & play Obsidian vault with AI agent support. Clone, install, start.",
+      "created_at": "2026-03-17T07:11:09Z",
+      "pushed_at": "2026-05-13T11:52:31Z",
+      "site_evidence": [
+        "raycast-life-os/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "macos-save-to-obsidian",
+      "url": "https://github.com/viggomeesters/macos-save-to-obsidian",
+      "description": "Standalone macOS Mail to Obsidian workflow",
+      "created_at": "2026-06-16T07:47:44Z",
+      "pushed_at": "2026-06-22T18:32:23Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "mega-vault-viewer",
+      "url": "https://github.com/viggomeesters/mega-vault-viewer",
+      "description": "Local-first macOS viewer for large mixed-format Markdown knowledge vaults.",
+      "created_at": "2026-06-22T14:24:34Z",
+      "pushed_at": "2026-07-18T07:57:40Z",
+      "site_evidence": [
+        "mega-vault-viewer/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "minimal-ai-vault-starter",
+      "url": "https://github.com/viggomeesters/minimal-ai-vault-starter",
+      "description": "Public-safe starter for a minimal AI-enabled Obsidian/JSONL vault",
+      "created_at": "2026-06-30T11:11:27Z",
+      "pushed_at": "2026-07-01T18:50:24Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "nederlandse-huizenkoop-agent-context",
+      "url": "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context",
+      "description": "Nederlands Markdown-first contextpakket voor koper-side AI-agenten bij huizen kopen: bezichtigen, bieden, voorwaarden, kosten en hypotheek.",
+      "created_at": "2026-07-06T08:23:29Z",
+      "pushed_at": "2026-07-21T07:00:35Z",
+      "site_evidence": [
+        "nederlandse-huizenkoop-agent-context/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "nl-zuiver",
+      "url": "https://github.com/viggomeesters/nl-zuiver",
+      "description": "Nederlandser schrijven, zonder taalpolitie — Markdown-woordenlijst en AI-skill voor bewuste woordkeus.",
+      "created_at": "2026-08-31T12:18:22Z",
+      "pushed_at": "2026-08-31T13:41:01Z",
+      "site_evidence": [
+        "nl-zuiver/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-alteryx-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-alteryx-viewer",
+      "description": "Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages",
+      "created_at": "2026-06-08T06:52:00Z",
+      "pushed_at": "2026-06-08T06:52:16Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-ango-companion",
+      "url": "https://github.com/viggomeesters/obsidian-ango-companion",
+      "description": "",
+      "created_at": "2026-06-07T17:46:00Z",
+      "pushed_at": "2026-06-07T18:46:33Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-archive-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-archive-viewer",
+      "description": "Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.",
+      "created_at": "2026-06-08T06:53:52Z",
+      "pushed_at": "2026-06-08T06:54:07Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-attachment-link-rules",
+      "url": "https://github.com/viggomeesters/obsidian-attachment-link-rules",
+      "description": "Choose link or embed syntax for dropped attachments by file extension.",
+      "created_at": "2026-08-19T11:51:28Z",
+      "pushed_at": "2026-08-21T06:23:07Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-csv-tsv-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-csv-tsv-viewer",
+      "description": "Read-only CSV and TSV table viewer.",
+      "created_at": "2026-06-07T18:21:31Z",
+      "pushed_at": "2026-06-07T18:22:07Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-diff-patch-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-diff-patch-viewer",
+      "description": "Read-only .diff and .patch viewer for Obsidian",
+      "created_at": "2026-06-12T20:24:54Z",
+      "pushed_at": "2026-06-14T08:12:56Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-eml-email-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-eml-email-viewer",
+      "description": "Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.",
+      "created_at": "2026-06-08T06:53:40Z",
+      "pushed_at": "2026-06-08T12:27:00Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-folder-sort-view",
+      "url": "https://github.com/viggomeesters/obsidian-folder-sort-view",
+      "description": "Public-API Obsidian folder view sorted Z-to-A",
+      "created_at": "2026-06-13T04:45:47Z",
+      "pushed_at": "2026-06-14T08:30:36Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-folder-sort-z-to-a",
+      "url": "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a",
+      "description": "Spike plugin for Z-to-A folder ordering in Obsidian's native File Explorer",
+      "created_at": "2026-06-12T19:19:03Z",
+      "pushed_at": "2026-06-13T04:28:37Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-git-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-git-viewer",
+      "description": "Lightweight read-only Git status viewer for Obsidian.",
+      "created_at": "2026-06-08T07:32:22Z",
+      "pushed_at": "2026-06-09T13:34:16Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-html-page-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-html-page-viewer",
+      "description": "Read-only sandboxed HTML page viewer for Obsidian.",
+      "created_at": "2026-06-07T09:29:22Z",
+      "pushed_at": "2026-06-07T16:02:38Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-ics-calendar-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-ics-calendar-viewer",
+      "description": "",
+      "created_at": "2026-06-08T06:41:00Z",
+      "pushed_at": "2026-06-08T18:16:42Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-json-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-json-viewer",
+      "description": "Read-only JSON and JSONL tree viewer for Obsidian",
+      "created_at": "2026-06-07T06:04:49Z",
+      "pushed_at": "2026-06-07T06:08:37Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-log-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-log-viewer",
+      "description": "Read-only log file viewer for Obsidian.",
+      "created_at": "2026-06-07T19:36:08Z",
+      "pushed_at": "2026-06-07T19:45:27Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-minimal-hidden-files",
+      "url": "https://github.com/viggomeesters/obsidian-minimal-hidden-files",
+      "description": "Reveal safe dotfiles and dotfolders in Obsidian's native File Explorer.",
+      "created_at": "2026-06-08T06:58:01Z",
+      "pushed_at": "2026-06-22T19:03:09Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-newest-files",
+      "url": "https://github.com/viggomeesters/obsidian-newest-files",
+      "description": "",
+      "created_at": "2026-06-12T07:51:15Z",
+      "pushed_at": "2026-06-14T13:54:48Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-plist-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-plist-viewer",
+      "description": "Read-only Apple plist and mobileconfig viewer for Obsidian.",
+      "created_at": "2026-06-08T06:51:17Z",
+      "pushed_at": "2026-06-08T06:51:33Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-python-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-python-viewer",
+      "description": "Read-only Python source and structure viewer for Obsidian.",
+      "created_at": "2026-06-07T19:40:12Z",
+      "pushed_at": "2026-06-07T19:40:33Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-script-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-script-viewer",
+      "description": "Read-only script source, outline, and safety-hint viewer for Obsidian.",
+      "created_at": "2026-06-08T06:50:48Z",
+      "pushed_at": "2026-06-08T12:42:48Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-slide-deck-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-slide-deck-viewer",
+      "description": "Read-only PPTX slide inspection view for Obsidian.",
+      "created_at": "2026-06-09T06:21:34Z",
+      "pushed_at": "2026-06-14T13:19:43Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-sql-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-sql-viewer",
+      "description": "Read-only SQLite database viewer for Obsidian.",
+      "created_at": "2026-06-08T06:52:42Z",
+      "pushed_at": "2026-06-13T19:55:45Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-test-vault",
+      "url": "https://github.com/viggomeesters/obsidian-test-vault",
+      "description": "",
+      "created_at": "2026-06-12T07:58:45Z",
+      "pushed_at": "2026-06-12T07:58:48Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-toml-ini-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-toml-ini-viewer",
+      "description": "",
+      "created_at": "2026-06-07T19:07:23Z",
+      "pushed_at": "2026-06-07T19:18:52Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-txt-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-txt-viewer",
+      "description": "Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards.",
+      "created_at": "2026-06-07T19:27:08Z",
+      "pushed_at": "2026-06-07T19:27:17Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-vcf-contacts-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer",
+      "description": "Read-only VCF contact card viewer for Obsidian.",
+      "created_at": "2026-06-08T06:37:23Z",
+      "pushed_at": "2026-06-08T10:07:09Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-word-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-word-viewer",
+      "description": "Read-only DOCX document viewer for Obsidian.",
+      "created_at": "2026-06-09T07:08:10Z",
+      "pushed_at": "2026-06-14T08:22:31Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-xlsx-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-xlsx-viewer",
+      "description": "Read-only XLSX workbook value viewer for Obsidian.",
+      "created_at": "2026-06-07T19:35:17Z",
+      "pushed_at": "2026-06-07T19:37:05Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-xml-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-xml-viewer",
+      "description": "Read-only XML tree and source viewer for Obsidian.",
+      "created_at": "2026-06-07T18:59:35Z",
+      "pushed_at": "2026-06-07T18:59:50Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "obsidian-yaml-viewer",
+      "url": "https://github.com/viggomeesters/obsidian-yaml-viewer",
+      "description": "Read-only YAML tree viewer for Obsidian",
+      "created_at": "2026-06-06T07:22:52Z",
+      "pushed_at": "2026-06-06T08:18:46Z",
+      "site_evidence": [
+        "obsidian-plugins/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "reisplanner-agent",
+      "url": "https://github.com/viggomeesters/reisplanner-agent",
+      "description": "Local-first agent-ready travel planning toolkit with optional Vercel publishing",
+      "created_at": "2026-06-23T14:06:37Z",
+      "pushed_at": "2026-06-24T17:49:22Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "sap-agent-context",
+      "url": "https://github.com/viggomeesters/sap-agent-context",
+      "description": "Source-backed SAP context bundles for AI agents, functional design, field mapping, and SAP delivery workflows.",
+      "created_at": "2026-06-22T18:14:06Z",
+      "pushed_at": "2026-08-24T11:53:11Z",
+      "site_evidence": [
+        "sap-agent-context/index.html",
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "toolbox-auth-v2-starter",
+      "url": "https://github.com/viggomeesters/toolbox-auth-v2-starter",
+      "description": "Private-by-default Vercel starter with scrypt, signed sessions, centralized rate limiting and executable auth proofs.",
+      "created_at": "2026-08-11T08:25:27Z",
+      "pushed_at": "2026-08-11T08:25:53Z",
+      "site_evidence": [
+        "timeline/index.html",
+        "toolbox-auth-v2-starter/index.html"
+      ]
+    },
+    {
+      "name": "vault-layer",
+      "url": "https://github.com/viggomeesters/vault-layer",
+      "description": "Local-first database and retrieval layer for huge Markdown/Obsidian vaults",
+      "created_at": "2026-06-23T12:32:31Z",
+      "pushed_at": "2026-06-30T18:39:37Z",
+      "site_evidence": [
+        "timeline/index.html",
+        "vault-layer/index.html"
+      ]
+    },
+    {
+      "name": "vault-schema",
+      "url": "https://github.com/viggomeesters/vault-schema",
+      "description": "Machine-readable vault schema contract, templates, and validation guard for structured Obsidian vaults",
+      "created_at": "2026-02-27T13:07:44Z",
+      "pushed_at": "2026-06-24T17:46:21Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "viggomeesters-assets",
+      "url": "https://github.com/viggomeesters/viggomeesters-assets",
+      "description": "Public-safe visual style and prompt references for viggomeesters.com.",
+      "created_at": "2026-06-25T08:59:06Z",
+      "pushed_at": "2026-07-30T20:34:41Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "viggomeesters.github.io",
+      "url": "https://github.com/viggomeesters/viggomeesters.github.io",
+      "description": "Public schemas and agent-facing contracts for Viggo-owned tooling",
+      "created_at": "2026-07-02T10:33:07Z",
+      "pushed_at": "2026-07-02T11:37:23Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    },
+    {
+      "name": "viggomeesters.nl",
+      "url": "https://github.com/viggomeesters/viggomeesters.nl",
+      "description": "Static personal site for Viggo Meesters: projects, systems, guides, and proof-first agent workflow notes.",
+      "created_at": "2026-02-27T10:37:21Z",
+      "pushed_at": "2026-08-31T05:05:57Z",
+      "site_evidence": [
+        "timeline/index.html"
+      ]
+    }
+  ]
+}

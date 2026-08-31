@@ -1,5 +1,5 @@
 {
-  "snapshot_date": "2026-07-14",
+  "snapshot_date": "2026-08-31",
   "entries": [
     {
       "id": "employment-mccoy",
@@ -1359,6 +1359,116 @@
         },
         {
           "href": "https://github.com/viggomeesters/obsidian-raycast",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-nl-zuiver",
+      "date": "2026-08-31",
+      "date_label": "31 Aug 2026",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "nl-zuiver",
+      "description": "Nederlandser schrijven, zonder taalpolitie: a Markdown-first Dutch writing guide and AI skill for deliberate word choice.",
+      "links": [
+        {
+          "href": "/nl-zuiver/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/nl-zuiver",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-callersignal",
+      "date": "2026-08-26",
+      "date_label": "26 Aug 2026",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "callersignal",
+      "description": "Evidence-backed international phone-number intelligence for agents, CLIs, MCP clients, and the web.",
+      "links": [
+        {
+          "href": "/callersignal/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://callersignal.vercel.app/",
+          "label": "Try the live app ↗",
+          "external": true
+        },
+        {
+          "href": "https://github.com/viggomeesters/callersignal",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-obsidian-attachment-link-rules",
+      "date": "2026-08-19",
+      "date_label": "19 Aug 2026",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "obsidian-attachment-link-rules",
+      "description": "Choose link or embed syntax for dropped attachments by file extension while preserving native Obsidian storage behavior.",
+      "links": [
+        {
+          "href": "/obsidian-plugins/",
+          "label": "Open plugin portfolio →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/obsidian-attachment-link-rules",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-arr-orchestrator",
+      "date": "2026-08-16",
+      "date_label": "16 Aug 2026",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "arr-orchestrator",
+      "description": "Agent-first, Telegram-operated foundation for safe diagnosis, planning, and verification across self-hosted media automation stacks.",
+      "links": [
+        {
+          "href": "/arr-orchestrator/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/arr-orchestrator",
+          "label": "View repository ↗",
+          "external": true
+        }
+      ]
+    },
+    {
+      "id": "repository-toolbox-auth-v2-starter",
+      "date": "2026-08-11",
+      "date_label": "11 Aug 2026",
+      "type": "repository",
+      "type_label": "Repository",
+      "number_label": "GitHub / Public",
+      "title": "toolbox-auth-v2-starter",
+      "description": "Private-by-default Vercel starter with scrypt, signed sessions, centralized rate limiting, and executable auth proofs.",
+      "links": [
+        {
+          "href": "/toolbox-auth-v2-starter/",
+          "label": "Open project page →"
+        },
+        {
+          "href": "https://github.com/viggomeesters/toolbox-auth-v2-starter",
           "label": "View repository ↗",
           "external": true
         }
