@@ -1,0 +1,5 @@
+.git/
+.vercel/
+.go/
+node_modules/
+__pycache__/

@@ -21,7 +21,7 @@ function exists(file) {
 
 function walk(dir, predicate, files = []) {
   for (const name of fs.readdirSync(path.join(root, dir))) {
-    if (name === ".git" || name === ".vercel" || name === "node_modules") continue;
+    if (name === ".git" || name === ".go" || name === ".vercel" || name === "node_modules") continue;
     const rel = path.join(dir, name);
     const stat = fs.statSync(path.join(root, rel));
     if (stat.isDirectory()) walk(rel, predicate, files);

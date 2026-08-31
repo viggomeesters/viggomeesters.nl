@@ -45,6 +45,37 @@ def valid_page(title: str = "Synthetic Portfolio Page With Clear Purpose") -> st
 
 
 class ContinuousIntegrationContract(unittest.TestCase):
+    def test_internal_go_workflow_html_is_excluded_from_public_inventories(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            site = Path(tmp) / "site"
+            shutil.copytree(
+                REPO_ROOT,
+                site,
+                ignore=shutil.ignore_patterns(".git", ".vercel", "node_modules", "__pycache__"),
+            )
+            internal = site / ".go" / "deliveries" / "synthetic" / "index.html"
+            internal.parent.mkdir(parents=True, exist_ok=True)
+            internal.write_text(
+                '<html><body><a href="https://github.com/viggomeesters/unclassified-internal-fixture">internal</a></body></html>',
+                encoding="utf-8",
+            )
+
+            checks = [
+                (["node", "scripts/check-site.mjs"], "Site check passed: 148 public pages, 9 variants checked."),
+                (["node", "scripts/seo-audit.mjs"], "SEO check passed: 148 pages"),
+                (["python3", "scripts/check-public-project-coverage.py"], "50/50 active public repositories covered"),
+            ]
+            for command, expected in checks:
+                result = subprocess.run(
+                    command,
+                    cwd=site,
+                    text=True,
+                    capture_output=True,
+                    check=False,
+                )
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertIn(expected, result.stdout + result.stderr)
+
     def test_site_check_fails_on_a11y_and_local_link_regressions(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             site = Path(tmp) / "site"

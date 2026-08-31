@@ -15,7 +15,7 @@ function exists(file) {
 
 function walk(dir, predicate, files = []) {
   for (const name of fs.readdirSync(path.join(root, dir))) {
-    if (name === ".git" || name === ".vercel" || name === "node_modules") continue;
+    if (name === ".git" || name === ".go" || name === ".vercel" || name === "node_modules") continue;
     const rel = path.join(dir, name);
     const stat = fs.statSync(path.join(root, rel));
     if (stat.isDirectory()) walk(rel, predicate, files);
@@ -258,6 +258,8 @@ assert(robots.includes("Disallow: /reports/"), "robots.txt: internal reports are
 assert(!/^Disallow:\s*\/skills\/?/mi.test(robots), "robots.txt: skills must remain crawlable so page-level noindex can be observed");
 
 const vercel = JSON.parse(read("vercel.json"));
+const vercelIgnore = read(".vercelignore").split(/\r?\n/).map((line) => line.trim());
+assert(vercelIgnore.includes(".go/"), ".vercelignore: internal .go workflow state must be excluded from deployment input");
 assert(vercel.buildCommand === "npm run check:ci", "vercel.json: deployments must run the provider-independent CI gate");
 assert(vercel.outputDirectory === ".", "vercel.json: static root output directory must remain explicit");
 assert(vercel.cleanUrls === true, "vercel.json: cleanUrls must be true");

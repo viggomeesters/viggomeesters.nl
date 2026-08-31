@@ -23,6 +23,7 @@ class PublicProjectCoverageContract(unittest.TestCase):
 
     def test_all_public_repository_mentions_are_explicitly_classified(self) -> None:
         self.assertEqual(MODULE.validate_coverage(self.payload, self.pages), [])
+        self.assertFalse(any(path.startswith(".go/") for path in self.pages))
         mentions = MODULE.repository_mentions(self.pages)
         active = {item["name"] for item in self.payload["repositories"]}
         excluded = {item["name"] for item in self.payload["excluded_repositories"]}

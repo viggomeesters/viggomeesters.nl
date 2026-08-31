@@ -20,6 +20,8 @@ def load_feed_checker():
 class ProductionOperationsContract(unittest.TestCase):
     def test_security_routing_and_error_page_are_explicit(self) -> None:
         vercel = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
+        vercel_ignore = (ROOT / ".vercelignore").read_text(encoding="utf-8").splitlines()
+        self.assertIn(".go/", vercel_ignore)
         self.assertTrue(vercel["cleanUrls"])
         self.assertTrue(vercel["trailingSlash"])
         global_headers = next(entry["headers"] for entry in vercel["headers"] if entry["source"] == "/(.*)")

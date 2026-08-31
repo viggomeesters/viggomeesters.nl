@@ -1,0 +1,49 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "mechanical",
+  "shareable_delivery": "auto",
+  "id": "exclude-go-workflow-state-from-public-site",
+  "project": "viggomeesters-site",
+  "status": "active",
+  "summary": "Exclude repo-local Go workflow state from the public static site",
+  "description": "Treat .go as internal repository state: exclude it from site, SEO, and project-link inventories; exclude it from Vercel upload; prove production does not serve restricted workflow deliveries.",
+  "scope": {
+    "read": [
+      "AGENTS.md",
+      "package.json",
+      "vercel.json",
+      "scripts/**",
+      "tests/**",
+      ".go/**"
+    ],
+    "modify": [
+      ".go/**",
+      ".vercelignore",
+      "vercel.json",
+      "scripts/check-site.mjs",
+      "scripts/seo-audit.mjs",
+      "scripts/check-public-project-coverage.py",
+      "tests/**"
+    ]
+  },
+  "acceptance": [
+    "Internal .go HTML never enters public page, SEO, sitemap, or project-link inventories.",
+    ".go is excluded from Vercel deployment input and a deployed .go delivery URL returns 404.",
+    "Regression tests prove synthetic .go HTML does not alter public counts or checks.",
+    "Full checks, critic review, final deployment, and production readback pass."
+  ],
+  "verification": [
+    "npm run check:all",
+    "git diff --check",
+    "curl production .go route returns 404"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-08-31T19:12:23+02:00"
+  },
+  "work_status": "in_progress",
+  "review_status": "none",
+  "review_history": [],
+  "evidence": []
+}

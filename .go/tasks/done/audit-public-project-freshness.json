@@ -1,0 +1,105 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "auto",
+  "id": "audit-public-project-freshness",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Audit and repair freshness of existing public project mentions",
+  "description": "Compare every currently inventoried public GitHub project mention with current repository metadata, README/release evidence and live-site output; classify drift and repair only proven stale public claims.",
+  "scope": {
+    "read": [
+      "AGENTS.md",
+      "package.json",
+      "data/**",
+      "scripts/**",
+      "tests/**",
+      "**/index.html",
+      "variant-*.html",
+      "sitemap.xml"
+    ],
+    "modify": [
+      ".go/**",
+      "go",
+      "data/public-projects.json",
+      "reports/project-freshness/**",
+      "scripts/check-public-project-freshness.py",
+      "scripts/check-public-project-coverage.py",
+      "package.json",
+      "tests/**",
+      "**/index.html",
+      "variant-*.html",
+      "sitemap.xml"
+    ]
+  },
+  "acceptance": [
+    "Every active public source repository in data/public-projects.json has dated freshness evidence and a classified outcome.",
+    "All public claims found stale by authoritative repository or live evidence are corrected without expanding unrelated site scope.",
+    "A repeatable local freshness check detects missing evidence and expired review dates.",
+    "Full repository checks, diff checks, critic review, and production readback pass."
+  ],
+  "verification": [
+    "python3 scripts/check-public-project-freshness.py",
+    "npm run check:all",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-08-31T18:01:04+02:00"
+  },
+  "work_status": "completed",
+  "review_status": "approved",
+  "review_history": [
+    {
+      "created_at": "2026-08-31T19:08:58+02:00",
+      "agent": "devil:deleg_d92fd9e6",
+      "status": "approved",
+      "evidence": "Verdict A on exact content hash 2990a4194e29da7142416de47d75494b7cc75dd5ffeaaf5e5263239933c16723; no blockers; classification, alias, exact site evidence, mutation probes, full gates, privacy and scope passed.",
+      "transaction_id": "dffbae1ab80b4bf692ddc6549983de4d",
+      "delivery": {
+        "delivery_id": "site-operations-v1",
+        "html": ".go/deliveries/site-operations-v1/index.html",
+        "manifest": ".go/deliveries/site-operations-v1/manifest.json",
+        "source_sha256": "1f12a795209060f3df9344014cb2d4678ddf07e8fce6fddd0e295583c465e6e6",
+        "html_sha256": "6a6351f23e4901107bfd80e581094e820f0540bf41f3ee76e36d8c0bb174a8c8"
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "schema": "go-workflow.finish-evidence.v1",
+      "created_at": "2026-08-31T19:08:58+02:00",
+      "task_id": "audit-public-project-freshness",
+      "agent": "hermes",
+      "summary": "task_id=audit-public-project-freshness; summary=content freshness audit shipped to production; no_diff=true; verification_command=npm run deploy:prod plus production readback; verification_result=passed 74 tests, deployment dpl_2tVhNWGEdHe5E4dZq7p1SrDRPTyp READY, 28 plugin cards exact, 50 active and 6 excluded classified, vault-schema 10 evidence paths; critic=Verdict A by devil deleg_d92fd9e6 on hash 2990a4194e29da7142416de47d75494b7cc75dd5ffeaaf5e5263239933c16723; runtime=hermes-agent; model=gpt-5.6-sol; billing_mode=subscription",
+      "changed_files": [],
+      "no_diff": true,
+      "verification": {
+        "command": "npm run deploy:prod plus production readback",
+        "result": "passed 74 tests, deployment dpl_2tVhNWGEdHe5E4dZq7p1SrDRPTyp READY, 28 plugin cards exact, 50 active and 6 excluded classified, vault-schema 10 evidence paths"
+      },
+      "runtime": {
+        "agent": "hermes",
+        "runtime": "hermes-agent",
+        "model": "gpt-5.6-sol",
+        "billing_mode": "subscription"
+      },
+      "usage": {
+        "schema": "go-workflow.usage-attribution.v1",
+        "runtime_kind": "hermes-agent",
+        "billing_mode": "subscription",
+        "owner": "hermes",
+        "model": "gpt-5.6-sol",
+        "token_estimate": null,
+        "api_equivalent_cost_usd": null,
+        "provider_invoice_cost_usd": null,
+        "cost_label": "api_equivalent_not_invoice_cost"
+      },
+      "review": {
+        "outcome": "Verdict A by devil deleg_d92fd9e6 on hash 2990a4194e29da7142416de47d75494b7cc75dd5ffeaaf5e5263239933c16723",
+        "skip_reason": null
+      }
+    }
+  ]
+}

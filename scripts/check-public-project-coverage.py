@@ -19,7 +19,7 @@ def public_pages() -> dict[str, str]:
     pages: dict[str, str] = {}
     for path in sorted(ROOT.rglob("*.html")):
         relative = path.relative_to(ROOT)
-        if any(part in {"node_modules", ".git", ".vercel", "reports"} for part in relative.parts):
+        if any(part in {"node_modules", ".git", ".go", ".vercel", "reports"} for part in relative.parts):
             continue
         pages[relative.as_posix()] = path.read_text(encoding="utf-8", errors="ignore")
     return pages
