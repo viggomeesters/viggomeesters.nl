@@ -1,0 +1,68 @@
+{
+  "schema": "viggomeesters.project-freshness-audit.v1",
+  "reviewed_on": "2026-08-31",
+  "expires_on": "2026-11-29",
+  "repositories_reviewed": 50,
+  "evidence": {
+    "active_public_source_repositories": 50,
+    "published_releases": 44,
+    "homepage_urls_checked": 19,
+    "homepage_http_successes": 19,
+    "community_plugin_pages_checked": 25,
+    "community_plugin_http_successes": 25,
+    "hard_coded_release_claims_checked": 4,
+    "hard_coded_release_claims_matching": 4,
+    "github_description_differences": 0,
+    "new_or_missing_active_repositories": 0,
+    "active_repository_cards_corrected": 4,
+    "archived_fork_current_portfolio_references_removed": 1,
+    "excluded_public_repository_mentions_classified": 6,
+    "renamed_aliases_corrected": 1,
+    "design_variant_canonical_links_checked": 9
+  },
+  "findings": [
+    {
+      "id": "unclassified-public-html-repository-mentions",
+      "severity": "high",
+      "status": "corrected",
+      "evidence": "Public HTML contains six deliberate GitHub repository mentions outside the 50 active owned source repositories: archived forks, active upstream forks, infrastructure forks, and one archived owned predecessor.",
+      "correction": "Add dated live GitHub classification, head SHA, parent/source state, reason, and site evidence for all six excluded mentions; fail coverage when any public viggomeesters repository link is unclassified."
+    },
+    {
+      "id": "archived-fork-in-active-portfolio-obsidian-raycast",
+      "severity": "medium",
+      "status": "corrected",
+      "evidence": "obsidian-plugins/index.html listed obsidian-raycast as a current card. Live GitHub verification shows it is a public archived fork of marcjulianschwarz/obsidian-raycast; the active-source inventory intentionally excludes archived repositories and forks, while timeline/index.html already preserves the historical GitHub / Archived record.",
+      "correction": "Remove the archived fork from the current active plugin portfolio, label the count as 28 active plugin repos, state that archived forks are excluded, and retain the archived timeline record."
+    },
+    {
+      "id": "generic-plugin-fallback-copy",
+      "severity": "low",
+      "status": "corrected",
+      "repositories": [
+        "obsidian-ango-companion",
+        "obsidian-ics-calendar-viewer",
+        "obsidian-newest-files",
+        "obsidian-toml-ini-viewer"
+      ],
+      "evidence": "These repositories have no GitHub description, while their current READMEs contain specific bounded capability descriptions; the site still showed the generic fallback Small Obsidian utility/plugin.",
+      "correction": "Replace only the four generic fallback descriptions with concise README-backed scope copy."
+    },
+    {
+      "id": "renamed-repository-alias-in-public-variants",
+      "severity": "medium",
+      "status": "corrected",
+      "evidence": "Nine public design variants presented obsidian-life-os-starter as Live. GitHub now redirects that historical repository name to the active vault-schema repository.",
+      "correction": "Replace the old repository URL, Knowledge System Starter name, and starter description in all nine variants with the canonical vault-schema URL and current bounded description."
+    }
+  ],
+  "verified_no_change": [
+    "All 50 active public repository descriptions match the GitHub snapshot.",
+    "All 19 repository homepage URLs returned HTTP 200; the old obsidian-docx-viewer URL resolves to obsidian-word-viewer.",
+    "All 25 linked Obsidian community pages returned HTTP 200.",
+    "Arr Orchestrator v0.1.0, CallerSignal v0.4.0, NL Zuiver v0.2.0 and Toolbox Auth v2 Starter v0.1.0 match their latest published releases.",
+    "Capability/status copy on detail pages remains consistent with current README boundaries.",
+    "Eleven curated timeline descriptions differ from raw GitHub descriptions only by tone, scope boundaries, or neutral fallback copy; no feature or status drift was found."
+  ],
+  "residual_risk": "GitHub or external pages can change after this dated review; the local gate expires after 90 days and fails earlier when refreshed pushed_at metadata no longer matches reviewed evidence."
+}

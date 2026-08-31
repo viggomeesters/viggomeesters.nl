@@ -1,7 +1,34 @@
 {
   "account": "viggomeesters",
   "snapshot_date": "2026-08-31",
-  "scope": "Active public source repositories; archived repositories and forks are excluded.",
+  "scope": "Active public source repositories; archived repositories and forks are excluded from the active list and classified separately.",
+  "freshness_audit": {
+    "reviewed_on": "2026-08-31",
+    "expires_on": "2026-11-29",
+    "policy_days": 90,
+    "method": "GitHub GraphQL metadata + README/release review + homepage HTTP readback + public HTML claim inspection.",
+    "summary": {
+      "repositories_reviewed": 50,
+      "current": 46,
+      "corrected": 4,
+      "timeline_only": 9,
+      "detail_page": 12,
+      "portfolio_hub": 28,
+      "published_releases": 44,
+      "homepage_urls_checked": 19,
+      "site_corrections": 5,
+      "excluded_public_mentions": 6,
+      "renamed_aliases_corrected": 1,
+      "timeline_and_variants": 1
+    },
+    "site_corrections": [
+      "Removed archived fork obsidian-raycast from the current active-source Obsidian plugin portfolio; retained its archived timeline entry.",
+      "Replaced generic fallback copy with the README-backed local validation/control-surface boundary.",
+      "Replaced generic fallback copy with the README-backed read-only ICS inspection scope.",
+      "Replaced generic fallback copy with the README-backed first-seen file-index behavior.",
+      "Replaced generic fallback copy with the README-backed read-only config viewer scope."
+    ]
+  },
   "repositories": [
     {
       "name": "11mhz-mcp",
@@ -11,7 +38,25 @@
       "pushed_at": "2026-05-27T15:07:35Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-05-27T15:07:35Z",
+        "head_oid": "9c09cdd7f67a4442cb49659797a9eb367f9dafee",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/11mhz-mcp",
+          "https://github.com/viggomeesters/11mhz-mcp#readme"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "MCP server for the 11MHz API"
+      }
     },
     {
       "name": "arr-orchestrator",
@@ -22,7 +67,26 @@
       "site_evidence": [
         "arr-orchestrator/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-22T08:04:06Z",
+        "head_oid": "74dfdf90d106720a5964f34b09f094cb715b145a",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-08-16T09:19:42Z",
+        "latest_release_url": "https://github.com/viggomeesters/arr-orchestrator/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/arr-orchestrator",
+          "https://github.com/viggomeesters/arr-orchestrator#readme",
+          "https://github.com/viggomeesters/arr-orchestrator/releases/tag/v0.1.0"
+        ],
+        "note": "Hard-coded release on the public page matches the latest published GitHub release.",
+        "observed_description": "Agent-first, Telegram-operated control plane for diagnosing, configuring, and verifying self-hosted media automation stacks."
+      }
     },
     {
       "name": "callersignal",
@@ -33,7 +97,28 @@
       "site_evidence": [
         "callersignal/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-31T13:03:24Z",
+        "head_oid": "2a49fec640dde4243615568595bb70e29273f9b1",
+        "latest_release_tag": "v0.4.0",
+        "latest_release_published_at": "2026-08-29T14:40:03Z",
+        "latest_release_url": "https://github.com/viggomeesters/callersignal/releases/tag/v0.4.0",
+        "homepage_url": "https://callersignal.vercel.app/",
+        "homepage_status": 200,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/callersignal",
+          "https://github.com/viggomeesters/callersignal#readme",
+          "https://github.com/viggomeesters/callersignal/releases/tag/v0.4.0",
+          "https://callersignal.vercel.app/"
+        ],
+        "note": "Hard-coded release on the public page matches the latest published GitHub release.",
+        "observed_description": "Evidence-backed international phone-number intelligence for agents, CLIs, MCP clients, and the web.",
+        "homepage_final_url": "https://callersignal.vercel.app/"
+      }
     },
     {
       "name": "etm-next-agent-context",
@@ -43,7 +128,26 @@
       "pushed_at": "2026-07-13T13:52:13Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-13T13:52:13Z",
+        "head_oid": "046d77988f82c3a2584ce81c22c833689750fa80",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-07-13T13:48:49Z",
+        "latest_release_url": "https://github.com/viggomeesters/etm-next-agent-context/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/etm-next-agent-context",
+          "https://github.com/viggomeesters/etm-next-agent-context#readme",
+          "https://github.com/viggomeesters/etm-next-agent-context/releases/tag/v0.1.0"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Source-backed ETM.next product context for people and AI agents"
+      }
     },
     {
       "name": "go-project-template",
@@ -54,7 +158,26 @@
       "site_evidence": [
         "go-project-template/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-27T12:17:00Z",
+        "head_oid": "490dd50671dd740e5902ad17ed475258bb7c939b",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-07-03T04:16:17Z",
+        "latest_release_url": "https://github.com/viggomeesters/go-project-template/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/go-project-template",
+          "https://github.com/viggomeesters/go-project-template#readme",
+          "https://github.com/viggomeesters/go-project-template/releases/tag/v0.1.0"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Minimal .go template repository for repo-local agent workflows."
+      }
     },
     {
       "name": "go-workflow-stack",
@@ -65,7 +188,26 @@
       "site_evidence": [
         "go-workflow-stack/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-27T12:25:49Z",
+        "head_oid": "cbc0a328516ff31d4b3010de9900b8feb7f5e4eb",
+        "latest_release_tag": "v0.3.12",
+        "latest_release_published_at": "2026-08-17T05:00:59Z",
+        "latest_release_url": "https://github.com/viggomeesters/go-workflow-stack/releases/tag/v0.3.12",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/go-workflow-stack",
+          "https://github.com/viggomeesters/go-workflow-stack#readme",
+          "https://github.com/viggomeesters/go-workflow-stack/releases/tag/v0.3.12"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Reusable CLI and schemas for repo-local .go agent workflow state."
+      }
     },
     {
       "name": "jsonl-vault-spike",
@@ -76,7 +218,28 @@
       "site_evidence": [
         "jsonl-vault-spike/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-30T18:39:34Z",
+        "head_oid": "3ca40bc9ba57af1fe2107fb2feb63dbc8cba1181",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-06-24T18:37:08Z",
+        "latest_release_url": "https://github.com/viggomeesters/jsonl-vault-spike/releases/tag/v0.1.0",
+        "homepage_url": "https://viggomeesters.com/jsonl-vault-spike/",
+        "homepage_status": 200,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/jsonl-vault-spike",
+          "https://github.com/viggomeesters/jsonl-vault-spike#readme",
+          "https://github.com/viggomeesters/jsonl-vault-spike/releases/tag/v0.1.0",
+          "https://viggomeesters.com/jsonl-vault-spike/"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Synthetic JSONL-first vault/context proof of concept for agent-readable personal knowledge systems",
+        "homepage_final_url": "https://viggomeesters.com/jsonl-vault-spike/"
+      }
     },
     {
       "name": "life-os-starter",
@@ -87,7 +250,25 @@
       "site_evidence": [
         "raycast-life-os/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-05-13T11:52:31Z",
+        "head_oid": "84d78808765c0d0298d7e5c0881aac4cff87b462",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/life-os-starter",
+          "https://github.com/viggomeesters/life-os-starter#readme"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Plug & play Obsidian vault with AI agent support. Clone, install, start."
+      }
     },
     {
       "name": "macos-save-to-obsidian",
@@ -97,7 +278,25 @@
       "pushed_at": "2026-06-22T18:32:23Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-22T18:32:23Z",
+        "head_oid": "3981c0673eda62a76e9151255c98fe366fb57274",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/macos-save-to-obsidian",
+          "https://github.com/viggomeesters/macos-save-to-obsidian#readme"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Standalone macOS Mail to Obsidian workflow"
+      }
     },
     {
       "name": "mega-vault-viewer",
@@ -108,7 +307,26 @@
       "site_evidence": [
         "mega-vault-viewer/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-18T07:57:40Z",
+        "head_oid": "7670782b293341a58b5a5ec5b67883047f5fdfdf",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-06-22T14:25:37Z",
+        "latest_release_url": "https://github.com/viggomeesters/mega-vault-viewer/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/mega-vault-viewer",
+          "https://github.com/viggomeesters/mega-vault-viewer#readme",
+          "https://github.com/viggomeesters/mega-vault-viewer/releases/tag/v0.1.0"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Local-first macOS viewer for large mixed-format Markdown knowledge vaults."
+      }
     },
     {
       "name": "minimal-ai-vault-starter",
@@ -118,7 +336,26 @@
       "pushed_at": "2026-07-01T18:50:24Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-01T18:50:24Z",
+        "head_oid": "e221496b8f15d8c1e74d80c9d1d5ded75957681b",
+        "latest_release_tag": "v0.1.1",
+        "latest_release_published_at": "2026-07-01T18:34:42Z",
+        "latest_release_url": "https://github.com/viggomeesters/minimal-ai-vault-starter/releases/tag/v0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/minimal-ai-vault-starter",
+          "https://github.com/viggomeesters/minimal-ai-vault-starter#readme",
+          "https://github.com/viggomeesters/minimal-ai-vault-starter/releases/tag/v0.1.1"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Public-safe starter for a minimal AI-enabled Obsidian/JSONL vault"
+      }
     },
     {
       "name": "nederlandse-huizenkoop-agent-context",
@@ -129,7 +366,26 @@
       "site_evidence": [
         "nederlandse-huizenkoop-agent-context/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-21T07:00:35Z",
+        "head_oid": "01be42e22dc84fdf772a96a63ea769c1ba49add8",
+        "latest_release_tag": "v0.1.1",
+        "latest_release_published_at": "2026-07-06T08:39:15Z",
+        "latest_release_url": "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context/releases/tag/v0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context",
+          "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context#readme",
+          "https://github.com/viggomeesters/nederlandse-huizenkoop-agent-context/releases/tag/v0.1.1"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Nederlands Markdown-first contextpakket voor koper-side AI-agenten bij huizen kopen: bezichtigen, bieden, voorwaarden, kosten en hypotheek."
+      }
     },
     {
       "name": "nl-zuiver",
@@ -140,7 +396,26 @@
       "site_evidence": [
         "nl-zuiver/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-31T13:41:01Z",
+        "head_oid": "6b51b84d833bf92bc4fbe45b7ef505f6fe98429c",
+        "latest_release_tag": "v0.2.0",
+        "latest_release_published_at": "2026-08-31T13:41:02Z",
+        "latest_release_url": "https://github.com/viggomeesters/nl-zuiver/releases/tag/v0.2.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/nl-zuiver",
+          "https://github.com/viggomeesters/nl-zuiver#readme",
+          "https://github.com/viggomeesters/nl-zuiver/releases/tag/v0.2.0"
+        ],
+        "note": "Hard-coded release on the public page matches the latest published GitHub release.",
+        "observed_description": "Nederlandser schrijven, zonder taalpolitie — Markdown-woordenlijst en AI-skill voor bewuste woordkeus."
+      }
     },
     {
       "name": "obsidian-alteryx-viewer",
@@ -151,7 +426,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T06:52:16Z",
+        "head_oid": "e18ba5d54606066a880520c223c5f4444da54014",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-08T06:52:16Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-alteryx-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-alteryx-viewer",
+          "https://github.com/viggomeesters/obsidian-alteryx-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-alteryx-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only Obsidian viewer for Alteryx .yxmd workflows and .yxzp packages"
+      }
     },
     {
       "name": "obsidian-ango-companion",
@@ -162,7 +456,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T18:46:33Z",
+        "head_oid": "5ff77a65bfe593e42506fc3cef99d96b88211765",
+        "latest_release_tag": "1.0.2",
+        "latest_release_published_at": "2026-06-07T18:46:33Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-ango-companion/releases/tag/1.0.2",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "corrected",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-ango-companion",
+          "https://github.com/viggomeesters/obsidian-ango-companion#readme",
+          "https://github.com/viggomeesters/obsidian-ango-companion/releases/tag/1.0.2"
+        ],
+        "note": "Replaced generic fallback copy with the README-backed local validation/control-surface boundary.",
+        "observed_description": ""
+      }
     },
     {
       "name": "obsidian-archive-viewer",
@@ -173,7 +486,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T06:54:07Z",
+        "head_oid": "d68fa88c76b1680cc2e80b963247e1dbea19e244",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-08T06:54:07Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-archive-viewer/releases/tag/0.1.0",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-archive-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-archive-viewer",
+          "https://github.com/viggomeesters/obsidian-archive-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-archive-viewer/releases/tag/0.1.0",
+          "https://github.com/viggomeesters/obsidian-archive-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Inspect .zip archive contents as read-only metadata trees with search, size summaries, and safety warnings.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-archive-viewer#readme"
+      }
     },
     {
       "name": "obsidian-attachment-link-rules",
@@ -184,7 +518,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-21T06:23:07Z",
+        "head_oid": "fd188d6e9f17c565b722624aba09f551801378d3",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-08-21T06:22:05Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-attachment-link-rules/releases/tag/0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-attachment-link-rules",
+          "https://github.com/viggomeesters/obsidian-attachment-link-rules#readme",
+          "https://github.com/viggomeesters/obsidian-attachment-link-rules/releases/tag/0.1.1"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Choose link or embed syntax for dropped attachments by file extension."
+      }
     },
     {
       "name": "obsidian-csv-tsv-viewer",
@@ -195,7 +548,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T18:22:07Z",
+        "head_oid": "6658058fc90ddfde8d735d24772a174c56cabfbb",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T18:22:07Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-csv-tsv-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-csv-tsv-viewer",
+          "https://github.com/viggomeesters/obsidian-csv-tsv-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-csv-tsv-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only CSV and TSV table viewer."
+      }
     },
     {
       "name": "obsidian-diff-patch-viewer",
@@ -206,7 +578,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-14T08:12:56Z",
+        "head_oid": "a7f72481a59c118a76bc83e228cd3e84082787b0",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-14T08:12:57Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-diff-patch-viewer/releases/tag/0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-diff-patch-viewer",
+          "https://github.com/viggomeesters/obsidian-diff-patch-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-diff-patch-viewer/releases/tag/0.1.1"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only .diff and .patch viewer for Obsidian"
+      }
     },
     {
       "name": "obsidian-eml-email-viewer",
@@ -217,7 +608,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T12:27:00Z",
+        "head_oid": "41240fccc3672c45ff4e7fa13ddee32867ab3177",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-08T12:27:00Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-eml-email-viewer/releases/tag/0.1.1",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-eml-email-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-eml-email-viewer",
+          "https://github.com/viggomeesters/obsidian-eml-email-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-eml-email-viewer/releases/tag/0.1.1",
+          "https://github.com/viggomeesters/obsidian-eml-email-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only local .eml email viewer for Obsidian with safe previews and raw MIME fallback.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-eml-email-viewer#readme"
+      }
     },
     {
       "name": "obsidian-folder-sort-view",
@@ -228,7 +640,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-14T08:30:36Z",
+        "head_oid": "a31574e123725c619b18bf612fa165d6fac2e031",
+        "latest_release_tag": "0.1.3",
+        "latest_release_published_at": "2026-06-14T08:30:36Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-folder-sort-view/releases/tag/0.1.3",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-folder-sort-view",
+          "https://github.com/viggomeesters/obsidian-folder-sort-view#readme",
+          "https://github.com/viggomeesters/obsidian-folder-sort-view/releases/tag/0.1.3"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Public-API Obsidian folder view sorted Z-to-A"
+      }
     },
     {
       "name": "obsidian-folder-sort-z-to-a",
@@ -239,7 +670,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-13T04:28:37Z",
+        "head_oid": "2968241ab4e76813283095af014b8919fb543f6f",
+        "latest_release_tag": "0.2.1",
+        "latest_release_published_at": "2026-06-13T04:28:38Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a/releases/tag/0.2.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a",
+          "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a#readme",
+          "https://github.com/viggomeesters/obsidian-folder-sort-z-to-a/releases/tag/0.2.1"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Spike plugin for Z-to-A folder ordering in Obsidian's native File Explorer"
+      }
     },
     {
       "name": "obsidian-git-viewer",
@@ -250,7 +700,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-09T13:34:16Z",
+        "head_oid": "14f10c9dd527ae000d5ef01ca0f4e8d4d78d3ccf",
+        "latest_release_tag": "0.3.1",
+        "latest_release_published_at": "2026-06-09T13:29:19Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-git-viewer/releases/tag/0.3.1",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-git-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-git-viewer",
+          "https://github.com/viggomeesters/obsidian-git-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-git-viewer/releases/tag/0.3.1",
+          "https://github.com/viggomeesters/obsidian-git-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Lightweight read-only Git status viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-git-viewer#readme"
+      }
     },
     {
       "name": "obsidian-html-page-viewer",
@@ -261,7 +732,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T16:02:38Z",
+        "head_oid": "abeece0c87688bbbc17fa174b9690d2a9d422e57",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-07T16:02:38Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-html-page-viewer/releases/tag/0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-html-page-viewer",
+          "https://github.com/viggomeesters/obsidian-html-page-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-html-page-viewer/releases/tag/0.1.1"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only sandboxed HTML page viewer for Obsidian."
+      }
     },
     {
       "name": "obsidian-ics-calendar-viewer",
@@ -272,7 +762,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T18:16:42Z",
+        "head_oid": "4a3bf8fd1eb3008f96be87e9834051cc3953d117",
+        "latest_release_tag": "0.1.4",
+        "latest_release_published_at": "2026-06-08T18:15:39Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-ics-calendar-viewer/releases/tag/0.1.4",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "corrected",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-ics-calendar-viewer",
+          "https://github.com/viggomeesters/obsidian-ics-calendar-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-ics-calendar-viewer/releases/tag/0.1.4"
+        ],
+        "note": "Replaced generic fallback copy with the README-backed read-only ICS inspection scope.",
+        "observed_description": ""
+      }
     },
     {
       "name": "obsidian-json-viewer",
@@ -283,7 +792,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T06:08:37Z",
+        "head_oid": "f9f188e3cac70e4f8ac062e446793a24849b6ec4",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-07T06:08:37Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-json-viewer/releases/tag/0.1.1",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-json-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-json-viewer",
+          "https://github.com/viggomeesters/obsidian-json-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-json-viewer/releases/tag/0.1.1",
+          "https://github.com/viggomeesters/obsidian-json-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only JSON and JSONL tree viewer for Obsidian",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-json-viewer#readme"
+      }
     },
     {
       "name": "obsidian-log-viewer",
@@ -294,7 +824,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T19:45:27Z",
+        "head_oid": "3ec980439c7a83642818731bb5571c9e1a82637f",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T19:45:27Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-log-viewer/releases/tag/0.1.0",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-log-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-log-viewer",
+          "https://github.com/viggomeesters/obsidian-log-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-log-viewer/releases/tag/0.1.0",
+          "https://github.com/viggomeesters/obsidian-log-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only log file viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-log-viewer#readme"
+      }
     },
     {
       "name": "obsidian-minimal-hidden-files",
@@ -305,7 +856,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-22T19:03:09Z",
+        "head_oid": "16b0116c8423f2a220d10fe3c77d5cdc52e1bdbd",
+        "latest_release_tag": "0.1.3",
+        "latest_release_published_at": "2026-06-13T04:29:04Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-minimal-hidden-files/releases/tag/0.1.3",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-minimal-hidden-files",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-minimal-hidden-files",
+          "https://github.com/viggomeesters/obsidian-minimal-hidden-files#readme",
+          "https://github.com/viggomeesters/obsidian-minimal-hidden-files/releases/tag/0.1.3",
+          "https://github.com/viggomeesters/obsidian-minimal-hidden-files"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Reveal safe dotfiles and dotfolders in Obsidian's native File Explorer.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-minimal-hidden-files"
+      }
     },
     {
       "name": "obsidian-newest-files",
@@ -316,7 +888,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-14T13:54:48Z",
+        "head_oid": "f3a1528314b07e845d2533b68386fb97acd7ca2a",
+        "latest_release_tag": "0.1.4",
+        "latest_release_published_at": "2026-06-14T13:54:49Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-newest-files/releases/tag/0.1.4",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "corrected",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-newest-files",
+          "https://github.com/viggomeesters/obsidian-newest-files#readme",
+          "https://github.com/viggomeesters/obsidian-newest-files/releases/tag/0.1.4"
+        ],
+        "note": "Replaced generic fallback copy with the README-backed first-seen file-index behavior.",
+        "observed_description": ""
+      }
     },
     {
       "name": "obsidian-plist-viewer",
@@ -327,7 +918,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T06:51:33Z",
+        "head_oid": "90b5fbb6dd795e3c928f14f7214c75f246ff4645",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-08T06:51:34Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-plist-viewer/releases/tag/0.1.0",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-plist-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-plist-viewer",
+          "https://github.com/viggomeesters/obsidian-plist-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-plist-viewer/releases/tag/0.1.0",
+          "https://github.com/viggomeesters/obsidian-plist-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only Apple plist and mobileconfig viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-plist-viewer#readme"
+      }
     },
     {
       "name": "obsidian-python-viewer",
@@ -338,7 +950,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T19:40:33Z",
+        "head_oid": "ec8733afa3bf4083fa4cbe3545c37439f66a1701",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T19:40:33Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-python-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-python-viewer",
+          "https://github.com/viggomeesters/obsidian-python-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-python-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only Python source and structure viewer for Obsidian."
+      }
     },
     {
       "name": "obsidian-script-viewer",
@@ -349,7 +980,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T12:42:48Z",
+        "head_oid": "d5cb76a94ee7121adf88066199c85bf1169db8bc",
+        "latest_release_tag": "0.1.2",
+        "latest_release_published_at": "2026-06-08T12:42:48Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-script-viewer/releases/tag/0.1.2",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-script-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-script-viewer",
+          "https://github.com/viggomeesters/obsidian-script-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-script-viewer/releases/tag/0.1.2",
+          "https://github.com/viggomeesters/obsidian-script-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only script source, outline, and safety-hint viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-script-viewer#readme"
+      }
     },
     {
       "name": "obsidian-slide-deck-viewer",
@@ -360,7 +1012,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-14T13:19:43Z",
+        "head_oid": "7e3a8cde609ec5136c09ea8e677a4f9fcc40c7ef",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-14T13:19:43Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-slide-deck-viewer/releases/tag/0.1.1",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-slide-deck-viewer",
+          "https://github.com/viggomeesters/obsidian-slide-deck-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-slide-deck-viewer/releases/tag/0.1.1"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only PPTX slide inspection view for Obsidian."
+      }
     },
     {
       "name": "obsidian-sql-viewer",
@@ -371,7 +1042,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-13T19:55:45Z",
+        "head_oid": "d854461e7c84ce01ce9d6f1c525f33fca1af83a1",
+        "latest_release_tag": "0.1.2",
+        "latest_release_published_at": "2026-06-13T19:55:45Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-sql-viewer/releases/tag/0.1.2",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-sql-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-sql-viewer",
+          "https://github.com/viggomeesters/obsidian-sql-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-sql-viewer/releases/tag/0.1.2",
+          "https://github.com/viggomeesters/obsidian-sql-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only SQLite database viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-sql-viewer#readme"
+      }
     },
     {
       "name": "obsidian-test-vault",
@@ -381,7 +1073,25 @@
       "pushed_at": "2026-06-12T07:58:48Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-12T07:58:48Z",
+        "head_oid": "d335e5101258dbb03894d52031a72b233e24d8a0",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-test-vault",
+          "https://github.com/viggomeesters/obsidian-test-vault#readme"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": ""
+      }
     },
     {
       "name": "obsidian-toml-ini-viewer",
@@ -392,7 +1102,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T19:18:52Z",
+        "head_oid": "a31b00f2eae64b42bad6b4c364d2671cda42d450",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T19:07:36Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-toml-ini-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "corrected",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-toml-ini-viewer",
+          "https://github.com/viggomeesters/obsidian-toml-ini-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-toml-ini-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Replaced generic fallback copy with the README-backed read-only config viewer scope.",
+        "observed_description": ""
+      }
     },
     {
       "name": "obsidian-txt-viewer",
@@ -403,7 +1132,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T19:27:17Z",
+        "head_oid": "ec3913722d15323e0dcc457fc79560d892e060a1",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T19:27:18Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-txt-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-txt-viewer",
+          "https://github.com/viggomeesters/obsidian-txt-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-txt-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only TXT viewer plugin with line numbers, search navigation, filtering, and large-file guards."
+      }
     },
     {
       "name": "obsidian-vcf-contacts-viewer",
@@ -414,7 +1162,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-08T10:07:09Z",
+        "head_oid": "7a3e2b775d493df3fe7e3fa8b4748b8788325c6a",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-08T06:37:34Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer",
+          "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-vcf-contacts-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only VCF contact card viewer for Obsidian."
+      }
     },
     {
       "name": "obsidian-word-viewer",
@@ -425,7 +1192,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-14T08:22:31Z",
+        "head_oid": "eaba4fe576706ffc806a4aba5e1cbb4e4898169d",
+        "latest_release_tag": "0.1.1",
+        "latest_release_published_at": "2026-06-14T08:22:31Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-word-viewer/releases/tag/0.1.1",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-docx-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-word-viewer",
+          "https://github.com/viggomeesters/obsidian-word-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-word-viewer/releases/tag/0.1.1",
+          "https://github.com/viggomeesters/obsidian-docx-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only DOCX document viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-word-viewer"
+      }
     },
     {
       "name": "obsidian-xlsx-viewer",
@@ -436,7 +1224,26 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T19:37:05Z",
+        "head_oid": "335dd2ee7fd527af8db24351983f1feae244a0aa",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T19:36:06Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-xlsx-viewer/releases/tag/0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-xlsx-viewer",
+          "https://github.com/viggomeesters/obsidian-xlsx-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-xlsx-viewer/releases/tag/0.1.0"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only XLSX workbook value viewer for Obsidian."
+      }
     },
     {
       "name": "obsidian-xml-viewer",
@@ -447,7 +1254,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-07T18:59:50Z",
+        "head_oid": "d26b09beeb922e050db5df4e875f7f00477008dc",
+        "latest_release_tag": "0.1.0",
+        "latest_release_published_at": "2026-06-07T18:59:50Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-xml-viewer/releases/tag/0.1.0",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-xml-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-xml-viewer",
+          "https://github.com/viggomeesters/obsidian-xml-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-xml-viewer/releases/tag/0.1.0",
+          "https://github.com/viggomeesters/obsidian-xml-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only XML tree and source viewer for Obsidian.",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-xml-viewer#readme"
+      }
     },
     {
       "name": "obsidian-yaml-viewer",
@@ -458,7 +1286,28 @@
       "site_evidence": [
         "obsidian-plugins/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-06T08:18:46Z",
+        "head_oid": "526562476ccfc3ab7f356482f59d255f6dcd40ce",
+        "latest_release_tag": "0.1.2",
+        "latest_release_published_at": "2026-06-06T08:18:46Z",
+        "latest_release_url": "https://github.com/viggomeesters/obsidian-yaml-viewer/releases/tag/0.1.2",
+        "homepage_url": "https://github.com/viggomeesters/obsidian-yaml-viewer#readme",
+        "homepage_status": 200,
+        "site_scope": "portfolio_hub",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/obsidian-yaml-viewer",
+          "https://github.com/viggomeesters/obsidian-yaml-viewer#readme",
+          "https://github.com/viggomeesters/obsidian-yaml-viewer/releases/tag/0.1.2",
+          "https://github.com/viggomeesters/obsidian-yaml-viewer#readme"
+        ],
+        "note": "Current portfolio card, capability copy, repository URL and community-listing state reviewed.",
+        "observed_description": "Read-only YAML tree viewer for Obsidian",
+        "homepage_final_url": "https://github.com/viggomeesters/obsidian-yaml-viewer#readme"
+      }
     },
     {
       "name": "reisplanner-agent",
@@ -468,7 +1317,28 @@
       "pushed_at": "2026-06-24T17:49:22Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-24T17:49:22Z",
+        "head_oid": "8da49fac3a5847f6fd3ec7d8d01fb5dbcf02550e",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-06-23T14:13:51Z",
+        "latest_release_url": "https://github.com/viggomeesters/reisplanner-agent/releases/tag/v0.1.0",
+        "homepage_url": "https://github.com/viggomeesters/reisplanner-agent#readme",
+        "homepage_status": 200,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/reisplanner-agent",
+          "https://github.com/viggomeesters/reisplanner-agent#readme",
+          "https://github.com/viggomeesters/reisplanner-agent/releases/tag/v0.1.0",
+          "https://github.com/viggomeesters/reisplanner-agent#readme"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Local-first agent-ready travel planning toolkit with optional Vercel publishing",
+        "homepage_final_url": "https://github.com/viggomeesters/reisplanner-agent#readme"
+      }
     },
     {
       "name": "sap-agent-context",
@@ -479,7 +1349,26 @@
       "site_evidence": [
         "sap-agent-context/index.html",
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-24T11:53:11Z",
+        "head_oid": "569ae57398471a751f1914724e08cf8d98c85247",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-06-23T10:31:46Z",
+        "latest_release_url": "https://github.com/viggomeesters/sap-agent-context/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/sap-agent-context",
+          "https://github.com/viggomeesters/sap-agent-context#readme",
+          "https://github.com/viggomeesters/sap-agent-context/releases/tag/v0.1.0"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Source-backed SAP context bundles for AI agents, functional design, field mapping, and SAP delivery workflows."
+      }
     },
     {
       "name": "toolbox-auth-v2-starter",
@@ -490,7 +1379,26 @@
       "site_evidence": [
         "timeline/index.html",
         "toolbox-auth-v2-starter/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-11T08:25:53Z",
+        "head_oid": "01212554c84ac6c072432420478bd05d669b3773",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-08-11T08:25:53Z",
+        "latest_release_url": "https://github.com/viggomeesters/toolbox-auth-v2-starter/releases/tag/v0.1.0",
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/toolbox-auth-v2-starter",
+          "https://github.com/viggomeesters/toolbox-auth-v2-starter#readme",
+          "https://github.com/viggomeesters/toolbox-auth-v2-starter/releases/tag/v0.1.0"
+        ],
+        "note": "Hard-coded release on the public page matches the latest published GitHub release.",
+        "observed_description": "Private-by-default Vercel starter with scrypt, signed sessions, centralized rate limiting and executable auth proofs."
+      }
     },
     {
       "name": "vault-layer",
@@ -501,7 +1409,28 @@
       "site_evidence": [
         "timeline/index.html",
         "vault-layer/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-30T18:39:37Z",
+        "head_oid": "e2a661bba6ab1e4f8d85309a4b3bbff64e7c145f",
+        "latest_release_tag": "v0.1.0",
+        "latest_release_published_at": "2026-06-23T17:05:22Z",
+        "latest_release_url": "https://github.com/viggomeesters/vault-layer/releases/tag/v0.1.0",
+        "homepage_url": "https://viggomeesters.com/vault-layer/",
+        "homepage_status": 200,
+        "site_scope": "detail_page",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/vault-layer",
+          "https://github.com/viggomeesters/vault-layer#readme",
+          "https://github.com/viggomeesters/vault-layer/releases/tag/v0.1.0",
+          "https://viggomeesters.com/vault-layer/"
+        ],
+        "note": "Project status and capability boundary reviewed against the current README; GitHub remains the technical source of truth.",
+        "observed_description": "Local-first database and retrieval layer for huge Markdown/Obsidian vaults",
+        "homepage_final_url": "https://viggomeesters.com/vault-layer/"
+      }
     },
     {
       "name": "vault-schema",
@@ -510,8 +1439,39 @@
       "created_at": "2026-02-27T13:07:44Z",
       "pushed_at": "2026-06-24T17:46:21Z",
       "site_evidence": [
-        "timeline/index.html"
-      ]
+        "timeline/index.html",
+        "variant-0.html",
+        "variant-1.html",
+        "variant-2.html",
+        "variant-3.html",
+        "variant-4.html",
+        "variant-5.html",
+        "variant-6.html",
+        "variant-6.1.html",
+        "variant-6.2.html"
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-06-24T17:46:21Z",
+        "head_oid": "b9064002ad8665c5cb70d8d6996c9d74ee550925",
+        "latest_release_tag": "v9.4.1",
+        "latest_release_published_at": "2026-06-24T06:42:30Z",
+        "latest_release_url": "https://github.com/viggomeesters/vault-schema/releases/tag/v9.4.1",
+        "homepage_url": "https://viggomeesters.github.io/vault-schema/",
+        "homepage_status": 200,
+        "site_scope": "timeline_and_variants",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/vault-schema",
+          "https://github.com/viggomeesters/vault-schema#readme",
+          "https://github.com/viggomeesters/vault-schema/releases/tag/v9.4.1",
+          "https://viggomeesters.github.io/vault-schema/"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Machine-readable vault schema contract, templates, and validation guard for structured Obsidian vaults",
+        "homepage_final_url": "https://viggomeesters.github.io/vault-schema/",
+        "notes": "Timeline description and nine public design-variant cards match the current README-backed schema scope; GitHub remains technical SSOT."
+      }
     },
     {
       "name": "viggomeesters-assets",
@@ -521,7 +1481,27 @@
       "pushed_at": "2026-07-30T20:34:41Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-30T20:34:41Z",
+        "head_oid": "4f366a446e9f77f8b4eaf75eb21e353807595c5a",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": "https://viggomeesters.github.io/viggomeesters-assets/",
+        "homepage_status": 200,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/viggomeesters-assets",
+          "https://github.com/viggomeesters/viggomeesters-assets#readme",
+          "https://viggomeesters.github.io/viggomeesters-assets/"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Public-safe visual style and prompt references for viggomeesters.com.",
+        "homepage_final_url": "https://viggomeesters.github.io/viggomeesters-assets/"
+      }
     },
     {
       "name": "viggomeesters.github.io",
@@ -531,17 +1511,176 @@
       "pushed_at": "2026-07-02T11:37:23Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-07-02T11:37:23Z",
+        "head_oid": "970a1985d97c2b5c12798a14aaba9b96591d675b",
+        "latest_release_tag": null,
+        "latest_release_published_at": null,
+        "latest_release_url": null,
+        "homepage_url": null,
+        "homepage_status": null,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/viggomeesters.github.io",
+          "https://github.com/viggomeesters/viggomeesters.github.io#readme"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Public schemas and agent-facing contracts for Viggo-owned tooling"
+      }
     },
     {
       "name": "viggomeesters.nl",
       "url": "https://github.com/viggomeesters/viggomeesters.nl",
       "description": "Static personal site for Viggo Meesters: projects, systems, guides, and proof-first agent workflow notes.",
       "created_at": "2026-02-27T10:37:21Z",
-      "pushed_at": "2026-08-31T05:05:57Z",
+      "pushed_at": "2026-08-31T15:16:00Z",
       "site_evidence": [
         "timeline/index.html"
-      ]
+      ],
+      "freshness": {
+        "reviewed_on": "2026-08-31",
+        "observed_pushed_at": "2026-08-31T15:16:00Z",
+        "head_oid": "263a2a7eeaab4f3d9945eee95c4f9cdd6a528239",
+        "latest_release_tag": "v1.3",
+        "latest_release_published_at": "2026-07-04T03:21:12Z",
+        "latest_release_url": "https://github.com/viggomeesters/viggomeesters.nl/releases/tag/v1.3",
+        "homepage_url": "https://viggomeesters.com",
+        "homepage_status": 200,
+        "site_scope": "timeline_only",
+        "outcome": "current",
+        "sources": [
+          "https://github.com/viggomeesters/viggomeesters.nl",
+          "https://github.com/viggomeesters/viggomeesters.nl#readme",
+          "https://github.com/viggomeesters/viggomeesters.nl/releases/tag/v1.3",
+          "https://viggomeesters.com"
+        ],
+        "note": "Timeline description and repository URL match current GitHub metadata.",
+        "observed_description": "Static personal site for Viggo Meesters: projects, systems, guides, and proof-first agent workflow notes.",
+        "homepage_final_url": "https://viggomeesters.com"
+      }
+    }
+  ],
+  "excluded_repositories": [
+    {
+      "name": "agent-scripts",
+      "url": "https://github.com/viggomeesters/agent-scripts",
+      "description": "Scripts for agents, shared between my repositories.",
+      "pushed_at": "2026-02-25T07:41:24Z",
+      "head_oid": "26020f4f55db78eb6a02c1528f16d95f27adf37b",
+      "is_archived": true,
+      "is_fork": true,
+      "parent": "steipete/agent-scripts",
+      "classification": "archived_fork",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Archived fork retained as historical build record."
+    },
+    {
+      "name": "hermes-agent",
+      "url": "https://github.com/viggomeesters/hermes-agent",
+      "description": "The agent that grows with you",
+      "pushed_at": "2026-08-31T15:45:36Z",
+      "head_oid": "0bdfe465ee5203d221f5379fb3e579a1196feabd",
+      "is_archived": false,
+      "is_fork": true,
+      "parent": "NousResearch/hermes-agent",
+      "classification": "active_fork",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Active upstream fork retained as historical/runtime provenance; excluded from owned source-project inventory."
+    },
+    {
+      "name": "obsidian-raycast",
+      "url": "https://github.com/viggomeesters/obsidian-raycast",
+      "description": "Raycast extension with commands for the note taking app Obsidian.",
+      "pushed_at": "2026-02-24T20:12:33Z",
+      "head_oid": "5e7d2eb9608b4701dcb9565c092df63eba873159",
+      "is_archived": true,
+      "is_fork": true,
+      "parent": "marcjulianschwarz/obsidian-raycast",
+      "classification": "archived_fork",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Archived fork retained in the historical timeline; excluded from the current active plugin portfolio."
+    },
+    {
+      "name": "obsidian-releases",
+      "url": "https://github.com/viggomeesters/obsidian-releases",
+      "description": "Community plugins list, theme list, and releases of Obsidian.",
+      "pushed_at": "2026-06-14T06:52:18Z",
+      "head_oid": "b9b8862ec586609b445c0a6f9d6c32680a6e3f54",
+      "is_archived": false,
+      "is_fork": true,
+      "parent": "obsidianmd/obsidian-releases",
+      "classification": "infrastructure_fork",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Upstream Obsidian community-directory fork used as infrastructure/reference, not an owned plugin project."
+    },
+    {
+      "name": "raycast-quick-event",
+      "url": "https://github.com/viggomeesters/raycast-quick-event",
+      "description": "Create a calendar event using natural language in Raycast",
+      "pushed_at": "2026-02-24T20:38:49Z",
+      "head_oid": "ee38b1e7c1c052a6c01fd9279f5ed5ebd3f56128",
+      "is_archived": true,
+      "is_fork": true,
+      "parent": "neodejack/raycast-quick-event",
+      "classification": "archived_fork",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Archived fork retained as historical build record."
+    },
+    {
+      "name": "sap-field-atlas",
+      "url": "https://github.com/viggomeesters/sap-field-atlas",
+      "description": "Archived legacy seed; canonical successor: viggomeesters/sap-agent-context",
+      "pushed_at": "2026-06-22T19:16:25Z",
+      "head_oid": "40f8f2b18a3889d86fd0f02ae4f2dd48b8462483",
+      "is_archived": true,
+      "is_fork": false,
+      "parent": null,
+      "classification": "archived_source_successor",
+      "reviewed_on": "2026-08-31",
+      "site_evidence": [
+        "timeline/index.html"
+      ],
+      "note": "Archived owned seed retained for history; canonical successor is sap-agent-context."
+    }
+  ],
+  "renamed_aliases": [
+    {
+      "name": "obsidian-life-os-starter",
+      "previous_url": "https://github.com/viggomeesters/obsidian-life-os-starter",
+      "canonical_repository": "vault-schema",
+      "canonical_url": "https://github.com/viggomeesters/vault-schema",
+      "reviewed_on": "2026-08-31",
+      "http_status": 200,
+      "corrected_files": [
+        "variant-0.html",
+        "variant-1.html",
+        "variant-2.html",
+        "variant-3.html",
+        "variant-4.html",
+        "variant-5.html",
+        "variant-6.html",
+        "variant-6.1.html",
+        "variant-6.2.html"
+      ],
+      "note": "GitHub redirects the historical repository name to vault-schema; public Live cards now use the canonical repository name and URL."
     }
   ]
 }

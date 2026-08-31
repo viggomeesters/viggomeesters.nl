@@ -13,6 +13,6 @@
     "public_url": "https://viggomeesters.com",
     "stack": "https://github.com/viggomeesters/go-workflow-stack"
   },
-  "required_stack_version": "0.3.5",
-  "stack_ref": "v0.3.5"
+  "required_stack_version": "0.3.14",
+  "stack_ref": "v0.3.14"
 }

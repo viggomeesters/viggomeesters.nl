@@ -47,7 +47,9 @@
           "id": "checks",
           "title": "Static checks and SEO checks",
           "name": "Static checks and SEO checks",
-          "tasks": []
+          "tasks": [
+            "audit-public-project-freshness"
+          ]
         },
         {
           "id": "repo-local-workflow",

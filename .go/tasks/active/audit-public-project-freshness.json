@@ -1,0 +1,55 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "auto",
+  "id": "audit-public-project-freshness",
+  "project": "viggomeesters-site",
+  "status": "active",
+  "summary": "Audit and repair freshness of existing public project mentions",
+  "description": "Compare every currently inventoried public GitHub project mention with current repository metadata, README/release evidence and live-site output; classify drift and repair only proven stale public claims.",
+  "scope": {
+    "read": [
+      "AGENTS.md",
+      "package.json",
+      "data/**",
+      "scripts/**",
+      "tests/**",
+      "**/index.html",
+      "variant-*.html",
+      "sitemap.xml"
+    ],
+    "modify": [
+      ".go/**",
+      "go",
+      "data/public-projects.json",
+      "reports/project-freshness/**",
+      "scripts/check-public-project-freshness.py",
+      "scripts/check-public-project-coverage.py",
+      "package.json",
+      "tests/**",
+      "**/index.html",
+      "variant-*.html",
+      "sitemap.xml"
+    ]
+  },
+  "acceptance": [
+    "Every active public source repository in data/public-projects.json has dated freshness evidence and a classified outcome.",
+    "All public claims found stale by authoritative repository or live evidence are corrected without expanding unrelated site scope.",
+    "A repeatable local freshness check detects missing evidence and expired review dates.",
+    "Full repository checks, diff checks, critic review, and production readback pass."
+  ],
+  "verification": [
+    "python3 scripts/check-public-project-freshness.py",
+    "npm run check:all",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-08-31T18:01:04+02:00"
+  },
+  "work_status": "in_progress",
+  "review_status": "none",
+  "review_history": [],
+  "evidence": []
+}

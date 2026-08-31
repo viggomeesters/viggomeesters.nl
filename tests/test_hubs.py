@@ -166,11 +166,21 @@ class PortfolioHubContract(unittest.TestCase):
                 for expected in required_copy:
                     self.assertIn(expected, markup)
 
-    def test_obsidian_portfolio_includes_attachment_link_rules(self) -> None:
+    def test_obsidian_portfolio_matches_current_active_plugin_inventory(self) -> None:
         markup = (ROOT / "obsidian-plugins" / "index.html").read_text(encoding="utf-8")
-        self.assertIn('<div class="stat-num">29</div><div class="stat-label">public plugin repos</div>', markup)
+        self.assertIn('<div class="stat-num">28</div><div class="stat-label">active plugin repos</div>', markup)
+        self.assertIn("Count excludes archived forks", markup)
         self.assertIn("obsidian-attachment-link-rules", markup)
         self.assertIn("https://github.com/viggomeesters/obsidian-attachment-link-rules", markup)
+        self.assertNotIn("obsidian-raycast", markup)
+        self.assertNotIn("Small Obsidian utility/plugin.", markup)
+        for expected in (
+            "local vault validation commands",
+            "Read-only local ICS viewer",
+            "local first-seen index",
+            "Read-only TOML and INI",
+        ):
+            self.assertIn(expected, markup)
 
 
 if __name__ == "__main__":
