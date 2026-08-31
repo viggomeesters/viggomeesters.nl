@@ -197,8 +197,12 @@ class ContinuousIntegrationContract(unittest.TestCase):
         self.assertEqual(vercel["outputDirectory"], ".")
         self.assertEqual(
             package["scripts"]["deploy:prod"],
-            "npm run check:all && npx --yes vercel@55.0.0 deploy --prod --yes",
+            "npm run check:all && bash scripts/deploy-prod.sh",
         )
+        deploy = (REPO_ROOT / "scripts" / "deploy-prod.sh").read_text(encoding="utf-8")
+        self.assertIn("--scope viggos-projects-eac4720a", deploy)
+        self.assertIn("--project viggomeesters.nl", deploy)
+        self.assertIn("prj_zckfhKgH11wFJDTH6NFDaxrX2blp", deploy)
         self.assertIn("npm run check:all", readme)
         self.assertIn("npm run check:ci", readme)
         self.assertIn("npm run check:seo:update", readme)

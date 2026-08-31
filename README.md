@@ -78,7 +78,7 @@ For public repo-readiness and fresh-clone validation, the shell wrapper runs the
 scripts/check.sh
 ```
 
-Vercel runs `npm run check:ci` as its configured build command for every preview or production deployment. A failed gate therefore produces a failed build instead of a deployable artifact. `npm run deploy:prod` first runs the stricter local mutation check and then repeats the provider-independent gate in Vercel's remote build environment.
+Vercel runs `npm run check:ci` as its configured build command for every preview or production deployment. A failed gate therefore produces a failed build instead of a deployable artifact. `npm run deploy:prod` first runs the stricter local mutation check, explicitly links the checkout to `viggos-projects-eac4720a/viggomeesters.nl`, verifies the expected project ID, and then repeats the provider-independent gate in Vercel's remote build environment. This prevents a temporary worktree name from silently creating a duplicate project.
 
 Submit the deployed sitemap to IndexNow after a production deploy:
 
