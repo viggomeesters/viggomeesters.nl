@@ -1,0 +1,39 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "none",
+  "id": "exclude-go-state-from-public-boundary-scan",
+  "project": "viggomeesters-site",
+  "status": "active",
+  "summary": "Exclude Go state from public boundary scan",
+  "description": "Keep restricted repo-local Go HTML outside public boundary inventories while preserving deployment 404 enforcement.",
+  "scope": {
+    "read": [
+      ".go/**"
+    ],
+    "modify": [
+      "scripts/check-public-boundary.py",
+      "tests/test_public_boundary.py",
+      ".go/**"
+    ]
+  },
+  "acceptance": [
+    "Public boundary HTML inventory skips .go paths.",
+    "Regression test proves unsafe synthetic .go HTML is ignored while equivalent public HTML still fails.",
+    "Full local gates pass without mutation and production .go routes remain 404."
+  ],
+  "verification": [
+    "python3 -m unittest tests.test_public_boundary -v",
+    "npm run check:all",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-08-31T19:33:56+02:00"
+  },
+  "work_status": "in_progress",
+  "review_status": "none",
+  "review_history": [],
+  "evidence": []
+}

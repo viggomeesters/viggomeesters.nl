@@ -552,7 +552,7 @@ class PublicBoundaryContract(unittest.TestCase):
         public_html = "\n".join(
             path.read_text(errors="ignore")
             for path in REPO_ROOT.rglob("*.html")
-            if ".git" not in path.parts and ".vercel" not in path.parts
+            if not {".git", ".go", ".vercel"}.intersection(path.parts)
         )
         for route in boundary_policy["blocked_routes"]:
             route_path = REPO_ROOT / route.strip("/") / "index.html"
@@ -661,6 +661,76 @@ class PublicBoundaryContract(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertIn("synthetic-private-person", output)
             self.assertNotIn(private_marker, output)
+
+    def test_boundary_checker_excludes_internal_go_html_but_still_scans_public_html(self) -> None:
+        private_marker = "SYNTH_INTERNAL_GO_PRIVATE_7K"
+        marker_hash = hashlib.sha256(private_marker.casefold().encode()).hexdigest()
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            entries = [reviewed_skill()]
+            write_unvalidated_skills_tree(root, entries)
+            (root / "index.html").write_text("<p>Safe home</p>", encoding="utf-8")
+            (root / "sitemap.xml").write_text("<urlset></urlset>", encoding="utf-8")
+            internal_delivery = root / ".go" / "deliveries" / "synthetic-task"
+            internal_delivery.mkdir(parents=True)
+            (internal_delivery / "index.html").write_text(
+                f"<p>{private_marker}</p>", encoding="utf-8"
+            )
+            allowlist = root / "public-skills.json"
+            allowlist.write_text(
+                json.dumps(
+                    {
+                        "schema": "viggomeesters.public-skills.v1",
+                        "approved_proper_nouns": [],
+                        "skills": entries,
+                    }
+                ),
+                encoding="utf-8",
+            )
+            policy = root / "public-boundary.json"
+            policy.write_text(
+                json.dumps(
+                    {
+                        "schema": "viggomeesters.public-boundary.v1",
+                        "blocked_routes": [],
+                        "forbidden_text_hashes": [
+                            {"id": "synthetic-go-private", "words": 1, "sha256": marker_hash}
+                        ],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            command = [
+                sys.executable,
+                str(BOUNDARY_CHECKER),
+                "--root",
+                str(root),
+                "--public-skills",
+                str(allowlist),
+                "--policy",
+                str(policy),
+            ]
+
+            internal_result = subprocess.run(
+                command, text=True, capture_output=True, check=False
+            )
+            self.assertEqual(
+                internal_result.returncode,
+                0,
+                internal_result.stdout + internal_result.stderr,
+            )
+
+            (root / "index.html").write_text(
+                f"<p>{private_marker}</p>", encoding="utf-8"
+            )
+            public_result = subprocess.run(
+                command, text=True, capture_output=True, check=False
+            )
+            public_output = public_result.stdout + public_result.stderr
+            self.assertNotEqual(public_result.returncode, 0)
+            self.assertIn("synthetic-go-private", public_output)
+            self.assertNotIn(private_marker, public_output)
 
     def test_boundary_checker_rejects_blocked_route_in_deployed_report(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

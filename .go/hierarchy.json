@@ -49,7 +49,8 @@
           "name": "Static checks and SEO checks",
           "tasks": [
             "audit-public-project-freshness",
-            "exclude-go-workflow-state-from-public-site"
+            "exclude-go-workflow-state-from-public-site",
+            "exclude-go-state-from-public-boundary-scan"
           ]
         },
         {

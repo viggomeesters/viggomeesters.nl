@@ -27,7 +27,7 @@ def load_json(path: Path) -> object:
 
 
 def public_html_files(root: Path) -> list[Path]:
-    ignored = {".git", ".vercel", "node_modules"}
+    ignored = {".git", ".go", ".vercel", "node_modules"}
     return sorted(
         path
         for path in root.rglob("*.html")
