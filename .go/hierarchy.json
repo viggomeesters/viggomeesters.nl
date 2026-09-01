@@ -50,7 +50,8 @@
           "tasks": [
             "audit-public-project-freshness",
             "exclude-go-workflow-state-from-public-site",
-            "exclude-go-state-from-public-boundary-scan"
+            "exclude-go-state-from-public-boundary-scan",
+            "watch-public-project-freshness"
           ]
         },
         {

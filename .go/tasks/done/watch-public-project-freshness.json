@@ -1,0 +1,91 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "none",
+  "id": "watch-public-project-freshness",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Alert only when public project metadata drifts",
+  "description": "Add a deterministic read-only watchdog that compares live GitHub repository metadata and audit expiry against data/public-projects.json, stays silent when current, and emits one compact Dutch alert with exact old/new evidence when review is needed. No automatic site edits or deployment.",
+  "scope": {
+    "read": [
+      "data/public-projects.json,reports/project-freshness/**,scripts/check-public-project-freshness.py,package.json,AGENTS.md"
+    ],
+    "modify": [
+      ".go/**,data/public-projects.json,scripts/watch-public-project-freshness.py,tests/test_project_freshness_watchdog.py,package.json,AGENTS.md"
+    ]
+  },
+  "acceptance": [
+    "Green live metadata and non-urgent audit expiry produce empty stdout and exit 0.",
+    "New/missing repositories, archive/fork changes, pushed/head/description/homepage/release drift, and near/expired audit produce one bounded Dutch alert without leaking credentials.",
+    "Synthetic drift tests prove exact repo, field, previous value, current value and proposed action are reported; no site files or GitHub state are mutated."
+  ],
+  "verification": [
+    "python3 -m unittest tests.test_project_freshness_watchdog -v",
+    "python3 scripts/watch-public-project-freshness.py --inventory data/public-projects.json --snapshot <fixture>",
+    "python3 scripts/watch-public-project-freshness.py --inventory data/public-projects.json --live",
+    "npm run check:all",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-09-01T22:02:48+02:00"
+  },
+  "work_status": "completed",
+  "review_status": "approved",
+  "review_history": [
+    {
+      "created_at": "2026-09-01T22:30:17+02:00",
+      "agent": "devil:deleg_532da63a",
+      "status": "approved",
+      "evidence": "A verdict on exact eight-path SHA-256 1747af961625c9797e0f0dcd3a31b2c4c663b2f0b488e6f8b6fc3858c74bf87e; prior pageInfo fail-open closed; 11 focused tests, live 0-byte smoke, full repo gate, diff check and Go validation passed.",
+      "transaction_id": "fb19b70a9c204ddd98e255c4c5a76323"
+    }
+  ],
+  "evidence": [
+    {
+      "schema": "go-workflow.finish-evidence.v1",
+      "created_at": "2026-09-01T22:30:17+02:00",
+      "task_id": "watch-public-project-freshness",
+      "agent": "hermes",
+      "summary": "changed_files=AGENTS.md,data/public-projects.json,package.json,scripts/watch-public-project-freshness.py,tests/test_project_freshness_watchdog.py,.go/hierarchy.json,.go/runs/events.jsonl,.go/tasks/done/watch-public-project-freshness.json; verification_command=python3 -m unittest tests.test_project_freshness_watchdog -v && python3 scripts/watch-public-project-freshness.py --inventory data/public-projects.json --live --no-state && npm run check:all && git diff --check && ./go validate .; verification_result=passed: 11 focused tests, live GitHub plus 19 homepages returned 0 bytes, 87 repo tests, 148 pages, 0 SEO regressions; critic=A on exact hash 1747af961625c9797e0f0dcd3a31b2c4c663b2f0b488e6f8b6fc3858c74bf87e by devil:deleg_532da63a; runtime=hermes; model=gpt-5.6-sol; billing_mode=unknown",
+      "changed_files": [
+        "AGENTS.md",
+        "data/public-projects.json",
+        "package.json",
+        "scripts/watch-public-project-freshness.py",
+        "tests/test_project_freshness_watchdog.py",
+        ".go/hierarchy.json",
+        ".go/runs/events.jsonl",
+        ".go/tasks/done/watch-public-project-freshness.json"
+      ],
+      "no_diff": false,
+      "verification": {
+        "command": "python3 -m unittest tests.test_project_freshness_watchdog -v && python3 scripts/watch-public-project-freshness.py --inventory data/public-projects.json --live --no-state && npm run check:all && git diff --check && ./go validate .",
+        "result": "passed: 11 focused tests, live GitHub plus 19 homepages returned 0 bytes, 87 repo tests, 148 pages, 0 SEO regressions"
+      },
+      "runtime": {
+        "agent": "hermes",
+        "runtime": "hermes",
+        "model": "gpt-5.6-sol",
+        "billing_mode": "unknown"
+      },
+      "usage": {
+        "schema": "go-workflow.usage-attribution.v1",
+        "runtime_kind": "hermes",
+        "billing_mode": "unknown",
+        "owner": "hermes",
+        "model": "gpt-5.6-sol",
+        "token_estimate": null,
+        "api_equivalent_cost_usd": null,
+        "provider_invoice_cost_usd": null,
+        "cost_label": "api_equivalent_not_invoice_cost"
+      },
+      "review": {
+        "outcome": "A on exact hash 1747af961625c9797e0f0dcd3a31b2c4c663b2f0b488e6f8b6fc3858c74bf87e by devil:deleg_532da63a",
+        "skip_reason": null
+      }
+    }
+  ]
+}

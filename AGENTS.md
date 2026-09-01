@@ -22,6 +22,7 @@ There is no framework and no build step. The production output is the repository
 - `npm run check`: run all repo checks.
 - `npm test`: run the dependency-free behavior tests.
 - `npm run check:public-boundary`: verify routes, generated skills and private-text markers fail closed.
+- `npm run watch:project-freshness`: compare the reviewed inventory with live GitHub/release/homepage state; read-only and networked.
 - `npm run serve`: serve the static site at `http://localhost:4173`.
 - `npm run deploy:prod`: deploy the linked Vercel project to production.
 
@@ -117,6 +118,17 @@ task needs external verification.
   could affect layout.
 - Commit only scoped repo changes. Deploy with `npm run deploy:prod` only when
   the user explicitly asks for production deployment.
+
+### Project Freshness Watchdog
+
+- `scripts/watch-public-project-freshness.py` is a read-only drift detector, not an automatic content updater.
+- It compares live public GitHub metadata with `data/public-projects.json`, including repository coverage, archive/fork state, push/head, description, homepage, latest release and audit expiry.
+- Live homepage URLs from the reviewed inventory are checked in parallel and failed/changed destinations are reported.
+- `viggomeesters.nl` explicitly ignores only its own `pushed_at` and `head_oid`: the inventory is committed inside that repository, so exact self-head parity would create an endless commit loop. Its description, visibility, archive/fork state, homepage and latest release remain monitored.
+- A healthy run prints nothing. Drift prints one bounded Dutch alert with repository, field, reviewed value, current value and a proposed review action.
+- The installed Hermes cron copy uses a mode-600 fingerprint file under `~/.hermes/state/` so unchanged drift is reported once instead of every week.
+- Keep this networked watchdog outside `npm run check:all`; deterministic local gates must not depend on GitHub availability.
+- Never let the watchdog edit public copy, refresh audit evidence, commit, push or deploy. Classification and publication remain explicit human/agent review work.
 
 ### Useful Prompts
 

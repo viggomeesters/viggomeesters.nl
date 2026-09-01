@@ -1,5 +1,13 @@
 {
   "account": "viggomeesters",
+  "freshness_watchdog": {
+    "self_hosted_inventory_repository": "viggomeesters.nl",
+    "ignored_self_referential_fields": [
+      "pushed_at",
+      "head_oid"
+    ],
+    "reason": "This inventory is committed inside viggomeesters.nl, so recording that repository's own current commit would create another commit and make exact head/push parity impossible. Description, visibility, archive/fork state, homepage and latest release remain monitored."
+  },
   "snapshot_date": "2026-08-31",
   "scope": "Active public source repositories; archived repositories and forks are excluded from the active list and classified separately.",
   "freshness_audit": {

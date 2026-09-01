@@ -19,6 +19,7 @@
     "check:site": "node scripts/check-site.mjs",
     "check:seo": "node scripts/seo-audit.mjs",
     "check:seo:update": "node scripts/seo-audit.mjs --update",
+    "watch:project-freshness": "python3 scripts/watch-public-project-freshness.py --inventory data/public-projects.json --live --no-state",
     "serve": "python3 -m http.server 4173",
     "deploy:prod": "npm run check:all && bash scripts/deploy-prod.sh",
     "submit:indexnow": "node scripts/submit-indexnow.mjs"
