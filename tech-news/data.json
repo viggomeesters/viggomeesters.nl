@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-31T07:05:55+02:00",
+  "generatedAt": "2026-09-01T07:05:55+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 64,
+  "usefulOpen": 66,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -131,6 +131,37 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "ea0aff67474bcddb",
+      "title": "Polimill builds Japan's next-generation public AI infrastructure",
+      "url": "https://openai.com/index/polimill",
+      "source": "OpenAI News",
+      "published": "2026-08-31T09:00:00+02:00",
+      "summary": "Polimill uses OpenAI GPT models and Codex to help municipalities search and use administrative knowledge while accelerating development.",
+      "areas": [
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "2448851d3d2e2ee3",
       "title": "Our decision on Cursor following its acquisition by SpaceX",
       "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
@@ -147,37 +178,6 @@
         ],
         "developer-tools": [
           "cursor"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "2e69eb3875e1b07e",
-      "title": "Anthropic's new hardware standard lets AI agents control the physical world",
-      "url": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
-      "source": "Ars Technica",
-      "published": "2026-08-28T00:15:43+02:00",
-      "summary": "Standardized driver interface aims to let devices talk to AI and each other.",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
-        ],
-        "models": [
-          "anthropic"
         ]
       },
       "scores": {
@@ -522,74 +522,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "d1086593fb437ac6",
-      "title": "Sony Music Publishing and Warner Chappell are suing Anthropic",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/986438/sony-music-warner-chappell-anthropic-lawsuit-copyright",
-      "source": "The Verge",
-      "published": "2026-08-29T14:19:53-04:00",
-      "summary": "Sony Music Publishing and Warner Chappell have filed suit against Anthropic in the US District Court for the Northern District of California seeking damages for \"tens of thousands\" copyrighted works. The companies are asking for up to $150,000 per work, plus up to $25,000 for each instance when identifiable copyright data was stripped. In total, […]",
-      "areas": [
-        "data-platforms",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "copyright"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "a4c0be81ac4f286a",
-      "title": "How to Run a Chatbot on Your Own Computer",
-      "url": "https://www.wired.com/story/how-to-run-your-own-local-llm/",
-      "source": "Wired",
-      "published": "2026-08-29T12:00:00+02:00",
-      "summary": "Installing a large language model on your personal computer gives you a handy digital assistant that won’t compromise your data privacy.",
-      "areas": [
-        "data-platforms",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "language model"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "privacy"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 1
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "1c268af12aebb9aa",
       "title": "Offering Zero Data Retention for frontier models",
       "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
@@ -706,6 +638,156 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "425c5c3d143667f9",
+      "title": "DoltLite: A SQLite fork with Git-style version control, built with 2k agent PRs",
+      "url": "https://www.dolthub.com/blog/2026-08-31-doltlite-beta/",
+      "source": "Hacker News",
+      "published": "2026-09-01T03:25:40+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ],
+        "data-platforms": [
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "2e29dc7ae959d353",
+      "title": "Apple shares ‘shocking evidence’ against former employee accused of stealing company data for OpenAI",
+      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+      "source": "TechCrunch",
+      "published": "2026-09-01T02:13:00+02:00",
+      "summary": "Apple says it has evidence that a former employee destroyed evidence of data theft after learning he was under investigation.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "0860885566870c80",
+      "title": "“Zlibrary my beloved”: Anthropic staff chats extolling piracy cited in Sony suit",
+      "url": "https://arstechnica.com/tech-policy/2026/08/zlibrary-my-beloved-anthropic-staff-chats-extolling-piracy-cited-in-sony-suit/",
+      "source": "Ars Technica",
+      "published": "2026-08-31T20:10:45+02:00",
+      "summary": "Lawsuit: Anthropic’s torrenting totally screwed songwriters as AI songs top charts.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "5cf56de834e3d721",
+      "title": "Hackers claim millions of patient records stolen during data breach at healthcare giant McKesson",
+      "url": "https://techcrunch.com/2026/08/31/hackers-claim-millions-of-patient-records-stolen-during-data-breach-at-healthcare-giant-mckesson/",
+      "source": "TechCrunch",
+      "published": "2026-08-31T20:10:09+02:00",
+      "summary": "The company, which distributes medicines and medical devices to hospitals and healthcare practices across the U.S., said it was hacked and expects intermittent service degradation.",
+      "areas": [
+        "data-platforms",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "3efcf0e94c4314b6",
+      "title": "The Hugging Face hack could indicate cultural issues at OpenAI",
+      "url": "https://www.technologyreview.com/2026/08/31/1143180/hugging-face-hack-could-indicate-cultural-issues-at-openai/",
+      "source": "MIT Technology Review",
+      "published": "2026-08-31T20:00:00+02:00",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. By now you’ve probably heard about last month’s major AI security incident, in which OpenAI agents escaped their sandbox and hacked into the AI platform Hugging Face while trying to cheat on…",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "a225253f60131b37",
       "title": "Introducing Hy4 Preview",
       "url": "https://simonwillison.net/2026/Aug/29/hy4/",
@@ -726,36 +808,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "a09dcbe6f7da8fec",
-      "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
-      "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
-      "source": "TechCrunch",
-      "published": "2026-08-29T20:41:59+02:00",
-      "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "lawsuit"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -976,32 +1028,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "b1b78871fd72e624",
-      "title": "Introducing Intelligence Age",
-      "url": "https://openai.com/index/introducing-ai-futures",
-      "source": "OpenAI News",
-      "published": "2026-08-20T09:00:00+02:00",
-      "summary": "Introducing Intelligence Age, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "7e6c1cc769e393fb",
       "title": "Replit expands access to software creation with GPT-5.6 Luna",
       "url": "https://openai.com/index/replit",
@@ -1080,29 +1106,55 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "426cb10acfd82bb8",
-      "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-      "url": "https://openai.com/index/previewing-ultrafast",
+      "id": "985f1bdc7ca7dcbf",
+      "title": "A milestone in expanding access to AI",
+      "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads",
       "source": "OpenAI News",
-      "published": "2026-08-13T12:00:00+02:00",
-      "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
+      "published": "2026-08-31T06:00:00+02:00",
+      "summary": "ChatGPT Ads reaches $1 billion in annualized revenue run rate and expands globally, supporting broader access to AI through free and affordable options.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "860f4b8e93227318",
+      "title": "Understanding ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "source": "Simon Willison",
+      "published": "2026-08-30T23:59:47+00:00",
+      "summary": "OpenAI announced ChatGPT Work on July 9th, and have been furiously iterating on it ever since. It is an extraordinarily confusing and very powerful product. Here's what I've figured out about it so far. ChatGPT Work is actually two products The more interesting version of ChatGPT Work is the one that runs in the cloud. This can be accessed via chatgpt.com or",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
           "openai",
-          "gpt"
+          "chatgpt"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 1,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 78,
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1732,33 +1784,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "128e4fab722bdeab",
-      "title": "CORS Chat",
-      "url": "https://simonwillison.net/2026/Aug/15/cors-chat/",
-      "source": "Simon Willison",
-      "published": "2026-08-15T14:49:54+00:00",
-      "summary": "Tool: CORS Chat I built this today ( with GPT-5.6-Sol xhigh ) to help test Qwen 3.8 27B running in LM Studio on both my M5 MacBook Pro and an NVIDIA DGX Spark. It provides a web UI for exercising an OpenAI-Responses-compatible chat endpoint. I've tried it against LM Studio with the --cors option and OpenRouter, and both work fine. Conversations are persisted",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "275cadd2728883c2",
       "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
       "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
@@ -1781,6 +1806,36 @@
         "risk": 0
       },
       "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "8e16e6f2994ec7fc",
+      "title": "ChatGPT and Reddit now face EU's toughest online safety rules",
+      "url": "https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules/",
+      "source": "Ars Technica",
+      "published": "2026-08-31T15:41:40+02:00",
+      "summary": "Explosive growth comes with a new regulatory burden in the European Union.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 1
+      },
+      "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1841,32 +1896,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "364c8f0778f53115",
-      "title": "Nvidia’s AI advantage is moving beyond the GPU",
-      "url": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-      "source": "TechCrunch",
-      "published": "2026-08-29T15:00:00+02:00",
-      "summary": "The new generation of data center systems is increasing efficiency with smarter traffic control instead of just more processor cycles.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "7a919b90b738a167",
       "title": "The Download: inside OpenAI’s Hugging Face hack, and a new EV takes on the US",
       "url": "https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev/",
@@ -1893,11 +1922,91 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "860f4b8e93227318",
-      "title": "Understanding ChatGPT Work",
-      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "id": "763f39d37867a05e",
+      "title": "Develop Cross-Platform CLI and GUI Tools with Tcl/Tk",
+      "url": "https://cgicoffee.com/blog/2026/04/tcl-tk-develop-cross-platform-cli-gui-tools-tutorial-guide",
       "source": "Hacker News",
-      "published": "2026-08-31T03:28:22+02:00",
+      "published": "2026-09-01T00:32:22+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "cli"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "7f7cc969e85709e0",
+      "title": "A group funded by Andreessen, Horowitz, and Brockman plans data center ads to sway midterms",
+      "url": "https://techcrunch.com/2026/08/31/a-group-funded-by-andreessen-horowitz-and-brockman-plan-data-center-ads-to-sway-midterms/",
+      "source": "TechCrunch",
+      "published": "2026-09-01T00:14:05+02:00",
+      "summary": "Build American AI plans to lobby voters in select states about the virtues of data centers by spending millions of dollars on ads.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "35404174d5945362",
+      "title": "The Pentagon now has its own version of ChatGPT and Grok",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "source": "TechCrunch",
+      "published": "2026-08-31T22:13:45+02:00",
+      "summary": "Versions of OpenAI's ChatGPT and SpaceXAI's Grok will join Google's Gemini on the Pentagon's central portal for AI tools.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "chatgpt",
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "d999d95548e5166a",
+      "title": "ChatGPT Work Tool and Skill Reference",
+      "url": "https://codex-tool-reference.simonw.chatgpt.site/",
+      "source": "Hacker News",
+      "published": "2026-08-31T16:07:15+02:00",
       "summary": "Comments",
       "areas": [
         "models"
@@ -1919,272 +2028,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "3c27adc9d18bc729",
-      "title": "How to build a diffusion language model",
-      "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
-      "source": "Hacker News",
-      "published": "2026-08-31T01:41:32+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "language model"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "e8b243f0f4cb864d",
-      "title": "Enormous 12TB Steam leak includes abandoned Half-Life 2: Episode 3 assets",
-      "url": "https://www.theverge.com/games/986552/12tb-steam-leak-half-life-2-episode-3",
-      "source": "The Verge",
-      "published": "2026-08-30T15:14:08-04:00",
-      "summary": "Over 12 terabytes of data, containing builds of every game uploaded to Steam between 2003 and 2013, has been leaked. We don't know everything in the archives yet because of its massive size. But people have already dug up assets related to the canceled Half-Life 2: Episode 3, content cut from Portal 2, and a […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "f477d5a724f7dbcd",
       "title": "Inside Meta’s push to put robots to work in data centers",
       "url": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
       "source": "Ars Technica",
       "published": "2026-08-30T13:03:47+02:00",
       "summary": "The company is testing robots on tasks that can performed by technicians.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "072c44e8387fc688",
-      "title": "Prompt Injection in Claude Code Opus 5 Auto Mode",
-      "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
-      "source": "Lobsters",
-      "published": "2026-08-30T07:36:51+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "7f275962f0ea8f55",
-      "title": "An Anthropic researcher just gave us a peek at self-improving AI",
-      "url": "https://techcrunch.com/2026/08/28/an-anthropic-researcher-just-gave-us-a-peek-at-self-improving-ai/",
-      "source": "TechCrunch",
-      "published": "2026-08-28T21:30:38+02:00",
-      "summary": "Given 10 benchmarks for specific misaligned behaviors, the automated systems were able to improve performance on every single one without degrading overall performance.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "164fdf3115243909",
-      "title": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
-      "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
-      "source": "Ars Technica",
-      "published": "2026-08-28T20:07:55+02:00",
-      "summary": "Anthropic refused to support lethal autonomous warfare and mass surveillance.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "126b58d80f9fc7a8",
-      "title": "He Scraped All of Their Art for AI. Now He’s Collaborating on a Tool to Help Them",
-      "url": "https://www.wired.com/story/he-scraped-art-from-cara-for-ai-now-he-is-collaborating-on-a-tool-to-help-them/",
-      "source": "Wired",
-      "published": "2026-08-28T13:00:00+02:00",
-      "summary": "The art portfolio platform Cara, designed for creators who don’t want their work used to train AI, has been under assault by trolls seizing and publishing its data.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "9f94284454861f49",
-      "title": "Inside Meta’s Push to Put Robots to Work in Data Centers",
-      "url": "https://www.wired.com/story/inside-metas-experiments-with-data-center-robots/",
-      "source": "Wired",
-      "published": "2026-08-28T12:56:22+02:00",
-      "summary": "The company is testing robots that can swap cables, reset servers, and take on other tasks performed by technicians, fueling concerns among some workers that their jobs could be at risk.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "16d677860ca7067e",
-      "title": "I Asked 100 Companies for My Data. I Got Deletion Notices Instead",
-      "url": "https://www.wired.com/story/i-demanded-my-data-from-over-100-companies-deletion-notices-started-arriving-instead/",
-      "source": "Wired",
-      "published": "2026-08-28T12:15:00+02:00",
-      "summary": "California residents have a legal right to access the data that companies collect about them. Actually exercising that right is a burdensome nightmare.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "efd8951d423319e1",
-      "title": "How an Atlanta Suburb Ended Up Sharing Flock Data With More Than 2,000 Organizations",
-      "url": "https://www.wired.com/story/how-an-atlanta-suburb-ended-up-sharing-flock-data-with-more-than-2000-organizations/",
-      "source": "Wired",
-      "published": "2026-08-28T11:00:00+02:00",
-      "summary": "Alpharetta, Georgia, cops share data with thousands of Flock users, ranging from federal agencies to a fish and wildlife commission. The reasons why show how vast—and invasive—the network has become.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0e863d3a58b31c06",
-      "title": "AI industry says Trump plans to tax chips in the “single dumbest way imaginable”",
-      "url": "https://arstechnica.com/tech-policy/2026/08/ai-industry-says-trump-plans-to-tax-chips-in-the-single-dumbest-way-imaginable/",
-      "source": "Ars Technica",
-      "published": "2026-08-27T20:57:08+02:00",
-      "summary": "Tech industry is perplexed by Trump’s plan to win AI race by taxing data centers.",
       "areas": [
         "data-platforms"
       ],
@@ -2283,30 +2132,50 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "01fdddc3d2131951",
-      "title": "The Easiest Ways to Share Anything Between Android and iOS",
-      "url": "https://www.wired.com/story/how-to-share-anything-between-android-and-ios/",
-      "source": "Wired",
-      "published": "2026-08-28T12:45:00+02:00",
-      "summary": "Transferring files and data across platforms is more straightforward than ever.",
+      "id": "8989bf4a72f957d9",
+      "title": "Introducing wrapture",
+      "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+      "source": "Simon Willison",
+      "published": "2026-08-31T23:59:36+00:00",
+      "summary": "Introducing wrapture New from Graham Dumpleton (of wrapt , mod_wsgi, and New Relic's Python agent fame), who describes Wrapture as taking the monkeypatching ideas from wrapt and extending them to apply to testing and tracing at the same time. Wrapture ( full documentation here ) makes it easy to wrap any function or method such that all access can be traced,",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "cb1ef9c3943a9ad7",
+      "title": "FTC accuses Amazon of running a ‘secret ad surcharge scheme’ in new lawsuit",
+      "url": "https://techcrunch.com/2026/08/31/ftc-accuses-amazon-of-running-a-secret-ad-surcharge-scheme-in-new-lawsuit/",
+      "source": "TechCrunch",
+      "published": "2026-08-31T22:20:25+02:00",
+      "summary": "Amazon is facing a new lawsuit from the FTC and 22 states for allegedly secretly charging businesses more for advertising.",
       "areas": [
-        "data-platforms"
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "privacy-risk": [
+          "lawsuit"
         ]
       },
       "scores": {
-        "relevance": 2,
+        "relevance": 1,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
+        "novelty": 4,
+        "urgency": 4,
         "risk": 1
       },
       "priority": 58,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "852f9e4066548445",
@@ -2389,12 +2258,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "369db4085a13df5f",
-      "title": "Neocloud Lambda secures $1B in debt to buy more chips",
-      "url": "https://techcrunch.com/2026/08/28/neocloud-lambda-secures-1b-in-debt-to-buy-more-chips/",
+      "id": "f99d17bb40012756",
+      "title": "Microsoft tests fix for latest hours-long Outlook outage",
+      "url": "https://techcrunch.com/2026/08/31/microsoft-tests-fix-for-latest-hours-long-outlook-outage/",
       "source": "TechCrunch",
-      "published": "2026-08-28T22:24:11+02:00",
-      "summary": "Neocloud Lambda has raised $1B in private debt to buy Nvidia AI chips and lease them to Microsoft. It's the latest in a string of loans, underscoring the high cost of the AI boom.",
+      "published": "2026-08-31T20:56:41+02:00",
+      "summary": "Microsoft says it's testing a fix for the widespread Outlook issues that have led to email delays and failures.",
       "areas": [
         "enterprise-ai"
       ],
@@ -2415,29 +2284,80 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "6c83fc3e31e18d24",
-      "title": "Microsoft Teams Has Become a Haven for Scammers in China",
-      "url": "https://www.wired.com/story/microsoft-teams-is-becoming-a-haven-for-chinese-scammers/",
-      "source": "Wired",
-      "published": "2026-08-28T20:23:17+02:00",
-      "summary": "Fraudsters are exploiting enterprise chat apps like Teams and Webex to trick Chinese victims into transferring large sums of money, fueling a wave of complaints.",
+      "id": "ae2179780e9ca8fa",
+      "title": "I turned my security cameras into an automatic bird identification system",
+      "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
+      "source": "Hacker News",
+      "published": "2026-08-31T18:47:11+02:00",
+      "summary": "Comments",
       "areas": [
-        "enterprise-ai"
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "enterprise-ai": [
-          "enterprise",
-          "microsoft"
+        "privacy-risk": [
+          "security"
         ]
       },
       "scores": {
         "relevance": 1,
         "leverage": 0,
         "novelty": 3,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
-      "priority": 56,
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "47785ddfb3225fd3",
+      "title": "FTC lawsuit alleges Amazon has been ‘secretly and systematically’ overcharging for ads",
+      "url": "https://www.theverge.com/tech/986982/amazon-advertising-prices-ftc-lawsuit",
+      "source": "The Verge",
+      "published": "2026-08-31T17:41:42-04:00",
+      "summary": "The FTC and 22 state attorneys general are suing Amazon for allegedly using a \"secret ad surcharge\" to drive up prices for ads on its website and app. FTC chairman Andrew Ferguson claims in a blog post on the lawsuit that the higher advertising prices \"were largely passed on to American consumers.\" According to the […]",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "lawsuit"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "3809c519eecee200",
+      "title": "ATM Flaws Reveal Key Weaknesses in the Software Supply Chain",
+      "url": "https://www.wired.com/story/atm-flaws-reveal-key-weaknesses-in-the-software-supply-chain/",
+      "source": "Wired",
+      "published": "2026-08-31T12:00:00+02:00",
+      "summary": "A security researcher discovered nine vulnerabilities impacting ATM encryption and authentication software. But the problems extend far beyond your local cash machine.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2464,6 +2384,66 @@
         "risk": 1
       },
       "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "00ff25afe626490d",
+      "title": "Google Antigravity introduces Boost deep reasoning (/boost)",
+      "url": "https://antigravity.google/docs/boost/",
+      "source": "Hacker News",
+      "published": "2026-09-01T05:05:55+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "1a73c6dd1ea4bae2",
+      "title": "a16z brings growth fund to $8.5B days after launching new $1.1B fund",
+      "url": "https://techcrunch.com/2026/08/31/a16z-brings-growth-fund-to-8-5b-days-after-launching-new-1-1b-fund/",
+      "source": "TechCrunch",
+      "published": "2026-09-01T01:14:14+02:00",
+      "summary": "Andreessen Horowitz held out its hand and returned with billions more in new funds to invest in startups.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "40fa53e5ce35478a",
+      "title": "Quoting Andrew Digby",
+      "url": "https://simonwillison.net/2026/Aug/31/andrew-digby/",
+      "source": "Simon Willison",
+      "published": "2026-08-31T22:25:02+00:00",
+      "summary": "325 #kakapo! The chicks from this year's record breeding season are now juveniles and so have been added to the population. In 1995 there were just 51 kākāpō left. Recovery of critically endangered species is possible with sustained effort. — Andrew Digby , providing the best news of the year Tags: kakapo",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
