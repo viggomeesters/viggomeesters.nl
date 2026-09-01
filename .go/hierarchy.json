@@ -51,7 +51,8 @@
             "audit-public-project-freshness",
             "exclude-go-workflow-state-from-public-site",
             "exclude-go-state-from-public-boundary-scan",
-            "watch-public-project-freshness"
+            "watch-public-project-freshness",
+            "repair-vercel-cli55-production-link"
           ]
         },
         {

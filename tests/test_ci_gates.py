@@ -231,12 +231,109 @@ class ContinuousIntegrationContract(unittest.TestCase):
             "npm run check:all && bash scripts/deploy-prod.sh",
         )
         deploy = (REPO_ROOT / "scripts" / "deploy-prod.sh").read_text(encoding="utf-8")
-        self.assertIn("--scope viggos-projects-eac4720a", deploy)
-        self.assertIn("--project viggomeesters.nl", deploy)
-        self.assertIn("prj_zckfhKgH11wFJDTH6NFDaxrX2blp", deploy)
+        self.assertIn('scope="viggos-projects-eac4720a"', deploy)
+        self.assertIn('expected_project_name="viggomeesters.nl"', deploy)
+        self.assertIn('expected_project_id="prj_zckfhKgH11wFJDTH6NFDaxrX2blp"', deploy)
+        self.assertIn('expected_org_id="team_Mr9h6NsB9A8GONSuzdZue511"', deploy)
+        self.assertIn('api "/v9/projects/$expected_project_id"', deploy)
+        self.assertIn("VERCEL_PROJECT_ID", deploy)
+        self.assertIn("VERCEL_ORG_ID", deploy)
+        self.assertIn("trap cleanup EXIT", deploy)
+        self.assertIn("deploy --prod --yes", deploy)
+        self.assertNotIn(".vercel/project.json", deploy)
         self.assertIn("npm run check:all", readme)
         self.assertIn("npm run check:ci", readme)
         self.assertIn("npm run check:seo:update", readme)
+
+    def test_vercel_production_binding_executes_fail_closed(self) -> None:
+        expected_id = "prj_zckfhKgH11wFJDTH6NFDaxrX2blp"
+        expected_scope = "viggos-projects-eac4720a"
+        deploy_script = REPO_ROOT / "scripts" / "deploy-prod.sh"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            fake_bin = root / "bin"
+            fake_bin.mkdir()
+            marker = root / "deploy-called.txt"
+            fake_npx = fake_bin / "npx"
+            fake_npx.write_text(
+                r'''#!/usr/bin/env bash
+set -euo pipefail
+api_args="--yes vercel@55.0.0 api /v9/projects/prj_zckfhKgH11wFJDTH6NFDaxrX2blp --scope viggos-projects-eac4720a --raw"
+deploy_args="--yes vercel@55.0.0 deploy --prod --yes --scope viggos-projects-eac4720a"
+if [[ "$*" == "$api_args" ]]; then
+  case "${FAKE_API_MODE:-success}" in
+    success) printf '%s\n' '{"id":"prj_zckfhKgH11wFJDTH6NFDaxrX2blp","name":"viggomeesters.nl","accountId":"team_Mr9h6NsB9A8GONSuzdZue511"}' ;;
+    id_mismatch) printf '%s\n' '{"id":"prj_alternate","name":"viggomeesters.nl","accountId":"team_Mr9h6NsB9A8GONSuzdZue511"}' ;;
+    name_mismatch) printf '%s\n' '{"id":"prj_zckfhKgH11wFJDTH6NFDaxrX2blp","name":"alternate","accountId":"team_Mr9h6NsB9A8GONSuzdZue511"}' ;;
+    team_mismatch) printf '%s\n' '{"id":"prj_zckfhKgH11wFJDTH6NFDaxrX2blp","name":"viggomeesters.nl","accountId":"user_wrong"}' ;;
+    alternate_team) printf '%s\n' '{"id":"prj_zckfhKgH11wFJDTH6NFDaxrX2blp","name":"viggomeesters.nl","accountId":"team_alternate"}' ;;
+    malformed) printf '%s\n' '{' ;;
+    api_failure) exit 42 ;;
+    *) exit 43 ;;
+  esac
+elif [[ "$*" == "$deploy_args" ]]; then
+  printf 'project=%s\norg=%s\nargs=%s\n' \
+    "${VERCEL_PROJECT_ID:-}" "${VERCEL_ORG_ID:-}" "$*" > "$DEPLOY_MARKER"
+else
+  printf 'unexpected npx args: %s\n' "$*" >&2
+  exit 90
+fi
+''',
+                encoding="utf-8",
+            )
+            fake_npx.chmod(0o700)
+            env_local = root / ".env.local"
+            env_local.write_text("USER_OWNED=untouched\n", encoding="utf-8")
+            original_env_local = env_local.read_bytes()
+            temp_before = set(Path("/tmp").glob("viggomeesters-vercel-project.*.json"))
+
+            def run(mode: str) -> subprocess.CompletedProcess[str]:
+                marker.unlink(missing_ok=True)
+                env = os.environ.copy()
+                env.update(
+                    {
+                        "PATH": f"{fake_bin}:{env['PATH']}",
+                        "DEPLOY_MARKER": str(marker),
+                        "FAKE_API_MODE": mode,
+                        "PYTHONOPTIMIZE": "1",
+                    }
+                )
+                return subprocess.run(
+                    ["bash", str(deploy_script)],
+                    cwd=root,
+                    env=env,
+                    text=True,
+                    capture_output=True,
+                    check=False,
+                )
+
+            success = run("success")
+            self.assertEqual(success.returncode, 0, success.stdout + success.stderr)
+            deployed = marker.read_text(encoding="utf-8")
+            self.assertIn(f"project={expected_id}", deployed)
+            self.assertIn("org=team_Mr9h6NsB9A8GONSuzdZue511", deployed)
+            self.assertIn(f"--scope {expected_scope}", deployed)
+
+            for mode in (
+                "id_mismatch",
+                "name_mismatch",
+                "team_mismatch",
+                "alternate_team",
+                "malformed",
+                "api_failure",
+            ):
+                with self.subTest(mode=mode):
+                    result = run(mode)
+                    self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+                    self.assertFalse(marker.exists(), f"deploy ran for {mode}")
+                    self.assertEqual(env_local.read_bytes(), original_env_local)
+                    self.assertEqual(
+                        set(Path("/tmp").glob("viggomeesters-vercel-project.*.json")),
+                        temp_before,
+                    )
+
+            self.assertEqual(env_local.read_bytes(), original_env_local)
 
 
 if __name__ == "__main__":

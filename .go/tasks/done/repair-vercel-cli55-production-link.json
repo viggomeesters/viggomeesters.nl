@@ -1,0 +1,85 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "none",
+  "id": "repair-vercel-cli55-production-link",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Repair Vercel CLI 55 production project binding",
+  "description": "Replace the obsolete .vercel/project.json link assertion with official project API readback and explicit VERCEL_PROJECT_ID/VERCEL_ORG_ID environment binding, then prove the canonical production deploy and readback.",
+  "scope": {
+    "read": [
+      "scripts/deploy-prod.sh,tests/test_ci_gates.py,package.json"
+    ],
+    "modify": [
+      ".go/**,scripts/deploy-prod.sh,tests/test_ci_gates.py"
+    ]
+  },
+  "acceptance": [
+    "Production deploy validates exact Vercel project ID, name and owner before upload without depending on .vercel/project.json.",
+    "npm run deploy:prod succeeds from a clean isolated worktree under Vercel CLI 55 and leaves no .env.local secret file."
+  ],
+  "verification": [
+    "python3 -m unittest tests.test_ci_gates -v",
+    "npm run check:all",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-09-01T22:34:30+02:00"
+  },
+  "work_status": "completed",
+  "review_status": "approved",
+  "review_history": [
+    {
+      "created_at": "2026-09-01T22:50:55+02:00",
+      "agent": "devil:deleg_a772b210",
+      "status": "approved",
+      "evidence": "A verdict on exact SHA-256 96b783f41e5b78fca149276b25220d595ea25467acf2b7c85f413255f9e47719; exact project/name/owner binding and optimized alternate-owner rejection verified",
+      "transaction_id": "eb23f641e75e4ceba2eafe37b24e613a"
+    }
+  ],
+  "evidence": [
+    {
+      "schema": "go-workflow.finish-evidence.v1",
+      "created_at": "2026-09-01T22:50:55+02:00",
+      "task_id": "repair-vercel-cli55-production-link",
+      "agent": "hermes",
+      "summary": "changed_files=scripts/deploy-prod.sh,tests/test_ci_gates.py,.go/hierarchy.json,.go/runs/events.jsonl,.go/tasks/done/repair-vercel-cli55-production-link.json; verification=focused normal and PYTHONOPTIMIZE tests plus npm run check:all plus live watchdog plus bash -n plus git diff --check plus go validate; verification_result=passed 88 tests 148 pages 0 SEO regressions exact alternate owner rejected live watchdog zero bytes; critic=A exact hash 96b783f41e5b78fca149276b25220d595ea25467acf2b7c85f413255f9e47719 deleg_a772b210; runtime=hermes; model=gpt-5.6-sol; billing_mode=unknown",
+      "changed_files": [
+        "scripts/deploy-prod.sh",
+        "tests/test_ci_gates.py",
+        ".go/hierarchy.json",
+        ".go/runs/events.jsonl",
+        ".go/tasks/done/repair-vercel-cli55-production-link.json"
+      ],
+      "no_diff": false,
+      "verification": {
+        "command": "focused normal and PYTHONOPTIMIZE tests plus npm run check:all plus live watchdog plus bash -n plus git diff --check plus go validate",
+        "result": "passed 88 tests 148 pages 0 SEO regressions exact alternate owner rejected live watchdog zero bytes"
+      },
+      "runtime": {
+        "agent": "hermes",
+        "runtime": "hermes",
+        "model": "gpt-5.6-sol",
+        "billing_mode": "unknown"
+      },
+      "usage": {
+        "schema": "go-workflow.usage-attribution.v1",
+        "runtime_kind": "hermes",
+        "billing_mode": "unknown",
+        "owner": "hermes",
+        "model": "gpt-5.6-sol",
+        "token_estimate": null,
+        "api_equivalent_cost_usd": null,
+        "provider_invoice_cost_usd": null,
+        "cost_label": "api_equivalent_not_invoice_cost"
+      },
+      "review": {
+        "outcome": "A exact hash 96b783f41e5b78fca149276b25220d595ea25467acf2b7c85f413255f9e47719 deleg_a772b210",
+        "skip_reason": null
+      }
+    }
+  ]
+}
