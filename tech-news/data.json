@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-05T07:05:17+02:00",
+  "generatedAt": "2026-09-06T07:05:59+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 69,
+  "usefulOpen": 70,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -32,6 +32,40 @@
   "retainedItems": 0,
   "errors": {},
   "items": [
+    {
+      "id": "ff76f6354dfd1141",
+      "title": "Using Blender with coding agents on macOS",
+      "url": "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/",
+      "source": "Simon Willison",
+      "published": "2026-09-05T15:51:09+00:00",
+      "summary": "TIL: Using Blender with coding agents on macOS I've been having fun with Blender in ChatGPT Codex on my Mac recently. Getting it to work with coding agents is really easy: install the full Mac application from blender.org and run a prompt like this: Use the already install /Applications/Blender to render a scene of a pelican riding a bicycle In this case I f",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agents"
+        ],
+        "models": [
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "e90b90a3f18b1fe3",
       "title": "Scaling agentic AI pilots across the enterprise",
@@ -229,6 +263,68 @@
         "risk": 0
       },
       "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "79c58747132db68d",
+      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
+      "url": "https://github.com/okf-memory/okf-agent-memory",
+      "source": "Hacker News",
+      "published": "2026-09-06T00:15:52+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents",
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "agents"
+        ],
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4cb1043a58fec196",
+      "title": "OpenAI confirms ‘wiki incident,’ says it’s ‘working on a framework’ for more disclosure",
+      "url": "https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/",
+      "source": "TechCrunch",
+      "published": "2026-09-05T20:05:27+02:00",
+      "summary": "OpenAI acknowledged its role in a recently reported incident where AI agents took over a German wiki forum.",
+      "areas": [
+        "ai-agents",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -765,6 +861,66 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "5ff52002dc90cbb5",
+      "title": "Seattle Times and Newsday are the latest publications to sue OpenAI and Microsoft",
+      "url": "https://techcrunch.com/2026/09/05/seattle-times-and-newsday-are-the-latest-publications-to-sue-openai-and-microsoft/",
+      "source": "TechCrunch",
+      "published": "2026-09-06T00:49:55+02:00",
+      "summary": "Two more news organizations are suing OpenAI and Microsoft over the supposed use of their journalism to train AI.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "77a363aad73d5f44",
+      "title": "OpenAI Agents Hacked Another Website",
+      "url": "https://www.wired.com/story/security-news-this-week-openai-agents-hacked-another-website/",
+      "source": "Wired",
+      "published": "2026-09-05T12:30:00+02:00",
+      "summary": "Plus: Tens of millions of US and Canadian drivers’ licenses go up for sale on the dark web, the US military finally tries to tackle the risk online ad data poses to troops, and more.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "6f485fbc2f0172e7",
       "title": "Architecting memory and storage in the AI era",
       "url": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era/",
@@ -789,41 +945,6 @@
         "novelty": 4,
         "urgency": 2,
         "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "08ac699191ac7fca",
-      "title": "Microsoft says virtually nobody was grabbing NYT articles through its chatbot",
-      "url": "https://www.theverge.com/policy/990267/microsoft-openai-new-york-times-authors-lawsuit",
-      "source": "The Verge",
-      "published": "2026-09-04T12:05:57-04:00",
-      "summary": "Microsoft's Copilot rarely reproduces even full sentences from news articles and books, let alone substantive chunks that could substitute for the original, the company says in new legal filings as it fights copyright claims from publishers including The New York Times and book authors. As part of the lawsuit's discovery, Microsoft provided 8.2 million Copil",
-      "areas": [
-        "developer-tools",
-        "enterprise-ai",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "copilot"
-        ],
-        "enterprise-ai": [
-          "microsoft"
-        ],
-        "privacy-risk": [
-          "lawsuit",
-          "copyright"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 2
       },
       "priority": 80,
       "action": "Watch",
@@ -1269,33 +1390,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "8270e60980e21188",
-      "title": "llm 0.32.1",
-      "url": "https://simonwillison.net/2026/Aug/21/llm/",
-      "source": "Simon Willison",
-      "published": "2026-08-21T17:16:13+00:00",
-      "summary": "Release: llm 0.32.1 Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a transitive openai dependency. This dot-release fixes that for the moment by pinning to openai<3 , and a soon-to-drop 0.33 release will switch from htt",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "e4d378b3038cd5d1",
       "title": "Introducing Intelligence Age",
       "url": "https://openai.com/index/introducing-intelligence-age",
@@ -1348,6 +1442,32 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
+      "id": "39528ddb8ffaf7b6",
+      "title": "Introducing GPT-6 Astra for developers",
+      "url": "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/",
+      "source": "Simon Willison",
+      "published": "2026-09-05T23:27:48+00:00",
+      "summary": "Introducing GPT-6 Astra for developers Blink and you'll miss it, but there's a familiar creature at 1m59s : Across the board, Astra has more attention to detail, better understanding of the user's prompt, and can build more sophisticated outputs. In particular, it excels at building 3D models. I've seen it make incredible renderings of gardens, shipyards, an",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
       "id": "3229003cf9be156b",
       "title": "The Pelican comparison grid for Astra is pretty interesting",
       "url": "https://simonwillison.net/2026/Sep/4/astra-pelicans/",
@@ -1387,33 +1507,6 @@
         "models": [
           "claude",
           "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e179ce642ecf8d91",
-      "title": "Prediction Market Betting Is Getting People Banned and Arrested",
-      "url": "https://www.wired.com/story/prediction-market-betting-is-getting-people-banned-and-arrested/",
-      "source": "Wired",
-      "published": "2026-09-03T23:48:24+02:00",
-      "summary": "This week on Uncanny Valley, we dig into the latest prediction market buzz, Flock’s AI-powered police search tool, and how tech bros don’t know how to talk about “rouge” AI agents",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents"
         ]
       },
       "scores": {
@@ -1872,32 +1965,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "83a3b544708f7a70",
-      "title": "More than just code review",
-      "url": "https://simonwillison.net/2026/Aug/22/more-than-just-code-review/",
-      "source": "Simon Willison",
-      "published": "2026-08-22T15:56:54+00:00",
-      "summary": "The key skill required to make productive use of coding agents is being able to confidently instruct them on how to make changes and then confidently verify that those changes have been applied in the correct way. Sometimes this involves reviewing every line of code they have written, but there are other ways to achieve that goal. Eyeballing every line of co",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "2102ad96dd9a0a64",
       "title": "The August 17 outage, and the work ahead",
       "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
@@ -1920,36 +1987,6 @@
         "risk": 0
       },
       "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "e7661487ed5c0ff5",
-      "title": "GPT-6 Astra in code review: Gains, privacy, and cost",
-      "url": "https://www.coderabbit.ai/blog/gpt-6-astra-code-review-evaluation",
-      "source": "Hacker News",
-      "published": "2026-09-05T05:38:56+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ],
-        "privacy-risk": [
-          "privacy"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -2088,18 +2125,96 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "182a5194dd770880",
-      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-      "url": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "id": "a67db7ddfc5b6c08",
+      "title": "GPT-6 Astra on robot arms",
+      "url": "https://openai.robocurve.org/gpt-6-astra/",
       "source": "Hacker News",
-      "published": "2026-09-05T01:38:50+02:00",
+      "published": "2026-09-06T03:52:45+02:00",
       "summary": "Comments",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "claude"
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b8bbf7a5ba754e34",
+      "title": "Chrome again exempts Google from user site data settings",
+      "url": "https://lapcatsoftware.com/articles/2026/9/1.html",
+      "source": "Hacker News",
+      "published": "2026-09-06T01:39:47+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e1ef4b1f36c5a3b0",
+      "title": "Hikers rescued after using Google Gemini for planning",
+      "url": "https://techcrunch.com/2026/09/05/hikers-rescued-after-using-google-gemini-for-planning/",
+      "source": "TechCrunch",
+      "published": "2026-09-05T21:35:24+02:00",
+      "summary": "The sheriff’s office said the hikers “were advised by Gemini to bring far less food and water than their group required.\"",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "fb307c1b4f5b06e3",
+      "title": "OpenAI admits to German wiki ‘incident’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
+      "source": "The Verge",
+      "published": "2026-09-05T07:15:55-04:00",
+      "summary": "OpenAI says it needs to overhaul how and when it reports instances of AI models attacking real-world targets. The acknowledgement comes as the company manages the fallout from reports that a swarm of its out-of-control agents hijacked a German wiki site. Regarding the \"'wiki incident,' where our agents wrote to several internet sites,\" OpenAI wrote […]",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -2166,32 +2281,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "eaf81184145931cb",
-      "title": "GPT-6 Astra on OpenRouter",
-      "url": "https://openrouter.ai/openai/gpt-6-astra",
-      "source": "Hacker News",
-      "published": "2026-09-04T23:39:19+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "6c7042854be5696c",
       "title": "AI compute provider Nscale is looking for $3.5B in pre-IPO financing",
       "url": "https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/",
@@ -2204,32 +2293,6 @@
       "matchedKeywords": {
         "models": [
           "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "926e268754fb0d62",
-      "title": "AI it's not bad but it's a tool",
-      "url": "https://lobste.rs/s/2eai0v/ai_it_s_not_bad_it_s_tool",
-      "source": "Lobsters",
-      "published": "2026-09-04T22:47:42+02:00",
-      "summary": "My company recently provided me a Claude license and even not being a fan of this kind of tool i recognize the value. I think it's great to deal with tasks you don't want to handle and just to get rid of them as fast as possible, but when there is something you like I belive it's importante not to rush it and enjoy the process, for my side projects I don't r",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
         ]
       },
       "scores": {
@@ -2349,85 +2412,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "1d049ed8c9c5ff06",
-      "title": "AGI is whatever you want it to be",
-      "url": "https://www.theverge.com/podcast/990323/agi-is-whatever-you-want-it-to-be",
-      "source": "The Verge",
-      "published": "2026-09-04T13:16:49-04:00",
-      "summary": "OpenAI announced its next big model, GPT-6 Astra, and also, by the way, that \"the AGI era\" is here now. Today on The Vergecast, we've got an all-star panel to break down the news of the week. First, senior AI reporter Hayden Field joins us to talk about our supposed AGI era and Nvidia's acquisition […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "gpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "595d07cdea0b6505",
-      "title": "smolts: a pedagogical IDE for a teaching language",
-      "url": "https://eighty-twenty.org/2026/09/04/smolts",
-      "source": "Lobsters",
-      "published": "2026-09-04T13:00:43+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "f25b20943bc5b6da",
-      "title": "Show HN: TERMy – A fast terminal assistant that does not use LLMs",
-      "url": "https://github.com/gioblu/NPC-Forge/blob/main/docs/development.md",
-      "source": "Hacker News",
-      "published": "2026-09-04T11:03:00+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "terminal"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "a7acfa97cfe7fd3c",
       "title": "Sportsman's Warehouse Promo Code: Save in September 2026",
       "url": "https://www.wired.com/story/sportsmans-warehouse-promo-code/",
@@ -2440,35 +2424,6 @@
       "matchedKeywords": {
         "data-platforms": [
           "warehouse"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "dde97b9df2296da1",
-      "title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages Today",
-      "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
-      "source": "Wired",
-      "published": "2026-09-03T23:56:21+02:00",
-      "summary": "ChatGPT, Claude, and Grok all suffered outages at nearly the exact same time for reasons that remain murky.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic",
-          "claude",
-          "chatgpt"
         ]
       },
       "scores": {
@@ -2509,30 +2464,70 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "15e327f8c25408fb",
-      "title": "Git Submodules as a Package Manager",
-      "url": "https://nesbitt.io/2026/09/01/git-submodules-as-a-package-manager.html",
-      "source": "Hacker News",
-      "published": "2026-09-01T11:36:10+02:00",
-      "summary": "Comments",
+      "id": "a6a3a9c7fc2b8f43",
+      "title": "Just a rumour of a bug is enough to find a security exploit these days",
+      "url": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+      "source": "Simon Willison",
+      "published": "2026-08-28T22:12:02+00:00",
+      "summary": "Just a rumour of a bug is enough to find a security exploit these days Anil Madhavapeddy is a professor of computer science at Cambridge and a core maintainer of the OCaml compiler. In this somewhat alarming post he reports that security issues in OCaml projects are seeing evidence of attempted exploits within minutes of patches being shared for discussion: ",
       "areas": [
-        "developer-tools"
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "git"
+        "privacy-risk": [
+          "security"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 0,
+        "relevance": 1,
+        "leverage": 1,
         "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 62,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "1e10d6ed5279e6c1",
+      "title": "Python 3.15.0 candidate 2 is here!",
+      "url": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
+      "source": "Simon Willison",
+      "published": "2026-09-01T14:59:18+00:00",
+      "summary": "Python 3.15.0 candidate 2 is here! Hugo van Kemenade (release manager for Python 3.14 and 3.15) announces the final release candidate for Python 3.15, scheduled for release in October: Entering the release candidate phase, only reviewed code changes which are clear bug fixes are allowed between this release candidate and the final release. [...] We strongly ",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "8989bf4a72f957d9",
+      "title": "Introducing wrapture",
+      "url": "https://simonwillison.net/2026/Aug/31/introducing-wrapture/",
+      "source": "Simon Willison",
+      "published": "2026-08-31T23:59:36+00:00",
+      "summary": "Introducing wrapture New from Graham Dumpleton (of wrapt , mod_wsgi, and New Relic's Python agent fame), who describes Wrapture as taking the monkeypatching ideas from wrapt and extending them to apply to testing and tracing at the same time. Wrapture ( full documentation here ) makes it easy to wrap any function or method such that all access can be traced,",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     }
   ]
 }
