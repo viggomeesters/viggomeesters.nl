@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-06T07:05:59+02:00",
+  "generatedAt": "2026-09-07T07:05:51+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 70,
+  "usefulOpen": 65,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -267,33 +267,40 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "79c58747132db68d",
-      "title": "OKF Agent Memory – Git-native persistent memory for AI coding agents",
-      "url": "https://github.com/okf-memory/okf-agent-memory",
-      "source": "Hacker News",
-      "published": "2026-09-06T00:15:52+02:00",
-      "summary": "Comments",
+      "id": "7f442dc477f4ad6f",
+      "title": "Seattle Times and Newsday sue OpenAI and Microsoft for infringement",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+      "source": "The Verge",
+      "published": "2026-09-06T19:36:04-04:00",
+      "summary": "The Seattle Times and Newsday are just the latest plaintiffs to take OpenAI to court, alleging copyright infringement. The two outlets say the company used their journalism as training data for its AI models without permission and often reproduces passages from their reporting in response to user queries. This is similar to lawsuits filed by […]",
       "areas": [
-        "ai-agents",
-        "developer-tools"
+        "data-platforms",
+        "enterprise-ai",
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "agent",
-          "agents"
+        "models": [
+          "openai"
         ],
-        "developer-tools": [
-          "git"
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ],
+        "privacy-risk": [
+          "copyright"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 1,
+        "relevance": 5,
+        "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 3,
+        "risk": 1
       },
-      "priority": 88,
+      "priority": 95,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -691,41 +698,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "1c268af12aebb9aa",
-      "title": "Offering Zero Data Retention for frontier models",
-      "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
-      "source": "OpenAI News",
-      "published": "2026-08-19T21:00:00+02:00",
-      "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
-      "areas": [
-        "data-platforms",
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "privacy",
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 2
-      },
-      "priority": 85,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "d3068ef53ce7b4fa",
       "title": "GitHub Copilot app for Beginners: Run several agents at once",
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
@@ -951,36 +923,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "4546431d45a5932c",
-      "title": "Crusoe reportedly raises $3B at a $30B valuation",
-      "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/",
-      "source": "TechCrunch",
-      "published": "2026-09-04T02:48:42+02:00",
-      "summary": "The round came together after the data center developer reportedly secured a $13 billion contract with Jane Street.",
-      "areas": [
-        "data-platforms",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "developer"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "1f58fae96cc76151",
       "title": "Safety overview: GPT-6 Astra",
       "url": "https://openai.com/index/safety-overview-gpt-6-astra",
@@ -1037,6 +979,32 @@
         "risk": 1
       },
       "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "a21f49137da7c988",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai/",
+      "source": "Simon Willison",
+      "published": "2026-09-06T23:57:40+00:00",
+      "summary": "Research acceleration: The view inside OpenAI Apparently today is RSI day at OpenAI, for Recursive Self-Improvement - I think it's their new AGI. Both this piece and the new essay An Alien Mind (by Chief Scientist Jakub Pachocki) talk about it, and this one doesn't even bother to expand the acronym. Included are details on how OpenAI's own research team are ",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1363,33 +1331,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "edb0c81b18e93136",
-      "title": "llm 0.33",
-      "url": "https://simonwillison.net/2026/Aug/22/llm/",
-      "source": "Simon Willison",
-      "published": "2026-08-22T17:01:16+00:00",
-      "summary": "Release: llm 0.33 My highlights from this release: Upgraded to the OpenAI Python library 3.x and switched the HTTP client dependency from httpx to httpx2 . #1608 , #1631 I shipped a quick 0.32.1 fix for this yesterday, but this is the more comprehensive fix. llm embed and llm embed-multi now accept --key . The Python EmbeddingModel.embed() , EmbeddingModel.e",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm",
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "e4d378b3038cd5d1",
       "title": "Introducing Intelligence Age",
       "url": "https://openai.com/index/introducing-intelligence-age",
@@ -1402,32 +1343,6 @@
       "matchedKeywords": {
         "models": [
           "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "7e6c1cc769e393fb",
-      "title": "Replit expands access to software creation with GPT-5.6 Luna",
-      "url": "https://openai.com/index/replit",
-      "source": "OpenAI News",
-      "published": "2026-08-19T09:00:00+02:00",
-      "summary": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
         ]
       },
       "scores": {
@@ -1913,58 +1828,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2bc26709368c49d8",
-      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
-      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
-      "source": "Simon Willison",
-      "published": "2026-08-23T20:24:52+00:00",
-      "summary": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive A few interesting numbers in this FT story gathered from \"people with knowledge of the matter\": Anthropic's \"annualized revenue\" for July is up to $65bn - it was $47bn in May, and I collected more historic numbers here . Anthropic expect Q3 to be profitable according to the same mod",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "740ce5e55e505b73",
-      "title": "Quoting Linus Torvalds",
-      "url": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
-      "source": "Simon Willison",
-      "published": "2026-08-22T21:04:26+00:00",
-      "summary": "And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work. I'd like to call it my tireless helper, but the AI several times stated flat out that this was impossible and unsolvable and that we should just write a report about it. I suspect those things have been trained by people who may not be quite as stubborn as I am. ",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "debug"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "2102ad96dd9a0a64",
       "title": "The August 17 outage, and the work ahead",
       "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
@@ -2047,32 +1910,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "3b9644d5af575949",
-      "title": "Discovery of a new OpenAI agent message board",
-      "url": "https://collusion.wiki/",
-      "source": "Hacker News",
-      "published": "2026-09-04T13:54:53+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "79846e290fea2166",
       "title": "Data from drones in Ukraine is fueling a new Wild West marketplace",
       "url": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/",
@@ -2099,44 +1936,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "cc4083e8cedf4979",
-      "title": "150 research primates got diarrhea, flooding lab with priceless vaccine data",
-      "url": "https://arstechnica.com/health/2026/09/150-research-primates-got-diarrhea-flooding-lab-with-priceless-vaccine-data/",
-      "source": "Ars Technica",
-      "published": "2026-09-03T22:14:48+02:00",
-      "summary": "Researchers now have clear new targets and insights for developing a Shigella vaccine.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a67db7ddfc5b6c08",
-      "title": "GPT-6 Astra on robot arms",
-      "url": "https://openai.robocurve.org/gpt-6-astra/",
+      "id": "ff9ea19480e4e8f9",
+      "title": "MathKernel: An evidence-aware multi-engine mathematics kernel and MCP server",
+      "url": "https://github.com/Staatsgeheim/MathKernel",
       "source": "Hacker News",
-      "published": "2026-09-06T03:52:45+02:00",
+      "published": "2026-09-07T02:21:01+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "gpt"
+        "ai-agents": [
+          "mcp"
         ]
       },
       "scores": {
@@ -2151,12 +1962,116 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b8bbf7a5ba754e34",
-      "title": "Chrome again exempts Google from user site data settings",
-      "url": "https://lapcatsoftware.com/articles/2026/9/1.html",
-      "source": "Hacker News",
-      "published": "2026-09-06T01:39:47+02:00",
+      "id": "943082e68f52a093",
+      "title": "Data races and the limits of ThreadSanitizer in C and Go",
+      "url": "https://theconsensus.dev/p/2026/09/06/data-races-and-the-limits-of-threadsanitizer-in-c-and-go.html",
+      "source": "Lobsters",
+      "published": "2026-09-07T00:13:09+02:00",
       "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2fe544d0a26693d9",
+      "title": "Authors push back as publishers and agents make claims on Anthropic settlement",
+      "url": "https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/",
+      "source": "TechCrunch",
+      "published": "2026-09-06T22:47:37+02:00",
+      "summary": "Authors say publishers seem to be claiming more than their fair share of settlement payments.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "97e7697caf0fef05",
+      "title": "Research acceleration: The view inside OpenAI",
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai",
+      "source": "Hacker News",
+      "published": "2026-09-06T17:08:44+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e02ecaf79cbf8e96",
+      "title": "Your intellectual fly is open when you use an LLM to author a post (2025)",
+      "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/",
+      "source": "Hacker News",
+      "published": "2026-09-06T13:56:43+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "ab2cca6268f59ec7",
+      "title": "Why China Is the Bogeyman Data Center Enthusiasts Just Can't Quit",
+      "url": "https://www.wired.com/story/why-china-is-still-the-bogeyman-for-data-center-enthusiasts/",
+      "source": "Wired",
+      "published": "2026-09-06T12:00:00+02:00",
+      "summary": "Polls show that overwhelming majorities of Americans hate data centers. China makes a perfect scapegoat for tech leaders and their allies—the only problem is a lack of evidence.",
       "areas": [
         "data-platforms"
       ],
@@ -2203,18 +2118,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "fb307c1b4f5b06e3",
-      "title": "OpenAI admits to German wiki ‘incident’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident",
-      "source": "The Verge",
-      "published": "2026-09-05T07:15:55-04:00",
-      "summary": "OpenAI says it needs to overhaul how and when it reports instances of AI models attacking real-world targets. The acknowledgement comes as the company manages the fallout from reports that a swarm of its out-of-control agents hijacked a German wiki site. Regarding the \"'wiki incident,' where our agents wrote to several internet sites,\" OpenAI wrote […]",
+      "id": "e1236261980a194f",
+      "title": "GitSpawn: Untrusted repos can execute code via AI coding agents",
+      "url": "https://www.manifold.security/blog/ai-coding-agents-git-hijack",
+      "source": "Hacker News",
+      "published": "2026-09-05T03:45:53+02:00",
+      "summary": "Comments",
       "areas": [
-        "models"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "ai-agents": [
+          "agents"
         ]
       },
       "scores": {
@@ -2307,32 +2222,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "b9c48f61da2064cb",
-      "title": "FLT: Anthropic has beaten me to it",
-      "url": "https://xenaproject.wordpress.com/2026/09/04/flt-anthropic-has-beaten-me-to-it/",
-      "source": "Lobsters",
-      "published": "2026-09-04T21:11:37+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "cd033e3e0282cd4b",
       "title": "Anthropic’s $2 trillion IPO puts powerful external trustees in spotlight",
       "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/",
@@ -2386,18 +2275,18 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "700f4dae42a008d8",
-      "title": "US military disabled ad tracking on troops’ devices following reports of targeted attacks",
-      "url": "https://techcrunch.com/2026/09/04/us-military-disabled-ad-tracking-on-troops-devices-following-reports-of-targeted-attacks/",
-      "source": "TechCrunch",
-      "published": "2026-09-04T15:21:37+02:00",
-      "summary": "A senator's letter confirms the U.S. military moved to prevent the tracking after foreign adversaries used location data to target troops.",
+      "id": "462df6eee861b98d",
+      "title": "Reverse engineering the storage format for an undocumented database",
+      "url": "https://blog.glazer.ee/posts/converting-cronos/",
+      "source": "Hacker News",
+      "published": "2026-09-04T09:17:00+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
-          "data"
+          "database"
         ]
       },
       "scores": {
@@ -2490,6 +2379,46 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
+      "id": "d7c25f6b20421551",
+      "title": "The purpose of DNS is to spread scams",
+      "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
+      "source": "Simon Willison",
+      "published": "2026-09-06T14:40:07+00:00",
+      "summary": "The purpose of DNS is to spread scams Terence Eden shares some daunting statistics in support of his take that \"the Domain Name System's purpose seems to be a vector for criminals to run scams on people at a terrifyingly high rate\". On this Interisle report ( via Andrew Campling ), Terence says: It says 85 million new registrations of gTLDs were made in 2025",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "e9d403ba0344bc43",
+      "title": "Quoting Zach Kehs",
+      "url": "https://simonwillison.net/2026/Sep/6/zach-kehs/",
+      "source": "Simon Willison",
+      "published": "2026-09-06T08:42:49+00:00",
+      "summary": "If you continue to add floors and rooms to a building forever, it will collapse. Software faces no such constraint. The code can always get worse. There can always be a new layer of indirection or a reduction in performance. — Zach Kehs , There's No Limit to How Bad Code Can Get Tags: technical-debt",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
       "id": "1e10d6ed5279e6c1",
       "title": "Python 3.15.0 candidate 2 is here!",
       "url": "https://simonwillison.net/2026/Sep/1/python-315-rc-2/",
@@ -2526,6 +2455,52 @@
         "risk": 0
       },
       "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "852f9e4066548445",
+      "title": "EVE Online: The Move to Python 3 Begins!",
+      "url": "https://simonwillison.net/2026/Aug/25/eve-online-move-to-python-3/",
+      "source": "Simon Willison",
+      "published": "2026-08-25T22:59:30+00:00",
+      "summary": "EVE Online: The Move to Python 3 Begins! EVE Online has been one of the most interesting case studies in Python at scale for over twenty years now. They've been running on Stackless Python since their launch in 2003, and their last major upgrade was 16 years ago, to Stackless Python 2.7 in 2010 . Their upgrade to Python 3 will start using the futurize script",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "006cbfb5f54117a5",
+      "title": "The Ironies of Automation (1983)",
+      "url": "https://static1.squarespace.com/static/644321e78cd2dd37613af33e/t/6694873f71612132a84371c7/1721009983702/Ironies+of+Automation_Bainbridge_1983.pdf",
+      "source": "Lobsters",
+      "published": "2026-09-06T15:40:36+02:00",
+      "summary": "Comments",
+      "areas": [
+        "enterprise-ai"
+      ],
+      "matchedKeywords": {
+        "enterprise-ai": [
+          "automation"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 56,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
