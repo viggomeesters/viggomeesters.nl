@@ -61,7 +61,7 @@ class ContinuousIntegrationContract(unittest.TestCase):
             )
 
             checks = [
-                (["node", "scripts/check-site.mjs"], "Site check passed: 148 public pages, 9 variants checked."),
+                (["node", "scripts/check-site.mjs"], "Site check passed: 148 public pages, 12 variants checked."),
                 (["node", "scripts/seo-audit.mjs"], "SEO check passed: 148 pages"),
                 (["python3", "scripts/check-public-project-coverage.py"], "50/50 active public repositories covered"),
             ]

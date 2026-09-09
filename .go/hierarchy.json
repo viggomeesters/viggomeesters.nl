@@ -12,7 +12,9 @@
           "id": "homepage",
           "title": "Homepage and navigation",
           "name": "Homepage and navigation",
-          "tasks": []
+          "tasks": [
+            "prototype-homepage-evolution-maps"
+          ]
         },
         {
           "id": "project-pages",

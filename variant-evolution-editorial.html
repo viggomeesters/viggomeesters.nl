@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#f1efe8">
+  <title>Prototype 01 — Editorial Evolution</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{--paper:#f1efe8;--ink:#141412;--muted:#6e6b62;--line:#c9c5ba;--red:#d63a2f;--serif:Georgia,'Times New Roman',serif;--sans:Arial,'Segoe UI',sans-serif;--mono:'Cascadia Code','SFMono-Regular',monospace}
+    html{background:var(--paper);color-scheme:light;scroll-behavior:smooth}
+    body{min-width:320px;margin:0;background:linear-gradient(90deg,transparent calc(50% - .5px),rgba(20,20,18,.055) 50%,transparent calc(50% + .5px)),var(--paper);color:var(--ink);font:16px/1.65 var(--sans)}
+    a{color:inherit}.wrap{width:min(1320px,calc(100% - 48px));margin:auto}.prototype-bar{position:sticky;z-index:20;top:0;display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:62px;border-bottom:1px solid var(--ink);background:rgba(241,239,232,.94);backdrop-filter:blur(14px)}
+    .brand{display:inline-flex;min-height:44px;align-items:center;font:700 .76rem var(--mono);letter-spacing:.04em;text-decoration:none}.switcher{display:flex;gap:4px}.switcher a{display:inline-flex;min-height:44px;align-items:center;padding:0 12px;color:var(--muted);font:700 .67rem var(--mono);text-decoration:none}.switcher a[aria-current="page"]{background:var(--ink);color:var(--paper)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+    .hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.6fr);gap:7vw;align-items:end;min-height:calc(100dvh - 62px);padding:8vw 0 5vw;border-bottom:1px solid var(--ink)}
+    .issue{margin-bottom:4vh;color:var(--red);font:700 .7rem var(--mono);letter-spacing:.14em;text-transform:uppercase}.hero h1{max-width:950px;margin:0;font:400 clamp(4rem,10.6vw,10rem)/.82 var(--serif);letter-spacing:-.075em}.hero h1 em{color:var(--red);font-weight:400}.lede{align-self:center;max-width:430px;border-top:8px solid var(--ink);padding-top:22px}.lede strong{display:block;font:400 clamp(1.35rem,2.4vw,2rem)/1.16 var(--serif)}.lede p{margin:22px 0 0;color:var(--muted);font-size:.9rem}
+    .chapter{display:grid;grid-template-columns:180px minmax(0,1fr);gap:clamp(28px,7vw,110px);padding:clamp(70px,10vw,140px) 0;border-bottom:1px solid var(--line)}.chapter-mark{position:sticky;top:92px;align-self:start}.year{display:block;font:400 clamp(3rem,6vw,5rem)/1 var(--serif)}.chapter-label{display:block;margin-top:11px;color:var(--red);font:700 .64rem var(--mono);letter-spacing:.12em;text-transform:uppercase}.chapter-copy>h2{max-width:900px;margin:0 0 54px;font:400 clamp(2.5rem,6vw,5.6rem)/.94 var(--serif);letter-spacing:-.05em}
+    .story{display:grid;grid-template-columns:minmax(180px,.38fr) minmax(0,1fr);gap:34px;padding:30px 0;border-top:1px solid var(--line)}.story-kicker{color:var(--muted);font:700 .65rem var(--mono);letter-spacing:.08em;text-transform:uppercase}.story h3{margin:0;font:400 clamp(1.45rem,2.5vw,2.25rem)/1.08 var(--serif)}.story p{max-width:660px;margin:13px 0 0;color:#57544d}.story-links{display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:18px}.story-links a{min-height:44px;display:inline-flex;align-items:center;color:var(--red);font:700 .68rem var(--mono);text-underline-offset:5px}
+    details{margin-top:18px;border-left:3px solid var(--ink);padding-left:18px}summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--muted);font:700 .66rem var(--mono);text-transform:uppercase}details p{margin:2px 0 14px;font-size:.88rem}.now{display:grid;grid-template-columns:1fr 1fr;gap:8vw;padding:10vw 0}.now h2{margin:0;font:400 clamp(3.5rem,8vw,8rem)/.85 var(--serif);letter-spacing:-.06em}.now-list{border-top:8px solid var(--red)}.now-item{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}.now-item b{font:700 .7rem var(--mono)}.now-item span{font:400 1.25rem/1.25 var(--serif)}.footer{display:flex;justify-content:space-between;gap:24px;padding:28px 0 50px;border-top:1px solid var(--ink);color:var(--muted);font:700 .65rem var(--mono)}
+    @media(max-width:760px){.wrap{width:min(100% - 24px,1320px)}.prototype-bar{align-items:flex-start;flex-direction:column;padding:10px 0}.switcher{width:100%;overflow-x:auto}.switcher a{white-space:nowrap}.hero{grid-template-columns:1fr;min-height:auto;padding:72px 0}.hero h1{font-size:clamp(4rem,19vw,7rem)}.lede{align-self:auto}.chapter{grid-template-columns:1fr;padding:72px 0}.chapter-mark{position:static;display:flex;gap:14px;align-items:baseline}.chapter-label{margin:0}.story{grid-template-columns:1fr;gap:12px}.now{grid-template-columns:1fr}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <nav class="prototype-bar wrap" aria-label="Prototype navigation">
+    <a class="brand" href="/">← ORIGINAL HOMEPAGE</a>
+    <div class="switcher"><a href="/variant-evolution-editorial.html" aria-current="page">01 Editorial</a><a href="/variant-evolution-system-map.html">02 System map</a><a href="/variant-evolution-hybrid.html">03 Hybrid</a></div>
+  </nav>
+  <main class="wrap">
+    <header class="hero">
+      <div><div class="issue">Prototype 01 / Editorial timeline</div><h1>Work that kept <em>unlocking</em> the next thing.</h1></div>
+      <div class="lede"><strong>From improving individual processes to building reusable systems that can carry the work.</strong><p>This direction treats the homepage as a long-form editorial story. It prioritises causality over inventory: each chapter explains which limitation forced the next shift.</p></div>
+    </header>
+
+    <section class="chapter" aria-labelledby="chapter-2014"><div class="chapter-mark"><span class="year">2014</span><span class="chapter-label">Learn the process</span></div><div class="chapter-copy"><h2 id="chapter-2014">Before automating work, understand where it actually breaks.</h2>
+      <article class="story"><div class="story-kicker">Process improvement</div><div><h3>Operational work became a systems problem.</h3><p>Research, Lean projects, logistics, banking, data entry, and workflow modelling built the habit of following work across people, tools, and exceptions.</p><details><summary>What this unlocked</summary><p>The ability to recognise that local optimisation is often useless when information, ownership, and decisions do not travel through the whole process.</p></details><div class="story-links"><a href="/projects/">Browse professional projects →</a></div></div></article>
+    </div></section>
+
+    <section class="chapter" aria-labelledby="chapter-2020"><div class="chapter-mark"><span class="year">2020</span><span class="chapter-label">Make delivery repeatable</span></div><div class="chapter-copy"><h2 id="chapter-2020">Spreadsheets became tools. Projects became delivery patterns.</h2>
+      <article class="story"><div class="story-kicker">Data migration</div><div><h3>Source data needed more than another dashboard.</h3><p>SAP migrations and multi-country delivery exposed the same recurring problem: messy inputs, implicit rules, brittle transformations, and too little evidence about what changed.</p><details><summary>What this unlocked</summary><p>Reusable templates, field analysis, validation logic, and a stronger separation between source truth, transformation, and output.</p></details><div class="story-links"><a href="/sap-agent-context/">Explore SAP Agent Context →</a><a href="/projects/smart-data-platform/">Smart Data Platform →</a></div></div></article>
+      <article class="story"><div class="story-kicker">Tools</div><div><h3>Python, Alteryx, and Excel became a delivery layer.</h3><p>The important shift was not learning more software. It was learning how to turn recurring judgement into an inspectable tool without hiding the edge cases.</p><div class="story-links"><a href="/apps/">View working applications →</a></div></div></article>
+    </div></section>
+
+    <section class="chapter" aria-labelledby="chapter-2025"><div class="chapter-mark"><span class="year">2025</span><span class="chapter-label">Give systems memory</span></div><div class="chapter-copy"><h2 id="chapter-2025">AI was useful. Context made it dependable.</h2>
+      <article class="story"><div class="story-kicker">Knowledge systems</div><div><h3>A vault became infrastructure rather than a folder of notes.</h3><p>Capture, provenance, schema, retrieval, and agent interfaces turned personal knowledge into a local-first operating layer.</p><details><summary>What this unlocked</summary><p>Agents could work with durable context instead of relying on one chat window or a provider-owned memory layer.</p></details><div class="story-links"><a href="/personal-knowledge-system/">Map the knowledge system →</a><a href="/vault-layer/">Explore VaultLayer →</a></div></div></article>
+    </div></section>
+
+    <section class="chapter" aria-labelledby="chapter-2026"><div class="chapter-mark"><span class="year">2026</span><span class="chapter-label">Make agents accountable</span></div><div class="chapter-copy"><h2 id="chapter-2026">The assistant became a worker with scope, gates, and proof.</h2>
+      <article class="story"><div class="story-kicker">Agent workflow</div><div><h3>Useful output was no longer enough.</h3><p>Repo-local goals, tasks, claims, verification, critic passes, and shipping evidence made autonomous work inspectable across different models.</p><details open><summary>What this unlocked</summary><p>A cumulative workflow where instructions, execution state, and proof survive the individual agent session.</p></details><div class="story-links"><a href="/go-workflow-stack/">Open Go Workflow Stack →</a><a href="/agent-workflow/">See the evolution →</a></div></div></article>
+      <article class="story"><div class="story-kicker">Public proof</div><div><h3>Projects became evidence, not just portfolio claims.</h3><p>Working apps, public repositories, source-backed context packs, and technical writing expose both the result and the thinking behind it.</p><div class="story-links"><a href="/timeline/">Complete public timeline →</a><a href="/guides/">Read the writing →</a></div></div></article>
+    </div></section>
+
+    <section class="now"><h2>Now, the work converges.</h2><div class="now-list"><div class="now-item"><b>01</b><span>Data migration that explains what will break.</span></div><div class="now-item"><b>02</b><span>Knowledge systems that keep context inspectable.</span></div><div class="now-item"><b>03</b><span>Agent workflows that finish with evidence.</span></div></div></section>
+  </main>
+  <footer class="footer wrap"><span>Disposable dev prototype. Not indexed.</span><span>Direction: narrative / editorial / causal</span></footer>
+</body>
+</html>

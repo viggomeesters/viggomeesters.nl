@@ -1,0 +1,96 @@
+{
+  "schema": "go-workflow.repo-local.task.v1",
+  "kind": "task",
+  "execution_mode": "agent",
+  "shareable_delivery": "none",
+  "id": "prototype-homepage-evolution-maps",
+  "project": "viggomeesters-site",
+  "status": "done",
+  "summary": "Build three isolated evolution-map homepage prototypes",
+  "description": "Create clickable dev-only homepage variants for a vertical editorial timeline, horizontal system map, and hybrid timeline × architecture map. Keep production index.html unchanged and do not deploy production.",
+  "scope": {
+    "read": [
+      "index.html",
+      "timeline/index.html",
+      "systems/index.html",
+      "AGENTS.md",
+      "tests/test_ci_gates.py"
+    ],
+    "modify": [
+      "variant-evolution-editorial.html",
+      "variant-evolution-system-map.html",
+      "variant-evolution-hybrid.html",
+      "tests/test_ci_gates.py"
+    ]
+  },
+  "acceptance": [
+    "Production index.html remains byte-identical.",
+    "Three materially distinct dev-only HTML prototypes exist and cross-link to one another.",
+    "Each prototype is responsive, keyboard accessible, reduced-motion safe, and links to real public pages.",
+    "Desktop and mobile browser QA show no horizontal overflow or console errors."
+  ],
+  "verification": [
+    "npm test",
+    "npm run check",
+    "git diff --check"
+  ],
+  "claim": {
+    "agent": "hermes",
+    "claimed_at": "2026-09-09T19:42:01+02:00"
+  },
+  "work_status": "completed",
+  "review_status": "approved",
+  "review_history": [
+    {
+      "created_at": "2026-09-09T20:01:07+02:00",
+      "agent": "hermes",
+      "status": "approved",
+      "evidence": "Approved after exact-hash visual critic: three distinct directions, zero desktop/mobile clipping, intentional inner horizontal scroll only, interactions and real links verified, production homepage unchanged.",
+      "transaction_id": "41487a092686445695af4666cbf6164a"
+    }
+  ],
+  "evidence": [
+    {
+      "schema": "go-workflow.finish-evidence.v1",
+      "created_at": "2026-09-09T20:01:07+02:00",
+      "task_id": "prototype-homepage-evolution-maps",
+      "agent": "hermes",
+      "summary": "task_id=prototype-homepage-evolution-maps; changed_files=variant-evolution-editorial.html,variant-evolution-system-map.html,variant-evolution-hybrid.html,tests/test_ci_gates.py,.go/hierarchy.json,.go/runs/events.jsonl,.go/tasks/done/prototype-homepage-evolution-maps.json; verification_command=npm test && npm run check && git diff --check && ./go validate . plus Chrome desktop and 375/390px geometry QA; verification_result=passed: 88 tests, 148 public pages and 12 variants, index byte-identical, desktop console clean, mobile document overflow 0 and clipping 0, interactive node/detail readback passed; critic=approved self-critic on prototype hashes editorial 56546f6d system-map e09fb16f hybrid 9ee31409 and mobile sheet 1e779608; runtime=hermes; model=gpt-5.6-sol; billing_mode=subscription",
+      "changed_files": [
+        "variant-evolution-editorial.html",
+        "variant-evolution-system-map.html",
+        "variant-evolution-hybrid.html",
+        "tests/test_ci_gates.py",
+        ".go/hierarchy.json",
+        ".go/runs/events.jsonl",
+        ".go/tasks/done/prototype-homepage-evolution-maps.json"
+      ],
+      "no_diff": false,
+      "verification": {
+        "command": "npm test && npm run check && git diff --check && ./go validate . plus Chrome desktop and 375/390px geometry QA",
+        "result": "passed: 88 tests, 148 public pages and 12 variants, index byte-identical, desktop console clean, mobile document overflow 0 and clipping 0, interactive node/detail readback passed"
+      },
+      "runtime": {
+        "agent": "hermes",
+        "runtime": "hermes",
+        "model": "gpt-5.6-sol",
+        "billing_mode": "subscription"
+      },
+      "usage": {
+        "schema": "go-workflow.usage-attribution.v1",
+        "runtime_kind": "hermes",
+        "billing_mode": "subscription",
+        "owner": "hermes",
+        "model": "gpt-5.6-sol",
+        "token_estimate": null,
+        "api_equivalent_cost_usd": null,
+        "provider_invoice_cost_usd": null,
+        "cost_label": "api_equivalent_not_invoice_cost"
+      },
+      "review": {
+        "outcome": "approved self-critic on prototype hashes editorial 56546f6d system-map e09fb16f hybrid 9ee31409 and mobile sheet 1e779608",
+        "skip_reason": null
+      }
+    }
+  ]
+}
