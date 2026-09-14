@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-13T07:05:10+02:00",
+  "generatedAt": "2026-09-14T07:05:06+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 57,
+  "usefulOpen": 55,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -169,6 +169,69 @@
         "risk": 0
       },
       "priority": 96,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "2cbb621a6371eed2",
+      "title": "commit-rewriter 0.1",
+      "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter/",
+      "source": "Simon Willison",
+      "published": "2026-09-14T00:28:10+00:00",
+      "summary": "Release: commit-rewriter 0.1 I built this little web app the other day to help edit the commit messages for the Datasette security releases . The initial commits were full of coding agent cruft and references to issue IDs from our private repository, so they weren't fit for publication. If you want to edit the commit messages for a repository you can run it ",
+      "areas": [
+        "ai-agents",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "agent",
+          "coding agent"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 94,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "04614548f168225d",
+      "title": "AI Agents Are Thirsty for Power",
+      "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
+      "source": "Wired",
+      "published": "2026-09-13T12:00:00+02:00",
+      "summary": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout.",
+      "areas": [
+        "ai-agents",
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents",
+          "agentic"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -670,36 +733,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "462e1c1d29f899a9",
-      "title": "AgentsDock: An IDE designed for agentic AI research",
-      "url": "https://agentsdock.net/",
-      "source": "Hacker News",
-      "published": "2026-09-13T01:45:58+02:00",
-      "summary": "Comments",
-      "areas": [
-        "ai-agents",
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ],
-        "developer-tools": [
-          "ide"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "215ab0ce876ac76a",
       "title": "OpenAI agents attacked RubyGems back in May",
       "url": "https://simonwillison.net/2026/Sep/12/openai-agents-rubygems/",
@@ -836,36 +869,6 @@
         ],
         "privacy-risk": [
           "breach"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "20a2e3e51b2ed18f",
-      "title": "LG responds to TV spying allegations",
-      "url": "https://www.theverge.com/tech/994333/lg-responds-to-tv-spying-allegations",
-      "source": "The Verge",
-      "published": "2026-09-12T11:19:44-04:00",
-      "summary": "Earlier this week, Gamers Nexus, Level1Techs, and independent security researchers detailed some alarming findings about how LG's TVs are logging and uploading data on its users. Now the company is pushing back against those allegations, saying that \"Some recent media coverage may have contributed to misconceptions about how LG smart TVs work.\" LG released a",
-      "areas": [
-        "data-platforms",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "security"
         ]
       },
       "scores": {
@@ -1598,92 +1601,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "63457147b3d3512c",
-      "title": "Anthropic CEO says it’s time to pump the brakes on AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
-      "source": "The Verge",
-      "published": "2026-09-12T12:23:40-04:00",
-      "summary": "Anthropic CEO Dario Amodei says the time has come to slow down AI development and will give third-party evaluators like METR access to its models to help ensure its \"adherence to safety practices and commitments.\" In a winding essay, Amodei proposed a three-step plan to \"pace the frontier\" - jargon that simply means to slow […]",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "bfa0fcaa179e6a07",
-      "title": "OpenAI agents carried out an undisclosed attack on RubyGems",
-      "url": "https://www.rubyhack.ai/",
-      "source": "Lobsters",
-      "published": "2026-09-12T01:41:50+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models",
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "ad0c9ebecfc9046f",
-      "title": "Trump is giving data centers a pass to pollute",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994112/ai-data-center-pollution-health-epa",
-      "source": "The Verge",
-      "published": "2026-09-12T10:41:27-04:00",
-      "summary": "President Donald Trump is weakening environmental regulations in the name of speeding up the construction of AI data centers, raising health risks for Americans, a cadre of former EPA officials said this week in a briefing and new report. They are urging - perhaps futilely - the president to adopt a \"Data Center Health Protection […]",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "95af995079eaf2db",
       "title": "ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses",
       "url": "https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses/",
@@ -1736,42 +1653,91 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "9990ca6116a4a0ec",
-      "title": "Scammers target hundreds of thousands of crypto owners after Trezor confirms data breach of email provider",
-      "url": "https://techcrunch.com/2026/09/11/scammers-target-hundreds-of-thousands-of-crypto-owners-after-trezor-confirms-data-breach-of-email-provider/",
-      "source": "TechCrunch",
-      "published": "2026-09-11T15:32:54+02:00",
-      "summary": "This is the second data breach affecting a company that hardware crypto wallet maker Trezor relies on.",
+      "id": "b6127142ab1ccd53",
+      "title": "shot-scraper 1.12",
+      "url": "https://simonwillison.net/2026/Sep/13/shot-scraper/",
+      "source": "Simon Willison",
+      "published": "2026-09-13T23:58:14+00:00",
+      "summary": "Release: shot-scraper 1.12 I've added WebP support to my shot-scraper screenshot automation tool. You can now take a WebP screenshot of a web page like this: shot-scraper https://simonwillison.net -o screenshot.webp --quality 80 The --quality option sets the quality - without that option the WebP file will be lossless. In my experience WebP screenshots are a",
       "areas": [
-        "data-platforms",
-        "privacy-risk"
+        "enterprise-ai"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "privacy-risk": [
-          "breach"
+        "enterprise-ai": [
+          "automation"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 0,
+        "relevance": 1,
+        "leverage": 1,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 2
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 70,
+      "priority": 68,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "5ab2885320c5b682",
+      "title": "Insight Partners’ Deven Parekh on why the firm is diversifying while everyone else bets the farm on OpenAI and Anthropic",
+      "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
+      "source": "TechCrunch",
+      "published": "2026-09-13T23:30:00+02:00",
+      "summary": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is deliberately staying diversified.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "a423d4829351c17f",
-      "title": "Panic builds over bankrupt Spirit’s looming data sale to Google",
-      "url": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google/",
-      "source": "Ars Technica",
-      "published": "2026-09-10T20:14:14+02:00",
-      "summary": "\"Bankruptcy cannot become the new land grab for AI.”",
+      "id": "2a1e9a6f48f960d9",
+      "title": "what if my git host were a static site generator?",
+      "url": "https://char.lt/blog/2026/09/sorcery-repo-viewer/",
+      "source": "Lobsters",
+      "published": "2026-09-13T18:10:06+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "d5116d4126b94ece",
+      "title": "Data collected by cars and sold to third parties",
+      "url": "https://www.theverge.com/column/994172/your-car-is-selling-your-data",
+      "source": "Hacker News",
+      "published": "2026-09-13T15:45:08+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -1783,11 +1749,64 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 70,
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1c55c53d0111f96b",
+      "title": "Trump and Mike Johnson think the AI industry is overreacting",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+      "source": "The Verge",
+      "published": "2026-09-13T15:41:48-04:00",
+      "summary": "Yesterday, Anthropic CEO Dario Amodei published a lengthy open letter saying it was time to \"pace the frontier\" and slow down AI development. OpenAI's Sam Altman and Elon Musk both agreed, publicly voicing their support on X. Even Alphabet's Demis Hassabis offered tentative support for Amodei's proposal. Donald Trump and House Speaker Mike Johnson, however, ",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "1ac93aa34356e7ee",
+      "title": "From Git to Fossil (2025)",
+      "url": "https://lucio.albenga.es/web-en/posts/2025/from-git-to-fossil.html",
+      "source": "Lobsters",
+      "published": "2026-09-13T09:51:19+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
@@ -1804,32 +1823,6 @@
       "matchedKeywords": {
         "models": [
           "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "41ae0f4f0398bd5a",
-      "title": "Managing Complex Application State with Reactive Data Flows",
-      "url": "https://yogthos.net/posts/2026-09-12-reactive-dataflow.html",
-      "source": "Lobsters",
-      "published": "2026-09-12T21:45:31+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -1909,32 +1902,6 @@
       "matchedKeywords": {
         "models": [
           "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "04706043f3ab1524",
-      "title": "OpenAI just wants to win",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/994255/openai-millennium-prize-problem-tristan-buckmaster-competition",
-      "source": "The Verge",
-      "published": "2026-09-12T07:00:00-04:00",
-      "summary": "OpenAI has spent the last few years planting flags across the increasingly difficult terrain in mathematics. This week, it claimed one of its biggest prizes yet: a solution to a legendary Millennium Prize problem. In normal circumstances, this would have been celebrated as a historic achievement. Instead, many mathematicians have watched OpenAI's relentless ",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
         ]
       },
       "scores": {
@@ -2053,32 +2020,6 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "36bcf31c88d13e0a",
-      "title": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO",
-      "url": "https://techcrunch.com/2026/09/11/nscale-adds-former-openai-exec-fidji-simo-to-its-board-ahead-of-potential-ipo/",
-      "source": "TechCrunch",
-      "published": "2026-09-11T18:46:25+02:00",
-      "summary": "The No. 2 exec at OpenAI also led Instacart through its IPO in 2023.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "dcd2834cfc16ba43",
       "title": "Claude users found ways around safeguards for bioweapons research",
       "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research/",
@@ -2117,6 +2058,33 @@
       "matchedKeywords": {
         "ai-agents": [
           "agentic"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "82feebd9879ad5f0",
+      "title": "Reverse-Engineering Claude Web's MicroVM: Uncovering Anthropic's Hidden Antspace",
+      "url": "https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace",
+      "source": "Hacker News",
+      "published": "2026-09-11T05:45:42+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic",
+          "claude"
         ]
       },
       "scores": {
@@ -2209,32 +2177,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e5cbe3a09b924efa",
-      "title": "From Git to Fossil",
-      "url": "https://lucio.albenga.es/web-en/posts/2025/from-git-to-fossil.html",
-      "source": "Hacker News",
-      "published": "2026-09-10T22:39:03+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
       "id": "2d1d46c7d885699f",
       "title": "Powering AI is an architecture problem",
       "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
@@ -2311,6 +2253,32 @@
       "priority": 66,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "da9686c4b683397a",
+      "title": "Fusion power startups find new partners in the defense world",
+      "url": "https://techcrunch.com/2026/09/13/fusion-power-startups-find-new-partners-in-the-defense-world/",
+      "source": "TechCrunch",
+      "published": "2026-09-13T15:15:00+02:00",
+      "summary": "Fusion startups are inking defense-related deals, reigniting the relationship between fusion and national security that might have gone dormant, but never completely disappeared.",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "cb208309d311c203",
@@ -2393,38 +2361,18 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "d7c25f6b20421551",
-      "title": "The purpose of DNS is to spread scams",
-      "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams/",
-      "source": "Simon Willison",
-      "published": "2026-09-06T14:40:07+00:00",
-      "summary": "The purpose of DNS is to spread scams Terence Eden shares some daunting statistics in support of his take that \"the Domain Name System's purpose seems to be a vector for criminals to run scams on people at a terrifyingly high rate\". On this Interisle report ( via Andrew Campling ), Terence says: It says 85 million new registrations of gTLDs were made in 2025",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 58,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "c27ff844030a58df",
-      "title": "Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases",
-      "url": "https://withspecific.com/benchmarks/real-swe",
-      "source": "Hacker News",
-      "published": "2026-09-12T22:25:48+02:00",
-      "summary": "Comments",
+      "id": "16fc4e29398af9d7",
+      "title": "Try These 3 iOS 27 Safari Settings to Get More Out of Apple’s Browser",
+      "url": "https://www.wired.com/story/iphone-settings-ios-27-safari-browser/",
+      "source": "Wired",
+      "published": "2026-09-13T12:30:00+02:00",
+      "summary": "Apple’s Safari browser gets a few helpful automation and personalization features in iOS 27.",
       "areas": [
         "enterprise-ai"
       ],
       "matchedKeywords": {
         "enterprise-ai": [
-          "enterprise"
+          "automation"
         ]
       },
       "scores": {
@@ -2465,28 +2413,62 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "1413e0938dd19aad",
-      "title": "The gpg.fail aftermath: On responsible disclosure, GPG, and the state of security in 2026 [32:37]",
-      "url": "https://media.ccc.de/v/2026-728-the-gpg-fail-aftermath-on-responsible-disclosure-gpg-and-the-state-of-security-in-2026",
-      "source": "Lobsters",
-      "published": "2026-09-12T19:24:59+02:00",
-      "summary": "slides In 2025, I [the speaker] found and disclosed a bunch of vulnerabilities in GPG, the most used PGP implementation, and held a talk at 39c3 about it. Some of the bugs ended up getting fixed. This talk describes the adventure and aftermath of getting there, shows some novel ones, and talks about the state of security in 2026. May contain zero-days =) Unt",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
+      "id": "32f234f5dd191848",
+      "title": "Open-Source AI and Open Models Reading List",
+      "url": "https://www.interconnects.ai/p/open-source-ai-reading-list",
+      "source": "Hacker News",
+      "published": "2026-09-14T02:22:51+02:00",
+      "summary": "Comments",
+      "areas": [],
+      "matchedKeywords": {},
       "scores": {
-        "relevance": 1,
+        "relevance": 0,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 54,
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "a8ea1b7ae2a1dd5c",
+      "title": "Coway Airmega Halo Review: Is Your Air Really Clean?",
+      "url": "https://www.wired.com/review/coway-airmega-halo/",
+      "source": "Wired",
+      "published": "2026-09-13T12:05:00+02:00",
+      "summary": "Coway’s new Airmega Halo runs quietly and clears visible smoke quickly, but its air-quality readings weren’t always reassuring.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "469c6eb3275d36fc",
+      "title": "California Brown Pelican",
+      "url": "https://simonwillison.net/2026/Sep/12/sighting-399708714/",
+      "source": "Simon Willison",
+      "published": "2026-09-12T21:16:09+00:00",
+      "summary": "California Brown Pelican, in San Mateo County, CA, US The Pacifica Pier shut down at the start of June after a crack in the concrete walkway made access to the pier unsafe. It has since been entirely taken over by pelicans! Tags: wildlife",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 2,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     }
