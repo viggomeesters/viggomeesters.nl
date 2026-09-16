@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-15T07:05:05+02:00",
+  "generatedAt": "2026-09-16T07:05:24+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 55,
+  "usefulOpen": 58,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -32,6 +32,44 @@
   "retainedItems": 0,
   "errors": {},
   "items": [
+    {
+      "id": "f7a589dc98daaaa4",
+      "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
+      "url": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T22:12:53+02:00",
+      "summary": "A new WhatsApp Business MCP server lets developers use AI coding agents like Claude, Cursor, Codex, and ChatGPT to handle setup, messaging templates, testing, and troubleshooting.",
+      "areas": [
+        "ai-agents",
+        "developer-tools",
+        "models"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents",
+          "mcp"
+        ],
+        "models": [
+          "claude",
+          "chatgpt"
+        ],
+        "developer-tools": [
+          "codex",
+          "cursor"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 2,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 100,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
     {
       "id": "b11edcd3f32333c0",
       "title": "Quoting huggingface.co/security.txt",
@@ -200,38 +238,6 @@
         "risk": 1
       },
       "priority": 94,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "04614548f168225d",
-      "title": "AI Agents Are Thirsty for Power",
-      "url": "https://www.wired.com/story/ai-agents-are-thirsty-for-power/",
-      "source": "Wired",
-      "published": "2026-09-13T12:00:00+02:00",
-      "summary": "Silicon Valley is shifting away from chatbot queries toward a future filled with resource-intensive agentic AI—and it's driving the data center buildout.",
-      "areas": [
-        "ai-agents",
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents",
-          "agentic"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
     },
@@ -597,6 +603,40 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
+      "id": "dc023f84b6935806",
+      "title": "AI models need more data about biology, and OpenAI is paying to create it",
+      "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+      "source": "MIT Technology Review",
+      "published": "2026-09-15T14:00:00+02:00",
+      "summary": "Last year Ruxandra Teslo, a policy analyst who focuses on clinical trials, posted an idea for supercharging medical AI systems: Use data from failed biotech companies. By bidding at their bankruptcy proceedings, she proposed, it might be possible to obtain detailed regulatory filings, manufacturing strategies, and safety data—types of information usually con",
+      "areas": [
+        "data-platforms",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
+        ],
+        "privacy-risk": [
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 1
+      },
+      "priority": 85,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
       "id": "7739870ea6c59988",
       "title": "Feeling sad about AI",
       "url": "https://simonwillison.net/2026/Sep/11/feeling-sad-about-ai/",
@@ -823,30 +863,28 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a3e1cc374de5f442",
-      "title": "OpenAI bots knew about the RubyGems caching vulnerability",
-      "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
-      "source": "Hacker News",
-      "published": "2026-09-14T14:40:57+02:00",
-      "summary": "Comments",
+      "id": "afb56c21dc580991",
+      "title": "Gemini Live audio",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "source": "Simon Willison",
+      "published": "2026-09-15T22:47:07+00:00",
+      "summary": "Tool: Gemini Live audio Google released Gemini 3.8 Live and 3.8 Live Extended Thinking today - two new speech-to-speech models that are a similar shape to OpenAI's GPT-Live family. I pointed GPT-6 Astra Extra High at the documentation and had it build me this web UI for trying out the new models. You can select a model and voice preset, enter an optional sys",
       "areas": [
-        "models",
-        "privacy-risk"
+        "models"
       ],
       "matchedKeywords": {
         "models": [
-          "openai"
-        ],
-        "privacy-risk": [
-          "vulnerability"
+          "openai",
+          "gpt",
+          "gemini"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 0,
+        "relevance": 2,
+        "leverage": 1,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "urgency": 2,
+        "risk": 0
       },
       "priority": 78,
       "action": "Watch",
@@ -1067,6 +1105,87 @@
         "risk": 0
       },
       "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "be59a8abca363a0d",
+      "title": "AI agents now have a place to snitch",
+      "url": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T19:42:59+02:00",
+      "summary": "The AI Contact Hotline is designed to be a discreet place where agents that have witnessed misbehavior can tip off authorities.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "455e31c2e53e276f",
+      "title": "Show HN: Pizza Bot – An inbox for AI agents that work in the background",
+      "url": "https://github.com/pizza-bot-app/pizza-bot",
+      "source": "Hacker News",
+      "published": "2026-09-15T17:20:26+02:00",
+      "summary": "Comments",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "2e5f60207f1d2814",
+      "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+      "url": "https://withcapsule.app/",
+      "source": "Hacker News",
+      "published": "2026-09-15T15:31:40+02:00",
+      "summary": "Comments",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data",
+          "sqlite"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
@@ -1542,12 +1661,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "c195e68fd0f8717b",
-      "title": "Is Big Tech’s AI slowdown a safety pact or a cartel?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
-      "source": "The Verge",
-      "published": "2026-09-14T18:59:41-04:00",
-      "summary": "When OpenAI CEO Sam Altman, Anthropic CEO Dario Amodei, Google DeepMind cofounder Demis Hassabis, and SpaceX head Elon Musk loosely agreed over the weekend to slow down AI development, skeptics spotted an ulterior motive immediately. The AI titans had declared that their aim was to \"pace the frontier,\" signing on at least partially to a […]",
+      "id": "d96146396402af27",
+      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks",
+      "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T17:47:03+02:00",
+      "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
       "areas": [
         "models",
         "privacy-risk"
@@ -1573,34 +1692,113 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "4a9c30825457026c",
-      "title": "AI Leaders Are Calling for a Slowdown. Trump’s Team Says It’s on Them",
-      "url": "https://www.wired.com/story/ai-leaders-are-calling-for-a-slowdown-trumps-team-says-its-on-them/",
-      "source": "Wired",
-      "published": "2026-09-14T13:00:00+02:00",
-      "summary": "Sam Altman and Elon Musk backed Anthropic CEO Dario Amodei’s weekend plea for regulation. The White House seems unlikely to oblige.",
+      "id": "42094c0e85292e19",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "url": "https://techcrunch.com/2026/09/15/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T21:00:00+02:00",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
       "areas": [
-        "models",
-        "privacy-risk"
+        "models"
       ],
       "matchedKeywords": {
         "models": [
-          "anthropic"
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "dec86a4d9f0b7668",
+      "title": "AI and data centers are incredibly unpopular in every poll",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+      "source": "The Verge",
+      "published": "2026-09-15T19:34:25-04:00",
+      "summary": "Poll data released Tuesday by the New York Times and Siena University confirms what we've already been seeing, and what politicians are responding to - AI and data centers are incredibly unpopular. Asked if they support or oppose the construction of data centers to power AI tech, 61 percent of the 1,503 likely voters surveyed […]",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4b5b0d9a803f31b8",
+      "title": "Leaks, data breaches, and ransom notes: The worst hacks of 2026 so far",
+      "url": "https://techcrunch.com/2026/09/15/the-worst-hacks-and-breaches-of-2026-so-far/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T18:00:00+02:00",
+      "summary": "From the massive DOGE data breach and the compromise of critical infrastructure to the hack of federal surveillance systems, here are the most damaging security incidents and data breaches of 2026 so far.",
+      "areas": [
+        "data-platforms",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
         ],
         "privacy-risk": [
-          "regulation"
+          "security",
+          "breach"
         ]
       },
       "scores": {
         "relevance": 3,
         "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 1
+        "urgency": 4,
+        "risk": 2
       },
-      "priority": 72,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "91d3b19fc019dddc",
+      "title": "Volvo increases the batteries for 2028 XC60 and XC90 plug-in refresh",
+      "url": "https://arstechnica.com/cars/2026/09/volvo-bigs-up-the-batteries-for-2028-xc60-and-xc90-plug-in-refresh/",
+      "source": "Ars Technica",
+      "published": "2026-09-15T09:00:30+02:00",
+      "summary": "The refreshed Volvos also get new infotainment systems with Gemini onboard.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "b6127142ab1ccd53",
@@ -1629,18 +1827,18 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "71a9a4ffc114050c",
-      "title": "OpenAI buys smartphone camera maker Glass Imaging for $300 million, report says",
-      "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T22:44:14+02:00",
-      "summary": "Glass Imaging was founded by a pair of former Apple engineers who previously led the team that developed Apple's Portrait Mode.",
+      "id": "02a12d1e3b183a39",
+      "title": "txcript: Switching coding agents mid-conversation",
+      "url": "https://github.com/skillsynchq/txcript",
+      "source": "Lobsters",
+      "published": "2026-09-16T00:12:07+02:00",
+      "summary": "Comments",
       "areas": [
-        "models"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai"
+        "ai-agents": [
+          "agents"
         ]
       },
       "scores": {
@@ -1655,18 +1853,253 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "7bfd583ec8c09d21",
-      "title": "AI infrastructure company Cornelis raises $205M to chip away at Nvidia’s dominance",
-      "url": "https://techcrunch.com/2026/09/14/ai-infrastructure-company-cornelis-raises-205m-to-chip-away-at-nvidias-dominance/",
+      "id": "4da465dd3b55784c",
+      "title": "The AI data center boom is colliding with cities scarred by big industry",
+      "url": "https://techcrunch.com/2026/09/15/the-ai-data-center-boom-is-colliding-with-cities-scarred-by-big-industry/",
       "source": "TechCrunch",
-      "published": "2026-09-14T22:07:37+02:00",
-      "summary": "The company also announced a product called Active Compute Fabric, a network technology that targets the fact that much GPU time is wasted waiting for data to arrive.",
+      "published": "2026-09-15T23:47:38+02:00",
+      "summary": "National outcry against data center construction has spread to Philadelphia, where officials suggested possible construction in a neighborhood already impacted by a now-defunct oil refinery.",
       "areas": [
         "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
           "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "0e140bdaa453c519",
+      "title": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
+      "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T20:29:20+02:00",
+      "summary": "The AI frenzy could push U.S. data centers to become one of the largest consumers of natural gas in the world.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e470f573327aec08",
+      "title": "Boston dumps Flock, says it shared data nationwide in violation of contract",
+      "url": "https://arstechnica.com/tech-policy/2026/09/boston-dumps-flock-says-it-shared-data-nationwide-in-violation-of-contract/",
+      "source": "Ars Technica",
+      "published": "2026-09-15T20:14:11+02:00",
+      "summary": "City: Flock enabled \"nationwide lookup\" despite contract requiring it to be disabled.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8d0c45e7535db5e8",
+      "title": "We got admin access to Baseten's production GitHub",
+      "url": "https://www.strix.ai/blog/baseten-harbor-github-pat-takeover",
+      "source": "Hacker News",
+      "published": "2026-09-15T20:11:24+02:00",
+      "summary": "Comments",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e66495476efe273a",
+      "title": "Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "source": "Hacker News",
+      "published": "2026-09-15T19:38:18+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "5381942dca8db956",
+      "title": "How much of F-Droid is LLM generated?",
+      "url": "https://tintotint.eu/whacky-corner/f-droid_slop/",
+      "source": "Lobsters",
+      "published": "2026-09-15T19:09:13+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4ad68a31e1233577",
+      "title": "The Inference Hardware Revolution of 2026",
+      "url": "https://spectrum.ieee.org/inference-hardware-revolution",
+      "source": "Hacker News",
+      "published": "2026-09-15T16:24:08+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "inference"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "4315439b7aaa2abf",
+      "title": "Evvy raises $40M as it seeks to further women’s health research with vaginal microbiome data",
+      "url": "https://techcrunch.com/2026/09/15/evvy-raises-40m-as-it-seeks-to-further-womens-health-research-with-vaginal-microbiome-data/",
+      "source": "TechCrunch",
+      "published": "2026-09-15T16:13:59+02:00",
+      "summary": "Women’s health company Evvy announced Tuesday a $40 million Series B led by Catalio Capital Management.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "574ba0d5f074700b",
+      "title": "The Census Bureau Is Overrun With Staffers From a MAGA Think Tank",
+      "url": "https://www.wired.com/story/a-trump-aligned-think-tank-focused-on-voting-rights-has-taken-over-the-census-bureau/",
+      "source": "Wired",
+      "published": "2026-09-15T12:15:00+02:00",
+      "summary": "The US Census is home to vast troves of sensitive data on nearly every person living in the country, which is used for apportioning and drawing congressional districts as well as allocating federal funding based on population sizes.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "cea143705db71f01",
+      "title": "A single firm is behind OpenAI, Anthropic, and Meta hacking scandals",
+      "url": "https://www.effort.news/irregular",
+      "source": "Hacker News",
+      "published": "2026-09-14T23:15:01+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
         ]
       },
       "scores": {
@@ -1720,189 +2153,6 @@
       "matchedKeywords": {
         "models": [
           "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "d109aa077dae37fa",
-      "title": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?",
-      "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T17:00:00+02:00",
-      "summary": "If you're building an AI company, the question isn't whether foundation models will continue to evolve. It's whether your company will continue creating value as they do. Don't miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "bb72817193455252",
-      "title": "Superhuman acquires YC-backed notetaker Fathom as productivity platforms push for agentic work",
-      "url": "https://techcrunch.com/2026/09/14/superhuman-acquires-yc-backed-notetaker-fathom-as-productivity-platforms-push-for-agentic-work/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T16:45:44+02:00",
-      "summary": "The notetaker offers a generous free plan, and that has resulted in over 400,000 monthly active users. The company said that over 1 million people have recorded meetings until now.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "0109037733785113",
-      "title": "Mergiraf: A syntax-aware git merge driver for a growing collection of programming languages and file formats",
-      "url": "https://codeberg.org/mergiraf/mergiraf",
-      "source": "Lobsters",
-      "published": "2026-09-14T13:16:14+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "5ab2885320c5b682",
-      "title": "Insight Partners’ Deven Parekh on why the firm is diversifying while everyone else bets the farm on OpenAI and Anthropic",
-      "url": "https://techcrunch.com/2026/09/13/insight-partners-devin-parekh-on-why-the-firm-is-diversifying-while-everyone-else-bets-the-farm-on-openai-and-anthropic/",
-      "source": "TechCrunch",
-      "published": "2026-09-13T23:30:00+02:00",
-      "summary": "Insight Partners' Devin Parekh opens up about losing Legora to General Catalyst, why he's fine holding stakes in rival AI labs, and why — even as everyone else piles into OpenAI and Anthropic — his $90 billion firm is deliberately staying diversified.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "2a1e9a6f48f960d9",
-      "title": "what if my git host were a static site generator?",
-      "url": "https://char.lt/blog/2026/09/sorcery-repo-viewer/",
-      "source": "Lobsters",
-      "published": "2026-09-13T18:10:06+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "d9dc6a91eb7b6aa0",
-      "title": "From Hacks to Bioweapons, Claude Misuse Is Now Everywhere",
-      "url": "https://www.wired.com/story/security-news-this-week-from-hacks-to-bioweapons-claude-misuse-is-now-everywhere/",
-      "source": "Wired",
-      "published": "2026-09-12T12:30:00+02:00",
-      "summary": "Plus: The US disrupts the internet’s biggest black market, a Conti ransomware hacker gets prison time, Meta fails to stop AI-generated videos of child abuse.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "34ef16e5a591bc2b",
-      "title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
-      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems/",
-      "source": "Wired",
-      "published": "2026-09-11T20:59:25+02:00",
-      "summary": "The proposed class action alleges Meta illegally harvested people’s Facebook and Instagram photos to train its AI image-generation models and to build its unreleased “NameTag” face recognition feature.",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -1995,84 +2245,28 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "2d1d46c7d885699f",
-      "title": "Powering AI is an architecture problem",
-      "url": "https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem/",
-      "source": "MIT Technology Review",
-      "published": "2026-09-10T13:00:00+02:00",
-      "summary": "On July 22, 2026, a transmission line fault in Ashburn, Virginia—the heart of the world’s largest data center cluster—knocked more than 3 gigawatts of load off the grid in seconds. And it wasn’t the first time. Two years earlier, a single failed surge arrester dropped roughly 60 Virginia facilities and 1,500 megawatts at once. No…",
+      "id": "fc1dd798e6cde43a",
+      "title": "Microsoft announces Windows and Surface event for October 7th",
+      "url": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco",
+      "source": "The Verge",
+      "published": "2026-09-15T16:36:59-04:00",
+      "summary": "It's been more than two years since the last major Windows event, so Microsoft is heading to San Francisco next month to outline the future of Windows and Surface devices. At an event on October 7th, the company says it will host a \"conversation on how local AI will shape the next chapter of the […]",
       "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "93175a33303b6aed",
-      "title": "Microsoft’s new AI ‘code of conduct’ tells models not to hack systems or trick humans",
-      "url": "https://techcrunch.com/2026/09/14/microsofts-new-ai-code-of-conduct-tells-models-not-to-hack-systems-or-trick-humans/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T18:27:53+02:00",
-      "summary": "The code of conduct lays out general principles that Microsoft AI models should uphold — supporting humans rather than replacing them, for instance, and accelerating human flourishing — as well as specific safety constraints meant to implement those principles.",
-      "areas": [
-        "enterprise-ai",
-        "privacy-risk"
+        "enterprise-ai"
       ],
       "matchedKeywords": {
         "enterprise-ai": [
           "microsoft"
-        ],
-        "privacy-risk": [
-          "safety"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 62,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "ccd614e47e79e954",
-      "title": "Apple Home’s new security camera features cost as much as $60 a month",
-      "url": "https://www.theverge.com/tech/994949/apple-intelligence-apple-home-icloud-plus-cost-subscription",
-      "source": "The Verge",
-      "published": "2026-09-14T18:28:52-04:00",
-      "summary": "With the public release of iOS 27 and tvOS 27, Apple Home is getting an injection of Apple Intelligence - but you'll have to pay more for it. Apple Intelligence for Home brings AI-powered video summaries to HomeKit Secure Video, so you can get short text descriptions of who and what compatible security cameras saw, […]",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
         ]
       },
       "scores": {
         "relevance": 1,
         "leverage": 0,
         "novelty": 4,
-        "urgency": 4,
-        "risk": 1
+        "urgency": 2,
+        "risk": 0
       },
-      "priority": 58,
+      "priority": 60,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2137,52 +2331,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "82e13ba83616c09d",
-      "title": "Quoting Jakub Pachocki",
-      "url": "https://simonwillison.net/2026/Sep/7/jakub-pachocki/",
-      "source": "Simon Willison",
-      "published": "2026-09-07T22:26:25+00:00",
-      "summary": "The strongest argument I see for continuing to train much smarter models quickly is the need to build defensive systems against the dangers posed by other AI. [...] We will need powerful, aligned AI for defense; to secure infrastructure, to protect against rogue agents in real time, and to invent entirely new protective measures. This will be a primary focus",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 58,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "16fc4e29398af9d7",
-      "title": "Try These 3 iOS 27 Safari Settings to Get More Out of Apple’s Browser",
-      "url": "https://www.wired.com/story/iphone-settings-ios-27-safari-browser/",
-      "source": "Wired",
-      "published": "2026-09-13T12:30:00+02:00",
-      "summary": "Apple’s Safari browser gets a few helpful automation and personalization features in iOS 27.",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "automation"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "2d15004f14aeaa5f",
       "title": "The AI policy window is open. We need to act.",
       "url": "https://openai.com/index/ai-policy-window",
@@ -2209,37 +2357,57 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "d688767f897e19e2",
-      "title": "ClickFix attacks are tricking Mac and Windows users into hacking themselves",
-      "url": "https://techcrunch.com/2026/09/14/clickfix-attacks-are-tricking-mac-and-windows-users-into-hacking-themselves/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T20:08:43+02:00",
-      "summary": "If you clicked on a fake HBO Max ad on Reddit in the past week, you might have fallen victim to a rising \"ClickFix\" security threat.",
+      "id": "c8346d06ee27912e",
+      "title": "Agility’s new humanoid robot will stop, squat to avoid harming human coworkers",
+      "url": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers/",
+      "source": "Ars Technica",
+      "published": "2026-09-15T20:33:02+02:00",
+      "summary": "Robots can start working outside physical cages and without safety barriers.",
       "areas": [
         "privacy-risk"
       ],
       "matchedKeywords": {
         "privacy-risk": [
-          "security"
+          "safety"
         ]
       },
       "scores": {
         "relevance": 1,
         "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
+        "novelty": 4,
+        "urgency": 2,
         "risk": 1
       },
-      "priority": 54,
+      "priority": 52,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e39d4f2207adb894",
-      "title": "A New Equal-Area Map for Interactive Computer Use (natively zooms to Mercator)",
-      "url": "https://www.benjoffe.com/map",
-      "source": "Lobsters",
-      "published": "2026-09-15T00:37:17+02:00",
+      "id": "7fb62c9b6ec41bcc",
+      "title": "Babbel Promo Code: Up to 65% Off in September 2026",
+      "url": "https://www.wired.com/story/babbel-promo-code/",
+      "source": "Wired",
+      "published": "2026-09-16T07:00:00+02:00",
+      "summary": "Master a new language with expert-led courses. Use our verified Babbel coupon codes to save up to 65% on student plans and 60% on 6-month subscriptions.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "69ccdda4553810a0",
+      "title": "Negativland, Culture Jamming, and the Art of Making Something New",
+      "url": "https://blog.archive.org/2026/09/11/negativland-culture-jamming-and-the-art-of-making-something-new/",
+      "source": "Hacker News",
+      "published": "2026-09-16T04:46:06+02:00",
       "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
@@ -2255,32 +2423,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "3104e17bdcdad299",
-      "title": "What blog posts influenced your thinking the most?",
-      "url": "https://simonwillison.net/2026/Sep/14/influences/",
-      "source": "Simon Willison",
-      "published": "2026-09-14T20:21:48+00:00",
-      "summary": "My comment on What blog posts influenced your thinking the most? — Lobste.rs. An early Joel Spolsky one for me was The Law of Leaky Abstractions . I read that near the start of my career and it's encouraged me to always be looking for improved understanding of the layers under where I'm working, just in case one of those abstractions leaks. A more recent one",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 2,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "371421afa5fddcde",
-      "title": "A new solar cell could generate electricity underwater",
-      "url": "https://arstechnica.com/science/2026/09/a-new-solar-cell-could-generate-electricity-underwater/",
-      "source": "Ars Technica",
-      "published": "2026-09-14T20:03:16+02:00",
-      "summary": "The trick isn't using perovskites—the trick is making them last.",
+      "id": "7563ed9cd67be10e",
+      "title": "Apple Reference Image: A New Approach for Verified Photography",
+      "url": "https://security.apple.com/blog/apple-reference-image/",
+      "source": "Hacker News",
+      "published": "2026-09-16T04:07:31+02:00",
+      "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2295,132 +2443,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "df8604384c943b75",
-      "title": "Volkswagen’s crazy-efficient EV borrows an idea from Slate",
-      "url": "https://techcrunch.com/2026/09/14/volkswagens-crazy-efficient-ev-borrows-an-idea-from-slate/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T19:41:20+02:00",
-      "summary": "Volkswagen's new efficiency-minded halo car is almost twice as efficient as the most efficient production car, the Lucid Air.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "cd525428188eef68",
-      "title": "macOS 27: new Siri takes on AI productivity apps",
-      "url": "https://techcrunch.com/2026/09/14/macos-27-new-siri-takes-on-ai-productivity-apps/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T19:10:09+02:00",
-      "summary": "The two most noticeable things about macOS 27 Golden Gate are the newly updated Siri AI and the design changes that make windows and icons more consistent.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "ab5c5c94fcc3c3c0",
-      "title": "Steam Frame: The Ars Technica review",
-      "url": "https://arstechnica.com/gaming/2026/09/steam-frame-the-ars-technica-review/",
-      "source": "Ars Technica",
-      "published": "2026-09-14T19:00:07+02:00",
-      "summary": "Valve's new $1,059 VR hardware tries to revive an abandoned VR \"revolution.\"",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "6fc8592045e15914",
-      "title": "Fashion app Daydream uses Apple Intelligence to help you shop the outfits in your camera roll",
-      "url": "https://techcrunch.com/2026/09/14/fashion-discovery-app-daydream-uses-apple-intelligence-to-help-you-shop-the-outfits-saved-in-your-camera-roll/",
-      "source": "TechCrunch",
-      "published": "2026-09-14T19:00:00+02:00",
-      "summary": "Thanks to the launch of iOS 27, Daydream's app now includes features that can turn saved outfit photos into shoppable results and search for products through Siri without opening the app.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "bda8fce1b00fecf0",
-      "title": "New corners, new lights for 2028 Volvo XC40",
-      "url": "https://arstechnica.com/cars/2026/09/how-to-make-a-small-suv-slightly-smaller-the-2028-volvo-xc40/",
-      "source": "Ars Technica",
-      "published": "2026-09-14T17:46:06+02:00",
-      "summary": "The Swedish automaker gives its small SUV a sympathetic makeover.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "1f7d2fff03903866",
-      "title": "Quoting Laurie Voss",
-      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
-      "source": "Simon Willison",
-      "published": "2026-09-14T14:34:29+00:00",
-      "summary": "The cost of writing code collapsed, and the cost of reviewing, fixing and operating it is following, and I'm assuming it gets there. What's left of making software is finding out what people actually want, defining it precisely, and making it pleasant to use. That cost is per piece of software and doesn't transfer, so as the amount of software goes to infini",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 1,
-        "novelty": 2,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "1abc8b060796fc62",
-      "title": "macOS 27 is available now",
-      "url": "https://www.theverge.com/tech/994818/apple-macos-27-golden-gate-available-now",
+      "id": "0130d79d29bf82c6",
+      "title": "The Boox Palma 3 gets stylus support and a sleek redesign",
+      "url": "https://www.theverge.com/tech/995826/boox-palma-3-e-ink-reader-pocket-smartphone-android-16",
       "source": "The Verge",
-      "published": "2026-09-14T13:10:13-04:00",
-      "summary": "Apple released macOS 27 Golden Gate on Monday, which brings the new Siri AI assistant, Liquid Glass improvements, improved performance, and more. The update is compatible with all Macs with Apple Silicon, but not Intel Macs - Apple released its final big update for Intel-based Macs last year with macOS Tahoe. Siri AI is arguably […]",
+      "published": "2026-09-15T22:00:00-04:00",
+      "summary": "Nearly two years after the last update to Boox's smartphone-sized black-and-white e-reader, the company announced the Palma 3 with a sleek redesign, new functionality, and a handful of other small updates that may justify its significant price bump depending on how you plan to use it. While the Palma 2 launched in 2024 for $279.99, […]",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "33fccd23b6fdb639",
+      "title": "The EOS R8 Mark II is Canon’s lightest full-frame camera with stabilization",
+      "url": "https://www.theverge.com/tech/995430/canon-eos-r8-mark-11-full-frame-digital-camera-pricing-availability",
+      "source": "The Verge",
+      "published": "2026-09-15T21:00:00-04:00",
+      "summary": "Canon announced the second-generation of its EOS R8 with a new retro-inspired redesign and the addition of in-body stabilization. That feature was one of the most notable omissions from the original R8 that launched in 2023 as a smaller, cheaper, and more accessible alternative to the Canon R6 Mark II for photographers wanting a larger […]",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
