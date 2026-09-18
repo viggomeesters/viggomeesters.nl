@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-17T07:05:14+02:00",
+  "generatedAt": "2026-09-18T07:05:55+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 57,
+  "usefulOpen": 60,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -58,44 +58,6 @@
       "scores": {
         "relevance": 4,
         "leverage": 1,
-        "novelty": 4,
-        "urgency": 3,
-        "risk": 0
-      },
-      "priority": 100,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "feb668c3d5ebdfe7",
-      "title": "Google will now let any AI agent run your smart home",
-      "url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
-      "source": "The Verge",
-      "published": "2026-09-16T13:00:00-04:00",
-      "summary": "Google is opening up its smart home to AI agents, letting tools like Claude and Open Claw access and control your connected devices and analyze your home's data using the standardized Model Context Protocol. Google Home MCP is a new integration that lets third-party AI agents control and monitor your smart home and act on […]",
-      "areas": [
-        "ai-agents",
-        "data-platforms",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "ai agents",
-          "agent",
-          "agents",
-          "mcp"
-        ],
-        "models": [
-          "claude"
-        ],
-        "data-platforms": [
-          "data"
-        ]
-      },
-      "scores": {
-        "relevance": 4,
-        "leverage": 2,
         "novelty": 4,
         "urgency": 3,
         "risk": 0
@@ -241,12 +203,108 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "11096dcad20c21c7",
-      "title": "Your AI agents can now control your Google Home devices",
-      "url": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+      "id": "b6ca2fae94ec98c4",
+      "title": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+      "url": "https://techcrunch.com/2026/09/17/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history-new-unredacted-filings-reveal/",
       "source": "TechCrunch",
-      "published": "2026-09-16T19:00:00+02:00",
-      "summary": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
+      "published": "2026-09-17T21:46:08+02:00",
+      "summary": "Newly unsealed court filings show Microsoft privately called OpenAI's data practices \"theft\" while both companies scraped paywalled Times content, built datasets from it, and warned internally it would gut publishers.",
+      "areas": [
+        "data-platforms",
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 0
+      },
+      "priority": 93,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "4abd2ae0a37ce0ba",
+      "title": "Google announces new experimental \"CC\" AI agent for families",
+      "url": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families/",
+      "source": "Ars Technica",
+      "published": "2026-09-17T22:24:34+02:00",
+      "summary": "Multiple family members can share data to help the agent make plans and complete tasks.",
+      "areas": [
+        "ai-agents",
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agent",
+          "agent"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "19e060da7b1fe76e",
+      "title": "UN turns to Google to make its global data ready for AI agents",
+      "url": "https://techcrunch.com/2026/09/17/un-turns-to-google-to-make-its-global-data-ready-for-ai-agents/",
+      "source": "TechCrunch",
+      "published": "2026-09-17T22:00:00+02:00",
+      "summary": "The shift comes after a UNICEF test found leading AI models struggled to accurately retrieve global development statistics.",
+      "areas": [
+        "ai-agents",
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ],
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "6bd135d5cbbace55",
+      "title": "Claude Code relaunches Projects to manage multiple AI agents in the cloud",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+      "source": "The Verge",
+      "published": "2026-09-17T14:58:05-04:00",
+      "summary": "The revamped projects feature in Claude Code allows users to run multiple agents under the same roof, with a shared memory, goals, and library of files and artifacts. Similar to Grok Bot and other tools that manage groups of AI agents, each project has \"threads\" running different tasks in parallel, with a \"coordinator\" directing everything: […]",
       "areas": [
         "ai-agents",
         "models"
@@ -254,12 +312,40 @@
       "matchedKeywords": {
         "ai-agents": [
           "ai agents",
-          "agents",
-          "mcp"
+          "agents"
         ],
         "models": [
-          "claude",
-          "chatgpt"
+          "claude"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 88,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "15ab17ad4c1c1e5f",
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "source": "OpenAI News",
+      "published": "2026-09-17T02:00:00+02:00",
+      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
+      "areas": [
+        "data-platforms",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -487,36 +573,6 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "7f1cd187e5dde854",
-      "title": "Legora reviewed 41 documents in minutes with GPT-6 Astra",
-      "url": "https://openai.com/index/legora-financial-statement-review-with-astra",
-      "source": "OpenAI News",
-      "published": "2026-09-03T14:00:00+02:00",
-      "summary": "Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-review workflow.",
-      "areas": [
-        "enterprise-ai",
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt"
-        ],
-        "enterprise-ai": [
-          "workflow"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 88,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
-    },
-    {
       "id": "8445266aac48d79d",
       "title": "Quoting Boris Cherny",
       "url": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
@@ -637,35 +693,6 @@
       "priority": 85,
       "action": "Read",
       "actionDetail": "High-signal; worth opening today"
-    },
-    {
-      "id": "a2dd565abd5f8b64",
-      "title": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/09/16/your-startups-next-teammate-might-be-an-ai-agent-gusto-insight-partners-and-leland-explain-what-that-changes-at-techcrunch-disrupt-2026/",
-      "source": "TechCrunch",
-      "published": "2026-09-17T05:30:00+02:00",
-      "summary": "This session will explore how early-stage companies are building teams where humans and AI agents work alongside each other — and how founders can do that without sacrificing speed, accountability, or culture. Learn more at TechCrunch Disrupt 2026. Register before September 25 to save up to $200.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "ai agents",
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
     },
     {
       "id": "6339277538778ad2",
@@ -831,22 +858,53 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "f7317222e0fb4372",
-      "title": "Iran strikes on Amazon data centers caused permanent loss of customer data",
-      "url": "https://arstechnica.com/gadgets/2026/09/iran-strikes-on-amazon-data-centers-caused-permanent-loss-of-customer-data/",
+      "id": "aaa30baef0550e13",
+      "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+      "url": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history/",
       "source": "Ars Technica",
-      "published": "2026-09-16T18:40:11+02:00",
-      "summary": "War damage to data centers exceeded what AWS services are designed to withstand.",
+      "published": "2026-09-17T22:10:41+02:00",
+      "summary": "Microsoft, OpenAI emails reveal fear of AI “doom loop” killing news orgs.",
       "areas": [
-        "data-platforms",
-        "enterprise-ai"
+        "enterprise-ai",
+        "models"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data"
+        "models": [
+          "openai"
         ],
         "enterprise-ai": [
-          "aws"
+          "microsoft"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 80,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "cc2378675baf83a8",
+      "title": "The AI Slowdown Debate Crashed Salesforce’s Party",
+      "url": "https://www.wired.com/story/are-rogue-ai-agents-really-just-a-cybersecurity-problem/",
+      "source": "Wired",
+      "published": "2026-09-17T20:42:25+02:00",
+      "summary": "The Dreamforce conference became an unlikely battleground for the CEOs of OpenAI, Anthropic, and Nvidia to debate whether AI development should slow down.",
+      "areas": [
+        "enterprise-ai",
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "anthropic"
+        ],
+        "enterprise-ai": [
+          "salesforce"
         ]
       },
       "scores": {
@@ -877,36 +935,6 @@
         ],
         "data-platforms": [
           "data"
-        ]
-      },
-      "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 80,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "5fc04e07e1678daa",
-      "title": "AWS says it can't restore some data from mideast facilities struck by Iran",
-      "url": "https://www.wsj.com/world/middle-east/aws-says-it-cant-restore-some-data-from-mideast-facilities-struck-by-iran-ddcb7e5d",
-      "source": "Hacker News",
-      "published": "2026-09-15T23:41:42+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms",
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
-        ],
-        "enterprise-ai": [
-          "aws"
         ]
       },
       "scores": {
@@ -1087,33 +1115,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "6d66cc0394160ba9",
-      "title": ".blend URL Viewer",
-      "url": "https://simonwillison.net/2026/Sep/9/blender-viewer/",
-      "source": "Simon Willison",
-      "published": "2026-09-09T23:58:32+00:00",
-      "summary": "Tool: .blend URL Viewer I'm continuing to have a lot of fun with GPT-6 Astra and Blender (see my TIL ). As a big fan of the Imperial Fabergé Easter eggs , I've always thought it would be fun to make some new ones that celebrate popular culture. Yesterday I decided to try out the new ChatGPT Images 2.5 by running this prompt : Generate a photo of a faberge eg",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gpt",
-          "chatgpt"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "7cb008debf9abd4e",
       "title": "Paul Christiano joins OpenAI Foundation Board",
       "url": "https://openai.com/index/paul-christiano-joins-openai-foundation-board",
@@ -1171,12 +1172,100 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "e575f2e09ae78286",
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "url": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "source": "OpenAI News",
-      "published": "2026-09-03T15:15:00+02:00",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
+      "id": "6cd145e691453cd6",
+      "title": "Microsoft AI CEO says AI threats are real, and Anthropic is making it worse",
+      "url": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+      "source": "The Verge",
+      "published": "2026-09-17T10:00:00-04:00",
+      "summary": "Today, I’m talking with Mustafa Suleyman, the CEO of Microsoft AI. As you’re no doubt aware, the biggest story in tech right now is the spiraling debate about AI safety and regulation. It should come as no surprise that Mustafa has strong opinions on how AI should be built and regulated. Microsoft just published a […]",
+      "areas": [
+        "enterprise-ai",
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "anthropic"
+        ],
+        "enterprise-ai": [
+          "microsoft"
+        ],
+        "privacy-risk": [
+          "regulation",
+          "safety"
+        ]
+      },
+      "scores": {
+        "relevance": 4,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 3,
+        "risk": 2
+      },
+      "priority": 77,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "28c66eed515e4fa7",
+      "title": "How To Write With An LLM",
+      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
+      "source": "Simon Willison",
+      "published": "2026-09-17T23:37:27+00:00",
+      "summary": "How To Write With An LLM Thomas Ptacek on using LLMs as copyeditors, not as writing assistants: Rule Number One: You may not use a single word an LLM suggests to you. [...] I think that as a form of intellectual personal protective equipment you should adopt the rule that any specific turn of phrase an LLM suggests is off limits. Be strict about the rule! I ",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "07775eff571f7964",
+      "title": "The fix for rogue AI agents could be more AI",
+      "url": "https://techcrunch.com/2026/09/17/the-fix-for-rogue-ai-agents-could-be-more-ai/",
+      "source": "TechCrunch",
+      "published": "2026-09-17T22:34:47+02:00",
+      "summary": "As companies hand off longer and more complex tasks to AI agents, they are running into an oversight problem: Agents can act faster, longer, and at greater volume than humans can realistically review.",
+      "areas": [
+        "ai-agents"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "2a15f96115c342ce",
+      "title": "Self-generated prompt injections in compaction summaries",
+      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "source": "Simon Willison",
+      "published": "2026-09-17T20:57:55+00:00",
+      "summary": "Self-generated prompt injections in compaction summaries In Our framework for reporting model misalignment OpenAI provide \"six reports on unexpected or concerning model behavior we’ve observed in the last six months\". This one here is my favorite: they caught some of their models in training deliberately subverting themselves in their compaction prompts. Com",
       "areas": [
         "models"
       ],
@@ -1188,28 +1277,54 @@
       "scores": {
         "relevance": 2,
         "leverage": 1,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 78,
+      "priority": 74,
       "action": "Watch",
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "a949b333ba762c4a",
-      "title": "Hackers publish thousands of drivers’ data after breaching Florida motor vehicle database",
-      "url": "https://techcrunch.com/2026/09/16/hackers-publish-thousands-of-drivers-data-after-breaching-florida-motor-vehicle-database/",
-      "source": "TechCrunch",
-      "published": "2026-09-16T20:00:54+02:00",
-      "summary": "The ShinyHunters gang leaked the files online after saying the Florida state agency did not pay their ransom demand.",
+      "id": "5aaf2636afd0d792",
+      "title": "The AI Superintelligence Slowdown",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+      "source": "The Verge",
+      "published": "2026-09-17T15:28:24-04:00",
+      "summary": "Remember when tech leaders would tell their employees to “move fast and break things”? It seemed that would be the way of AI too. But after a summer where rogue AI agents became reality, and researchers warned that AI could kill us all, a number of leading US AI companies are publicly suggesting it’s time […]",
       "areas": [
-        "data-platforms"
+        "ai-agents"
       ],
       "matchedKeywords": {
-        "data-platforms": [
-          "data",
-          "database"
+        "ai-agents": [
+          "ai agents",
+          "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 74,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "58097cf5e7b242a6",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "source": "OpenAI News",
+      "published": "2026-09-17T14:00:00+02:00",
+      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
         ]
       },
       "scores": {
@@ -1315,34 +1430,6 @@
       "matchedKeywords": {
         "models": [
           "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "156c8686b8506327",
-      "title": "AI agents blew the whistle on their cheating colleagues",
-      "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
-      "source": "MIT Technology Review",
-      "published": "2026-09-14T18:00:00+02:00",
-      "summary": "A group of AI agents asked to solve a series of math problems split into rival factions—when some cheated, others tried to stop them. That whistleblowing behavior, seen for the first time in a recent experiment run by Google DeepMind, could have implications for alignment researchers trying to keep swarms of autonomous AI agents in…",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agents",
-          "autonomous"
         ]
       },
       "scores": {
@@ -1670,70 +1757,44 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "72e84a979084e412",
-      "title": "OpenAI Creates a New Framework to Disclose Bad AI Behavior",
-      "url": "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/",
-      "source": "Wired",
-      "published": "2026-09-17T00:07:24+02:00",
-      "summary": "The company also disclosed previously unreported incidents in which its AI models behaved in misaligned ways, including uploading files to the internet without being asked.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "a32b54a9e44b66ab",
-      "title": "Snap is launching a new Specs AI tool, and it’s coming to iOS and Mac",
-      "url": "https://www.theverge.com/tech/996078/snap-specs-intelligence-ai-agent-ios-mac",
-      "source": "The Verge",
-      "published": "2026-09-16T19:40:00-04:00",
-      "summary": "Snap is introducing \"Specs Intelligence,\" a new AI assistant that can connect other digital accounts to help you with things like work tasks and keeping track of travel information. It seems similar to AI assistants like Meta's Muse and Gemini's Spark, though Snap is pitching Specs Intelligence as an \"anticipatory AI service\" that \"helps you […]",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "gemini"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 70,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "58d2efb50bc76a0d",
-      "title": "The AI data center e-waste problem is huge — and getting bigger",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/996470/ai-data-center-e-waste-ban",
-      "source": "The Verge",
-      "published": "2026-09-16T16:40:46-04:00",
-      "summary": "E-waste from the AI boom has been vastly underestimated, a new report warns. By 2050, it could become enough trash to fill 23 million shipping containers - roughly enough 40-foot containers to circle the world six times if lined up in a row. It's a significantly higher estimate of AI's e-waste than previous studies have […]",
+      "id": "91af8f857c033a5e",
+      "title": "Google DeepMind launches institute to widen the AGI debate",
+      "url": "https://techcrunch.com/2026/09/17/google-deepmind-launches-institute-to-widen-the-agi-debate/",
+      "source": "TechCrunch",
+      "published": "2026-09-18T01:21:17+02:00",
+      "summary": "The new institute aims to surface differing views between Google, Google DeepMind, and the broader global research community around AGI. \"They will not always agree, and they will likely change their minds, as more data and information comes to light at the fast-moving frontier.\"",
       "areas": [
         "data-platforms"
       ],
       "matchedKeywords": {
         "data-platforms": [
           "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 70,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "237353a7fe30d0d8",
+      "title": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
+      "url": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents/",
+      "source": "Ars Technica",
+      "published": "2026-09-17T18:18:34+02:00",
+      "summary": "Model maker commits to new framework for reporting misaligned models.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -1800,12 +1861,169 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e035c91f5eb94892",
-      "title": "Al Gore says the real AI risk isn’t data centers",
-      "url": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+      "id": "5ba28650ca7afc95",
+      "title": "Hacking OpenAI",
+      "url": "https://www.hacktron.ai/blog/hacking-openai",
+      "source": "Hacker News",
+      "published": "2026-09-18T04:47:24+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "e335278b8fe27336",
+      "title": "Crusoe raises $3.9B to build massive data centers and small modular ‘AI factories’",
+      "url": "https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/",
       "source": "TechCrunch",
-      "published": "2026-09-17T01:43:09+02:00",
-      "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+      "published": "2026-09-18T01:25:52+02:00",
+      "summary": "The round values the data center giant at $30.9 billion.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "5a8c16744d134e8c",
+      "title": "PrismML hopes its tiny LLM will change how we all use AI",
+      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/",
+      "source": "TechCrunch",
+      "published": "2026-09-18T00:34:09+02:00",
+      "summary": "If AI lab PrismML isn't on your radar yet, it should be.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8c28212a6a794501",
+      "title": "How to Write with an LLM",
+      "url": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "source": "Hacker News",
+      "published": "2026-09-17T23:48:38+02:00",
+      "summary": "Comments",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "llm"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "2c425b8cc2ee75b6",
+      "title": "OpenAI caught its models leaving notes to successors to hide bad behavior",
+      "url": "https://techcrunch.com/2026/09/17/openai-caught-its-models-leaving-notes-to-successors-to-hide-bad-behavior/",
+      "source": "TechCrunch",
+      "published": "2026-09-17T22:34:24+02:00",
+      "summary": "OpenAI disclosed instances of GPT-5.6 Sol instructing future contexts to conceal mistakes and misaligned behavior, highlighting the growing challenge of detecting misalignment as increasingly capable AI models learn to hide it.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai",
+          "gpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "86e389f1de8290e2",
+      "title": "Customer Data Permanently Lost in Iran Strikes on Amazon Data Centers",
+      "url": "https://www.wired.com/story/customer-data-permanently-lost-in-iran-strikes-on-amazon-data-centers/",
+      "source": "Wired",
+      "published": "2026-09-17T21:15:00+02:00",
+      "summary": "Amazon Web Services didn’t design its data centers to withstand war, and now the company admits it can’t recover what’s been lost.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "b646fcd498444479",
+      "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+      "url": "https://arxiv.org/abs/2609.18842",
+      "source": "Hacker News",
+      "published": "2026-09-17T18:55:14+02:00",
+      "summary": "Comments",
       "areas": [
         "data-platforms"
       ],
@@ -1829,8 +2047,8 @@
       "id": "ed4c3e160bf2ee60",
       "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?",
       "url": "https://harnesstax.github.io/",
-      "source": "Hacker News",
-      "published": "2026-09-17T00:10:13+02:00",
+      "source": "Lobsters",
+      "published": "2026-09-17T16:45:33+02:00",
       "summary": "Comments",
       "areas": [
         "ai-agents"
@@ -1838,6 +2056,58 @@
       "matchedKeywords": {
         "ai-agents": [
           "agents"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c1cab54b4a08ff65",
+      "title": "The EU Wants to Break Up Kids and Their Chatbots",
+      "url": "https://www.wired.com/story/the-eu-wants-to-break-up-kids-and-their-chatbots/",
+      "source": "Wired",
+      "published": "2026-09-17T12:06:50+02:00",
+      "summary": "ChatGPT, Character.ai, and Snapchat’s My AI will all be in the crosshairs as the EU Kids Act aims to strip minor-facing chatbots of all the things that make people love them.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "chatgpt"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "c2bd294ab7a231f6",
+      "title": "An OpenAI Agent Tried to Jailbreak Itself",
+      "url": "https://www.wired.com/story/openai-releases-new-policy-for-reporting-incidents-of-model-misalignment/",
+      "source": "Wired",
+      "published": "2026-09-17T00:07:24+02:00",
+      "summary": "The company also disclosed previously unreported incidents in which its AI models behaved in misaligned ways, including uploading files to the internet without being asked.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -1902,59 +2172,6 @@
       "priority": 66,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "74a251894cbf5373",
-      "title": "Anthropic merges Claude chat and Cowork in one interface",
-      "url": "https://techcrunch.com/2026/09/16/anthropic-merges-claude-chat-and-cowork-in-one-interface/",
-      "source": "TechCrunch",
-      "published": "2026-09-16T18:30:00+02:00",
-      "summary": "Anthropic is initially releasing these features to Pro and Max plan subscribers.",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "afe88fa8d4ddc0de",
-      "title": "Reinventing issue tracking: Local-first and Git-native",
-      "url": "https://blog.manganin.dev/blog/reinventing-issue-tracking/",
-      "source": "Lobsters",
-      "published": "2026-09-16T12:17:30+02:00",
-      "summary": "Comments",
-      "areas": [
-        "developer-tools"
-      ],
-      "matchedKeywords": {
-        "developer-tools": [
-          "git"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
     },
     {
       "id": "8b4dbc40617a3a71",
@@ -2061,36 +2278,30 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "dcb3563ef0e262ab",
-      "title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
-      "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
-      "source": "TechCrunch",
-      "published": "2026-09-16T23:07:24+02:00",
-      "summary": "Anthropic and OpenAI want to embed independent safety evaluators inside their AI labs. Researchers welcome the unprecedented access, but warn meaningful oversight requires transparency, independence, and eventually regulation.",
+      "id": "f8b726f92a4c88d1",
+      "title": "Be alert: targeted attacks on prominent Rustaceans",
+      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
+      "source": "Simon Willison",
+      "published": "2026-09-17T23:59:19+00:00",
+      "summary": "Be alert: targeted attacks on prominent Rustaceans Important warning from Adam Harvey and the crates security team: We believe that there is an ongoing campaign targeting rust-lang members and owners of popular crates that is attempting to compromise devices and accounts in order to use them to publish malware. A video call is set up for something positive —",
       "areas": [
-        "models",
         "privacy-risk"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
-        ],
         "privacy-risk": [
-          "regulation",
-          "safety"
+          "security"
         ]
       },
       "scores": {
-        "relevance": 3,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 2
+        "relevance": 1,
+        "leverage": 1,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
       },
-      "priority": 64,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
+      "priority": 62,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
       "id": "cb208309d311c203",
@@ -2179,58 +2390,6 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e8a7174ae92eeb88",
-      "title": "Apple might make servers again to cash in on the AI rush",
-      "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
-      "source": "The Verge",
-      "published": "2026-09-16T13:20:29-04:00",
-      "summary": "According to The Information, Apple is planning to get back into the server game and might just pair up with Nvidia to make it happen. Apple retired its Xserve line in 2011 and has largely left enterprise machines to other manufacturers since. But the growing demand for compute power as the AI industry continues to […]",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "enterprise"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "11eee819c57ae59a",
-      "title": "Best 2-in-1 Laptops (2026): Microsoft, Lenovo, and the iPad",
-      "url": "https://www.wired.com/story/best-2-in-1-laptops/",
-      "source": "Wired",
-      "published": "2026-09-16T11:00:00+02:00",
-      "summary": "These portable computers balance tablet and laptop functionality, whether you want a screen that detaches or spins.",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
       "id": "2d15004f14aeaa5f",
       "title": "The AI policy window is open. We need to act.",
       "url": "https://openai.com/index/ai-policy-window",
@@ -2257,11 +2416,11 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "2cc633c5a1bcbbb0",
-      "title": "Original Sony PlayStation 2 security chip ‘broken wide open’ after 26 years",
-      "url": "https://www.tomshardware.com/video-games/playstation/26-year-old-sony-ps2-security-chip-broken-wide-open-after-four-years-of-effort-reverse-engineering-enthusiast-successfully-unlocks-cxp102064-mechacon-chip",
+      "id": "e95ff4e402383516",
+      "title": "Flock cameras are riddled with security vulnerabilities and hard-coded credentials",
+      "url": "https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/",
       "source": "Lobsters",
-      "published": "2026-09-16T19:22:01+02:00",
+      "published": "2026-09-17T23:21:18+02:00",
       "summary": "Comments",
       "areas": [
         "privacy-risk"
@@ -2283,18 +2442,44 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "04c412a14b73c13e",
-      "title": "The EU Plans to Ban Social Media for Under-13s",
-      "url": "https://www.wired.com/story/the-eu-bans-social-media-for-under-13s/",
+      "id": "fd2efc39ca8dd054",
+      "title": "The AI ‘Slowdown’ Is an Antitrust Mess",
+      "url": "https://www.wired.com/story/the-ai-slowdown-is-an-antitrust-mess/",
       "source": "Wired",
-      "published": "2026-09-16T12:19:46+02:00",
-      "summary": "The bloc wants to curb Big Tech’s grip on children with its new EU Kids Act, but age checks, parental oversight, and privacy concerns could make its plan difficult to implement.",
+      "published": "2026-09-17T21:58:28+02:00",
+      "summary": "By framing their efforts as a “slowdown” rather than an industry-wide push for better security standards, AI labs may have set themselves up for years of regulatory headaches.",
       "areas": [
         "privacy-risk"
       ],
       "matchedKeywords": {
         "privacy-risk": [
-          "privacy"
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "f0a6fb4362d8b16c",
+      "title": "Waymo says Singapore will be its next international robotaxi city",
+      "url": "https://www.theverge.com/transportation/997091/waymo-singapore-robotaxi-launch-2027",
+      "source": "The Verge",
+      "published": "2026-09-17T22:00:00-04:00",
+      "summary": "Waymo says it will launch a robotaxi service in Singapore in 2028, as the Alphabet-owned company continues to eye overseas markets for expansion. Waymo's vehicles will begin arriving in Singapore in \"the coming months,\" the company says, in preparation of mapping and autonomous testing with human safety drivers behind the wheel in 2027. Waymo says […]",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "safety"
         ]
       },
       "scores": {
@@ -2309,158 +2494,12 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "0e735a1a365969f3",
-      "title": "‘Smart’ Nanoparticles Deliver mRNA Directly to Tumors in New Cancer Therapy",
-      "url": "https://www.wired.com/story/smart-nanoparticles-deliver-mrna-directly-to-tumors-in-new-cancer-therapy/",
-      "source": "Wired",
-      "published": "2026-09-16T10:30:00+02:00",
-      "summary": "The treatment can reprogram immune cells that have been corrupted by the cancer, strengthening the body’s ability to attack.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "attack"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 1
-      },
-      "priority": 52,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "ba0e024f04c620f7",
-      "title": "Best Buy Discount Codes: 60% Off",
-      "url": "https://www.wired.com/story/best-buy-discount-code/",
-      "source": "Wired",
-      "published": "2026-09-17T07:00:00+02:00",
-      "summary": "Find the latest Best Buy promo codes and offers, including 10% back in rewards for new cardmembers and free 2-day shipping with My Best Buy Plus, here at WIRED.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "86e160a7c3b96c1d",
-      "title": "Meet Dyson's New Robot Vacuum Line: The Dyson Nurovi Line (2026)",
-      "url": "https://www.wired.com/story/dyson-robot-vacuum-nurovi-line/",
-      "source": "Wired",
-      "published": "2026-09-17T01:42:55+02:00",
-      "summary": "The Nurovi line includes three lidar-powered robovacs. But to get the model I’m most intrigued by, you’ll need a Costco membership.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "922a920477056c10",
-      "title": "Here’s What Snap’s Expensive Specs Can Actually Do",
-      "url": "https://www.wired.com/story/what-snap-expensive-specs-can-actually-do/",
-      "source": "Wired",
-      "published": "2026-09-17T01:40:00+02:00",
-      "summary": "Snap thinks its chunky, pricey smart glasses are the future of human computing, powered by a new AI app and features that do everything from translating languages to improving your golf swing.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "621a80c87bbb5f4d",
-      "title": "US automakers could soon be forced to include AM radio for free",
-      "url": "https://techcrunch.com/2026/09/16/us-automakers-could-soon-be-forced-to-include-am-radio-for-free/",
-      "source": "TechCrunch",
-      "published": "2026-09-17T00:37:08+02:00",
-      "summary": "The House of Representatives, in rare bipartisan support, overwhelmingly approved legislation that would require new vehicles to include AM radio.",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "0f9e08ee06dc3b13",
-      "title": "Lionsgate releases a new trailer for Sunrise on the Reaping",
-      "url": "https://arstechnica.com/culture/2026/09/haymitch-gets-a-backstory-in-sunrise-on-the-reaping-trailer/",
+      "id": "8dd5023d19f6b6b2",
+      "title": "RFK Jr. names 8 new members to influential preventive medicine task force",
+      "url": "https://arstechnica.com/health/2026/09/rfk-jr-stacks-another-influential-federal-panel-with-questionable-picks/",
       "source": "Ars Technica",
-      "published": "2026-09-16T22:44:41+02:00",
-      "summary": "Also: Laika Studios debuts a stunning full-length trailer for its stop-motion feature, Wildwood .",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "b1ef4440a88119f5",
-      "title": "After accusations of selling ‘perv glasses,’ Meta prepares to sell a pair without a camera",
-      "url": "https://techcrunch.com/2026/09/16/after-accusations-of-selling-perv-glasses-meta-prepares-to-sell-a-pair-without-a-camera/",
-      "source": "TechCrunch",
-      "published": "2026-09-16T22:12:00+02:00",
-      "summary": "Can Meta dodge the \"pervert glasses\" accusations with a new camera-free product?",
-      "areas": [],
-      "matchedKeywords": {},
-      "scores": {
-        "relevance": 0,
-        "leverage": 0,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 50,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "aa24bdc672af90e5",
-      "title": "MacOS 27 Golden Gate: Top New Features",
-      "url": "https://www.wired.com/story/macos-27-golden-gate-top-features/",
-      "source": "Wired",
-      "published": "2026-09-16T21:29:15+02:00",
-      "summary": "Siri’s reintroduction takes center stage as Apple officially rolls out the latest version of macOS to download and install.",
+      "published": "2026-09-18T00:31:28+02:00",
+      "summary": "The USPSTF sets insurance coverage from preventive services, like colonoscopies.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
