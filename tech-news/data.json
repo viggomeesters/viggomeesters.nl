@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-24T07:05:29+02:00",
+  "generatedAt": "2026-09-25T07:05:17+02:00",
   "source": "public RSS/Atom feeds",
   "total": 90,
-  "usefulOpen": 67,
+  "usefulOpen": 65,
   "sources": [
     "Hacker News",
     "Lobsters",
@@ -347,12 +347,73 @@
       "actionDetail": "High-signal; worth opening today"
     },
     {
-      "id": "3c1b5c0cd028b57b",
-      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
-      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+      "id": "35a924775fd7a0a3",
+      "title": "I Think I Found an AI Agent Worth the Risk",
+      "url": "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/",
+      "source": "Wired",
+      "published": "2026-09-24T21:36:35+02:00",
+      "summary": "Instinct saved me $550, booked my restaurant reservations, and warned me about a phishing scam. It also wasted $64 and might be a security nightmare.",
+      "areas": [
+        "ai-agents",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "ai-agents": [
+          "ai agent",
+          "agent"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "ff594e14bc2a8bda",
+      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
       "source": "GitHub Blog",
-      "published": "2026-09-02T23:00:00+02:00",
-      "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations. The post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog .",
+      "published": "2026-09-24T20:26:12+02:00",
+      "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. The post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog .",
+      "areas": [
+        "developer-tools",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "github"
+        ],
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 86,
+      "action": "Read",
+      "actionDetail": "High-signal; worth opening today"
+    },
+    {
+      "id": "789ab5a04086dce7",
+      "title": "When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+      "source": "GitHub Blog",
+      "published": "2026-09-24T22:00:00+02:00",
+      "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases. The post When chat is the wrong UI appeared first on The GitHub Blog .",
       "areas": [
         "developer-tools"
       ],
@@ -365,13 +426,13 @@
       "scores": {
         "relevance": 2,
         "leverage": 2,
-        "novelty": 4,
+        "novelty": 3,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 86,
-      "action": "Read",
-      "actionDetail": "High-signal; worth opening today"
+      "priority": 82,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
     },
     {
       "id": "c1b35c752814f889",
@@ -483,49 +544,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "d3068ef53ce7b4fa",
-      "title": "GitHub Copilot app for Beginners: Run several agents at once",
-      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
-      "source": "GitHub Blog",
-      "published": "2026-09-03T18:00:00+02:00",
-      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful. The post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog .",
+      "id": "732c880078ea8ef9",
+      "title": "Microsoft is killing off the ‘Copilot Plus PC’ brand",
+      "url": "https://www.theverge.com/tech/1000495/microsoft-is-killing-off-the-copilot-plus-pc-brand",
+      "source": "The Verge",
+      "published": "2026-09-24T21:25:53-04:00",
+      "summary": "Remember when Microsoft wanted everyone to know that \"Copilot Plus PCs\" were the ones to get, because those were the PCs that that'd have enough built-in AI muscle to get things done? Two and a half years later, Microsoft and Qualcomm seem to be admitting the brand is already dead. Windows Central's Zac Bowden reports […]",
       "areas": [
-        "developer-tools"
+        "developer-tools",
+        "enterprise-ai"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "github",
           "copilot"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 2,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 82,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "587fd2519b096467",
-      "title": "ChatGPT mobile app gets voice-based agentic features",
-      "url": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/",
-      "source": "TechCrunch",
-      "published": "2026-09-23T19:00:00+02:00",
-      "summary": "Pro and Plus users will be able to use the Work tab on their phones to complete agentic tasks.",
-      "areas": [
-        "ai-agents",
-        "models"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "agentic"
         ],
-        "models": [
-          "chatgpt"
+        "enterprise-ai": [
+          "microsoft"
         ]
       },
       "scores": {
@@ -540,22 +574,22 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "25db5b942dfb6df7",
-      "title": "Microsoft’s new Surface Mouse has haptic feedback and a customizable action button",
-      "url": "https://www.theverge.com/news/999211/microsoft-surface-mouse-haptic-feedback",
+      "id": "679c03f8f218f3c1",
+      "title": "Gemini 3.8 Live with Live Avatar gives Google’s AI a face",
+      "url": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
       "source": "The Verge",
-      "published": "2026-09-23T16:30:00-04:00",
-      "summary": "Microsoft is launching a second generation of its Surface Mouse next month that includes haptic feedback support. The Surface Mouse also has a customizable action button for the first time, which is primarily designed for quick access to Copilot (of course), but can be configured to work with other shortcuts from the Surface app. \"Its […]",
+      "published": "2026-09-24T15:59:26-04:00",
+      "summary": "Google's new Gemini 3.8 Live update lets users have conversations with the model while watching an animated AI persona respond in real time. The \"Live Avatar\" will lip-sync and show different facial expressions during conversations, but it's currently only available to Gemini Enterprise customers. As noted by Google, Live Avatar can transition between the 97",
       "areas": [
-        "developer-tools",
-        "enterprise-ai"
+        "enterprise-ai",
+        "models"
       ],
       "matchedKeywords": {
-        "developer-tools": [
-          "copilot"
+        "models": [
+          "gemini"
         ],
         "enterprise-ai": [
-          "microsoft"
+          "enterprise"
         ]
       },
       "scores": {
@@ -660,110 +694,86 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "090c9cb30804526c",
-      "title": "Everything new coming to Meta’s AI agent Muse",
-      "url": "https://techcrunch.com/2026/09/23/everything-new-coming-to-metas-ai-agent-muse/",
+      "id": "325b01d87283362c",
+      "title": "commit-rewriter 0.2",
+      "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter/",
+      "source": "Simon Willison",
+      "published": "2026-09-24T20:06:53+00:00",
+      "summary": "Release: commit-rewriter 0.2 Support for branches other than the default branch. Use uvx commit-rewriter --branch other to run against another branch. #3 Tags: git",
+      "areas": [
+        "developer-tools"
+      ],
+      "matchedKeywords": {
+        "developer-tools": [
+          "git"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "3a3ca66c4f10c256",
+      "title": "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
+      "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
+      "source": "Ars Technica",
+      "published": "2026-09-24T18:01:16+02:00",
+      "summary": "\"There will obviously be legal consequences,\" prime minister promises.",
+      "areas": [
+        "models",
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "breach"
+        ]
+      },
+      "scores": {
+        "relevance": 3,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 78,
+      "action": "Watch",
+      "actionDetail": "Relevant, but not urgent"
+    },
+    {
+      "id": "615115503ff95e99",
+      "title": "Australia to investigate if OpenAI hack of government health website broke the law",
+      "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
       "source": "TechCrunch",
-      "published": "2026-09-24T03:13:32+02:00",
-      "summary": "CEO Mark Zuckerberg kicked off the company’s annual Connect event in Menlo Park on Wednesday with a keynote that made one thing clear: Meta is going all-in on Muse. It's even coming to Meta's AI glasses.",
+      "published": "2026-09-24T14:54:19+02:00",
+      "summary": "The incident is the first known breach to affect a government agency, and Australia's prime minister has vowed to hold OpenAI accountable.",
       "areas": [
-        "ai-agents"
+        "models",
+        "privacy-risk"
       ],
       "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
+        "models": [
+          "openai"
+        ],
+        "privacy-risk": [
+          "breach"
         ]
       },
       "scores": {
-        "relevance": 2,
-        "leverage": 1,
+        "relevance": 3,
+        "leverage": 0,
         "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "63b1ce498789fc68",
-      "title": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot",
-      "url": "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/",
-      "source": "Wired",
-      "published": "2026-09-23T20:30:00+02:00",
-      "summary": "A clandestine card-counting operation suggests we may need new ways to spot agent-to-agent deception.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agents",
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "ffdb947b24e25585",
-      "title": "Meta is making a standalone Muse AI gadget",
-      "url": "https://www.theverge.com/tech/999750/muse-charm-meta-ai-hardware",
-      "source": "The Verge",
-      "published": "2026-09-23T20:15:20-04:00",
-      "summary": "Meta is building a dedicated hardware device for its new Muse AI agent. The product, called Muse Charm, was briefly shown off by Meta CEO Mark Zuckerberg at the end of tonight's Meta Connect presentation. It looks almost like a chunky smartwatch without the strap - just a big screen, plus a little lanyard for […]",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 78,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
-      "id": "47685f48f267eebb",
-      "title": "Meta is making Muse more powerful and will let you video chat with it, too",
-      "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026",
-      "source": "The Verge",
-      "published": "2026-09-23T19:19:42-04:00",
-      "summary": "Meta is quickly iterating on its new Muse AI agent, announcing a bunch of updates today that make the bot more capable and able to chat with you in more ways. Muse agents are getting their own email addresses that they can use for accomplishing tasks. You'll also be able to communicate with your Muse […]",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent",
-          "agents"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 4,
-        "urgency": 2,
-        "risk": 0
+        "urgency": 4,
+        "risk": 1
       },
       "priority": 78,
       "action": "Watch",
@@ -796,12 +806,12 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "88d9fe1d98d1cbee",
-      "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+      "id": "edccc07fbd408f35",
+      "title": "Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need.",
       "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
       "source": "GitHub Blog",
       "published": "2026-09-23T15:00:00+02:00",
-      "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient software. Here’s what over 1000 GitHub users told us they need. appeared first on The GitHub Blog .",
+      "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute. The post Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need. appeared first on The GitHub Blog .",
       "areas": [
         "developer-tools"
       ],
@@ -1310,33 +1320,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "0c688fac567114da",
-      "title": "Meta made a Tamagotchi-like wearable for its Muse AI agent",
-      "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/",
-      "source": "TechCrunch",
-      "published": "2026-09-24T02:46:17+02:00",
-      "summary": "The tiny hardware device creates another mobile home for its AI agent Muse.",
-      "areas": [
-        "ai-agents"
-      ],
-      "matchedKeywords": {
-        "ai-agents": [
-          "ai agent",
-          "agent"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "b7912633d8800371",
       "title": "Two years of OpenAI Academy",
       "url": "https://openai.com/index/two-years-of-openai-academy",
@@ -1757,32 +1740,6 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "2d8593cb9e108ef2",
-      "title": "The contagion of fear",
-      "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
-      "source": "Simon Willison",
-      "published": "2026-09-14T21:18:13+00:00",
-      "summary": "The contagion of fear Bryan Cantrill responds to the tweet by former Anthropic employee Jacob Coxon confirming that many Anthropic researchers believe AI \"could kill us all by the end of the decade\". Bryan shares a story of his own youthful mistakes causing unjustified panic among less technical peers, and warns against doing the same: These ghoulish claims ",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 1,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 74,
-      "action": "Watch",
-      "actionDetail": "Relevant, but not urgent"
-    },
-    {
       "id": "d8a2839423085027",
       "title": "How Fyxer built an AI executive assistant people trust",
       "url": "https://openai.com/index/fyxer",
@@ -1887,19 +1844,18 @@
       "actionDetail": "Relevant, but not urgent"
     },
     {
-      "id": "9c31aabe56a02ef6",
-      "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
-      "url": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+      "id": "c5b9058ac912257a",
+      "title": "New Jersey fines data center $1.1M after drone pics expose 62 gas generators",
+      "url": "https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators/",
       "source": "Ars Technica",
-      "published": "2026-09-22T23:25:18+02:00",
-      "summary": "The frontier AI model race has entered its comparison shopping phase.",
+      "published": "2026-09-24T20:20:58+02:00",
+      "summary": "Million-dollar fines won’t end billionaires’ data center pollution, neighbors fear.",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "openai",
-          "anthropic"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
@@ -1914,117 +1870,64 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "7e9df62ddad6b7ed",
-      "title": "Australia says OpenAI agent hacked into government website",
-      "url": "https://www.channelnewsasia.com/world/australia-openai-agent-breach-government-portal-6406411",
-      "source": "Hacker News",
-      "published": "2026-09-24T03:24:00+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "openai"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "74ee20e4745eae63",
-      "title": "Anthropic says its biology lab has already found something big",
-      "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/",
+      "id": "8f81f7e02c4d95d7",
+      "title": "Oracle sends force majeure notice on its New Mexico Stargate data center",
+      "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/",
       "source": "TechCrunch",
-      "published": "2026-09-24T00:17:39+02:00",
-      "summary": "But maybe the biggest reveal is that Anthropic has not let Claude run loose in its biology lab. Humans are still, so far, in the loop.",
+      "published": "2026-09-24T20:11:44+02:00",
+      "summary": "The notice would allow Oracle to delay payments should the facility miss its 2028 target to come online.",
       "areas": [
-        "models"
+        "data-platforms"
       ],
       "matchedKeywords": {
-        "models": [
-          "anthropic",
-          "claude"
+        "data-platforms": [
+          "data"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "873a10577dfe037f",
-      "title": "Mercury 2.5 LLM hits 770 tokens per second",
-      "url": "https://artificialanalysis.ai/models/mercury-2-5",
+      "id": "4c671c9b8eae467f",
+      "title": "Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+      "url": "https://github.com/devdotfast/whiteboard",
       "source": "Hacker News",
-      "published": "2026-09-24T00:16:19+02:00",
+      "published": "2026-09-24T19:21:36+02:00",
       "summary": "Comments",
       "areas": [
-        "models"
+        "developer-tools"
       ],
       "matchedKeywords": {
-        "models": [
-          "llm"
+        "developer-tools": [
+          "ide"
         ]
       },
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "e1ef88a71366fc06",
-      "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "source": "Hacker News",
-      "published": "2026-09-23T20:06:47+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "claude"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "ae6ddd0fedffd91a",
-      "title": "Gemini 3.8 text-to-speech",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
-      "source": "Hacker News",
-      "published": "2026-09-23T17:29:23+02:00",
-      "summary": "Comments",
+      "id": "abe3b4bede55030f",
+      "title": "Google’s Gemini Can Now Make Calls for You on Pixel Phones",
+      "url": "https://www.wired.com/story/googles-gemini-can-now-make-calls-for-you-on-pixel-phones/",
+      "source": "Wired",
+      "published": "2026-09-24T18:00:00+02:00",
+      "summary": "Call for Me—a feature that’s exclusive to the Pixel 11 series—gives robocalls a new meaning.",
       "areas": [
         "models"
       ],
@@ -2036,53 +1939,27 @@
       "scores": {
         "relevance": 2,
         "leverage": 0,
-        "novelty": 3,
+        "novelty": 4,
         "urgency": 2,
         "risk": 0
       },
-      "priority": 66,
+      "priority": 70,
       "action": "Ledger",
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "eb07cfc723a8706f",
-      "title": "Cheaper LLM labelling",
-      "url": "https://entropicthoughts.com/cheaper-llm-labeling",
+      "id": "c0d55a4accfc8817",
+      "title": "Pencils Down, Eyes Open: A Rails Developer After Rails World",
+      "url": "https://caio.ca/blog/pencils-down-eyes-open-rails-world",
       "source": "Lobsters",
-      "published": "2026-09-23T15:14:06+02:00",
-      "summary": "Comments",
-      "areas": [
-        "models"
-      ],
-      "matchedKeywords": {
-        "models": [
-          "llm"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "b5a302e8f5a54a5e",
-      "title": "The GitHub wiki is an anti-pattern",
-      "url": "https://michaelheap.com/github-wiki-is-an-antipattern/",
-      "source": "Lobsters",
-      "published": "2026-09-23T13:48:39+02:00",
+      "published": "2026-09-25T03:31:43+02:00",
       "summary": "Comments",
       "areas": [
         "developer-tools"
       ],
       "matchedKeywords": {
         "developer-tools": [
-          "github"
+          "developer"
         ]
       },
       "scores": {
@@ -2097,12 +1974,12 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "bc383f5990884725",
-      "title": "A Startup Wants to Power Data Centers With ‘Supercritical’ Carbon Dioxide",
-      "url": "https://www.wired.com/story/startup-power-data-centers-supercritical-co2/",
-      "source": "Wired",
-      "published": "2026-09-23T13:00:00+02:00",
-      "summary": "The technology could strap onto existing gas turbines and make them more efficient—but it wouldn’t do away with their emissions entirely.",
+      "id": "0f1ce05b62337a56",
+      "title": "Waymo is scaling fast: Here’s what the fleet data shows",
+      "url": "https://techcrunch.com/2026/09/24/waymo-is-scaling-fast-heres-what-the-fleet-data-shows/",
+      "source": "TechCrunch",
+      "published": "2026-09-25T01:24:33+02:00",
+      "summary": "In the past month, Waymo has expanded its fleet in Texas by 49%. There are other hot spots as well.",
       "areas": [
         "data-platforms"
       ],
@@ -2123,18 +2000,70 @@
       "actionDetail": "Keep as context/provenance"
     },
     {
-      "id": "cf0f8243ac210db1",
-      "title": "The GNOME LLM Policy That I Want",
-      "url": "https://blogs.gnome.org/alatiera/2026/09/23/the-gnome-llm-policy-that-i-want/",
-      "source": "Lobsters",
-      "published": "2026-09-23T12:28:14+02:00",
-      "summary": "Comments",
+      "id": "23080009cee6b6d8",
+      "title": "Google's first Suncatcher orbital data center test launches October 1",
+      "url": "https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1/",
+      "source": "Ars Technica",
+      "published": "2026-09-24T18:16:34+02:00",
+      "summary": "Google's experimental orbital data center will have four TPUs and only run for 15 minutes at a time.",
+      "areas": [
+        "data-platforms"
+      ],
+      "matchedKeywords": {
+        "data-platforms": [
+          "data"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "8d5ed4449ad248ca",
+      "title": "Google tests letting Gemini call businesses for you",
+      "url": "https://techcrunch.com/2026/09/24/google-tests-letting-gemini-make-phone-calls-initially-for-us-pixel-owners/",
+      "source": "TechCrunch",
+      "published": "2026-09-24T18:00:00+02:00",
+      "summary": "Google says the AI-calling feature will first be available to Pixel 11 owners in the U.S. who pay for a Gemini subscription.",
       "areas": [
         "models"
       ],
       "matchedKeywords": {
         "models": [
-          "llm"
+          "gemini"
+        ]
+      },
+      "scores": {
+        "relevance": 2,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 66,
+      "action": "Ledger",
+      "actionDetail": "Keep as context/provenance"
+    },
+    {
+      "id": "a2d83b4ea60f0f9e",
+      "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
+      "url": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+      "source": "Wired",
+      "published": "2026-09-24T12:46:56+02:00",
+      "summary": "The country’s prime minister expressed disappointment at being informed of the hack only via email. Now Australia is investigating whether OpenAI broke the law.",
+      "areas": [
+        "models"
+      ],
+      "matchedKeywords": {
+        "models": [
+          "openai"
         ]
       },
       "scores": {
@@ -2162,32 +2091,6 @@
         "models": [
           "openai",
           "anthropic"
-        ]
-      },
-      "scores": {
-        "relevance": 2,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 66,
-      "action": "Ledger",
-      "actionDetail": "Keep as context/provenance"
-    },
-    {
-      "id": "679db0eb4d72767c",
-      "title": "Data liberation: Apache Kafka's native cluster mirroring",
-      "url": "https://developers.redhat.com/articles/2026/09/22/data-liberation-apache-kafka-native-cluster-mirroring",
-      "source": "Hacker News",
-      "published": "2026-09-22T16:18:09+02:00",
-      "summary": "Comments",
-      "areas": [
-        "data-platforms"
-      ],
-      "matchedKeywords": {
-        "data-platforms": [
-          "data"
         ]
       },
       "scores": {
@@ -2280,12 +2183,32 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "c847bf17a24c395f",
-      "title": "Microsoft refreshes its smaller Surface Pro and Laptop with Qualcomm’s X2 Plus",
-      "url": "https://www.theverge.com/news/999195/microsoft-surface-pro-12-inch-surface-laptop-13-inch-qualcomm-x2-plus",
+      "id": "063b1d069b90a8d6",
+      "title": "datasette 1.0a41",
+      "url": "https://simonwillison.net/2026/Sep/24/datasette/",
+      "source": "Simon Willison",
+      "published": "2026-09-24T19:15:23+00:00",
+      "summary": "Release: datasette 1.0a41 Alec Garcia added support for OpenTelemetry to Datasette in this release. I've also refactored all of Datasette's modal dialogs to a single Web Component, which is now documented for other plugins to use . Tags: javascript , datasette , web-components , alex-garcia , opentelemetry",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 1,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 58,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "2e22f114c8bf28a6",
+      "title": "Microsoft puts Brad Smith in charge of communications",
+      "url": "https://www.theverge.com/news/1000374/microsoft-comms-pr-brad-smith-cela",
       "source": "The Verge",
-      "published": "2026-09-23T16:30:00-04:00",
-      "summary": "Microsoft is refreshing its Surface Pro 12-inch and Surface Laptop 13-inch devices with Qualcomm's latest Snapdragon X2 Plus chips. The smaller Surface devices retain the same design and hardware features from last year, with faster and more capable chips inside and higher price tags (thanks RAMageddon!). While the 12-inch Surface Pro started at $799.99 last",
+      "published": "2026-09-24T18:08:22-04:00",
+      "summary": "Microsoft is moving its communications group out of marketing and into its Corporate, External, and Legal Affairs (CELA) organization. The surprise change will see Microsoft vice chair and president Brad Smith oversee communications, while the company searches for a replacement for Frank Shaw, chief communications officer, who is departing later this year. M",
       "areas": [
         "enterprise-ai"
       ],
@@ -2302,110 +2225,6 @@
         "risk": 0
       },
       "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "d2a74d9c5df50f9b",
-      "title": "AT&T Is Automating Away Jobs—and Its Old Telecom Empire",
-      "url": "https://www.wired.com/story/atandt-is-automating-away-its-old-telecom-empire/",
-      "source": "Wired",
-      "published": "2026-09-23T12:15:00+02:00",
-      "summary": "The telecom giant is eager to show Wall Street that it can do more with less. That means fewer employees, less electricity, and increased automation.",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "automation"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "a86d173f65f9dfee",
-      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
-      "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
-      "source": "Ars Technica",
-      "published": "2026-09-22T21:45:47+02:00",
-      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier.",
-      "areas": [
-        "enterprise-ai"
-      ],
-      "matchedKeywords": {
-        "enterprise-ai": [
-          "microsoft"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 2,
-        "risk": 0
-      },
-      "priority": 56,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "7c8eb15557b723ac",
-      "title": "A US-China AI Hotline Won't Be Ready For a While",
-      "url": "https://www.wired.com/story/a-us-china-ai-hotline-wont-be-ready-for-a-while/",
-      "source": "Wired",
-      "published": "2026-09-23T23:00:00+02:00",
-      "summary": "As the US and China race to become the dominant power in the AI industry, the countries also appear to be figuring out ways to communicate on national security issues.",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "security"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
-      "action": "Skip",
-      "actionDetail": "Low fit or noisy consumer-tech item"
-    },
-    {
-      "id": "b7dd251a432dab35",
-      "title": "Radicle: Disclosure of Vulnerability in the Network Protocol",
-      "url": "https://radicle.dev/2026/09/23/disclosure-of-vulnerability-in-network-protocol",
-      "source": "Hacker News",
-      "published": "2026-09-23T17:23:05+02:00",
-      "summary": "Comments",
-      "areas": [
-        "privacy-risk"
-      ],
-      "matchedKeywords": {
-        "privacy-risk": [
-          "vulnerability"
-        ]
-      },
-      "scores": {
-        "relevance": 1,
-        "leverage": 0,
-        "novelty": 3,
-        "urgency": 4,
-        "risk": 1
-      },
-      "priority": 54,
       "action": "Skip",
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
@@ -2436,12 +2255,38 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "b04c050c912be64f",
-      "title": "Ideas on modernizing the open-source desktop",
-      "url": "https://lwn.net/SubscriberLink/1095425/2d9f411252325784/",
+      "id": "15b6f28582c246ee",
+      "title": "Security auditing in the age of (good enough) AI",
+      "url": "https://blog.trailofbits.com/2026/09/18/auditing-in-the-age-of-good-enough-ai/",
       "source": "Hacker News",
-      "published": "2026-09-24T04:52:09+02:00",
+      "published": "2026-09-21T23:53:01+02:00",
       "summary": "Comments",
+      "areas": [
+        "privacy-risk"
+      ],
+      "matchedKeywords": {
+        "privacy-risk": [
+          "security"
+        ]
+      },
+      "scores": {
+        "relevance": 1,
+        "leverage": 0,
+        "novelty": 3,
+        "urgency": 4,
+        "risk": 1
+      },
+      "priority": 54,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "c1caf72901aa75be",
+      "title": "Lightspeed targets $250M for new India fund, focusing on early-stage AI",
+      "url": "https://techcrunch.com/2026/09/24/lightspeed-targets-250m-for-new-india-fund-focusing-on-early-stage-ai/",
+      "source": "TechCrunch",
+      "published": "2026-09-25T07:00:00+02:00",
+      "summary": "The Silicon Valley firm is aligning its India fundraising cycle with its global funds for the first time, as it shifts to a shorter investment period.",
       "areas": [],
       "matchedKeywords": {},
       "scores": {
@@ -2456,11 +2301,131 @@
       "actionDetail": "Low fit or noisy consumer-tech item"
     },
     {
-      "id": "e70e196b22d0a15f",
-      "title": "Show HN: An open-source manufacturing ERP/MES/QMS",
-      "url": "https://carbon.ms/self-hosted",
+      "id": "ba5bdd3517d153e7",
+      "title": "New York defies Trump admin, asks court to shut down Polymarket gambling",
+      "url": "https://arstechnica.com/tech-policy/2026/09/new-york-asks-court-to-shut-down-polymarkets-illegal-gambling-operation/",
+      "source": "Ars Technica",
+      "published": "2026-09-24T21:07:19+02:00",
+      "summary": "New York sues Polymarket as Trump admin tries to override state gambling laws.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "84926b42a90d999d",
+      "title": "Meta’s Muse Charm looks like a Tamagotchi, but it’s tapping into a much newer trend",
+      "url": "https://techcrunch.com/2026/09/24/metas-muse-charm-looks-like-a-tamagotchi-but-its-tapping-into-a-much-newer-trend/",
+      "source": "TechCrunch",
+      "published": "2026-09-24T19:39:24+02:00",
+      "summary": "Meta’s new AI gadget may look like a Tamagotchi, but its dangling form factor taps into a much broader Gen Z trend around bag charms, retro tech, and turning gadgets into fashion accessories.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "ec775340d1e2c266",
+      "title": "There's a new way to break RSA that's faster than anything we've seen before",
+      "url": "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/",
+      "source": "Ars Technica",
+      "published": "2026-09-24T13:15:44+02:00",
+      "summary": "Until now, cryptographers thought factoring was the only way to break RSA. Not anymore.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "e4213186a89d4127",
+      "title": "The Ovary Is Surprisingly Active After Menopause. Scientists Are Trying to Figure Out Why",
+      "url": "https://www.wired.com/story/ovary-activity-after-menopause/",
+      "source": "Wired",
+      "published": "2026-09-24T12:30:00+02:00",
+      "summary": "A growing body of research is putting the ovary in a new light, not as an egg factory with an expiration date, but as an organ that shapes women’s health long after the fertile years have passed.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "57163b1aae094750",
+      "title": "AI is dominating the conversation at Climate Week",
+      "url": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
+      "source": "MIT Technology Review",
+      "published": "2026-09-24T12:00:00+02:00",
+      "summary": "This week, world leaders descended on Manhattan for the UN General Assembly. It’s also New York Climate Week—investors, policymakers, advocates, and journalists are colliding at panels, talks, and fancy dinners. With so many climate voices in one place, the discourse can feel a little louder than usual. This year, the unavoidable topic is artificial intellig",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "62f011449a8c2c5f",
+      "title": "Venus May Have Devoured Its Moon",
+      "url": "https://www.wired.com/story/venus-may-have-devoured-its-moon/",
+      "source": "Wired",
+      "published": "2026-09-24T11:15:00+02:00",
+      "summary": "One of the great mysteries in astronomy has been why Venus has no moon. Now a new theory provides a simple answer: It might have been eaten.",
+      "areas": [],
+      "matchedKeywords": {},
+      "scores": {
+        "relevance": 0,
+        "leverage": 0,
+        "novelty": 4,
+        "urgency": 2,
+        "risk": 0
+      },
+      "priority": 50,
+      "action": "Skip",
+      "actionDetail": "Low fit or noisy consumer-tech item"
+    },
+    {
+      "id": "398d2a0367b234a6",
+      "title": "Show HN: Make cursed fonts like Times New Bastard",
+      "url": "https://bastardica.mitpit.com",
       "source": "Hacker News",
-      "published": "2026-09-24T02:45:17+02:00",
+      "published": "2026-09-24T00:53:28+02:00",
       "summary": "Comments",
       "areas": [],
       "matchedKeywords": {},
